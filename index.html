@@ -223,12 +223,16 @@
     margin-bottom: 16px;
   }
   .candidate-pill {
+    display: block;
     padding: 10px 16px;
     border-radius: 6px;
     font-size: 14px;
     font-weight: 600;
     text-align: center;
+    text-decoration: none;
+    transition: transform 0.1s, box-shadow 0.1s;
   }
+  .candidate-pill:hover { transform: translateY(-1px); box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
   .candidate-pill.dem { background: #dbeafe; color: #1e40af; border: 1px solid #93c5fd; }
   .candidate-pill.rep { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
   .race-status {
@@ -364,18 +368,20 @@
     <h2>Current Research</h2>
     <p class="subtitle">Active intelligence collection and analysis</p>
     <div class="race-card">
-      <div class="race-card-header">
-        <h3>2026 Maine US Senate</h3>
-        <p>Primary: June 9 &bull; General: November 3</p>
-      </div>
+      <a href="/races/me-senate-2026/" style="text-decoration:none; color:inherit;">
+        <div class="race-card-header">
+          <h3>2026 Maine US Senate</h3>
+          <p>Primary: June 9 &bull; General: November 3</p>
+        </div>
+      </a>
       <div class="race-card-body">
         <div class="candidates">
-          <div class="candidate-pill dem">Graham Platner (D)</div>
-          <div class="candidate-pill rep">Susan Collins (R)</div>
+          <a href="/races/me-senate-2026/platner/" class="candidate-pill dem">Graham Platner (D)</a>
+          <a href="/races/me-senate-2026/collins/" class="candidate-pill rep">Susan Collins (R)</a>
         </div>
         <div class="race-status">
-          <span class="badge">Active</span>
-          Dossiers in preparation &mdash; journalist handoff package available
+          <span class="badge">Published</span>
+          Dossiers available &mdash; <a href="/races/me-senate-2026/">view race analysis &amp; all candidates</a>
         </div>
       </div>
     </div>
