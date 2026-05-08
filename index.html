@@ -73,6 +73,50 @@
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
   }
+  .hero .cta-secondary {
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.6);
+    color: #fff;
+    margin-left: 12px;
+  }
+  .hero .cta-secondary:hover {
+    border-color: #fff;
+    background: rgba(255,255,255,0.1);
+  }
+
+  /* Browse states */
+  .browse-states {
+    padding: 48px 0;
+    text-align: center;
+    background: var(--bg);
+    border-bottom: 1px solid var(--gray-mid);
+  }
+  .browse-states h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 12px;
+  }
+  .browse-states p {
+    font-size: 16px;
+    color: var(--gray-dark);
+    margin-bottom: 24px;
+  }
+  .browse-states .cta {
+    display: inline-block;
+    background: var(--navy);
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 12px 32px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .browse-states .cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  }
 
   /* Mission */
   .mission {
@@ -315,6 +359,7 @@
     <h1>Clear the <span>Mud</span></h1>
     <p class="tagline">Verified candidate intelligence from public records. Shared with journalists and voters before the October surprises.</p>
     <a href="#races" class="cta">See Current Research</a>
+    <a href="/states/" class="cta cta-secondary">Browse by State</a>
   </div>
 </div>
 
@@ -388,6 +433,14 @@
   </div>
 </div>
 
+<div class="browse-states" id="states">
+  <div class="container">
+    <h2>Browse by State</h2>
+    <p>Find federal, state, and local race intelligence for your state</p>
+    <a href="/states/" class="cta">View All 50 States</a>
+  </div>
+</div>
+
 <div class="principles">
   <div class="container">
     <h2>Our Principles</h2>
@@ -416,7 +469,7 @@
   <div class="container">
     <div class="brand">clearthemud.org</div>
     <p>Open-source civic transparency project</p>
-    <p style="margin-top:12px"><a href="https://github.com/ClearTheMud">GitHub</a></p>
+    <p style="margin-top:12px"><a href="/states/">Browse by State</a> &nbsp;&bull;&nbsp; <a href="https://github.com/ClearTheMud">GitHub</a></p>
     <p style="margin-top:16px; font-size:12px; opacity:0.6;">Data sourced from FEC, state election offices, and Senate LDA filings. All findings are public record.</p>
   </div>
 </div>

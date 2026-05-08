@@ -1,0 +1,20 @@
+{
+  "races": [
+    {
+      "id": "me-senate-2026",
+      "state_abbr": "ME",
+      "office": "US Senate",
+      "year": 2026,
+      "title": "2026 Maine US Senate",
+      "status": "published",
+      "url": "/races/me-senate-2026/",
+      "primary_date": "June 9, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {"name": "Susan Collins", "party": "rep", "role": "Incumbent", "url": "/races/me-senate-2026/collins/"},
+        {"name": "Graham Platner", "party": "dem", "role": "Frontrunner", "url": "/races/me-senate-2026/platner/"},
+        {"name": "David Costello", "party": "dem", "role": "Longshot", "url": "/races/me-senate-2026/costello/"}
+      ]
+    }
+  ]
+}
