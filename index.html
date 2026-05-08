@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clear the Mud — Verified Candidate Intelligence for Voters</title>
+<meta name="description" content="Public-record opposition research shared before October surprises. Verified, sourced candidate intelligence for journalists and voters.">
+<meta property="og:title" content="Clear the Mud — Verified Candidate Intelligence">
+<meta property="og:description" content="Public-record opposition research shared before October surprises. Every claim sourced. Every finding verified.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://clearthemud.org">
+<link rel="canonical" href="https://clearthemud.org">
+<style>
+  :root {
+    --navy: #1a2332;
+    --blue: #2c5f8a;
+    --accent: #3a8fd4;
+    --gold: #c9a84c;
+    --green: #27ae60;
+    --gray-light: #f4f6f8;
+    --gray-mid: #dce1e6;
+    --gray-dark: #5a6a7a;
+    --text: #2c3e50;
+    --bg: #ffffff;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+  }
+
+  .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 60%, var(--accent) 100%);
+    color: #fff;
+    padding: 80px 0 64px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+  }
+  .hero h1 span { color: var(--gold); }
+  .hero .tagline {
+    font-size: 22px;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-bottom: 32px;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero .cta {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 14px 36px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .hero .cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  }
+
+  /* Mission */
+  .mission {
+    padding: 64px 0;
+    text-align: center;
+    border-bottom: 1px solid var(--gray-mid);
+  }
+  .mission h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+  .mission p {
+    font-size: 18px;
+    max-width: 720px;
+    margin: 0 auto 16px;
+    color: var(--gray-dark);
+  }
+  .mission .highlight {
+    display: inline-block;
+    background: #fff8e1;
+    border: 1px solid var(--gold);
+    border-radius: 6px;
+    padding: 16px 24px;
+    margin-top: 16px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--navy);
+  }
+
+  /* How it works */
+  .how {
+    padding: 64px 0;
+    background: var(--gray-light);
+  }
+  .how h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+  }
+  .step {
+    background: #fff;
+    border-radius: 10px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .step h3 {
+    font-size: 18px;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+  .step p { font-size: 14px; color: var(--gray-dark); }
+
+  /* Provenance */
+  .provenance {
+    padding: 64px 0;
+    border-bottom: 1px solid var(--gray-mid);
+  }
+  .provenance h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .tier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 16px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .tier {
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+  }
+  .tier .label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8; }
+  .tier .name { font-size: 15px; margin-top: 4px; }
+  .tier-0 { background: #1a5276; color: #fff; }
+  .tier-1 { background: #1e8449; color: #fff; }
+  .tier-2 { background: #2c5f8a; color: #fff; }
+  .tier-3 { background: #b7950b; color: #fff; }
+  .tier-4 { background: #922b21; color: #fff; }
+
+  /* Current races */
+  .races {
+    padding: 64px 0;
+    background: var(--gray-light);
+  }
+  .races h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .races .subtitle {
+    text-align: center;
+    color: var(--gray-dark);
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .race-card {
+    max-width: 560px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+  .race-card-header {
+    background: linear-gradient(135deg, var(--navy), var(--blue));
+    color: #fff;
+    padding: 20px 24px;
+  }
+  .race-card-header h3 { font-size: 20px; margin-bottom: 4px; }
+  .race-card-header p { font-size: 14px; opacity: 0.85; }
+  .race-card-body { padding: 24px; }
+  .race-card-body .candidates {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .candidate-pill {
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .candidate-pill.dem { background: #dbeafe; color: #1e40af; border: 1px solid #93c5fd; }
+  .candidate-pill.rep { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+  .race-status {
+    text-align: center;
+    font-size: 13px;
+    color: var(--gray-dark);
+    padding-top: 12px;
+    border-top: 1px solid var(--gray-mid);
+  }
+  .race-status .badge {
+    display: inline-block;
+    background: var(--green);
+    color: #fff;
+    font-weight: 700;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    margin-right: 6px;
+  }
+
+  /* Principles */
+  .principles {
+    padding: 64px 0;
+    border-bottom: 1px solid var(--gray-mid);
+  }
+  .principles h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .principle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .principle {
+    padding: 24px;
+    border-left: 4px solid var(--gold);
+    background: var(--gray-light);
+    border-radius: 0 8px 8px 0;
+  }
+  .principle h3 {
+    font-size: 16px;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+  .principle p { font-size: 14px; color: var(--gray-dark); }
+
+  /* Footer */
+  .footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.7);
+    padding: 40px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+  .footer a { color: var(--gold); text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+  .footer .brand {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 32px; }
+    .hero .tagline { font-size: 18px; }
+    .race-card-body .candidates { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="container">
+    <h1>Clear the <span>Mud</span></h1>
+    <p class="tagline">Verified candidate intelligence from public records. Shared with journalists and voters before the October surprises.</p>
+    <a href="#races" class="cta">See Current Research</a>
+  </div>
+</div>
+
+<div class="mission">
+  <div class="container">
+    <h2>What We Do</h2>
+    <p>We conduct deep opposition research on political candidates using exclusively public records: FEC filings, voting records, lobbying disclosures, court documents, and official government data.</p>
+    <p>Then we give it away. Every finding is sourced, tiered by reliability, and published for journalists and voters long before campaigns weaponize it as an October surprise.</p>
+    <div class="highlight">Every claim traced to its source. Every finding verified before publication.</div>
+  </div>
+</div>
+
+<div class="how">
+  <div class="container">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Collect</h3>
+        <p>Automated pipelines pull data from FEC, state election offices, Senate lobbying disclosures, and other public record databases.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Verify</h3>
+        <p>Every data point is tagged with a 5-tier source provenance model. Only T0-T2 verified findings are published. Unverified claims are flagged, never stated as fact.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Publish</h3>
+        <p>Structured dossiers are shared with journalists and made available to voters. Both sides of every race get equal scrutiny.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="provenance">
+  <div class="container">
+    <h2>Source Provenance Model</h2>
+    <div class="tier-grid">
+      <div class="tier tier-0"><div class="label">Tier 0</div><div class="name">Primary Legal</div></div>
+      <div class="tier tier-1"><div class="label">Tier 1</div><div class="name">Official Record</div></div>
+      <div class="tier tier-2"><div class="label">Tier 2</div><div class="name">Multi-Source Media</div></div>
+      <div class="tier tier-3"><div class="label">Tier 3</div><div class="name">Candidate Direct</div></div>
+      <div class="tier tier-4"><div class="label">Tier 4</div><div class="name">Single Source</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="races" id="races">
+  <div class="container">
+    <h2>Current Research</h2>
+    <p class="subtitle">Active intelligence collection and analysis</p>
+    <div class="race-card">
+      <div class="race-card-header">
+        <h3>2026 Maine US Senate</h3>
+        <p>Primary: June 9 &bull; General: November 3</p>
+      </div>
+      <div class="race-card-body">
+        <div class="candidates">
+          <div class="candidate-pill dem">Graham Platner (D)</div>
+          <div class="candidate-pill rep">Susan Collins (R)</div>
+        </div>
+        <div class="race-status">
+          <span class="badge">Active</span>
+          Dossiers in preparation &mdash; journalist handoff package available
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="principles">
+  <div class="container">
+    <h2>Our Principles</h2>
+    <div class="principle-grid">
+      <div class="principle">
+        <h3>Equal Scrutiny</h3>
+        <p>Every candidate in a race gets the same depth of research. We don't pick sides — we verify facts and let voters decide.</p>
+      </div>
+      <div class="principle">
+        <h3>Source Transparency</h3>
+        <p>Every finding links to its source. FEC filing numbers, voting record dates, document URLs — nothing is asserted without evidence.</p>
+      </div>
+      <div class="principle">
+        <h3>No Editorial Filtering</h3>
+        <p>When sources conflict, we present all of them. We flag discrepancies rather than choosing which version to publish.</p>
+      </div>
+      <div class="principle">
+        <h3>Early Release</h3>
+        <p>Opposition research loses its power when it's public knowledge. We publish months before elections, not weeks.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="brand">clearthemud.org</div>
+    <p>Open-source civic transparency project</p>
+    <p style="margin-top:12px"><a href="https://github.com/ClearTheMud">GitHub</a></p>
+    <p style="margin-top:16px; font-size:12px; opacity:0.6;">Data sourced from FEC, state election offices, and Senate LDA filings. All findings are public record.</p>
+  </div>
+</div>
+
+</body>
+</html>
