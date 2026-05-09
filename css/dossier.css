@@ -160,17 +160,17 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 /* Interactive US Map */
 .map-container { margin: 32px 0; position: relative; background: var(--navy); border-radius: 12px; padding: 24px; }
 .map-container svg { width: 100%; height: auto; max-height: 480px; }
-.map-container .state { fill: #3a4a5c; stroke: var(--navy); stroke-width: 1.5; transition: fill 0.2s, stroke 0.2s; }
-.map-container .state--active { fill: var(--gold); stroke: #a8842e; cursor: pointer; }
-.map-container .state--active:hover, .map-container .state--active:focus { fill: #e0bc5a; stroke: var(--gold); outline: none; }
+.map-container .state { fill: #4a5e73; stroke: #253545; stroke-width: 1.5; transition: fill 0.2s, stroke 0.2s; }
+.map-container .state--active { fill: #d4a83a; stroke: #b8922e; cursor: pointer; }
+.map-container .state--active:hover, .map-container .state--active:focus { fill: #e8c45a; stroke: #d4a83a; outline: none; }
 .map-container .state--active:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.map-container .state--inactive { fill: #2c3e50; stroke: #1a2332; cursor: default; }
-.map-container .state--inactive:hover { fill: #3a5068; }
+.map-container .state--inactive { fill: #3d5570; stroke: #2a3d52; cursor: default; }
+.map-container .state--inactive:hover { fill: #4e6a85; }
 .map-legend { display: flex; gap: 24px; justify-content: center; margin-top: 16px; font-size: 13px; color: rgba(255,255,255,0.7); }
 .map-legend-item { display: flex; align-items: center; gap: 6px; }
 .map-legend-swatch { width: 16px; height: 16px; border-radius: 3px; border: 1px solid rgba(255,255,255,0.2); }
-.map-legend-swatch--active { background: var(--gold); border-color: var(--gold); }
-.map-legend-swatch--inactive { background: #2c3e50; }
+.map-legend-swatch--active { background: #d4a83a; border-color: #d4a83a; }
+.map-legend-swatch--inactive { background: #3d5570; }
 .map-fallback-link { text-align: center; margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6); }
 .map-fallback-link a { color: var(--accent); }
 
