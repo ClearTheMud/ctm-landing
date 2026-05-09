@@ -1,20 +1,25 @@
 /**
  * us-map.js — Interactive US states SVG map for clearthemud.org
  *
- * Expects:
- *   - window.CTM_ACTIVE_STATES: string[] of 2-letter state abbreviations with published data
- *   - SVG inline on the page with path.state elements, each having:
- *       id="XX" (state abbr), data-slug="state-name", data-name="State Name"
+ * Expects window.CTM_STATE_DATA: { "ME": { dossiers: 3, races: 1 }, ... }
+ * Falls back to window.CTM_ACTIVE_STATES: ["ME"] for backward compatibility.
  */
 (function () {
   'use strict';
 
-  var activeSet;
+  var stateData;
   var tooltip;
   var isTouchDevice = false;
 
   function init() {
-    activeSet = new Set((window.CTM_ACTIVE_STATES || []).map(function (s) { return s.toUpperCase(); }));
+    stateData = {};
+    if (window.CTM_STATE_DATA) {
+      stateData = window.CTM_STATE_DATA;
+    } else if (window.CTM_ACTIVE_STATES) {
+      (window.CTM_ACTIVE_STATES || []).forEach(function (s) {
+        stateData[s.toUpperCase()] = { dossiers: 0, races: 0 };
+      });
+    }
     tooltip = createTooltip();
     var states = document.querySelectorAll('.state');
 
@@ -34,28 +39,40 @@
     el.id = 'map-tooltip';
     el.setAttribute('role', 'tooltip');
     el.style.cssText =
-      'position:fixed;padding:6px 12px;background:#1a1a2e;color:#fff;border-radius:4px;' +
+      'position:fixed;padding:6px 12px;background:#1a2332;color:#fff;border-radius:4px;' +
       'font-size:14px;pointer-events:none;opacity:0;transition:opacity .15s;z-index:1000;' +
       'white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.3);';
     document.body.appendChild(el);
     return el;
   }
 
+  function getTooltipText(name, abbr, isActive) {
+    if (!isActive) return name + ' — No published dossiers yet';
+    var info = stateData[abbr];
+    if (info && info.dossiers > 0) {
+      var d = info.dossiers === 1 ? '1 candidate dossier' : info.dossiers + ' candidate dossiers';
+      return name + ' — ' + d;
+    }
+    return name + ' — Research available';
+  }
+
   function setupState(el) {
     var abbr = el.id.toUpperCase();
     var name = el.getAttribute('data-name') || abbr;
     var slug = el.getAttribute('data-slug');
-    var isActive = activeSet.has(abbr);
+    var isActive = abbr in stateData;
 
     el.classList.add(isActive ? 'state--active' : 'state--inactive');
-    el.setAttribute('aria-label', name + (isActive ? '' : ' — Research coming soon'));
+    el.setAttribute('aria-label', getTooltipText(name, abbr, isActive));
     el.setAttribute('tabindex', isActive ? '0' : '-1');
     el.setAttribute('role', 'link');
+
+    var tipText = getTooltipText(name, abbr, isActive);
 
     // Hover
     el.addEventListener('mouseenter', function (e) {
       isTouchDevice = false;
-      showTooltip(name, isActive, e.clientX, e.clientY);
+      showTooltip(tipText, e.clientX, e.clientY);
     });
     el.addEventListener('mousemove', function (e) {
       if (!isTouchDevice) positionTooltipAtCursor(e.clientX, e.clientY);
@@ -69,7 +86,7 @@
       var rect = el.getBoundingClientRect();
       var cx = rect.left + rect.width / 2;
       var cy = rect.top;
-      showTooltip(name, isActive, cx, cy);
+      showTooltip(tipText, cx, cy);
       positionTooltipAbove(cx, cy);
     });
     el.addEventListener('blur', hideTooltip);
@@ -89,22 +106,15 @@
     // Touch
     el.addEventListener('touchstart', function (e) {
       isTouchDevice = true;
-      if (isActive && slug) {
-        // First tap shows tooltip, second tap navigates
-        if (tooltip.style.opacity === '1' && tooltip._currentState === abbr) {
-          navigate(slug);
-        } else {
-          e.preventDefault();
-          var rect = el.getBoundingClientRect();
-          showTooltip(name, isActive, rect.left + rect.width / 2, rect.top);
-          positionTooltipAbove(rect.left + rect.width / 2, rect.top);
-          tooltip._currentState = abbr;
-        }
+      var rect = el.getBoundingClientRect();
+      var cx = rect.left + rect.width / 2;
+      var cy = rect.top;
+      if (isActive && slug && tooltip.style.opacity === '1' && tooltip._currentState === abbr) {
+        navigate(slug);
       } else {
         e.preventDefault();
-        var rect = el.getBoundingClientRect();
-        showTooltip(name, isActive, rect.left + rect.width / 2, rect.top);
-        positionTooltipAbove(rect.left + rect.width / 2, rect.top);
+        showTooltip(tipText, cx, cy);
+        positionTooltipAbove(cx, cy);
         tooltip._currentState = abbr;
       }
     }, { passive: false });
@@ -114,8 +124,8 @@
     window.location.href = '/states/' + slug + '/';
   }
 
-  function showTooltip(name, isActive, x, y) {
-    tooltip.textContent = name + (isActive ? '' : ' — Research coming soon');
+  function showTooltip(text, x, y) {
+    tooltip.textContent = text;
     tooltip.style.opacity = '1';
     positionTooltipAtCursor(x, y);
   }

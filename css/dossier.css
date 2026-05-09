@@ -158,11 +158,13 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .no-research-note { font-size: 13px; font-style: italic; margin-top: 8px; }
 
 /* Interactive US Map */
-.map-container { margin: 32px 0; position: relative; background: var(--navy); border-radius: 12px; padding: 24px; }
+.map-intro { text-align: center; font-size: 15px; color: var(--gray-dark); margin: 32px 0 0; }
+.map-container { margin: 12px 0 32px; position: relative; background: var(--navy); border-radius: 12px; padding: 24px; }
 .map-container svg { width: 100%; height: auto; max-height: 480px; }
 .map-container .state { fill: #4a5e73; stroke: #253545; stroke-width: 1.5; transition: fill 0.2s, stroke 0.2s; }
-.map-container .state--active { fill: #d4a83a; stroke: #b8922e; cursor: pointer; }
-.map-container .state--active:hover, .map-container .state--active:focus { fill: #e8c45a; stroke: #d4a83a; outline: none; }
+.map-container .state--active { fill: #d4a83a; stroke: #b8922e; cursor: pointer; animation: state-glow 2.5s ease-in-out infinite; }
+.map-container .state--active:hover, .map-container .state--active:focus { fill: #e8c45a; stroke: #d4a83a; outline: none; animation: none; }
+@keyframes state-glow { 0%, 100% { fill: #d4a83a; } 50% { fill: #e0bc5a; } }
 .map-container .state--active:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .map-container .state--inactive { fill: #3d5570; stroke: #2a3d52; cursor: default; }
 .map-container .state--inactive:hover { fill: #4e6a85; }

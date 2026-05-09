@@ -112,6 +112,7 @@ def render_state_page(state, state_races, cycle):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
 <title>{name} &mdash; Candidate Research | clearthemud.org</title>
 <meta name="description" content="Verified candidate intelligence for {name} races: US Senate, US House, Governor, and state offices.">
 <meta property="og:title" content="{name} &mdash; Candidate Research">
@@ -197,25 +198,31 @@ def render_states_index(states, races_by_state, cycle):
     active_count = sum(1 for s in states if s["abbr"] in races_by_state)
     total_races = sum(len(v) for v in races_by_state.values())
 
-    # Active states for JS
-    active_abbrs = sorted(abbr for abbr in races_by_state.keys())
-    active_js = ", ".join(f'"{a}"' for a in active_abbrs)
+    # State data for JS — includes dossier counts per state
+    state_data_entries = []
+    for abbr in sorted(races_by_state.keys()):
+        state_races = races_by_state[abbr]
+        total_candidates = sum(len(r.get("candidates", [])) for r in state_races)
+        total_races = len(state_races)
+        state_data_entries.append(f'"{abbr}":{{"dossiers":{total_candidates},"races":{total_races}}}')
+    state_data_js = "{" + ",".join(state_data_entries) + "}"
 
     # SVG map
     svg_content = load_svg_map()
     if svg_content:
         map_html = f"""
+  <p class="map-intro">Select a highlighted state to read verified candidate dossiers.</p>
   <div class="map-container">
     {svg_content}
     <div class="map-legend">
-      <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--active"></span> Active research</span>
-      <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--inactive"></span> Coming soon</span>
+      <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--active"></span> Published dossiers</span>
+      <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--inactive"></span> Not yet covered</span>
     </div>
     <p class="map-fallback-link">Or <a href="#state-grid">browse the full list below</a></p>
   </div>
 """
         map_script = f"""
-<script>window.CTM_ACTIVE_STATES = [{active_js}];</script>
+<script>window.CTM_STATE_DATA = {state_data_js};</script>
 <script src="/js/us-map.js"></script>
 """
     else:
@@ -247,6 +254,7 @@ def render_states_index(states, races_by_state, cycle):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
 <title>All States &mdash; Candidate Research by State | clearthemud.org</title>
 <meta name="description" content="Browse verified candidate intelligence organized by state. Federal, state, and local race coverage across all 50 states.">
 <meta property="og:title" content="All States &mdash; Candidate Research by State">
