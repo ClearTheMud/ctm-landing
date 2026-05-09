@@ -113,23 +113,29 @@ class TestStateMapJS:
 
 
 class TestDossierCSSDistrictRules:
-    """Validate CSS has district map rules."""
+    """Validate CSS has district map rules scoped under .district-map-container."""
 
     @pytest.fixture
     def css_content(self):
         return CSS_FILE.read_text()
 
-    def test_district_base_fill(self, css_content):
-        assert ".district" in css_content
+    def test_district_base_scoped_under_container(self, css_content):
+        assert ".district-map-container .district" in css_content
 
-    def test_district_active_class(self, css_content):
-        assert ".district--active" in css_content
+    def test_district_active_scoped_under_container(self, css_content):
+        assert ".district-map-container .district--active" in css_content
 
-    def test_district_inactive_class(self, css_content):
-        assert ".district--inactive" in css_content
+    def test_district_inactive_scoped_under_container(self, css_content):
+        assert ".district-map-container .district--inactive" in css_content
 
     def test_district_glow_animation(self, css_content):
         assert "district-glow" in css_content
+
+    def test_district_stroke_not_near_black(self, css_content):
+        assert "#253545" not in css_content, "Stroke #253545 is too dark on navy background"
+
+    def test_district_stroke_is_visible(self, css_content):
+        assert "#5a7a94" in css_content, "District strokes should use #5a7a94 for visibility"
 
 
 class TestRacesJSON:
