@@ -11,9 +11,570 @@
       "primary_date": "June 9, 2026",
       "general_date": "November 3, 2026",
       "candidates": [
-        {"name": "Susan Collins", "party": "rep", "role": "Incumbent", "url": "/races/me-senate-2026/collins/"},
-        {"name": "Graham Platner", "party": "dem", "role": "Frontrunner", "url": "/races/me-senate-2026/platner/"},
-        {"name": "David Costello", "party": "dem", "role": "Longshot", "url": "/races/me-senate-2026/costello/"}
+        {
+          "name": "Susan Collins",
+          "party": "rep",
+          "role": "Incumbent",
+          "url": "/races/me-senate-2026/collins/"
+        },
+        {
+          "name": "Graham Platner",
+          "party": "dem",
+          "role": "Frontrunner",
+          "url": "/races/me-senate-2026/platner/"
+        },
+        {
+          "name": "David Costello",
+          "party": "dem",
+          "role": "Longshot",
+          "url": "/races/me-senate-2026/costello/"
+        }
+      ]
+    },
+    {
+      "id": "wa-house-1-2026",
+      "state_abbr": "WA",
+      "office": "US House",
+      "district": "1",
+      "year": 2026,
+      "title": "WA 1st Congressional District",
+      "status": "active",
+      "url": "/races/wa-house-1-2026/",
+      "candidates": [
+        {
+          "name": "Suzan DelBene",
+          "party": "D",
+          "role": "incumbent",
+          "url": "/races/wa-house-1-2026/delbene/"
+        },
+        {
+          "name": "James Etzkorn",
+          "party": "I",
+          "role": "challenger",
+          "url": "/races/wa-house-1-2026/etzkorn/"
+        },
+        {
+          "name": "Hunter Gordon",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-1-2026/gordon/"
+        },
+        {
+          "name": "Catherine Hildebrand",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-1-2026/hildebrand/"
+        },
+        {
+          "name": "Benjamin Kincaid",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-1-2026/kincaid/"
+        },
+        {
+          "name": "Bryce Nickel",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-1-2026/nickel/"
+        },
+        {
+          "name": "Mary Silva",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-1-2026/silva/"
+        }
+      ]
+    },
+    {
+      "id": "wa-house-2-2026",
+      "state_abbr": "WA",
+      "office": "US House",
+      "district": "2",
+      "year": 2026,
+      "title": "WA 2nd Congressional District",
+      "status": "active",
+      "url": "/races/wa-house-2-2026/",
+      "candidates": [
+        {
+          "name": "Edwin H. Feller",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-2-2026/feller/"
+        },
+        {
+          "name": "Devin Hermanson",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-2-2026/hermanson/"
+        },
+        {
+          "name": "Rick Larsen",
+          "party": "D",
+          "role": "incumbent",
+          "url": "/races/wa-house-2-2026/larsen/"
+        },
+        {
+          "name": "Raymond Pelletti",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-2-2026/pelletti/"
+        },
+        {
+          "name": "Tomas Scheel",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-2-2026/scheel/"
+        }
+      ]
+    },
+    {
+      "id": "wa-house-3-2026",
+      "state_abbr": "WA",
+      "office": "US House",
+      "district": "3",
+      "year": 2026,
+      "title": "WA 3rd Congressional District",
+      "status": "active",
+      "url": "/races/wa-house-3-2026/",
+      "candidates": [
+        {
+          "name": "Antony Barran",
+          "party": "Cascade",
+          "role": "challenger",
+          "url": "/races/wa-house-3-2026/barran/"
+        },
+        {
+          "name": "Austin Braswell",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-3-2026/braswell/"
+        },
+        {
+          "name": "John Braun",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-3-2026/braun/"
+        },
+        {
+          "name": "Brent Hennrich",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-3-2026/hennrich/"
+        },
+        {
+          "name": "Lawrence Kellogg",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-3-2026/kellogg/"
+        },
+        {
+          "name": "Marie Gluesenkamp Perez",
+          "party": "D",
+          "role": "incumbent",
+          "url": "/races/wa-house-3-2026/perez/"
+        },
+        {
+          "name": "Troy Rasband",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-3-2026/rasband/"
+        },
+        {
+          "name": "John P. Roco",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-3-2026/roco/"
+        },
+        {
+          "name": "John Saulie-Rohman",
+          "party": "I",
+          "role": "challenger",
+          "url": "/races/wa-house-3-2026/saulie-rohman/"
+        }
+      ]
+    },
+    {
+      "id": "wa-house-4-2026",
+      "state_abbr": "WA",
+      "office": "US House",
+      "district": "4",
+      "year": 2026,
+      "title": "WA 4th Congressional District",
+      "status": "active",
+      "url": "/races/wa-house-4-2026/",
+      "candidates": [
+        {
+          "name": "Matt Boehnke",
+          "party": "R",
+          "role": "frontrunner",
+          "url": "/races/wa-house-4-2026/boehnke/"
+        },
+        {
+          "name": "John Duresky",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-4-2026/duresky/"
+        },
+        {
+          "name": "John C. Hughs",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-4-2026/hughs/"
+        },
+        {
+          "name": "Jacek \"Jack\" Kobiesa",
+          "party": "NP",
+          "role": "challenger",
+          "url": "/races/wa-house-4-2026/kobiesa/"
+        },
+        {
+          "name": "Amanda McKinney",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-4-2026/mckinney/"
+        },
+        {
+          "name": "Devin Poore",
+          "party": "Cascade",
+          "role": "challenger",
+          "url": "/races/wa-house-4-2026/poore/"
+        },
+        {
+          "name": "Zac Rossi",
+          "party": "NP",
+          "role": "challenger",
+          "url": "/races/wa-house-4-2026/rossi/"
+        },
+        {
+          "name": "Elpidia Saavedra",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-4-2026/saavedra/"
+        },
+        {
+          "name": "Jerrod Sessler",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-4-2026/sessler/"
+        },
+        {
+          "name": "Favian Valencia",
+          "party": "I",
+          "role": "challenger",
+          "url": "/races/wa-house-4-2026/valencia/"
+        },
+        {
+          "name": "Ken Vaz",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-4-2026/vaz/"
+        }
+      ]
+    },
+    {
+      "id": "wa-house-5-2026",
+      "state_abbr": "WA",
+      "office": "US House",
+      "district": "5",
+      "year": 2026,
+      "title": "WA 5th Congressional District",
+      "status": "active",
+      "url": "/races/wa-house-5-2026/",
+      "candidates": [
+        {
+          "name": "Andrew Bartleson",
+          "party": "I",
+          "role": "challenger",
+          "url": "/races/wa-house-5-2026/bartleson/"
+        },
+        {
+          "name": "Michael Baumgartner",
+          "party": "R",
+          "role": "frontrunner",
+          "url": "/races/wa-house-5-2026/baumgartner/"
+        },
+        {
+          "name": "Carmela Conroy",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-5-2026/conroy/"
+        },
+        {
+          "name": "Ann Marie Danimus",
+          "party": "I",
+          "role": "challenger",
+          "url": "/races/wa-house-5-2026/danimus/"
+        },
+        {
+          "name": "Kevin Fagan",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-5-2026/fagan/"
+        },
+        {
+          "name": "Richard Freudenberg",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-5-2026/freudenberg/"
+        },
+        {
+          "name": "Mike Gahvarehchee",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-5-2026/gahvarehchee/"
+        },
+        {
+          "name": "Matthew Hayes",
+          "party": "I",
+          "role": "challenger",
+          "url": "/races/wa-house-5-2026/hayes/"
+        },
+        {
+          "name": "Bajun R. Mavalwalla",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-5-2026/mavalwalla/"
+        },
+        {
+          "name": "Michael McGarr",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-5-2026/mcgarr/"
+        },
+        {
+          "name": "Nate Powell",
+          "party": "I",
+          "role": "challenger",
+          "url": "/races/wa-house-5-2026/powell/"
+        },
+        {
+          "name": "Kyle Ursey",
+          "party": "I",
+          "role": "challenger",
+          "url": "/races/wa-house-5-2026/ursey/"
+        },
+        {
+          "name": "David Womack",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-5-2026/womack/"
+        }
+      ]
+    },
+    {
+      "id": "wa-house-6-2026",
+      "state_abbr": "WA",
+      "office": "US House",
+      "district": "6",
+      "year": 2026,
+      "title": "WA 6th Congressional District",
+      "status": "active",
+      "url": "/races/wa-house-6-2026/",
+      "candidates": [
+        {
+          "name": "Teresa Fox",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-6-2026/fox/"
+        },
+        {
+          "name": "Macy Jones",
+          "party": "NP",
+          "role": "challenger",
+          "url": "/races/wa-house-6-2026/jones/"
+        },
+        {
+          "name": "Leon Lawson",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-6-2026/lawson/"
+        },
+        {
+          "name": "Brian P. O'Gorman",
+          "party": "I",
+          "role": "challenger",
+          "url": "/races/wa-house-6-2026/ogorman/"
+        },
+        {
+          "name": "Emily Randall",
+          "party": "D",
+          "role": "frontrunner",
+          "url": "/races/wa-house-6-2026/randall/"
+        }
+      ]
+    },
+    {
+      "id": "wa-house-7-2026",
+      "state_abbr": "WA",
+      "office": "US House",
+      "district": "7",
+      "year": 2026,
+      "title": "WA 7th Congressional District",
+      "status": "active",
+      "url": "/races/wa-house-7-2026/",
+      "candidates": [
+        {
+          "name": "David W. Blomstrom",
+          "party": "Fifth Republic",
+          "role": "challenger",
+          "url": "/races/wa-house-7-2026/blomstrom/"
+        },
+        {
+          "name": "Pramila Jayapal",
+          "party": "D",
+          "role": "incumbent",
+          "url": "/races/wa-house-7-2026/jayapal/"
+        },
+        {
+          "name": "Gwen Kirkland",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-7-2026/kirkland/"
+        },
+        {
+          "name": "Nirav Sheth",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-7-2026/sheth/"
+        }
+      ]
+    },
+    {
+      "id": "wa-house-8-2026",
+      "state_abbr": "WA",
+      "office": "US House",
+      "district": "8",
+      "year": 2026,
+      "title": "WA 8th Congressional District",
+      "status": "active",
+      "url": "/races/wa-house-8-2026/",
+      "candidates": [
+        {
+          "name": "Keith Arnold",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-8-2026/arnold/"
+        },
+        {
+          "name": "Trinh Ha",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-8-2026/ha/"
+        },
+        {
+          "name": "Bob Hagglund",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-8-2026/hagglund/"
+        },
+        {
+          "name": "Spencer Meline",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-8-2026/meline/"
+        },
+        {
+          "name": "Kim Schrier",
+          "party": "D",
+          "role": "incumbent",
+          "url": "/races/wa-house-8-2026/schrier/"
+        },
+        {
+          "name": "Andres Valleza",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-8-2026/valleza/"
+        }
+      ]
+    },
+    {
+      "id": "wa-house-9-2026",
+      "state_abbr": "WA",
+      "office": "US House",
+      "district": "9",
+      "year": 2026,
+      "title": "WA 9th Congressional District",
+      "status": "active",
+      "url": "/races/wa-house-9-2026/",
+      "candidates": [
+        {
+          "name": "Doug Basler",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-9-2026/basler/"
+        },
+        {
+          "name": "Melissa Chaudhry",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-9-2026/chaudhry/"
+        },
+        {
+          "name": "Jacob Perasso",
+          "party": "Socialist Workers",
+          "role": "challenger",
+          "url": "/races/wa-house-9-2026/perasso/"
+        },
+        {
+          "name": "Kshama Sawant",
+          "party": "I",
+          "role": "challenger",
+          "url": "/races/wa-house-9-2026/sawant/"
+        },
+        {
+          "name": "Adam Smith",
+          "party": "D",
+          "role": "incumbent",
+          "url": "/races/wa-house-9-2026/smith/"
+        }
+      ]
+    },
+    {
+      "id": "wa-house-10-2026",
+      "state_abbr": "WA",
+      "office": "US House",
+      "district": "10",
+      "year": 2026,
+      "title": "WA 10th Congressional District",
+      "status": "active",
+      "url": "/races/wa-house-10-2026/",
+      "candidates": [
+        {
+          "name": "Adam Arafat",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-10-2026/arafat/"
+        },
+        {
+          "name": "Chris D. Chung",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-house-10-2026/chung/"
+        },
+        {
+          "name": "Kurtis Engle",
+          "party": "Union",
+          "role": "challenger",
+          "url": "/races/wa-house-10-2026/engle/"
+        },
+        {
+          "name": "Derek Maynes",
+          "party": "NP",
+          "role": "challenger",
+          "url": "/races/wa-house-10-2026/maynes/"
+        },
+        {
+          "name": "Alex Scheel",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-house-10-2026/scheel/"
+        },
+        {
+          "name": "Marilyn Strickland",
+          "party": "D",
+          "role": "incumbent",
+          "url": "/races/wa-house-10-2026/strickland/"
+        }
       ]
     }
   ]

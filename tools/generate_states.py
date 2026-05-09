@@ -48,9 +48,16 @@ def render_race_card(race):
     if len(race["candidates"]) > 2:
         summary += f' + {len(race["candidates"]) - 2} more'
     status_label = race["status"].upper()
+    primary = race.get("primary_date", "")
+    general = race.get("general_date", "")
+    if primary and general:
+        date_line = f'\n        <span class="party-tag neutral">Primary: {primary} &bull; General: {general}</span>'
+    elif primary:
+        date_line = f'\n        <span class="party-tag neutral">Primary: {primary}</span>'
+    else:
+        date_line = ""
     return f"""      <a href="{race['url']}" class="dossier-link">
-        <h4>{race['title']}</h4>
-        <span class="party-tag neutral">Primary: {race['primary_date']} &bull; General: {race['general_date']}</span>
+        <h4>{race['title']}</h4>{date_line}
         <p><span class="status-active">{status_label}</span> &mdash; {summary}</p>
       </a>"""
 
@@ -59,6 +66,17 @@ def render_no_research(msg):
     return f"""    <div class="no-research">
       <p>{msg}</p>
     </div>"""
+
+
+def load_state_svg(state_abbr):
+    slug = state_abbr.lower()
+    svg_path = REPO_ROOT / "geo" / "states" / f"{slug}-districts.svg"
+    if svg_path.exists():
+        content = svg_path.read_text()
+        if content.startswith("<?xml"):
+            content = content[content.index("?>") + 2:].strip()
+        return content
+    return None
 
 
 def render_state_page(state, state_races, cycle):
@@ -105,6 +123,31 @@ def render_state_page(state, state_races, cycle):
   </div>
 """
 
+    # District map
+    district_svg = load_state_svg(abbr)
+    if district_svg and house_races:
+        district_data_entries = []
+        for r in house_races:
+            num_candidates = len(r.get("candidates", []))
+            district_data_entries.append(f'"{r["id"]}":{{"candidates":{num_candidates}}}')
+        district_data_js = "{" + ",".join(district_data_entries) + "}"
+        district_map_html = f"""
+    <div class="district-map-container">
+      {district_svg}
+      <div class="map-legend">
+        <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--active"></span> Active research</span>
+        <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--inactive"></span> Coming soon</span>
+      </div>
+    </div>
+"""
+        district_map_script = f"""
+<script>window.CTM_DISTRICT_DATA = {district_data_js};</script>
+<script src="/js/state-map.js"></script>
+"""
+    else:
+        district_map_html = ""
+        district_map_script = ""
+
     senate_meta = f"Senate seat up in {cycle}" if senate_up else f"Next Senate election: {senate_year}"
 
     return f"""<!DOCTYPE html>
@@ -112,7 +155,7 @@ def render_state_page(state, state_races, cycle):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
 <title>{name} &mdash; Candidate Research | clearthemud.org</title>
 <meta name="description" content="Verified candidate intelligence for {name} races: US Senate, US House, Governor, and state offices.">
 <meta property="og:title" content="{name} &mdash; Candidate Research">
@@ -149,6 +192,7 @@ def render_state_page(state, state_races, cycle):
 
 <div class="page">
 {hero_html}
+{district_map_html}
   <div class="section">
     <h2><span class="section-num">1</span> Federal Races</h2>
     <h3>US Senate</h3>
@@ -177,7 +221,7 @@ def render_state_page(state, state_races, cycle):
 </div>
 
 <div class="classification-bar">TLP:GREEN &mdash; Approved for public sharing</div>
-
+{district_map_script}
 </body>
 </html>
 """
