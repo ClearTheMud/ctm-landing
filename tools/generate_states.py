@@ -182,9 +182,45 @@ def render_state_page(state, state_races, cycle):
 """
 
 
+def load_svg_map():
+    svg_path = REPO_ROOT / "geo" / "us-states.svg"
+    if svg_path.exists():
+        content = svg_path.read_text()
+        # Strip the XML declaration for inline embedding
+        if content.startswith("<?xml"):
+            content = content[content.index("?>") + 2:].strip()
+        return content
+    return None
+
+
 def render_states_index(states, races_by_state, cycle):
     active_count = sum(1 for s in states if s["abbr"] in races_by_state)
     total_races = sum(len(v) for v in races_by_state.values())
+
+    # Active states for JS
+    active_abbrs = sorted(abbr for abbr in races_by_state.keys())
+    active_js = ", ".join(f'"{a}"' for a in active_abbrs)
+
+    # SVG map
+    svg_content = load_svg_map()
+    if svg_content:
+        map_html = f"""
+  <div class="map-container">
+    {svg_content}
+    <div class="map-legend">
+      <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--active"></span> Active research</span>
+      <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--inactive"></span> Coming soon</span>
+    </div>
+    <p class="map-fallback-link">Or <a href="#state-grid">browse the full list below</a></p>
+  </div>
+"""
+        map_script = f"""
+<script>window.CTM_ACTIVE_STATES = [{active_js}];</script>
+<script src="/js/us-map.js"></script>
+"""
+    else:
+        map_html = ""
+        map_script = ""
 
     cards = []
     for state in sorted(states, key=lambda s: s["name"]):
@@ -243,8 +279,8 @@ def render_states_index(states, races_by_state, cycle):
 </div>
 
 <div class="page">
-
-  <div class="state-grid">
+{map_html}
+  <div id="state-grid" class="state-grid">
 {cards_html}
   </div>
 
@@ -255,7 +291,7 @@ def render_states_index(states, races_by_state, cycle):
 </div>
 
 <div class="classification-bar">TLP:GREEN &mdash; Approved for public sharing</div>
-
+{map_script}
 </body>
 </html>
 """
