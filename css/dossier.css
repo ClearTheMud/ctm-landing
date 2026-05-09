@@ -176,6 +176,17 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .map-fallback-link { text-align: center; margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6); }
 .map-fallback-link a { color: var(--accent); }
 
+/* District Map */
+.district-map-container { margin: 12px 0 24px; position: relative; background: var(--navy); border-radius: 12px; padding: 24px; }
+.district-map-container svg { width: 100%; height: auto; max-height: 480px; }
+.district { fill: #4a5e73; stroke: #253545; stroke-width: 1.5; transition: fill 0.2s, stroke 0.2s; }
+.district--active { fill: #d4a83a; stroke: #b8922e; cursor: pointer; animation: district-glow 2.5s ease-in-out infinite; }
+.district--active:hover, .district--active:focus { fill: #e8c45a; stroke: #d4a83a; outline: none; animation: none; }
+@keyframes district-glow { 0%, 100% { fill: #d4a83a; } 50% { fill: #e0bc5a; } }
+.district--active:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.district--inactive { fill: #3d5570; stroke: #2a3d52; cursor: default; }
+.district--inactive:hover { fill: #4e6a85; }
+
 /* Responsive */
 @media (max-width: 900px) { .state-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 700px) { .matchup { grid-template-columns: 1fr; } }
