@@ -28,8 +28,13 @@ races/
     collins/index.html                  -- Collins dossier (R, incumbent)
     platner/index.html                  -- Platner dossier (D, frontrunner)
     costello/index.html                 -- Costello brief (D, longshot)
+geo/
+  us-states.svg                         -- Clickable US map SVG (50 states + DC)
+js/
+  us-map.js                             -- Map interactivity (click, hover, keyboard, touch)
 tools/
   generate_states.py                    -- Generates states/ pages from data files
+  update_races.py                       -- CLI to add races/candidates and regenerate
   data/states.json                      -- 50-state reference data (static)
   data/races.json                       -- Active research tracker (edit per new race)
 ```
@@ -42,32 +47,62 @@ tools/
 - `/races/{state}-{office}-{year}/{lastname}/` — Candidate dossier
 - Folder-based routing: each page is `index.html` inside its folder for clean URLs
 
-## Adding a New Candidate
+## Data Update Workflow (Default Method)
 
-1. Create folder: `races/me-senate-2026/newname/`
-2. Create `index.html` — copy an existing dossier, change content
-3. Must include: `<link rel="stylesheet" href="/css/dossier.css">`, breadcrumb nav, party class on header
-4. Add link in the race overview page (`races/me-senate-2026/index.html`)
-5. `git push` to deploy
+**This is the standard process for adding or modifying race data. Always use this workflow.**
 
-## Adding a New Race
-
-1. Create folder: `races/{state}-{office}-{year}/`
-2. Create `index.html` race overview (copy `me-senate-2026/index.html` as template)
-3. Create candidate subfolders with `index.html` each
-4. Add race to `tools/data/races.json` with state_abbr, office, candidates, URL
-5. Run `python tools/generate_states.py` to update state hub page and states index
-6. Optionally add a `.race-card` block to the landing page for featured races
-7. `git push` to deploy
-
-## Regenerating State Pages
+### Quick Commands
 
 ```bash
-python tools/generate_states.py
+# List all races
+python3 tools/update_races.py list
+
+# Add a new race (interactive prompts)
+python3 tools/update_races.py add-race
+
+# Add a candidate to an existing race
+python3 tools/update_races.py add-candidate me-senate-2026
+
+# Regenerate all pages after manual edits to races.json
+python3 tools/update_races.py regenerate
+```
+
+### Full Process: Adding a New Race
+
+1. Run `python3 tools/update_races.py add-race` — fills in races.json, regenerates map + state pages
+2. Create folder: `races/{race-id}/`
+3. Create `index.html` race overview (copy `me-senate-2026/index.html` as template)
+4. Create candidate subfolders with `index.html` each
+5. Optionally add a `.race-card` block to the landing page for featured races
+6. `git push` to deploy — the state lights up on the map automatically
+
+### Full Process: Adding a New Candidate
+
+1. Run `python3 tools/update_races.py add-candidate <race-id>` — updates races.json, regenerates pages
+2. Create folder: `races/{race-id}/{lastname}/`
+3. Create `index.html` dossier (copy existing dossier as template)
+4. Must include: `<link rel="stylesheet" href="/css/dossier.css">`, breadcrumb nav, party class on header
+5. Add link in the race overview page
+6. `git push` to deploy
+
+### Manual Edit Alternative
+
+Edit `tools/data/races.json` directly, then run:
+```bash
+python3 tools/generate_states.py
 ```
 
 Reads `tools/data/states.json` + `tools/data/races.json`, writes all `states/` pages + `sitemap.xml`.
 Re-run after editing `races.json`. Does NOT touch `index.html`, `races/*`, or `css/*`.
+
+## Interactive Map
+
+The `/states/` page displays an interactive SVG US map above the state grid.
+- States with races in `races.json` appear gold (clickable, navigate to state page)
+- States without data appear dark/inactive with "Research coming soon" tooltip
+- Map is generated inline by `generate_states.py` from `geo/us-states.svg`
+- `window.CTM_ACTIVE_STATES` is set automatically from races.json state_abbr values
+- Same inactive/active pattern applies to future state-level district/county maps (Tier 2)
 
 ## CSS
 
@@ -90,3 +125,100 @@ Only T0-T2 verified findings may be published. T3/T4 data, "RESEARCH NOTE" items
 - Data pipeline: `~/Local/Projects/github/clearthemud/` (private, ADO civic-tech)
 - Source dossiers: `~/Local/00-Claude/Clients/Clear_the_Mud_dot_org/Deliverables/dossiers/`
 - GitHub org: https://github.com/ClearTheMud
+
+<!-- gitnexus:start -->
+# GitNexus — Code Intelligence
+
+This project is indexed by GitNexus as **ctm-landing** (135 symbols, 143 relationships, 2 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+
+> If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
+
+## Always Do
+
+- **MUST run impact analysis before editing any symbol.** Before modifying a function, class, or method, run `gitnexus_impact({target: "symbolName", direction: "upstream"})` and report the blast radius (direct callers, affected processes, risk level) to the user.
+- **MUST run `gitnexus_detect_changes()` before committing** to verify your changes only affect expected symbols and execution flows.
+- **MUST warn the user** if impact analysis returns HIGH or CRITICAL risk before proceeding with edits.
+- When exploring unfamiliar code, use `gitnexus_query({query: "concept"})` to find execution flows instead of grepping. It returns process-grouped results ranked by relevance.
+- When you need full context on a specific symbol — callers, callees, which execution flows it participates in — use `gitnexus_context({name: "symbolName"})`.
+
+## When Debugging
+
+1. `gitnexus_query({query: "<error or symptom>"})` — find execution flows related to the issue
+2. `gitnexus_context({name: "<suspect function>"})` — see all callers, callees, and process participation
+3. `READ gitnexus://repo/ctm-landing/process/{processName}` — trace the full execution flow step by step
+4. For regressions: `gitnexus_detect_changes({scope: "compare", base_ref: "main"})` — see what your branch changed
+
+## When Refactoring
+
+- **Renaming**: MUST use `gitnexus_rename({symbol_name: "old", new_name: "new", dry_run: true})` first. Review the preview — graph edits are safe, text_search edits need manual review. Then run with `dry_run: false`.
+- **Extracting/Splitting**: MUST run `gitnexus_context({name: "target"})` to see all incoming/outgoing refs, then `gitnexus_impact({target: "target", direction: "upstream"})` to find all external callers before moving code.
+- After any refactor: run `gitnexus_detect_changes({scope: "all"})` to verify only expected files changed.
+
+## Never Do
+
+- NEVER edit a function, class, or method without first running `gitnexus_impact` on it.
+- NEVER ignore HIGH or CRITICAL risk warnings from impact analysis.
+- NEVER rename symbols with find-and-replace — use `gitnexus_rename` which understands the call graph.
+- NEVER commit changes without running `gitnexus_detect_changes()` to check affected scope.
+
+## Tools Quick Reference
+
+| Tool | When to use | Command |
+|------|-------------|---------|
+| `query` | Find code by concept | `gitnexus_query({query: "auth validation"})` |
+| `context` | 360-degree view of one symbol | `gitnexus_context({name: "validateUser"})` |
+| `impact` | Blast radius before editing | `gitnexus_impact({target: "X", direction: "upstream"})` |
+| `detect_changes` | Pre-commit scope check | `gitnexus_detect_changes({scope: "staged"})` |
+| `rename` | Safe multi-file rename | `gitnexus_rename({symbol_name: "old", new_name: "new", dry_run: true})` |
+| `cypher` | Custom graph queries | `gitnexus_cypher({query: "MATCH ..."})` |
+
+## Impact Risk Levels
+
+| Depth | Meaning | Action |
+|-------|---------|--------|
+| d=1 | WILL BREAK — direct callers/importers | MUST update these |
+| d=2 | LIKELY AFFECTED — indirect deps | Should test |
+| d=3 | MAY NEED TESTING — transitive | Test if critical path |
+
+## Resources
+
+| Resource | Use for |
+|----------|---------|
+| `gitnexus://repo/ctm-landing/context` | Codebase overview, check index freshness |
+| `gitnexus://repo/ctm-landing/clusters` | All functional areas |
+| `gitnexus://repo/ctm-landing/processes` | All execution flows |
+| `gitnexus://repo/ctm-landing/process/{name}` | Step-by-step execution trace |
+
+## Self-Check Before Finishing
+
+Before completing any code modification task, verify:
+1. `gitnexus_impact` was run for all modified symbols
+2. No HIGH/CRITICAL risk warnings were ignored
+3. `gitnexus_detect_changes()` confirms changes match expected scope
+4. All d=1 (WILL BREAK) dependents were updated
+
+## Keeping the Index Fresh
+
+After committing code changes, the GitNexus index becomes stale. Re-run analyze to update it:
+
+```bash
+npx gitnexus analyze
+```
+
+If the index previously included embeddings, preserve them by adding `--embeddings`:
+
+```bash
+npx gitnexus analyze --embeddings
+```
+
+To check whether embeddings exist, inspect `.gitnexus/meta.json` — the `stats.embeddings` field shows the count (0 means no embeddings). **Running analyze without `--embeddings` will delete any previously generated embeddings.**
+
+> Claude Code users: A PostToolUse hook handles this automatically after `git commit` and `git merge`.
+
+## CLI
+
+- Re-index: `npx gitnexus analyze`
+- Check freshness: `npx gitnexus status`
+- Generate docs: `npx gitnexus wiki`
+
+<!-- gitnexus:end -->
