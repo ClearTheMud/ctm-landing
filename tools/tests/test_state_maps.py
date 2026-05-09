@@ -174,6 +174,36 @@ class TestRacesJSON:
                 assert "party" in c, f"Candidate in {race['id']} missing party"
 
 
+class TestCandidatePages:
+    """Validate generated candidate dossier pages."""
+
+    @pytest.fixture
+    def jayapal_page(self):
+        path = REPO_ROOT / "races" / "wa-house-7-2026" / "jayapal" / "index.html"
+        assert path.exists(), "Jayapal dossier page must exist"
+        return path.read_text()
+
+    def test_no_unknown_in_expenditures(self, jayapal_page):
+        assert "Unknown" not in jayapal_page, "Expenditure rows should not contain 'Unknown'"
+
+    def test_expenditures_show_vendor_names(self, jayapal_page):
+        assert "SYMMETRY MEDIA" in jayapal_page or "MEDIA BUY" in jayapal_page, \
+            "Expenditure table should show actual vendor names or purposes"
+
+    def test_no_na_raised_text(self):
+        overview = (REPO_ROOT / "races" / "wa-house-7-2026" / "index.html").read_text()
+        assert "Raised: N/A" not in overview, "Should say 'Not reported' instead of 'N/A'"
+
+    def test_breadcrumb_links_to_washington(self, jayapal_page):
+        assert "/states/washington/" in jayapal_page
+
+    def test_has_campaign_finance_section(self, jayapal_page):
+        assert "Campaign Finance" in jayapal_page
+
+    def test_has_source_verification(self, jayapal_page):
+        assert "Source Verification" in jayapal_page
+
+
 class TestGeneratorDistrictSupport:
     """Validate generate_states.py supports district maps."""
 

@@ -84,7 +84,7 @@ def format_currency(amount):
         if m:
             return m.group(0).split('.')[0]
         return amount
-    return "N/A"
+    return "Not reported"
 
 
 def extract_amount_from_claim(claim_str):
@@ -142,17 +142,19 @@ def render_candidate_page(race, candidate, dossier, state_info):
     expenditures_html = ""
     expenditures = cf.get("expenditures", [])
     if expenditures:
+        sorted_exp = sorted(expenditures, key=lambda x: x.get("amount", 0), reverse=True)
         rows = []
-        for e in expenditures[:10]:
-            vendor = e.get("claim", "Unknown")
-            if isinstance(vendor, dict):
-                vendor = vendor.get("vendor", "Unknown")
-            rows.append(f"          <tr><td>{vendor}</td></tr>")
+        for e in sorted_exp[:10]:
+            vendor = e.get("recipient", {}).get("name", "")
+            purpose = e.get("purpose", "")
+            amount = format_currency(e.get("amount", 0))
+            label = f"{vendor} — {purpose}" if vendor and purpose else vendor or purpose or "Unitemized"
+            rows.append(f"          <tr><td>{label}</td><td>{amount}</td></tr>")
         expenditures_html = f"""
       <h3>Top Expenditures</h3>
       <div class="finding">
         <table>
-          <thead><tr><th>Vendor / Purpose</th></tr></thead>
+          <thead><tr><th>Vendor / Purpose</th><th>Amount</th></tr></thead>
           <tbody>
 {"".join(rows)}
           </tbody>
