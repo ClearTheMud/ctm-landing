@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
 <title>All States &mdash; Candidate Research by State | clearthemud.org</title>
 <meta name="description" content="Browse verified candidate intelligence organized by state. Federal, state, and local race coverage across all 50 states.">
 <meta property="og:title" content="All States &mdash; Candidate Research by State">
@@ -36,6 +37,7 @@
 
 <div class="page">
 
+  <p class="map-intro">Select a highlighted state to read verified candidate dossiers.</p>
   <div class="map-container">
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
      viewBox="174 100 959 593"
@@ -253,8 +255,8 @@
 
 </svg>
     <div class="map-legend">
-      <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--active"></span> Active research</span>
-      <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--inactive"></span> Coming soon</span>
+      <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--active"></span> Published dossiers</span>
+      <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--inactive"></span> Not yet covered</span>
     </div>
     <p class="map-fallback-link">Or <a href="#state-grid">browse the full list below</a></p>
   </div>
@@ -471,7 +473,7 @@
 
 <div class="classification-bar">TLP:GREEN &mdash; Approved for public sharing</div>
 
-<script>window.CTM_ACTIVE_STATES = ["ME"];</script>
+<script>window.CTM_STATE_DATA = {"ME":{"dossiers":3,"races":1}};</script>
 <script src="/js/us-map.js"></script>
 
 </body>
