@@ -69,6 +69,43 @@
       ]
     },
     {
+      "id": "mi-senate-2026",
+      "state_abbr": "MI",
+      "office": "US Senate",
+      "year": 2026,
+      "title": "2026 Michigan US Senate",
+      "status": "published",
+      "url": "/races/mi-senate-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Mike Rogers",
+          "party": "rep",
+          "role": "Frontrunner",
+          "url": "/races/mi-senate-2026/rogers/"
+        },
+        {
+          "name": "Haley Stevens",
+          "party": "dem",
+          "role": "Active",
+          "url": "/races/mi-senate-2026/stevens/"
+        },
+        {
+          "name": "Mallory McMorrow",
+          "party": "dem",
+          "role": "Active",
+          "url": "/races/mi-senate-2026/mcmorrow/"
+        },
+        {
+          "name": "Abdul El-Sayed",
+          "party": "dem",
+          "role": "Active",
+          "url": "/races/mi-senate-2026/el-sayed/"
+        }
+      ]
+    },
+    {
       "id": "wa-house-1-2026",
       "state_abbr": "WA",
       "office": "US House",
