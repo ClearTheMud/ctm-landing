@@ -219,17 +219,31 @@ def compute_bbox_svg(shapes, transform):
     return min_x, min_y, max_x, max_y
 
 
+def compute_bbox_from_transform(shapes, transform_fn):
+    min_x = min_y = float("inf")
+    max_x = max_y = float("-inf")
+    for shape in shapes:
+        for ring in shape["parts"]:
+            for lon, lat in ring:
+                px, py = transform_fn(lon, lat)
+                min_x = min(min_x, px)
+                min_y = min(min_y, py)
+                max_x = max(max_x, px)
+                max_y = max(max_y, py)
+    return min_x, min_y, max_x, max_y
+
+
 def make_transform(shapes, width=800, height=600, padding=20):
     min_x, min_y, max_x, max_y = compute_bbox_svg(shapes, project_albers)
     data_w = max_x - min_x
     data_h = max_y - min_y
     scale = min((width - 2 * padding) / data_w, (height - 2 * padding) / data_h)
     off_x = padding - min_x * scale + (width - 2 * padding - data_w * scale) / 2
-    off_y = padding - min_y * scale + (height - 2 * padding - data_h * scale) / 2
+    off_y = padding + max_y * scale + (height - 2 * padding - data_h * scale) / 2
 
     def transform(lon, lat):
         px, py = project_albers(lon, lat)
-        return px * scale + off_x, py * scale + off_y
+        return px * scale + off_x, -py * scale + off_y
 
     return transform
 
