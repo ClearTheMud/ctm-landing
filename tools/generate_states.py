@@ -79,6 +79,33 @@ def load_state_svg(state_abbr):
     return None
 
 
+def load_county_svg(state_abbr):
+    slug = state_abbr.lower()
+    svg_path = REPO_ROOT / "geo" / "states" / f"{slug}-counties.svg"
+    if svg_path.exists():
+        content = svg_path.read_text()
+        if content.startswith("<?xml"):
+            content = content[content.index("?>") + 2:].strip()
+        return content
+    return None
+
+
+def load_counties_data():
+    path = DATA_DIR / "counties.json"
+    if path.exists():
+        with open(path) as f:
+            return json.load(f)
+    return {}
+
+
+def load_places_data():
+    path = DATA_DIR / "places.json"
+    if path.exists():
+        with open(path) as f:
+            return json.load(f)
+    return {}
+
+
 def render_state_page(state, state_races, cycle):
     name = state["name"]
     abbr = state["abbr"]
@@ -148,6 +175,33 @@ def render_state_page(state, state_races, cycle):
         district_map_html = ""
         district_map_script = ""
 
+    # County map
+    counties_data = load_counties_data()
+    county_svg = load_county_svg(abbr)
+    state_counties = counties_data.get(abbr, [])
+    if county_svg and state_counties:
+        county_data_entries = []
+        for c in state_counties:
+            county_data_entries.append(f'"{c["slug"]}":{{"places":0}}')
+        county_data_js = "{" + ",".join(county_data_entries) + "}"
+        county_map_html = f"""
+    <div class="county-map-container">
+      {county_svg}
+      <div class="map-legend">
+        <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--active"></span> Active research</span>
+        <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--inactive"></span> Coming soon</span>
+      </div>
+    </div>
+"""
+        county_map_script = f"""
+<script>window.CTM_COUNTY_DATA = {county_data_js};</script>
+<script>window.CTM_STATE_PATH = '/states/{slug}/';</script>
+<script src="/js/county-map.js"></script>
+"""
+    else:
+        county_map_html = ""
+        county_map_script = ""
+
     senate_meta = f"Senate seat up in {cycle}" if senate_up else f"Next Senate election: {senate_year}"
 
     return f"""<!DOCTYPE html>
@@ -211,7 +265,7 @@ def render_state_page(state, state_races, cycle):
 
   <div class="section">
     <h2><span class="section-num">3</span> Local Races</h2>
-{render_no_research(f"Local race coverage is planned for future expansion.")}
+{county_map_html if county_map_html else render_no_research(f"Local race coverage is planned for future expansion.")}
   </div>
 
   <div class="footer">
@@ -222,6 +276,7 @@ def render_state_page(state, state_races, cycle):
 
 <div class="classification-bar">TLP:GREEN &mdash; Approved for public sharing</div>
 {district_map_script}
+{county_map_script}
 </body>
 </html>
 """
@@ -349,13 +404,125 @@ def render_states_index(states, races_by_state, cycle):
 """
 
 
-def render_sitemap(states, races_by_state):
+def load_place_svg(state_abbr, county_slug):
+    slug = state_abbr.lower()
+    svg_path = REPO_ROOT / "geo" / "states" / f"{slug}-{county_slug}-places.svg"
+    if svg_path.exists():
+        content = svg_path.read_text()
+        if content.startswith("<?xml"):
+            content = content[content.index("?>") + 2:].strip()
+        return content
+    return None
+
+
+def render_county_page(state, county, cycle):
+    name = state["name"]
+    abbr = state["abbr"]
+    slug = state["slug"]
+    county_name = county["name"]
+    county_slug = county["slug"]
+    county_fips = county["fips"]
+
+    place_svg = load_place_svg(abbr, county_slug)
+    places_data = load_places_data()
+    county_places = places_data.get(abbr, {}).get(county_slug, [])
+
+    if place_svg and county_places:
+        place_data_entries = []
+        for p in county_places:
+            place_data_entries.append(f'"{p["slug"]}":{{"races":0}}')
+        place_data_js = "{" + ",".join(place_data_entries) + "}"
+        place_map_html = f"""
+    <div class="place-map-container">
+      {place_svg}
+      <div class="map-legend">
+        <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--active"></span> Active research</span>
+        <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--inactive"></span> Coming soon</span>
+      </div>
+    </div>
+"""
+        place_map_script = f"""
+<script>window.CTM_PLACE_DATA = {place_data_js};</script>
+<script src="/js/place-map.js"></script>
+"""
+    else:
+        place_map_html = ""
+        place_map_script = ""
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
+<title>{county_name} County, {name} &mdash; Local Races | clearthemud.org</title>
+<meta name="description" content="Local race coverage for {county_name} County, {name}. Browse cities and towns with verified candidate intelligence.">
+<meta property="og:title" content="{county_name} County, {name} &mdash; Local Races">
+<meta property="og:description" content="Local race coverage for {county_name} County, {name}.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{SITE_URL}/states/{slug}/{county_slug}/">
+<link rel="canonical" href="{SITE_URL}/states/{slug}/{county_slug}/">
+<link rel="stylesheet" href="/css/dossier.css">
+</head>
+<body>
+
+<div class="classification-bar">TLP:GREEN &mdash; Approved for public sharing</div>
+
+<nav class="dossier-nav">
+  <a href="/">clearthemud.org</a>
+  <span class="nav-sep">/</span>
+  <a href="/states/">States</a>
+  <span class="nav-sep">/</span>
+  <a href="/states/{slug}/">{name}</a>
+  <span class="nav-sep">/</span>
+  <span class="nav-current">{county_name} County</span>
+</nav>
+
+<div class="header party-neutral">
+  <div class="page">
+    <h1>{county_name} County</h1>
+    <h2>Local Races &mdash; {cycle} Election Cycle</h2>
+    <div class="header-meta">
+      <span><span class="tlp-badge">TLP:GREEN</span></span>
+      <span><strong>State:</strong> {name}</span>
+      <span><strong>FIPS:</strong> {county_fips}</span>
+      <span><strong>Places:</strong> {len(county_places)}</span>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+
+{place_map_html}
+  <div class="section">
+    <h2><span class="section-num">1</span> Cities &amp; Towns</h2>
+    <div class="no-research">
+      <p>Local race research for {county_name} County is in progress. When candidate dossiers are available, they will appear here organized by municipality.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <strong>clearthemud.org</strong> &mdash; Verified public-record candidate intelligence
+  </div>
+
+</div>
+
+<div class="classification-bar">TLP:GREEN &mdash; Approved for public sharing</div>
+{place_map_script}
+</body>
+</html>
+"""
+
+
+def render_sitemap(states, races_by_state, counties_data):
     urls = [
         SITE_URL + "/",
         SITE_URL + "/states/",
     ]
     for state in sorted(states, key=lambda s: s["slug"]):
         urls.append(f'{SITE_URL}/states/{state["slug"]}/')
+        for county in counties_data.get(state["abbr"], []):
+            urls.append(f'{SITE_URL}/states/{state["slug"]}/{county["slug"]}/')
     for race_list in races_by_state.values():
         for race in race_list:
             urls.append(SITE_URL + race["url"])
@@ -372,6 +539,7 @@ def render_sitemap(states, races_by_state):
 
 def main():
     states, races_by_state, cycle = load_data()
+    counties_data = load_counties_data()
 
     STATES_DIR.mkdir(exist_ok=True)
 
@@ -379,20 +547,31 @@ def main():
     (STATES_DIR / "index.html").write_text(index_html)
     print("  wrote states/index.html")
 
+    county_pages = 0
     for state in states:
         slug = state["slug"]
+        abbr = state["abbr"]
         state_dir = STATES_DIR / slug
         state_dir.mkdir(exist_ok=True)
-        sr = races_by_state.get(state["abbr"], [])
+        sr = races_by_state.get(abbr, [])
         page_html = render_state_page(state, sr, cycle)
         (state_dir / "index.html").write_text(page_html)
         print(f"  wrote states/{slug}/index.html")
 
-    sitemap = render_sitemap(states, races_by_state)
+        for county in counties_data.get(abbr, []):
+            county_dir = state_dir / county["slug"]
+            county_dir.mkdir(exist_ok=True)
+            county_html = render_county_page(state, county, cycle)
+            (county_dir / "index.html").write_text(county_html)
+            county_pages += 1
+        if counties_data.get(abbr):
+            print(f"    + {len(counties_data[abbr])} county pages")
+
+    sitemap = render_sitemap(states, races_by_state, counties_data)
     (REPO_ROOT / "sitemap.xml").write_text(sitemap)
     print("  wrote sitemap.xml")
 
-    print(f"\nDone: {len(states)} state pages + index + sitemap")
+    print(f"\nDone: {len(states)} state pages + {county_pages} county pages + index + sitemap")
 
 
 if __name__ == "__main__":
