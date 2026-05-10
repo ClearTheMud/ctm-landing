@@ -3865,7 +3865,7 @@
         {
           "name": "Veronica Rodriguez",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "rodriguez",
           "status": "In Primary",
           "url": "/races/wa-adams-assessor-2026/rodriguez/"
@@ -3925,7 +3925,7 @@
         {
           "name": "Catherine R. Sloan",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "sloan",
           "status": "In Primary",
           "url": "/races/wa-adams-clerk-2026/sloan/"
@@ -3955,7 +3955,7 @@
         {
           "name": "Miguel A.\"Mike\" Garza",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "garza",
           "status": "In Primary",
           "url": "/races/wa-adams-commissioner-district-3-2026/garza/"
@@ -4021,7 +4021,7 @@
         {
           "name": "Randy J. Flyckt",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "flyckt",
           "status": "In Primary",
           "url": "/races/wa-adams-prosecutor-2026/flyckt/"
@@ -4051,7 +4051,7 @@
         {
           "name": "Dale J. Wagner",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "wagner",
           "status": "In Primary",
           "url": "/races/wa-adams-sheriff-2026/wagner/"
@@ -4081,7 +4081,7 @@
         {
           "name": "Kayla Meise",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "meise",
           "status": "In Primary",
           "url": "/races/wa-adams-treasurer-2026/meise/"
@@ -4125,7 +4125,7 @@
         {
           "name": "Jenny L. Rynearson",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "rynearson",
           "status": "In Primary",
           "url": "/races/wa-asotin-county-assessor-2026/rynearson/"
@@ -4147,7 +4147,7 @@
         {
           "name": "Darla McKay",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "mckay",
           "status": "In Primary",
           "url": "/races/wa-asotin-county-auditor-2026/mckay/"
@@ -4243,7 +4243,7 @@
         {
           "name": "Holly Steiner",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "steiner",
           "status": "In Primary",
           "url": "/races/wa-asotin-county-treasurer-2026/steiner/"
@@ -4597,7 +4597,7 @@
         {
           "name": "Wes Cornelius",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "cornelius",
           "status": "In Primary",
           "url": "/races/wa-chelan-assessor-2026/cornelius/"
@@ -4619,7 +4619,7 @@
         {
           "name": "Brandt Cappell",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "cappell",
           "status": "In Primary",
           "url": "/races/wa-chelan-auditor-2026/cappell/"
@@ -4703,7 +4703,7 @@
         {
           "name": "Shon D. Smith",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "smith",
           "status": "In Primary",
           "url": "/races/wa-chelan-commissioner-district-2-2026/smith/"
@@ -4733,7 +4733,7 @@
         {
           "name": "Earl J. Crowe",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "crowe",
           "status": "In Primary",
           "url": "/races/wa-chelan-coroner-2026/crowe/"
@@ -4755,7 +4755,7 @@
         {
           "name": "Jon Volyn",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "volyn",
           "status": "Advanced to General",
           "url": "/races/wa-chelan-district-court-judge-position-1-2026/volyn/"
@@ -4777,7 +4777,7 @@
         {
           "name": "Allen F. Blackmon",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "blackmon",
           "status": "Advanced to General",
           "url": "/races/wa-chelan-district-court-judge-position-2-2026/blackmon/"
@@ -4829,7 +4829,7 @@
         {
           "name": "Mike Morrison",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "morrison",
           "status": "In Primary",
           "url": "/races/wa-chelan-sheriff-2026/morrison/"
@@ -4941,7 +4941,7 @@
         {
           "name": "Mike French",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "french",
           "status": "In Primary",
           "url": "/races/wa-clallam-commissioner-district-3-2026/french/"
@@ -4993,7 +4993,7 @@
         {
           "name": "Mark Nichols",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "nichols",
           "status": "Advanced to General",
           "url": "/races/wa-clallam-prosecuting-attorney-2026/nichols/"
@@ -5015,7 +5015,7 @@
         {
           "name": "Brian King",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "king",
           "status": "Advanced to General",
           "url": "/races/wa-clallam-sheriff-2026/king/"
@@ -5037,7 +5037,7 @@
         {
           "name": "Jennifer L White",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "white",
           "status": "Advanced to General",
           "url": "/races/wa-clallam-treasurer-2026/white/"
@@ -5239,7 +5239,7 @@
         {
           "name": "Tammy Groom Ketterman",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "ketterman",
           "status": "In Primary",
           "url": "/races/wa-columbia-columbia-county-assessor-2026/ketterman/"
@@ -5261,7 +5261,7 @@
         {
           "name": "Will Hutchens",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "hutchens",
           "status": "In Primary",
           "url": "/races/wa-columbia-columbia-county-auditor-2026/hutchens/"
@@ -5327,7 +5327,7 @@
         {
           "name": "Joe Helm",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "helm",
           "status": "In Primary",
           "url": "/races/wa-columbia-columbia-county-sheriff-2026/helm/"
@@ -5393,7 +5393,7 @@
         {
           "name": "Emily Wilcox",
           "party": "ind",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "wilcox",
           "status": "In Primary",
           "url": "/races/wa-cowlitz-assessor-2026/wilcox/"
@@ -5415,7 +5415,7 @@
         {
           "name": "Carolyn Fundingsland",
           "party": "ind",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "fundingsland",
           "status": "In Primary",
           "url": "/races/wa-cowlitz-auditor-2026/fundingsland/"
@@ -5437,7 +5437,7 @@
         {
           "name": "Staci Myklebust",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "myklebust",
           "status": "In Primary",
           "url": "/races/wa-cowlitz-clerk-2026/myklebust/"
@@ -5467,7 +5467,7 @@
         {
           "name": "Richard Dahl",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "dahl",
           "status": "In Primary",
           "url": "/races/wa-cowlitz-commissioner-district-3-2026/dahl/"
@@ -5497,7 +5497,7 @@
         {
           "name": "Dana M. Tucker",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "tucker",
           "status": "In Primary",
           "url": "/races/wa-cowlitz-coroner-2026/tucker/"
@@ -5519,7 +5519,7 @@
         {
           "name": "Ryan P. Jurvakainen",
           "party": "ind",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "jurvakainen",
           "status": "In Primary",
           "url": "/races/wa-cowlitz-prosecuting-attorney-2026/jurvakainen/"
@@ -5585,7 +5585,7 @@
         {
           "name": "Jim Ruud",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "ruud",
           "status": "In Primary",
           "url": "/races/wa-douglas-assessor-2026/ruud/"
@@ -5607,7 +5607,7 @@
         {
           "name": "Thad Duvall",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "duvall",
           "status": "In Primary",
           "url": "/races/wa-douglas-auditor-2026/duvall/"
@@ -5659,7 +5659,7 @@
         {
           "name": "MARC S. STRAUB",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "straub",
           "status": "In Primary",
           "url": "/races/wa-douglas-commissioner-district-3-2026/straub/"
@@ -5733,7 +5733,7 @@
         {
           "name": "Sean P. Lewis",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "lewis",
           "status": "In Primary",
           "url": "/races/wa-douglas-prosecuting-attorney-2026/lewis/"
@@ -5785,7 +5785,7 @@
         {
           "name": "Felisha L. Rosales",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "rosales",
           "status": "In Primary",
           "url": "/races/wa-douglas-treasurer-2026/rosales/"
@@ -5823,7 +5823,7 @@
         {
           "name": "Robert (Bob) Dean",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "dean",
           "status": "In Primary",
           "url": "/races/wa-ferry-commissioner-district-2-2026/dean/"
@@ -5853,7 +5853,7 @@
         {
           "name": "RACHEL D. SIRACUSE",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "siracuse",
           "status": "In Primary",
           "url": "/races/wa-ferry-county-assessor-2026/siracuse/"
@@ -5875,7 +5875,7 @@
         {
           "name": "Dianna L. Galvan",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "galvan",
           "status": "In Primary",
           "url": "/races/wa-ferry-county-auditor-2026/galvan/"
@@ -5897,7 +5897,7 @@
         {
           "name": "Melanie Breezee",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "breezee",
           "status": "In Primary",
           "url": "/races/wa-ferry-county-clerk-2026/breezee/"
@@ -5935,7 +5935,7 @@
         {
           "name": "Ray Maycumber",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "maycumber",
           "status": "In Primary",
           "url": "/races/wa-ferry-county-sheriff-2026/maycumber/"
@@ -5957,7 +5957,7 @@
         {
           "name": "Shannon Jensen",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "jensen",
           "status": "In Primary",
           "url": "/races/wa-ferry-county-treasurer-2026/jensen/"
@@ -6031,7 +6031,7 @@
         {
           "name": "John A Rosenau",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "rosenau",
           "status": "In Primary",
           "url": "/races/wa-franklin-assessor-2026/rosenau/"
@@ -6053,7 +6053,7 @@
         {
           "name": "Matt Beaton",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "beaton",
           "status": "In Primary",
           "url": "/races/wa-franklin-auditor-2026/beaton/"
@@ -6105,7 +6105,7 @@
         {
           "name": "Clint Didier",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "didier",
           "status": "In Primary",
           "url": "/races/wa-franklin-commissioner-district-3-2026/didier/"
@@ -6149,7 +6149,7 @@
         {
           "name": "Trinity Orosco",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "orosco",
           "status": "Advanced to General",
           "url": "/races/wa-franklin-district-court-judge-2026/orosco/"
@@ -6201,7 +6201,7 @@
         {
           "name": "Shawn P. Sant",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "sant",
           "status": "In Primary",
           "url": "/races/wa-franklin-prosecuting-attorney-2026/sant/"
@@ -6299,7 +6299,7 @@
         {
           "name": "Justin E. Dixon",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "dixon",
           "status": "In Primary",
           "url": "/races/wa-garfield-commissioner-district-3-2026/dixon/"
@@ -6321,7 +6321,7 @@
         {
           "name": "Brian Bartels",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "bartels",
           "status": "In Primary",
           "url": "/races/wa-garfield-county-assessor-2026/bartels/"
@@ -6343,7 +6343,7 @@
         {
           "name": "McKenzie Lueck",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "lueck",
           "status": "In Primary",
           "url": "/races/wa-garfield-county-auditor-2026/lueck/"
@@ -6365,7 +6365,7 @@
         {
           "name": "Marie Gormsen",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "gormsen",
           "status": "In Primary",
           "url": "/races/wa-garfield-county-clerk-2026/gormsen/"
@@ -6387,7 +6387,7 @@
         {
           "name": "Matt L. Newberg",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "newberg",
           "status": "In Primary",
           "url": "/races/wa-garfield-county-prosecutor-2026/newberg/"
@@ -6439,7 +6439,7 @@
         {
           "name": "Tereasa Summers",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "summers",
           "status": "In Primary",
           "url": "/races/wa-garfield-county-treasurer-2026/summers/"
@@ -6589,7 +6589,7 @@
         {
           "name": "Kimberly A. Allen",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "allen",
           "status": "In Primary",
           "url": "/races/wa-grant-county-clerk-2026/allen/"
@@ -6611,7 +6611,7 @@
         {
           "name": "Craig Morrison",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "morrison",
           "status": "In Primary",
           "url": "/races/wa-grant-county-coroner-2026/morrison/"
@@ -6633,7 +6633,7 @@
         {
           "name": "Brandon K. Guernsey",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "guernsey",
           "status": "In Primary",
           "url": "/races/wa-grant-county-prosecutor-2026/guernsey/"
@@ -6655,7 +6655,7 @@
         {
           "name": "Joey Kriete",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "kriete",
           "status": "In Primary",
           "url": "/races/wa-grant-county-sheriff-2026/kriete/"
@@ -6789,7 +6789,7 @@
         {
           "name": "Dan Lindgren",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "lindgren",
           "status": "In Primary",
           "url": "/races/wa-grays-harbor-assessor-2026/lindgren/"
@@ -6849,7 +6849,7 @@
         {
           "name": "Kym Foster",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "foster",
           "status": "In Primary",
           "url": "/races/wa-grays-harbor-clerk-2026/foster/"
@@ -6909,7 +6909,7 @@
         {
           "name": "George J Kelley",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "kelley",
           "status": "In Primary",
           "url": "/races/wa-grays-harbor-coroner-2026/kelley/"
@@ -6931,7 +6931,7 @@
         {
           "name": "Andrea Vingo",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "vingo",
           "status": "Advanced to General",
           "url": "/races/wa-grays-harbor-district-court-1-2026/vingo/"
@@ -6969,7 +6969,7 @@
         {
           "name": "Megan Valentine",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "valentine",
           "status": "Advanced to General",
           "url": "/races/wa-grays-harbor-district-court-2-2026/valentine/"
@@ -7029,7 +7029,7 @@
         {
           "name": "Darrin E. Wallace",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "wallace",
           "status": "In Primary",
           "url": "/races/wa-grays-harbor-sheriff-2026/wallace/"
@@ -7059,7 +7059,7 @@
         {
           "name": "Shawn D. Hill",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "hill",
           "status": "In Primary",
           "url": "/races/wa-grays-harbor-treasurer-2026/hill/"
@@ -7127,7 +7127,7 @@
         {
           "name": "Kelly Todd Mauck",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "mauck",
           "status": "In Primary",
           "url": "/races/wa-island-county-assessor-2026/mauck/"
@@ -7165,7 +7165,7 @@
         {
           "name": "Sheilah Crider",
           "party": "ind",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "crider",
           "status": "In Primary",
           "url": "/races/wa-island-county-auditor-2026/crider/"
@@ -7241,7 +7241,7 @@
         {
           "name": "Shantel Porter",
           "party": "ind",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "porter",
           "status": "In Primary",
           "url": "/races/wa-island-county-coroner-2026/porter/"
@@ -7263,7 +7263,7 @@
         {
           "name": "Greg Banks",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "banks",
           "status": "In Primary",
           "url": "/races/wa-island-county-prosecutor-2026/banks/"
@@ -7293,7 +7293,7 @@
         {
           "name": "Rick Felici",
           "party": "ind",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "felici",
           "status": "In Primary",
           "url": "/races/wa-island-county-sheriff-2026/felici/"
@@ -7315,7 +7315,7 @@
         {
           "name": "Tony Lam",
           "party": "ind",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "lam",
           "status": "In Primary",
           "url": "/races/wa-island-county-treasurer-2026/lam/"
@@ -7337,7 +7337,7 @@
         {
           "name": "Ronald A. Costeck",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "costeck",
           "status": "Advanced to General",
           "url": "/races/wa-island-district-court-judge-2026/costeck/"
@@ -7403,7 +7403,7 @@
         {
           "name": "Amanda Hamilton",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "hamilton",
           "status": "In Primary",
           "url": "/races/wa-jefferson-clerk-2026/hamilton/"
@@ -7471,7 +7471,7 @@
         {
           "name": "James Kennedy",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "kennedy",
           "status": "In Primary",
           "url": "/races/wa-jefferson-prosecutor-2026/kennedy/"
@@ -7493,7 +7493,7 @@
         {
           "name": "Andy Pernsteiner",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "pernsteiner",
           "status": "In Primary",
           "url": "/races/wa-jefferson-sheriff-2026/pernsteiner/"
@@ -7515,7 +7515,7 @@
         {
           "name": "Stacie Prada",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "prada",
           "status": "In Primary",
           "url": "/races/wa-jefferson-treasurer-2026/prada/"
@@ -7867,7 +7867,7 @@
         {
           "name": "Mike Hougardy",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "hougardy",
           "status": "In Primary",
           "url": "/races/wa-kittitas-assessor-2026/hougardy/"
@@ -7889,7 +7889,7 @@
         {
           "name": "Bryan Elliott",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "elliott",
           "status": "In Primary",
           "url": "/races/wa-kittitas-auditor-2026/elliott/"
@@ -7933,7 +7933,7 @@
         {
           "name": "Brett Wachsmith",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "wachsmith",
           "status": "In Primary",
           "url": "/races/wa-kittitas-commissioner-district-3-2026/wachsmith/"
@@ -8053,7 +8053,7 @@
         {
           "name": "Amy Cziske",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "cziske",
           "status": "In Primary",
           "url": "/races/wa-kittitas-treasurer-2026/cziske/"
@@ -8083,7 +8083,7 @@
         {
           "name": "Lori Zoller",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "zoller",
           "status": "In Primary",
           "url": "/races/wa-klickitat-commissioner-district-2-2026/zoller/"
@@ -8113,7 +8113,7 @@
         {
           "name": "Billi Jean Bare",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "bare",
           "status": "In Primary",
           "url": "/races/wa-klickitat-county-assessor-2026/bare/"
@@ -8135,7 +8135,7 @@
         {
           "name": "Heather Jobe",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "jobe",
           "status": "In Primary",
           "url": "/races/wa-klickitat-klickitat-county-auditor-2026/jobe/"
@@ -8157,7 +8157,7 @@
         {
           "name": "Renea Campbell",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "campbell",
           "status": "In Primary",
           "url": "/races/wa-klickitat-klickitat-county-clerk-2026/campbell/"
@@ -8179,7 +8179,7 @@
         {
           "name": "Rebecca Cranston",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "cranston",
           "status": "In Primary",
           "url": "/races/wa-klickitat-klickitat-county-prosecuting-attorney-2026/cranston/"
@@ -8239,7 +8239,7 @@
         {
           "name": "Greg Gallagher",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "gallagher",
           "status": "In Primary",
           "url": "/races/wa-klickitat-klickitat-county-treasurer-2026/gallagher/"
@@ -8261,7 +8261,7 @@
         {
           "name": "Ross W. Nielson",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "nielson",
           "status": "In Primary",
           "url": "/races/wa-lewis-assessor-2026/nielson/"
@@ -8321,7 +8321,7 @@
         {
           "name": "Scott Tinney",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "tinney",
           "status": "In Primary",
           "url": "/races/wa-lewis-clerk-2026/tinney/"
@@ -8367,7 +8367,7 @@
         {
           "name": "Scott Brummer",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "brummer",
           "status": "In Primary",
           "url": "/races/wa-lewis-commissioner-district-3-2026/brummer/"
@@ -8413,7 +8413,7 @@
         {
           "name": "Warren McLeod",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "mcleod",
           "status": "In Primary",
           "url": "/races/wa-lewis-coroner-2026/mcleod/"
@@ -8435,7 +8435,7 @@
         {
           "name": "Jonathan L. Meyer",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "meyer",
           "status": "In Primary",
           "url": "/races/wa-lewis-prosecuting-attorney-2026/meyer/"
@@ -8503,7 +8503,7 @@
         {
           "name": "Arny Davis",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "davis",
           "status": "In Primary",
           "url": "/races/wa-lewis-treasurer-2026/davis/"
@@ -8525,7 +8525,7 @@
         {
           "name": "J Scott Liebing",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "liebing",
           "status": "In Primary",
           "url": "/races/wa-lincoln-assessor-2026/liebing/"
@@ -8547,7 +8547,7 @@
         {
           "name": "Chandra L Schumacher",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "schumacher",
           "status": "In Primary",
           "url": "/races/wa-lincoln-auditor-2026/schumacher/"
@@ -8569,7 +8569,7 @@
         {
           "name": "Traci Gants",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "gants",
           "status": "In Primary",
           "url": "/races/wa-lincoln-clerk-2026/gants/"
@@ -8591,7 +8591,7 @@
         {
           "name": "Rob Coffman",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "coffman",
           "status": "In Primary",
           "url": "/races/wa-lincoln-commissioner-district-3-2026/coffman/"
@@ -8613,7 +8613,7 @@
         {
           "name": "Dan B. Johnson",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "johnson",
           "status": "Advanced to General",
           "url": "/races/wa-lincoln-district-court-judge-2026/johnson/"
@@ -8635,7 +8635,7 @@
         {
           "name": "Ty Albertson",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "albertson",
           "status": "In Primary",
           "url": "/races/wa-lincoln-prosecuting-attorney-2026/albertson/"
@@ -8657,7 +8657,7 @@
         {
           "name": "Gabe Gants",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "gants",
           "status": "In Primary",
           "url": "/races/wa-lincoln-sheriff-2026/gants/"
@@ -8679,7 +8679,7 @@
         {
           "name": "Emily Lybbert-Hansen",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "lybbert-hansen",
           "status": "In Primary",
           "url": "/races/wa-lincoln-treasurer-2026/lybbert-hansen/"
@@ -8739,7 +8739,7 @@
         {
           "name": "Charles G. Rhodes",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "rhodes",
           "status": "In Primary",
           "url": "/races/wa-mason-clerk-2026/rhodes/"
@@ -8839,7 +8839,7 @@
         {
           "name": "Jaime Taylor",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "taylor",
           "status": "In Primary",
           "url": "/races/wa-mason-coroner-2026/taylor/"
@@ -8861,7 +8861,7 @@
         {
           "name": "George Alan Steele",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "steele",
           "status": "Advanced to General",
           "url": "/races/wa-mason-district-court-judge-2026/steele/"
@@ -8883,7 +8883,7 @@
         {
           "name": "Michael Dorcy",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "dorcy",
           "status": "In Primary",
           "url": "/races/wa-mason-prosecutor-2026/dorcy/"
@@ -8905,7 +8905,7 @@
         {
           "name": "Ryan Spurling",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "spurling",
           "status": "In Primary",
           "url": "/races/wa-mason-sheriff-2026/spurling/"
@@ -8935,7 +8935,7 @@
         {
           "name": "Brittany A Pearson",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "pearson",
           "status": "In Primary",
           "url": "/races/wa-mason-treasurer-2026/pearson/"
@@ -8957,7 +8957,7 @@
         {
           "name": "Larry D Gilman",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "gilman",
           "status": "In Primary",
           "url": "/races/wa-okanogan-assessor-2026/gilman/"
@@ -8979,7 +8979,7 @@
         {
           "name": "Cari L Hall",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "hall",
           "status": "In Primary",
           "url": "/races/wa-okanogan-auditor-2026/hall/"
@@ -9001,7 +9001,7 @@
         {
           "name": "Susan Speiker",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "speiker",
           "status": "In Primary",
           "url": "/races/wa-okanogan-clerk-2026/speiker/"
@@ -9031,7 +9031,7 @@
         {
           "name": "Jon R Neal",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "neal",
           "status": "In Primary",
           "url": "/races/wa-okanogan-commissioner-district-3-2026/neal/"
@@ -9083,7 +9083,7 @@
         {
           "name": "Albert Lin",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "lin",
           "status": "In Primary",
           "url": "/races/wa-okanogan-prosecuting-attorney-2026/lin/"
@@ -9135,7 +9135,7 @@
         {
           "name": "Pam Johnson",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "johnson",
           "status": "In Primary",
           "url": "/races/wa-okanogan-treasurer-2026/johnson/"
@@ -9181,7 +9181,7 @@
         {
           "name": "Jerry Doyle",
           "party": "ind",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "doyle",
           "status": "In Primary",
           "url": "/races/wa-pacific-commissioner-district-03-2026/doyle/"
@@ -9211,7 +9211,7 @@
         {
           "name": "Bruce Walker",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "walker",
           "status": "In Primary",
           "url": "/races/wa-pacific-county-assessor-2026/walker/"
@@ -9249,7 +9249,7 @@
         {
           "name": "Nicole Deskins",
           "party": "ind",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "deskins",
           "status": "In Primary",
           "url": "/races/wa-pacific-county-auditor-2026/deskins/"
@@ -9271,7 +9271,7 @@
         {
           "name": "Emma Rose",
           "party": "ind",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "rose",
           "status": "In Primary",
           "url": "/races/wa-pacific-county-clerk-2026/rose/"
@@ -9317,7 +9317,7 @@
         {
           "name": "Daniel C. Garcia",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "garcia",
           "status": "In Primary",
           "url": "/races/wa-pacific-county-sheriff-2026/garcia/"
@@ -9391,7 +9391,7 @@
         {
           "name": "Robert Rosencrantz",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "rosencrantz",
           "status": "In Primary",
           "url": "/races/wa-pend-oreille-commissioner-district-2-2026/rosencrantz/"
@@ -9443,7 +9443,7 @@
         {
           "name": "Marianne Nichols",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "nichols",
           "status": "In Primary",
           "url": "/races/wa-pend-oreille-county-auditor-2026/nichols/"
@@ -9465,7 +9465,7 @@
         {
           "name": "Tammie Ownbey",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "ownbey",
           "status": "In Primary",
           "url": "/races/wa-pend-oreille-county-clerk-2026/ownbey/"
@@ -9509,7 +9509,7 @@
         {
           "name": "Glenn Blakeslee",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "blakeslee",
           "status": "In Primary",
           "url": "/races/wa-pend-oreille-county-sheriff-2026/blakeslee/"
@@ -9531,7 +9531,7 @@
         {
           "name": "Nicole Dice",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "dice",
           "status": "In Primary",
           "url": "/races/wa-pend-oreille-county-treasurer-2026/dice/"
@@ -9553,7 +9553,7 @@
         {
           "name": "Robin R. McCroskey",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "mccroskey",
           "status": "Advanced to General",
           "url": "/races/wa-pend-oreille-district-court-judge-2026/mccroskey/"
@@ -9635,7 +9635,7 @@
         {
           "name": "John Kulseth",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "kulseth",
           "status": "Advanced to General",
           "url": "/races/wa-san-juan-assessor-2026/kulseth/"
@@ -9665,7 +9665,7 @@
         {
           "name": "Natasha K Warmenhoven",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "warmenhoven",
           "status": "Advanced to General",
           "url": "/races/wa-san-juan-auditor-2026/warmenhoven/"
@@ -9687,7 +9687,7 @@
         {
           "name": "Lisa Henderson",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "henderson",
           "status": "Advanced to General",
           "url": "/races/wa-san-juan-clerk-2026/henderson/"
@@ -9747,7 +9747,7 @@
         {
           "name": "Carolyn Jewett-Platts",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "jewett-platts",
           "status": "Advanced to General",
           "url": "/races/wa-san-juan-district-court-judge-2026/jewett-platts/"
@@ -9769,7 +9769,7 @@
         {
           "name": "Amy S. Vira",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "vira",
           "status": "In Primary",
           "url": "/races/wa-san-juan-prosecuting-attorney-2026/vira/"
@@ -9813,7 +9813,7 @@
         {
           "name": "Rhonda Pederson",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "pederson",
           "status": "Advanced to General",
           "url": "/races/wa-san-juan-treasurer-2026/pederson/"
@@ -9835,7 +9835,7 @@
         {
           "name": "Danny Hagen",
           "party": "ind",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "hagen",
           "status": "In Primary",
           "url": "/races/wa-skagit-assessor-2026/hagen/"
@@ -9887,7 +9887,7 @@
         {
           "name": "Melissa Beaton",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "beaton",
           "status": "In Primary",
           "url": "/races/wa-skagit-clerk-2026/beaton/"
@@ -9909,7 +9909,7 @@
         {
           "name": "Joe Burns",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "burns",
           "status": "In Primary",
           "url": "/races/wa-skagit-commissioner-district-3-2026/burns/"
@@ -9991,7 +9991,7 @@
         {
           "name": "Paul W Nielsen",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "nielsen",
           "status": "Advanced to General",
           "url": "/races/wa-skagit-district-court-judge-position-2-2026/nielsen/"
@@ -10057,7 +10057,7 @@
         {
           "name": "Jackie Brunson",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "brunson",
           "status": "In Primary",
           "url": "/races/wa-skagit-treasurer-2026/brunson/"
@@ -10087,7 +10087,7 @@
         {
           "name": "Gabriel P Spencer",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "spencer",
           "status": "In Primary",
           "url": "/races/wa-skamania-assessor-2026/spencer/"
@@ -10109,7 +10109,7 @@
         {
           "name": "Robert J Waymire",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "waymire",
           "status": "In Primary",
           "url": "/races/wa-skamania-auditor-2026/waymire/"
@@ -10131,7 +10131,7 @@
         {
           "name": "Grace D. Cross",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "cross",
           "status": "In Primary",
           "url": "/races/wa-skamania-clerk-2026/cross/"
@@ -10169,7 +10169,7 @@
         {
           "name": "Asa Leckie",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "leckie",
           "status": "In Primary",
           "url": "/races/wa-skamania-commissioner-district-3-2026/leckie/"
@@ -10191,7 +10191,7 @@
         {
           "name": "Christopher Robert Lanz",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "lanz",
           "status": "Advanced to General",
           "url": "/races/wa-skamania-district-court-judge-2026/lanz/"
@@ -10213,7 +10213,7 @@
         {
           "name": "Adam N. Kick",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "kick",
           "status": "In Primary",
           "url": "/races/wa-skamania-prosecuting-attorney-2026/kick/"
@@ -10235,7 +10235,7 @@
         {
           "name": "Summer Scheyer",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "scheyer",
           "status": "In Primary",
           "url": "/races/wa-skamania-sheriff-2026/scheyer/"
@@ -10723,7 +10723,7 @@
         {
           "name": "Rick Johnson",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "johnson",
           "status": "In Primary",
           "url": "/races/wa-stevens-assessor-2026/johnson/"
@@ -10745,7 +10745,7 @@
         {
           "name": "Lori Larsen",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "larsen",
           "status": "In Primary",
           "url": "/races/wa-stevens-auditor-2026/larsen/"
@@ -10775,7 +10775,7 @@
         {
           "name": "Michelle Enright",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "enright",
           "status": "In Primary",
           "url": "/races/wa-stevens-clerk-2026/enright/"
@@ -10797,7 +10797,7 @@
         {
           "name": "Mark Burrows",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "burrows",
           "status": "In Primary",
           "url": "/races/wa-stevens-commissioner-district-2-2026/burrows/"
@@ -10901,7 +10901,7 @@
         {
           "name": "Brad A. Manke",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "manke",
           "status": "In Primary",
           "url": "/races/wa-stevens-sheriff-2026/manke/"
@@ -11257,7 +11257,7 @@
         {
           "name": "Mark D. Letham",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "letham",
           "status": "In Primary",
           "url": "/races/wa-wahkiakum-commissioner-district-3-2026/letham/"
@@ -11279,7 +11279,7 @@
         {
           "name": "Drew Jenkins",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "jenkins",
           "status": "In Primary",
           "url": "/races/wa-wahkiakum-county-assessor-2026/jenkins/"
@@ -11309,7 +11309,7 @@
         {
           "name": "Nicci Bergseng",
           "party": "ind",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "bergseng",
           "status": "In Primary",
           "url": "/races/wa-wahkiakum-county-auditor-2026/bergseng/"
@@ -11331,7 +11331,7 @@
         {
           "name": "Jess Reddon",
           "party": "ind",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "reddon",
           "status": "In Primary",
           "url": "/races/wa-wahkiakum-county-clerk-2026/reddon/"
@@ -11353,7 +11353,7 @@
         {
           "name": "John Mason",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "mason",
           "status": "In Primary",
           "url": "/races/wa-wahkiakum-county-sheriff-2026/mason/"
@@ -11397,7 +11397,7 @@
         {
           "name": "Heidi Heywood",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "heywood",
           "status": "Advanced to General",
           "url": "/races/wa-wahkiakum-district-court-judge-2026/heywood/"
@@ -11419,7 +11419,7 @@
         {
           "name": "Dan Bigelow",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "bigelow",
           "status": "In Primary",
           "url": "/races/wa-wahkiakum-prosecuting-attorney-2026/bigelow/"
@@ -11441,7 +11441,7 @@
         {
           "name": "Byron Burres",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "burres",
           "status": "In Primary",
           "url": "/races/wa-walla-walla-assessor-2026/burres/"
@@ -11479,7 +11479,7 @@
         {
           "name": "Sheryl R. Park",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "park",
           "status": "In Primary",
           "url": "/races/wa-walla-walla-auditor-2026/park/"
@@ -11539,7 +11539,7 @@
         {
           "name": "Gunner Fulmer",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "fulmer",
           "status": "In Primary",
           "url": "/races/wa-walla-walla-commissioner-district-3-2026/fulmer/"
@@ -11577,7 +11577,7 @@
         {
           "name": "Richard Greenwood",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "greenwood",
           "status": "In Primary",
           "url": "/races/wa-walla-walla-coroner-2026/greenwood/"
@@ -11651,7 +11651,7 @@
         {
           "name": "Gabriel Acosta",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "acosta",
           "status": "In Primary",
           "url": "/races/wa-walla-walla-prosecuting-attorney-2026/acosta/"
@@ -11703,7 +11703,7 @@
         {
           "name": "Gordon R Heimbigner",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "heimbigner",
           "status": "In Primary",
           "url": "/races/wa-walla-walla-treasurer-2026/heimbigner/"
@@ -11799,7 +11799,7 @@
         {
           "name": "Wraylee Flodin",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "flodin",
           "status": "In Primary",
           "url": "/races/wa-whitman-assessor-2026/flodin/"
@@ -11851,7 +11851,7 @@
         {
           "name": "Jill Whelchel",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "whelchel",
           "status": "In Primary",
           "url": "/races/wa-whitman-clerk-2026/whelchel/"
@@ -11873,7 +11873,7 @@
         {
           "name": "Chad Whetzel",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "whetzel",
           "status": "In Primary",
           "url": "/races/wa-whitman-commissioner-district-3-2026/whetzel/"
@@ -11895,7 +11895,7 @@
         {
           "name": "Cassie Richardson",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "richardson",
           "status": "In Primary",
           "url": "/races/wa-whitman-coroner-2026/richardson/"
@@ -11939,7 +11939,7 @@
         {
           "name": "Dan LeBeau",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "lebeau",
           "status": "In Primary",
           "url": "/races/wa-whitman-prosecuting-attorney-2026/lebeau/"
@@ -11961,7 +11961,7 @@
         {
           "name": "Brett J. Myers",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "myers",
           "status": "In Primary",
           "url": "/races/wa-whitman-sheriff-2026/myers/"
@@ -11983,7 +11983,7 @@
         {
           "name": "Chris Nelson",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "nelson",
           "status": "In Primary",
           "url": "/races/wa-whitman-treasurer-2026/nelson/"
