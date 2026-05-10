@@ -1,0 +1,5366 @@
+{
+  "WA": {
+    "adams": {
+      "name": "Adams",
+      "full_name": "Adams County",
+      "fips": "001",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Curtis Templin",
+              "party": "REPUBLICAN",
+              "filing_date": "5/7/2026 9:37:22 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Veronica Rodriguez",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:09:29 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Courtney Fannin",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:30:46 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Jacque Laird",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:04:10 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Stephanie Dormaier",
+              "party": "REPUBLICAN",
+              "filing_date": "5/5/2026 9:43:48 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Catherine R. Sloan",
+              "party": "REPUBLICAN",
+              "filing_date": "5/6/2026 5:16:33 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Eleanor Brodahl",
+              "party": "DEMOCRAT",
+              "filing_date": "5/8/2026 10:14:15 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Miguel A.\"Mike\" Garza",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:05:27 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge Position 1",
+          "candidates": [
+            {
+              "name": "Andrea K. Russell",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 10:25:15 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge Position 2",
+          "candidates": [
+            {
+              "name": "Carolyn J. Benzel",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:44:52 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecutor",
+          "candidates": [
+            {
+              "name": "Randy J. Flyckt",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:37:50 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Matthew Carlson",
+              "party": "REPUBLICAN",
+              "filing_date": "5/8/2026 3:14:38 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Dale J. Wagner",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:42:22 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Josie Koelzer",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:22:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Kayla Meise",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:50:49 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "asotin": {
+      "name": "Asotin",
+      "full_name": "Asotin County",
+      "fips": "003",
+      "races": [
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Chuck Whitman",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/8/2026 8:11:18 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Assessor",
+          "candidates": [
+            {
+              "name": "Jenny L. Rynearson",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 10:24:31 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Auditor",
+          "candidates": [
+            {
+              "name": "Darla McKay",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 8:06:33 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Clerk",
+          "candidates": [
+            {
+              "name": "McKenzie A. Campbell",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/5/2026 8:20:24 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Prosecutor",
+          "candidates": [
+            {
+              "name": "Curt L. Liedkie",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 8:36:59 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Sheriff",
+          "candidates": [
+            {
+              "name": "Blake Richards",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 8:20:56 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Monte Renzelman",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 1:24:09 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Treasurer",
+          "candidates": [
+            {
+              "name": "Holly Steiner",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 9:58:52 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge",
+          "candidates": [
+            {
+              "name": "Tina L. Kernan",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 9:54:19 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "benton": {
+      "name": "Benton",
+      "full_name": "Benton County",
+      "fips": "005",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Bill Spencer",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:10:13 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Brenda Chilton",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:04:01 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Josie Delvin",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:10:36 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 2",
+          "candidates": [
+            {
+              "name": "MICHAEL ALVAREZ",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:11:10 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Coroner",
+          "candidates": [
+            {
+              "name": "William \"Bill\" Leach",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:31:19 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge 1",
+          "candidates": [
+            {
+              "name": "Michael \"Mike\" Rio",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 2:58:26 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge 2",
+          "candidates": [
+            {
+              "name": "James \"Jim\" Bell",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:13:56 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge 3",
+          "candidates": [
+            {
+              "name": "Dan Kathren",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:11:43 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge 4",
+          "candidates": [
+            {
+              "name": "Jennifer Johnson",
+              "party": "Nonpartisan",
+              "filing_date": "5/7/2026 1:32:06 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge 5",
+          "candidates": [
+            {
+              "name": "Jennifer M. (Lampson) Azure",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:22:03 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Eric Eisinger",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:14:50 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Julie Long",
+              "party": "REPUBLICAN",
+              "filing_date": "5/6/2026 1:19:42 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Michael (Mike) Clark",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:06:46 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Brad Klippert",
+              "party": "REPUBLICAN",
+              "filing_date": "5/8/2026 3:07:42 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Kenneth Spencer Jr",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:05:38 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "chelan": {
+      "name": "Chelan",
+      "full_name": "Chelan County",
+      "fips": "007",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Britini Port",
+              "party": "INDEPENDENT",
+              "filing_date": "5/7/2026 3:57:54 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Wes Cornelius",
+              "party": "GOP",
+              "filing_date": "5/4/2026 8:18:22 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Brandt Cappell",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:36:58 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Brian Brett",
+              "party": "REPUBLICAN",
+              "filing_date": "5/8/2026 9:04:10 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Samantha J Thompson",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 12:05:42 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Marty Young",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 11:55:10 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Charlene Beck",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 9:19:29 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Sandra Arechiga",
+              "party": "INDEPENDENT",
+              "filing_date": "5/8/2026 4:15:45 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 2",
+          "candidates": [
+            {
+              "name": "Nathanial Helligso",
+              "party": "INDEPENDENT",
+              "filing_date": "5/6/2026 11:20:32 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Shon D. Smith",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:03:10 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Clint Strand",
+              "party": "DEMOCRAT",
+              "filing_date": "5/7/2026 1:22:17 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Coroner",
+          "candidates": [
+            {
+              "name": "Earl J. Crowe",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:01:09 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge Position 1",
+          "candidates": [
+            {
+              "name": "Jon Volyn",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 11:23:36 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge Position 2",
+          "candidates": [
+            {
+              "name": "Allen F. Blackmon",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:31:56 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Robert W. Sealby",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:18:33 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Kieth A. Siebert",
+              "party": "REPUBLICAN",
+              "filing_date": "5/5/2026 6:15:55 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Mike Morrison",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:14:46 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Stan Langlow",
+              "party": "REPUBLICAN",
+              "filing_date": "5/7/2026 3:10:39 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Richard (Rick) Viall",
+              "party": "GOP",
+              "filing_date": "5/5/2026 11:45:16 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "clallam": {
+      "name": "Clallam",
+      "full_name": "Clallam County",
+      "fips": "009",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Lee Hancock",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:31:28 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            },
+            {
+              "name": "Antonio Price",
+              "party": "Nonpartisan",
+              "filing_date": "5/7/2026 9:56:48 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Virginia Shogren",
+              "party": "Nonpartisan",
+              "filing_date": "5/5/2026 2:52:06 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            },
+            {
+              "name": "Shoona Riggs",
+              "party": "Nonpartisan",
+              "filing_date": "5/7/2026 7:38:48 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Mike French",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 9:04:59 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Jake Seegers",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 10:40:31 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Director Of Community Development",
+          "candidates": [
+            {
+              "name": "Bruce Emery",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 7:09:57 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Mark Nichols",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 4:18:05 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Brian King",
+              "party": "Nonpartisan",
+              "filing_date": "5/5/2026 10:16:46 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Jennifer L White",
+              "party": "Nonpartisan",
+              "filing_date": "5/6/2026 1:30:57 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "clark": {
+      "name": "Clark",
+      "full_name": "Clark County",
+      "fips": "011",
+      "races": [
+        {
+          "office": "County Assessor",
+          "candidates": [
+            {
+              "name": "Tyler Thoune",
+              "party": "Nonpartisan",
+              "filing_date": "5/8/2026 12:07:20 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Peter Van Nortwick",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:14:36 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Auditor",
+          "candidates": [
+            {
+              "name": "Mitchell Kelly",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 5:26:26 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Eileen Quiring O'Brien",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 9:44:35 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Sharon Wylie",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 9:49:37 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Ty Stober",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:01:06 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Clerk",
+          "candidates": [
+            {
+              "name": "Scott G Weber",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 11:51:31 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Rachel Shapiro",
+              "party": "Nonpartisan",
+              "filing_date": "5/6/2026 9:36:31 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Gerald E. Gray",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 10:02:57 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Laurel Smith",
+              "party": "Nonpartisan",
+              "filing_date": "5/5/2026 10:20:26 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Sheriff",
+          "candidates": [
+            {
+              "name": "John Horch",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:06:19 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Treasurer",
+          "candidates": [
+            {
+              "name": "Alishia Topper",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:07:03 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "columbia": {
+      "name": "Columbia",
+      "full_name": "Columbia County",
+      "fips": "013",
+      "races": [
+        {
+          "office": "Columbia County  Assessor",
+          "candidates": [
+            {
+              "name": "Tammy Groom Ketterman",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:36:55 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Columbia County Auditor",
+          "candidates": [
+            {
+              "name": "Will Hutchens",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/7/2026 7:41:54 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Columbia County Clerk",
+          "candidates": [
+            {
+              "name": "Kriston Chapman",
+              "party": "REPUBLICAN",
+              "filing_date": "5/7/2026 6:48:26 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Columbia County Prosecutor",
+          "candidates": [
+            {
+              "name": "Nickolas J. Ward",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/5/2026 9:06:54 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Columbia County Sheriff",
+          "candidates": [
+            {
+              "name": "Joe Helm",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 10:50:50 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Columbia County Treasurer",
+          "candidates": [
+            {
+              "name": "Carla Rowe",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/8/2026 4:59:49 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Bill Warren",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 11:31:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "cowlitz": {
+      "name": "Cowlitz",
+      "full_name": "Cowlitz County",
+      "fips": "015",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Emily Wilcox",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 1:57:38 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Carolyn Fundingsland",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 10:41:24 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Staci Myklebust",
+              "party": "INDEPENDANT",
+              "filing_date": "5/4/2026 11:40:44 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Ashley White",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 6:26:01 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Richard Dahl",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:09:55 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Chelsea Chandler",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/7/2026 11:44:48 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Coroner",
+          "candidates": [
+            {
+              "name": "Dana M. Tucker",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 10:25:44 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Ryan P. Jurvakainen",
+              "party": "INDEPENDENT",
+              "filing_date": "5/5/2026 9:56:48 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Troy Brightbill",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:10:51 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Debra Gardner",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 4:41:04 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "douglas": {
+      "name": "Douglas",
+      "full_name": "Douglas County",
+      "fips": "017",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Jim Ruud",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:24:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Thad Duvall",
+              "party": "NONPARTISAN",
+              "filing_date": "5/4/2026 8:37:03 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk Of Superior Court",
+          "candidates": [
+            {
+              "name": "Jenn Biggar",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:19:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Andrea Jester",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 10:57:30 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "MARC S. STRAUB",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 1:07:13 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Michael S. Lesky",
+              "party": "INDEPENDENT",
+              "filing_date": "5/8/2026 10:44:32 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Coroner",
+          "candidates": [
+            {
+              "name": "Tanner Bateman",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 11:03:25 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge",
+          "candidates": [
+            {
+              "name": "Eric C. Biggar",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:08:00 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Sean P. Lewis",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:12:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Tyler I. Caille",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:02:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Adam Musgrove",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:06:32 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Felisha L. Rosales",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 10:26:22 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Doug Miller",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/8/2026 4:51:09 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "ferry": {
+      "name": "Ferry",
+      "full_name": "Ferry County",
+      "fips": "019",
+      "races": [
+        {
+          "office": "Commissioner District 2",
+          "candidates": [
+            {
+              "name": "Kevin J Berry",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 10:15:16 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Robert (Bob) Dean",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 4:36:51 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Jeremiah (Aymish) Adams",
+              "party": "INDEPENDENT",
+              "filing_date": "5/6/2026 2:53:57 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Assessor",
+          "candidates": [
+            {
+              "name": "RACHEL D. SIRACUSE",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:10:58 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Auditor",
+          "candidates": [
+            {
+              "name": "Dianna L. Galvan",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:08:52 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Clerk",
+          "candidates": [
+            {
+              "name": "Melanie Breezee",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:55:08 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Sheri L Mott",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 12:26:01 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Sheriff",
+          "candidates": [
+            {
+              "name": "Sam Olson",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:27:35 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Ray Maycumber",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 4:26:50 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Treasurer",
+          "candidates": [
+            {
+              "name": "Shannon Jensen",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 10:05:37 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge",
+          "candidates": [
+            {
+              "name": "Sarah Cuellar",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 9:11:58 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Michael Golden",
+              "party": "REPUBLICAN",
+              "filing_date": "5/5/2026 8:44:34 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "franklin": {
+      "name": "Franklin",
+      "full_name": "Franklin County",
+      "fips": "021",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Chris Hollingsworth",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:27:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "John A Rosenau",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 10:11:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Matt Beaton",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:48:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Ruby Ochoa",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:29:26 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Joel Prantle",
+              "party": "REPUBLICAN",
+              "filing_date": "5/6/2026 8:52:45 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Clint Didier",
+              "party": "REPUBLICAN",
+              "filing_date": "5/6/2026 2:09:38 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Coroner",
+          "candidates": [
+            {
+              "name": "Curtis McGary",
+              "party": "REPUBLICAN",
+              "filing_date": "5/5/2026 12:53:00 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge",
+          "candidates": [
+            {
+              "name": "Trinity Orosco",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:32:47 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            },
+            {
+              "name": "Michael Nguyen",
+              "party": "Nonpartisan",
+              "filing_date": "5/8/2026 3:07:09 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge 1",
+          "candidates": [
+            {
+              "name": "Talesha Sams",
+              "party": "Nonpartisan",
+              "filing_date": "5/7/2026 3:47:38 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Shawn P. Sant",
+              "party": "REPUBLICAN",
+              "filing_date": "5/6/2026 1:38:19 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Christopher (Chris) Lee",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:06:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Monty Huber",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:11:09 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Kohl ST. Peter",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 9:57:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "garfield": {
+      "name": "Garfield",
+      "full_name": "Garfield County",
+      "fips": "023",
+      "races": [
+        {
+          "office": "Commissioner District 1",
+          "candidates": [
+            {
+              "name": "Beau Blachly",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/8/2026 1:22:46 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Vonda (Vonni) Mulrony",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 2:00:21 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Gary W. Bowles",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 8:29:38 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Justin E. Dixon",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:24:13 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Assessor",
+          "candidates": [
+            {
+              "name": "Brian Bartels",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:33:03 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Auditor",
+          "candidates": [
+            {
+              "name": "McKenzie Lueck",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/7/2026 3:25:46 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Clerk",
+          "candidates": [
+            {
+              "name": "Marie Gormsen",
+              "party": "REPUBLICAN",
+              "filing_date": "5/5/2026 10:17:12 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Prosecutor",
+          "candidates": [
+            {
+              "name": "Matt L. Newberg",
+              "party": "REPUBLICAN",
+              "filing_date": "5/8/2026 10:08:22 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Sheriff",
+          "candidates": [
+            {
+              "name": "Kristopher Lee Taylor",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 8:34:05 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Calvin Dansereau",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/8/2026 4:55:38 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Treasurer",
+          "candidates": [
+            {
+              "name": "Tereasa Summers",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 9:15:41 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge",
+          "candidates": [
+            {
+              "name": "Thomas W. Cox",
+              "party": "Nonpartisan",
+              "filing_date": "5/5/2026 2:27:38 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "grant": {
+      "name": "Grant",
+      "full_name": "Grant County",
+      "fips": "025",
+      "races": [
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Shannon Durfee",
+              "party": "REPUBLICAN",
+              "filing_date": "5/6/2026 7:45:38 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Kelly Raap",
+              "party": "REPUBLICAN",
+              "filing_date": "5/6/2026 11:13:14 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Seth Weeks",
+              "party": "REPUBLICAN",
+              "filing_date": "5/8/2026 12:26:46 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Janice Flynn",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 12:27:17 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Assessor",
+          "candidates": [
+            {
+              "name": "Clayton Johnson",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 1:12:23 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Auditor",
+          "candidates": [
+            {
+              "name": "Andrew Koeppen",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:22:54 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Darci Homesley",
+              "party": "REPUBLICAN",
+              "filing_date": "5/6/2026 8:20:00 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Shannon Falstad",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:21:33 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Clerk",
+          "candidates": [
+            {
+              "name": "Kimberly A. Allen",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:29:11 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Coroner",
+          "candidates": [
+            {
+              "name": "Craig Morrison",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:12:58 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Prosecutor",
+          "candidates": [
+            {
+              "name": "Brandon K. Guernsey",
+              "party": "REPUBLICAN",
+              "filing_date": "5/6/2026 10:51:07 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Sheriff",
+          "candidates": [
+            {
+              "name": "Joey Kriete",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:05:10 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Darrik Gregg",
+              "party": "REPUBLICAN",
+              "filing_date": "5/6/2026 2:35:56 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Josh Sainsbury",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:17:42 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Treasurer",
+          "candidates": [
+            {
+              "name": "Carrie Heston",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 8:04:51 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge #1",
+          "candidates": [
+            {
+              "name": "Tom Middleton",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:12:35 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge #2",
+          "candidates": [
+            {
+              "name": "Nicholas L Wallace",
+              "party": "Nonpartisan",
+              "filing_date": "5/7/2026 11:14:06 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge #3",
+          "candidates": [
+            {
+              "name": "Brian D. Gwinn",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 11:18:48 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "grays-harbor": {
+      "name": "Grays Harbor",
+      "full_name": "Grays Harbor County",
+      "fips": "027",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Patti McLean",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 6:19:17 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Dan Lindgren",
+              "party": "REPUBLICAN",
+              "filing_date": "5/6/2026 10:03:11 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Josh Nuxoll",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 12:05:47 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Brielle S Joyce",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/5/2026 11:28:40 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Charlee Paull",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:07:02 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Kym Foster",
+              "party": "PRACTICAL DEMOCRAT",
+              "filing_date": "5/4/2026 8:13:10 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Stan Sturgeon",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 6:53:16 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "JR Streifel",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:20:22 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Gordon E. Mitchell",
+              "party": "REPUBLICAN",
+              "filing_date": "5/7/2026 6:57:29 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Coroner",
+          "candidates": [
+            {
+              "name": "George J Kelley",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 8:04:57 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court #1",
+          "candidates": [
+            {
+              "name": "Andrea Vingo",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 1:13:00 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            },
+            {
+              "name": "David Mistachkin",
+              "party": "Nonpartisan",
+              "filing_date": "5/8/2026 2:36:14 PM",
+              "election_status": "",
+              "status": "Withdrawn"
+            }
+          ]
+        },
+        {
+          "office": "District Court #2",
+          "candidates": [
+            {
+              "name": "David Mistachkin",
+              "party": "Nonpartisan",
+              "filing_date": "5/8/2026 4:07:51 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            },
+            {
+              "name": "Megan Valentine",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:04:10 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecutor",
+          "candidates": [
+            {
+              "name": "Jason F. Walker",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 9:29:06 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Daniel Crawford",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:07:21 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Edward Welter",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/8/2026 1:07:11 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Darrin E. Wallace",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 9:10:25 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Wes Cormier",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:01:19 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Shawn D. Hill",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 8:20:49 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "island": {
+      "name": "Island",
+      "full_name": "Island County",
+      "fips": "029",
+      "races": [
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Satin Arnett",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/6/2026 4:43:07 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Grant Shaw",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 11:14:20 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Matthew Van Pelt",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:47:04 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Assessor",
+          "candidates": [
+            {
+              "name": "Doug Stults",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 8:41:45 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Kelly Todd Mauck",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 8:05:36 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Auditor",
+          "candidates": [
+            {
+              "name": "Barbara Fuller",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/5/2026 6:13:23 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Terry Lacey",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/5/2026 10:56:41 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Sheilah Crider",
+              "party": "INDEPENDENT",
+              "filing_date": "5/7/2026 10:55:28 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Andrea Downs",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 10:20:57 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Clerk",
+          "candidates": [
+            {
+              "name": "Toni Adams",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 11:17:44 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Dierdre Butler",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 9:32:12 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Maria Hazelo",
+              "party": "REPUBLICAN",
+              "filing_date": "5/7/2026 9:57:35 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Amber Sewell",
+              "party": "DEMOCRAT",
+              "filing_date": "5/4/2026 8:10:20 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Coroner",
+          "candidates": [
+            {
+              "name": "Shantel Porter",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 2:40:55 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Prosecutor",
+          "candidates": [
+            {
+              "name": "Greg Banks",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 11:26:53 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Sheriff",
+          "candidates": [
+            {
+              "name": "Tavier Wasser",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 11:07:59 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Rick Felici",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 9:11:32 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Treasurer",
+          "candidates": [
+            {
+              "name": "Tony Lam",
+              "party": "INDEPENDENT",
+              "filing_date": "5/5/2026 10:22:14 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge",
+          "candidates": [
+            {
+              "name": "Ronald A. Costeck",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 6:13:29 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "jefferson": {
+      "name": "Jefferson",
+      "full_name": "Jefferson County",
+      "fips": "031",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Chuck Garland",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 9:08:04 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Lauralee Kiesel",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 11:04:01 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Amanda Hamilton",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 7:43:24 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Christopher Hannon",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/7/2026 6:10:19 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Jean Ball",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 8:07:26 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Anji Scalf",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 9:31:39 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Stephen T. Nieman",
+              "party": "REPUBLICAN",
+              "filing_date": "5/6/2026 9:50:01 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecutor",
+          "candidates": [
+            {
+              "name": "James Kennedy",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 8:43:48 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Andy Pernsteiner",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 8:06:08 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Stacie Prada",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 9:22:55 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "king": {
+      "name": "King",
+      "full_name": "King County",
+      "fips": "033",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Rob Foxcurran",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:05:57 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Christopher Roberts",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:09:34 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Al Dams",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 11:55:11 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Dominique M Scarimbolo",
+              "party": "Nonpartisan",
+              "filing_date": "5/7/2026 6:22:17 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Director Of Elections",
+          "candidates": [
+            {
+              "name": "Julie Wise",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:15:53 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge Position 3",
+          "candidates": [
+            {
+              "name": "Jenifer Howson",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:52:53 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Leesa Manion",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:11:05 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            },
+            {
+              "name": "Jesse Corkern",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 8:07:03 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Erik Sigmar",
+              "party": "DEMOCRAT",
+              "filing_date": "5/7/2026 7:10:09 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "kitsap": {
+      "name": "Kitsap",
+      "full_name": "Kitsap County",
+      "fips": "035",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Phil Cook",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 10:02:44 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Michael Simonds",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/7/2026 4:07:04 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Paul Andrews",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 9:12:02 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "David T Lewis III",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 11:09:20 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Brien Kennedy",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/8/2026 12:22:27 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Katie Walters",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 8:47:50 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Kitty Candelaria",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/7/2026 7:05:57 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Kevin Tisdel",
+              "party": "REPUBLICAN",
+              "filing_date": "5/7/2026 6:36:27 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Chad M. Enright",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 8:12:04 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Joe Lombardi",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 10:56:13 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Rick Kuss",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:03:26 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Brandon L. Myers",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 12:01:01 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Pete Boissonneau",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 11:23:32 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "kittitas": {
+      "name": "Kittitas",
+      "full_name": "Kittitas County",
+      "fips": "037",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Mike Hougardy",
+              "party": "GOP",
+              "filing_date": "5/4/2026 12:15:09 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Bryan Elliott",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:20:36 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Stephanie George",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 12:41:51 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Brett Wachsmith",
+              "party": "GOP",
+              "filing_date": "5/4/2026 8:08:04 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Coroner",
+          "candidates": [
+            {
+              "name": "Cori McKean",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:05:05 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Charlie Divine",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 12:56:11 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Jodi Hammond",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 12:14:31 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Aaron Reiman",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 12:28:33 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Patricia Todd",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:54:23 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Ben Kokjer",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 11:08:41 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Darryl Chepoda JR",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 4:41:10 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Amy Cziske",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:24:20 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "klickitat": {
+      "name": "Klickitat",
+      "full_name": "Klickitat County",
+      "fips": "039",
+      "races": [
+        {
+          "office": "Commissioner District 2",
+          "candidates": [
+            {
+              "name": "Gene Klejeski",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 3:57:50 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Lori Zoller",
+              "party": "REPUBLICAN",
+              "filing_date": "5/6/2026 1:22:24 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Andy Kallinen",
+              "party": "REPUBLICAN",
+              "filing_date": "5/6/2026 3:38:43 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Assessor",
+          "candidates": [
+            {
+              "name": "Billi Jean Bare",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:55:08 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Klickitat County Auditor",
+          "candidates": [
+            {
+              "name": "Heather Jobe",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 10:04:27 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Klickitat County Clerk",
+          "candidates": [
+            {
+              "name": "Renea Campbell",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:09:54 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Klickitat County Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Rebecca Cranston",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/5/2026 12:27:44 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Klickitat County Sheriff",
+          "candidates": [
+            {
+              "name": "Dwayne T. Matulovich",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 8:41:33 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Tony Warren",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:19:57 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "John Bruce",
+              "party": "REPUBLICAN",
+              "filing_date": "5/5/2026 11:03:54 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Klickitat County Treasurer",
+          "candidates": [
+            {
+              "name": "Greg Gallagher",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:11:27 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "lewis": {
+      "name": "Lewis",
+      "full_name": "Lewis County",
+      "fips": "041",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Ross W. Nielson",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:12:20 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Frank L. Corbin",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 4:10:58 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Mitch Townsend",
+              "party": "REPUBLICAN",
+              "filing_date": "5/5/2026 10:06:59 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Mitchell L. Merrill",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:43:51 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Scott Tinney",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:03:56 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Zac Eckstein",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 10:35:39 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Kyle Wheeler",
+              "party": "INDEPENDENT",
+              "filing_date": "5/6/2026 2:10:44 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Tim Toerber",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 11:43:22 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Scott Brummer",
+              "party": "REPUBLICAN",
+              "filing_date": "5/7/2026 2:04:36 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Michael Hadaller",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:31:36 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Coroner",
+          "candidates": [
+            {
+              "name": "Jessica Stickley",
+              "party": "INDEPENDENT",
+              "filing_date": "5/7/2026 11:00:10 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Chelsie Niemcziek",
+              "party": "INDEPENDENT",
+              "filing_date": "5/8/2026 12:01:08 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Warren McLeod",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:04:23 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Jonathan L. Meyer",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:14:49 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Gabriel J Frase",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:48:50 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Matt McKnight",
+              "party": "REPUBLICAN",
+              "filing_date": "5/6/2026 1:39:37 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Danny Riordan",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 3:55:29 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Tracy Murphy",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:07:01 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Arny Davis",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:50:51 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "lincoln": {
+      "name": "Lincoln",
+      "full_name": "Lincoln County",
+      "fips": "043",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "J Scott Liebing",
+              "party": "REPUBLICAN - GOP",
+              "filing_date": "5/4/2026 8:22:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Chandra L Schumacher",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 10:28:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Traci Gants",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 10:14:20 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Rob Coffman",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:05:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge",
+          "candidates": [
+            {
+              "name": "Dan B. Johnson",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 9:30:00 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Ty Albertson",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:58:09 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Gabe Gants",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:43:16 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Emily Lybbert-Hansen",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 2:45:00 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "mason": {
+      "name": "Mason",
+      "full_name": "Mason County",
+      "fips": "045",
+      "races": [
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Tamra 'Tam' Ingwaldson",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 9:16:29 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Steve Duenkel",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:10:06 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Monika Balmer",
+              "party": "REPUBLICAN",
+              "filing_date": "5/5/2026 6:28:30 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Charles G. Rhodes",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:09:40 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Tammy Clark",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:07:21 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Eric Onisko",
+              "party": "GOP",
+              "filing_date": "5/4/2026 7:27:37 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Daniel Cameron",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:07:35 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Miguel Gutierrez",
+              "party": "LABOR DEMOCRAT",
+              "filing_date": "5/4/2026 8:38:56 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Rick Lee",
+              "party": "REPUBLICAN",
+              "filing_date": "5/7/2026 3:11:18 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Karen (Schade) Sullivan",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 10:04:35 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "George Blush",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 10:31:34 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Lovejoy Schaefer",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 2:20:41 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Coroner",
+          "candidates": [
+            {
+              "name": "Jaime Taylor",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/5/2026 7:25:26 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge",
+          "candidates": [
+            {
+              "name": "George Alan Steele",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:22:32 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecutor",
+          "candidates": [
+            {
+              "name": "Michael Dorcy",
+              "party": "REPUBLICAN",
+              "filing_date": "5/5/2026 12:30:07 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Ryan Spurling",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:15:41 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Randy Lewis",
+              "party": "REPUBLICAN",
+              "filing_date": "5/5/2026 6:09:47 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Brittany A Pearson",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 9:35:02 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "okanogan": {
+      "name": "Okanogan",
+      "full_name": "Okanogan County",
+      "fips": "047",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Larry D Gilman",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:50:16 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Cari L Hall",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 3:12:14 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Susan Speiker",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:00:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Trinity Hightower Stucker",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 11:08:49 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Jon R Neal",
+              "party": "REPUBLICAN",
+              "filing_date": "5/5/2026 3:32:49 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Coroner",
+          "candidates": [
+            {
+              "name": "Gene Davis",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 10:27:06 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Cindy Jensen",
+              "party": "INDEPENDENT",
+              "filing_date": "5/8/2026 2:59:11 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Albert Lin",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:23:43 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Jodie Barcus",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:40:23 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Gisberth (Giz) Gonzalez",
+              "party": "REPUBLICAN",
+              "filing_date": "5/6/2026 12:36:39 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Pam Johnson",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:00:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "pacific": {
+      "name": "Pacific",
+      "full_name": "Pacific County",
+      "fips": "049",
+      "races": [
+        {
+          "office": "Commissioner District 03",
+          "candidates": [
+            {
+              "name": "Ron A. Mullins",
+              "party": "DEMOCRAT",
+              "filing_date": "5/4/2026 9:48:52 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Ron Black",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 10:15:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Pattie Gray",
+              "party": "REPUBLICAN",
+              "filing_date": "5/5/2026 3:41:00 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Jerry Doyle",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 8:20:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Michael \"Hawk\" Runyon",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 3:55:53 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Assessor",
+          "candidates": [
+            {
+              "name": "Bruce Walker",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/5/2026 9:10:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Jeffrey Phelan",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 8:08:06 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Auditor",
+          "candidates": [
+            {
+              "name": "Dotsi Graves",
+              "party": "INDEPENDENT",
+              "filing_date": "5/8/2026 8:53:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Nicole Deskins",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 4:25:00 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Clerk",
+          "candidates": [
+            {
+              "name": "Emma Rose",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 8:05:01 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Sheriff",
+          "candidates": [
+            {
+              "name": "Sean K. Eastham",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 8:30:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "David Podesta",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 12:50:00 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Rich Byrd",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 8:17:45 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Daniel C. Garcia",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:33:03 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Treasurer",
+          "candidates": [
+            {
+              "name": "Sheila Didion",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 8:30:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Michael S. Turner",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 2:55:00 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Jennifer Zorn",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 9:40:37 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "pend-oreille": {
+      "name": "Pend Oreille",
+      "full_name": "Pend Oreille County",
+      "fips": "051",
+      "races": [
+        {
+          "office": "Commissioner District 2",
+          "candidates": [
+            {
+              "name": "Robert Rosencrantz",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:05:58 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Brandy Parker Warren",
+              "party": "REPUBLICAN",
+              "filing_date": "5/6/2026 10:26:43 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Assessor",
+          "candidates": [
+            {
+              "name": "Nathan J Longly",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:26:46 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Auditor",
+          "candidates": [
+            {
+              "name": "Marianne Nichols",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:22:23 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Clerk",
+          "candidates": [
+            {
+              "name": "Tammie Ownbey",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:24:45 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Prosecutor",
+          "candidates": [
+            {
+              "name": "Dolly Hunt",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 1:33:20 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Sheriff",
+          "candidates": [
+            {
+              "name": "Glenn Blakeslee",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 10:34:23 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Treasurer",
+          "candidates": [
+            {
+              "name": "Nicole Dice",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 10:16:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge",
+          "candidates": [
+            {
+              "name": "Robin R. McCroskey",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 1:39:55 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "pierce": {
+      "name": "Pierce",
+      "full_name": "Pierce County",
+      "fips": "053",
+      "races": [
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Linda Farmer",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:09:57 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            },
+            {
+              "name": "Damon Townsend",
+              "party": "Nonpartisan",
+              "filing_date": "5/6/2026 5:19:43 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Coreen Schnepf",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 9:51:55 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            },
+            {
+              "name": "Bryan Chushcoff",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 1:00:07 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "san-juan": {
+      "name": "San Juan",
+      "full_name": "San Juan County",
+      "fips": "055",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "John Kulseth",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:18:58 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Heather Lee",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:02:55 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            },
+            {
+              "name": "Natasha K Warmenhoven",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:04:33 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Lisa Henderson",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 9:16:50 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Council Residency District 3",
+          "candidates": [
+            {
+              "name": "Renee J Koplan",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 9:03:50 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Jennifer Swanson",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 11:44:11 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Katherine Bryant Ingman",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 7:07:26 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge",
+          "candidates": [
+            {
+              "name": "Carolyn Jewett-Platts",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 9:14:57 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Amy S. Vira",
+              "party": "DEMOCRAT",
+              "filing_date": "5/4/2026 8:35:24 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Ronald J. Krebs",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:29:19 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Rhonda Pederson",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 10:27:59 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "skagit": {
+      "name": "Skagit",
+      "full_name": "Skagit County",
+      "fips": "057",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Danny Hagen",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 8:07:20 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Jeremy Harrison-Smith",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 8:14:03 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Mark Hulst",
+              "party": "INDEPENDENT",
+              "filing_date": "5/5/2026 8:11:05 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Melissa Beaton",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 8:05:53 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Joe Burns",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 8:07:42 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Connie Krier",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 1:15:51 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Keith L. Wagoner",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 3:12:57 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Coroner",
+          "candidates": [
+            {
+              "name": "Alex Lathum",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 2:07:34 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge Position 1",
+          "candidates": [
+            {
+              "name": "Patrick Eason",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:17:01 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge Position 2",
+          "candidates": [
+            {
+              "name": "Paul W Nielsen",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 4:13:41 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Erik Pedersen",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 8:06:03 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Chris Baldwin",
+              "party": "INDEPENDENT",
+              "filing_date": "5/6/2026 1:50:12 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Jackie Brunson",
+              "party": "DEMOCRAT",
+              "filing_date": "5/4/2026 8:11:38 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "skamania": {
+      "name": "Skamania",
+      "full_name": "Skamania County",
+      "fips": "059",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Cora Moser",
+              "party": "REPUBLICAN",
+              "filing_date": "5/8/2026 3:29:49 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Gabriel P Spencer",
+              "party": "DEMOCRAT",
+              "filing_date": "5/6/2026 12:15:48 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Robert J Waymire",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:41:58 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Grace D. Cross",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 8:03:28 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Olivia D. Munsch",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 3:05:19 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Paul H. Mosbrucker",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/6/2026 11:05:56 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Asa Leckie",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:18:31 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge",
+          "candidates": [
+            {
+              "name": "Christopher Robert Lanz",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 1:30:35 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Adam N. Kick",
+              "party": "NON PARTISAN",
+              "filing_date": "5/7/2026 11:03:04 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Summer Scheyer",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:59:38 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Emily Sabo",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 5:34:57 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "snohomish": {
+      "name": "Snohomish",
+      "full_name": "Snohomish County",
+      "fips": "061",
+      "races": [
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Jason Cummings",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 9:17:53 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "spokane": {
+      "name": "Spokane",
+      "full_name": "Spokane County",
+      "fips": "063",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Tom Konis",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 11:32:57 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Callie Gee",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/6/2026 2:48:27 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Dale Whitaker",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:36:10 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Michael Cathcart",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 2:49:22 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Elliot Robison",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/5/2026 12:42:47 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Dave Lucas",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 12:24:31 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 2",
+          "candidates": [
+            {
+              "name": "Amber Waldref",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 11:26:47 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 4",
+          "candidates": [
+            {
+              "name": "Suzanne Schmidt",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 1:34:44 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Coroner",
+          "candidates": [
+            {
+              "name": "Roseanne Ennis Jezerinac",
+              "party": "REPUBLICAN",
+              "filing_date": "5/6/2026 12:27:00 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge 1",
+          "candidates": [
+            {
+              "name": "Patrick T Johnson",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:15:05 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge 2",
+          "candidates": [
+            {
+              "name": "Mike (Michael) Valerien",
+              "party": "Nonpartisan",
+              "filing_date": "5/5/2026 1:13:25 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            },
+            {
+              "name": "Deanna Kathleen Crull",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 11:49:30 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge 3",
+          "candidates": [
+            {
+              "name": "Jenny Zappone",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 9:58:26 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge 4",
+          "candidates": [
+            {
+              "name": "Nicholas Ulrich",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:21:52 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            },
+            {
+              "name": "Michael R Addams",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 10:39:44 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge 5",
+          "candidates": [
+            {
+              "name": "Jennifer L. Fassbender",
+              "party": "Nonpartisan",
+              "filing_date": "5/5/2026 12:50:42 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge 6",
+          "candidates": [
+            {
+              "name": "Andrew Biviano",
+              "party": "Nonpartisan",
+              "filing_date": "5/5/2026 7:50:33 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge 7",
+          "candidates": [
+            {
+              "name": "Aimee N. Maurer",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 10:25:18 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge 8",
+          "candidates": [
+            {
+              "name": "Richard M. Leland",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:43:48 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Danny Tarkenton",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 5:59:38 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Preston McCollam",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 1:50:45 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "John F. Nowels",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:29:25 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Mike Volz",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 11:41:58 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "stevens": {
+      "name": "Stevens",
+      "full_name": "Stevens County",
+      "fips": "065",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Rick Johnson",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 11:12:25 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Lori Larsen",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:05:56 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Eric Simpson",
+              "party": "REPUBLICAN",
+              "filing_date": "5/8/2026 4:33:53 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Michelle Enright",
+              "party": "REPUBILCAN",
+              "filing_date": "5/4/2026 8:41:38 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 2",
+          "candidates": [
+            {
+              "name": "Mark Burrows",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:09:20 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Jack Griffin Jr",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/5/2026 4:39:43 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Coroner",
+          "candidates": [
+            {
+              "name": "Johnathan Waldrop",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 4:13:37 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge",
+          "candidates": [
+            {
+              "name": "C. Olivia Irwin",
+              "party": "Nonpartisan",
+              "filing_date": "5/8/2026 1:07:10 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            },
+            {
+              "name": "Gina A. Tveit",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:42:11 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Erika George",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 12:35:38 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Brad A. Manke",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:07:46 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Tonia \"Toni\" Graham",
+              "party": "REPUBLICAN",
+              "filing_date": "5/6/2026 4:33:56 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "thurston": {
+      "name": "Thurston",
+      "full_name": "Thurston County",
+      "fips": "067",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "JJ Olson",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 3:04:23 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Lynda Nashed Zeman",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 9:05:49 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Vivian Glass",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/7/2026 2:13:02 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Tillie Naputi-Pullar",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 8:48:24 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Nicole Miller",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 9:03:05 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Garrett Cady",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 8:11:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Tye Menser",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 9:33:13 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 5",
+          "candidates": [
+            {
+              "name": "Nicolas Martinez-Dunning",
+              "party": "MODERATE DEMOCRAT",
+              "filing_date": "5/7/2026 7:46:08 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Emily Clouse",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/6/2026 3:19:11 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Michelle Gipson",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 8:45:56 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Coroner",
+          "candidates": [
+            {
+              "name": "Gary Warnock",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/8/2026 10:29:17 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge Pos. 1",
+          "candidates": [
+            {
+              "name": "Kalo Wilcox",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:39:34 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge Pos. 2",
+          "candidates": [
+            {
+              "name": "Sam Meyer",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:26:34 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge Pos. 3",
+          "candidates": [
+            {
+              "name": "Paul Wohl",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:28:12 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Christy Peters",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 8:39:42 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Kevin Burton-Crow",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/6/2026 10:27:50 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Derek Sanders",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 9:12:02 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Jeff Gadman",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 9:47:26 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "wahkiakum": {
+      "name": "Wahkiakum",
+      "full_name": "Wahkiakum County",
+      "fips": "069",
+      "races": [
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Mark D. Letham",
+              "party": "IND",
+              "filing_date": "5/4/2026 2:28:00 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Assessor",
+          "candidates": [
+            {
+              "name": "Drew Jenkins",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 4:00:03 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Justin Moriarty",
+              "party": "INDEPENDENT",
+              "filing_date": "5/8/2026 10:35:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Auditor",
+          "candidates": [
+            {
+              "name": "Nicci Bergseng",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 8:28:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Clerk",
+          "candidates": [
+            {
+              "name": "Jess Reddon",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 4:34:09 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Sheriff",
+          "candidates": [
+            {
+              "name": "John Mason",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 8:20:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Treasurer",
+          "candidates": [
+            {
+              "name": "Marissa Longtain",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 9:12:35 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge",
+          "candidates": [
+            {
+              "name": "Heidi Heywood",
+              "party": "Nonpartisan",
+              "filing_date": "5/7/2026 8:44:00 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Dan Bigelow",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/4/2026 8:14:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "walla-walla": {
+      "name": "Walla Walla",
+      "full_name": "Walla Walla County",
+      "fips": "071",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Byron Burres",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 12:59:50 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Gregory A. Tompkins",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 8:06:26 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "MARJORIE DENTON SANBORN",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 2:02:15 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Sheryl R. Park",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 7:51:08 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Tim Reeves",
+              "party": "DEMOCRAT",
+              "filing_date": "5/4/2026 12:46:05 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Becky Renwick",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:35:44 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Troy Woody",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:34:10 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Gunner Fulmer",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 4:42:03 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Rikki P Wescott",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 10:49:57 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Jack Miller",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 11:36:56 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Coroner",
+          "candidates": [
+            {
+              "name": "Richard Greenwood",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:32:36 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge - Full Time",
+          "candidates": [
+            {
+              "name": "Jared N. Hawkins",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 10:57:32 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge - Part Time",
+          "candidates": [
+            {
+              "name": "Nicholas Holce",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 10:14:11 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            },
+            {
+              "name": "Janelle Carman-Wagner",
+              "party": "Nonpartisan",
+              "filing_date": "5/8/2026 12:52:29 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Gabriel Acosta",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:14:16 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Richard Schram",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:14:03 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Ashley Daschofsky",
+              "party": "REPUBLICAN",
+              "filing_date": "5/7/2026 6:33:41 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Gordon R Heimbigner",
+              "party": "REPUBLICAN",
+              "filing_date": "5/5/2026 3:00:57 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "whatcom": {
+      "name": "Whatcom",
+      "full_name": "Whatcom County",
+      "fips": "073",
+      "races": [
+        {
+          "office": "District Court Judge Position 1",
+          "candidates": [
+            {
+              "name": "Angela Anderson",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 10:46:45 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge Position 2",
+          "candidates": [
+            {
+              "name": "Jonathan Rands",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:08:42 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Dona Bracke",
+              "party": "DEMOCRAT",
+              "filing_date": "5/4/2026 10:39:34 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Ryan Swinburnson",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 7:30:36 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "whitman": {
+      "name": "Whitman",
+      "full_name": "Whitman County",
+      "fips": "075",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Wraylee Flodin",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:20:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Kenneth Millar",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 8:10:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Crystn Guenthner",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 8:11:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Jill Whelchel",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 10:58:43 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 3",
+          "candidates": [
+            {
+              "name": "Chad Whetzel",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:47:18 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Coroner",
+          "candidates": [
+            {
+              "name": "Cassie Richardson",
+              "party": "DEMOCRAT",
+              "filing_date": "5/4/2026 8:02:37 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "District Court Judge Postion 1",
+          "candidates": [
+            {
+              "name": "John Hart",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:40:27 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Dan LeBeau",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:14:33 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Brett J. Myers",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 10:00:00 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Chris Nelson",
+              "party": "STATES NO PARTY PREFERENCE",
+              "filing_date": "5/4/2026 8:18:14 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    },
+    "yakima": {
+      "name": "Yakima",
+      "full_name": "Yakima County",
+      "fips": "077",
+      "races": [
+        {
+          "office": "Assessor",
+          "candidates": [
+            {
+              "name": "Jacob Tate",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 10:24:21 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Keith Effler",
+              "party": "REPUBLICAN",
+              "filing_date": "5/8/2026 4:17:11 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Auditor",
+          "candidates": [
+            {
+              "name": "Maria Cuevas",
+              "party": "DEMOCRATIC",
+              "filing_date": "5/8/2026 10:47:45 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Charles Ross",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:20:43 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Matt Barker",
+              "party": "REPUBLICAN",
+              "filing_date": "5/7/2026 12:07:57 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Clerk",
+          "candidates": [
+            {
+              "name": "Billie A. Maggard",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:08:48 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Commissioner District 1",
+          "candidates": [
+            {
+              "name": "Roman Buermann",
+              "party": "TEA",
+              "filing_date": "5/7/2026 2:43:29 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Robert Udell",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:19:57 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Dave Mullen",
+              "party": "REPUBLICAN",
+              "filing_date": "5/7/2026 7:24:49 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Kristoffer Strutner",
+              "party": "REPUBLICAN",
+              "filing_date": "5/8/2026 4:11:51 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Coroner",
+          "candidates": [
+            {
+              "name": "Marshall Slight",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:12:37 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Prosecuting Attorney",
+          "candidates": [
+            {
+              "name": "Quinn Dalan",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:12:55 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Tyler Haueter",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 1:47:52 PM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Sheriff",
+          "candidates": [
+            {
+              "name": "Jake Church",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 9:06:38 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Roman Kilinkaridis",
+              "party": "REPUBLICAN",
+              "filing_date": "5/8/2026 9:14:23 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Treasurer",
+          "candidates": [
+            {
+              "name": "Stephanie Patterson",
+              "party": "REPUBLICAN",
+              "filing_date": "5/4/2026 8:08:46 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Sam Johnson",
+              "party": "INDEPENDENT",
+              "filing_date": "5/4/2026 9:49:52 AM",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Yakima County District Court Judge, Position 1",
+          "candidates": [
+            {
+              "name": "Gary Hintze",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 2:42:46 PM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Yakima County District Court Judge, Position 2",
+          "candidates": [
+            {
+              "name": "Brian Sanderson",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 10:07:37 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Yakima County District Court Judge, Position 3",
+          "candidates": [
+            {
+              "name": "Julia A. Davis",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 8:10:22 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "Yakima County District Court Judge, Position 4",
+          "candidates": [
+            {
+              "name": "Alfred G. Schweppe",
+              "party": "Nonpartisan",
+              "filing_date": "5/4/2026 10:14:00 AM",
+              "election_status": "Advanced to General",
+              "status": "Active"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

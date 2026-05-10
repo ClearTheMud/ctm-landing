@@ -34,11 +34,17 @@ PARTY_CLASS = {
     "Socialist Workers": "party-neutral", "Union": "party-neutral",
     "Pro Gun Liberal": "party-neutral", "No Kings": "party-neutral",
     "Standup-America": "party-neutral",
+    "dem": "party-dem", "rep": "party-rep", "ind": "party-neutral",
+    "lib": "party-neutral", "nonpartisan": "party-neutral",
+    "other": "party-neutral",
 }
 
 PARTY_FULL = {
     "D": "Democratic", "R": "Republican", "I": "Independent",
     "NP": "Non-Partisan", "L": "Libertarian",
+    "dem": "Democratic", "rep": "Republican", "ind": "Independent",
+    "lib": "Libertarian", "nonpartisan": "Non-Partisan",
+    "other": "Other",
 }
 
 
@@ -53,13 +59,28 @@ def load_states_data():
     return {s["abbr"]: s for s in data["states"]}
 
 
+def _county_office_to_filename(office):
+    """Convert county office name to dossier filename component."""
+    import re
+    s = office.lower().strip()
+    s = re.sub(r"pos\.\s*", "position_", s)
+    s = re.sub(r"[^a-z0-9\s]", "", s)
+    s = re.sub(r"\s+", "_", s).strip("_")
+    return s
+
+
 def find_dossier_json(race, lastname):
     state = race["state_abbr"].lower()
     year = race["year"]
     office = race["office"]
     district = race.get("district", "")
+    level = race.get("level", "")
 
-    if office == "State Senate":
+    if level == "county":
+        subdir = DOSSIER_ROOT / state / str(year) / "county"
+        office_part = _county_office_to_filename(office)
+        pattern = f"{state}_{office_part}_{lastname}_{year}.json"
+    elif office == "State Senate":
         subdir = DOSSIER_ROOT / state / str(year) / "legislative" / f"ld-{int(district):02d}"
         pattern = f"{state}_state_senate_{district}_{lastname}_{year}.json"
     elif office.startswith("State House"):
@@ -106,16 +127,32 @@ def extract_amount_from_claim(claim_str):
     return None
 
 
+def _district_label(race):
+    """Return a human-readable district/jurisdiction label for a race."""
+    level = race.get("level", "")
+    if level == "county":
+        return race.get("county", "") + " County"
+    district_raw = race.get("district", "")
+    if race["office"].startswith("State "):
+        return f"LD-{district_raw}"
+    return district_raw
+
+
 def render_candidate_page(race, candidate, dossier, state_info):
     name = candidate["name"]
     party_short = candidate["party"]
     party_full = PARTY_FULL.get(party_short, party_short)
     party_class = PARTY_CLASS.get(party_short, "party-neutral")
     role = candidate.get("role", "challenger").title()
-    district_raw = race["district"]
-    district = f"LD-{district_raw}" if race["office"].startswith("State ") else district_raw
+    district = _district_label(race)
     race_title = race["title"]
     race_url = race["url"]
+    is_county = race.get("level") == "county"
+    county_crumb = ""
+    if is_county:
+        county_slug = race.get("county_slug", "")
+        county_name = race.get("county", "")
+        county_crumb = f'  <a href="/states/{state_info["slug"]}/{county_slug}/">{county_name} County</a>\n  <span class="nav-sep">/</span>\n'
 
     meta = dossier["meta"] if dossier else {}
     cf = dossier.get("campaign_finance", {}) if dossier else {}
@@ -258,7 +295,7 @@ def render_candidate_page(race, candidate, dossier, state_info):
   <span class="nav-sep">/</span>
   <a href="/states/{state_info['slug']}/">{state_info['name']}</a>
   <span class="nav-sep">/</span>
-  <a href="{race_url}">{race_title}</a>
+{county_crumb}  <a href="{race_url}">{race_title}</a>
   <span class="nav-sep">/</span>
   <span class="nav-current">{name}</span>
 </nav>
@@ -312,15 +349,16 @@ def render_candidate_page(race, candidate, dossier, state_info):
 
 def render_race_overview(race, dossiers, state_info):
     title = race["title"]
-    district_raw = race["district"]
-    district = f"LD-{district_raw}" if race["office"].startswith("State ") else district_raw
+    district = _district_label(race)
     candidates = race["candidates"]
+    is_county = race.get("level") == "county"
 
     candidate_cards = []
     for c in candidates:
         party_short = c["party"]
         party_full = PARTY_FULL.get(party_short, party_short)
         party_class = PARTY_CLASS.get(party_short, "party-neutral")
+        party_label = PARTY_FULL.get(party_short, party_short)
         role = c.get("role", "challenger").title()
         lastname = c["url"].rstrip("/").split("/")[-1]
 
@@ -332,11 +370,19 @@ def render_race_overview(race, dossiers, state_info):
 
         status_class = "status-incumbent" if role.lower() == "incumbent" else "status-active"
         candidate_cards.append(f"""      <a href="{c['url']}" class="dossier-link">
-        <h4>{c['name']} ({party_short})</h4>
+        <h4>{c['name']} ({party_label})</h4>
         <p><span class="{status_class}">{role.upper()}</span> &mdash; Raised: {raised}</p>
       </a>""")
 
     cards_html = "\n".join(candidate_cards)
+
+    county_crumb = ""
+    if is_county:
+        county_slug = race.get("county_slug", "")
+        county_name = race.get("county", "")
+        county_crumb = f"""  <a href="/states/{state_info['slug']}/{county_slug}/">{county_name} County</a>
+  <span class="nav-sep">/</span>
+"""
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -363,7 +409,7 @@ def render_race_overview(race, dossiers, state_info):
   <span class="nav-sep">/</span>
   <a href="/states/{state_info['slug']}/">{state_info['name']}</a>
   <span class="nav-sep">/</span>
-  <span class="nav-current">{title}</span>
+{county_crumb}  <span class="nav-current">{title}</span>
 </nav>
 
 <div class="header party-neutral">
