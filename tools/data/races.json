@@ -106,6 +106,37 @@
       ]
     },
     {
+      "id": "id-sd1-2026",
+      "state_abbr": "ID",
+      "office": "State Senate",
+      "year": 2026,
+      "title": "2026 Idaho Senate District 1",
+      "status": "published",
+      "url": "/races/id-sd1-2026/",
+      "primary_date": "May 19, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Jim Woodward",
+          "party": "rep",
+          "role": "Incumbent",
+          "url": "/races/id-sd1-2026/woodward/"
+        },
+        {
+          "name": "Scott Herndon",
+          "party": "rep",
+          "role": "IFF-Backed Challenger",
+          "url": "/races/id-sd1-2026/herndon/"
+        },
+        {
+          "name": "Steve Johnson",
+          "party": "ind",
+          "role": "Longshot",
+          "url": "/races/id-sd1-2026/johnson/"
+        }
+      ]
+    },
+    {
       "id": "wa-house-1-2026",
       "state_abbr": "WA",
       "office": "US House",
