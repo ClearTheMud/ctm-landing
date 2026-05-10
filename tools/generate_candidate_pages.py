@@ -119,6 +119,7 @@ def render_candidate_page(race, candidate, dossier, state_info):
     source_tier = meta.get("party", {}).get("highest_tier", "T2")
 
     # Top donors section
+    CONDUITS = {"ACTBLUE", "WINRED", "ACTBLUE TECHNICAL SERVICES", "WINRED TECHNICAL SERVICES"}
     donors_html = ""
     top_donors = cf.get("top_donors", [])
     if top_donors:
@@ -126,6 +127,8 @@ def render_candidate_page(race, candidate, dossier, state_info):
         for d in top_donors[:10]:
             donor_name = d.get("donor", {}).get("name", "Unknown")
             amount = format_currency(d.get("amount", 0))
+            if donor_name.upper() in CONDUITS:
+                donor_name += ' <span class="conduit-tag">fundraising platform</span>'
             rows.append(f"          <tr><td>{donor_name}</td><td>{amount}</td></tr>")
         donors_html = f"""
       <h3>Top Donors</h3>
