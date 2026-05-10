@@ -595,7 +595,83 @@ def main():
             place_svg_path.write_text(place_svg)
             print(f"  wrote {place_svg_path} ({len(place_indices)} places)")
 
-    print(f"\nDone: {state_abbr} county maps generated")
+    if "--legislative" in sys.argv:
+        print(f"\nGenerating legislative district map for {state_abbr}...")
+        generate_legislative_map(state_abbr)
+
+    print(f"\nDone: {state_abbr} maps generated")
+
+
+# ---------------------------------------------------------------------------
+# Legislative district SVG generation
+# ---------------------------------------------------------------------------
+
+def get_legislative_shapefiles(statefp):
+    url = f"https://www2.census.gov/geo/tiger/TIGER2024/SLDL/tl_2024_{statefp}_sldl.zip"
+    cache_key = f"sldl_{statefp}"
+    return download_and_extract(url, cache_key)
+
+
+def generate_legislative_svg(state_abbr, records, shapes):
+    statefp = STATE_FIPS[state_abbr]
+    indices = [i for i, r in enumerate(records) if r.get("STATEFP") == statefp]
+    state_shapes = [(records[i], shapes[i]) for i in indices]
+
+    simplified = []
+    for rec, shape in state_shapes:
+        new_parts = [simplify_ring(ring, 0.002) for ring in shape["parts"]]
+        simplified.append({"parts": new_parts, "bbox": shape["bbox"]})
+
+    transform = make_transform(simplified)
+
+    paths = []
+    for (rec, _), simp in zip(state_shapes, simplified):
+        sldlst = rec.get("SLDLST", "").lstrip("0") or "0"
+        name = rec.get("NAMELSAD", f"District {sldlst}")
+        path_d = rings_to_svg_path(simp["parts"], transform)
+        if path_d:
+            paths.append(
+                f'    <path class="leg-district" id="WA-LD-{sldlst}" '
+                f'data-district="{sldlst}" data-name="{name}" '
+                f'd="{path_d}">'
+                f"<title>{name}</title></path>"
+            )
+
+    min_x, min_y, max_x, max_y = compute_bbox_svg(simplified, transform)
+    vb_x = min_x - 5
+    vb_y = min_y - 5
+    vb_w = (max_x - min_x) + 10
+    vb_h = (max_y - min_y) + 10
+
+    svg = f"""<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="{vb_x:.1f} {vb_y:.1f} {vb_w:.1f} {vb_h:.1f}"
+     aria-label="{state_abbr} Legislative District Map"
+     role="img">
+  <g id="leg-districts">
+{chr(10).join(paths)}
+  </g>
+</svg>"""
+    return svg
+
+
+def generate_legislative_map(state_abbr):
+    statefp = STATE_FIPS[state_abbr]
+    st_lower = state_abbr.lower()
+
+    leg_dir = get_legislative_shapefiles(statefp)
+    dbf_path = leg_dir / f"tl_2024_{statefp}_sldl.dbf"
+    shp_path = leg_dir / f"tl_2024_{statefp}_sldl.shp"
+    records = read_dbf(dbf_path)
+    leg_shapes = read_shp_polygons(shp_path)
+    print(f"  loaded {len(records)} legislative district records")
+
+    svg_content = generate_legislative_svg(state_abbr, records, leg_shapes)
+    svg_path = GEO_STATES / f"{st_lower}-legislative.svg"
+    svg_path.write_text(svg_content)
+
+    state_districts = [r for r in records if r.get("STATEFP") == statefp]
+    print(f"  wrote {svg_path} ({len(state_districts)} districts)")
 
 
 if __name__ == "__main__":
