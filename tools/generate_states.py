@@ -157,24 +157,26 @@ def render_state_page(state, state_races, cycle):
     leg_house = [r for r in state_races if r["office"].startswith("State House")]
 
     if senate_races:
-        senate_html = '    <div class="dossier-links">\n' + "\n".join(render_race_card(r) for r in senate_races) + "\n    </div>"
+        senate_section = '    <h3>US Senate</h3>\n    <div class="dossier-links">\n' + "\n".join(render_race_card(r) for r in senate_races) + "\n    </div>"
+    elif senate_up:
+        senate_section = f'    <h3>US Senate</h3>\n' + render_no_research(f"A {name} Senate seat is on the ballot in {cycle}. Research will be added when available.")
     else:
-        up_note = f" A Senate seat is on the ballot in {cycle}." if senate_up else f" Next Senate election: {senate_year}."
-        senate_html = render_no_research(f"No active research on {name} US Senate races.{up_note}")
+        senate_section = ""
 
     if house_races:
-        house_html = '    <div class="dossier-links">\n' + "\n".join(render_race_card(r) for r in house_races) + "\n    </div>"
+        house_section = '    <h3>US House</h3>\n    <div class="dossier-links">\n' + "\n".join(render_race_card(r) for r in house_races) + "\n    </div>"
     else:
         d = "district" if districts == 1 else "districts"
         at_large = " (at-large)" if districts == 1 else ""
-        house_html = render_no_research(f"No active research on {name}&rsquo;s {districts} US House {d}{at_large}.")
+        house_section = '    <h3>US House</h3>\n' + render_no_research(f"No active research on {name}&rsquo;s {districts} US House {d}{at_large}.")
 
+    gov_up = gov_year == cycle
     if gov_races:
-        gov_html = '    <div class="dossier-links">\n' + "\n".join(render_race_card(r) for r in gov_races) + "\n    </div>"
+        gov_section = '    <h3>Governor</h3>\n    <div class="dossier-links">\n' + "\n".join(render_race_card(r) for r in gov_races) + "\n    </div>"
+    elif gov_up:
+        gov_section = '    <h3>Governor</h3>\n' + render_no_research(f"The {name} governor&rsquo;s race is on the ballot in {cycle}. Research will be added when available.")
     else:
-        gov_up = gov_year == cycle
-        gov_note = f" Governor is on the ballot in {cycle}." if gov_up else f" Next gubernatorial election: {gov_year}."
-        gov_html = render_no_research(f"No active research on {name} gubernatorial race.{gov_note}")
+        gov_section = ""
 
     hero_html = ""
     if not has_races:
@@ -284,16 +286,13 @@ def render_state_page(state, state_races, cycle):
 {district_map_html}
   <div class="section">
     <h2><span class="section-num">1</span> Federal Races</h2>
-    <h3>US Senate</h3>
-{senate_html}
-    <h3>US House</h3>
-{house_html}
+{senate_section}
+{house_section}
   </div>
 
   <div class="section">
     <h2><span class="section-num">2</span> State Races</h2>
-    <h3>Governor</h3>
-{gov_html}
+{gov_section}
     <h3>State Legislature</h3>
 {render_legislature_section(name, leg_senate, leg_house)}
   </div>
