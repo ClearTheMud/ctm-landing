@@ -1,0 +1,238 @@
+{
+  "WA": [
+    {
+      "name": "Adams",
+      "fips": "001",
+      "slug": "adams",
+      "full_name": "Adams County"
+    },
+    {
+      "name": "Asotin",
+      "fips": "003",
+      "slug": "asotin",
+      "full_name": "Asotin County"
+    },
+    {
+      "name": "Benton",
+      "fips": "005",
+      "slug": "benton",
+      "full_name": "Benton County"
+    },
+    {
+      "name": "Chelan",
+      "fips": "007",
+      "slug": "chelan",
+      "full_name": "Chelan County"
+    },
+    {
+      "name": "Clallam",
+      "fips": "009",
+      "slug": "clallam",
+      "full_name": "Clallam County"
+    },
+    {
+      "name": "Clark",
+      "fips": "011",
+      "slug": "clark",
+      "full_name": "Clark County"
+    },
+    {
+      "name": "Columbia",
+      "fips": "013",
+      "slug": "columbia",
+      "full_name": "Columbia County"
+    },
+    {
+      "name": "Cowlitz",
+      "fips": "015",
+      "slug": "cowlitz",
+      "full_name": "Cowlitz County"
+    },
+    {
+      "name": "Douglas",
+      "fips": "017",
+      "slug": "douglas",
+      "full_name": "Douglas County"
+    },
+    {
+      "name": "Ferry",
+      "fips": "019",
+      "slug": "ferry",
+      "full_name": "Ferry County"
+    },
+    {
+      "name": "Franklin",
+      "fips": "021",
+      "slug": "franklin",
+      "full_name": "Franklin County"
+    },
+    {
+      "name": "Garfield",
+      "fips": "023",
+      "slug": "garfield",
+      "full_name": "Garfield County"
+    },
+    {
+      "name": "Grant",
+      "fips": "025",
+      "slug": "grant",
+      "full_name": "Grant County"
+    },
+    {
+      "name": "Grays Harbor",
+      "fips": "027",
+      "slug": "grays-harbor",
+      "full_name": "Grays Harbor County"
+    },
+    {
+      "name": "Island",
+      "fips": "029",
+      "slug": "island",
+      "full_name": "Island County"
+    },
+    {
+      "name": "Jefferson",
+      "fips": "031",
+      "slug": "jefferson",
+      "full_name": "Jefferson County"
+    },
+    {
+      "name": "King",
+      "fips": "033",
+      "slug": "king",
+      "full_name": "King County"
+    },
+    {
+      "name": "Kitsap",
+      "fips": "035",
+      "slug": "kitsap",
+      "full_name": "Kitsap County"
+    },
+    {
+      "name": "Kittitas",
+      "fips": "037",
+      "slug": "kittitas",
+      "full_name": "Kittitas County"
+    },
+    {
+      "name": "Klickitat",
+      "fips": "039",
+      "slug": "klickitat",
+      "full_name": "Klickitat County"
+    },
+    {
+      "name": "Lewis",
+      "fips": "041",
+      "slug": "lewis",
+      "full_name": "Lewis County"
+    },
+    {
+      "name": "Lincoln",
+      "fips": "043",
+      "slug": "lincoln",
+      "full_name": "Lincoln County"
+    },
+    {
+      "name": "Mason",
+      "fips": "045",
+      "slug": "mason",
+      "full_name": "Mason County"
+    },
+    {
+      "name": "Okanogan",
+      "fips": "047",
+      "slug": "okanogan",
+      "full_name": "Okanogan County"
+    },
+    {
+      "name": "Pacific",
+      "fips": "049",
+      "slug": "pacific",
+      "full_name": "Pacific County"
+    },
+    {
+      "name": "Pend Oreille",
+      "fips": "051",
+      "slug": "pend-oreille",
+      "full_name": "Pend Oreille County"
+    },
+    {
+      "name": "Pierce",
+      "fips": "053",
+      "slug": "pierce",
+      "full_name": "Pierce County"
+    },
+    {
+      "name": "San Juan",
+      "fips": "055",
+      "slug": "san-juan",
+      "full_name": "San Juan County"
+    },
+    {
+      "name": "Skagit",
+      "fips": "057",
+      "slug": "skagit",
+      "full_name": "Skagit County"
+    },
+    {
+      "name": "Skamania",
+      "fips": "059",
+      "slug": "skamania",
+      "full_name": "Skamania County"
+    },
+    {
+      "name": "Snohomish",
+      "fips": "061",
+      "slug": "snohomish",
+      "full_name": "Snohomish County"
+    },
+    {
+      "name": "Spokane",
+      "fips": "063",
+      "slug": "spokane",
+      "full_name": "Spokane County"
+    },
+    {
+      "name": "Stevens",
+      "fips": "065",
+      "slug": "stevens",
+      "full_name": "Stevens County"
+    },
+    {
+      "name": "Thurston",
+      "fips": "067",
+      "slug": "thurston",
+      "full_name": "Thurston County"
+    },
+    {
+      "name": "Wahkiakum",
+      "fips": "069",
+      "slug": "wahkiakum",
+      "full_name": "Wahkiakum County"
+    },
+    {
+      "name": "Walla Walla",
+      "fips": "071",
+      "slug": "walla-walla",
+      "full_name": "Walla Walla County"
+    },
+    {
+      "name": "Whatcom",
+      "fips": "073",
+      "slug": "whatcom",
+      "full_name": "Whatcom County"
+    },
+    {
+      "name": "Whitman",
+      "fips": "075",
+      "slug": "whitman",
+      "full_name": "Whitman County"
+    },
+    {
+      "name": "Yakima",
+      "fips": "077",
+      "slug": "yakima",
+      "full_name": "Yakima County"
+    }
+  ]
+}

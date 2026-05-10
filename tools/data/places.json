@@ -1,0 +1,3758 @@
+{
+  "WA": {
+    "adams": [
+      {
+        "name": "Hatton",
+        "slug": "hatton",
+        "type": "city",
+        "placefp": "30060"
+      },
+      {
+        "name": "Lind",
+        "slug": "lind",
+        "type": "city",
+        "placefp": "39510"
+      },
+      {
+        "name": "Othello",
+        "slug": "othello",
+        "type": "city",
+        "placefp": "52215"
+      },
+      {
+        "name": "Ritzville",
+        "slug": "ritzville",
+        "type": "city",
+        "placefp": "58725"
+      },
+      {
+        "name": "Washtucna",
+        "slug": "washtucna",
+        "type": "city",
+        "placefp": "76440"
+      }
+    ],
+    "asotin": [
+      {
+        "name": "Anatone",
+        "slug": "anatone",
+        "type": "cdp",
+        "placefp": "02025"
+      },
+      {
+        "name": "Asotin",
+        "slug": "asotin",
+        "type": "city",
+        "placefp": "03075"
+      },
+      {
+        "name": "Clarkston",
+        "slug": "clarkston",
+        "type": "city",
+        "placefp": "12630"
+      },
+      {
+        "name": "Clarkston Heights-Vineland",
+        "slug": "clarkston-heights-vineland",
+        "type": "cdp",
+        "placefp": "12680"
+      },
+      {
+        "name": "West Clarkston-Highland",
+        "slug": "west-clarkston-highland",
+        "type": "cdp",
+        "placefp": "77297"
+      }
+    ],
+    "benton": [
+      {
+        "name": "Benton City",
+        "slug": "benton-city",
+        "type": "city",
+        "placefp": "05560"
+      },
+      {
+        "name": "Finley",
+        "slug": "finley",
+        "type": "cdp",
+        "placefp": "23865"
+      },
+      {
+        "name": "Kennewick",
+        "slug": "kennewick",
+        "type": "city",
+        "placefp": "35275"
+      },
+      {
+        "name": "Prosser",
+        "slug": "prosser",
+        "type": "city",
+        "placefp": "56450"
+      },
+      {
+        "name": "Richland",
+        "slug": "richland",
+        "type": "city",
+        "placefp": "58235"
+      },
+      {
+        "name": "West Richland",
+        "slug": "west-richland",
+        "type": "city",
+        "placefp": "77665"
+      }
+    ],
+    "chelan": [
+      {
+        "name": "Cashmere",
+        "slug": "cashmere",
+        "type": "city",
+        "placefp": "10495"
+      },
+      {
+        "name": "Chelan",
+        "slug": "chelan",
+        "type": "city",
+        "placefp": "11615"
+      },
+      {
+        "name": "Chelan Falls",
+        "slug": "chelan-falls",
+        "type": "cdp",
+        "placefp": "11685"
+      },
+      {
+        "name": "Entiat",
+        "slug": "entiat",
+        "type": "city",
+        "placefp": "22010"
+      },
+      {
+        "name": "Leavenworth",
+        "slug": "leavenworth",
+        "type": "city",
+        "placefp": "38845"
+      },
+      {
+        "name": "Manson",
+        "slug": "manson",
+        "type": "cdp",
+        "placefp": "42835"
+      },
+      {
+        "name": "South Wenatchee",
+        "slug": "south-wenatchee",
+        "type": "cdp",
+        "placefp": "66185"
+      },
+      {
+        "name": "Sunnyslope",
+        "slug": "sunnyslope",
+        "type": "cdp",
+        "placefp": "68785"
+      },
+      {
+        "name": "Wenatchee",
+        "slug": "wenatchee",
+        "type": "city",
+        "placefp": "77105"
+      }
+    ],
+    "clallam": [
+      {
+        "name": "Bell Hill",
+        "slug": "bell-hill",
+        "type": "cdp",
+        "placefp": "05245"
+      },
+      {
+        "name": "Blyn",
+        "slug": "blyn",
+        "type": "cdp",
+        "placefp": "06855"
+      },
+      {
+        "name": "Carlsborg",
+        "slug": "carlsborg",
+        "type": "cdp",
+        "placefp": "10075"
+      },
+      {
+        "name": "Clallam Bay",
+        "slug": "clallam-bay",
+        "type": "cdp",
+        "placefp": "12525"
+      },
+      {
+        "name": "Forks",
+        "slug": "forks",
+        "type": "city",
+        "placefp": "24810"
+      },
+      {
+        "name": "Jamestown",
+        "slug": "jamestown",
+        "type": "cdp",
+        "placefp": "33890"
+      },
+      {
+        "name": "Neah Bay",
+        "slug": "neah-bay",
+        "type": "cdp",
+        "placefp": "48295"
+      },
+      {
+        "name": "Port Angeles",
+        "slug": "port-angeles",
+        "type": "city",
+        "placefp": "55365"
+      },
+      {
+        "name": "Port Angeles East",
+        "slug": "port-angeles-east",
+        "type": "cdp",
+        "placefp": "55400"
+      },
+      {
+        "name": "River Road",
+        "slug": "river-road",
+        "type": "cdp",
+        "placefp": "58777"
+      },
+      {
+        "name": "Sekiu",
+        "slug": "sekiu",
+        "type": "cdp",
+        "placefp": "63245"
+      },
+      {
+        "name": "Sequim",
+        "slug": "sequim",
+        "type": "city",
+        "placefp": "63385"
+      }
+    ],
+    "clark": [
+      {
+        "name": "Amboy",
+        "slug": "amboy",
+        "type": "cdp",
+        "placefp": "01850"
+      },
+      {
+        "name": "Barberton",
+        "slug": "barberton",
+        "type": "cdp",
+        "placefp": "04195"
+      },
+      {
+        "name": "Battle Ground",
+        "slug": "battle-ground",
+        "type": "city",
+        "placefp": "04475"
+      },
+      {
+        "name": "Brush Prairie",
+        "slug": "brush-prairie",
+        "type": "cdp",
+        "placefp": "08465"
+      },
+      {
+        "name": "Camas",
+        "slug": "camas",
+        "type": "city",
+        "placefp": "09480"
+      },
+      {
+        "name": "Cherry Grove",
+        "slug": "cherry-grove",
+        "type": "cdp",
+        "placefp": "12015"
+      },
+      {
+        "name": "Dollars Corner",
+        "slug": "dollars-corner",
+        "type": "cdp",
+        "placefp": "18198"
+      },
+      {
+        "name": "Duluth",
+        "slug": "duluth",
+        "type": "cdp",
+        "placefp": "18775"
+      },
+      {
+        "name": "Felida",
+        "slug": "felida",
+        "type": "cdp",
+        "placefp": "23550"
+      },
+      {
+        "name": "Fern Prairie",
+        "slug": "fern-prairie",
+        "type": "cdp",
+        "placefp": "23690"
+      },
+      {
+        "name": "Five Corners",
+        "slug": "five-corners",
+        "type": "cdp",
+        "placefp": "24188"
+      },
+      {
+        "name": "Hazel Dell",
+        "slug": "hazel-dell",
+        "type": "cdp",
+        "placefp": "30305"
+      },
+      {
+        "name": "Hockinson",
+        "slug": "hockinson",
+        "type": "cdp",
+        "placefp": "31530"
+      },
+      {
+        "name": "La Center",
+        "slug": "la-center",
+        "type": "city",
+        "placefp": "36710"
+      },
+      {
+        "name": "Lake Shore",
+        "slug": "lake-shore",
+        "type": "cdp",
+        "placefp": "37830"
+      },
+      {
+        "name": "Lewisville",
+        "slug": "lewisville",
+        "type": "cdp",
+        "placefp": "39212"
+      },
+      {
+        "name": "Meadow Glade",
+        "slug": "meadow-glade",
+        "type": "cdp",
+        "placefp": "44620"
+      },
+      {
+        "name": "Minnehaha",
+        "slug": "minnehaha",
+        "type": "cdp",
+        "placefp": "46125"
+      },
+      {
+        "name": "Mount Vista",
+        "slug": "mount-vista",
+        "type": "cdp",
+        "placefp": "47630"
+      },
+      {
+        "name": "Orchards",
+        "slug": "orchards",
+        "type": "cdp",
+        "placefp": "51795"
+      },
+      {
+        "name": "Ridgefield",
+        "slug": "ridgefield",
+        "type": "city",
+        "placefp": "58410"
+      },
+      {
+        "name": "Salmon Creek",
+        "slug": "salmon-creek",
+        "type": "cdp",
+        "placefp": "61000"
+      },
+      {
+        "name": "Vancouver",
+        "slug": "vancouver",
+        "type": "city",
+        "placefp": "74060"
+      },
+      {
+        "name": "Venersborg",
+        "slug": "venersborg",
+        "type": "cdp",
+        "placefp": "74585"
+      },
+      {
+        "name": "Washougal",
+        "slug": "washougal",
+        "type": "city",
+        "placefp": "76405"
+      },
+      {
+        "name": "Yacolt",
+        "slug": "yacolt",
+        "type": "city",
+        "placefp": "79975"
+      }
+    ],
+    "columbia": [
+      {
+        "name": "Dayton",
+        "slug": "dayton",
+        "type": "city",
+        "placefp": "16970"
+      },
+      {
+        "name": "Starbuck",
+        "slug": "starbuck",
+        "type": "city",
+        "placefp": "67490"
+      }
+    ],
+    "cowlitz": [
+      {
+        "name": "Beacon Hill",
+        "slug": "beacon-hill",
+        "type": "cdp",
+        "placefp": "04825"
+      },
+      {
+        "name": "Castle Rock",
+        "slug": "castle-rock",
+        "type": "city",
+        "placefp": "10565"
+      },
+      {
+        "name": "Cougar",
+        "slug": "cougar",
+        "type": "cdp",
+        "placefp": "15010"
+      },
+      {
+        "name": "Kalama",
+        "slug": "kalama",
+        "type": "city",
+        "placefp": "34645"
+      },
+      {
+        "name": "Kelso",
+        "slug": "kelso",
+        "type": "city",
+        "placefp": "35065"
+      },
+      {
+        "name": "Lexington",
+        "slug": "lexington",
+        "type": "cdp",
+        "placefp": "39230"
+      },
+      {
+        "name": "Longview",
+        "slug": "longview",
+        "type": "city",
+        "placefp": "40245"
+      },
+      {
+        "name": "Longview Heights",
+        "slug": "longview-heights",
+        "type": "cdp",
+        "placefp": "40270"
+      },
+      {
+        "name": "Ryderwood",
+        "slug": "ryderwood",
+        "type": "cdp",
+        "placefp": "60580"
+      },
+      {
+        "name": "Woodland",
+        "slug": "woodland",
+        "type": "city",
+        "placefp": "79625"
+      }
+    ],
+    "douglas": [
+      {
+        "name": "Bridgeport",
+        "slug": "bridgeport",
+        "type": "city",
+        "placefp": "07870"
+      },
+      {
+        "name": "East Wenatchee",
+        "slug": "east-wenatchee",
+        "type": "city",
+        "placefp": "20155"
+      },
+      {
+        "name": "Mansfield",
+        "slug": "mansfield",
+        "type": "city",
+        "placefp": "42800"
+      },
+      {
+        "name": "Rock Island",
+        "slug": "rock-island",
+        "type": "city",
+        "placefp": "59180"
+      },
+      {
+        "name": "Waterville",
+        "slug": "waterville",
+        "type": "city",
+        "placefp": "76510"
+      }
+    ],
+    "ferry": [
+      {
+        "name": "Barney's Junction",
+        "slug": "barneys-junction",
+        "type": "cdp",
+        "placefp": "04347"
+      },
+      {
+        "name": "Barstow",
+        "slug": "barstow",
+        "type": "cdp",
+        "placefp": "04370"
+      },
+      {
+        "name": "Boyds",
+        "slug": "boyds",
+        "type": "cdp",
+        "placefp": "07485"
+      },
+      {
+        "name": "Curlew",
+        "slug": "curlew",
+        "type": "cdp",
+        "placefp": "16165"
+      },
+      {
+        "name": "Curlew Lake",
+        "slug": "curlew-lake",
+        "type": "cdp",
+        "placefp": "16170"
+      },
+      {
+        "name": "Danville",
+        "slug": "danville",
+        "type": "cdp",
+        "placefp": "16585"
+      },
+      {
+        "name": "Inchelium",
+        "slug": "inchelium",
+        "type": "cdp",
+        "placefp": "33105"
+      },
+      {
+        "name": "Keller",
+        "slug": "keller",
+        "type": "cdp",
+        "placefp": "34960"
+      },
+      {
+        "name": "Laurier",
+        "slug": "laurier",
+        "type": "cdp",
+        "placefp": "38705"
+      },
+      {
+        "name": "Malo",
+        "slug": "malo",
+        "type": "cdp",
+        "placefp": "42310"
+      },
+      {
+        "name": "Orient",
+        "slug": "orient",
+        "type": "cdp",
+        "placefp": "51830"
+      },
+      {
+        "name": "Pine Grove",
+        "slug": "pine-grove",
+        "type": "cdp",
+        "placefp": "54405"
+      },
+      {
+        "name": "Republic",
+        "slug": "republic",
+        "type": "city",
+        "placefp": "57850"
+      },
+      {
+        "name": "Torboy",
+        "slug": "torboy",
+        "type": "cdp",
+        "placefp": "71995"
+      },
+      {
+        "name": "Twin Lakes",
+        "slug": "twin-lakes",
+        "type": "cdp",
+        "placefp": "73065"
+      }
+    ],
+    "franklin": [
+      {
+        "name": "Basin City",
+        "slug": "basin-city",
+        "type": "cdp",
+        "placefp": "04405"
+      },
+      {
+        "name": "Connell",
+        "slug": "connell",
+        "type": "city",
+        "placefp": "14485"
+      },
+      {
+        "name": "Kahlotus",
+        "slug": "kahlotus",
+        "type": "city",
+        "placefp": "34575"
+      },
+      {
+        "name": "Mesa",
+        "slug": "mesa",
+        "type": "city",
+        "placefp": "45180"
+      },
+      {
+        "name": "Pasco",
+        "slug": "pasco",
+        "type": "city",
+        "placefp": "53545"
+      },
+      {
+        "name": "West Pasco",
+        "slug": "west-pasco",
+        "type": "cdp",
+        "placefp": "77612"
+      }
+    ],
+    "garfield": [
+      {
+        "name": "Pataha",
+        "slug": "pataha",
+        "type": "cdp",
+        "placefp": "53660"
+      },
+      {
+        "name": "Pomeroy",
+        "slug": "pomeroy",
+        "type": "city",
+        "placefp": "55120"
+      }
+    ],
+    "grant": [
+      {
+        "name": "Banks Lake South",
+        "slug": "banks-lake-south",
+        "type": "cdp",
+        "placefp": "04125"
+      },
+      {
+        "name": "Beverly",
+        "slug": "beverly",
+        "type": "cdp",
+        "placefp": "05770"
+      },
+      {
+        "name": "Cascade Valley",
+        "slug": "cascade-valley",
+        "type": "cdp",
+        "placefp": "10455"
+      },
+      {
+        "name": "Coulee City",
+        "slug": "coulee-city",
+        "type": "city",
+        "placefp": "15080"
+      },
+      {
+        "name": "Crescent Bar",
+        "slug": "crescent-bar",
+        "type": "cdp",
+        "placefp": "15603"
+      },
+      {
+        "name": "Desert Aire",
+        "slug": "desert-aire",
+        "type": "cdp",
+        "placefp": "17617"
+      },
+      {
+        "name": "Electric City",
+        "slug": "electric-city",
+        "type": "city",
+        "placefp": "21030"
+      },
+      {
+        "name": "Ephrata",
+        "slug": "ephrata",
+        "type": "city",
+        "placefp": "22080"
+      },
+      {
+        "name": "George",
+        "slug": "george",
+        "type": "city",
+        "placefp": "26455"
+      },
+      {
+        "name": "Grand Coulee",
+        "slug": "grand-coulee",
+        "type": "city",
+        "placefp": "27855"
+      },
+      {
+        "name": "Hartline",
+        "slug": "hartline",
+        "type": "city",
+        "placefp": "29920"
+      },
+      {
+        "name": "Krupp",
+        "slug": "krupp",
+        "type": "city",
+        "placefp": "36395"
+      },
+      {
+        "name": "Lakeview",
+        "slug": "lakeview",
+        "type": "cdp",
+        "placefp": "37926"
+      },
+      {
+        "name": "Marine View",
+        "slug": "marine-view",
+        "type": "cdp",
+        "placefp": "43552"
+      },
+      {
+        "name": "Mattawa",
+        "slug": "mattawa",
+        "type": "city",
+        "placefp": "44165"
+      },
+      {
+        "name": "Moses Lake",
+        "slug": "moses-lake",
+        "type": "city",
+        "placefp": "47245"
+      },
+      {
+        "name": "Moses Lake North",
+        "slug": "moses-lake-north",
+        "type": "cdp",
+        "placefp": "47280"
+      },
+      {
+        "name": "Quincy",
+        "slug": "quincy",
+        "type": "city",
+        "placefp": "57115"
+      },
+      {
+        "name": "Royal City",
+        "slug": "royal-city",
+        "type": "city",
+        "placefp": "60230"
+      },
+      {
+        "name": "Schwana",
+        "slug": "schwana",
+        "type": "cdp",
+        "placefp": "61925"
+      },
+      {
+        "name": "Soap Lake",
+        "slug": "soap-lake",
+        "type": "city",
+        "placefp": "65345"
+      },
+      {
+        "name": "Sunland Estates",
+        "slug": "sunland-estates",
+        "type": "cdp",
+        "placefp": "68557"
+      },
+      {
+        "name": "Warden",
+        "slug": "warden",
+        "type": "city",
+        "placefp": "76160"
+      },
+      {
+        "name": "Wheeler",
+        "slug": "wheeler",
+        "type": "cdp",
+        "placefp": "78050"
+      },
+      {
+        "name": "Wilson Creek",
+        "slug": "wilson-creek",
+        "type": "city",
+        "placefp": "79135"
+      }
+    ],
+    "grays-harbor": [
+      {
+        "name": "Aberdeen",
+        "slug": "aberdeen",
+        "type": "city",
+        "placefp": "00100"
+      },
+      {
+        "name": "Aberdeen Gardens",
+        "slug": "aberdeen-gardens",
+        "type": "cdp",
+        "placefp": "00135"
+      },
+      {
+        "name": "Amanda Park",
+        "slug": "amanda-park",
+        "type": "cdp",
+        "placefp": "01780"
+      },
+      {
+        "name": "Brady",
+        "slug": "brady",
+        "type": "cdp",
+        "placefp": "07590"
+      },
+      {
+        "name": "Central Park",
+        "slug": "central-park",
+        "type": "cdp",
+        "placefp": "11195"
+      },
+      {
+        "name": "Cohassett Beach",
+        "slug": "cohassett-beach",
+        "type": "cdp",
+        "placefp": "13595"
+      },
+      {
+        "name": "Copalis Beach",
+        "slug": "copalis-beach",
+        "type": "cdp",
+        "placefp": "14660"
+      },
+      {
+        "name": "Cosmopolis",
+        "slug": "cosmopolis",
+        "type": "city",
+        "placefp": "14870"
+      },
+      {
+        "name": "Elma",
+        "slug": "elma",
+        "type": "city",
+        "placefp": "21450"
+      },
+      {
+        "name": "Grayland",
+        "slug": "grayland",
+        "type": "cdp",
+        "placefp": "28345"
+      },
+      {
+        "name": "Hogans Corner",
+        "slug": "hogans-corner",
+        "type": "cdp",
+        "placefp": "31540"
+      },
+      {
+        "name": "Hoquiam",
+        "slug": "hoquiam",
+        "type": "city",
+        "placefp": "32300"
+      },
+      {
+        "name": "Humptulips",
+        "slug": "humptulips",
+        "type": "cdp",
+        "placefp": "32650"
+      },
+      {
+        "name": "Malone",
+        "slug": "malone",
+        "type": "cdp",
+        "placefp": "42345"
+      },
+      {
+        "name": "Markham",
+        "slug": "markham",
+        "type": "cdp",
+        "placefp": "43640"
+      },
+      {
+        "name": "McCleary",
+        "slug": "mccleary",
+        "type": "city",
+        "placefp": "41225"
+      },
+      {
+        "name": "Moclips",
+        "slug": "moclips",
+        "type": "cdp",
+        "placefp": "46405"
+      },
+      {
+        "name": "Montesano",
+        "slug": "montesano",
+        "type": "city",
+        "placefp": "46895"
+      },
+      {
+        "name": "Neilton",
+        "slug": "neilton",
+        "type": "cdp",
+        "placefp": "48330"
+      },
+      {
+        "name": "Oakville",
+        "slug": "oakville",
+        "type": "city",
+        "placefp": "50430"
+      },
+      {
+        "name": "Ocean City",
+        "slug": "ocean-city",
+        "type": "cdp",
+        "placefp": "50500"
+      },
+      {
+        "name": "Ocean Shores",
+        "slug": "ocean-shores",
+        "type": "city",
+        "placefp": "50570"
+      },
+      {
+        "name": "Ocosta",
+        "slug": "ocosta",
+        "type": "cdp",
+        "placefp": "50675"
+      },
+      {
+        "name": "Oyehut",
+        "slug": "oyehut",
+        "type": "cdp",
+        "placefp": "52378"
+      },
+      {
+        "name": "Pacific Beach",
+        "slug": "pacific-beach",
+        "type": "cdp",
+        "placefp": "52530"
+      },
+      {
+        "name": "Porter",
+        "slug": "porter",
+        "type": "cdp",
+        "placefp": "55540"
+      },
+      {
+        "name": "Qui-nai-elt Village",
+        "slug": "qui-nai-elt-village",
+        "type": "cdp",
+        "placefp": "57030"
+      },
+      {
+        "name": "Santiago",
+        "slug": "santiago",
+        "type": "cdp",
+        "placefp": "61235"
+      },
+      {
+        "name": "Satsop",
+        "slug": "satsop",
+        "type": "cdp",
+        "placefp": "61350"
+      },
+      {
+        "name": "Taholah",
+        "slug": "taholah",
+        "type": "cdp",
+        "placefp": "70175"
+      },
+      {
+        "name": "Westport",
+        "slug": "westport",
+        "type": "city",
+        "placefp": "77630"
+      }
+    ],
+    "island": [
+      {
+        "name": "Clinton",
+        "slug": "clinton",
+        "type": "cdp",
+        "placefp": "13155"
+      },
+      {
+        "name": "Coupeville",
+        "slug": "coupeville",
+        "type": "city",
+        "placefp": "15185"
+      },
+      {
+        "name": "Langley",
+        "slug": "langley",
+        "type": "city",
+        "placefp": "38355"
+      },
+      {
+        "name": "Oak Harbor",
+        "slug": "oak-harbor",
+        "type": "city",
+        "placefp": "50360"
+      },
+      {
+        "name": "Whidbey Island Station",
+        "slug": "whidbey-island-station",
+        "type": "place",
+        "placefp": "78155"
+      }
+    ],
+    "jefferson": [
+      {
+        "name": "Brinnon",
+        "slug": "brinnon",
+        "type": "cdp",
+        "placefp": "08080"
+      },
+      {
+        "name": "Marrowstone",
+        "slug": "marrowstone",
+        "type": "cdp",
+        "placefp": "43762"
+      },
+      {
+        "name": "Port Hadlock-Irondale",
+        "slug": "port-hadlock-irondale",
+        "type": "cdp",
+        "placefp": "55620"
+      },
+      {
+        "name": "Port Ludlow",
+        "slug": "port-ludlow",
+        "type": "cdp",
+        "placefp": "55645"
+      },
+      {
+        "name": "Port Townsend",
+        "slug": "port-townsend",
+        "type": "city",
+        "placefp": "55855"
+      },
+      {
+        "name": "Queets",
+        "slug": "queets",
+        "type": "cdp",
+        "placefp": "56905"
+      },
+      {
+        "name": "Quilcene",
+        "slug": "quilcene",
+        "type": "cdp",
+        "placefp": "56975"
+      }
+    ],
+    "king": [
+      {
+        "name": "Algona",
+        "slug": "algona",
+        "type": "city",
+        "placefp": "01290"
+      },
+      {
+        "name": "Ames Lake",
+        "slug": "ames-lake",
+        "type": "cdp",
+        "placefp": "01920"
+      },
+      {
+        "name": "Auburn",
+        "slug": "auburn",
+        "type": "city",
+        "placefp": "03180"
+      },
+      {
+        "name": "Baring",
+        "slug": "baring",
+        "type": "cdp",
+        "placefp": "04300"
+      },
+      {
+        "name": "Beaux Arts Village",
+        "slug": "beaux-arts-village",
+        "type": "city",
+        "placefp": "04895"
+      },
+      {
+        "name": "Bellevue",
+        "slug": "bellevue",
+        "type": "city",
+        "placefp": "05210"
+      },
+      {
+        "name": "Black Diamond",
+        "slug": "black-diamond",
+        "type": "city",
+        "placefp": "06330"
+      },
+      {
+        "name": "Boulevard Park",
+        "slug": "boulevard-park",
+        "type": "cdp",
+        "placefp": "07397"
+      },
+      {
+        "name": "Bryn Mawr-Skyway",
+        "slug": "bryn-mawr-skyway",
+        "type": "cdp",
+        "placefp": "08552"
+      },
+      {
+        "name": "Burien",
+        "slug": "burien",
+        "type": "city",
+        "placefp": "08850"
+      },
+      {
+        "name": "Carnation",
+        "slug": "carnation",
+        "type": "city",
+        "placefp": "10215"
+      },
+      {
+        "name": "Clyde Hill",
+        "slug": "clyde-hill",
+        "type": "city",
+        "placefp": "13365"
+      },
+      {
+        "name": "Cottage Lake",
+        "slug": "cottage-lake",
+        "type": "cdp",
+        "placefp": "14940"
+      },
+      {
+        "name": "Covington",
+        "slug": "covington",
+        "type": "city",
+        "placefp": "15290"
+      },
+      {
+        "name": "Des Moines",
+        "slug": "des-moines",
+        "type": "city",
+        "placefp": "17635"
+      },
+      {
+        "name": "Duvall",
+        "slug": "duvall",
+        "type": "city",
+        "placefp": "19035"
+      },
+      {
+        "name": "East Renton Highlands",
+        "slug": "east-renton-highlands",
+        "type": "cdp",
+        "placefp": "19857"
+      },
+      {
+        "name": "Enumclaw",
+        "slug": "enumclaw",
+        "type": "city",
+        "placefp": "22045"
+      },
+      {
+        "name": "Fairwood",
+        "slug": "fairwood",
+        "type": "cdp",
+        "placefp": "23160"
+      },
+      {
+        "name": "Fall City",
+        "slug": "fall-city",
+        "type": "cdp",
+        "placefp": "23200"
+      },
+      {
+        "name": "Federal Way",
+        "slug": "federal-way",
+        "type": "city",
+        "placefp": "23515"
+      },
+      {
+        "name": "Hobart",
+        "slug": "hobart",
+        "type": "cdp",
+        "placefp": "31495"
+      },
+      {
+        "name": "Hunts Point",
+        "slug": "hunts-point",
+        "type": "city",
+        "placefp": "32755"
+      },
+      {
+        "name": "Issaquah",
+        "slug": "issaquah",
+        "type": "city",
+        "placefp": "33805"
+      },
+      {
+        "name": "Kenmore",
+        "slug": "kenmore",
+        "type": "city",
+        "placefp": "35170"
+      },
+      {
+        "name": "Kent",
+        "slug": "kent",
+        "type": "city",
+        "placefp": "35415"
+      },
+      {
+        "name": "Kirkland",
+        "slug": "kirkland",
+        "type": "city",
+        "placefp": "35940"
+      },
+      {
+        "name": "Lake Forest Park",
+        "slug": "lake-forest-park",
+        "type": "city",
+        "placefp": "37270"
+      },
+      {
+        "name": "Lake Holm",
+        "slug": "lake-holm",
+        "type": "cdp",
+        "placefp": "37345"
+      },
+      {
+        "name": "Lake Marcel-Stillwater",
+        "slug": "lake-marcel-stillwater",
+        "type": "cdp",
+        "placefp": "37538"
+      },
+      {
+        "name": "Lake Morton-Berrydale",
+        "slug": "lake-morton-berrydale",
+        "type": "cdp",
+        "placefp": "37567"
+      },
+      {
+        "name": "Lakeland North",
+        "slug": "lakeland-north",
+        "type": "cdp",
+        "placefp": "37420"
+      },
+      {
+        "name": "Lakeland South",
+        "slug": "lakeland-south",
+        "type": "cdp",
+        "placefp": "37430"
+      },
+      {
+        "name": "Maple Heights-Lake Desire",
+        "slug": "maple-heights-lake-desire",
+        "type": "cdp",
+        "placefp": "43062"
+      },
+      {
+        "name": "Maple Valley",
+        "slug": "maple-valley",
+        "type": "city",
+        "placefp": "43150"
+      },
+      {
+        "name": "Medina",
+        "slug": "medina",
+        "type": "city",
+        "placefp": "44725"
+      },
+      {
+        "name": "Mercer Island",
+        "slug": "mercer-island",
+        "type": "city",
+        "placefp": "45005"
+      },
+      {
+        "name": "Mirrormont",
+        "slug": "mirrormont",
+        "type": "cdp",
+        "placefp": "46215"
+      },
+      {
+        "name": "Newcastle",
+        "slug": "newcastle",
+        "type": "city",
+        "placefp": "48645"
+      },
+      {
+        "name": "Normandy Park",
+        "slug": "normandy-park",
+        "type": "city",
+        "placefp": "49415"
+      },
+      {
+        "name": "North Bend",
+        "slug": "north-bend",
+        "type": "city",
+        "placefp": "49485"
+      },
+      {
+        "name": "Pacific",
+        "slug": "pacific",
+        "type": "city",
+        "placefp": "52495"
+      },
+      {
+        "name": "Ravensdale",
+        "slug": "ravensdale",
+        "type": "cdp",
+        "placefp": "57395"
+      },
+      {
+        "name": "Redmond",
+        "slug": "redmond",
+        "type": "city",
+        "placefp": "57535"
+      },
+      {
+        "name": "Renton",
+        "slug": "renton",
+        "type": "city",
+        "placefp": "57745"
+      },
+      {
+        "name": "Riverbend",
+        "slug": "riverbend",
+        "type": "cdp",
+        "placefp": "58742"
+      },
+      {
+        "name": "Riverpoint",
+        "slug": "riverpoint",
+        "type": "cdp",
+        "placefp": "58768"
+      },
+      {
+        "name": "Sammamish",
+        "slug": "sammamish",
+        "type": "city",
+        "placefp": "61115"
+      },
+      {
+        "name": "SeaTac",
+        "slug": "seatac",
+        "type": "city",
+        "placefp": "62288"
+      },
+      {
+        "name": "Seattle",
+        "slug": "seattle",
+        "type": "city",
+        "placefp": "63000"
+      },
+      {
+        "name": "Shadow Lake",
+        "slug": "shadow-lake",
+        "type": "cdp",
+        "placefp": "63545"
+      },
+      {
+        "name": "Shoreline",
+        "slug": "shoreline",
+        "type": "city",
+        "placefp": "63960"
+      },
+      {
+        "name": "Skykomish",
+        "slug": "skykomish",
+        "type": "city",
+        "placefp": "64855"
+      },
+      {
+        "name": "Snoqualmie",
+        "slug": "snoqualmie",
+        "type": "city",
+        "placefp": "65205"
+      },
+      {
+        "name": "Tukwila",
+        "slug": "tukwila",
+        "type": "city",
+        "placefp": "72625"
+      },
+      {
+        "name": "Union Hill-Novelty Hill",
+        "slug": "union-hill-novelty-hill",
+        "type": "cdp",
+        "placefp": "73307"
+      },
+      {
+        "name": "White Center",
+        "slug": "white-center",
+        "type": "cdp",
+        "placefp": "78225"
+      },
+      {
+        "name": "Wilderness Rim",
+        "slug": "wilderness-rim",
+        "type": "cdp",
+        "placefp": "78780"
+      },
+      {
+        "name": "Woodinville",
+        "slug": "woodinville",
+        "type": "city",
+        "placefp": "79590"
+      },
+      {
+        "name": "Yarrow Point",
+        "slug": "yarrow-point",
+        "type": "city",
+        "placefp": "80150"
+      }
+    ],
+    "kitsap": [
+      {
+        "name": "Bangor Base",
+        "slug": "bangor-base",
+        "type": "place",
+        "placefp": "04100"
+      },
+      {
+        "name": "Bethel",
+        "slug": "bethel",
+        "type": "cdp",
+        "placefp": "05735"
+      },
+      {
+        "name": "Bremerton",
+        "slug": "bremerton",
+        "type": "city",
+        "placefp": "07695"
+      },
+      {
+        "name": "Burley",
+        "slug": "burley",
+        "type": "cdp",
+        "placefp": "08885"
+      },
+      {
+        "name": "Chico",
+        "slug": "chico",
+        "type": "cdp",
+        "placefp": "12175"
+      },
+      {
+        "name": "East Port Orchard",
+        "slug": "east-port-orchard",
+        "type": "cdp",
+        "placefp": "19770"
+      },
+      {
+        "name": "Enetai",
+        "slug": "enetai",
+        "type": "cdp",
+        "placefp": "21800"
+      },
+      {
+        "name": "Erlands Point",
+        "slug": "erlands-point",
+        "type": "cdp",
+        "placefp": "22115"
+      },
+      {
+        "name": "Gorst",
+        "slug": "gorst",
+        "type": "cdp",
+        "placefp": "27680"
+      },
+      {
+        "name": "Hansville",
+        "slug": "hansville",
+        "type": "cdp",
+        "placefp": "29430"
+      },
+      {
+        "name": "Indianola",
+        "slug": "indianola",
+        "type": "cdp",
+        "placefp": "33280"
+      },
+      {
+        "name": "Keyport",
+        "slug": "keyport",
+        "type": "cdp",
+        "placefp": "35625"
+      },
+      {
+        "name": "Kingston",
+        "slug": "kingston",
+        "type": "cdp",
+        "placefp": "35870"
+      },
+      {
+        "name": "Kitsap Lake",
+        "slug": "kitsap-lake",
+        "type": "cdp",
+        "placefp": "36010"
+      },
+      {
+        "name": "Lofall",
+        "slug": "lofall",
+        "type": "cdp",
+        "placefp": "39930"
+      },
+      {
+        "name": "Manchester",
+        "slug": "manchester",
+        "type": "cdp",
+        "placefp": "42450"
+      },
+      {
+        "name": "Navy Yard City",
+        "slug": "navy-yard-city",
+        "type": "cdp",
+        "placefp": "48225"
+      },
+      {
+        "name": "Parkwood",
+        "slug": "parkwood",
+        "type": "cdp",
+        "placefp": "53440"
+      },
+      {
+        "name": "Port Gamble Tribal Community",
+        "slug": "port-gamble-tribal-community",
+        "type": "cdp",
+        "placefp": "55612"
+      },
+      {
+        "name": "Port Orchard",
+        "slug": "port-orchard",
+        "type": "city",
+        "placefp": "55785"
+      },
+      {
+        "name": "Poulsbo",
+        "slug": "poulsbo",
+        "type": "city",
+        "placefp": "55995"
+      },
+      {
+        "name": "Rocky Point",
+        "slug": "rocky-point",
+        "type": "cdp",
+        "placefp": "59390"
+      },
+      {
+        "name": "Seabeck",
+        "slug": "seabeck",
+        "type": "cdp",
+        "placefp": "62120"
+      },
+      {
+        "name": "Silverdale",
+        "slug": "silverdale",
+        "type": "cdp",
+        "placefp": "64365"
+      },
+      {
+        "name": "Southworth",
+        "slug": "southworth",
+        "type": "cdp",
+        "placefp": "66220"
+      },
+      {
+        "name": "Suquamish",
+        "slug": "suquamish",
+        "type": "cdp",
+        "placefp": "69170"
+      },
+      {
+        "name": "Tracyton",
+        "slug": "tracyton",
+        "type": "cdp",
+        "placefp": "72205"
+      }
+    ],
+    "kittitas": [
+      {
+        "name": "Cle Elum",
+        "slug": "cle-elum",
+        "type": "city",
+        "placefp": "12945"
+      },
+      {
+        "name": "Easton",
+        "slug": "easton",
+        "type": "cdp",
+        "placefp": "19700"
+      },
+      {
+        "name": "Ellensburg",
+        "slug": "ellensburg",
+        "type": "city",
+        "placefp": "21240"
+      },
+      {
+        "name": "Kittitas",
+        "slug": "kittitas",
+        "type": "city",
+        "placefp": "36045"
+      },
+      {
+        "name": "Ronald",
+        "slug": "ronald",
+        "type": "cdp",
+        "placefp": "59635"
+      },
+      {
+        "name": "Roslyn",
+        "slug": "roslyn",
+        "type": "city",
+        "placefp": "60055"
+      },
+      {
+        "name": "Snoqualmie Pass",
+        "slug": "snoqualmie-pass",
+        "type": "cdp",
+        "placefp": "65275"
+      },
+      {
+        "name": "South Cle Elum",
+        "slug": "south-cle-elum",
+        "type": "city",
+        "placefp": "65765"
+      },
+      {
+        "name": "Thorp",
+        "slug": "thorp",
+        "type": "cdp",
+        "placefp": "71225"
+      },
+      {
+        "name": "Vantage",
+        "slug": "vantage",
+        "type": "cdp",
+        "placefp": "74200"
+      }
+    ],
+    "klickitat": [
+      {
+        "name": "Bickleton",
+        "slug": "bickleton",
+        "type": "cdp",
+        "placefp": "05980"
+      },
+      {
+        "name": "Bingen",
+        "slug": "bingen",
+        "type": "city",
+        "placefp": "06085"
+      },
+      {
+        "name": "Centerville",
+        "slug": "centerville",
+        "type": "cdp",
+        "placefp": "11090"
+      },
+      {
+        "name": "Dallesport",
+        "slug": "dallesport",
+        "type": "cdp",
+        "placefp": "16550"
+      },
+      {
+        "name": "Glenwood",
+        "slug": "glenwood",
+        "type": "cdp",
+        "placefp": "27225"
+      },
+      {
+        "name": "Goldendale",
+        "slug": "goldendale",
+        "type": "city",
+        "placefp": "27435"
+      },
+      {
+        "name": "Klickitat",
+        "slug": "klickitat",
+        "type": "cdp",
+        "placefp": "36115"
+      },
+      {
+        "name": "Lyle",
+        "slug": "lyle",
+        "type": "cdp",
+        "placefp": "40735"
+      },
+      {
+        "name": "Maryhill",
+        "slug": "maryhill",
+        "type": "cdp",
+        "placefp": "43885"
+      },
+      {
+        "name": "Roosevelt",
+        "slug": "roosevelt",
+        "type": "cdp",
+        "placefp": "59705"
+      },
+      {
+        "name": "Trout Lake",
+        "slug": "trout-lake",
+        "type": "cdp",
+        "placefp": "72450"
+      },
+      {
+        "name": "White Salmon",
+        "slug": "white-salmon",
+        "type": "city",
+        "placefp": "78330"
+      },
+      {
+        "name": "Wishram",
+        "slug": "wishram",
+        "type": "cdp",
+        "placefp": "79485"
+      }
+    ],
+    "lewis": [
+      {
+        "name": "Centralia",
+        "slug": "centralia",
+        "type": "city",
+        "placefp": "11160"
+      },
+      {
+        "name": "Chehalis",
+        "slug": "chehalis",
+        "type": "city",
+        "placefp": "11475"
+      },
+      {
+        "name": "Fords Prairie",
+        "slug": "fords-prairie",
+        "type": "cdp",
+        "placefp": "24565"
+      },
+      {
+        "name": "Mineral",
+        "slug": "mineral",
+        "type": "cdp",
+        "placefp": "46090"
+      },
+      {
+        "name": "Morton",
+        "slug": "morton",
+        "type": "city",
+        "placefp": "47175"
+      },
+      {
+        "name": "Mossyrock",
+        "slug": "mossyrock",
+        "type": "city",
+        "placefp": "47315"
+      },
+      {
+        "name": "Napavine",
+        "slug": "napavine",
+        "type": "city",
+        "placefp": "47980"
+      },
+      {
+        "name": "Onalaska",
+        "slug": "onalaska",
+        "type": "cdp",
+        "placefp": "51410"
+      },
+      {
+        "name": "Packwood",
+        "slug": "packwood",
+        "type": "cdp",
+        "placefp": "52600"
+      },
+      {
+        "name": "Pe Ell",
+        "slug": "pe-ell",
+        "type": "city",
+        "placefp": "53930"
+      },
+      {
+        "name": "Toledo",
+        "slug": "toledo",
+        "type": "city",
+        "placefp": "71785"
+      },
+      {
+        "name": "Vader",
+        "slug": "vader",
+        "type": "city",
+        "placefp": "73780"
+      },
+      {
+        "name": "Winlock",
+        "slug": "winlock",
+        "type": "city",
+        "placefp": "79275"
+      }
+    ],
+    "lincoln": [
+      {
+        "name": "Almira",
+        "slug": "almira",
+        "type": "city",
+        "placefp": "01500"
+      },
+      {
+        "name": "Creston",
+        "slug": "creston",
+        "type": "city",
+        "placefp": "15710"
+      },
+      {
+        "name": "Davenport",
+        "slug": "davenport",
+        "type": "city",
+        "placefp": "16795"
+      },
+      {
+        "name": "Harrington",
+        "slug": "harrington",
+        "type": "city",
+        "placefp": "29745"
+      },
+      {
+        "name": "Odessa",
+        "slug": "odessa",
+        "type": "city",
+        "placefp": "50745"
+      },
+      {
+        "name": "Reardan",
+        "slug": "reardan",
+        "type": "city",
+        "placefp": "57465"
+      },
+      {
+        "name": "Sprague",
+        "slug": "sprague",
+        "type": "city",
+        "placefp": "67175"
+      },
+      {
+        "name": "Wilbur",
+        "slug": "wilbur",
+        "type": "city",
+        "placefp": "78680"
+      }
+    ],
+    "mason": [
+      {
+        "name": "Allyn",
+        "slug": "allyn",
+        "type": "cdp",
+        "placefp": "01430"
+      },
+      {
+        "name": "Belfair",
+        "slug": "belfair",
+        "type": "cdp",
+        "placefp": "05140"
+      },
+      {
+        "name": "Grapeview",
+        "slug": "grapeview",
+        "type": "cdp",
+        "placefp": "28135"
+      },
+      {
+        "name": "Hoodsport",
+        "slug": "hoodsport",
+        "type": "cdp",
+        "placefp": "32125"
+      },
+      {
+        "name": "Shelton",
+        "slug": "shelton",
+        "type": "city",
+        "placefp": "63735"
+      },
+      {
+        "name": "Skokomish",
+        "slug": "skokomish",
+        "type": "cdp",
+        "placefp": "64775"
+      },
+      {
+        "name": "Union",
+        "slug": "union",
+        "type": "cdp",
+        "placefp": "73255"
+      }
+    ],
+    "okanogan": [
+      {
+        "name": "Brewster",
+        "slug": "brewster",
+        "type": "city",
+        "placefp": "07835"
+      },
+      {
+        "name": "Conconully",
+        "slug": "conconully",
+        "type": "city",
+        "placefp": "14310"
+      },
+      {
+        "name": "Coulee Dam",
+        "slug": "coulee-dam",
+        "type": "city",
+        "placefp": "15115"
+      },
+      {
+        "name": "Disautel",
+        "slug": "disautel",
+        "type": "cdp",
+        "placefp": "17880"
+      },
+      {
+        "name": "Elmer City",
+        "slug": "elmer-city",
+        "type": "city",
+        "placefp": "21485"
+      },
+      {
+        "name": "Loomis",
+        "slug": "loomis",
+        "type": "cdp",
+        "placefp": "40350"
+      },
+      {
+        "name": "Malott",
+        "slug": "malott",
+        "type": "cdp",
+        "placefp": "42380"
+      },
+      {
+        "name": "Methow",
+        "slug": "methow",
+        "type": "cdp",
+        "placefp": "45355"
+      },
+      {
+        "name": "Nespelem",
+        "slug": "nespelem",
+        "type": "city",
+        "placefp": "48540"
+      },
+      {
+        "name": "Nespelem Community",
+        "slug": "nespelem-community",
+        "type": "cdp",
+        "placefp": "48550"
+      },
+      {
+        "name": "North Omak",
+        "slug": "north-omak",
+        "type": "cdp",
+        "placefp": "50007"
+      },
+      {
+        "name": "Okanogan",
+        "slug": "okanogan",
+        "type": "city",
+        "placefp": "50920"
+      },
+      {
+        "name": "Omak",
+        "slug": "omak",
+        "type": "city",
+        "placefp": "51340"
+      },
+      {
+        "name": "Oroville",
+        "slug": "oroville",
+        "type": "city",
+        "placefp": "51970"
+      },
+      {
+        "name": "Pateros",
+        "slug": "pateros",
+        "type": "city",
+        "placefp": "53720"
+      },
+      {
+        "name": "Riverside",
+        "slug": "riverside",
+        "type": "city",
+        "placefp": "58795"
+      },
+      {
+        "name": "Tonasket",
+        "slug": "tonasket",
+        "type": "city",
+        "placefp": "71890"
+      },
+      {
+        "name": "Twisp",
+        "slug": "twisp",
+        "type": "city",
+        "placefp": "73080"
+      },
+      {
+        "name": "Winthrop",
+        "slug": "winthrop",
+        "type": "city",
+        "placefp": "79380"
+      }
+    ],
+    "pacific": [
+      {
+        "name": "Bay Center",
+        "slug": "bay-center",
+        "type": "cdp",
+        "placefp": "04615"
+      },
+      {
+        "name": "Chinook",
+        "slug": "chinook",
+        "type": "cdp",
+        "placefp": "12315"
+      },
+      {
+        "name": "Ilwaco",
+        "slug": "ilwaco",
+        "type": "city",
+        "placefp": "33000"
+      },
+      {
+        "name": "Lebam",
+        "slug": "lebam",
+        "type": "cdp",
+        "placefp": "38880"
+      },
+      {
+        "name": "Long Beach",
+        "slug": "long-beach",
+        "type": "city",
+        "placefp": "40070"
+      },
+      {
+        "name": "Naselle",
+        "slug": "naselle",
+        "type": "cdp",
+        "placefp": "48015"
+      },
+      {
+        "name": "Ocean Park",
+        "slug": "ocean-park",
+        "type": "cdp",
+        "placefp": "50535"
+      },
+      {
+        "name": "Raymond",
+        "slug": "raymond",
+        "type": "city",
+        "placefp": "57430"
+      },
+      {
+        "name": "South Bend",
+        "slug": "south-bend",
+        "type": "city",
+        "placefp": "65625"
+      },
+      {
+        "name": "Tokeland",
+        "slug": "tokeland",
+        "type": "cdp",
+        "placefp": "71680"
+      },
+      {
+        "name": "Willapa",
+        "slug": "willapa",
+        "type": "cdp",
+        "placefp": "78995"
+      }
+    ],
+    "pend-oreille": [
+      {
+        "name": "Cusick",
+        "slug": "cusick",
+        "type": "city",
+        "placefp": "16340"
+      },
+      {
+        "name": "Ione",
+        "slug": "ione",
+        "type": "city",
+        "placefp": "33560"
+      },
+      {
+        "name": "Metaline",
+        "slug": "metaline",
+        "type": "city",
+        "placefp": "45285"
+      },
+      {
+        "name": "Metaline Falls",
+        "slug": "metaline-falls",
+        "type": "city",
+        "placefp": "45320"
+      },
+      {
+        "name": "Newport",
+        "slug": "newport",
+        "type": "city",
+        "placefp": "48820"
+      }
+    ],
+    "pierce": [
+      {
+        "name": "Alder",
+        "slug": "alder",
+        "type": "cdp",
+        "placefp": "01045"
+      },
+      {
+        "name": "Alderton",
+        "slug": "alderton",
+        "type": "cdp",
+        "placefp": "01150"
+      },
+      {
+        "name": "Ashford",
+        "slug": "ashford",
+        "type": "cdp",
+        "placefp": "03005"
+      },
+      {
+        "name": "Bonney Lake",
+        "slug": "bonney-lake",
+        "type": "city",
+        "placefp": "07170"
+      },
+      {
+        "name": "Browns Point",
+        "slug": "browns-point",
+        "type": "cdp",
+        "placefp": "08325"
+      },
+      {
+        "name": "Buckley",
+        "slug": "buckley",
+        "type": "city",
+        "placefp": "08570"
+      },
+      {
+        "name": "Carbonado",
+        "slug": "carbonado",
+        "type": "city",
+        "placefp": "09970"
+      },
+      {
+        "name": "Clear Lake",
+        "slug": "clear-lake",
+        "type": "cdp",
+        "placefp": "12820"
+      },
+      {
+        "name": "Clover Creek",
+        "slug": "clover-creek",
+        "type": "cdp",
+        "placefp": "13215"
+      },
+      {
+        "name": "Crocker",
+        "slug": "crocker",
+        "type": "cdp",
+        "placefp": "15780"
+      },
+      {
+        "name": "Dash Point",
+        "slug": "dash-point",
+        "type": "cdp",
+        "placefp": "16760"
+      },
+      {
+        "name": "DuPont",
+        "slug": "dupont",
+        "type": "city",
+        "placefp": "18965"
+      },
+      {
+        "name": "Eatonville",
+        "slug": "eatonville",
+        "type": "city",
+        "placefp": "20260"
+      },
+      {
+        "name": "Edgewood",
+        "slug": "edgewood",
+        "type": "city",
+        "placefp": "20645"
+      },
+      {
+        "name": "Elbe",
+        "slug": "elbe",
+        "type": "cdp",
+        "placefp": "20890"
+      },
+      {
+        "name": "Elk Plain",
+        "slug": "elk-plain",
+        "type": "cdp",
+        "placefp": "21205"
+      },
+      {
+        "name": "Fife",
+        "slug": "fife",
+        "type": "city",
+        "placefp": "23795"
+      },
+      {
+        "name": "Fife Heights",
+        "slug": "fife-heights",
+        "type": "cdp",
+        "placefp": "23830"
+      },
+      {
+        "name": "Fircrest",
+        "slug": "fircrest",
+        "type": "city",
+        "placefp": "23970"
+      },
+      {
+        "name": "Fort Lewis",
+        "slug": "fort-lewis",
+        "type": "place",
+        "placefp": "24915"
+      },
+      {
+        "name": "Frederickson",
+        "slug": "frederickson",
+        "type": "cdp",
+        "placefp": "25475"
+      },
+      {
+        "name": "Graham",
+        "slug": "graham",
+        "type": "cdp",
+        "placefp": "27785"
+      },
+      {
+        "name": "Greenwater",
+        "slug": "greenwater",
+        "type": "cdp",
+        "placefp": "28695"
+      },
+      {
+        "name": "Kapowsin",
+        "slug": "kapowsin",
+        "type": "cdp",
+        "placefp": "34890"
+      },
+      {
+        "name": "La Grande",
+        "slug": "la-grande",
+        "type": "cdp",
+        "placefp": "36920"
+      },
+      {
+        "name": "Lake Tapps",
+        "slug": "lake-tapps",
+        "type": "cdp",
+        "placefp": "37920"
+      },
+      {
+        "name": "Lakewood",
+        "slug": "lakewood",
+        "type": "city",
+        "placefp": "38038"
+      },
+      {
+        "name": "McChord AFB",
+        "slug": "mcchord-afb",
+        "type": "place",
+        "placefp": "41155"
+      },
+      {
+        "name": "McKenna",
+        "slug": "mckenna",
+        "type": "cdp",
+        "placefp": "41645"
+      },
+      {
+        "name": "McMillin",
+        "slug": "mcmillin",
+        "type": "cdp",
+        "placefp": "41785"
+      },
+      {
+        "name": "Midland",
+        "slug": "midland",
+        "type": "cdp",
+        "placefp": "45495"
+      },
+      {
+        "name": "Milton",
+        "slug": "milton",
+        "type": "city",
+        "placefp": "46020"
+      },
+      {
+        "name": "Nisqually Indian Community",
+        "slug": "nisqually-indian-community",
+        "type": "cdp",
+        "placefp": "49193"
+      },
+      {
+        "name": "North Fort Lewis",
+        "slug": "north-fort-lewis",
+        "type": "place",
+        "placefp": "49765"
+      },
+      {
+        "name": "North Puyallup",
+        "slug": "north-puyallup",
+        "type": "cdp",
+        "placefp": "50115"
+      },
+      {
+        "name": "Orting",
+        "slug": "orting",
+        "type": "city",
+        "placefp": "52005"
+      },
+      {
+        "name": "Parkland",
+        "slug": "parkland",
+        "type": "cdp",
+        "placefp": "53335"
+      },
+      {
+        "name": "Prairie Heights",
+        "slug": "prairie-heights",
+        "type": "cdp",
+        "placefp": "56150"
+      },
+      {
+        "name": "Prairie Ridge",
+        "slug": "prairie-ridge",
+        "type": "cdp",
+        "placefp": "56170"
+      },
+      {
+        "name": "Puyallup",
+        "slug": "puyallup",
+        "type": "city",
+        "placefp": "56695"
+      },
+      {
+        "name": "Roy",
+        "slug": "roy",
+        "type": "city",
+        "placefp": "60160"
+      },
+      {
+        "name": "Ruston",
+        "slug": "ruston",
+        "type": "city",
+        "placefp": "60510"
+      },
+      {
+        "name": "South Creek",
+        "slug": "south-creek",
+        "type": "cdp",
+        "placefp": "65810"
+      },
+      {
+        "name": "South Hill",
+        "slug": "south-hill",
+        "type": "cdp",
+        "placefp": "65922"
+      },
+      {
+        "name": "South Prairie",
+        "slug": "south-prairie",
+        "type": "city",
+        "placefp": "66045"
+      },
+      {
+        "name": "Spanaway",
+        "slug": "spanaway",
+        "type": "cdp",
+        "placefp": "66255"
+      },
+      {
+        "name": "Steilacoom",
+        "slug": "steilacoom",
+        "type": "city",
+        "placefp": "67770"
+      },
+      {
+        "name": "Summit",
+        "slug": "summit",
+        "type": "cdp",
+        "placefp": "68365"
+      },
+      {
+        "name": "Summit View",
+        "slug": "summit-view",
+        "type": "cdp",
+        "placefp": "68410"
+      },
+      {
+        "name": "Sumner",
+        "slug": "sumner",
+        "type": "city",
+        "placefp": "68435"
+      },
+      {
+        "name": "Tacoma",
+        "slug": "tacoma",
+        "type": "city",
+        "placefp": "70000"
+      },
+      {
+        "name": "Tehaleh",
+        "slug": "tehaleh",
+        "type": "cdp",
+        "placefp": "70543"
+      },
+      {
+        "name": "University Place",
+        "slug": "university-place",
+        "type": "city",
+        "placefp": "73465"
+      },
+      {
+        "name": "Waller",
+        "slug": "waller",
+        "type": "cdp",
+        "placefp": "75905"
+      },
+      {
+        "name": "Wilkeson",
+        "slug": "wilkeson",
+        "type": "city",
+        "placefp": "78925"
+      }
+    ],
+    "skagit": [
+      {
+        "name": "Alger",
+        "slug": "alger",
+        "type": "cdp",
+        "placefp": "01255"
+      },
+      {
+        "name": "Anacortes",
+        "slug": "anacortes",
+        "type": "city",
+        "placefp": "01990"
+      },
+      {
+        "name": "Bay View",
+        "slug": "bay-view",
+        "type": "cdp",
+        "placefp": "04790"
+      },
+      {
+        "name": "Big Lake",
+        "slug": "big-lake",
+        "type": "cdp",
+        "placefp": "06050"
+      },
+      {
+        "name": "Bow",
+        "slug": "bow",
+        "type": "cdp",
+        "placefp": "07450"
+      },
+      {
+        "name": "Burlington",
+        "slug": "burlington",
+        "type": "city",
+        "placefp": "08920"
+      },
+      {
+        "name": "Clear Lake",
+        "slug": "clear-lake",
+        "type": "cdp",
+        "placefp": "12840"
+      },
+      {
+        "name": "Concrete",
+        "slug": "concrete",
+        "type": "city",
+        "placefp": "14380"
+      },
+      {
+        "name": "Conway",
+        "slug": "conway",
+        "type": "cdp",
+        "placefp": "14520"
+      },
+      {
+        "name": "Edison",
+        "slug": "edison",
+        "type": "cdp",
+        "placefp": "20680"
+      },
+      {
+        "name": "Hamilton",
+        "slug": "hamilton",
+        "type": "city",
+        "placefp": "29255"
+      },
+      {
+        "name": "La Conner",
+        "slug": "la-conner",
+        "type": "city",
+        "placefp": "36780"
+      },
+      {
+        "name": "Lake Cavanaugh",
+        "slug": "lake-cavanaugh",
+        "type": "cdp",
+        "placefp": "37105"
+      },
+      {
+        "name": "Lake McMurray",
+        "slug": "lake-mcmurray",
+        "type": "cdp",
+        "placefp": "37526"
+      },
+      {
+        "name": "Lyman",
+        "slug": "lyman",
+        "type": "city",
+        "placefp": "40770"
+      },
+      {
+        "name": "Marblemount",
+        "slug": "marblemount",
+        "type": "cdp",
+        "placefp": "43325"
+      },
+      {
+        "name": "Mount Vernon",
+        "slug": "mount-vernon",
+        "type": "city",
+        "placefp": "47560"
+      },
+      {
+        "name": "Rockport",
+        "slug": "rockport",
+        "type": "cdp",
+        "placefp": "59250"
+      },
+      {
+        "name": "Sedro-Woolley",
+        "slug": "sedro-woolley",
+        "type": "city",
+        "placefp": "63210"
+      }
+    ],
+    "skamania": [
+      {
+        "name": "Carson",
+        "slug": "carson",
+        "type": "cdp",
+        "placefp": "10320"
+      },
+      {
+        "name": "North Bonneville",
+        "slug": "north-bonneville",
+        "type": "city",
+        "placefp": "49555"
+      },
+      {
+        "name": "Stevenson",
+        "slug": "stevenson",
+        "type": "city",
+        "placefp": "67875"
+      }
+    ],
+    "snohomish": [
+      {
+        "name": "Alderwood Manor",
+        "slug": "alderwood-manor",
+        "type": "cdp",
+        "placefp": "01185"
+      },
+      {
+        "name": "Arlington",
+        "slug": "arlington",
+        "type": "city",
+        "placefp": "02585"
+      },
+      {
+        "name": "Arlington Heights",
+        "slug": "arlington-heights",
+        "type": "cdp",
+        "placefp": "02620"
+      },
+      {
+        "name": "Bothell",
+        "slug": "bothell",
+        "type": "city",
+        "placefp": "07380"
+      },
+      {
+        "name": "Bothell East",
+        "slug": "bothell-east",
+        "type": "cdp",
+        "placefp": "07390"
+      },
+      {
+        "name": "Bothell West",
+        "slug": "bothell-west",
+        "type": "cdp",
+        "placefp": "07395"
+      },
+      {
+        "name": "Brier",
+        "slug": "brier",
+        "type": "city",
+        "placefp": "07940"
+      },
+      {
+        "name": "Bryant",
+        "slug": "bryant",
+        "type": "cdp",
+        "placefp": "08500"
+      },
+      {
+        "name": "Bunk Foss",
+        "slug": "bunk-foss",
+        "type": "cdp",
+        "placefp": "08770"
+      },
+      {
+        "name": "Canyon Creek",
+        "slug": "canyon-creek",
+        "type": "cdp",
+        "placefp": "09820"
+      },
+      {
+        "name": "Cathcart",
+        "slug": "cathcart",
+        "type": "cdp",
+        "placefp": "10600"
+      },
+      {
+        "name": "Cavalero",
+        "slug": "cavalero",
+        "type": "cdp",
+        "placefp": "10645"
+      },
+      {
+        "name": "Chain Lake",
+        "slug": "chain-lake",
+        "type": "cdp",
+        "placefp": "11325"
+      },
+      {
+        "name": "Clearview",
+        "slug": "clearview",
+        "type": "cdp",
+        "placefp": "12875"
+      },
+      {
+        "name": "Darrington",
+        "slug": "darrington",
+        "type": "city",
+        "placefp": "16690"
+      },
+      {
+        "name": "Eastmont",
+        "slug": "eastmont",
+        "type": "cdp",
+        "placefp": "19630"
+      },
+      {
+        "name": "Edmonds",
+        "slug": "edmonds",
+        "type": "city",
+        "placefp": "20750"
+      },
+      {
+        "name": "Esperance",
+        "slug": "esperance",
+        "type": "cdp",
+        "placefp": "22255"
+      },
+      {
+        "name": "Everett",
+        "slug": "everett",
+        "type": "city",
+        "placefp": "22640"
+      },
+      {
+        "name": "Fobes Hill",
+        "slug": "fobes-hill",
+        "type": "cdp",
+        "placefp": "24425"
+      },
+      {
+        "name": "Gold Bar",
+        "slug": "gold-bar",
+        "type": "city",
+        "placefp": "27365"
+      },
+      {
+        "name": "Granite Falls",
+        "slug": "granite-falls",
+        "type": "city",
+        "placefp": "27995"
+      },
+      {
+        "name": "High Bridge",
+        "slug": "high-bridge",
+        "type": "cdp",
+        "placefp": "30750"
+      },
+      {
+        "name": "Index",
+        "slug": "index",
+        "type": "city",
+        "placefp": "33175"
+      },
+      {
+        "name": "Kayak Point",
+        "slug": "kayak-point",
+        "type": "cdp",
+        "placefp": "34915"
+      },
+      {
+        "name": "Lake Bosworth",
+        "slug": "lake-bosworth",
+        "type": "cdp",
+        "placefp": "37077"
+      },
+      {
+        "name": "Lake Cassidy",
+        "slug": "lake-cassidy",
+        "type": "cdp",
+        "placefp": "37100"
+      },
+      {
+        "name": "Lake Goodwin",
+        "slug": "lake-goodwin",
+        "type": "cdp",
+        "placefp": "37287"
+      },
+      {
+        "name": "Lake Ketchum",
+        "slug": "lake-ketchum",
+        "type": "cdp",
+        "placefp": "37415"
+      },
+      {
+        "name": "Lake Roesiger",
+        "slug": "lake-roesiger",
+        "type": "cdp",
+        "placefp": "37672"
+      },
+      {
+        "name": "Lake Stevens",
+        "slug": "lake-stevens",
+        "type": "city",
+        "placefp": "37900"
+      },
+      {
+        "name": "Lake Stickney",
+        "slug": "lake-stickney",
+        "type": "cdp",
+        "placefp": "37917"
+      },
+      {
+        "name": "Larch Way",
+        "slug": "larch-way",
+        "type": "cdp",
+        "placefp": "38420"
+      },
+      {
+        "name": "Lochsloy",
+        "slug": "lochsloy",
+        "type": "cdp",
+        "placefp": "39860"
+      },
+      {
+        "name": "Lynnwood",
+        "slug": "lynnwood",
+        "type": "city",
+        "placefp": "40840"
+      },
+      {
+        "name": "Machias",
+        "slug": "machias",
+        "type": "cdp",
+        "placefp": "41470"
+      },
+      {
+        "name": "Maltby",
+        "slug": "maltby",
+        "type": "cdp",
+        "placefp": "42415"
+      },
+      {
+        "name": "Martha Lake",
+        "slug": "martha-lake",
+        "type": "cdp",
+        "placefp": "43815"
+      },
+      {
+        "name": "Marysville",
+        "slug": "marysville",
+        "type": "city",
+        "placefp": "43955"
+      },
+      {
+        "name": "May Creek",
+        "slug": "may-creek",
+        "type": "cdp",
+        "placefp": "44260"
+      },
+      {
+        "name": "Meadowdale",
+        "slug": "meadowdale",
+        "type": "cdp",
+        "placefp": "44585"
+      },
+      {
+        "name": "Mill Creek",
+        "slug": "mill-creek",
+        "type": "city",
+        "placefp": "45865"
+      },
+      {
+        "name": "Mill Creek East",
+        "slug": "mill-creek-east",
+        "type": "cdp",
+        "placefp": "45870"
+      },
+      {
+        "name": "Monroe",
+        "slug": "monroe",
+        "type": "city",
+        "placefp": "46685"
+      },
+      {
+        "name": "Monroe North",
+        "slug": "monroe-north",
+        "type": "cdp",
+        "placefp": "46725"
+      },
+      {
+        "name": "Mountlake Terrace",
+        "slug": "mountlake-terrace",
+        "type": "city",
+        "placefp": "47490"
+      },
+      {
+        "name": "Mukilteo",
+        "slug": "mukilteo",
+        "type": "city",
+        "placefp": "47735"
+      },
+      {
+        "name": "North Lynnwood",
+        "slug": "north-lynnwood",
+        "type": "cdp",
+        "placefp": "49940"
+      },
+      {
+        "name": "North Sultan",
+        "slug": "north-sultan",
+        "type": "cdp",
+        "placefp": "50183"
+      },
+      {
+        "name": "Northwest Stanwood",
+        "slug": "northwest-stanwood",
+        "type": "cdp",
+        "placefp": "50195"
+      },
+      {
+        "name": "Oso",
+        "slug": "oso",
+        "type": "cdp",
+        "placefp": "52110"
+      },
+      {
+        "name": "Picnic Point",
+        "slug": "picnic-point",
+        "type": "cdp",
+        "placefp": "54213"
+      },
+      {
+        "name": "Silvana",
+        "slug": "silvana",
+        "type": "cdp",
+        "placefp": "64190"
+      },
+      {
+        "name": "Silver Firs",
+        "slug": "silver-firs",
+        "type": "cdp",
+        "placefp": "64380"
+      },
+      {
+        "name": "Sisco Heights",
+        "slug": "sisco-heights",
+        "type": "cdp",
+        "placefp": "64610"
+      },
+      {
+        "name": "Snohomish",
+        "slug": "snohomish",
+        "type": "city",
+        "placefp": "65170"
+      },
+      {
+        "name": "Stanwood",
+        "slug": "stanwood",
+        "type": "city",
+        "placefp": "67455"
+      },
+      {
+        "name": "Startup",
+        "slug": "startup",
+        "type": "cdp",
+        "placefp": "67595"
+      },
+      {
+        "name": "Sultan",
+        "slug": "sultan",
+        "type": "city",
+        "placefp": "68260"
+      },
+      {
+        "name": "Sunday Lake",
+        "slug": "sunday-lake",
+        "type": "cdp",
+        "placefp": "68480"
+      },
+      {
+        "name": "Swede Heaven",
+        "slug": "swede-heaven",
+        "type": "cdp",
+        "placefp": "69280"
+      },
+      {
+        "name": "Three Lakes",
+        "slug": "three-lakes",
+        "type": "cdp",
+        "placefp": "71330"
+      },
+      {
+        "name": "Verlot",
+        "slug": "verlot",
+        "type": "cdp",
+        "placefp": "74760"
+      },
+      {
+        "name": "Warm Beach",
+        "slug": "warm-beach",
+        "type": "cdp",
+        "placefp": "76195"
+      },
+      {
+        "name": "Woods Creek",
+        "slug": "woods-creek",
+        "type": "cdp",
+        "placefp": "79825"
+      },
+      {
+        "name": "Woodway",
+        "slug": "woodway",
+        "type": "city",
+        "placefp": "79835"
+      }
+    ],
+    "spokane": [
+      {
+        "name": "Airway Heights",
+        "slug": "airway-heights",
+        "type": "city",
+        "placefp": "00905"
+      },
+      {
+        "name": "Cheney",
+        "slug": "cheney",
+        "type": "city",
+        "placefp": "11825"
+      },
+      {
+        "name": "Country Homes",
+        "slug": "country-homes",
+        "type": "cdp",
+        "placefp": "15150"
+      },
+      {
+        "name": "Deer Park",
+        "slug": "deer-park",
+        "type": "city",
+        "placefp": "17320"
+      },
+      {
+        "name": "Fairchild AFB",
+        "slug": "fairchild-afb",
+        "type": "place",
+        "placefp": "22955"
+      },
+      {
+        "name": "Fairfield",
+        "slug": "fairfield",
+        "type": "city",
+        "placefp": "22990"
+      },
+      {
+        "name": "Fairwood",
+        "slug": "fairwood",
+        "type": "cdp",
+        "placefp": "23165"
+      },
+      {
+        "name": "Four Lakes",
+        "slug": "four-lakes",
+        "type": "cdp",
+        "placefp": "25300"
+      },
+      {
+        "name": "Green Bluff",
+        "slug": "green-bluff",
+        "type": "cdp",
+        "placefp": "28590"
+      },
+      {
+        "name": "Latah",
+        "slug": "latah",
+        "type": "city",
+        "placefp": "38495"
+      },
+      {
+        "name": "Liberty Lake",
+        "slug": "liberty-lake",
+        "type": "city",
+        "placefp": "39335"
+      },
+      {
+        "name": "Mead",
+        "slug": "mead",
+        "type": "cdp",
+        "placefp": "44480"
+      },
+      {
+        "name": "Medical Lake",
+        "slug": "medical-lake",
+        "type": "city",
+        "placefp": "44690"
+      },
+      {
+        "name": "Millwood",
+        "slug": "millwood",
+        "type": "city",
+        "placefp": "45985"
+      },
+      {
+        "name": "Otis Orchards-East Farms",
+        "slug": "otis-orchards-east-farms",
+        "type": "cdp",
+        "placefp": "52267"
+      },
+      {
+        "name": "Rockford",
+        "slug": "rockford",
+        "type": "city",
+        "placefp": "59145"
+      },
+      {
+        "name": "Spangle",
+        "slug": "spangle",
+        "type": "city",
+        "placefp": "66290"
+      },
+      {
+        "name": "Spokane",
+        "slug": "spokane",
+        "type": "city",
+        "placefp": "67000"
+      },
+      {
+        "name": "Spokane Valley",
+        "slug": "spokane-valley",
+        "type": "city",
+        "placefp": "67167"
+      },
+      {
+        "name": "Town and Country",
+        "slug": "town-and-country",
+        "type": "cdp",
+        "placefp": "72170"
+      },
+      {
+        "name": "Waverly",
+        "slug": "waverly",
+        "type": "city",
+        "placefp": "76720"
+      }
+    ],
+    "stevens": [
+      {
+        "name": "Addy",
+        "slug": "addy",
+        "type": "cdp",
+        "placefp": "00380"
+      },
+      {
+        "name": "Chewelah",
+        "slug": "chewelah",
+        "type": "city",
+        "placefp": "12140"
+      },
+      {
+        "name": "Clayton",
+        "slug": "clayton",
+        "type": "cdp",
+        "placefp": "12735"
+      },
+      {
+        "name": "Colville",
+        "slug": "colville",
+        "type": "city",
+        "placefp": "14170"
+      },
+      {
+        "name": "Kettle Falls",
+        "slug": "kettle-falls",
+        "type": "city",
+        "placefp": "35485"
+      },
+      {
+        "name": "Loon Lake",
+        "slug": "loon-lake",
+        "type": "cdp",
+        "placefp": "40385"
+      },
+      {
+        "name": "Marcus",
+        "slug": "marcus",
+        "type": "city",
+        "placefp": "43395"
+      },
+      {
+        "name": "Northport",
+        "slug": "northport",
+        "type": "city",
+        "placefp": "50045"
+      },
+      {
+        "name": "Springdale",
+        "slug": "springdale",
+        "type": "city",
+        "placefp": "67210"
+      },
+      {
+        "name": "Suncrest",
+        "slug": "suncrest",
+        "type": "cdp",
+        "placefp": "68460"
+      },
+      {
+        "name": "Valley",
+        "slug": "valley",
+        "type": "cdp",
+        "placefp": "73885"
+      }
+    ],
+    "thurston": [
+      {
+        "name": "Bucoda",
+        "slug": "bucoda",
+        "type": "city",
+        "placefp": "08605"
+      },
+      {
+        "name": "Grand Mound",
+        "slug": "grand-mound",
+        "type": "cdp",
+        "placefp": "27890"
+      },
+      {
+        "name": "Lacey",
+        "slug": "lacey",
+        "type": "city",
+        "placefp": "36745"
+      },
+      {
+        "name": "North Yelm",
+        "slug": "north-yelm",
+        "type": "cdp",
+        "placefp": "50210"
+      },
+      {
+        "name": "Olympia",
+        "slug": "olympia",
+        "type": "city",
+        "placefp": "51300"
+      },
+      {
+        "name": "Rainier",
+        "slug": "rainier",
+        "type": "city",
+        "placefp": "57220"
+      },
+      {
+        "name": "Rochester",
+        "slug": "rochester",
+        "type": "cdp",
+        "placefp": "59110"
+      },
+      {
+        "name": "Tanglewilde",
+        "slug": "tanglewilde",
+        "type": "cdp",
+        "placefp": "70280"
+      },
+      {
+        "name": "Tenino",
+        "slug": "tenino",
+        "type": "city",
+        "placefp": "70630"
+      },
+      {
+        "name": "Tumwater",
+        "slug": "tumwater",
+        "type": "city",
+        "placefp": "72905"
+      },
+      {
+        "name": "Yelm",
+        "slug": "yelm",
+        "type": "city",
+        "placefp": "80220"
+      }
+    ],
+    "wahkiakum": [
+      {
+        "name": "Altoona",
+        "slug": "altoona",
+        "type": "cdp",
+        "placefp": "01745"
+      },
+      {
+        "name": "Cathlamet",
+        "slug": "cathlamet",
+        "type": "city",
+        "placefp": "10635"
+      },
+      {
+        "name": "Deep River",
+        "slug": "deep-river",
+        "type": "cdp",
+        "placefp": "17215"
+      },
+      {
+        "name": "East Cathlamet",
+        "slug": "east-cathlamet",
+        "type": "cdp",
+        "placefp": "19290"
+      },
+      {
+        "name": "Grays River",
+        "slug": "grays-river",
+        "type": "cdp",
+        "placefp": "28450"
+      },
+      {
+        "name": "Lower Elochoman",
+        "slug": "lower-elochoman",
+        "type": "cdp",
+        "placefp": "40570"
+      },
+      {
+        "name": "Puget Island",
+        "slug": "puget-island",
+        "type": "cdp",
+        "placefp": "56555"
+      },
+      {
+        "name": "Rosburg",
+        "slug": "rosburg",
+        "type": "cdp",
+        "placefp": "59845"
+      },
+      {
+        "name": "Skamokawa Valley",
+        "slug": "skamokawa-valley",
+        "type": "cdp",
+        "placefp": "64755"
+      },
+      {
+        "name": "Upper Elochoman",
+        "slug": "upper-elochoman",
+        "type": "cdp",
+        "placefp": "73580"
+      }
+    ],
+    "walla-walla": [
+      {
+        "name": "Burbank",
+        "slug": "burbank",
+        "type": "cdp",
+        "placefp": "08780"
+      },
+      {
+        "name": "College Place",
+        "slug": "college-place",
+        "type": "city",
+        "placefp": "13855"
+      },
+      {
+        "name": "Dixie",
+        "slug": "dixie",
+        "type": "cdp",
+        "placefp": "18055"
+      },
+      {
+        "name": "Garrett",
+        "slug": "garrett",
+        "type": "cdp",
+        "placefp": "26245"
+      },
+      {
+        "name": "Prescott",
+        "slug": "prescott",
+        "type": "city",
+        "placefp": "56240"
+      },
+      {
+        "name": "Touchet",
+        "slug": "touchet",
+        "type": "cdp",
+        "placefp": "72030"
+      },
+      {
+        "name": "Waitsburg",
+        "slug": "waitsburg",
+        "type": "city",
+        "placefp": "75565"
+      },
+      {
+        "name": "Walla Walla",
+        "slug": "walla-walla",
+        "type": "city",
+        "placefp": "75775"
+      },
+      {
+        "name": "Walla Walla East",
+        "slug": "walla-walla-east",
+        "type": "cdp",
+        "placefp": "75810"
+      },
+      {
+        "name": "Wallula",
+        "slug": "wallula",
+        "type": "cdp",
+        "placefp": "75985"
+      }
+    ],
+    "whatcom": [
+      {
+        "name": "Acme",
+        "slug": "acme",
+        "type": "cdp",
+        "placefp": "00275"
+      },
+      {
+        "name": "Bellingham",
+        "slug": "bellingham",
+        "type": "city",
+        "placefp": "05280"
+      },
+      {
+        "name": "Birch Bay",
+        "slug": "birch-bay",
+        "type": "cdp",
+        "placefp": "06190"
+      },
+      {
+        "name": "Blaine",
+        "slug": "blaine",
+        "type": "city",
+        "placefp": "06505"
+      },
+      {
+        "name": "Custer",
+        "slug": "custer",
+        "type": "cdp",
+        "placefp": "16375"
+      },
+      {
+        "name": "Deming",
+        "slug": "deming",
+        "type": "cdp",
+        "placefp": "17495"
+      },
+      {
+        "name": "Everson",
+        "slug": "everson",
+        "type": "city",
+        "placefp": "22745"
+      },
+      {
+        "name": "Ferndale",
+        "slug": "ferndale",
+        "type": "city",
+        "placefp": "23620"
+      },
+      {
+        "name": "Geneva",
+        "slug": "geneva",
+        "type": "cdp",
+        "placefp": "26420"
+      },
+      {
+        "name": "Glacier",
+        "slug": "glacier",
+        "type": "cdp",
+        "placefp": "26875"
+      },
+      {
+        "name": "Kendall",
+        "slug": "kendall",
+        "type": "cdp",
+        "placefp": "35135"
+      },
+      {
+        "name": "Lynden",
+        "slug": "lynden",
+        "type": "city",
+        "placefp": "40805"
+      },
+      {
+        "name": "Maple Falls",
+        "slug": "maple-falls",
+        "type": "cdp",
+        "placefp": "43010"
+      },
+      {
+        "name": "Marietta-Alderwood",
+        "slug": "marietta-alderwood",
+        "type": "cdp",
+        "placefp": "43491"
+      },
+      {
+        "name": "Nooksack",
+        "slug": "nooksack",
+        "type": "city",
+        "placefp": "49275"
+      },
+      {
+        "name": "Peaceful Valley",
+        "slug": "peaceful-valley",
+        "type": "cdp",
+        "placefp": "53800"
+      },
+      {
+        "name": "Sudden Valley",
+        "slug": "sudden-valley",
+        "type": "cdp",
+        "placefp": "68200"
+      },
+      {
+        "name": "Sumas",
+        "slug": "sumas",
+        "type": "city",
+        "placefp": "68330"
+      }
+    ],
+    "whitman": [
+      {
+        "name": "Albion",
+        "slug": "albion",
+        "type": "city",
+        "placefp": "01010"
+      },
+      {
+        "name": "Colfax",
+        "slug": "colfax",
+        "type": "city",
+        "placefp": "13785"
+      },
+      {
+        "name": "Colton",
+        "slug": "colton",
+        "type": "city",
+        "placefp": "13890"
+      },
+      {
+        "name": "Endicott",
+        "slug": "endicott",
+        "type": "city",
+        "placefp": "21730"
+      },
+      {
+        "name": "Farmington",
+        "slug": "farmington",
+        "type": "city",
+        "placefp": "23340"
+      },
+      {
+        "name": "Garfield",
+        "slug": "garfield",
+        "type": "city",
+        "placefp": "26140"
+      },
+      {
+        "name": "LaCrosse",
+        "slug": "lacrosse",
+        "type": "city",
+        "placefp": "36850"
+      },
+      {
+        "name": "Lamont",
+        "slug": "lamont",
+        "type": "city",
+        "placefp": "38215"
+      },
+      {
+        "name": "Malden",
+        "slug": "malden",
+        "type": "city",
+        "placefp": "42275"
+      },
+      {
+        "name": "Oakesdale",
+        "slug": "oakesdale",
+        "type": "city",
+        "placefp": "50325"
+      },
+      {
+        "name": "Palouse",
+        "slug": "palouse",
+        "type": "city",
+        "placefp": "52950"
+      },
+      {
+        "name": "Pullman",
+        "slug": "pullman",
+        "type": "city",
+        "placefp": "56625"
+      },
+      {
+        "name": "Rosalia",
+        "slug": "rosalia",
+        "type": "city",
+        "placefp": "59775"
+      },
+      {
+        "name": "St. John",
+        "slug": "st-john",
+        "type": "city",
+        "placefp": "60860"
+      },
+      {
+        "name": "Steptoe",
+        "slug": "steptoe",
+        "type": "cdp",
+        "placefp": "67805"
+      },
+      {
+        "name": "Tekoa",
+        "slug": "tekoa",
+        "type": "city",
+        "placefp": "70560"
+      },
+      {
+        "name": "Uniontown",
+        "slug": "uniontown",
+        "type": "city",
+        "placefp": "73360"
+      }
+    ],
+    "yakima": [
+      {
+        "name": "Ahtanum",
+        "slug": "ahtanum",
+        "type": "cdp",
+        "placefp": "00800"
+      },
+      {
+        "name": "Buena",
+        "slug": "buena",
+        "type": "cdp",
+        "placefp": "08640"
+      },
+      {
+        "name": "Cliffdell",
+        "slug": "cliffdell",
+        "type": "cdp",
+        "placefp": "13015"
+      },
+      {
+        "name": "Cowiche",
+        "slug": "cowiche",
+        "type": "cdp",
+        "placefp": "15325"
+      },
+      {
+        "name": "Donald",
+        "slug": "donald",
+        "type": "cdp",
+        "placefp": "18265"
+      },
+      {
+        "name": "Eschbach",
+        "slug": "eschbach",
+        "type": "cdp",
+        "placefp": "22150"
+      },
+      {
+        "name": "Gleed",
+        "slug": "gleed",
+        "type": "cdp",
+        "placefp": "26945"
+      },
+      {
+        "name": "Grandview",
+        "slug": "grandview",
+        "type": "city",
+        "placefp": "27925"
+      },
+      {
+        "name": "Granger",
+        "slug": "granger",
+        "type": "city",
+        "placefp": "27960"
+      },
+      {
+        "name": "Harrah",
+        "slug": "harrah",
+        "type": "city",
+        "placefp": "29710"
+      },
+      {
+        "name": "Mabton",
+        "slug": "mabton",
+        "type": "city",
+        "placefp": "40980"
+      },
+      {
+        "name": "Moxee",
+        "slug": "moxee",
+        "type": "city",
+        "placefp": "47665"
+      },
+      {
+        "name": "Naches",
+        "slug": "naches",
+        "type": "city",
+        "placefp": "47805"
+      },
+      {
+        "name": "Nile",
+        "slug": "nile",
+        "type": "cdp",
+        "placefp": "49030"
+      },
+      {
+        "name": "Outlook",
+        "slug": "outlook",
+        "type": "cdp",
+        "placefp": "52285"
+      },
+      {
+        "name": "Parker",
+        "slug": "parker",
+        "type": "cdp",
+        "placefp": "53265"
+      },
+      {
+        "name": "Selah",
+        "slug": "selah",
+        "type": "city",
+        "placefp": "63280"
+      },
+      {
+        "name": "Summitview",
+        "slug": "summitview",
+        "type": "cdp",
+        "placefp": "68417"
+      },
+      {
+        "name": "Sunnyside",
+        "slug": "sunnyside",
+        "type": "city",
+        "placefp": "68750"
+      },
+      {
+        "name": "Tampico",
+        "slug": "tampico",
+        "type": "cdp",
+        "placefp": "70245"
+      },
+      {
+        "name": "Terrace Heights",
+        "slug": "terrace-heights",
+        "type": "cdp",
+        "placefp": "70805"
+      },
+      {
+        "name": "Tieton",
+        "slug": "tieton",
+        "type": "city",
+        "placefp": "71400"
+      },
+      {
+        "name": "Toppenish",
+        "slug": "toppenish",
+        "type": "city",
+        "placefp": "71960"
+      },
+      {
+        "name": "Union Gap",
+        "slug": "union-gap",
+        "type": "city",
+        "placefp": "73290"
+      },
+      {
+        "name": "Wapato",
+        "slug": "wapato",
+        "type": "city",
+        "placefp": "76125"
+      },
+      {
+        "name": "White Swan",
+        "slug": "white-swan",
+        "type": "cdp",
+        "placefp": "78365"
+      },
+      {
+        "name": "Yakima",
+        "slug": "yakima",
+        "type": "city",
+        "placefp": "80010"
+      },
+      {
+        "name": "Zillah",
+        "slug": "zillah",
+        "type": "city",
+        "placefp": "80500"
+      }
+    ]
+  }
+}
