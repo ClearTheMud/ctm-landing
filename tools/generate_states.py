@@ -428,10 +428,7 @@ def render_county_page(state, county, cycle):
     county_places = places_data.get(abbr, {}).get(county_slug, [])
 
     if place_svg and county_places:
-        place_data_entries = []
-        for p in county_places:
-            place_data_entries.append(f'"{p["slug"]}":{{"races":0}}')
-        place_data_js = "{" + ",".join(place_data_entries) + "}"
+        place_data_js = "{}"
         place_map_html = f"""
     <div class="place-map-container">
       {place_svg}
