@@ -68,7 +68,18 @@ def render_no_research(msg):
     </div>"""
 
 
-def render_legislature_section(state_name, leg_senate, leg_house):
+def load_legislative_svg(state_abbr):
+    slug = state_abbr.lower()
+    svg_path = REPO_ROOT / "geo" / "states" / f"{slug}-legislative.svg"
+    if svg_path.exists():
+        content = svg_path.read_text()
+        if content.startswith("<?xml"):
+            content = content[content.index("?>") + 2:].strip()
+        return content
+    return None
+
+
+def render_legislature_section(state_name, leg_senate, leg_house, state_abbr=""):
     if not leg_senate and not leg_house:
         return render_no_research(f"No active research on {state_name} state legislative races.")
 
@@ -85,12 +96,38 @@ def render_legislature_section(state_name, leg_senate, leg_house):
             label = r["office"].replace("State ", "")
             count = len(r["candidates"])
             links.append(f'<a href="{r["url"]}">{label}</a> ({count})')
-        rows.append(f'      <tr><td>LD-{d}</td><td>{" &bull; ".join(links)}</td></tr>')
+        rows.append(f'      <tr id="ld-{d}"><td>LD-{d}</td><td>{" &bull; ".join(links)}</td></tr>')
 
     total_races = len(leg_senate) + len(leg_house)
     total_cands = sum(len(r["candidates"]) for r in leg_senate + leg_house)
 
-    return f"""    <div class="finding">
+    leg_svg = load_legislative_svg(state_abbr) if state_abbr else None
+    map_html = ""
+    map_script = ""
+    if leg_svg:
+        leg_data_entries = []
+        for d in sorted(districts.keys(), key=lambda x: int(x)):
+            race_count = len(districts[d])
+            cand_count = sum(len(r["candidates"]) for r in districts[d])
+            leg_data_entries.append(f'"{d}":{{"races":{race_count},"candidates":{cand_count}}}')
+        leg_data_js = "{" + ",".join(leg_data_entries) + "}"
+
+        map_html = f"""
+    <div class="legislative-map-container">
+      {leg_svg}
+      <div class="map-legend">
+        <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--active"></span> Active races</span>
+        <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--inactive"></span> No races tracked</span>
+      </div>
+      <p style="text-align:center;color:#8899aa;font-size:13px;margin:8px 0 0;">Click a district to jump to its races below</p>
+    </div>
+"""
+        map_script = f"""
+<script>window.CTM_LEG_DATA = {leg_data_js};</script>
+<script src="/js/legislative-map.js"></script>
+"""
+
+    return f"""{map_html}    <div class="finding">
       <p>{total_races} races tracked &mdash; {total_cands} candidates filed</p>
       <table>
         <thead><tr><th>District</th><th>Races</th></tr></thead>
@@ -98,7 +135,8 @@ def render_legislature_section(state_name, leg_senate, leg_house):
 {"".join(rows)}
         </tbody>
       </table>
-    </div>"""
+    </div>
+{map_script}"""
 
 
 def load_state_svg(state_abbr):
@@ -294,7 +332,7 @@ def render_state_page(state, state_races, cycle):
     <h2><span class="section-num">2</span> State Races</h2>
 {gov_section}
     <h3>State Legislature</h3>
-{render_legislature_section(name, leg_senate, leg_house)}
+{render_legislature_section(name, leg_senate, leg_house, abbr)}
   </div>
 
   <div class="section">

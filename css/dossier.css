@@ -212,6 +212,18 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .place-map-container .place--inactive { fill: #3d5570; stroke: #5a7a94; cursor: default; }
 .place-map-container .place--inactive:hover { fill: #4e6a85; }
 
+/* Legislative District Map */
+.legislative-map-container { margin: 12px 0 24px; position: relative; background: var(--navy); border-radius: 12px; padding: 24px; }
+.legislative-map-container svg { width: 100%; height: auto; max-height: 520px; }
+.legislative-map-container .leg-district { fill: #4a5e73; stroke: #5a7a94; stroke-width: 1; transition: fill 0.2s, stroke 0.2s; }
+.legislative-map-container .leg-district--active { fill: #d4a83a; stroke: #b8922e; cursor: pointer; animation: leg-glow 2.5s ease-in-out infinite; }
+.legislative-map-container .leg-district--active:hover, .legislative-map-container .leg-district--active:focus { fill: #e8c45a; stroke: #d4a83a; outline: none; animation: none; }
+@keyframes leg-glow { 0%, 100% { fill: #d4a83a; } 50% { fill: #e0bc5a; } }
+.legislative-map-container .leg-district--active:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.legislative-map-container .leg-district--inactive { fill: #3d5570; stroke: #5a7a94; cursor: default; }
+.legislative-map-container .leg-district--inactive:hover { fill: #4e6a85; }
+.legislative-map-container .leg-district-label { font-size: 8px; fill: #fff; text-anchor: middle; pointer-events: none; opacity: 0.8; }
+
 /* Responsive */
 @media (max-width: 900px) { .state-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 700px) { .matchup { grid-template-columns: 1fr; } }
