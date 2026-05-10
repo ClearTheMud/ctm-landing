@@ -28,14 +28,17 @@ SITE_URL = "https://clearthemud.org"
 
 PARTY_CLASS = {
     "D": "party-dem", "R": "party-rep", "I": "party-neutral",
+    "L": "party-neutral", "Libertarian": "party-neutral",
     "Cascade": "party-neutral", "Fifth Republic": "party-neutral",
     "NP": "party-neutral", "Non-Partisan": "party-neutral",
     "Socialist Workers": "party-neutral", "Union": "party-neutral",
+    "Pro Gun Liberal": "party-neutral", "No Kings": "party-neutral",
+    "Standup-America": "party-neutral",
 }
 
 PARTY_FULL = {
     "D": "Democratic", "R": "Republican", "I": "Independent",
-    "NP": "Non-Partisan",
+    "NP": "Non-Partisan", "L": "Libertarian",
 }
 
 
@@ -56,7 +59,13 @@ def find_dossier_json(race, lastname):
     office = race["office"]
     district = race.get("district", "")
 
-    if "House" in office and district:
+    if office == "State Senate":
+        subdir = DOSSIER_ROOT / state / str(year) / "legislative" / f"ld-{int(district):02d}"
+        pattern = f"{state}_state_senate_{district}_{lastname}_{year}.json"
+    elif office.startswith("State House"):
+        subdir = DOSSIER_ROOT / state / str(year) / "legislative" / f"ld-{int(district):02d}"
+        pattern = f"{state}_state_house_{district}_{lastname}_{year}.json"
+    elif "House" in office and district:
         subdir = DOSSIER_ROOT / state / str(year) / "congressional" / f"cd-{int(district):02d}"
         pattern = f"{state}_house_{district}_{lastname}_{year}.json"
     elif "Senate" in office:
@@ -103,22 +112,34 @@ def render_candidate_page(race, candidate, dossier, state_info):
     party_full = PARTY_FULL.get(party_short, party_short)
     party_class = PARTY_CLASS.get(party_short, "party-neutral")
     role = candidate.get("role", "challenger").title()
-    district = race["district"]
+    district_raw = race["district"]
+    district = f"LD-{district_raw}" if race["office"].startswith("State ") else district_raw
     race_title = race["title"]
     race_url = race["url"]
 
     meta = dossier["meta"] if dossier else {}
     cf = dossier.get("campaign_finance", {}) if dossier else {}
+    scf = dossier.get("state_campaign_finance", {}) if dossier else {}
     bio = dossier.get("biographical", {}) if dossier else {}
+
+    is_state_race = race["office"].startswith("State ")
 
     total_raised_claim = cf.get("total_raised", {}).get("claim", "")
     total_spent_claim = cf.get("total_spent", {}).get("claim", "")
     raised_amt = format_currency(extract_amount_from_claim(total_raised_claim)) if total_raised_claim else "Not reported"
     spent_amt = format_currency(extract_amount_from_claim(total_spent_claim)) if total_spent_claim else "Not reported"
 
+    scf_raised_claim = scf.get("total_raised", {}).get("claim", "")
+    scf_spent_claim = scf.get("total_spent", {}).get("claim", "")
+    scf_ccf_claim = scf.get("cash_carried_forward", {}).get("claim", "")
+    scf_entity_claim = scf.get("filing_entity", {}).get("claim", "")
+    scf_raised = format_currency(extract_amount_from_claim(scf_raised_claim)) if scf_raised_claim else "Not reported"
+    scf_spent = format_currency(extract_amount_from_claim(scf_spent_claim)) if scf_spent_claim else "Not reported"
+    scf_ccf = format_currency(extract_amount_from_claim(scf_ccf_claim)) if scf_ccf_claim else None
+
     source_tier = meta.get("party", {}).get("highest_tier", "T2")
 
-    # Top donors section
+    # Top donors section (FEC data)
     CONDUITS = {"ACTBLUE", "WINRED", "ACTBLUE TECHNICAL SERVICES", "WINRED TECHNICAL SERVICES"}
     donors_html = ""
     top_donors = cf.get("top_donors", [])
@@ -141,7 +162,7 @@ def render_candidate_page(race, candidate, dossier, state_info):
         </table>
       </div>"""
 
-    # Top expenditures section
+    # Top expenditures section (FEC data)
     expenditures_html = ""
     expenditures = cf.get("expenditures", [])
     if expenditures:
@@ -164,9 +185,24 @@ def render_candidate_page(race, candidate, dossier, state_info):
         </table>
       </div>"""
 
-    has_finance = total_raised_claim or top_donors
+    has_fec_finance = total_raised_claim or top_donors
+    has_state_finance = bool(scf_raised_claim)
+
     finance_section = ""
-    if has_finance:
+    if has_state_finance:
+        ccf_row = f"\n          <dt>Cash Carried Forward</dt><dd>{scf_ccf}</dd>" if scf_ccf else ""
+        finance_section = f"""
+    <div class="section">
+      <h2><span class="section-num">2</span> Campaign Finance</h2>
+      <div class="finding">
+        <dl>
+          <dt>Total Raised</dt><dd>{scf_raised}</dd>
+          <dt>Total Spent</dt><dd>{scf_spent}</dd>{ccf_row}
+          <dt>Source</dt><dd>WA Public Disclosure Commission ({source_tier})</dd>
+        </dl>
+      </div>
+    </div>"""
+    elif has_fec_finance:
         finance_section = f"""
     <div class="section">
       <h2><span class="section-num">2</span> Campaign Finance</h2>
@@ -179,6 +215,14 @@ def render_candidate_page(race, candidate, dossier, state_info):
       </div>
 {donors_html}
 {expenditures_html}
+    </div>"""
+    elif is_state_race:
+        finance_section = """
+    <div class="section">
+      <h2><span class="section-num">2</span> Campaign Finance</h2>
+      <div class="no-research">
+        <p>No state campaign finance filings found for this candidate. Data will be added when available.</p>
+      </div>
     </div>"""
     else:
         finance_section = """
@@ -268,7 +312,8 @@ def render_candidate_page(race, candidate, dossier, state_info):
 
 def render_race_overview(race, dossiers, state_info):
     title = race["title"]
-    district = race["district"]
+    district_raw = race["district"]
+    district = f"LD-{district_raw}" if race["office"].startswith("State ") else district_raw
     candidates = race["candidates"]
 
     candidate_cards = []
@@ -281,7 +326,8 @@ def render_race_overview(race, dossiers, state_info):
 
         dossier = dossiers.get(lastname)
         cf = dossier.get("campaign_finance", {}) if dossier else {}
-        raised_claim = cf.get("total_raised", {}).get("claim", "")
+        scf = dossier.get("state_campaign_finance", {}) if dossier else {}
+        raised_claim = scf.get("total_raised", {}).get("claim", "") or cf.get("total_raised", {}).get("claim", "")
         raised = format_currency(extract_amount_from_claim(raised_claim)) if raised_claim else "Not reported"
 
         status_class = "status-incumbent" if role.lower() == "incumbent" else "status-active"
@@ -328,7 +374,7 @@ def render_race_overview(race, dossiers, state_info):
       <span><span class="tlp-badge">TLP:GREEN</span></span>
       <span><strong>District:</strong> {district}</span>
       <span><strong>Candidates:</strong> {len(candidates)}</span>
-      <span><strong>Office:</strong> US House</span>
+      <span><strong>Office:</strong> {race['office']}</span>
     </div>
   </div>
 </div>
