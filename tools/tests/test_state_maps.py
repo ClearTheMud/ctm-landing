@@ -147,8 +147,8 @@ class TestRacesJSON:
             return json.load(f)["races"]
 
     def test_wa_house_races_exist(self, races):
-        wa_house = [r for r in races if r["state_abbr"] == "WA" and "House" in r["office"]]
-        assert len(wa_house) == 10, f"Expected 10 WA House races, got {len(wa_house)}"
+        wa_house = [r for r in races if r["state_abbr"] == "WA" and r["office"] == "US House"]
+        assert len(wa_house) == 10, f"Expected 10 WA US House races, got {len(wa_house)}"
 
     def test_wa_races_have_district_field(self, races):
         wa_house = [r for r in races if r["state_abbr"] == "WA" and "House" in r["office"]]
@@ -161,7 +161,7 @@ class TestRacesJSON:
             assert len(race["candidates"]) > 0, f"Race {race['id']} has no candidates"
 
     def test_wa_race_ids_follow_convention(self, races):
-        wa_house = [r for r in races if r["state_abbr"] == "WA" and "House" in r["office"]]
+        wa_house = [r for r in races if r["state_abbr"] == "WA" and r["office"] == "US House"]
         ids = sorted([r["id"] for r in wa_house], key=lambda x: int(x.split("-")[2]))
         expected = [f"wa-house-{i}-2026" for i in range(1, 11)]
         assert ids == expected

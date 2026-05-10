@@ -68,6 +68,39 @@ def render_no_research(msg):
     </div>"""
 
 
+def render_legislature_section(state_name, leg_senate, leg_house):
+    if not leg_senate and not leg_house:
+        return render_no_research(f"No active research on {state_name} state legislative races.")
+
+    from collections import defaultdict
+    districts = defaultdict(list)
+    for r in leg_senate + leg_house:
+        districts[r["district"]].append(r)
+
+    rows = []
+    for d in sorted(districts.keys(), key=lambda x: int(x)):
+        races = districts[d]
+        links = []
+        for r in sorted(races, key=lambda x: x["office"]):
+            label = r["office"].replace("State ", "")
+            count = len(r["candidates"])
+            links.append(f'<a href="{r["url"]}">{label}</a> ({count})')
+        rows.append(f'      <tr><td>LD-{d}</td><td>{" &bull; ".join(links)}</td></tr>')
+
+    total_races = len(leg_senate) + len(leg_house)
+    total_cands = sum(len(r["candidates"]) for r in leg_senate + leg_house)
+
+    return f"""    <div class="finding">
+      <p>{total_races} races tracked &mdash; {total_cands} candidates filed</p>
+      <table>
+        <thead><tr><th>District</th><th>Races</th></tr></thead>
+        <tbody>
+{"".join(rows)}
+        </tbody>
+      </table>
+    </div>"""
+
+
 def load_state_svg(state_abbr):
     slug = state_abbr.lower()
     svg_path = REPO_ROOT / "geo" / "states" / f"{slug}-districts.svg"
@@ -117,9 +150,11 @@ def render_state_page(state, state_races, cycle):
     senate_up = senate_year == cycle
     has_races = len(state_races) > 0
 
-    senate_races = [r for r in state_races if "Senate" in r["office"]]
-    house_races = [r for r in state_races if "House" in r["office"]]
+    senate_races = [r for r in state_races if r["office"] == "US Senate"]
+    house_races = [r for r in state_races if r["office"] == "US House"]
     gov_races = [r for r in state_races if "Governor" in r["office"]]
+    leg_senate = [r for r in state_races if r["office"] == "State Senate"]
+    leg_house = [r for r in state_races if r["office"].startswith("State House")]
 
     if senate_races:
         senate_html = '    <div class="dossier-links">\n' + "\n".join(render_race_card(r) for r in senate_races) + "\n    </div>"
@@ -260,7 +295,7 @@ def render_state_page(state, state_races, cycle):
     <h3>Governor</h3>
 {gov_html}
     <h3>State Legislature</h3>
-{render_no_research(f"No active research on {name} state legislative races.")}
+{render_legislature_section(name, leg_senate, leg_house)}
   </div>
 
   <div class="section">

@@ -576,6 +576,3234 @@
           "url": "/races/wa-house-10-2026/strickland/"
         }
       ]
+    },
+    {
+      "id": "wa-state-house-1-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "1",
+      "year": 2026,
+      "title": "WA LD-1 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-1-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Davina Duerr",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-1-pos1-2026/duerr/"
+        },
+        {
+          "name": "Maggie Wang",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-1-pos1-2026/wang/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-1-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "1",
+      "year": 2026,
+      "title": "WA LD-1 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-1-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Jenne Alderks",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-1-pos2-2026/alderks/"
+        },
+        {
+          "name": "Shelley Kloba",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-1-pos2-2026/kloba/"
+        },
+        {
+          "name": "Jeff Lyon",
+          "party": "L",
+          "role": "challenger",
+          "url": "/races/wa-state-house-1-pos2-2026/lyon/"
+        },
+        {
+          "name": "Cliff Moon",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-1-pos2-2026/moon/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-10-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "10",
+      "year": 2026,
+      "title": "WA LD-10 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-10-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Robert (Chili) Hicks",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-10-pos1-2026/hicks/"
+        },
+        {
+          "name": "Clyde Shavers",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-10-pos1-2026/shavers/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-10-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "10",
+      "year": 2026,
+      "title": "WA LD-10 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-10-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Tim Hazelo",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-10-pos2-2026/hazelo/"
+        },
+        {
+          "name": "Carrie R. Kennedy",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-10-pos2-2026/kennedy/"
+        },
+        {
+          "name": "Dave Paul",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-10-pos2-2026/paul/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-11-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "11",
+      "year": 2026,
+      "title": "WA LD-11 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-11-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Ashley Fedan",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-11-pos1-2026/fedan/"
+        },
+        {
+          "name": "David Hackney",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-11-pos1-2026/hackney/"
+        },
+        {
+          "name": "Christian Rombough",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-11-pos1-2026/rombough/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-11-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "11",
+      "year": 2026,
+      "title": "WA LD-11 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-11-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Steve Bergquist",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-11-pos2-2026/bergquist/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-12-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "12",
+      "year": 2026,
+      "title": "WA LD-12 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-12-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Brian Burnett",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-12-pos1-2026/burnett/"
+        },
+        {
+          "name": "Stacy Willoughby",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-12-pos1-2026/willoughby/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-12-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "12",
+      "year": 2026,
+      "title": "WA LD-12 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-12-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Maggie Adams",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-12-pos2-2026/adams/"
+        },
+        {
+          "name": "Adam James",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-12-pos2-2026/james/"
+        },
+        {
+          "name": "Mike Steele",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-12-pos2-2026/steele/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-13-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "13",
+      "year": 2026,
+      "title": "WA LD-13 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-13-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Tom Dent",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-13-pos1-2026/dent/"
+        },
+        {
+          "name": "Juan \"Jerry\" Garcia",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-13-pos1-2026/garcia/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-13-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "13",
+      "year": 2026,
+      "title": "WA LD-13 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-13-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Deanna Martinez",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-13-pos2-2026/martinez/"
+        },
+        {
+          "name": "Don Myers",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-13-pos2-2026/myers/"
+        },
+        {
+          "name": "Joshua Thompson",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-13-pos2-2026/thompson/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-14-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "14",
+      "year": 2026,
+      "title": "WA LD-14 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-14-pos1-2026/",
+      "candidates": [
+        {
+          "name": "WIlliam Chichenoff",
+          "party": "NP",
+          "role": "challenger",
+          "url": "/races/wa-state-house-14-pos1-2026/chichenoff/"
+        },
+        {
+          "name": "Chelsea Dimas",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-14-pos1-2026/dimas/"
+        },
+        {
+          "name": "Gloria Mendoza",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-14-pos1-2026/mendoza/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-14-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "14",
+      "year": 2026,
+      "title": "WA LD-14 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-14-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Deb Manjarrez",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-14-pos2-2026/manjarrez/"
+        },
+        {
+          "name": "Ezequiel Morfin",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-14-pos2-2026/morfin/"
+        },
+        {
+          "name": "Tony G Sandoval",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-14-pos2-2026/sandoval/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-15-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "15",
+      "year": 2026,
+      "title": "WA LD-15 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-15-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Chris Corry",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-15-pos1-2026/corry/"
+        },
+        {
+          "name": "Jack McEntire",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-15-pos1-2026/mcentire/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-15-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "15",
+      "year": 2026,
+      "title": "WA LD-15 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-15-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Reedy Berg",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-15-pos2-2026/berg/"
+        },
+        {
+          "name": "Chase Foster",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-15-pos2-2026/foster/"
+        },
+        {
+          "name": "Liz Hallock",
+          "party": "No Kings",
+          "role": "challenger",
+          "url": "/races/wa-state-house-15-pos2-2026/hallock/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-16-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "16",
+      "year": 2026,
+      "title": "WA LD-16 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-16-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Mark Klicker",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-16-pos1-2026/klicker/"
+        },
+        {
+          "name": "Kyle Palmer",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-16-pos1-2026/palmer/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-16-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "16",
+      "year": 2026,
+      "title": "WA LD-16 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-16-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Skyler Rude",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-16-pos2-2026/rude/"
+        },
+        {
+          "name": "Derek Sarley",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-16-pos2-2026/sarley/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-17-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "17",
+      "year": 2026,
+      "title": "WA LD-17 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-17-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Ben Christly",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-17-pos1-2026/christly/"
+        },
+        {
+          "name": "Thomas Everett Haynes",
+          "party": "Pro Gun Liberal",
+          "role": "challenger",
+          "url": "/races/wa-state-house-17-pos1-2026/haynes/"
+        },
+        {
+          "name": "Kevin Waters",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-17-pos1-2026/waters/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-17-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "17",
+      "year": 2026,
+      "title": "WA LD-17 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-17-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Diana H. Perez",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-17-pos2-2026/perez/"
+        },
+        {
+          "name": "David Stuebe",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-17-pos2-2026/stuebe/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-18-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "18",
+      "year": 2026,
+      "title": "WA LD-18 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-18-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Randi L. Knott",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-18-pos1-2026/knott/"
+        },
+        {
+          "name": "Stephanie McClintock",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-18-pos1-2026/mcclintock/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-18-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "18",
+      "year": 2026,
+      "title": "WA LD-18 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-18-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Deken Letinich",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-18-pos2-2026/letinich/"
+        },
+        {
+          "name": "John Ley",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-18-pos2-2026/ley/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-19-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "19",
+      "year": 2026,
+      "title": "WA LD-19 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-19-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Kevin Moynihan",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-19-pos1-2026/moynihan/"
+        },
+        {
+          "name": "Jim Walsh",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-19-pos1-2026/walsh/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-19-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "19",
+      "year": 2026,
+      "title": "WA LD-19 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-19-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Daniel William Bradley",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-19-pos2-2026/bradley/"
+        },
+        {
+          "name": "Terry Carlson",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-19-pos2-2026/carlson/"
+        },
+        {
+          "name": "Joel McEntire",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-19-pos2-2026/mcentire/"
+        },
+        {
+          "name": "Jimi O'Hagan",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-19-pos2-2026/o'hagan/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-2-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "2",
+      "year": 2026,
+      "title": "WA LD-2 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-2-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Andrew Barkis",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-2-pos1-2026/barkis/"
+        },
+        {
+          "name": "William Dehnel",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-2-pos1-2026/dehnel/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-2-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "2",
+      "year": 2026,
+      "title": "WA LD-2 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-2-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Matt Marshall",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-2-pos2-2026/marshall/"
+        },
+        {
+          "name": "Martin L Miller",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-2-pos2-2026/miller/"
+        },
+        {
+          "name": "Angela Taylor",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-2-pos2-2026/taylor/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-20-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "20",
+      "year": 2026,
+      "title": "WA LD-20 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-20-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Peter Abbarno",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-20-pos1-2026/abbarno/"
+        },
+        {
+          "name": "Andy Zahn",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-20-pos1-2026/zahn/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-20-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "20",
+      "year": 2026,
+      "title": "WA LD-20 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-20-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Evan Jones",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-20-pos2-2026/jones/"
+        },
+        {
+          "name": "Ed Orcutt",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-20-pos2-2026/orcutt/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-21-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "21",
+      "year": 2026,
+      "title": "WA LD-21 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-21-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Jason Moon",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-21-pos1-2026/moon/"
+        },
+        {
+          "name": "Strom Peterson",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-21-pos1-2026/peterson/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-21-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "21",
+      "year": 2026,
+      "title": "WA LD-21 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-21-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Bruce Guthrie",
+          "party": "L",
+          "role": "challenger",
+          "url": "/races/wa-state-house-21-pos2-2026/guthrie/"
+        },
+        {
+          "name": "Lillian Ortiz-Self",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-21-pos2-2026/ortiz-self/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-22-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "22",
+      "year": 2026,
+      "title": "WA LD-22 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-22-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Beth Doglio",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-22-pos1-2026/doglio/"
+        },
+        {
+          "name": "Don Hewett",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-22-pos1-2026/hewett/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-22-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "22",
+      "year": 2026,
+      "title": "WA LD-22 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-22-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Jamie Keenan-deVargas",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-22-pos2-2026/keenan-devargas/"
+        },
+        {
+          "name": "Lisa Parshley",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-22-pos2-2026/parshley/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-23-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "23",
+      "year": 2026,
+      "title": "WA LD-23 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-23-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Joel Ard",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-23-pos1-2026/ard/"
+        },
+        {
+          "name": "Daria Ilgen",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-23-pos1-2026/ilgen/"
+        },
+        {
+          "name": "Tarra Simmons",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-23-pos1-2026/simmons/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-23-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "23",
+      "year": 2026,
+      "title": "WA LD-23 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-23-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Lance Byrd",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-23-pos2-2026/byrd/"
+        },
+        {
+          "name": "Kristin Lillegard",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-23-pos2-2026/lillegard/"
+        },
+        {
+          "name": "Greg Nance",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-23-pos2-2026/nance/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-24-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "24",
+      "year": 2026,
+      "title": "WA LD-24 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-24-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Adam Bernbaum",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-24-pos1-2026/bernbaum/"
+        },
+        {
+          "name": "Ted Bowen",
+          "party": "I",
+          "role": "challenger",
+          "url": "/races/wa-state-house-24-pos1-2026/bowen/"
+        },
+        {
+          "name": "Aiden I.R. Hamilton",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-24-pos1-2026/hamilton/"
+        },
+        {
+          "name": "Eric W. Pratt",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-24-pos1-2026/pratt/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-24-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "24",
+      "year": 2026,
+      "title": "WA LD-24 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-24-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Bradley Nemo Callaway",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-24-pos2-2026/callaway/"
+        },
+        {
+          "name": "Patrick DePoe",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-24-pos2-2026/depoe/"
+        },
+        {
+          "name": "Mark Hodgson",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-24-pos2-2026/hodgson/"
+        },
+        {
+          "name": "Marcia Kelbon",
+          "party": "NP",
+          "role": "challenger",
+          "url": "/races/wa-state-house-24-pos2-2026/kelbon/"
+        },
+        {
+          "name": "Kaylee Kuehn",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-24-pos2-2026/kuehn/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-25-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "25",
+      "year": 2026,
+      "title": "WA LD-25 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-25-pos1-2026/",
+      "candidates": [
+        {
+          "name": "David Berg",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-25-pos1-2026/berg/"
+        },
+        {
+          "name": "Michael Keaton",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-25-pos1-2026/keaton/"
+        },
+        {
+          "name": "Nick Oloo",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-25-pos1-2026/oloo/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-25-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "25",
+      "year": 2026,
+      "title": "WA LD-25 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-25-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Ren Fanony",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-25-pos2-2026/fanony/"
+        },
+        {
+          "name": "Cyndy Jacobsen",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-25-pos2-2026/jacobsen/"
+        },
+        {
+          "name": "Jenn Marie Strickling",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-25-pos2-2026/strickling/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-26-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "26",
+      "year": 2026,
+      "title": "WA LD-26 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-26-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Natalie Bornfleth",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-26-pos1-2026/bornfleth/"
+        },
+        {
+          "name": "David Olson",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-26-pos1-2026/olson/"
+        },
+        {
+          "name": "Adison Richards",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-26-pos1-2026/richards/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-26-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "26",
+      "year": 2026,
+      "title": "WA LD-26 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-26-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Katy Cornell",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-26-pos2-2026/cornell/"
+        },
+        {
+          "name": "Renee Hernandez Greenfield",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-26-pos2-2026/greenfield/"
+        },
+        {
+          "name": "Randy Phillips",
+          "party": "NP",
+          "role": "challenger",
+          "url": "/races/wa-state-house-26-pos2-2026/phillips/"
+        },
+        {
+          "name": "Tedd Wetherbee",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-26-pos2-2026/wetherbee/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-27-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "27",
+      "year": 2026,
+      "title": "WA LD-27 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-27-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Carole Sue Braaten",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-27-pos1-2026/braaten/"
+        },
+        {
+          "name": "Laurie Jinkins",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-27-pos1-2026/jinkins/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-27-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "27",
+      "year": 2026,
+      "title": "WA LD-27 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-27-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Jake Fey",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-27-pos2-2026/fey/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-28-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "28",
+      "year": 2026,
+      "title": "WA LD-28 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-28-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Mari Leavitt",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-28-pos1-2026/leavitt/"
+        },
+        {
+          "name": "Kathy Richardson",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-28-pos1-2026/richardson/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-28-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "28",
+      "year": 2026,
+      "title": "WA LD-28 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-28-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Dan Bronoske",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-28-pos2-2026/bronoske/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-29-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "29",
+      "year": 2026,
+      "title": "WA LD-29 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-29-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Brett Johnson",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-29-pos1-2026/johnson/"
+        },
+        {
+          "name": "Melanie Morgan",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-29-pos1-2026/morgan/"
+        },
+        {
+          "name": "Krista Perez",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-29-pos1-2026/perez/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-29-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "29",
+      "year": 2026,
+      "title": "WA LD-29 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-29-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Darek Blum",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-29-pos2-2026/blum/"
+        },
+        {
+          "name": "Joe Bushnell",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-29-pos2-2026/bushnell/"
+        },
+        {
+          "name": "Erin Chapman-Smith",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-29-pos2-2026/chapman-smith/"
+        },
+        {
+          "name": "Sheri Hayes",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-29-pos2-2026/hayes/"
+        },
+        {
+          "name": "Natasha Laitila",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-29-pos2-2026/laitila/"
+        },
+        {
+          "name": "Patrick Stickney",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-29-pos2-2026/stickney/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-3-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "3",
+      "year": 2026,
+      "title": "WA LD-3 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-3-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Natasha Hill",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-3-pos1-2026/hill/"
+        },
+        {
+          "name": "Tony Kiepe",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-3-pos1-2026/kiepe/"
+        },
+        {
+          "name": "John Kness",
+          "party": "NP",
+          "role": "challenger",
+          "url": "/races/wa-state-house-3-pos1-2026/kness/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-3-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "3",
+      "year": 2026,
+      "title": "WA LD-3 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-3-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Donovan Arnold DeLeon",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-3-pos2-2026/deleon/"
+        },
+        {
+          "name": "Luc Jasmin III",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-3-pos2-2026/iii/"
+        },
+        {
+          "name": "Pam Kohlmeier",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-3-pos2-2026/kohlmeier/"
+        },
+        {
+          "name": "Natalie Poulson",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-3-pos2-2026/poulson/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-30-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "30",
+      "year": 2026,
+      "title": "WA LD-30 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-30-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Tiffany Bowyer",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-30-pos1-2026/bowyer/"
+        },
+        {
+          "name": "Jamila E. Taylor",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-30-pos1-2026/taylor/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-30-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "30",
+      "year": 2026,
+      "title": "WA LD-30 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-30-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Paul McDaniel",
+          "party": "I",
+          "role": "challenger",
+          "url": "/races/wa-state-house-30-pos2-2026/mcdaniel/"
+        },
+        {
+          "name": "Kristine Reeves",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-30-pos2-2026/reeves/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-31-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "31",
+      "year": 2026,
+      "title": "WA LD-31 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-31-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Drew Stokesbary",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-31-pos1-2026/stokesbary/"
+        },
+        {
+          "name": "Stephen Szczurko-Walton",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-31-pos1-2026/szczurko-walton/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-31-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "31",
+      "year": 2026,
+      "title": "WA LD-31 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-31-pos2-2026/",
+      "candidates": [
+        {
+          "name": "John Bielka",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-31-pos2-2026/bielka/"
+        },
+        {
+          "name": "Joshua Penner",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-31-pos2-2026/penner/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-32-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "32",
+      "year": 2026,
+      "title": "WA LD-32 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-32-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Chris Bloomquist",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-32-pos1-2026/bloomquist/"
+        },
+        {
+          "name": "Will Chen",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-32-pos1-2026/chen/"
+        },
+        {
+          "name": "Jenna Nand",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-32-pos1-2026/nand/"
+        },
+        {
+          "name": "Danica Noble",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-32-pos1-2026/noble/"
+        },
+        {
+          "name": "Lisa Rezac",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-32-pos1-2026/rezac/"
+        },
+        {
+          "name": "Keith Scully",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-32-pos1-2026/scully/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-32-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "32",
+      "year": 2026,
+      "title": "WA LD-32 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-32-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Lauren Davis",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-32-pos2-2026/davis/"
+        },
+        {
+          "name": "Imraan Siddiqi",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-32-pos2-2026/siddiqi/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-33-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "33",
+      "year": 2026,
+      "title": "WA LD-33 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-33-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Darryl K. Jones",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-33-pos1-2026/jones/"
+        },
+        {
+          "name": "Chris Martinez",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-33-pos1-2026/martinez/"
+        },
+        {
+          "name": "Edwin Obras",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-33-pos1-2026/obras/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-33-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "33",
+      "year": 2026,
+      "title": "WA LD-33 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-33-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Alex Andrade",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-33-pos2-2026/andrade/"
+        },
+        {
+          "name": "Mia Su-Ling Gregerson",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-33-pos2-2026/gregerson/"
+        },
+        {
+          "name": "Yuri Marinchik",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-33-pos2-2026/marinchik/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-34-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "34",
+      "year": 2026,
+      "title": "WA LD-34 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-34-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Brianna K. Thomas",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-34-pos1-2026/thomas/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-34-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "34",
+      "year": 2026,
+      "title": "WA LD-34 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-34-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Mary Anito",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-34-pos2-2026/anito/"
+        },
+        {
+          "name": "Joe Fitzgibbon",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-34-pos2-2026/fitzgibbon/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-35-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "35",
+      "year": 2026,
+      "title": "WA LD-35 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-35-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Shaena Garberich",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-35-pos1-2026/garberich/"
+        },
+        {
+          "name": "Dan Griffey",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-35-pos1-2026/griffey/"
+        },
+        {
+          "name": "Jim Pierson",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-35-pos1-2026/pierson/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-35-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "35",
+      "year": 2026,
+      "title": "WA LD-35 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-35-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Travis Couture",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-35-pos2-2026/couture/"
+        },
+        {
+          "name": "Maria Littlesun",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-35-pos2-2026/littlesun/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-36-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "36",
+      "year": 2026,
+      "title": "WA LD-36 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-36-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Julia Grant Reed",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-36-pos1-2026/reed/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-36-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "36",
+      "year": 2026,
+      "title": "WA LD-36 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-36-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Liz Berry",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-36-pos2-2026/berry/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-37-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "37",
+      "year": 2026,
+      "title": "WA LD-37 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-37-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Sharon Tomiko Santos",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-37-pos1-2026/santos/"
+        },
+        {
+          "name": "Kelabe Tewolde",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-37-pos1-2026/tewolde/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-37-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "37",
+      "year": 2026,
+      "title": "WA LD-37 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-37-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Evon McCorkle",
+          "party": "I",
+          "role": "challenger",
+          "url": "/races/wa-state-house-37-pos2-2026/mccorkle/"
+        },
+        {
+          "name": "Jaelynn Scott",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-37-pos2-2026/scott/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-38-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "38",
+      "year": 2026,
+      "title": "WA LD-38 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-38-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Julio Cortes",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-38-pos1-2026/cortes/"
+        },
+        {
+          "name": "Annie Fitzgerald",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-38-pos1-2026/fitzgerald/"
+        },
+        {
+          "name": "Thomas (Jeff) Kelly",
+          "party": "Cascade",
+          "role": "challenger",
+          "url": "/races/wa-state-house-38-pos1-2026/kelly/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-38-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "38",
+      "year": 2026,
+      "title": "WA LD-38 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-38-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Mary Fosse",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-38-pos2-2026/fosse/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-39-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "39",
+      "year": 2026,
+      "title": "WA LD-39 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-39-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Kathryn Lewandowsky",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-39-pos1-2026/lewandowsky/"
+        },
+        {
+          "name": "Sam Low",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-39-pos1-2026/low/"
+        },
+        {
+          "name": "Dusty Wisniew",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-39-pos1-2026/wisniew/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-39-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "39",
+      "year": 2026,
+      "title": "WA LD-39 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-39-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Steve Ewing",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-39-pos2-2026/ewing/"
+        },
+        {
+          "name": "Ida Keeley",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-39-pos2-2026/keeley/"
+        },
+        {
+          "name": "Lacey Sauvageau",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-39-pos2-2026/sauvageau/"
+        },
+        {
+          "name": "Robert J Sutherland",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-39-pos2-2026/sutherland/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-4-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "4",
+      "year": 2026,
+      "title": "WA LD-4 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-4-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Debra Long",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-4-pos1-2026/long/"
+        },
+        {
+          "name": "Trent Maier",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-4-pos1-2026/maier/"
+        },
+        {
+          "name": "Hillary Q. Pham",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-4-pos1-2026/pham/"
+        },
+        {
+          "name": "George Wagner",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-4-pos1-2026/wagner/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-4-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "4",
+      "year": 2026,
+      "title": "WA LD-4 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-4-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Rob Chase",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-4-pos2-2026/chase/"
+        },
+        {
+          "name": "Bob Curtis",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-4-pos2-2026/curtis/"
+        },
+        {
+          "name": "Rob Tupper",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-4-pos2-2026/tupper/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-40-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "40",
+      "year": 2026,
+      "title": "WA LD-40 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-40-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Cindy Carter",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-40-pos1-2026/carter/"
+        },
+        {
+          "name": "Debra Lekanoff",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-40-pos1-2026/lekanoff/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-40-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "40",
+      "year": 2026,
+      "title": "WA LD-40 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-40-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Monte Jay Mahan",
+          "party": "I",
+          "role": "challenger",
+          "url": "/races/wa-state-house-40-pos2-2026/mahan/"
+        },
+        {
+          "name": "Salomon Rodrigue Mbouombouo",
+          "party": "I",
+          "role": "challenger",
+          "url": "/races/wa-state-house-40-pos2-2026/mbouombouo/"
+        },
+        {
+          "name": "Alex Ramel",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-40-pos2-2026/ramel/"
+        },
+        {
+          "name": "Joseph Segault",
+          "party": "NP",
+          "role": "challenger",
+          "url": "/races/wa-state-house-40-pos2-2026/segault/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-41-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "41",
+      "year": 2026,
+      "title": "WA LD-41 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-41-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Elle Nguyen",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-41-pos1-2026/nguyen/"
+        },
+        {
+          "name": "Alex Tsimerman",
+          "party": "Standup-America",
+          "role": "challenger",
+          "url": "/races/wa-state-house-41-pos1-2026/tsimerman/"
+        },
+        {
+          "name": "Janice Zahn",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-41-pos1-2026/zahn/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-41-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "41",
+      "year": 2026,
+      "title": "WA LD-41 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-41-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Michael Rosen",
+          "party": "I",
+          "role": "challenger",
+          "url": "/races/wa-state-house-41-pos2-2026/rosen/"
+        },
+        {
+          "name": "My-Linh T Thai",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-41-pos2-2026/thai/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-42-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "42",
+      "year": 2026,
+      "title": "WA LD-42 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-42-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Misty Flowers",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-42-pos1-2026/flowers/"
+        },
+        {
+          "name": "Alicia Rule",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-42-pos1-2026/rule/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-42-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "42",
+      "year": 2026,
+      "title": "WA LD-42 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-42-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Justin Pike",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-42-pos2-2026/pike/"
+        },
+        {
+          "name": "Joe Timmons",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-42-pos2-2026/timmons/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-43-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "43",
+      "year": 2026,
+      "title": "WA LD-43 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-43-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Alby Clendennin",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-43-pos1-2026/clendennin/"
+        },
+        {
+          "name": "Nicole Macri",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-43-pos1-2026/macri/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-43-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "43",
+      "year": 2026,
+      "title": "WA LD-43 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-43-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Shaun Scott",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-43-pos2-2026/scott/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-44-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "44",
+      "year": 2026,
+      "title": "WA LD-44 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-44-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Brandy Donaghy",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-44-pos1-2026/donaghy/"
+        },
+        {
+          "name": "Chris Elder",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-44-pos1-2026/elder/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-44-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "44",
+      "year": 2026,
+      "title": "WA LD-44 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-44-pos2-2026/",
+      "candidates": [
+        {
+          "name": "April Berg",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-44-pos2-2026/berg/"
+        },
+        {
+          "name": "Tonya Stadlman",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-44-pos2-2026/stadlman/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-45-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "45",
+      "year": 2026,
+      "title": "WA LD-45 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-45-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Roger Goodman",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-45-pos1-2026/goodman/"
+        },
+        {
+          "name": "JoAnn Tolentino",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-45-pos1-2026/tolentino/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-45-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "45",
+      "year": 2026,
+      "title": "WA LD-45 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-45-pos2-2026/",
+      "candidates": [
+        {
+          "name": "John P Gibbons",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-45-pos2-2026/gibbons/"
+        },
+        {
+          "name": "Vanessa Kritzer",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-45-pos2-2026/kritzer/"
+        },
+        {
+          "name": "Chandler Torbett",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-45-pos2-2026/torbett/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-46-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "46",
+      "year": 2026,
+      "title": "WA LD-46 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-46-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Ron Davis",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-46-pos1-2026/davis/"
+        },
+        {
+          "name": "Will Dreher",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-46-pos1-2026/dreher/"
+        },
+        {
+          "name": "Gerry Pollet",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-46-pos1-2026/pollet/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-46-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "46",
+      "year": 2026,
+      "title": "WA LD-46 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-46-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Darya Farivar",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-46-pos2-2026/farivar/"
+        },
+        {
+          "name": "Rodney 'Star' Thornley",
+          "party": "I",
+          "role": "challenger",
+          "url": "/races/wa-state-house-46-pos2-2026/thornley/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-47-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "47",
+      "year": 2026,
+      "title": "WA LD-47 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-47-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Cobi Clark",
+          "party": "L",
+          "role": "challenger",
+          "url": "/races/wa-state-house-47-pos1-2026/clark/"
+        },
+        {
+          "name": "Debra Jean Entenman",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-47-pos1-2026/entenman/"
+        },
+        {
+          "name": "Logan Evans",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-47-pos1-2026/evans/"
+        },
+        {
+          "name": "Jasnoor Kaur Hans",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-47-pos1-2026/hans/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-47-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "47",
+      "year": 2026,
+      "title": "WA LD-47 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-47-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Ted Cooke",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-47-pos2-2026/cooke/"
+        },
+        {
+          "name": "Chris Stearns",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-47-pos2-2026/stearns/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-48-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "48",
+      "year": 2026,
+      "title": "WA LD-48 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-48-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Jeffery Poppe",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-48-pos1-2026/poppe/"
+        },
+        {
+          "name": "Osman Salahuddin",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-48-pos1-2026/salahuddin/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-48-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "48",
+      "year": 2026,
+      "title": "WA LD-48 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-48-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Jessica Forsythe",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-48-pos2-2026/forsythe/"
+        },
+        {
+          "name": "Amy Walen",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-48-pos2-2026/walen/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-49-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "49",
+      "year": 2026,
+      "title": "WA LD-49 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-49-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Kim D. Harless",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-49-pos1-2026/harless/"
+        },
+        {
+          "name": "Sarah Mittelman",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-49-pos1-2026/mittelman/"
+        },
+        {
+          "name": "Mike Pond",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-49-pos1-2026/pond/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-49-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "49",
+      "year": 2026,
+      "title": "WA LD-49 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-49-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Monica Jurado Stonier",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-49-pos2-2026/stonier/"
+        },
+        {
+          "name": "Derek Thompson",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-49-pos2-2026/thompson/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-5-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "5",
+      "year": 2026,
+      "title": "WA LD-5 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-5-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Michelle Bennett",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-5-pos1-2026/bennett/"
+        },
+        {
+          "name": "Zach Hall",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-5-pos1-2026/hall/"
+        },
+        {
+          "name": "Topher Leritz",
+          "party": "NP",
+          "role": "challenger",
+          "url": "/races/wa-state-house-5-pos1-2026/leritz/"
+        },
+        {
+          "name": "Aimee Warmerdam",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-5-pos1-2026/warmerdam/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-5-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "5",
+      "year": 2026,
+      "title": "WA LD-5 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-5-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Lisa Callan",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-5-pos2-2026/callan/"
+        },
+        {
+          "name": "Patrick Peacock",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-5-pos2-2026/peacock/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-6-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "6",
+      "year": 2026,
+      "title": "WA LD-6 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-6-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Sueann Davis",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-6-pos1-2026/davis/"
+        },
+        {
+          "name": "Michaela Kelso",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-6-pos1-2026/kelso/"
+        },
+        {
+          "name": "Jennifer Morton",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-6-pos1-2026/morton/"
+        },
+        {
+          "name": "Alan Nolan",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-6-pos1-2026/nolan/"
+        },
+        {
+          "name": "Nicolette Ocheltree",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-6-pos1-2026/ocheltree/"
+        },
+        {
+          "name": "Isaiah Paine",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-6-pos1-2026/paine/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-6-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "6",
+      "year": 2026,
+      "title": "WA LD-6 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-6-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Jonathan Bingle",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-6-pos2-2026/bingle/"
+        },
+        {
+          "name": "Aaron M. Croft",
+          "party": "I",
+          "role": "challenger",
+          "url": "/races/wa-state-house-6-pos2-2026/croft/"
+        },
+        {
+          "name": "Julia Payne",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-6-pos2-2026/payne/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-7-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "7",
+      "year": 2026,
+      "title": "WA LD-7 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-7-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Andrew Engell",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-7-pos1-2026/engell/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-7-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "7",
+      "year": 2026,
+      "title": "WA LD-7 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-7-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Hunter Abell",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-7-pos2-2026/abell/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-8-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "8",
+      "year": 2026,
+      "title": "WA LD-8 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-8-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Stephanie Barnard",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-8-pos1-2026/barnard/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-8-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "8",
+      "year": 2026,
+      "title": "WA LD-8 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-8-pos2-2026/",
+      "candidates": [
+        {
+          "name": "April Connors",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-8-pos2-2026/connors/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-9-pos1-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 1",
+      "district": "9",
+      "year": 2026,
+      "title": "WA LD-9 State House Pos. 1",
+      "status": "active",
+      "url": "/races/wa-state-house-9-pos1-2026/",
+      "candidates": [
+        {
+          "name": "Mary Dye",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-9-pos1-2026/dye/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-house-9-pos2-2026",
+      "state_abbr": "WA",
+      "office": "State House Pos. 2",
+      "district": "9",
+      "year": 2026,
+      "title": "WA LD-9 State House Pos. 2",
+      "status": "active",
+      "url": "/races/wa-state-house-9-pos2-2026/",
+      "candidates": [
+        {
+          "name": "Joe Schmick",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-house-9-pos2-2026/schmick/"
+        },
+        {
+          "name": "Karina Wallace",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-house-9-pos2-2026/wallace/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-13-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "13",
+      "year": 2026,
+      "title": "WA LD-13 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-13-2026/",
+      "candidates": [
+        {
+          "name": "Alex Ybarra",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-13-2026/ybarra/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-15-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "15",
+      "year": 2026,
+      "title": "WA LD-15 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-15-2026/",
+      "candidates": [
+        {
+          "name": "Jeremie Dufault",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-15-2026/dufault/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-21-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "21",
+      "year": 2026,
+      "title": "WA LD-21 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-21-2026/",
+      "candidates": [
+        {
+          "name": "Riaz Khan",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-21-2026/khan/"
+        },
+        {
+          "name": "Marko Liias",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-21-2026/liias/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-26-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "26",
+      "year": 2026,
+      "title": "WA LD-26 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-26-2026/",
+      "candidates": [
+        {
+          "name": "Deborah Krishnadasan",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-26-2026/krishnadasan/"
+        },
+        {
+          "name": "Gary Parker",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-26-2026/parker/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-29-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "29",
+      "year": 2026,
+      "title": "WA LD-29 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-29-2026/",
+      "candidates": [
+        {
+          "name": "David Anderson",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-29-2026/anderson/"
+        },
+        {
+          "name": "Sharlett Mena",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-29-2026/mena/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-30-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "30",
+      "year": 2026,
+      "title": "WA LD-30 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-30-2026/",
+      "candidates": [
+        {
+          "name": "Michael Rutland",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-30-2026/rutland/"
+        },
+        {
+          "name": "Claire Wilson",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-30-2026/wilson/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-31-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "31",
+      "year": 2026,
+      "title": "WA LD-31 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-31-2026/",
+      "candidates": [
+        {
+          "name": "Phil Fortunato",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-31-2026/fortunato/"
+        },
+        {
+          "name": "Tamara Stramel",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-31-2026/stramel/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-32-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "32",
+      "year": 2026,
+      "title": "WA LD-32 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-32-2026/",
+      "candidates": [
+        {
+          "name": "Ira McBee",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-32-2026/mcbee/"
+        },
+        {
+          "name": "Cindy Ryu",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-32-2026/ryu/"
+        },
+        {
+          "name": "Jesse Salomon",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-32-2026/salomon/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-33-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "33",
+      "year": 2026,
+      "title": "WA LD-33 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-33-2026/",
+      "candidates": [
+        {
+          "name": "Tina L. Orwall",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-33-2026/orwall/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-34-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "34",
+      "year": 2026,
+      "title": "WA LD-34 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-34-2026/",
+      "candidates": [
+        {
+          "name": "Emily Alvarado",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-34-2026/alvarado/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-35-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "35",
+      "year": 2026,
+      "title": "WA LD-35 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-35-2026/",
+      "candidates": [
+        {
+          "name": "Drew C MacEwen",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-35-2026/macewen/"
+        },
+        {
+          "name": "Carolina Mejia",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-35-2026/mejia/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-36-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "36",
+      "year": 2026,
+      "title": "WA LD-36 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-36-2026/",
+      "candidates": [
+        {
+          "name": "Jillian England",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-36-2026/england/"
+        },
+        {
+          "name": "Noel C. Frame",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-36-2026/frame/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-37-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "37",
+      "year": 2026,
+      "title": "WA LD-37 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-37-2026/",
+      "candidates": [
+        {
+          "name": "Tatiana Brown",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-37-2026/brown/"
+        },
+        {
+          "name": "Emijah Smith",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-37-2026/smith/"
+        },
+        {
+          "name": "Chipalo Street",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-37-2026/street/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-38-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "38",
+      "year": 2026,
+      "title": "WA LD-38 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-38-2026/",
+      "candidates": [
+        {
+          "name": "Brad Bender",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-38-2026/bender/"
+        },
+        {
+          "name": "June Robinson",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-38-2026/robinson/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-42-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "42",
+      "year": 2026,
+      "title": "WA LD-42 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-42-2026/",
+      "candidates": [
+        {
+          "name": "Ryan Bowman",
+          "party": "NP",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-42-2026/bowman/"
+        },
+        {
+          "name": "Eamonn Collins",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-42-2026/collins/"
+        },
+        {
+          "name": "Erika Creydt",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-42-2026/creydt/"
+        },
+        {
+          "name": "Michael Alvarez Shepard",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-42-2026/shepard/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-43-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "43",
+      "year": 2026,
+      "title": "WA LD-43 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-43-2026/",
+      "candidates": [
+        {
+          "name": "Jamie Pedersen",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-43-2026/pedersen/"
+        },
+        {
+          "name": "Hannah Sabio-Howell",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-43-2026/sabio-howell/"
+        },
+        {
+          "name": "Heather-Marie Wilson",
+          "party": "NP",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-43-2026/wilson/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-44-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "44",
+      "year": 2026,
+      "title": "WA LD-44 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-44-2026/",
+      "candidates": [
+        {
+          "name": "Sherri Larkin",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-44-2026/larkin/"
+        },
+        {
+          "name": "John Lovick",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-44-2026/lovick/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-45-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "45",
+      "year": 2026,
+      "title": "WA LD-45 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-45-2026/",
+      "candidates": [
+        {
+          "name": "Manka Dhingra",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-45-2026/dhingra/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-46-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "46",
+      "year": 2026,
+      "title": "WA LD-46 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-46-2026/",
+      "candidates": [
+        {
+          "name": "Sandra Stephens",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-46-2026/stephens/"
+        },
+        {
+          "name": "Javier Valdez",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-46-2026/valdez/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-47-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "47",
+      "year": 2026,
+      "title": "WA LD-47 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-47-2026/",
+      "candidates": [
+        {
+          "name": "Claudia Kauffman",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-47-2026/kauffman/"
+        },
+        {
+          "name": "Kristina Soltys",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-47-2026/soltys/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-48-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "48",
+      "year": 2026,
+      "title": "WA LD-48 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-48-2026/",
+      "candidates": [
+        {
+          "name": "Vandana Slatter",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-48-2026/slatter/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-6-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "6",
+      "year": 2026,
+      "title": "WA LD-6 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-6-2026/",
+      "candidates": [
+        {
+          "name": "Jeff Holy",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-6-2026/holy/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-7-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "7",
+      "year": 2026,
+      "title": "WA LD-7 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-7-2026/",
+      "candidates": [
+        {
+          "name": "Ronald L McCoy",
+          "party": "I",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-7-2026/mccoy/"
+        },
+        {
+          "name": "Brandon Ray Medina",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-7-2026/medina/"
+        },
+        {
+          "name": "Shelly Short",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-7-2026/short/"
+        },
+        {
+          "name": "David Swoap",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-7-2026/swoap/"
+        }
+      ]
+    },
+    {
+      "id": "wa-state-senate-8-2026",
+      "state_abbr": "WA",
+      "office": "State Senate",
+      "district": "8",
+      "year": 2026,
+      "title": "WA LD-8 State Senate",
+      "status": "active",
+      "url": "/races/wa-state-senate-8-2026/",
+      "candidates": [
+        {
+          "name": "Gabe Galbraith",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-8-2026/galbraith/"
+        },
+        {
+          "name": "Douglas McKinley",
+          "party": "D",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-8-2026/mckinley/"
+        },
+        {
+          "name": "Nikki Torres",
+          "party": "R",
+          "role": "challenger",
+          "url": "/races/wa-state-senate-8-2026/torres/"
+        }
+      ]
     }
   ]
 }
