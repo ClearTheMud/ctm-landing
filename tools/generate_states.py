@@ -177,6 +177,14 @@ def load_places_data():
     return {}
 
 
+def load_county_races_data():
+    path = DATA_DIR / "county_races.json"
+    if path.exists():
+        with open(path) as f:
+            return json.load(f)
+    return {}
+
+
 def render_state_page(state, state_races, cycle):
     name = state["name"]
     abbr = state["abbr"]
@@ -487,7 +495,65 @@ def load_place_svg(state_abbr, county_slug):
     return None
 
 
-def render_county_page(state, county, cycle):
+def render_county_race_table(county_races_list, county_slug, abbr_lower):
+    """Render HTML for county office race tables."""
+    if not county_races_list:
+        return """  <div class="section">
+    <h2><span class="section-num">1</span> County Offices</h2>
+    <div class="no-research">
+      <p>No county office filings recorded for this election cycle.</p>
+    </div>
+  </div>"""
+
+    PARTY_LABELS = {
+        "dem": "D", "rep": "R", "ind": "I", "lib": "L",
+        "nonpartisan": "NP", "other": "O",
+    }
+    PARTY_CLASSES = {
+        "dem": "party-dem", "rep": "party-rep", "ind": "party-neutral",
+        "lib": "party-neutral", "nonpartisan": "party-neutral",
+        "other": "party-neutral",
+    }
+
+    rows = []
+    for race in county_races_list:
+        office = race["office"]
+        race_id = f"{abbr_lower}-{county_slug}-{_office_slug(office)}-2026"
+        race_url = f"/races/{race_id}/"
+        cand_parts = []
+        for c in race["candidates"]:
+            party_tag = PARTY_LABELS.get(c.get("party_code", "nonpartisan"), "NP")
+            cand_parts.append(f'{c["name"]} ({party_tag})')
+        cands_str = ", ".join(cand_parts)
+        status = race["candidates"][0].get("election_status", "")
+        rows.append(f'        <tr><td><a href="{race_url}">{office}</a></td>'
+                    f'<td>{len(race["candidates"])}</td>'
+                    f'<td>{cands_str}</td>'
+                    f'<td>{status}</td></tr>')
+
+    return f"""  <div class="section">
+    <h2><span class="section-num">1</span> County Offices</h2>
+    <div class="finding">
+      <table>
+        <thead><tr><th>Office</th><th>#</th><th>Candidates</th><th>Status</th></tr></thead>
+        <tbody>
+{"".join(rows)}
+        </tbody>
+      </table>
+    </div>
+  </div>"""
+
+
+def _office_slug(office):
+    import re
+    slug = office.lower().strip()
+    slug = re.sub(r"[^a-z0-9\s-]", "", slug)
+    slug = re.sub(r"\s+", "-", slug)
+    slug = re.sub(r"-+", "-", slug).strip("-")
+    return slug
+
+
+def render_county_page(state, county, cycle, county_races=None):
     name = state["name"]
     abbr = state["abbr"]
     slug = state["slug"]
@@ -498,6 +564,21 @@ def render_county_page(state, county, cycle):
     place_svg = load_place_svg(abbr, county_slug)
     places_data = load_places_data()
     county_places = places_data.get(abbr, {}).get(county_slug, [])
+
+    cr = county_races or {}
+    county_race_list = cr.get(abbr, {}).get(county_slug, {}).get("races", [])
+
+    PARTY_MAP = {
+        "DEMOCRATIC": "dem", "DEMOCRAT": "dem", "MODERATE DEMOCRAT": "dem",
+        "REPUBLICAN": "rep", "REPUBILCAN": "rep",
+        "INDEPENDENT": "ind", "LIBERTARIAN": "lib",
+        "STATES NO PARTY PREFERENCE": "nonpartisan", "NONPARTISAN": "nonpartisan",
+    }
+    for race in county_race_list:
+        for c in race.get("candidates", []):
+            c["party_code"] = PARTY_MAP.get(c.get("party", "").upper(), "nonpartisan")
+
+    race_section = render_county_race_table(county_race_list, county_slug, abbr.lower())
 
     if place_svg and county_places:
         place_data_js = "{}"
@@ -517,6 +598,15 @@ def render_county_page(state, county, cycle):
     else:
         place_map_html = ""
         place_map_script = ""
+
+    places_section = ""
+    if county_places:
+        places_section = """  <div class="section">
+    <h2><span class="section-num">2</span> Cities &amp; Towns</h2>
+    <div class="no-research">
+      <p>City and town race coverage is coming soon.</p>
+    </div>
+  </div>"""
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -563,12 +653,9 @@ def render_county_page(state, county, cycle):
 <div class="page">
 
 {place_map_html}
-  <div class="section">
-    <h2><span class="section-num">1</span> Cities &amp; Towns</h2>
-    <div class="no-research">
-      <p>Local race research for {county_name} County is in progress. When candidate dossiers are available, they will appear here organized by municipality.</p>
-    </div>
-  </div>
+{race_section}
+
+{places_section}
 
   <div class="footer">
     <strong>clearthemud.org</strong> &mdash; Verified public-record candidate intelligence
@@ -609,6 +696,7 @@ def render_sitemap(states, races_by_state, counties_data):
 def main():
     states, races_by_state, cycle = load_data()
     counties_data = load_counties_data()
+    county_races = load_county_races_data()
 
     STATES_DIR.mkdir(exist_ok=True)
 
@@ -630,7 +718,7 @@ def main():
         for county in counties_data.get(abbr, []):
             county_dir = state_dir / county["slug"]
             county_dir.mkdir(exist_ok=True)
-            county_html = render_county_page(state, county, cycle)
+            county_html = render_county_page(state, county, cycle, county_races)
             (county_dir / "index.html").write_text(county_html)
             county_pages += 1
         if counties_data.get(abbr):
