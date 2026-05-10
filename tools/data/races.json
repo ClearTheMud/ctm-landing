@@ -32,6 +32,43 @@
       ]
     },
     {
+      "id": "ga-senate-2026",
+      "state_abbr": "GA",
+      "office": "US Senate",
+      "year": 2026,
+      "title": "2026 Georgia US Senate",
+      "status": "published",
+      "url": "/races/ga-senate-2026/",
+      "primary_date": "May 19, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Jon Ossoff",
+          "party": "dem",
+          "role": "Incumbent",
+          "url": "/races/ga-senate-2026/ossoff/"
+        },
+        {
+          "name": "Mike Collins",
+          "party": "rep",
+          "role": "Primary Frontrunner",
+          "url": "/races/ga-senate-2026/collins/"
+        },
+        {
+          "name": "Derek Dooley",
+          "party": "rep",
+          "role": "Kemp-Backed",
+          "url": "/races/ga-senate-2026/dooley/"
+        },
+        {
+          "name": "Buddy Carter",
+          "party": "rep",
+          "role": "Self-Funded",
+          "url": "/races/ga-senate-2026/carter/"
+        }
+      ]
+    },
+    {
       "id": "wa-house-1-2026",
       "state_abbr": "WA",
       "office": "US House",
@@ -4250,7 +4287,7 @@
         {
           "name": "Bill Spencer",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "spencer",
           "status": "In Primary",
           "url": "/races/wa-benton-assessor-2026/spencer/"
@@ -4294,7 +4331,7 @@
         {
           "name": "Josie Delvin",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "delvin",
           "status": "In Primary",
           "url": "/races/wa-benton-clerk-2026/delvin/"
@@ -4470,7 +4507,7 @@
         {
           "name": "Eric Eisinger",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "eisinger",
           "status": "In Primary",
           "url": "/races/wa-benton-prosecuting-attorney-2026/eisinger/"
@@ -5030,7 +5067,7 @@
         {
           "name": "Peter Van Nortwick",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "nortwick",
           "status": "In Primary",
           "url": "/races/wa-clark-county-assessor-2026/nortwick/"
@@ -5098,7 +5135,7 @@
         {
           "name": "Scott G Weber",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "weber",
           "status": "In Primary",
           "url": "/races/wa-clark-county-clerk-2026/weber/"
@@ -5158,7 +5195,7 @@
         {
           "name": "John Horch",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "horch",
           "status": "In Primary",
           "url": "/races/wa-clark-county-sheriff-2026/horch/"
@@ -5180,7 +5217,7 @@
         {
           "name": "Alishia Topper",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "topper",
           "status": "In Primary",
           "url": "/races/wa-clark-county-treasurer-2026/topper/"
@@ -7546,7 +7583,7 @@
         {
           "name": "Julie Wise",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "wise",
           "status": "Advanced to General",
           "url": "/races/wa-king-director-of-elections-2026/wise/"
@@ -7590,7 +7627,7 @@
         {
           "name": "Leesa Manion",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "manion",
           "status": "Advanced to General",
           "url": "/races/wa-king-prosecuting-attorney-2026/manion/"
@@ -7628,7 +7665,7 @@
         {
           "name": "Phil Cook",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "cook",
           "status": "In Primary",
           "url": "/races/wa-kitsap-assessor-2026/cook/"
@@ -7658,7 +7695,7 @@
         {
           "name": "Paul Andrews",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "andrews",
           "status": "In Primary",
           "url": "/races/wa-kitsap-auditor-2026/andrews/"
@@ -7808,7 +7845,7 @@
         {
           "name": "Pete Boissonneau",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "boissonneau",
           "status": "In Primary",
           "url": "/races/wa-kitsap-treasurer-2026/boissonneau/"
@@ -9538,7 +9575,7 @@
         {
           "name": "Linda Farmer",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "farmer",
           "status": "Advanced to General",
           "url": "/races/wa-pierce-auditor-2026/farmer/"
@@ -10242,7 +10279,7 @@
         {
           "name": "Jason Cummings",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "cummings",
           "status": "In Primary",
           "url": "/races/wa-snohomish-prosecuting-attorney-2026/cummings/"
@@ -10264,7 +10301,7 @@
         {
           "name": "Tom Konis",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "konis",
           "status": "In Primary",
           "url": "/races/wa-spokane-assessor-2026/konis/"
@@ -10354,7 +10391,7 @@
         {
           "name": "Amber Waldref",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "waldref",
           "status": "In Primary",
           "url": "/races/wa-spokane-commissioner-district-2-2026/waldref/"
@@ -10642,7 +10679,7 @@
         {
           "name": "John F. Nowels",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "nowels",
           "status": "In Primary",
           "url": "/races/wa-spokane-sheriff-2026/nowels/"
@@ -10664,7 +10701,7 @@
         {
           "name": "Mike Volz",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "volz",
           "status": "In Primary",
           "url": "/races/wa-spokane-treasurer-2026/volz/"
@@ -10998,7 +11035,7 @@
         {
           "name": "Tye Menser",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "menser",
           "status": "In Primary",
           "url": "/races/wa-thurston-commissioner-district-3-2026/menser/"
@@ -11028,7 +11065,7 @@
         {
           "name": "Emily Clouse",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "clouse",
           "status": "In Primary",
           "url": "/races/wa-thurston-commissioner-district-5-2026/clouse/"
@@ -11058,7 +11095,7 @@
         {
           "name": "Gary Warnock",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "warnock",
           "status": "In Primary",
           "url": "/races/wa-thurston-coroner-2026/warnock/"
@@ -11080,7 +11117,7 @@
         {
           "name": "Kalo Wilcox",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "wilcox",
           "status": "Advanced to General",
           "url": "/races/wa-thurston-district-court-judge-pos-1-2026/wilcox/"
@@ -11102,7 +11139,7 @@
         {
           "name": "Sam Meyer",
           "party": "nonpartisan",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "meyer",
           "status": "Advanced to General",
           "url": "/races/wa-thurston-district-court-judge-pos-2-2026/meyer/"
@@ -11176,7 +11213,7 @@
         {
           "name": "Derek Sanders",
           "party": "ind",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "sanders",
           "status": "In Primary",
           "url": "/races/wa-thurston-sheriff-2026/sanders/"
@@ -11198,7 +11235,7 @@
         {
           "name": "Jeff Gadman",
           "party": "dem",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "gadman",
           "status": "In Primary",
           "url": "/races/wa-thurston-treasurer-2026/gadman/"
@@ -11968,7 +12005,7 @@
         {
           "name": "Jacob Tate",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "tate",
           "status": "In Primary",
           "url": "/races/wa-yakima-assessor-2026/tate/"
@@ -12006,7 +12043,7 @@
         {
           "name": "Charles Ross",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "ross",
           "status": "In Primary",
           "url": "/races/wa-yakima-auditor-2026/ross/"
@@ -12104,7 +12141,7 @@
         {
           "name": "Marshall Slight",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "slight",
           "status": "In Primary",
           "url": "/races/wa-yakima-coroner-2026/slight/"
