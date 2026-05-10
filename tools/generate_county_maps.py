@@ -172,19 +172,10 @@ def get_place_shapefiles(statefp):
 # Coordinate projection (lon/lat → SVG pixels)
 # ---------------------------------------------------------------------------
 
-def project_albers(lon, lat):
-    lon0 = -96.0
-    lat0 = 37.5
-    lat1 = 29.5
-    lat2 = 45.5
+def project_equirect(lon, lat, center_lat=47.0):
     to_rad = math.pi / 180
-    n = 0.5 * (math.sin(lat1 * to_rad) + math.sin(lat2 * to_rad))
-    c = math.cos(lat1 * to_rad) ** 2 + 2 * n * math.sin(lat1 * to_rad)
-    rho0 = math.sqrt(c - 2 * n * math.sin(lat0 * to_rad)) / n
-    theta = n * (lon - lon0) * to_rad
-    rho = math.sqrt(c - 2 * n * math.sin(lat * to_rad)) / n
-    x = rho * math.sin(theta)
-    y = rho0 - rho * math.cos(theta)
+    x = lon * math.cos(center_lat * to_rad)
+    y = lat
     return x, y
 
 
@@ -233,8 +224,22 @@ def compute_bbox_from_transform(shapes, transform_fn):
     return min_x, min_y, max_x, max_y
 
 
+def compute_center_lat(shapes):
+    all_lats = []
+    for shape in shapes:
+        for ring in shape["parts"]:
+            for _, lat in ring:
+                all_lats.append(lat)
+    return sum(all_lats) / len(all_lats) if all_lats else 47.0
+
+
 def make_transform(shapes, width=800, height=600, padding=20):
-    min_x, min_y, max_x, max_y = compute_bbox_svg(shapes, project_albers)
+    center_lat = compute_center_lat(shapes)
+
+    def proj(lon, lat):
+        return project_equirect(lon, lat, center_lat)
+
+    min_x, min_y, max_x, max_y = compute_bbox_svg(shapes, proj)
     data_w = max_x - min_x
     data_h = max_y - min_y
     scale = min((width - 2 * padding) / data_w, (height - 2 * padding) / data_h)
@@ -242,7 +247,7 @@ def make_transform(shapes, width=800, height=600, padding=20):
     off_y = padding + max_y * scale + (height - 2 * padding - data_h * scale) / 2
 
     def transform(lon, lat):
-        px, py = project_albers(lon, lat)
+        px, py = proj(lon, lat)
         return px * scale + off_x, -py * scale + off_y
 
     return transform
