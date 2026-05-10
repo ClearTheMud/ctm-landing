@@ -281,9 +281,10 @@ def render_race_overview(race, dossiers, state_info):
         raised_claim = cf.get("total_raised", {}).get("claim", "")
         raised = format_currency(extract_amount_from_claim(raised_claim)) if raised_claim else "Not reported"
 
+        status_class = "status-incumbent" if role.lower() == "incumbent" else "status-active"
         candidate_cards.append(f"""      <a href="{c['url']}" class="dossier-link">
         <h4>{c['name']} ({party_short})</h4>
-        <p><span class="status-active">{role.upper()}</span> &mdash; Raised: {raised}</p>
+        <p><span class="{status_class}">{role.upper()}</span> &mdash; Raised: {raised}</p>
       </a>""")
 
     cards_html = "\n".join(candidate_cards)
