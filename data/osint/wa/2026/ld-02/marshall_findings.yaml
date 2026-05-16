@@ -55,6 +55,21 @@ findings:
   source_urls:
   - https://wadems.org/press/1-13-25-as-legislative-session-begins-right-wing-and-anti-government-militia-founder-joins-government/
   - https://www.pdc.wa.gov/
+- title: Campaign Website Lists Stewart Rhodes (Oath Keepers) and Washington 3% as Endorsers
+  category: character
+  description: Marshall's own campaign website (marshall4wa.com/endorsements) lists Stewart
+    Rhodes — founder of the Oath Keepers, convicted of seditious conspiracy for his role
+    in the January 6 Capitol attack and sentenced to 18 years in federal prison — as an
+    endorser. The same page lists 'Washington 3%' (the militia Marshall founded) and
+    'Make Washington Red Again' as endorsers. That a sitting state legislator publicly
+    claims the endorsement of a convicted seditionist is extraordinary. The endorsement
+    page also lists 'Constitutional Grassroots Movement' and 'March For Our Rights.'
+  source_tier: T2.5
+  political_impact: Critical
+  defense: The endorsement page may be outdated from Marshall's 2024 campaign and not
+    actively maintained. Rhodes' endorsement may predate his conviction.
+  source_urls:
+  - https://marshall4wa.com/endorsements
 - title: Altria (Tobacco) PAC Among Top Donors
   category: financial
   description: Altria Client Services LLC (parent company of Philip Morris, the largest tobacco company in the U.S.) is among

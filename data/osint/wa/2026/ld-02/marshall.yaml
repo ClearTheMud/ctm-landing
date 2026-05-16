@@ -76,12 +76,21 @@ biographical:
     highest_tier: T1
     confidence: verified
   family:
-    claim: Married to Jessica Marshall. Three daughters.
+    claim: Married (11 years as of campaign site). Three daughters. Lives in unincorporated
+      Pierce County between Roy and Eatonville.
     sources:
     - house_r
     - campaign_marshall
-    highest_tier: T3
+    highest_tier: T2.5
     confidence: corroborated
+  personal_background:
+    claim: '"Born and raised in Washington, I have lived all over the state; from the big
+      city of Seattle, to the small town of Asotin." Day after high school, took internship
+      as resident firefighter/EMT in Oregon before enlisting in the Army.'
+    sources:
+    - campaign_marshall
+    highest_tier: T2.5
+    confidence: candidate-stated
 political_positions:
   positions:
   - topic: Firearms / Second Amendment
@@ -280,6 +289,56 @@ public_statements:
     date: '2020'
     context: NPR interview about Three Percenters membership
     topic_ids: []
+endorsements:
+  received:
+  - endorser:
+      entity_id: person_stewart_rhodes
+      entity_type: person
+      name: Stewart Rhodes (Founder of Oath Keepers — convicted of seditious conspiracy for January 6)
+    sources:
+    - campaign_marshall
+  - endorser:
+      entity_id: org_wa_3pct
+      entity_type: organization
+      name: Washington 3%
+    sources:
+    - campaign_marshall
+  - endorser:
+      entity_id: org_const_grassroots
+      entity_type: organization
+      name: Constitutional Grassroots Movement
+    sources:
+    - campaign_marshall
+  - endorser:
+      entity_id: org_mwra
+      entity_type: organization
+      name: Make Washington Red Again (MWRA)
+    sources:
+    - campaign_marshall
+  - endorser:
+      entity_id: org_march_rights
+      entity_type: organization
+      name: March For Our Rights
+    sources:
+    - campaign_marshall
+  - endorser:
+      entity_id: person_anthony_mcdaniel
+      entity_type: person
+      name: Anthony McDaniel (Mayor of Roy)
+    sources:
+    - campaign_marshall
+  - endorser:
+      entity_id: org_crazy_faith
+      entity_type: organization
+      name: Crazy Faith Outreach
+    sources:
+    - campaign_marshall
+  - endorser:
+      entity_id: org_sporting_systems
+      entity_type: organization
+      name: Sporting Systems
+    sources:
+    - campaign_marshall
 election_history:
 - year: 2019
   race: Eatonville School Board, Pos. 3

@@ -292,6 +292,120 @@ endorsements:
       name: Building Owners and Managers Association (BOMA)
     sources:
     - campaign_barkis
+  - endorser:
+      entity_id: org_nra
+      entity_type: organization
+      name: National Rifle Association of America (NRA)
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_wa_cops
+      entity_type: organization
+      name: Washington Council of Police & Sheriffs
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_wa_fop
+      entity_type: organization
+      name: Washington Fraternal Order of Police
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_wa_fire
+      entity_type: organization
+      name: Washington State Council of Fire Fighters
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_wa_farm
+      entity_type: organization
+      name: Washington Farm Bureau
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_wa_hosp
+      entity_type: organization
+      name: Washington Hospitality Association
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_wa_food
+      entity_type: organization
+      name: Washington Food Industry
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_wa_truck
+      entity_type: organization
+      name: Washington Trucking Association (WTA)
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_pse
+      entity_type: organization
+      name: Public School Employees of Washington
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_mhcw
+      entity_type: organization
+      name: Manufactured Housing Communities of WA (MHCW)
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_rha
+      entity_type: organization
+      name: Rental Housing Association (RHA)
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_wroa
+      entity_type: organization
+      name: Washington Rental Owners Association
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_hlpac
+      entity_type: organization
+      name: Human Life Political Action Committee
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_law_enforce_admin
+      entity_type: organization
+      name: Law Enforcement Administrators of Washington
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_wa_school_retirees
+      entity_type: organization
+      name: Washington State School Retiree's Association
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_wa_bikes
+      entity_type: organization
+      name: Washington Bikes
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_hunters_heritage
+      entity_type: organization
+      name: Hunters Heritage Council
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: person_john_snaza
+      entity_type: person
+      name: John Snaza (Thurston County Sheriff)
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: person_jt_wilcox
+      entity_type: person
+      name: J.T. Wilcox (Former WA State Rep., 2nd District)
+    sources:
+    - campaign_barkis
 election_history:
 - year: 2016
   race: WA House LD-2 Pos. 1 (Appointment)

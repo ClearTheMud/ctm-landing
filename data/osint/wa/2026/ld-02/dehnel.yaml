@@ -15,6 +15,11 @@ biographical:
     highest_tier: T3
     confidence: single-source
   employment_history:
+  - claim: Transit Operator, Supervisor, and Dispatcher at Pierce Transit (since 2016)
+    sources:
+    - campaign_dehnel
+    highest_tier: T2.5
+    confidence: candidate-stated
   - claim: Tooling Technician, Milgard Windows & Doors (Tacoma, WA)
     sources:
     - tier: T2
@@ -23,30 +28,108 @@ biographical:
       access_date: '2026-05-15'
     highest_tier: T2
     confidence: corroborated
-  - claim: Recording Secretary, ATU (Amalgamated Transit Union) Local 758. Vice President, ATU Conferences and Councils (national
-      level).
+  - claim: Recording Secretary, ATU (Amalgamated Transit Union) Local 758 (2022-2025).
+      Shop Steward. Vice President, ATU Legislative Council of Washington.
+      Delegate to Pierce County Labor Council (since 2022).
+      Delegate to Washington State Labor Council (since 2022).
     sources:
     - atu758
+    - campaign_dehnel
     highest_tier: T2
     confidence: corroborated
+  - claim: Co-founded Transit Togetherness Pride Caucus of ATU Local 758
+    sources:
+    - campaign_dehnel
+    highest_tier: T2.5
+    confidence: candidate-stated
   full_name:
     claim: William Dehnel
     sources:
     - wa_sos
     highest_tier: T1
     confidence: verified
+  family:
+    claim: Married to Brandi Cody-Dehnel. Children Erica (27), Lucy (24), Benjamin (21).
+      Grandchild Carter (6).
+    sources:
+    - campaign_dehnel
+    highest_tier: T2.5
+    confidence: candidate-stated
+  lgbtq_identity:
+    claim: Identifies as LGBTQ+. Advocates for LGBTQ+ workers and families.
+      Co-founded Transit Togetherness Pride Caucus at ATU Local 758.
+    sources:
+    - campaign_dehnel
+    highest_tier: T2.5
+    confidence: candidate-stated
 political_positions:
   positions:
   - topic: Labor / Workers' Rights
     topic_id: labor
     current_position:
-      claim: Running explicitly as 'Labor Democrat' — union labor candidate. ATU Local 758 executive board officer with national
-        ATU leadership role.
+      claim: Running explicitly as 'Labor Democrat' — union labor candidate. ATU Local 758
+        executive board officer with national ATU leadership role. Promises to answer to
+        'working families, not lobbyists.'
       sources:
       - atu758
       - wa_sos
+      - campaign_dehnel
       highest_tier: T1
       confidence: verified
+  - topic: LGBTQ+ Rights
+    topic_id: lgbtq
+    current_position:
+      claim: Strong LGBTQ+ advocate. Opposes ballot initiatives IL-0026-001 and IL-0026-638.
+        States 'No legislation that targets LGBTQ+ people will get my vote. Ever.'
+      sources:
+      - campaign_dehnel
+      highest_tier: T2.5
+      confidence: candidate-stated
+  - topic: Education
+    topic_id: education
+    current_position:
+      claim: Fully fund special education, support teachers, protect early learning.
+        'Investing in schools to ensure every child gets a quality education that sparks
+        curiosity and growth.'
+      sources:
+      - campaign_dehnel
+      highest_tier: T2.5
+      confidence: candidate-stated
+  - topic: Taxes
+    topic_id: taxes
+    current_position:
+      claim: Reform regressive tax system; provide relief to working families and retirees.
+      sources:
+      - campaign_dehnel
+      highest_tier: T2.5
+      confidence: candidate-stated
+  - topic: Infrastructure
+    topic_id: infrastructure
+    current_position:
+      claim: Fund roads, bridges, broadband, and flood resilience. Combating rising power
+        bills and declining roads and bridges.
+      sources:
+      - campaign_dehnel
+      highest_tier: T2.5
+      confidence: candidate-stated
+  - topic: Healthcare
+    topic_id: healthcare
+    current_position:
+      claim: Expand rural healthcare access and mental health services. Notes district is
+        'more than an hour from the nearest Level 1 Trauma Center.'
+      sources:
+      - campaign_dehnel
+      highest_tier: T2.5
+      confidence: candidate-stated
+  - topic: Mental Health
+    topic_id: mental_health
+    current_position:
+      claim: 'Access to quality mental health care is a core component in combating many
+        of our modern issues.'
+      sources:
+      - campaign_dehnel
+      highest_tier: T2.5
+      confidence: candidate-stated
 voting_record:
   votes: []
 campaign_finance:
@@ -69,7 +152,26 @@ campaign_finance:
     highest_tier: T1
     confidence: verified
 public_statements:
-  statements: []
+  statements:
+  - statement: "I'm not a career politician. I drive buses. I dispatch routes. I've been
+      showing up to work at Pierce Transit since 2016."
+    is_direct_quote: true
+    date: '2026'
+    context: Campaign website — about section
+    topic_ids:
+    - labor
+  - statement: No legislation that targets LGBTQ+ people will get my vote. Ever.
+    is_direct_quote: true
+    date: '2026'
+    context: Campaign website — LGBTQ+ rights section
+    topic_ids:
+    - lgbtq
+  - statement: "Strength through Solidarity!"
+    is_direct_quote: true
+    date: '2026'
+    context: Campaign slogan
+    topic_ids:
+    - labor
 election_history: []
 source_aliases:
   wa_sos:
@@ -97,75 +199,15 @@ source_aliases:
     source_name: Ballotpedia
     url: https://ballotpedia.org/
     access_date: '2026-05-15'
-  cascade_pbs:
-    tier: T2
-    source_name: Cascade PBS
-    url: https://www.cascadepbs.org/
-    access_date: '2026-05-15'
-  wa_state_std:
-    tier: T2
-    source_name: Washington State Standard
-    url: https://washingtonstatestandard.com/
-    access_date: '2026-05-15'
-  npr:
-    tier: T2
-    source_name: NPR
-    url: https://www.npr.org/
-    access_date: '2026-05-15'
-  seattle_times:
-    tier: T2
-    source_name: Seattle Times
-    url: https://www.seattletimes.com/
-    access_date: '2026-05-15'
-  nisqually_news:
-    tier: T2
-    source_name: Nisqually Valley News
-    url: https://www.yelmonline.com/
-    access_date: '2026-05-15'
-  thurston_talk:
-    tier: T2
-    source_name: ThurstonTalk
-    url: https://www.thurstontalk.com/
-    access_date: '2026-05-15'
-  chronline:
-    tier: T2
-    source_name: The Chronicle (Centralia-Chehalis)
-    url: https://www.chronline.com/
-    access_date: '2026-05-15'
-  komo:
-    tier: T2
-    source_name: KOMO News
-    url: https://komonews.com/
-    access_date: '2026-05-15'
-  shift_wa:
-    tier: T3
-    source_name: Shift WA (Conservative Commentary)
-    url: https://shiftwa.org/
-    access_date: '2026-05-15'
-  wa_dems:
-    tier: T3
-    source_name: Washington State Democratic Party
-    url: https://wadems.org/
-    access_date: '2026-05-15'
-  wapo:
-    tier: T2
-    source_name: Washington Post
-    url: https://www.washingtonpost.com/
-    access_date: '2026-05-15'
-  campaign_barkis:
-    tier: T3
-    source_name: Andrew Barkis Campaign Website
-    url: https://electandrewbarkis.org/
-    access_date: '2026-05-15'
-  campaign_marshall:
-    tier: T3
-    source_name: Matt Marshall Campaign Website
-    url: https://marshall4wa.com/
-    access_date: '2026-05-15'
   atu758:
     tier: T2
     source_name: ATU Local 758 — Official Website
     url: https://atu758.org/
+    access_date: '2026-05-15'
+  campaign_dehnel:
+    tier: T2.5
+    source_name: William Dehnel Campaign Website
+    url: https://electwilliamdehnel.org/
     access_date: '2026-05-15'
 candidate_id: wa_ld2_dehnel_2026
 full_name: William Dehnel
