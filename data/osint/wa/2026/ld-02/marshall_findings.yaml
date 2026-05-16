@@ -1,0 +1,67 @@
+candidate_name: Matt Marshall
+findings:
+- title: Founded Washington State Three Percenters — ADL/DOD-Classified Militia
+  category: character
+  description: Marshall founded the 'Three Percent of Washington,' an organization the Anti-Defamation League classifies as
+    part of the right-wing anti-government militia movement. The U.S. Department of Defense included Three Percenters on its
+    extremist organization training list alongside Atomwaffen Division, Patriot Front, and Proud Boys. In 2021, Canada officially
+    listed the Three Percenters as a terrorist entity. National members were among the most heavily indicted groups in the
+    January 6 Capitol attack. Marshall's own PDC financial disclosures listed him as 'public affairs officer' through 2023,
+    despite claiming he resigned as president in 2020.
+  source_tier: T2
+  political_impact: Critical
+  defense: Marshall claims his Washington chapter is distinct from the national organization, that his members were not present
+    at January 6, and that he departed the organization in May 2023. He characterizes the group as focused on disaster relief
+    and community service.
+  source_urls:
+  - https://www.npr.org/2020/02/13/805760553/leader-of-the-washington-iii-says-its-not-a-far-right-paramilitary-organization
+  - https://wadems.org/press/1-13-25-as-legislative-session-begins-right-wing-and-anti-government-militia-founder-joins-government/
+  - https://www.washingtonpost.com/politics/militias-facebook-marshall/2020/08/21/fcfc08cc-e3c5-11ea-ade1-28daf1a5e919_story.html
+  - https://en.wikipedia.org/wiki/Washington_State_Three_Percenters
+- title: Defended Matt Shea — Found to Have Participated in Domestic Terrorism
+  category: character
+  description: Marshall publicly defended former Rep. Matt Shea (R-Spokane Valley), who was removed from the House Republican
+    Caucus after an independent investigation found he participated in domestic terrorism. Shea authored 'The Biblical Basis
+    for War,' applying Old Testament passages about killing to people who practice communism or refuse biblical law. Marshall
+    said he was 'convinced that the claims against him are sensationalized' and that the way Shea was 'attacked by his own
+    caucus was wrong.' His decision to run for office was reportedly triggered by J.T. Wilcox calling for Shea's resignation.
+  source_tier: T2
+  political_impact: Critical
+  defense: Marshall frames his support as defending due process and opposing what he sees as political persecution within
+    the Republican caucus.
+  source_urls:
+  - https://www.cascadepbs.org/politics/2024/09/one-western-washington-district-shifting-further-right/
+  - https://www.npr.org/2020/02/14/805949683/-not-a-paramilitary-inside-a-washington-militias-efforts-to-go-mainstream
+- title: Alleged Anti-Semitic and Islamophobic Online Activity
+  category: character
+  description: The Puget Sound John Brown Gun Club published research alleging Marshall was active in online channels containing
+    anti-Semitic, anti-LGBTQ, and Islamophobic content. He was reportedly seen 'laughing with some of the Islamophobic content.'
+    He told the group he is 'friends with Andy Ngo,' a conservative provocateur documented coordinating messaging with Proud
+    Boys.
+  source_tier: T3
+  political_impact: High
+  defense: This comes from a self-described antifascist gun club, which is a politically adversarial source. Marshall has
+    not publicly addressed these specific allegations.
+  source_urls:
+  - https://psjbgc.org/blog/washington-three-percent-s-matt-marshall-and-the-boogaloo-nazis/
+- title: PDC Disclosure Inconsistency — Three Percenter Timeline
+  category: pattern
+  description: Marshall claims he resigned as Three Percenters president in 2020 and departed the organization in May 2023.
+    However, his own PDC financial affairs disclosures continued to list him as 'public affairs officer with Three Percent
+    of Washington' through 2023. This creates a credibility gap between his public statements and official disclosures.
+  source_tier: T1
+  political_impact: High
+  defense: null
+  source_urls:
+  - https://wadems.org/press/1-13-25-as-legislative-session-begins-right-wing-and-anti-government-militia-founder-joins-government/
+  - https://www.pdc.wa.gov/
+- title: Altria (Tobacco) PAC Among Top Donors
+  category: financial
+  description: Altria Client Services LLC (parent company of Philip Morris, the largest tobacco company in the U.S.) is among
+    Marshall's top donors at $1,200 — one of only 16 donors. For a Healthcare & Wellness committee member, accepting tobacco
+    industry money creates an optics problem.
+  source_tier: T1
+  political_impact: Moderate
+  defense: PAC donations are common in state legislative races and do not necessarily indicate policy alignment.
+  source_urls:
+  - https://www.pdc.wa.gov/

@@ -1,0 +1,424 @@
+biographical:
+  date_of_birth:
+    claim: Born 1968 in Chehalis, Washington (age 57-58 in 2026)
+    sources:
+    - thurston_talk
+    - ballotpedia
+    highest_tier: T2
+    confidence: corroborated
+  residence:
+    claim: Lake St. Clair, Thurston County, Washington
+    sources:
+    - wa_sos
+    - house_r
+    highest_tier: T1
+    confidence: verified
+  education:
+  - claim: B.A. Communications, Seattle University; completed Army ROTC program
+    sources:
+    - house_r
+    - thurston_talk
+    highest_tier: T2
+    confidence: corroborated
+  military_service:
+    claim: Completed Army ROTC at Seattle University; knee injury ended service before commissioning. Eagle Scout (BSA).
+    sources:
+    - thurston_talk
+    highest_tier: T3
+    confidence: single-source
+  employment_history:
+  - claim: 'Owner, Hometown Property Management (Olympia/Yelm offices, ~1,200 rental units managed). NARPM-certified: CRMC,
+      MPM, RMP designations.'
+    sources:
+    - thurston_talk
+    - campaign_barkis
+    highest_tier: T2
+    confidence: corroborated
+  full_name:
+    claim: Andrew K. Barkis
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  family:
+    claim: 'Married to Lisa Barkis (30+ years). Two sons: Cameron and Evan. One of nine children.'
+    sources:
+    - thurston_talk
+    - campaign_barkis
+    highest_tier: T3
+    confidence: corroborated
+political_positions:
+  positions:
+  - topic: Housing / Rent Control
+    topic_id: housing_rent_control
+    current_position:
+      claim: Pro-supply, anti-rent control. Sponsored HB 1096 (lot splitting, signed into law 2025). Opposes rent caps, arguing
+        they reduce housing supply.
+      sources:
+      - wa_leg
+      - house_r
+      highest_tier: T1
+      confidence: verified
+  - topic: Taxes
+    topic_id: taxes
+    current_position:
+      claim: Opposes all new taxes. Stated 'the only acceptable dollar amount for tax increases is zero.' Voted against capital
+        gains, income tax, business services taxes.
+      sources:
+      - house_r
+      highest_tier: T1
+      confidence: verified
+  - topic: Transportation
+    topic_id: transportation
+    current_position:
+      claim: Ranking Republican on House Transportation Committee. Prioritizes road preservation over transit. Opposed Move
+        Ahead Washington. Wants CCA surplus redirected to roads. Cites WA ranking 47th in road quality.
+      sources:
+      - wa_leg
+      - house_r
+      highest_tier: T1
+      confidence: verified
+  - topic: Public Safety
+    topic_id: public_safety
+    current_position:
+      claim: Pro-law enforcement. Wants to reverse 2021 police reform restrictions. Supports officer pursuit discretion.
+      sources:
+      - shift_wa
+      - house_r
+      highest_tier: T2
+      confidence: corroborated
+  - topic: Firearms / Second Amendment
+    topic_id: firearms
+    current_position:
+      claim: Strong Second Amendment supporter. Opposed HB 1143 (firearm purchase requirements) as unconstitutional.
+      sources:
+      - wa_leg
+      - house_r
+      highest_tier: T1
+      confidence: verified
+  - topic: Abortion / Reproductive Rights
+    topic_id: abortion
+    current_position:
+      claim: Voted against HB 1851 (expanding abortion provider access) and HB 1009 (student health plan abortion coverage).
+      sources:
+      - wa_leg
+      highest_tier: T1
+      confidence: verified
+  - topic: Parents' Rights / Education
+    topic_id: education
+    current_position:
+      claim: Supported I-2081 (Parents' Bill of Rights). Opposed Democratic efforts to modify it in 2025.
+      sources:
+      - house_r
+      - wa_leg
+      highest_tier: T1
+      confidence: verified
+  - topic: Drug Policy
+    topic_id: drug_policy
+    current_position:
+      claim: Personally affected by family opioid/heroin addiction. Supports law enforcement tools to combat fentanyl. Favors
+        treatment + accountability approach.
+      sources:
+      - campaign_barkis
+      highest_tier: T3
+      confidence: single-source
+voting_record:
+  votes:
+  - bill_id: wa_hb_1096_2025
+    bill_title: HB 1096 — Lot Splitting
+    vote: yea
+    date: '2025-05-19'
+    sources:
+    - wa_leg
+    - house_r
+    context: Sponsored by Barkis; championed for 3 years. Signed into law by Gov. Ferguson. Allows homeowners to split residential
+      lots for additional housing.
+  - bill_id: wa_hb_1143_2023
+    bill_title: HB 1143 — Firearm Purchase Requirements
+    vote: nay
+    date: '2023-03-07'
+    sources:
+    - wa_leg
+    - house_r
+    context: Barkis spoke in opposition, calling it unconstitutional.
+  - bill_id: wa_hb_1851_2024
+    bill_title: HB 1851 — Expanding Abortion Provider Access
+    vote: nay
+    date: '2024'
+    sources:
+    - wa_leg
+    context: Voted against expanding abortion provider access.
+  - bill_id: wa_hb_1009_2023
+    bill_title: HB 1009 — Student Health Plan Abortion Coverage
+    vote: nay
+    date: '2023'
+    sources:
+    - wa_leg
+    context: Voted against student health plan abortion coverage.
+  committee_assignments:
+  - claim: Ranking Republican Member, House Transportation Committee (since 2019)
+    sources:
+    - house_r
+    - wa_leg
+    highest_tier: T1
+    confidence: verified
+  - claim: Ranking Minority Member, Community Development, Housing & Tribal Affairs Committee
+    sources:
+    - house_r
+    highest_tier: T1
+    confidence: verified
+  - claim: Member, Consumer Protection & Business Committee
+    sources:
+    - house_r
+    highest_tier: T1
+    confidence: verified
+campaign_finance:
+  total_raised:
+    claim: 'Total raised: $56,850.00 (2026 cycle, PDC)'
+    sources:
+    - wa_pdc
+    highest_tier: T1
+    confidence: verified
+  total_spent:
+    claim: 'Total spent: $6,272.40 (2026 cycle, PDC)'
+    sources:
+    - wa_pdc
+    highest_tier: T1
+    confidence: verified
+  cash_carried_forward:
+    claim: 'Cash carried forward: $3,837.49'
+    sources:
+    - wa_pdc
+    highest_tier: T1
+    confidence: verified
+  filing_entity:
+    claim: 'PDC Filer ID: BARKA  513'
+    sources:
+    - wa_pdc
+    highest_tier: T1
+    confidence: verified
+  top_donors:
+  - donor:
+      entity_id: org_microsoft
+      entity_type: organization
+      name: Microsoft
+    amount: 2400.0
+    sources:
+    - wa_pdc
+  - donor:
+      entity_id: org_bnsf
+      entity_type: organization
+      name: BNSF Railway Company
+    amount: 2400.0
+    sources:
+    - wa_pdc
+  - donor:
+      entity_id: org_nash_cascadia
+      entity_type: organization
+      name: NASH Cascadia Verde, LLC
+    amount: 2400.0
+    sources:
+    - wa_pdc
+  - donor:
+      entity_id: org_wa_multifam
+      entity_type: organization
+      name: Washington Multi-Family Housing Assoc. (PAC)
+    amount: 2400.0
+    sources:
+    - wa_pdc
+  - donor:
+      entity_id: person_smith_bradford
+      entity_type: person
+      name: Smith Bradford
+    amount: 2400.0
+    sources:
+    - wa_pdc
+public_statements:
+  statements:
+  - statement: The only acceptable dollar amount for tax increases is zero.
+    is_direct_quote: true
+    date: '2025'
+    context: Floor speech on 2025-27 state budget
+    topic_ids:
+    - taxes
+  - statement: As somebody who's been a housing provider for 30 years... rent control policy will make the problem absolutely
+      worse.
+    is_direct_quote: true
+    date: '2025'
+    context: KVI Radio interview on rent control bill
+    topic_ids:
+    - housing_rent_control
+  - statement: We need to give our officers the full discretion to reasonably pursue criminals.
+    is_direct_quote: true
+    date: '2023'
+    context: Shift WA interview on police pursuit policy
+    topic_ids:
+    - public_safety
+endorsements:
+  received:
+  - endorser:
+      entity_id: org_nfib
+      entity_type: organization
+      name: National Federation of Independent Business (NFIB)
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_biaw
+      entity_type: organization
+      name: Building Industry Association of Washington (BIAW)
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_wa_retail
+      entity_type: organization
+      name: Washington Retail Association
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_naiop
+      entity_type: organization
+      name: NAIOP (Commercial Real Estate Development)
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_wa_mfh
+      entity_type: organization
+      name: Washington Multi-Family Housing Association
+    sources:
+    - campaign_barkis
+  - endorser:
+      entity_id: org_boma
+      entity_type: organization
+      name: Building Owners and Managers Association (BOMA)
+    sources:
+    - campaign_barkis
+election_history:
+- year: 2016
+  race: WA House LD-2 Pos. 1 (Appointment)
+  result: Appointed by PCOs to replace Graham Hunt
+  sources:
+  - seattle_times
+- year: 2016
+  race: WA House LD-2 Pos. 1 (General)
+  result: Won (58.2%)
+  sources:
+  - wa_sos
+- year: 2018
+  race: WA House LD-2 Pos. 1 (General)
+  result: Won (59.3%)
+  sources:
+  - wa_sos
+- year: 2020
+  race: WA House LD-2 Pos. 1 (General)
+  result: Won (95.4% — unopposed)
+  sources:
+  - wa_sos
+- year: 2022
+  race: WA House LD-2 Pos. 1 (General)
+  result: Won (~93.6% — unopposed)
+  sources:
+  - wa_sos
+- year: 2024
+  race: WA House LD-2 Pos. 1 (General)
+  result: Won (~95.8% — unopposed)
+  sources:
+  - wa_sos
+source_aliases:
+  wa_sos:
+    tier: T1
+    source_name: Washington Secretary of State — Elections Division
+    url: https://www.sos.wa.gov/elections/
+    access_date: '2026-05-15'
+  wa_pdc:
+    tier: T1
+    source_name: Washington Public Disclosure Commission (PDC)
+    url: https://www.pdc.wa.gov/
+    access_date: '2026-05-15'
+  wa_leg:
+    tier: T1
+    source_name: Washington State Legislature — Official Records
+    url: https://leg.wa.gov/
+    access_date: '2026-05-15'
+  house_r:
+    tier: T1
+    source_name: Washington House Republicans — Official
+    url: https://houserepublicans.wa.gov/
+    access_date: '2026-05-15'
+  ballotpedia:
+    tier: T2
+    source_name: Ballotpedia
+    url: https://ballotpedia.org/
+    access_date: '2026-05-15'
+  cascade_pbs:
+    tier: T2
+    source_name: Cascade PBS
+    url: https://www.cascadepbs.org/
+    access_date: '2026-05-15'
+  wa_state_std:
+    tier: T2
+    source_name: Washington State Standard
+    url: https://washingtonstatestandard.com/
+    access_date: '2026-05-15'
+  npr:
+    tier: T2
+    source_name: NPR
+    url: https://www.npr.org/
+    access_date: '2026-05-15'
+  seattle_times:
+    tier: T2
+    source_name: Seattle Times
+    url: https://www.seattletimes.com/
+    access_date: '2026-05-15'
+  nisqually_news:
+    tier: T2
+    source_name: Nisqually Valley News
+    url: https://www.yelmonline.com/
+    access_date: '2026-05-15'
+  thurston_talk:
+    tier: T2
+    source_name: ThurstonTalk
+    url: https://www.thurstontalk.com/
+    access_date: '2026-05-15'
+  chronline:
+    tier: T2
+    source_name: The Chronicle (Centralia-Chehalis)
+    url: https://www.chronline.com/
+    access_date: '2026-05-15'
+  komo:
+    tier: T2
+    source_name: KOMO News
+    url: https://komonews.com/
+    access_date: '2026-05-15'
+  shift_wa:
+    tier: T3
+    source_name: Shift WA (Conservative Commentary)
+    url: https://shiftwa.org/
+    access_date: '2026-05-15'
+  wa_dems:
+    tier: T3
+    source_name: Washington State Democratic Party
+    url: https://wadems.org/
+    access_date: '2026-05-15'
+  wapo:
+    tier: T2
+    source_name: Washington Post
+    url: https://www.washingtonpost.com/
+    access_date: '2026-05-15'
+  campaign_barkis:
+    tier: T3
+    source_name: Andrew Barkis Campaign Website
+    url: https://electandrewbarkis.org/
+    access_date: '2026-05-15'
+  campaign_marshall:
+    tier: T3
+    source_name: Matt Marshall Campaign Website
+    url: https://marshall4wa.com/
+    access_date: '2026-05-15'
+  atu758:
+    tier: T2
+    source_name: ATU Local 758 — Official Website
+    url: https://atu758.org/
+    access_date: '2026-05-15'
+candidate_id: wa_ld2_barkis_2026
+full_name: Andrew Barkis
+collector: clearasmud/wa_ld2_builder

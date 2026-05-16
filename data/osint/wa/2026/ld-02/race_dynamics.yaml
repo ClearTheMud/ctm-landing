@@ -1,0 +1,24 @@
+district: Legislative District 2
+district_number: 2
+state: WA
+election_year: 2026
+primary_date: '2026-08-04'
+general_date: '2026-11-03'
+partisan_lean: R+15 to R+20 (60-65% Republican in recent elections)
+geography: Thurston County (Olympia, Lacey, Tumwater, Yelm, Tenino) and parts of Pierce County (Eatonville)
+races:
+- position: House Position 1
+  candidates:
+  - Andrew Barkis
+  - William Dehnel
+  prediction: Barkis wins easily. Safe R district, 10-year incumbent, massive fundraising advantage.
+- position: House Position 2
+  candidates:
+  - Matt Marshall
+  - Angela Taylor
+  - Martin L Miller
+  prediction: Marshall likely wins. Three Percenters history is the only real vulnerability, but district lean is strongly
+    R.
+context: LD-2 is a solid Republican district covering the southern Thurston County rural corridor. No Democratic candidate
+  has won here since redistricting. Both Republican incumbents are expected to hold their seats comfortably, though Marshall
+  carries significantly more political baggage than Barkis.

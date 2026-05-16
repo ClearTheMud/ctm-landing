@@ -1,0 +1,53 @@
+candidate_name: Andrew Barkis
+findings:
+- title: Conflict of Interest — Property Manager Voting on Housing Policy
+  category: financial
+  description: Barkis owns Hometown Property Management, managing approximately 1,200 rental units in Thurston County. He
+    simultaneously serves as Ranking Minority Member on the Housing committee, is the legislature's most vocal opponent of
+    rent control, and sponsors landlord-tenant reform legislation. His NARPM certifications (CRMC, MPM, RMP) demonstrate deep
+    industry alignment. He has spoken directly to NARPM members about landlord concerns during COVID. His business directly
+    benefits from policies he advocates for — opposing rent caps means higher potential revenues on 1,200 units; increasing
+    housing supply means more units to manage.
+  source_tier: T2
+  political_impact: Critical
+  defense: Barkis has disclosed his business interests and argues his professional experience makes him uniquely qualified
+    to shape housing policy. No formal ethics complaint has been filed.
+  source_urls:
+  - https://www.thurstontalk.com/2023/11/16/hometown-property-management-27-years-of-thurston-county-rental-management-and-still-going-strong/
+  - https://www.landlordsolutionsinc.com/representative-barkis-speaks-with-narpm-members-on-zoom/
+  - https://andrewbarkis.houserepublicans.wa.gov/2025/03/10/rep-andrew-barkis-speaks-out-against-rent-control-bill-that-will-worsen-washingtons-housing-crisis/
+- title: Endorsed Exclusively by Landlord/Developer Interests
+  category: financial
+  description: 'All endorsements come from real estate, construction, and landlord organizations: BIAW, NAIOP, BOMA, WA Multi-Family
+    Housing Association, Affordable Housing Council. No labor, environmental, or progressive group endorsements. Top donors
+    include WA Multi-Family Housing PAC at $2,400. This concentration raises questions about whose interests he represents
+    on the Housing committee.'
+  source_tier: T1
+  political_impact: High
+  defense: Barkis points to his lot-splitting bill (HB 1096, signed into law) as evidence he works to increase housing supply
+    for all.
+  source_urls:
+  - https://electandrewbarkis.org/barkis-endorsements/
+  - https://www.pdc.wa.gov/
+- title: Voted Against Reproductive Rights Legislation
+  category: policy
+  description: Voted against HB 1851 (expanding abortion provider access) and HB 1009 (student health plan abortion coverage).
+    In a state where reproductive rights have strong majority support, these votes create vulnerability in a general election
+    context.
+  source_tier: T1
+  political_impact: Moderate
+  defense: LD-2 leans 60-65% Republican; these votes align with the district's conservative base. Barkis has not been publicly
+    outspoken on abortion.
+  source_urls:
+  - https://leg.wa.gov/
+  - https://www.olympiaindivisible.org/reproductive-rights-in-wa.html
+- title: No Competitive Race Since 2018 — Effectively Unaccountable
+  category: pattern
+  description: Barkis has run unopposed (write-in only) in 3 of his last 5 general elections (2020, 2022, 2024), winning with
+    93-96% margins. He has not faced a serious challenger since 2018. This lack of electoral competition means he has not
+    been forced to publicly defend his policy positions or business interests to voters.
+  source_tier: T1
+  political_impact: Moderate
+  defense: His consistently high margins demonstrate broad district support. Running unopposed is common in safe districts.
+  source_urls:
+  - https://ballotpedia.org/Andrew_Barkis

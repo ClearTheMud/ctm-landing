@@ -1,0 +1,12 @@
+candidate_name: Martin L Miller
+findings:
+- title: Ghost Candidate — Zero Web Presence, No PDC Filing, No Campaign
+  category: policy
+  description: Miller has no discernible web presence, no PDC filing, no campaign website, no social media accounts, no news
+    coverage, and no endorsements. His email handle 'no2taxpoverty' suggests an anti-poverty focus but there is nothing else
+    to evaluate. He appears to be either a protest candidate or perennial filer. His presence in the race splits the Democratic
+    vote in Position 2.
+  source_tier: T1
+  political_impact: Critical
+  defense: null
+  source_urls: []

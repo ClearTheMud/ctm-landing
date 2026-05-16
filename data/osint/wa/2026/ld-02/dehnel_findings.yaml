@@ -1,0 +1,13 @@
+candidate_name: William Dehnel
+findings:
+- title: Minimal Campaign Infrastructure — $1,345 Raised vs $56,850 Incumbent
+  category: policy
+  description: Dehnel has raised only $1,345 against an incumbent with $56,850. His single expenditure of $1,000 went to Taproot
+    Consulting. In a district that runs 60-65% Republican, this level of funding makes a competitive race virtually impossible.
+    No endorsements from Democratic organizations have been identified.
+  source_tier: T1
+  political_impact: Critical
+  defense: Dehnel's 'Labor Democrat' branding and ATU union credentials provide organizational support beyond raw fundraising
+    numbers.
+  source_urls:
+  - https://www.pdc.wa.gov/

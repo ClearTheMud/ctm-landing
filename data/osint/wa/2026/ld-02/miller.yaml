@@ -1,0 +1,120 @@
+biographical:
+  full_name:
+    claim: Martin L Miller
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+political_positions:
+  positions: []
+voting_record:
+  votes: []
+campaign_finance:
+  total_raised:
+    claim: No PDC filing found — no reportable contributions or expenditures
+    sources:
+    - wa_pdc
+    highest_tier: T1
+    confidence: verified
+public_statements:
+  statements: []
+election_history: []
+source_aliases:
+  wa_sos:
+    tier: T1
+    source_name: Washington Secretary of State — Elections Division
+    url: https://www.sos.wa.gov/elections/
+    access_date: '2026-05-15'
+  wa_pdc:
+    tier: T1
+    source_name: Washington Public Disclosure Commission (PDC)
+    url: https://www.pdc.wa.gov/
+    access_date: '2026-05-15'
+  wa_leg:
+    tier: T1
+    source_name: Washington State Legislature — Official Records
+    url: https://leg.wa.gov/
+    access_date: '2026-05-15'
+  house_r:
+    tier: T1
+    source_name: Washington House Republicans — Official
+    url: https://houserepublicans.wa.gov/
+    access_date: '2026-05-15'
+  ballotpedia:
+    tier: T2
+    source_name: Ballotpedia
+    url: https://ballotpedia.org/
+    access_date: '2026-05-15'
+  cascade_pbs:
+    tier: T2
+    source_name: Cascade PBS
+    url: https://www.cascadepbs.org/
+    access_date: '2026-05-15'
+  wa_state_std:
+    tier: T2
+    source_name: Washington State Standard
+    url: https://washingtonstatestandard.com/
+    access_date: '2026-05-15'
+  npr:
+    tier: T2
+    source_name: NPR
+    url: https://www.npr.org/
+    access_date: '2026-05-15'
+  seattle_times:
+    tier: T2
+    source_name: Seattle Times
+    url: https://www.seattletimes.com/
+    access_date: '2026-05-15'
+  nisqually_news:
+    tier: T2
+    source_name: Nisqually Valley News
+    url: https://www.yelmonline.com/
+    access_date: '2026-05-15'
+  thurston_talk:
+    tier: T2
+    source_name: ThurstonTalk
+    url: https://www.thurstontalk.com/
+    access_date: '2026-05-15'
+  chronline:
+    tier: T2
+    source_name: The Chronicle (Centralia-Chehalis)
+    url: https://www.chronline.com/
+    access_date: '2026-05-15'
+  komo:
+    tier: T2
+    source_name: KOMO News
+    url: https://komonews.com/
+    access_date: '2026-05-15'
+  shift_wa:
+    tier: T3
+    source_name: Shift WA (Conservative Commentary)
+    url: https://shiftwa.org/
+    access_date: '2026-05-15'
+  wa_dems:
+    tier: T3
+    source_name: Washington State Democratic Party
+    url: https://wadems.org/
+    access_date: '2026-05-15'
+  wapo:
+    tier: T2
+    source_name: Washington Post
+    url: https://www.washingtonpost.com/
+    access_date: '2026-05-15'
+  campaign_barkis:
+    tier: T3
+    source_name: Andrew Barkis Campaign Website
+    url: https://electandrewbarkis.org/
+    access_date: '2026-05-15'
+  campaign_marshall:
+    tier: T3
+    source_name: Matt Marshall Campaign Website
+    url: https://marshall4wa.com/
+    access_date: '2026-05-15'
+  atu758:
+    tier: T2
+    source_name: ATU Local 758 — Official Website
+    url: https://atu758.org/
+    access_date: '2026-05-15'
+candidate_id: wa_ld2_miller_2026
+full_name: Martin L Miller
+collector: clearasmud/wa_ld2_builder
