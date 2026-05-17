@@ -226,27 +226,31 @@
   .tier-3 { background: #b7950b; color: #fff; }
   .tier-4 { background: #922b21; color: #fff; }
 
-  /* Current races */
-  .races {
+  /* Recently Added Profiles */
+  .recently-added {
     padding: 64px 0;
     background: var(--gray-light);
   }
-  .races h2 {
+  .recently-added h2 {
     font-size: 28px;
     font-weight: 700;
     color: var(--navy);
     text-align: center;
     margin-bottom: 12px;
   }
-  .races .subtitle {
+  .recently-added .subtitle {
     text-align: center;
     color: var(--gray-dark);
     font-size: 16px;
     margin-bottom: 32px;
   }
+  .race-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-bottom: 32px;
+  }
   .race-card {
-    max-width: 560px;
-    margin: 0 auto;
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -255,26 +259,28 @@
   .race-card-header {
     background: linear-gradient(135deg, var(--navy), var(--blue));
     color: #fff;
-    padding: 20px 24px;
+    padding: 16px 20px;
   }
-  .race-card-header h3 { font-size: 20px; margin-bottom: 4px; }
-  .race-card-header p { font-size: 14px; opacity: 0.85; }
-  .race-card-body { padding: 24px; }
+  .race-card-header h3 { font-size: 17px; margin-bottom: 2px; }
+  .race-card-header p { font-size: 13px; opacity: 0.85; }
+  .race-card-body { padding: 16px 20px; }
   .race-card-body .candidates {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 12px;
   }
   .candidate-pill {
-    display: block;
-    padding: 10px 16px;
+    display: inline-block;
+    padding: 8px 14px;
     border-radius: 6px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     text-align: center;
     text-decoration: none;
     transition: transform 0.1s, box-shadow 0.1s;
+    flex: 1 1 auto;
+    min-width: 120px;
   }
   .candidate-pill:hover { transform: translateY(-1px); box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
   .candidate-pill.dem { background: #dbeafe; color: #1e40af; border: 1px solid #93c5fd; }
@@ -282,9 +288,9 @@
   .candidate-pill.neutral { background: #f3f4f6; color: #374151; border: 1px solid #d1d5db; }
   .race-status {
     text-align: center;
-    font-size: 13px;
+    font-size: 12px;
     color: var(--gray-dark);
-    padding-top: 12px;
+    padding-top: 10px;
     border-top: 1px solid var(--gray-mid);
   }
   .race-status .badge {
@@ -297,6 +303,42 @@
     border-radius: 3px;
     text-transform: uppercase;
     margin-right: 6px;
+  }
+  .subsection {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--gray-mid);
+  }
+  .race-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 12px;
+  }
+  .race-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 14px 18px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .race-item .race-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navy);
+    text-decoration: none;
+  }
+  .race-item .race-name:hover { color: var(--accent); }
+  .race-item .candidate-pill {
+    flex: 0 0 auto;
+    min-width: auto;
+    padding: 6px 12px;
+    font-size: 12px;
   }
 
   /* Principles */
@@ -349,7 +391,9 @@
   @media (max-width: 600px) {
     .hero h1 { font-size: 32px; }
     .hero .tagline { font-size: 18px; }
-    .race-card-body .candidates { grid-template-columns: 1fr; }
+    .race-grid { grid-template-columns: 1fr; }
+    .race-list { grid-template-columns: 1fr; }
+    .race-item { flex-direction: column; align-items: stretch; }
   }
 </style>
 </head>
@@ -359,7 +403,7 @@
   <div class="container">
     <h1>Clear the <span>Mud</span></h1>
     <p class="tagline">Verified candidate intelligence from public records. Shared with journalists and voters before the October surprises.</p>
-    <a href="#races" class="cta">See Current Research</a>
+    <a href="#recently-added" class="cta">Recently Added Profiles</a>
     <a href="/states/" class="cta cta-secondary">Browse by State</a>
   </div>
 </div>
@@ -409,46 +453,139 @@
   </div>
 </div>
 
-<div class="races" id="races">
+<div class="recently-added" id="recently-added">
   <div class="container">
-    <h2>Current Research</h2>
-    <p class="subtitle">Active intelligence collection and analysis</p>
-    <div class="race-card">
-      <a href="/races/me-senate-2026/" style="text-decoration:none; color:inherit;">
-        <div class="race-card-header">
-          <h3>2026 Maine US Senate</h3>
-          <p>Primary: June 9 &bull; General: November 3</p>
+    <h2>Recently Added Profiles</h2>
+    <p class="subtitle">Thurston County 2026 &mdash; in-depth OSINT dossiers for every candidate</p>
+
+    <h3 class="subsection">Contested Races</h3>
+    <div class="race-grid">
+      <div class="race-card">
+        <a href="/races/wa-thurston-commissioner-district-5-2026/" style="text-decoration:none; color:inherit;">
+          <div class="race-card-header">
+            <h3>Commissioner District 5</h3>
+            <p>3 candidates &bull; Contested</p>
+          </div>
+        </a>
+        <div class="race-card-body">
+          <div class="candidates">
+            <a href="/races/wa-thurston-commissioner-district-5-2026/clouse/" class="candidate-pill dem">Emily Clouse (D)</a>
+            <a href="/races/wa-thurston-commissioner-district-5-2026/gipson/" class="candidate-pill dem">Michelle Gipson (D)</a>
+            <a href="/races/wa-thurston-commissioner-district-5-2026/martinez-dunning/" class="candidate-pill dem">Nicolas Martinez-Dunning (D)</a>
+          </div>
+          <div class="race-status">
+            <span class="badge">Deep Dive</span>
+            <a href="/races/wa-thurston-commissioner-district-5-2026/">view race analysis</a>
+          </div>
         </div>
-      </a>
-      <div class="race-card-body">
-        <div class="candidates">
-          <a href="/races/me-senate-2026/platner/" class="candidate-pill dem">Graham Platner (D)</a>
-          <a href="/races/me-senate-2026/collins/" class="candidate-pill rep">Susan Collins (R)</a>
+      </div>
+
+      <div class="race-card">
+        <a href="/races/wa-thurston-sheriff-2026/" style="text-decoration:none; color:inherit;">
+          <div class="race-card-header">
+            <h3>Sheriff</h3>
+            <p>Incumbent vs. Challenger</p>
+          </div>
+        </a>
+        <div class="race-card-body">
+          <div class="candidates">
+            <a href="/races/wa-thurston-sheriff-2026/sanders/" class="candidate-pill neutral">Derek Sanders</a>
+            <a href="/races/wa-thurston-sheriff-2026/burton-crow/" class="candidate-pill dem">Kevin Burton-Crow (D)</a>
+          </div>
+          <div class="race-status">
+            <span class="badge">Deep Dive</span>
+            <a href="/races/wa-thurston-sheriff-2026/">view race analysis</a>
+          </div>
         </div>
-        <div class="race-status">
-          <span class="badge">Published</span>
-          Dossiers available &mdash; <a href="/races/me-senate-2026/">view race analysis &amp; all candidates</a>
+      </div>
+
+      <div class="race-card">
+        <a href="/races/wa-thurston-clerk-2026/" style="text-decoration:none; color:inherit;">
+          <div class="race-card-header">
+            <h3>County Clerk</h3>
+            <p>Open seat &bull; 2 candidates</p>
+          </div>
+        </a>
+        <div class="race-card-body">
+          <div class="candidates">
+            <a href="/races/wa-thurston-clerk-2026/cady/" class="candidate-pill neutral">Garrett Cady</a>
+            <a href="/races/wa-thurston-clerk-2026/miller/" class="candidate-pill dem">Nicole Miller (D)</a>
+          </div>
+          <div class="race-status">
+            <span class="badge">Deep Dive</span>
+            <a href="/races/wa-thurston-clerk-2026/">view race analysis</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="race-card">
+        <a href="/races/wa-thurston-assessor-2026/" style="text-decoration:none; color:inherit;">
+          <div class="race-card-header">
+            <h3>County Assessor</h3>
+            <p>Open seat &bull; 2 candidates</p>
+          </div>
+        </a>
+        <div class="race-card-body">
+          <div class="candidates">
+            <a href="/races/wa-thurston-assessor-2026/olson/" class="candidate-pill dem">JJ Olson (D)</a>
+            <a href="/races/wa-thurston-assessor-2026/zeman/" class="candidate-pill dem">Lynda Nashed Zeman (D)</a>
+          </div>
+          <div class="race-status">
+            <span class="badge">Deep Dive</span>
+            <a href="/races/wa-thurston-assessor-2026/">view race analysis</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="race-card">
+        <a href="/races/wa-thurston-auditor-2026/" style="text-decoration:none; color:inherit;">
+          <div class="race-card-header">
+            <h3>County Auditor</h3>
+            <p>Open seat &bull; 2 candidates</p>
+          </div>
+        </a>
+        <div class="race-card-body">
+          <div class="candidates">
+            <a href="/races/wa-thurston-auditor-2026/naputi-pullar/" class="candidate-pill dem">Tillie Naputi-Pullar (D)</a>
+            <a href="/races/wa-thurston-auditor-2026/glass/" class="candidate-pill neutral">Vivian Glass</a>
+          </div>
+          <div class="race-status">
+            <span class="badge">Deep Dive</span>
+            <a href="/races/wa-thurston-auditor-2026/">view race analysis</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="race-card">
-      <a href="/states/washington/" style="text-decoration:none; color:inherit;">
-        <div class="race-card-header">
-          <h3>2026 Washington US House</h3>
-          <p>10 Congressional Districts &bull; 71 Candidates</p>
-        </div>
-      </a>
-      <div class="race-card-body">
-        <div class="candidates">
-          <a href="/races/wa-house-3-2026/" class="candidate-pill dem">CD-3: Perez (D) + 8</a>
-          <a href="/races/wa-house-5-2026/" class="candidate-pill neutral">CD-5: Open + 12</a>
-          <a href="/races/wa-house-7-2026/" class="candidate-pill dem">CD-7: Jayapal (D) + 3</a>
-          <a href="/races/wa-house-8-2026/" class="candidate-pill dem">CD-8: Schrier (D) + 5</a>
-        </div>
-        <div class="race-status">
-          <span class="badge">Published</span>
-          71 dossiers across all 10 districts &mdash; <a href="/states/washington/">view Washington races</a>
-        </div>
+
+    <h3 class="subsection">Unopposed Races</h3>
+    <div class="race-list">
+      <div class="race-item">
+        <a href="/races/wa-thurston-commissioner-district-3-2026/" class="race-name">Commissioner District 3</a>
+        <a href="/races/wa-thurston-commissioner-district-3-2026/menser/" class="candidate-pill dem">Tye Menser (D)</a>
+      </div>
+      <div class="race-item">
+        <a href="/races/wa-thurston-coroner-2026/" class="race-name">County Coroner</a>
+        <a href="/races/wa-thurston-coroner-2026/warnock/" class="candidate-pill dem">Gary Warnock (D)</a>
+      </div>
+      <div class="race-item">
+        <a href="/races/wa-thurston-prosecuting-attorney-2026/" class="race-name">Prosecuting Attorney</a>
+        <a href="/races/wa-thurston-prosecuting-attorney-2026/peters/" class="candidate-pill neutral">Christy Peters</a>
+      </div>
+      <div class="race-item">
+        <a href="/races/wa-thurston-treasurer-2026/" class="race-name">County Treasurer</a>
+        <a href="/races/wa-thurston-treasurer-2026/gadman/" class="candidate-pill dem">Jeff Gadman (D)</a>
+      </div>
+      <div class="race-item">
+        <a href="/races/wa-thurston-district-court-judge-pos-1-2026/" class="race-name">District Court Judge Pos. 1</a>
+        <a href="/races/wa-thurston-district-court-judge-pos-1-2026/wilcox/" class="candidate-pill neutral">Kalo Wilcox</a>
+      </div>
+      <div class="race-item">
+        <a href="/races/wa-thurston-district-court-judge-pos-2-2026/" class="race-name">District Court Judge Pos. 2</a>
+        <a href="/races/wa-thurston-district-court-judge-pos-2-2026/meyer/" class="candidate-pill neutral">Sam Meyer</a>
+      </div>
+      <div class="race-item">
+        <a href="/races/wa-thurston-district-court-judge-pos-3-2026/" class="race-name">District Court Judge Pos. 3</a>
+        <a href="/races/wa-thurston-district-court-judge-pos-3-2026/buckley/" class="candidate-pill neutral">M. Brett Buckley</a>
       </div>
     </div>
   </div>
