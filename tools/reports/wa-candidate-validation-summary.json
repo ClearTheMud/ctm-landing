@@ -1,0 +1,55 @@
+{
+  "generated": "2026-05-17T22:44:30.915192",
+  "scores": {
+    "completeness": 78.0,
+    "accuracy": 99.8,
+    "consistency": 99.9,
+    "validity": 100.0,
+    "uniqueness": 100.0,
+    "overall": 95.5,
+    "detail": {
+      "total_sos_candidates": 1104,
+      "total_json_candidates": 863,
+      "matched": 861,
+      "sos_only": 243,
+      "json_only": 2,
+      "party_mismatches": 1,
+      "dir_orphans": 0,
+      "missing_dirs": 0,
+      "missing_index_html": 0,
+      "duplicates": 0
+    }
+  },
+  "match_summary": {
+    "matched": 861,
+    "csv_only": 243,
+    "json_only": 2,
+    "party_mismatches": 1
+  },
+  "dir_summary": {
+    "orphan_dirs": 0,
+    "missing_dirs": 0,
+    "missing_index": 0
+  },
+  "coverage_gaps": 4,
+  "json_only_candidates": [
+    {
+      "name": "David Mistachkin",
+      "race_id": "wa-grays-harbor-district-court-1-2026",
+      "party": "nonpartisan"
+    },
+    {
+      "name": "M. Brett Buckley",
+      "race_id": "wa-thurston-district-court-judge-pos-3-2026",
+      "party": "nonpartisan"
+    }
+  ],
+  "party_mismatches": [
+    {
+      "name": "Roman Buermann",
+      "race_id": "wa-yakima-commissioner-district-1-2026",
+      "sos_party": "TEA",
+      "our_party": "other"
+    }
+  ]
+}

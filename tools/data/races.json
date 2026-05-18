@@ -134,7 +134,8 @@
           "role": "Longshot",
           "url": "/races/id-sd1-2026/johnson/"
         }
-      ]
+      ],
+      "district": "1"
     },
     {
       "id": "wa-house-1-2026",
@@ -4664,7 +4665,7 @@
         },
         {
           "name": "Wes Cornelius",
-          "party": "nonpartisan",
+          "party": "rep",
           "role": "incumbent",
           "slug": "cornelius",
           "status": "In Primary",
@@ -4926,7 +4927,7 @@
       "candidates": [
         {
           "name": "Richard (Rick) Viall",
-          "party": "nonpartisan",
+          "party": "rep",
           "role": "challenger",
           "slug": "viall",
           "status": "In Primary",
@@ -5504,7 +5505,7 @@
       "candidates": [
         {
           "name": "Staci Myklebust",
-          "party": "nonpartisan",
+          "party": "ind",
           "role": "incumbent",
           "slug": "myklebust",
           "status": "In Primary",
@@ -6916,7 +6917,7 @@
       "candidates": [
         {
           "name": "Kym Foster",
-          "party": "nonpartisan",
+          "party": "dem",
           "role": "incumbent",
           "slug": "foster",
           "status": "In Primary",
@@ -7934,7 +7935,7 @@
       "candidates": [
         {
           "name": "Mike Hougardy",
-          "party": "nonpartisan",
+          "party": "rep",
           "role": "incumbent",
           "slug": "hougardy",
           "status": "In Primary",
@@ -8000,7 +8001,7 @@
       "candidates": [
         {
           "name": "Brett Wachsmith",
-          "party": "nonpartisan",
+          "party": "rep",
           "role": "incumbent",
           "slug": "wachsmith",
           "status": "In Primary",
@@ -8592,7 +8593,7 @@
       "candidates": [
         {
           "name": "J Scott Liebing",
-          "party": "nonpartisan",
+          "party": "rep",
           "role": "incumbent",
           "slug": "liebing",
           "status": "In Primary",
@@ -8836,7 +8837,7 @@
       "candidates": [
         {
           "name": "Eric Onisko",
-          "party": "nonpartisan",
+          "party": "rep",
           "role": "challenger",
           "slug": "onisko",
           "status": "In Primary",
@@ -8852,7 +8853,7 @@
         },
         {
           "name": "Miguel Gutierrez",
-          "party": "nonpartisan",
+          "party": "dem",
           "role": "challenger",
           "slug": "gutierrez",
           "status": "In Primary",
@@ -11233,6 +11234,14 @@
           "slug": "wohl",
           "status": "Advanced to General",
           "url": "/races/wa-thurston-district-court-judge-pos-3-2026/wohl/"
+        },
+        {
+          "name": "M. Brett Buckley",
+          "party": "nonpartisan",
+          "role": "Incumbent",
+          "url": "/races/wa-thurston-district-court-judge-pos-3-2026/buckley/",
+          "slug": "buckley",
+          "status": "Advanced to General"
         }
       ]
     },
@@ -11324,7 +11333,7 @@
       "candidates": [
         {
           "name": "Mark D. Letham",
-          "party": "nonpartisan",
+          "party": "ind",
           "role": "incumbent",
           "slug": "letham",
           "status": "In Primary",
@@ -12162,7 +12171,7 @@
       "candidates": [
         {
           "name": "Roman Buermann",
-          "party": "nonpartisan",
+          "party": "other",
           "role": "challenger",
           "slug": "buermann",
           "status": "In Primary",
