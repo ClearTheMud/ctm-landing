@@ -12,6 +12,7 @@ After any change, this script auto-runs generate_states.py to rebuild all pages.
 """
 
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -85,6 +86,26 @@ def add_race(data):
     regenerate()
 
 
+SUFFIXES = re.compile(r'^(Jr\.?|Sr\.?|III|II|IV|V)$', re.IGNORECASE)
+
+
+def candidate_slug(name):
+    """Extract directory-safe slug from a candidate's full name.
+
+    Handles suffixes (Jr, Sr, III), quoted nicknames, parenthetical nicknames,
+    and hyphenated surnames.
+    """
+    clean = name.strip()
+    clean = re.sub(r',\s*(Jr\.?|Sr\.?|III|II|IV|V)\s*$', '', clean, flags=re.IGNORECASE)
+    clean = re.sub(r'"[^"]*"', '', clean)
+    clean = re.sub(r'\([^)]*\)', '', clean)
+    clean = re.sub(r'\s+', ' ', clean).strip()
+    parts = clean.split()
+    while len(parts) > 1 and SUFFIXES.match(parts[-1]):
+        parts.pop()
+    return parts[-1].lower() if parts else name.strip().lower()
+
+
 def add_candidate(data, race_id):
     race = next((r for r in data["races"] if r["id"] == race_id), None)
     if not race:
@@ -97,7 +118,7 @@ def add_candidate(data, race_id):
     party = input("Party (dem/rep/ind): ").strip().lower()
     role = input("Role (e.g. Incumbent, Frontrunner, Challenger): ").strip()
 
-    lastname = name.split()[-1].lower()
+    lastname = candidate_slug(name)
     candidate = {
         "name": name,
         "party": party,
