@@ -1,7 +1,7 @@
 /**
  * us-map.js — Interactive US states SVG map for clearthemud.org
  *
- * Expects window.CTM_STATE_DATA: { "ME": { dossiers: 3, races: 1 }, ... }
+ * Expects window.CTM_STATE_DATA: { "ME": { dossiers: 3, races: 1, senate: true }, ... }
  * Falls back to window.CTM_ACTIVE_STATES: ["ME"] for backward compatibility.
  */
 (function () {
@@ -46,28 +46,43 @@
     return el;
   }
 
-  function getTooltipText(name, abbr, isActive) {
-    if (!isActive) return name + ' — No published dossiers yet';
+  function getStateClass(abbr) {
     var info = stateData[abbr];
-    if (info && info.dossiers > 0) {
-      var d = info.dossiers === 1 ? '1 candidate dossier' : info.dossiers + ' candidate dossiers';
-      return name + ' — ' + d;
+    if (!info) return 'inactive';
+    if (info.dossiers > 0 || info.races > 0) return 'active';
+    if (info.senate) return 'senate';
+    return 'inactive';
+  }
+
+  function getTooltipText(name, abbr) {
+    var info = stateData[abbr];
+    var stateClass = getStateClass(abbr);
+    if (stateClass === 'active') {
+      if (info && info.dossiers > 0) {
+        var d = info.dossiers === 1 ? '1 candidate dossier' : info.dossiers + ' candidate dossiers';
+        return name + ' — ' + d;
+      }
+      return name + ' — Research available';
     }
-    return name + ' — Research available';
+    if (stateClass === 'senate') {
+      return name + ' — 2026 U.S. Senate race';
+    }
+    return name + ' — No published dossiers yet';
   }
 
   function setupState(el) {
     var abbr = el.id.toUpperCase();
     var name = el.getAttribute('data-name') || abbr;
     var slug = el.getAttribute('data-slug');
-    var isActive = abbr in stateData;
+    var stateClass = getStateClass(abbr);
+    var isClickable = stateClass === 'active' || stateClass === 'senate';
 
-    el.classList.add(isActive ? 'state--active' : 'state--inactive');
-    el.setAttribute('aria-label', getTooltipText(name, abbr, isActive));
-    el.setAttribute('tabindex', isActive ? '0' : '-1');
+    var classMap = { active: 'state--active', senate: 'state--senate', inactive: 'state--inactive' };
+    el.classList.add(classMap[stateClass] || 'state--inactive');
+    var tipText = getTooltipText(name, abbr);
+    el.setAttribute('aria-label', tipText);
+    el.setAttribute('tabindex', isClickable ? '0' : '-1');
     el.setAttribute('role', 'link');
-
-    var tipText = getTooltipText(name, abbr, isActive);
 
     // Hover
     el.addEventListener('mouseenter', function (e) {
@@ -92,7 +107,7 @@
     el.addEventListener('blur', hideTooltip);
 
     // Click / keyboard
-    if (isActive && slug) {
+    if (isClickable && slug) {
       el.style.cursor = 'pointer';
       el.addEventListener('click', function () { navigate(slug); });
       el.addEventListener('keydown', function (e) {
@@ -109,7 +124,7 @@
       var rect = el.getBoundingClientRect();
       var cx = rect.left + rect.width / 2;
       var cy = rect.top;
-      if (isActive && slug && tooltip.style.opacity === '1' && tooltip._currentState === abbr) {
+      if (isClickable && slug && tooltip.style.opacity === '1' && tooltip._currentState === abbr) {
         navigate(slug);
       } else {
         e.preventDefault();

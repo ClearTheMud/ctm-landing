@@ -168,12 +168,17 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .map-container .state--active:hover, .map-container .state--active:focus { fill: #e8c45a; stroke: #d4a83a; outline: none; animation: none; }
 @keyframes state-glow { 0%, 100% { fill: #d4a83a; } 50% { fill: #e0bc5a; } }
 .map-container .state--active:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.map-container .state--senate { fill: #5a9a7a; stroke: #4a8a6a; cursor: pointer; animation: senate-glow 2.5s ease-in-out infinite; }
+.map-container .state--senate:hover, .map-container .state--senate:focus { fill: #6aaa8a; stroke: #5a9a7a; outline: none; animation: none; }
+@keyframes senate-glow { 0%, 100% { fill: #5a9a7a; } 50% { fill: #6aaa8a; } }
+.map-container .state--senate:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .map-container .state--inactive { fill: #3d5570; stroke: #5a7a94; cursor: default; }
 .map-container .state--inactive:hover { fill: #4e6a85; }
-.map-legend { display: flex; gap: 24px; justify-content: center; margin-top: 16px; font-size: 13px; color: rgba(255,255,255,0.7); }
+.map-legend { display: flex; gap: 24px; justify-content: center; margin-top: 16px; font-size: 13px; color: rgba(255,255,255,0.7); flex-wrap: wrap; }
 .map-legend-item { display: flex; align-items: center; gap: 6px; }
 .map-legend-swatch { width: 16px; height: 16px; border-radius: 3px; border: 1px solid rgba(255,255,255,0.2); }
 .map-legend-swatch--active { background: #d4a83a; border-color: #d4a83a; }
+.map-legend-swatch--senate { background: #5a9a7a; border-color: #5a9a7a; }
 .map-legend-swatch--inactive { background: #3d5570; }
 .map-fallback-link { text-align: center; margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6); }
 .map-fallback-link a { color: var(--accent); }
