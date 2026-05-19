@@ -7004,14 +7004,6 @@
           "slug": "vingo",
           "status": "Advanced to General",
           "url": "/races/wa-grays-harbor-district-court-1-2026/vingo/"
-        },
-        {
-          "name": "David Mistachkin",
-          "party": "nonpartisan",
-          "role": "challenger",
-          "slug": "mistachkin",
-          "status": "",
-          "url": "/races/wa-grays-harbor-district-court-1-2026/mistachkin/"
         }
       ]
     },
@@ -11241,7 +11233,8 @@
           "role": "Incumbent",
           "url": "/races/wa-thurston-district-court-judge-pos-3-2026/buckley/",
           "slug": "buckley",
-          "status": "Advanced to General"
+          "status": "Advanced to General",
+          "note": "Not found in SOS CandidateList.csv as of 2026-05-18; may have filed after CSV export or under different name"
         }
       ]
     },
@@ -12171,7 +12164,7 @@
       "candidates": [
         {
           "name": "Roman Buermann",
-          "party": "other",
+          "party": "tea",
           "role": "challenger",
           "slug": "buermann",
           "status": "In Primary",
@@ -12400,6 +12393,4008 @@
           "slug": "schweppe",
           "status": "Advanced to General",
           "url": "/races/wa-yakima-yakima-county-district-court-judge-position-4-2026/schweppe/"
+        }
+      ]
+    },
+    {
+      "id": "wa-appeals-div-1-dist-1-pos-5-2026",
+      "state_abbr": "WA",
+      "office": "Court of Appeals Div. 1 Dist. 1 Pos. 5",
+      "level": "statewide",
+      "year": 2026,
+      "title": "2026 WA Court of Appeals Div. 1 Dist. 1 Pos. 5",
+      "status": "draft",
+      "url": "/races/wa-appeals-div-1-dist-1-pos-5-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "David S. Mann",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "mann",
+          "status": "Advanced to General",
+          "url": "/races/wa-appeals-div-1-dist-1-pos-5-2026/mann/"
+        }
+      ]
+    },
+    {
+      "id": "wa-appeals-div-1-dist-1-pos-6-2026",
+      "state_abbr": "WA",
+      "office": "Court of Appeals Div. 1 Dist. 1 Pos. 6",
+      "level": "statewide",
+      "year": 2026,
+      "title": "2026 WA Court of Appeals Div. 1 Dist. 1 Pos. 6",
+      "status": "draft",
+      "url": "/races/wa-appeals-div-1-dist-1-pos-6-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Bill A. Bowman",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "bowman",
+          "status": "Advanced to General",
+          "url": "/races/wa-appeals-div-1-dist-1-pos-6-2026/bowman/"
+        }
+      ]
+    },
+    {
+      "id": "wa-appeals-div-1-dist-2-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "Court of Appeals Div. 1 Dist. 2 Pos. 2",
+      "level": "statewide",
+      "year": 2026,
+      "title": "2026 WA Court of Appeals Div. 1 Dist. 2 Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-appeals-div-1-dist-2-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Linda Coburn",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "coburn",
+          "status": "Advanced to General",
+          "url": "/races/wa-appeals-div-1-dist-2-pos-2-2026/coburn/"
+        }
+      ]
+    },
+    {
+      "id": "wa-appeals-div-2-dist-1-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "Court of Appeals Div. 2 Dist. 1 Pos. 2",
+      "level": "statewide",
+      "year": 2026,
+      "title": "2026 WA Court of Appeals Div. 2 Dist. 1 Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-appeals-div-2-dist-1-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Meng Li Che",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "che",
+          "status": "Advanced to General",
+          "url": "/races/wa-appeals-div-2-dist-1-pos-2-2026/che/"
+        }
+      ]
+    },
+    {
+      "id": "wa-appeals-div-2-dist-2-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Court of Appeals Div. 2 Dist. 2 Pos. 1",
+      "level": "statewide",
+      "year": 2026,
+      "title": "2026 WA Court of Appeals Div. 2 Dist. 2 Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-appeals-div-2-dist-2-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Erik D. Price",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "price",
+          "status": "Advanced to General",
+          "url": "/races/wa-appeals-div-2-dist-2-pos-1-2026/price/"
+        }
+      ]
+    },
+    {
+      "id": "wa-appeals-div-3-dist-1-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "Court of Appeals Div. 3 Dist. 1 Pos. 2",
+      "level": "statewide",
+      "year": 2026,
+      "title": "2026 WA Court of Appeals Div. 3 Dist. 1 Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-appeals-div-3-dist-1-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Tracy Arlene Staab",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "staab",
+          "status": "Advanced to General",
+          "url": "/races/wa-appeals-div-3-dist-1-pos-2-2026/staab/"
+        }
+      ]
+    },
+    {
+      "id": "wa-appeals-div-3-dist-2-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Court of Appeals Div. 3 Dist. 2 Pos. 1",
+      "level": "statewide",
+      "year": 2026,
+      "title": "2026 WA Court of Appeals Div. 3 Dist. 2 Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-appeals-div-3-dist-2-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Tyson R. Hill",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "hill",
+          "status": "Advanced to General",
+          "url": "/races/wa-appeals-div-3-dist-2-pos-1-2026/hill/"
+        }
+      ]
+    },
+    {
+      "id": "wa-appeals-div-3-dist-3-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Court of Appeals Div. 3 Dist. 3 Pos. 1",
+      "level": "statewide",
+      "year": 2026,
+      "title": "2026 WA Court of Appeals Div. 3 Dist. 3 Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-appeals-div-3-dist-3-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Megan K. Murphy",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "murphy",
+          "status": "Advanced to General",
+          "url": "/races/wa-appeals-div-3-dist-3-pos-1-2026/murphy/"
+        }
+      ]
+    },
+    {
+      "id": "wa-asotin-pud-1-pud-commissioner-dist-1-2026",
+      "state_abbr": "WA",
+      "office": "Asotin County PUD No. 1 Commissioner Dist. 1",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Asotin County PUD No. 1 Commissioner Dist. 1",
+      "status": "draft",
+      "url": "/races/wa-asotin-pud-1-pud-commissioner-dist-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Darcy Nelly",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "nelly",
+          "status": "Advanced to General",
+          "url": "/races/wa-asotin-pud-1-pud-commissioner-dist-1-2026/nelly/"
+        },
+        {
+          "name": "Joe Louis",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "louis",
+          "status": "Advanced to General",
+          "url": "/races/wa-asotin-pud-1-pud-commissioner-dist-1-2026/louis/"
+        }
+      ]
+    },
+    {
+      "id": "wa-bellingham-port-commissioner-dist-4-2026",
+      "state_abbr": "WA",
+      "office": "Port of Bellingham Commissioner Dist. 4",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Port of Bellingham Commissioner Dist. 4",
+      "status": "draft",
+      "url": "/races/wa-bellingham-port-commissioner-dist-4-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Tim Chartier",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "chartier",
+          "status": "In Primary",
+          "url": "/races/wa-bellingham-port-commissioner-dist-4-2026/chartier/"
+        },
+        {
+          "name": "Samantha Cruz-Mendoza",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "cruz-mendoza",
+          "status": "In Primary",
+          "url": "/races/wa-bellingham-port-commissioner-dist-4-2026/cruz-mendoza/"
+        },
+        {
+          "name": "Paul Burrill",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "burrill",
+          "status": "In Primary",
+          "url": "/races/wa-bellingham-port-commissioner-dist-4-2026/burrill/"
+        },
+        {
+          "name": "Dean Berkeley",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "berkeley",
+          "status": "In Primary",
+          "url": "/races/wa-bellingham-port-commissioner-dist-4-2026/berkeley/"
+        },
+        {
+          "name": "Tor Benson",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "benson",
+          "status": "In Primary",
+          "url": "/races/wa-bellingham-port-commissioner-dist-4-2026/benson/"
+        },
+        {
+          "name": "Jaden McConnell",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "mcconnell",
+          "status": "In Primary",
+          "url": "/races/wa-bellingham-port-commissioner-dist-4-2026/mcconnell/"
+        }
+      ]
+    },
+    {
+      "id": "wa-bellingham-port-commissioner-dist-5-2026",
+      "state_abbr": "WA",
+      "office": "Port of Bellingham Commissioner Dist. 5",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Port of Bellingham Commissioner Dist. 5",
+      "status": "draft",
+      "url": "/races/wa-bellingham-port-commissioner-dist-5-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Todd Lagestee",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "lagestee",
+          "status": "In Primary",
+          "url": "/races/wa-bellingham-port-commissioner-dist-5-2026/lagestee/"
+        },
+        {
+          "name": "Chris Elder",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "elder",
+          "status": "In Primary",
+          "url": "/races/wa-bellingham-port-commissioner-dist-5-2026/elder/"
+        },
+        {
+          "name": "Shawn Ensley",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "ensley",
+          "status": "In Primary",
+          "url": "/races/wa-bellingham-port-commissioner-dist-5-2026/ensley/"
+        },
+        {
+          "name": "Randall Wood",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "wood",
+          "status": "In Primary",
+          "url": "/races/wa-bellingham-port-commissioner-dist-5-2026/wood/"
+        },
+        {
+          "name": "Spenser R. New",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "new",
+          "status": "In Primary",
+          "url": "/races/wa-bellingham-port-commissioner-dist-5-2026/new/"
+        },
+        {
+          "name": "Jerry Burns",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "burns",
+          "status": "In Primary",
+          "url": "/races/wa-bellingham-port-commissioner-dist-5-2026/burns/"
+        }
+      ]
+    },
+    {
+      "id": "wa-benton-district-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Benton District Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Benton District Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-benton-district-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Robert W. Grim",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "grim",
+          "status": "Advanced to General",
+          "url": "/races/wa-benton-district-court-pos-1-2026/grim/"
+        },
+        {
+          "name": "Byron Moore",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "moore",
+          "status": "Advanced to General",
+          "url": "/races/wa-benton-district-court-pos-1-2026/moore/"
+        }
+      ]
+    },
+    {
+      "id": "wa-benton-district-court-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "Benton District Court Pos. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Benton District Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-benton-district-court-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "John Andrew Bangerter",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "bangerter",
+          "status": "Advanced to General",
+          "url": "/races/wa-benton-district-court-pos-2-2026/bangerter/"
+        },
+        {
+          "name": "Charles Short",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "short",
+          "status": "Advanced to General",
+          "url": "/races/wa-benton-district-court-pos-2-2026/short/"
+        }
+      ]
+    },
+    {
+      "id": "wa-benton-pud-pud-commissioner-dist-2-2026",
+      "state_abbr": "WA",
+      "office": "Benton PUD Commissioner Dist. 2",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Benton PUD Commissioner Dist. 2",
+      "status": "draft",
+      "url": "/races/wa-benton-pud-pud-commissioner-dist-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Micah Valentine",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "valentine",
+          "status": "In Primary",
+          "url": "/races/wa-benton-pud-pud-commissioner-dist-2-2026/valentine/"
+        },
+        {
+          "name": "Pat Tucker",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "tucker",
+          "status": "In Primary",
+          "url": "/races/wa-benton-pud-pud-commissioner-dist-2-2026/tucker/"
+        },
+        {
+          "name": "Roy C. \"Dewey\"  Holliday",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "holliday",
+          "status": "In Primary",
+          "url": "/races/wa-benton-pud-pud-commissioner-dist-2-2026/holliday/"
+        }
+      ]
+    },
+    {
+      "id": "wa-cascade-district-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Cascade District Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Cascade District Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-cascade-district-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Jennifer Rancourt",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "rancourt",
+          "status": "Advanced to General",
+          "url": "/races/wa-cascade-district-court-pos-1-2026/rancourt/"
+        }
+      ]
+    },
+    {
+      "id": "wa-cascade-district-court-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "Cascade District Court Pos. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Cascade District Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-cascade-district-court-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Rachelle Francis",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "francis",
+          "status": "Advanced to General",
+          "url": "/races/wa-cascade-district-court-pos-2-2026/francis/"
+        }
+      ]
+    },
+    {
+      "id": "wa-chelan-pud-pud-commissioner-dist-1-2026",
+      "state_abbr": "WA",
+      "office": "Chelan County PUD Commissioner Dist. 1",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Chelan County PUD Commissioner Dist. 1",
+      "status": "draft",
+      "url": "/races/wa-chelan-pud-pud-commissioner-dist-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Colleen Frei",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "frei",
+          "status": "Advanced to General",
+          "url": "/races/wa-chelan-pud-pud-commissioner-dist-1-2026/frei/"
+        },
+        {
+          "name": "Aaron Young",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "young",
+          "status": "Advanced to General",
+          "url": "/races/wa-chelan-pud-pud-commissioner-dist-1-2026/young/"
+        }
+      ]
+    },
+    {
+      "id": "wa-chelan-pud-pud-commissioner-dist-b-2026",
+      "state_abbr": "WA",
+      "office": "Chelan County PUD Commissioner Dist. b",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Chelan County PUD Commissioner Dist. b",
+      "status": "draft",
+      "url": "/races/wa-chelan-pud-pud-commissioner-dist-b-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Kelly Allen",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "allen",
+          "status": "Advanced to General",
+          "url": "/races/wa-chelan-pud-pud-commissioner-dist-b-2026/allen/"
+        }
+      ]
+    },
+    {
+      "id": "wa-clallam-pud-1-pud-commissioner-dist-2-2026",
+      "state_abbr": "WA",
+      "office": "Clallam County PUD No. 1 Commissioner Dist. 2",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Clallam County PUD No. 1 Commissioner Dist. 2",
+      "status": "draft",
+      "url": "/races/wa-clallam-pud-1-pud-commissioner-dist-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Timothy Dalton",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "dalton",
+          "status": "In Primary",
+          "url": "/races/wa-clallam-pud-1-pud-commissioner-dist-2-2026/dalton/"
+        },
+        {
+          "name": "Missi Baker",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "baker",
+          "status": "In Primary",
+          "url": "/races/wa-clallam-pud-1-pud-commissioner-dist-2-2026/baker/"
+        },
+        {
+          "name": "Rick Paschall",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "paschall",
+          "status": "In Primary",
+          "url": "/races/wa-clallam-pud-1-pud-commissioner-dist-2-2026/paschall/"
+        },
+        {
+          "name": "Randy Brackett",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "brackett",
+          "status": "In Primary",
+          "url": "/races/wa-clallam-pud-1-pud-commissioner-dist-2-2026/brackett/"
+        },
+        {
+          "name": "John W “Jack” Smith",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "smith",
+          "status": "In Primary",
+          "url": "/races/wa-clallam-pud-1-pud-commissioner-dist-2-2026/smith/"
+        }
+      ]
+    },
+    {
+      "id": "wa-clark-county-council-dist-1-2026",
+      "state_abbr": "WA",
+      "office": "Clark County Council Dist. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Clark County Council Dist. 1",
+      "status": "draft",
+      "url": "/races/wa-clark-county-council-dist-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Dusti Arab",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "arab",
+          "status": "In Primary",
+          "url": "/races/wa-clark-county-council-dist-1-2026/arab/"
+        },
+        {
+          "name": "Lukas Bardue",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "bardue",
+          "status": "In Primary",
+          "url": "/races/wa-clark-county-council-dist-1-2026/bardue/"
+        },
+        {
+          "name": "Glen Yung",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "yung",
+          "status": "In Primary",
+          "url": "/races/wa-clark-county-council-dist-1-2026/yung/"
+        },
+        {
+          "name": "Bryan Shull",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "shull",
+          "status": "In Primary",
+          "url": "/races/wa-clark-county-council-dist-1-2026/shull/"
+        }
+      ]
+    },
+    {
+      "id": "wa-clark-county-council-dist-2-2026",
+      "state_abbr": "WA",
+      "office": "Clark County Council Dist. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Clark County Council Dist. 2",
+      "status": "draft",
+      "url": "/races/wa-clark-county-council-dist-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Martin Pittioni",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "pittioni",
+          "status": "In Primary",
+          "url": "/races/wa-clark-county-council-dist-2-2026/pittioni/"
+        },
+        {
+          "name": "Michelle Belkot",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "belkot",
+          "status": "In Primary",
+          "url": "/races/wa-clark-county-council-dist-2-2026/belkot/"
+        },
+        {
+          "name": "John Zingale",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "zingale",
+          "status": "In Primary",
+          "url": "/races/wa-clark-county-council-dist-2-2026/zingale/"
+        }
+      ]
+    },
+    {
+      "id": "wa-clark-county-council-dist-5-2026",
+      "state_abbr": "WA",
+      "office": "Clark County Council Dist. 5",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Clark County Council Dist. 5",
+      "status": "draft",
+      "url": "/races/wa-clark-county-council-dist-5-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Peter Silliman",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "silliman",
+          "status": "In Primary",
+          "url": "/races/wa-clark-county-council-dist-5-2026/silliman/"
+        },
+        {
+          "name": "Troy McCoy",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "mccoy",
+          "status": "In Primary",
+          "url": "/races/wa-clark-county-council-dist-5-2026/mccoy/"
+        }
+      ]
+    },
+    {
+      "id": "wa-clark-pud-pud-commissioner-dist-3-2026",
+      "state_abbr": "WA",
+      "office": "Clark PUD Commissioner Dist. 3",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Clark PUD Commissioner Dist. 3",
+      "status": "draft",
+      "url": "/races/wa-clark-pud-pud-commissioner-dist-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Gordon Matthews",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "matthews",
+          "status": "In Primary",
+          "url": "/races/wa-clark-pud-pud-commissioner-dist-3-2026/matthews/"
+        },
+        {
+          "name": "Kevin Roegner",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "roegner",
+          "status": "In Primary",
+          "url": "/races/wa-clark-pud-pud-commissioner-dist-3-2026/roegner/"
+        },
+        {
+          "name": "Jane A. Van Dyke",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "dyke",
+          "status": "In Primary",
+          "url": "/races/wa-clark-pud-pud-commissioner-dist-3-2026/dyke/"
+        }
+      ]
+    },
+    {
+      "id": "wa-columbia-district-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Columbia County District Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Columbia County District Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-columbia-district-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Kimberly (Kim) Boggs",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "boggs",
+          "status": "Advanced to General",
+          "url": "/races/wa-columbia-district-court-pos-1-2026/boggs/"
+        }
+      ]
+    },
+    {
+      "id": "wa-cowlitz-pud-pud-commissioner-dist-1-2026",
+      "state_abbr": "WA",
+      "office": "Cowlitz PUD Commissioner Dist. 1",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Cowlitz PUD Commissioner Dist. 1",
+      "status": "draft",
+      "url": "/races/wa-cowlitz-pud-pud-commissioner-dist-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Bruce Pollock",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "pollock",
+          "status": "Advanced to General",
+          "url": "/races/wa-cowlitz-pud-pud-commissioner-dist-1-2026/pollock/"
+        }
+      ]
+    },
+    {
+      "id": "wa-cowlitz-superior-court-pos-4-2026",
+      "state_abbr": "WA",
+      "office": "Cowlitz Superior Court Pos. 4",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Cowlitz Superior Court Pos. 4",
+      "status": "draft",
+      "url": "/races/wa-cowlitz-superior-court-pos-4-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Jill Karmy",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "karmy",
+          "status": "Advanced to General",
+          "url": "/races/wa-cowlitz-superior-court-pos-4-2026/karmy/"
+        },
+        {
+          "name": "Jacob Lervold",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "lervold",
+          "status": "Advanced to General",
+          "url": "/races/wa-cowlitz-superior-court-pos-4-2026/lervold/"
+        }
+      ]
+    },
+    {
+      "id": "wa-douglas-pud-2-pud-commissioner-dist-2-2026",
+      "state_abbr": "WA",
+      "office": "Douglas County PUD No. 2 Commissioner Dist. 2",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Douglas County PUD No. 2 Commissioner Dist. 2",
+      "status": "draft",
+      "url": "/races/wa-douglas-pud-2-pud-commissioner-dist-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Molly Doneen Simpson",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "simpson",
+          "status": "Advanced to General",
+          "url": "/races/wa-douglas-pud-2-pud-commissioner-dist-2-2026/simpson/"
+        },
+        {
+          "name": "Nick Warner",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "warner",
+          "status": "Advanced to General",
+          "url": "/races/wa-douglas-pud-2-pud-commissioner-dist-2-2026/warner/"
+        }
+      ]
+    },
+    {
+      "id": "wa-everett-district-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Everett District Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Everett District Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-everett-district-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Anthony E. Howard",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "howard",
+          "status": "Advanced to General",
+          "url": "/races/wa-everett-district-court-pos-1-2026/howard/"
+        }
+      ]
+    },
+    {
+      "id": "wa-everett-district-court-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "Everett District Court Pos. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Everett District Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-everett-district-court-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Jennifer Millett",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "millett",
+          "status": "Advanced to General",
+          "url": "/races/wa-everett-district-court-pos-2-2026/millett/"
+        }
+      ]
+    },
+    {
+      "id": "wa-evergreen-district-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Evergreen District Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Evergreen District Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-evergreen-district-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Rick Leo",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "leo",
+          "status": "Advanced to General",
+          "url": "/races/wa-evergreen-district-court-pos-1-2026/leo/"
+        }
+      ]
+    },
+    {
+      "id": "wa-evergreen-district-court-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "Evergreen District Court Pos. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Evergreen District Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-evergreen-district-court-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Patricia Lyon",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "lyon",
+          "status": "Advanced to General",
+          "url": "/races/wa-evergreen-district-court-pos-2-2026/lyon/"
+        }
+      ]
+    },
+    {
+      "id": "wa-ferry-pend-oreille-stevens-superior-court-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "Ferry, Pend Oreille, Stevens Superior Court Pos. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Ferry, Pend Oreille, Stevens Superior Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-ferry-pend-oreille-stevens-superior-court-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Thomas Franklin Webster",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "webster",
+          "status": "Advanced to General",
+          "url": "/races/wa-ferry-pend-oreille-stevens-superior-court-pos-2-2026/webster/"
+        }
+      ]
+    },
+    {
+      "id": "wa-ferry-pud-pud-commissioner-dist-3-2026",
+      "state_abbr": "WA",
+      "office": "Ferry County PUD No. 3 Commissioner Dist. 3",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Ferry County PUD No. 3 Commissioner Dist. 3",
+      "status": "draft",
+      "url": "/races/wa-ferry-pud-pud-commissioner-dist-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "ANDREW POOLER",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "pooler",
+          "status": "Advanced to General",
+          "url": "/races/wa-ferry-pud-pud-commissioner-dist-3-2026/pooler/"
+        },
+        {
+          "name": "Doug Aubertin",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "aubertin",
+          "status": "Advanced to General",
+          "url": "/races/wa-ferry-pud-pud-commissioner-dist-3-2026/aubertin/"
+        }
+      ]
+    },
+    {
+      "id": "wa-franklin-pud-pud-commissioner-dist-2-2026",
+      "state_abbr": "WA",
+      "office": "Franklin PUD Commissioner Dist. 2",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Franklin PUD Commissioner Dist. 2",
+      "status": "draft",
+      "url": "/races/wa-franklin-pud-pud-commissioner-dist-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Tim Nies",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "nies",
+          "status": "Advanced to General",
+          "url": "/races/wa-franklin-pud-pud-commissioner-dist-2-2026/nies/"
+        }
+      ]
+    },
+    {
+      "id": "wa-grant-pud-pud-commissioner-dist-3-2026",
+      "state_abbr": "WA",
+      "office": "Grant County PUD Commissioner Dist. 3",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Grant County PUD Commissioner Dist. 3",
+      "status": "draft",
+      "url": "/races/wa-grant-pud-pud-commissioner-dist-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Larry Schaapman",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "schaapman",
+          "status": "Advanced to General",
+          "url": "/races/wa-grant-pud-pud-commissioner-dist-3-2026/schaapman/"
+        }
+      ]
+    },
+    {
+      "id": "wa-grant-pud-pud-commissioner-dist-b-2026",
+      "state_abbr": "WA",
+      "office": "Grant County PUD Commissioner Dist. b",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Grant County PUD Commissioner Dist. b",
+      "status": "draft",
+      "url": "/races/wa-grant-pud-pud-commissioner-dist-b-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Nelson Cox",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "cox",
+          "status": "Advanced to General",
+          "url": "/races/wa-grant-pud-pud-commissioner-dist-b-2026/cox/"
+        }
+      ]
+    },
+    {
+      "id": "wa-grant-superior-court-pos-3-2026",
+      "state_abbr": "WA",
+      "office": "Grant Superior Court Pos. 3",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Grant Superior Court Pos. 3",
+      "status": "draft",
+      "url": "/races/wa-grant-superior-court-pos-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Jennifer Richardson",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "richardson",
+          "status": "In Primary",
+          "url": "/races/wa-grant-superior-court-pos-3-2026/richardson/"
+        },
+        {
+          "name": "Trevor Bevier",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "bevier",
+          "status": "In Primary",
+          "url": "/races/wa-grant-superior-court-pos-3-2026/bevier/"
+        },
+        {
+          "name": "Kenneth \"Ken\" Chadwick",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "chadwick",
+          "status": "In Primary",
+          "url": "/races/wa-grant-superior-court-pos-3-2026/chadwick/"
+        }
+      ]
+    },
+    {
+      "id": "wa-grays-harbor-pud-pud-commissioner-dist-3-2026",
+      "state_abbr": "WA",
+      "office": "Grays Harbor PUD Commissioner Dist. 3",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Grays Harbor PUD Commissioner Dist. 3",
+      "status": "draft",
+      "url": "/races/wa-grays-harbor-pud-pud-commissioner-dist-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Jon Martin",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "martin",
+          "status": "Advanced to General",
+          "url": "/races/wa-grays-harbor-pud-pud-commissioner-dist-3-2026/martin/"
+        }
+      ]
+    },
+    {
+      "id": "wa-jefferson-pud-pud-commissioner-dist-2-2026",
+      "state_abbr": "WA",
+      "office": "Jefferson County PUD Commissioner Dist. 2",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Jefferson County PUD Commissioner Dist. 2",
+      "status": "draft",
+      "url": "/races/wa-jefferson-pud-pud-commissioner-dist-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Keith Kisler",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "kisler",
+          "status": "Advanced to General",
+          "url": "/races/wa-jefferson-pud-pud-commissioner-dist-2-2026/kisler/"
+        },
+        {
+          "name": "Michael Brittain",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "brittain",
+          "status": "Advanced to General",
+          "url": "/races/wa-jefferson-pud-pud-commissioner-dist-2-2026/brittain/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-county-council-dist-2-2026",
+      "state_abbr": "WA",
+      "office": "King County Council Dist. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Council Dist. 2",
+      "status": "draft",
+      "url": "/races/wa-king-county-council-dist-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Toshiko Grace Hasegawa",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "hasegawa",
+          "status": "In Primary",
+          "url": "/races/wa-king-county-council-dist-2-2026/hasegawa/"
+        },
+        {
+          "name": "Miriam Mboya",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "mboya",
+          "status": "In Primary",
+          "url": "/races/wa-king-county-council-dist-2-2026/mboya/"
+        },
+        {
+          "name": "Rebecca Saldaña",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "saldaña",
+          "status": "In Primary",
+          "url": "/races/wa-king-county-council-dist-2-2026/saldaña/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-county-council-dist-4-2026",
+      "state_abbr": "WA",
+      "office": "King County Council Dist. 4",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Council Dist. 4",
+      "status": "draft",
+      "url": "/races/wa-king-county-council-dist-4-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Jorge L. Barón",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "barón",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-county-council-dist-4-2026/barón/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-county-council-dist-6-2026",
+      "state_abbr": "WA",
+      "office": "King County Council Dist. 6",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Council Dist. 6",
+      "status": "draft",
+      "url": "/races/wa-king-county-council-dist-6-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Claudia Balducci",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "balducci",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-county-council-dist-6-2026/balducci/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-county-council-dist-8-2026",
+      "state_abbr": "WA",
+      "office": "King County Council Dist. 8",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Council Dist. 8",
+      "status": "draft",
+      "url": "/races/wa-king-county-council-dist-8-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Teresa Mosqueda",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "mosqueda",
+          "status": "In Primary",
+          "url": "/races/wa-king-county-council-dist-8-2026/mosqueda/"
+        },
+        {
+          "name": "Mia Jacobson",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "jacobson",
+          "status": "In Primary",
+          "url": "/races/wa-king-county-council-dist-8-2026/jacobson/"
+        },
+        {
+          "name": "Nick Duda",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "duda",
+          "status": "In Primary",
+          "url": "/races/wa-king-county-council-dist-8-2026/duda/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-district-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "King County District Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County District Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-king-district-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Kristen L. Parcher",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "parcher",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-district-court-pos-1-2026/parcher/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-district-court-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "King County District Court Pos. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County District Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-king-district-court-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Chad E. Sleight",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "sleight",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-district-court-pos-2-2026/sleight/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-district-court-pos-3-2026",
+      "state_abbr": "WA",
+      "office": "King County District Court Pos. 3",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County District Court Pos. 3",
+      "status": "draft",
+      "url": "/races/wa-king-district-court-pos-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "James B. Smith",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "smith",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-district-court-pos-3-2026/smith/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-district-court-pos-4-2026",
+      "state_abbr": "WA",
+      "office": "King County District Court Pos. 4",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County District Court Pos. 4",
+      "status": "draft",
+      "url": "/races/wa-king-district-court-pos-4-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Leslie A. Lopez",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "lopez",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-district-court-pos-4-2026/lopez/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-district-court-pos-5-2026",
+      "state_abbr": "WA",
+      "office": "King County District Court Pos. 5",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County District Court Pos. 5",
+      "status": "draft",
+      "url": "/races/wa-king-district-court-pos-5-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Megan D. Peyton",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "peyton",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-district-court-pos-5-2026/peyton/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-district-court-pos-6-2026",
+      "state_abbr": "WA",
+      "office": "King County District Court Pos. 6",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County District Court Pos. 6",
+      "status": "draft",
+      "url": "/races/wa-king-district-court-pos-6-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Abigail E. Bartlett",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "bartlett",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-district-court-pos-6-2026/bartlett/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-northeast-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "King County Northeast Electoral Dist. Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Northeast Electoral Dist. Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-northeast-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Jan Trasen",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "trasen",
+          "status": "In Primary",
+          "url": "/races/wa-king-electoral-northeast-pos-1-2026/trasen/"
+        },
+        {
+          "name": "Josh Schaer",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "schaer",
+          "status": "In Primary",
+          "url": "/races/wa-king-electoral-northeast-pos-1-2026/schaer/"
+        },
+        {
+          "name": "Bianca Tse",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "tse",
+          "status": "In Primary",
+          "url": "/races/wa-king-electoral-northeast-pos-1-2026/tse/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-northeast-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "King County Northeast Electoral Dist. Court Pos. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Northeast Electoral Dist. Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-northeast-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Michelle Gehlsen",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "gehlsen",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-northeast-pos-2-2026/gehlsen/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-northeast-pos-3-2026",
+      "state_abbr": "WA",
+      "office": "King County Northeast Electoral Dist. Court Pos. 3",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Northeast Electoral Dist. Court Pos. 3",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-northeast-pos-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Lisa O'Toole",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "o'toole",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-northeast-pos-3-2026/o'toole/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-northeast-pos-4-2026",
+      "state_abbr": "WA",
+      "office": "King County Northeast Electoral Dist. Court Pos. 4",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Northeast Electoral Dist. Court Pos. 4",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-northeast-pos-4-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Kevin Peck",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "peck",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-northeast-pos-4-2026/peck/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-northeast-pos-5-2026",
+      "state_abbr": "WA",
+      "office": "King County Northeast Electoral Dist. Court Pos. 5",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Northeast Electoral Dist. Court Pos. 5",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-northeast-pos-5-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Jill Klinge",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "klinge",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-northeast-pos-5-2026/klinge/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-northeast-pos-6-2026",
+      "state_abbr": "WA",
+      "office": "King County Northeast Electoral Dist. Court Pos. 6",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Northeast Electoral Dist. Court Pos. 6",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-northeast-pos-6-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Denice Gagner",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "gagner",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-northeast-pos-6-2026/gagner/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-northeast-pos-7-2026",
+      "state_abbr": "WA",
+      "office": "King County Northeast Electoral Dist. Court Pos. 7",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Northeast Electoral Dist. Court Pos. 7",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-northeast-pos-7-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Peter Peaquin",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "peaquin",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-northeast-pos-7-2026/peaquin/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-shoreline-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "King County Shoreline Electoral Dist. Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Shoreline Electoral Dist. Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-shoreline-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Raul Martinez",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "martinez",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-shoreline-pos-1-2026/martinez/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-shoreline-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "King County Shoreline Electoral Dist. Court Pos. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Shoreline Electoral Dist. Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-shoreline-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Karama H. Hawkins",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "hawkins",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-shoreline-pos-2-2026/hawkins/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-southeast-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "King County Southeast Electoral Dist. Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Southeast Electoral Dist. Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-southeast-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Leah Taguba",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "taguba",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-southeast-pos-1-2026/taguba/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-southeast-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "King County Southeast Electoral Dist. Court Pos. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Southeast Electoral Dist. Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-southeast-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Matthew York",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "york",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-southeast-pos-2-2026/york/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-southeast-pos-3-2026",
+      "state_abbr": "WA",
+      "office": "King County Southeast Electoral Dist. Court Pos. 3",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Southeast Electoral Dist. Court Pos. 3",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-southeast-pos-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Tricia Grove Johnson",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "johnson",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-southeast-pos-3-2026/johnson/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-southeast-pos-4-2026",
+      "state_abbr": "WA",
+      "office": "King County Southeast Electoral Dist. Court Pos. 4",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Southeast Electoral Dist. Court Pos. 4",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-southeast-pos-4-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Corinna Harn",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "harn",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-southeast-pos-4-2026/harn/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-southeast-pos-5-2026",
+      "state_abbr": "WA",
+      "office": "King County Southeast Electoral Dist. Court Pos. 5",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Southeast Electoral Dist. Court Pos. 5",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-southeast-pos-5-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Heather M. Barker",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "barker",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-southeast-pos-5-2026/barker/"
+        },
+        {
+          "name": "Joshua C. Harris",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "harris",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-southeast-pos-5-2026/harris/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-southeast-pos-6-2026",
+      "state_abbr": "WA",
+      "office": "King County Southeast Electoral Dist. Court Pos. 6",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Southeast Electoral Dist. Court Pos. 6",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-southeast-pos-6-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Rhonda Laumann",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "laumann",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-southeast-pos-6-2026/laumann/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-southwest-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "King County Southwest Electoral Dist. Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Southwest Electoral Dist. Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-southwest-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Brian Todd",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "todd",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-southwest-pos-1-2026/todd/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-southwest-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "King County Southwest Electoral Dist. Court Pos. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Southwest Electoral Dist. Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-southwest-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Andrea Samonica Jarmon",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "jarmon",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-southwest-pos-2-2026/jarmon/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-southwest-pos-3-2026",
+      "state_abbr": "WA",
+      "office": "King County Southwest Electoral Dist. Court Pos. 3",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Southwest Electoral Dist. Court Pos. 3",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-southwest-pos-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Laurel Gibson",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "gibson",
+          "status": "In Primary",
+          "url": "/races/wa-king-electoral-southwest-pos-3-2026/gibson/"
+        },
+        {
+          "name": "Mitch Greene",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "greene",
+          "status": "In Primary",
+          "url": "/races/wa-king-electoral-southwest-pos-3-2026/greene/"
+        },
+        {
+          "name": "Quita St. John",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "john",
+          "status": "In Primary",
+          "url": "/races/wa-king-electoral-southwest-pos-3-2026/john/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-southwest-pos-4-2026",
+      "state_abbr": "WA",
+      "office": "King County Southwest Electoral Dist. Court Pos. 4",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Southwest Electoral Dist. Court Pos. 4",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-southwest-pos-4-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Harry Steinmetz",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "steinmetz",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-southwest-pos-4-2026/steinmetz/"
+        },
+        {
+          "name": "Fa'amomoi Masaniai, Jr.",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "masaniai",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-southwest-pos-4-2026/masaniai/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-southwest-pos-5-2026",
+      "state_abbr": "WA",
+      "office": "King County Southwest Electoral Dist. Court Pos. 5",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County Southwest Electoral Dist. Court Pos. 5",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-southwest-pos-5-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Renee Walls",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "walls",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-southwest-pos-5-2026/walls/"
+        },
+        {
+          "name": "Noel Merfeld",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "merfeld",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-southwest-pos-5-2026/merfeld/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-west-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "King County West Electoral Dist. Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County West Electoral Dist. Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-west-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Nyjat Rose-Akins",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "rose-akins",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-west-pos-1-2026/rose-akins/"
+        },
+        {
+          "name": "Bardi Martin",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "martin",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-west-pos-1-2026/martin/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-west-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "King County West Electoral Dist. Court Pos. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County West Electoral Dist. Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-west-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Kuljinder K. Dhillon",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "dhillon",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-west-pos-2-2026/dhillon/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-west-pos-3-2026",
+      "state_abbr": "WA",
+      "office": "King County West Electoral Dist. Court Pos. 3",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County West Electoral Dist. Court Pos. 3",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-west-pos-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Rebecca Robertson",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "robertson",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-west-pos-3-2026/robertson/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-west-pos-4-2026",
+      "state_abbr": "WA",
+      "office": "King County West Electoral Dist. Court Pos. 4",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County West Electoral Dist. Court Pos. 4",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-west-pos-4-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Yvonne Chin",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "chin",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-west-pos-4-2026/chin/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-electoral-west-pos-5-2026",
+      "state_abbr": "WA",
+      "office": "King County West Electoral Dist. Court Pos. 5",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King County West Electoral Dist. Court Pos. 5",
+      "status": "draft",
+      "url": "/races/wa-king-electoral-west-pos-5-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Kristin Shotwell",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "shotwell",
+          "status": "Advanced to General",
+          "url": "/races/wa-king-electoral-west-pos-5-2026/shotwell/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-superior-court-pos-20-2026",
+      "state_abbr": "WA",
+      "office": "King Superior Court Pos. 20",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King Superior Court Pos. 20",
+      "status": "draft",
+      "url": "/races/wa-king-superior-court-pos-20-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Kent Y. Liu",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "liu",
+          "status": "Elected",
+          "url": "/races/wa-king-superior-court-pos-20-2026/liu/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-superior-court-pos-32-2026",
+      "state_abbr": "WA",
+      "office": "King Superior Court Pos. 32",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King Superior Court Pos. 32",
+      "status": "draft",
+      "url": "/races/wa-king-superior-court-pos-32-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Daniel York",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "york",
+          "status": "Elected",
+          "url": "/races/wa-king-superior-court-pos-32-2026/york/"
+        }
+      ]
+    },
+    {
+      "id": "wa-king-superior-court-pos-45-2026",
+      "state_abbr": "WA",
+      "office": "King Superior Court Pos. 45",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA King Superior Court Pos. 45",
+      "status": "draft",
+      "url": "/races/wa-king-superior-court-pos-45-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Tenaya Scheinman",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "scheinman",
+          "status": "Elected",
+          "url": "/races/wa-king-superior-court-pos-45-2026/scheinman/"
+        }
+      ]
+    },
+    {
+      "id": "wa-kitsap-pud-pud-commissioner-dist-2-2026",
+      "state_abbr": "WA",
+      "office": "Kitsap PUD Commissioner Dist. 2",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Kitsap PUD Commissioner Dist. 2",
+      "status": "draft",
+      "url": "/races/wa-kitsap-pud-pud-commissioner-dist-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Stacey Smith",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "smith",
+          "status": "Advanced to General",
+          "url": "/races/wa-kitsap-pud-pud-commissioner-dist-2-2026/smith/"
+        }
+      ]
+    },
+    {
+      "id": "wa-kittitas-pud-1-pud-commissioner-dist-1-2026",
+      "state_abbr": "WA",
+      "office": "Kittitas County PUD No. 1 Commissioner Dist. 1",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Kittitas County PUD No. 1 Commissioner Dist. 1",
+      "status": "draft",
+      "url": "/races/wa-kittitas-pud-1-pud-commissioner-dist-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Rick Catlin",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "catlin",
+          "status": "Advanced to General",
+          "url": "/races/wa-kittitas-pud-1-pud-commissioner-dist-1-2026/catlin/"
+        }
+      ]
+    },
+    {
+      "id": "wa-klickitat-east-district-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Klickitat East District Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Klickitat East District Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-klickitat-east-district-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Rick L Hansen",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "hansen",
+          "status": "Advanced to General",
+          "url": "/races/wa-klickitat-east-district-court-pos-1-2026/hansen/"
+        }
+      ]
+    },
+    {
+      "id": "wa-klickitat-pud-1-pud-commissioner-dist-3-2026",
+      "state_abbr": "WA",
+      "office": "Klickitat PUD No. 1 Commissioner Dist. 3",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Klickitat PUD No. 1 Commissioner Dist. 3",
+      "status": "draft",
+      "url": "/races/wa-klickitat-pud-1-pud-commissioner-dist-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Logan B. Siebert",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "siebert",
+          "status": "In Primary",
+          "url": "/races/wa-klickitat-pud-1-pud-commissioner-dist-3-2026/siebert/"
+        },
+        {
+          "name": "Dan G. Gunkel",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "gunkel",
+          "status": "In Primary",
+          "url": "/races/wa-klickitat-pud-1-pud-commissioner-dist-3-2026/gunkel/"
+        },
+        {
+          "name": "Dan Christopher",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "christopher",
+          "status": "In Primary",
+          "url": "/races/wa-klickitat-pud-1-pud-commissioner-dist-3-2026/christopher/"
+        }
+      ]
+    },
+    {
+      "id": "wa-klickitat-west-district-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Klickitat West District Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Klickitat West District Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-klickitat-west-district-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Jeff Baker",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "baker",
+          "status": "Advanced to General",
+          "url": "/races/wa-klickitat-west-district-court-pos-1-2026/baker/"
+        }
+      ]
+    },
+    {
+      "id": "wa-lewis-pud-pud-commissioner-dist-1-2026",
+      "state_abbr": "WA",
+      "office": "Lewis County PUD Commissioner Dist. 1",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Lewis County PUD Commissioner Dist. 1",
+      "status": "draft",
+      "url": "/races/wa-lewis-pud-pud-commissioner-dist-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Steve Grega",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "grega",
+          "status": "In Primary",
+          "url": "/races/wa-lewis-pud-pud-commissioner-dist-1-2026/grega/"
+        },
+        {
+          "name": "Jeff Baine",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "baine",
+          "status": "In Primary",
+          "url": "/races/wa-lewis-pud-pud-commissioner-dist-1-2026/baine/"
+        },
+        {
+          "name": "Ben Kostick",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "kostick",
+          "status": "In Primary",
+          "url": "/races/wa-lewis-pud-pud-commissioner-dist-1-2026/kostick/"
+        }
+      ]
+    },
+    {
+      "id": "wa-lower-county-district-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Lower County District Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Lower County District Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-lower-county-district-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Paul Sander",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "sander",
+          "status": "Advanced to General",
+          "url": "/races/wa-lower-county-district-court-pos-1-2026/sander/"
+        }
+      ]
+    },
+    {
+      "id": "wa-mason-pud-1-pud-commissioner-dist-2-2026",
+      "state_abbr": "WA",
+      "office": "Mason County PUD No. 1 Commissioner Dist. 2",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Mason County PUD No. 1 Commissioner Dist. 2",
+      "status": "draft",
+      "url": "/races/wa-mason-pud-1-pud-commissioner-dist-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Ronald S. Gold",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "gold",
+          "status": "Advanced to General",
+          "url": "/races/wa-mason-pud-1-pud-commissioner-dist-2-2026/gold/"
+        }
+      ]
+    },
+    {
+      "id": "wa-mason-pud-3-pud-commissioner-dist-2-2026",
+      "state_abbr": "WA",
+      "office": "Mason County PUD No. 3 Commissioner Dist. 2",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Mason County PUD No. 3 Commissioner Dist. 2",
+      "status": "draft",
+      "url": "/races/wa-mason-pud-3-pud-commissioner-dist-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Mick Sprouffske",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "sprouffske",
+          "status": "Advanced to General",
+          "url": "/races/wa-mason-pud-3-pud-commissioner-dist-2-2026/sprouffske/"
+        },
+        {
+          "name": "Randy Neatherlin",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "neatherlin",
+          "status": "Advanced to General",
+          "url": "/races/wa-mason-pud-3-pud-commissioner-dist-2-2026/neatherlin/"
+        }
+      ]
+    },
+    {
+      "id": "wa-okanogan-pud-pud-commissioner-dist-1-2026",
+      "state_abbr": "WA",
+      "office": "Okanogan PUD Commissioner Dist. 1",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Okanogan PUD Commissioner Dist. 1",
+      "status": "draft",
+      "url": "/races/wa-okanogan-pud-pud-commissioner-dist-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Scott Vejraska",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "vejraska",
+          "status": "Advanced to General",
+          "url": "/races/wa-okanogan-pud-pud-commissioner-dist-1-2026/vejraska/"
+        },
+        {
+          "name": "Steven Gadd",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "gadd",
+          "status": "Advanced to General",
+          "url": "/races/wa-okanogan-pud-pud-commissioner-dist-1-2026/gadd/"
+        }
+      ]
+    },
+    {
+      "id": "wa-okanogan-superior-court-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "Okanogan Superior Court Pos. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Okanogan Superior Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-okanogan-superior-court-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Rachel Hong",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "hong",
+          "status": "Advanced to General",
+          "url": "/races/wa-okanogan-superior-court-pos-2-2026/hong/"
+        }
+      ]
+    },
+    {
+      "id": "wa-pacific-pud-2-pud-commissioner-dist-1-2026",
+      "state_abbr": "WA",
+      "office": "Pacific County PUD No. 2 Commissioner Dist. 1",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Pacific County PUD No. 2 Commissioner Dist. 1",
+      "status": "draft",
+      "url": "/races/wa-pacific-pud-2-pud-commissioner-dist-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Pamela \"Pam\" Hickey",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "hickey",
+          "status": "Advanced to General",
+          "url": "/races/wa-pacific-pud-2-pud-commissioner-dist-1-2026/hickey/"
+        }
+      ]
+    },
+    {
+      "id": "wa-pasco-port-commissioner-dist-3-2026",
+      "state_abbr": "WA",
+      "office": "Pasco Port Commissioner Dist. 3",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Pasco Port Commissioner Dist. 3",
+      "status": "draft",
+      "url": "/races/wa-pasco-port-commissioner-dist-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Hans-Joachim Engelke",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "engelke",
+          "status": "Advanced to General",
+          "url": "/races/wa-pasco-port-commissioner-dist-3-2026/engelke/"
+        }
+      ]
+    },
+    {
+      "id": "wa-pend-oreille-pud-1-pud-commissioner-dist-2-2026",
+      "state_abbr": "WA",
+      "office": "Pend Oreille PUD No. 1 Commissioner Dist. 2",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Pend Oreille PUD No. 1 Commissioner Dist. 2",
+      "status": "draft",
+      "url": "/races/wa-pend-oreille-pud-1-pud-commissioner-dist-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Gerry David Bradbury",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "bradbury",
+          "status": "In Primary",
+          "url": "/races/wa-pend-oreille-pud-1-pud-commissioner-dist-2-2026/bradbury/"
+        },
+        {
+          "name": "Ernie Hood",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "hood",
+          "status": "In Primary",
+          "url": "/races/wa-pend-oreille-pud-1-pud-commissioner-dist-2-2026/hood/"
+        },
+        {
+          "name": "Tracy Rutt",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "rutt",
+          "status": "In Primary",
+          "url": "/races/wa-pend-oreille-pud-1-pud-commissioner-dist-2-2026/rutt/"
+        }
+      ]
+    },
+    {
+      "id": "wa-pierce-county-council-dist-1-2026",
+      "state_abbr": "WA",
+      "office": "Pierce County Council Dist. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Pierce County Council Dist. 1",
+      "status": "draft",
+      "url": "/races/wa-pierce-county-council-dist-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Jerome O'Leary",
+          "party": "rep",
+          "role": "Filed",
+          "slug": "o'leary",
+          "status": "In Primary",
+          "url": "/races/wa-pierce-county-council-dist-1-2026/o'leary/"
+        },
+        {
+          "name": "Terrance Mayers",
+          "party": "dem",
+          "role": "Filed",
+          "slug": "mayers",
+          "status": "In Primary",
+          "url": "/races/wa-pierce-county-council-dist-1-2026/mayers/"
+        },
+        {
+          "name": "Kenneth King",
+          "party": "dem",
+          "role": "Filed",
+          "slug": "king",
+          "status": "In Primary",
+          "url": "/races/wa-pierce-county-council-dist-1-2026/king/"
+        },
+        {
+          "name": "Kelsey Barrans",
+          "party": "dem",
+          "role": "Filed",
+          "slug": "barrans",
+          "status": "In Primary",
+          "url": "/races/wa-pierce-county-council-dist-1-2026/barrans/"
+        }
+      ]
+    },
+    {
+      "id": "wa-pierce-county-council-dist-5-2026",
+      "state_abbr": "WA",
+      "office": "Pierce County Council Dist. 5",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Pierce County Council Dist. 5",
+      "status": "draft",
+      "url": "/races/wa-pierce-county-council-dist-5-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Bryan Yambe",
+          "party": "dem",
+          "role": "Filed",
+          "slug": "yambe",
+          "status": "In Primary",
+          "url": "/races/wa-pierce-county-council-dist-5-2026/yambe/"
+        },
+        {
+          "name": "Bettina Gese",
+          "party": "rep",
+          "role": "Filed",
+          "slug": "gese",
+          "status": "In Primary",
+          "url": "/races/wa-pierce-county-council-dist-5-2026/gese/"
+        }
+      ]
+    },
+    {
+      "id": "wa-pierce-county-council-dist-7-2026",
+      "state_abbr": "WA",
+      "office": "Pierce County Council Dist. 7",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Pierce County Council Dist. 7",
+      "status": "draft",
+      "url": "/races/wa-pierce-county-council-dist-7-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Chuck West",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "west",
+          "status": "In Primary",
+          "url": "/races/wa-pierce-county-council-dist-7-2026/west/"
+        },
+        {
+          "name": "Brenda Lykins",
+          "party": "dem",
+          "role": "Filed",
+          "slug": "lykins",
+          "status": "In Primary",
+          "url": "/races/wa-pierce-county-council-dist-7-2026/lykins/"
+        },
+        {
+          "name": "Ann E. Jolie",
+          "party": "rep",
+          "role": "Filed",
+          "slug": "jolie",
+          "status": "In Primary",
+          "url": "/races/wa-pierce-county-council-dist-7-2026/jolie/"
+        }
+      ]
+    },
+    {
+      "id": "wa-pierce-district-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Pierce District Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Pierce District Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-pierce-district-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Kevin A. McCann",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "mccann",
+          "status": "Advanced to General",
+          "url": "/races/wa-pierce-district-court-pos-1-2026/mccann/"
+        }
+      ]
+    },
+    {
+      "id": "wa-pierce-district-court-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "Pierce District Court Pos. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Pierce District Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-pierce-district-court-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Claire Sussman",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "sussman",
+          "status": "Advanced to General",
+          "url": "/races/wa-pierce-district-court-pos-2-2026/sussman/"
+        }
+      ]
+    },
+    {
+      "id": "wa-pierce-district-court-pos-3-2026",
+      "state_abbr": "WA",
+      "office": "Pierce District Court Pos. 3",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Pierce District Court Pos. 3",
+      "status": "draft",
+      "url": "/races/wa-pierce-district-court-pos-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Lizanne Padula",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "padula",
+          "status": "Advanced to General",
+          "url": "/races/wa-pierce-district-court-pos-3-2026/padula/"
+        }
+      ]
+    },
+    {
+      "id": "wa-pierce-district-court-pos-4-2026",
+      "state_abbr": "WA",
+      "office": "Pierce District Court Pos. 4",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Pierce District Court Pos. 4",
+      "status": "draft",
+      "url": "/races/wa-pierce-district-court-pos-4-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Neil Horibe",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "horibe",
+          "status": "Advanced to General",
+          "url": "/races/wa-pierce-district-court-pos-4-2026/horibe/"
+        }
+      ]
+    },
+    {
+      "id": "wa-pierce-district-court-pos-5-2026",
+      "state_abbr": "WA",
+      "office": "Pierce District Court Pos. 5",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Pierce District Court Pos. 5",
+      "status": "draft",
+      "url": "/races/wa-pierce-district-court-pos-5-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Dwayne Christopher",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "christopher",
+          "status": "Advanced to General",
+          "url": "/races/wa-pierce-district-court-pos-5-2026/christopher/"
+        }
+      ]
+    },
+    {
+      "id": "wa-pierce-district-court-pos-6-2026",
+      "state_abbr": "WA",
+      "office": "Pierce District Court Pos. 6",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Pierce District Court Pos. 6",
+      "status": "draft",
+      "url": "/races/wa-pierce-district-court-pos-6-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Karl Williams",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "williams",
+          "status": "Advanced to General",
+          "url": "/races/wa-pierce-district-court-pos-6-2026/williams/"
+        }
+      ]
+    },
+    {
+      "id": "wa-pierce-district-court-pos-7-2026",
+      "state_abbr": "WA",
+      "office": "Pierce District Court Pos. 7",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Pierce District Court Pos. 7",
+      "status": "draft",
+      "url": "/races/wa-pierce-district-court-pos-7-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Eric J. Lawless",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "lawless",
+          "status": "In Primary",
+          "url": "/races/wa-pierce-district-court-pos-7-2026/lawless/"
+        },
+        {
+          "name": "Mike Sommerfeld",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "sommerfeld",
+          "status": "In Primary",
+          "url": "/races/wa-pierce-district-court-pos-7-2026/sommerfeld/"
+        },
+        {
+          "name": "Pam Nogueira",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "nogueira",
+          "status": "In Primary",
+          "url": "/races/wa-pierce-district-court-pos-7-2026/nogueira/"
+        }
+      ]
+    },
+    {
+      "id": "wa-pierce-district-court-pos-8-2026",
+      "state_abbr": "WA",
+      "office": "Pierce District Court Pos. 8",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Pierce District Court Pos. 8",
+      "status": "draft",
+      "url": "/races/wa-pierce-district-court-pos-8-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Sven Nelson",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "nelson",
+          "status": "Advanced to General",
+          "url": "/races/wa-pierce-district-court-pos-8-2026/nelson/"
+        },
+        {
+          "name": "James Armstrong",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "armstrong",
+          "status": "Advanced to General",
+          "url": "/races/wa-pierce-district-court-pos-8-2026/armstrong/"
+        }
+      ]
+    },
+    {
+      "id": "wa-pierce-superior-court-pos-17-2026",
+      "state_abbr": "WA",
+      "office": "Pierce Superior Court Pos. 17",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Pierce Superior Court Pos. 17",
+      "status": "draft",
+      "url": "/races/wa-pierce-superior-court-pos-17-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Doris Walkins",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "walkins",
+          "status": "Elected",
+          "url": "/races/wa-pierce-superior-court-pos-17-2026/walkins/"
+        }
+      ]
+    },
+    {
+      "id": "wa-richland-city-council-pos-4-2026",
+      "state_abbr": "WA",
+      "office": "Richland City Council Pos. 4",
+      "level": "municipal",
+      "year": 2026,
+      "title": "2026 WA Richland City Council Pos. 4",
+      "status": "draft",
+      "url": "/races/wa-richland-city-council-pos-4-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Todd Samuel",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "samuel",
+          "status": "In Primary",
+          "url": "/races/wa-richland-city-council-pos-4-2026/samuel/"
+        },
+        {
+          "name": "David Tveraas",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "tveraas",
+          "status": "In Primary",
+          "url": "/races/wa-richland-city-council-pos-4-2026/tveraas/"
+        },
+        {
+          "name": "Kyle Saltz",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "saltz",
+          "status": "In Primary",
+          "url": "/races/wa-richland-city-council-pos-4-2026/saltz/"
+        },
+        {
+          "name": "Ragan Faylor",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "faylor",
+          "status": "In Primary",
+          "url": "/races/wa-richland-city-council-pos-4-2026/faylor/"
+        },
+        {
+          "name": "Mary S. Lipton",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "lipton",
+          "status": "In Primary",
+          "url": "/races/wa-richland-city-council-pos-4-2026/lipton/"
+        }
+      ]
+    },
+    {
+      "id": "wa-seattle-city-council-pos-5-2026",
+      "state_abbr": "WA",
+      "office": "Seattle City Council Pos. 5",
+      "level": "municipal",
+      "year": 2026,
+      "title": "2026 WA Seattle City Council Pos. 5",
+      "status": "draft",
+      "url": "/races/wa-seattle-city-council-pos-5-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Julie Kang",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "kang",
+          "status": "In Primary",
+          "url": "/races/wa-seattle-city-council-pos-5-2026/kang/"
+        },
+        {
+          "name": "Silas James",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "james",
+          "status": "In Primary",
+          "url": "/races/wa-seattle-city-council-pos-5-2026/james/"
+        },
+        {
+          "name": "Nilu Jenks",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "jenks",
+          "status": "In Primary",
+          "url": "/races/wa-seattle-city-council-pos-5-2026/jenks/"
+        },
+        {
+          "name": "Dimitri Georgakopoulos",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "georgakopoulos",
+          "status": "In Primary",
+          "url": "/races/wa-seattle-city-council-pos-5-2026/georgakopoulos/"
+        }
+      ]
+    },
+    {
+      "id": "wa-seattle-municipal-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Seattle Municipal Court Pos. 1",
+      "level": "municipal",
+      "year": 2026,
+      "title": "2026 WA Seattle Municipal Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-seattle-municipal-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Cat McDowall",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "mcdowall",
+          "status": "Advanced to General",
+          "url": "/races/wa-seattle-municipal-court-pos-1-2026/mcdowall/"
+        }
+      ]
+    },
+    {
+      "id": "wa-seattle-municipal-court-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "Seattle Municipal Court Pos. 2",
+      "level": "municipal",
+      "year": 2026,
+      "title": "2026 WA Seattle Municipal Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-seattle-municipal-court-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Katharine Edwards",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "edwards",
+          "status": "Advanced to General",
+          "url": "/races/wa-seattle-municipal-court-pos-2-2026/edwards/"
+        }
+      ]
+    },
+    {
+      "id": "wa-seattle-municipal-court-pos-3-2026",
+      "state_abbr": "WA",
+      "office": "Seattle Municipal Court Pos. 3",
+      "level": "municipal",
+      "year": 2026,
+      "title": "2026 WA Seattle Municipal Court Pos. 3",
+      "status": "draft",
+      "url": "/races/wa-seattle-municipal-court-pos-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Pooja Vaddadi",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "vaddadi",
+          "status": "Advanced to General",
+          "url": "/races/wa-seattle-municipal-court-pos-3-2026/vaddadi/"
+        }
+      ]
+    },
+    {
+      "id": "wa-seattle-municipal-court-pos-4-2026",
+      "state_abbr": "WA",
+      "office": "Seattle Municipal Court Pos. 4",
+      "level": "municipal",
+      "year": 2026,
+      "title": "2026 WA Seattle Municipal Court Pos. 4",
+      "status": "draft",
+      "url": "/races/wa-seattle-municipal-court-pos-4-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Anita Crawford-Willis",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "crawford-willis",
+          "status": "Advanced to General",
+          "url": "/races/wa-seattle-municipal-court-pos-4-2026/crawford-willis/"
+        }
+      ]
+    },
+    {
+      "id": "wa-seattle-municipal-court-pos-5-2026",
+      "state_abbr": "WA",
+      "office": "Seattle Municipal Court Pos. 5",
+      "level": "municipal",
+      "year": 2026,
+      "title": "2026 WA Seattle Municipal Court Pos. 5",
+      "status": "draft",
+      "url": "/races/wa-seattle-municipal-court-pos-5-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Garmon Newsom",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "newsom",
+          "status": "In Primary",
+          "url": "/races/wa-seattle-municipal-court-pos-5-2026/newsom/"
+        },
+        {
+          "name": "Lindsay Calkins",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "calkins",
+          "status": "In Primary",
+          "url": "/races/wa-seattle-municipal-court-pos-5-2026/calkins/"
+        },
+        {
+          "name": "Gabe Rothstein",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "rothstein",
+          "status": "In Primary",
+          "url": "/races/wa-seattle-municipal-court-pos-5-2026/rothstein/"
+        }
+      ]
+    },
+    {
+      "id": "wa-seattle-municipal-court-pos-6-2026",
+      "state_abbr": "WA",
+      "office": "Seattle Municipal Court Pos. 6",
+      "level": "municipal",
+      "year": 2026,
+      "title": "2026 WA Seattle Municipal Court Pos. 6",
+      "status": "draft",
+      "url": "/races/wa-seattle-municipal-court-pos-6-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Shantrice Anderson",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "anderson",
+          "status": "Advanced to General",
+          "url": "/races/wa-seattle-municipal-court-pos-6-2026/anderson/"
+        }
+      ]
+    },
+    {
+      "id": "wa-seattle-municipal-court-pos-7-2026",
+      "state_abbr": "WA",
+      "office": "Seattle Municipal Court Pos. 7",
+      "level": "municipal",
+      "year": 2026,
+      "title": "2026 WA Seattle Municipal Court Pos. 7",
+      "status": "draft",
+      "url": "/races/wa-seattle-municipal-court-pos-7-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Damon Shadid",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "shadid",
+          "status": "Advanced to General",
+          "url": "/races/wa-seattle-municipal-court-pos-7-2026/shadid/"
+        }
+      ]
+    },
+    {
+      "id": "wa-skagit-pud-pud-commissioner-dist-1-2026",
+      "state_abbr": "WA",
+      "office": "Skagit County PUD Commissioner Dist. 1",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Skagit County PUD Commissioner Dist. 1",
+      "status": "draft",
+      "url": "/races/wa-skagit-pud-pud-commissioner-dist-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Andrew Miller",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "miller",
+          "status": "Advanced to General",
+          "url": "/races/wa-skagit-pud-pud-commissioner-dist-1-2026/miller/"
+        },
+        {
+          "name": "Spencer Roozen",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "roozen",
+          "status": "Advanced to General",
+          "url": "/races/wa-skagit-pud-pud-commissioner-dist-1-2026/roozen/"
+        }
+      ]
+    },
+    {
+      "id": "wa-skagit-superior-court-pos-4-2026",
+      "state_abbr": "WA",
+      "office": "Skagit Superior Court Pos. 4",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Skagit Superior Court Pos. 4",
+      "status": "draft",
+      "url": "/races/wa-skagit-superior-court-pos-4-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Mary Crandall",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "crandall",
+          "status": "Elected",
+          "url": "/races/wa-skagit-superior-court-pos-4-2026/crandall/"
+        }
+      ]
+    },
+    {
+      "id": "wa-skamania-pud-pud-commissioner-dist-3-2026",
+      "state_abbr": "WA",
+      "office": "Skamania PUD Commissioner Dist. 3",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Skamania PUD Commissioner Dist. 3",
+      "status": "draft",
+      "url": "/races/wa-skamania-pud-pud-commissioner-dist-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Liz Green",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "green",
+          "status": "Advanced to General",
+          "url": "/races/wa-skamania-pud-pud-commissioner-dist-3-2026/green/"
+        },
+        {
+          "name": "Addison Dillon",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "dillon",
+          "status": "Advanced to General",
+          "url": "/races/wa-skamania-pud-pud-commissioner-dist-3-2026/dillon/"
+        }
+      ]
+    },
+    {
+      "id": "wa-snohomish-district-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Snohomish District Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Snohomish District Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-snohomish-district-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Wade S. Samuelson",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "samuelson",
+          "status": "Advanced to General",
+          "url": "/races/wa-snohomish-district-court-pos-1-2026/samuelson/"
+        }
+      ]
+    },
+    {
+      "id": "wa-snohomish-district-court-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "Snohomish District Court Pos. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Snohomish District Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-snohomish-district-court-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "RW Buzzard",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "buzzard",
+          "status": "Advanced to General",
+          "url": "/races/wa-snohomish-district-court-pos-2-2026/buzzard/"
+        }
+      ]
+    },
+    {
+      "id": "wa-snohomish-north-district-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Snohomish North District Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Snohomish North District Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-snohomish-north-district-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Scott Harmer",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "harmer",
+          "status": "Advanced to General",
+          "url": "/races/wa-snohomish-north-district-court-pos-1-2026/harmer/"
+        }
+      ]
+    },
+    {
+      "id": "wa-snohomish-pud-1-pud-commissioner-dist-1-2026",
+      "state_abbr": "WA",
+      "office": "Snohomish County PUD No. 1 Commissioner Dist. 1",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Snohomish County PUD No. 1 Commissioner Dist. 1",
+      "status": "draft",
+      "url": "/races/wa-snohomish-pud-1-pud-commissioner-dist-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Sid Logan",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "logan",
+          "status": "In Primary",
+          "url": "/races/wa-snohomish-pud-1-pud-commissioner-dist-1-2026/logan/"
+        },
+        {
+          "name": "Janet St Clair",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "clair",
+          "status": "In Primary",
+          "url": "/races/wa-snohomish-pud-1-pud-commissioner-dist-1-2026/clair/"
+        },
+        {
+          "name": "Bruce King",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "king",
+          "status": "In Primary",
+          "url": "/races/wa-snohomish-pud-1-pud-commissioner-dist-1-2026/king/"
+        }
+      ]
+    },
+    {
+      "id": "wa-snohomish-south-district-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Snohomish South District Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Snohomish South District Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-snohomish-south-district-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Elizabeth Fraser",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "fraser",
+          "status": "Advanced to General",
+          "url": "/races/wa-snohomish-south-district-court-pos-1-2026/fraser/"
+        }
+      ]
+    },
+    {
+      "id": "wa-snohomish-south-district-court-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "Snohomish South District Court Pos. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Snohomish South District Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-snohomish-south-district-court-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Jeffrey D. Goodwin",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "goodwin",
+          "status": "Advanced to General",
+          "url": "/races/wa-snohomish-south-district-court-pos-2-2026/goodwin/"
+        }
+      ]
+    },
+    {
+      "id": "wa-snohomish-south-district-court-pos-3-2026",
+      "state_abbr": "WA",
+      "office": "Snohomish South District Court Pos. 3",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Snohomish South District Court Pos. 3",
+      "status": "draft",
+      "url": "/races/wa-snohomish-south-district-court-pos-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Matthew Baldock",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "baldock",
+          "status": "Advanced to General",
+          "url": "/races/wa-snohomish-south-district-court-pos-3-2026/baldock/"
+        }
+      ]
+    },
+    {
+      "id": "wa-spokane-district-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Spokane District Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Spokane District Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-spokane-district-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Mindy Walker",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "walker",
+          "status": "Advanced to General",
+          "url": "/races/wa-spokane-district-court-pos-1-2026/walker/"
+        },
+        {
+          "name": "Kevin G. Blondin",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "blondin",
+          "status": "Advanced to General",
+          "url": "/races/wa-spokane-district-court-pos-1-2026/blondin/"
+        }
+      ]
+    },
+    {
+      "id": "wa-spokane-district-court-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "Spokane District Court Pos. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Spokane District Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-spokane-district-court-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "M. Jamie Imboden",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "imboden",
+          "status": "Advanced to General",
+          "url": "/races/wa-spokane-district-court-pos-2-2026/imboden/"
+        }
+      ]
+    },
+    {
+      "id": "wa-spokane-district-court-pos-3-2026",
+      "state_abbr": "WA",
+      "office": "Spokane District Court Pos. 3",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Spokane District Court Pos. 3",
+      "status": "draft",
+      "url": "/races/wa-spokane-district-court-pos-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Christopher Eastwood",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "eastwood",
+          "status": "Advanced to General",
+          "url": "/races/wa-spokane-district-court-pos-3-2026/eastwood/"
+        },
+        {
+          "name": "Nicole G. Knowles",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "knowles",
+          "status": "Advanced to General",
+          "url": "/races/wa-spokane-district-court-pos-3-2026/knowles/"
+        }
+      ]
+    },
+    {
+      "id": "wa-spokane-superior-court-pos-3-2026",
+      "state_abbr": "WA",
+      "office": "Spokane Superior Court Pos. 3",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Spokane Superior Court Pos. 3",
+      "status": "draft",
+      "url": "/races/wa-spokane-superior-court-pos-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Candie M. Dibble",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "dibble",
+          "status": "Elected",
+          "url": "/races/wa-spokane-superior-court-pos-3-2026/dibble/"
+        }
+      ]
+    },
+    {
+      "id": "wa-stevens-pud-1-pud-commissioner-dist-2-2026",
+      "state_abbr": "WA",
+      "office": "Stevens County PUD No. 1 Commissioner Dist. 2",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Stevens County PUD No. 1 Commissioner Dist. 2",
+      "status": "draft",
+      "url": "/races/wa-stevens-pud-1-pud-commissioner-dist-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Howie Kubik",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "kubik",
+          "status": "Advanced to General",
+          "url": "/races/wa-stevens-pud-1-pud-commissioner-dist-2-2026/kubik/"
+        },
+        {
+          "name": "Andrea Morgan",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "morgan",
+          "status": "Advanced to General",
+          "url": "/races/wa-stevens-pud-1-pud-commissioner-dist-2-2026/morgan/"
+        }
+      ]
+    },
+    {
+      "id": "wa-supreme-court-justice-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "WA Supreme Court Justice Pos. 1",
+      "level": "statewide",
+      "year": 2026,
+      "title": "2026 WA WA Supreme Court Justice Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-supreme-court-justice-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Anne Melani Bremner",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "bremner",
+          "status": "In Primary",
+          "url": "/races/wa-supreme-court-justice-pos-1-2026/bremner/"
+        },
+        {
+          "name": "Colleen Melody",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "melody",
+          "status": "In Primary",
+          "url": "/races/wa-supreme-court-justice-pos-1-2026/melody/"
+        },
+        {
+          "name": "Laura Christensen Colberg",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "colberg",
+          "status": "In Primary",
+          "url": "/races/wa-supreme-court-justice-pos-1-2026/colberg/"
+        },
+        {
+          "name": "Scott Edwards",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "edwards",
+          "status": "In Primary",
+          "url": "/races/wa-supreme-court-justice-pos-1-2026/edwards/"
+        }
+      ]
+    },
+    {
+      "id": "wa-supreme-court-justice-pos-3-2026",
+      "state_abbr": "WA",
+      "office": "WA Supreme Court Justice Pos. 3",
+      "level": "statewide",
+      "year": 2026,
+      "title": "2026 WA WA Supreme Court Justice Pos. 3",
+      "status": "draft",
+      "url": "/races/wa-supreme-court-justice-pos-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Jaime Michelle Hawk",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "hawk",
+          "status": "In Primary",
+          "url": "/races/wa-supreme-court-justice-pos-3-2026/hawk/"
+        },
+        {
+          "name": "David Stevens",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "stevens",
+          "status": "In Primary",
+          "url": "/races/wa-supreme-court-justice-pos-3-2026/stevens/"
+        },
+        {
+          "name": "Mike Diaz",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "diaz",
+          "status": "In Primary",
+          "url": "/races/wa-supreme-court-justice-pos-3-2026/diaz/"
+        }
+      ]
+    },
+    {
+      "id": "wa-supreme-court-justice-pos-4-2026",
+      "state_abbr": "WA",
+      "office": "WA Supreme Court Justice Pos. 4",
+      "level": "statewide",
+      "year": 2026,
+      "title": "2026 WA WA Supreme Court Justice Pos. 4",
+      "status": "draft",
+      "url": "/races/wa-supreme-court-justice-pos-4-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Ian Birk",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "birk",
+          "status": "Advanced to General",
+          "url": "/races/wa-supreme-court-justice-pos-4-2026/birk/"
+        },
+        {
+          "name": "Sean O'Donnell",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "o'donnell",
+          "status": "Advanced to General",
+          "url": "/races/wa-supreme-court-justice-pos-4-2026/o'donnell/"
+        }
+      ]
+    },
+    {
+      "id": "wa-supreme-court-justice-pos-5-2026",
+      "state_abbr": "WA",
+      "office": "WA Supreme Court Justice Pos. 5",
+      "level": "statewide",
+      "year": 2026,
+      "title": "2026 WA WA Supreme Court Justice Pos. 5",
+      "status": "draft",
+      "url": "/races/wa-supreme-court-justice-pos-5-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Greg Miller",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "miller",
+          "status": "In Primary",
+          "url": "/races/wa-supreme-court-justice-pos-5-2026/miller/"
+        },
+        {
+          "name": "Theo Angelis",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "angelis",
+          "status": "In Primary",
+          "url": "/races/wa-supreme-court-justice-pos-5-2026/angelis/"
+        },
+        {
+          "name": "Dave Larson",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "larson",
+          "status": "In Primary",
+          "url": "/races/wa-supreme-court-justice-pos-5-2026/larson/"
+        },
+        {
+          "name": "Sharonda Amamilo",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "amamilo",
+          "status": "In Primary",
+          "url": "/races/wa-supreme-court-justice-pos-5-2026/amamilo/"
+        }
+      ]
+    },
+    {
+      "id": "wa-supreme-court-justice-pos-7-2026",
+      "state_abbr": "WA",
+      "office": "WA Supreme Court Justice Pos. 7",
+      "level": "statewide",
+      "year": 2026,
+      "title": "2026 WA WA Supreme Court Justice Pos. 7",
+      "status": "draft",
+      "url": "/races/wa-supreme-court-justice-pos-7-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "David R Shelvey",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "shelvey",
+          "status": "In Primary",
+          "url": "/races/wa-supreme-court-justice-pos-7-2026/shelvey/"
+        },
+        {
+          "name": "Debra L. Stephens",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "stephens",
+          "status": "In Primary",
+          "url": "/races/wa-supreme-court-justice-pos-7-2026/stephens/"
+        },
+        {
+          "name": "Karim A. Merchant",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "merchant",
+          "status": "In Primary",
+          "url": "/races/wa-supreme-court-justice-pos-7-2026/merchant/"
+        },
+        {
+          "name": "Todd A. Bloom",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "bloom",
+          "status": "In Primary",
+          "url": "/races/wa-supreme-court-justice-pos-7-2026/bloom/"
+        }
+      ]
+    },
+    {
+      "id": "wa-tacoma-municipal-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Tacoma Municipal Court Pos. 1",
+      "level": "municipal",
+      "year": 2026,
+      "title": "2026 WA Tacoma Municipal Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-tacoma-municipal-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Dee Sonntag",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "sonntag",
+          "status": "Advanced to General",
+          "url": "/races/wa-tacoma-municipal-court-pos-1-2026/sonntag/"
+        }
+      ]
+    },
+    {
+      "id": "wa-tacoma-municipal-court-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "Tacoma Municipal Court Pos. 2",
+      "level": "municipal",
+      "year": 2026,
+      "title": "2026 WA Tacoma Municipal Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-tacoma-municipal-court-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Sergio C. Flores",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "flores",
+          "status": "Advanced to General",
+          "url": "/races/wa-tacoma-municipal-court-pos-2-2026/flores/"
+        }
+      ]
+    },
+    {
+      "id": "wa-tacoma-municipal-court-pos-3-2026",
+      "state_abbr": "WA",
+      "office": "Tacoma Municipal Court Pos. 3",
+      "level": "municipal",
+      "year": 2026,
+      "title": "2026 WA Tacoma Municipal Court Pos. 3",
+      "status": "draft",
+      "url": "/races/wa-tacoma-municipal-court-pos-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Steven J. Krupa",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "krupa",
+          "status": "Advanced to General",
+          "url": "/races/wa-tacoma-municipal-court-pos-3-2026/krupa/"
+        }
+      ]
+    },
+    {
+      "id": "wa-thurston-district-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Thurston District Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Thurston District Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-thurston-district-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Claire A. Bradley",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "bradley",
+          "status": "Advanced to General",
+          "url": "/races/wa-thurston-district-court-pos-1-2026/bradley/"
+        }
+      ]
+    },
+    {
+      "id": "wa-thurston-district-court-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "Thurston District Court Pos. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Thurston District Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-thurston-district-court-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Gina M Buskirk",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "buskirk",
+          "status": "Advanced to General",
+          "url": "/races/wa-thurston-district-court-pos-2-2026/buskirk/"
+        }
+      ]
+    },
+    {
+      "id": "wa-thurston-district-court-pos-3-2026",
+      "state_abbr": "WA",
+      "office": "Thurston District Court Pos. 3",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Thurston District Court Pos. 3",
+      "status": "draft",
+      "url": "/races/wa-thurston-district-court-pos-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Shane R. Seaman",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "seaman",
+          "status": "Advanced to General",
+          "url": "/races/wa-thurston-district-court-pos-3-2026/seaman/"
+        }
+      ]
+    },
+    {
+      "id": "wa-thurston-district-court-pos-4-2026",
+      "state_abbr": "WA",
+      "office": "Thurston District Court Pos. 4",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Thurston District Court Pos. 4",
+      "status": "draft",
+      "url": "/races/wa-thurston-district-court-pos-4-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Kevin P Kelly",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "kelly",
+          "status": "Advanced to General",
+          "url": "/races/wa-thurston-district-court-pos-4-2026/kelly/"
+        }
+      ]
+    },
+    {
+      "id": "wa-thurston-pud-pud-commissioner-dist-1-2026",
+      "state_abbr": "WA",
+      "office": "Thurston PUD Commissioner Dist. 1",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Thurston PUD Commissioner Dist. 1",
+      "status": "draft",
+      "url": "/races/wa-thurston-pud-pud-commissioner-dist-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Troy Kirby",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "kirby",
+          "status": "In Primary",
+          "url": "/races/wa-thurston-pud-pud-commissioner-dist-1-2026/kirby/"
+        },
+        {
+          "name": "Bruce D. Wilkinson, Jr.",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "wilkinson",
+          "status": "In Primary",
+          "url": "/races/wa-thurston-pud-pud-commissioner-dist-1-2026/wilkinson/"
+        },
+        {
+          "name": "Jim Campbell",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "campbell",
+          "status": "In Primary",
+          "url": "/races/wa-thurston-pud-pud-commissioner-dist-1-2026/campbell/"
+        }
+      ]
+    },
+    {
+      "id": "wa-thurston-pud-pud-commissioner-dist-3-2026",
+      "state_abbr": "WA",
+      "office": "Thurston PUD Commissioner Dist. 3",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Thurston PUD Commissioner Dist. 3",
+      "status": "draft",
+      "url": "/races/wa-thurston-pud-pud-commissioner-dist-3-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Jeff Curry",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "curry",
+          "status": "Advanced to General",
+          "url": "/races/wa-thurston-pud-pud-commissioner-dist-3-2026/curry/"
+        },
+        {
+          "name": "Christopher Pettit",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "pettit",
+          "status": "Advanced to General",
+          "url": "/races/wa-thurston-pud-pud-commissioner-dist-3-2026/pettit/"
+        }
+      ]
+    },
+    {
+      "id": "wa-thurston-south-district-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Thurston South District Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Thurston South District Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-thurston-south-district-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Nancy R. McAllister",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "mcallister",
+          "status": "Advanced to General",
+          "url": "/races/wa-thurston-south-district-court-pos-1-2026/mcallister/"
+        }
+      ]
+    },
+    {
+      "id": "wa-upper-county-district-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Upper County District Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Upper County District Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-upper-county-district-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Craig Juris",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "juris",
+          "status": "Advanced to General",
+          "url": "/races/wa-upper-county-district-court-pos-1-2026/juris/"
+        }
+      ]
+    },
+    {
+      "id": "wa-wahkiakum-pud-pud-commissioner-dist-1-2026",
+      "state_abbr": "WA",
+      "office": "Wahkiakum PUD Commissioner Dist. 1",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Wahkiakum PUD Commissioner Dist. 1",
+      "status": "draft",
+      "url": "/races/wa-wahkiakum-pud-pud-commissioner-dist-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Gene Healy",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "healy",
+          "status": "Advanced to General",
+          "url": "/races/wa-wahkiakum-pud-pud-commissioner-dist-1-2026/healy/"
+        }
+      ]
+    },
+    {
+      "id": "wa-whatcom-1-district-court-pos-1-2026",
+      "state_abbr": "WA",
+      "office": "Whatcom Dist. 1 District Court Pos. 1",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Whatcom Dist. 1 District Court Pos. 1",
+      "status": "draft",
+      "url": "/races/wa-whatcom-1-district-court-pos-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Alex Schodowski",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "schodowski",
+          "status": "Advanced to General",
+          "url": "/races/wa-whatcom-1-district-court-pos-1-2026/schodowski/"
+        },
+        {
+          "name": "Patrick David Murphy",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "murphy",
+          "status": "Advanced to General",
+          "url": "/races/wa-whatcom-1-district-court-pos-1-2026/murphy/"
+        }
+      ]
+    },
+    {
+      "id": "wa-whatcom-2-district-court-pos-2-2026",
+      "state_abbr": "WA",
+      "office": "Whatcom Dist. 2 District Court Pos. 2",
+      "level": "county",
+      "year": 2026,
+      "title": "2026 WA Whatcom Dist. 2 District Court Pos. 2",
+      "status": "draft",
+      "url": "/races/wa-whatcom-2-district-court-pos-2-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "BRUCE HANIFY",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "hanify",
+          "status": "Advanced to General",
+          "url": "/races/wa-whatcom-2-district-court-pos-2-2026/hanify/"
+        }
+      ]
+    },
+    {
+      "id": "wa-whatcom-pud-1-pud-commissioner-dist-1-2026",
+      "state_abbr": "WA",
+      "office": "Whatcom County PUD No. 1 Commissioner Dist. 1",
+      "level": "special_district",
+      "year": 2026,
+      "title": "2026 WA Whatcom County PUD No. 1 Commissioner Dist. 1",
+      "status": "draft",
+      "url": "/races/wa-whatcom-pud-1-pud-commissioner-dist-1-2026/",
+      "primary_date": "August 4, 2026",
+      "general_date": "November 3, 2026",
+      "candidates": [
+        {
+          "name": "Eddy Ury",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "ury",
+          "status": "Advanced to General",
+          "url": "/races/wa-whatcom-pud-1-pud-commissioner-dist-1-2026/ury/"
+        },
+        {
+          "name": "Frank Imhof",
+          "party": "nonpartisan",
+          "role": "Filed",
+          "slug": "imhof",
+          "status": "Advanced to General",
+          "url": "/races/wa-whatcom-pud-1-pud-commissioner-dist-1-2026/imhof/"
         }
       ]
     }

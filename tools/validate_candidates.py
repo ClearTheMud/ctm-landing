@@ -110,7 +110,7 @@ def normalize_party_json(party_str):
         'Fifth Republic': 'other', 'Socialist Workers': 'other',
         'Union': 'other', 'No Kings': 'other',
         'Pro Gun Liberal': 'other', 'Standup-America': 'other',
-        'TEA': 'other', 'Tea': 'other',
+        'TEA': 'other', 'Tea': 'other', 'tea': 'other',
         '': 'nonpartisan',
     }
     return mapping.get(p, 'unknown')
@@ -164,37 +164,72 @@ def normalize_race_type(district_type, race, district):
     if 'prosecutor' in race_lower:
         return ('Prosecutor', 'county')
 
-    # Commissioner
+    # Supreme Court
+    dist_upper = dist.upper()
+    if 'SUPREME' in dist_upper or 'SUPREME' in race_upper:
+        m = re.search(r'(\d+)', race_clean)
+        return ('Supreme Court', m.group(1) if m else '?')
+
+    # Court of Appeals
+    if 'APPEALS' in dist_upper or 'APPEALS' in race_upper:
+        div_m = re.search(r'DIVISION\s+(\d+)', dist_upper)
+        dist_m = re.search(r'DISTRICT\s+(\d+)', dist_upper)
+        pos_m = re.search(r'(\d+)', race_clean)
+        key = f"div{div_m.group(1) if div_m else '?'}-dist{dist_m.group(1) if dist_m else '?'}-pos{pos_m.group(1) if pos_m else '?'}"
+        return ('Court of Appeals', key)
+
+    # Superior Court (not Clerk)
+    if 'SUPERIOR' in dist_upper and 'CLERK' not in race_upper:
+        pos_m = re.search(r'(\d+)', race_clean)
+        return ('Superior Court', f"{dist}|{pos_m.group(1) if pos_m else '?'}")
+
+    # PUD Commissioner (before generic Commissioner)
+    if dt == 'PUBLIC UTILITY' or 'PUD' in dist_upper or 'UTILITY' in dist_upper or 'PUD' in race_upper:
+        pos_m = re.search(r'(\d+|[A-Za-z])\s*$', re.sub(r'(commissioner|comm|dist|district|no|#|\.|-|,)', '', dist.lower()).strip())
+        if not pos_m:
+            pos_m = re.search(r'(\d+)', race_clean)
+        return ('PUD Commissioner', f"{dist}|{pos_m.group(1) if pos_m else '?'}")
+
+    # Port Commissioner (before generic Commissioner)
+    if 'PORT' in dist_upper:
+        pos_m = re.search(r'(\d+)', race_clean + ' ' + dist)
+        return ('Port Commissioner', f"{dist}|{pos_m.group(1) if pos_m else '?'}")
+
+    # Municipal Court
+    if 'MUNICIPAL' in race_upper:
+        pos_m = re.search(r'(\d+)', race_clean)
+        return ('Municipal Court', f"{dist}|{pos_m.group(1) if pos_m else '?'}")
+
+    # KC Electoral District Court
+    if 'ELECTORAL' in dist_upper:
+        pos_m = re.search(r'(\d+)', race_clean)
+        return ('KC Electoral Court', f"{dist}|{pos_m.group(1) if pos_m else '?'}")
+
+    # County Council / Councilor
+    if 'COUNTY COUNCIL' in dist_upper or 'COUNTY COUNCILOR' in dist_upper:
+        pos_m = re.search(r'(\d+)', race_clean + ' ' + dist)
+        return ('County Council', f"{dist}|{pos_m.group(1) if pos_m else '?'}")
+
+    # City Council
+    if ('SEATTLE CITY COUNCIL' in dist_upper or ('CITY' in dist_upper and 'COUNCIL' in race_upper)):
+        pos_m = re.search(r'(\d+)', race_clean)
+        return ('City Council', f"{dist}|{pos_m.group(1) if pos_m else '?'}")
+
+    # Commissioner (county-level, after PUD/Port)
     if 'commissioner' in race_lower or 'COMMISSIONER' in dt:
         m = re.search(r'(\d+)', race_clean + ' ' + dist)
         num = m.group(1) if m else '?'
         return ('Commissioner', num)
 
-    # District Court Judge
-    if 'district court' in race_lower:
-        m = re.search(r'(?:pos(?:ition)?\.?\s*|#|dept\.?\s*)(\d+)', race_lower)
+    # District Court Judge (judicial and county-level)
+    if 'district court' in race_lower or 'DISTRICT COURT' in dist_upper:
+        m = re.search(r'(?:pos(?:ition)?\.?\s*|#|dept\.?\s*|department\s*(?:no\.?\s*)?)(\d+)', race_lower)
         if m:
             return ('District Court Judge', m.group(1))
-        m = re.search(r'judge\s*(\d+)', race_lower)
+        m = re.search(r'(?:judge|court)\s*(?:no\.?\s*)?(\d+)', race_lower)
         if m:
             return ('District Court Judge', m.group(1))
         return ('District Court Judge', '0')
-
-    # Superior Court / Appeals
-    if 'superior court' in race_lower or 'court of appeals' in race_lower:
-        return ('Higher Court', dist)
-
-    # PUD Commissioner
-    if dt == 'PUBLIC UTILITY' or 'pud' in race_lower:
-        return ('PUD', dist)
-
-    # Port
-    if dt == 'PORT':
-        return ('Port', dist)
-
-    # City/Council
-    if dt in ('COUNCIL', 'CITY/TOWN', 'CITY COUNCIL'):
-        return ('Municipal', dist)
 
     # Director of Community Development, Director of Elections, etc.
     if 'director' in race_lower:
@@ -223,8 +258,57 @@ def map_json_race_to_category(race_obj):
         m = re.search(r'house-(\d+)', race_id)
         return ('State House Pos. 2', m.group(1) if m else '?')
 
-    # County-level normalization
     off_lower = office.lower()
+
+    # Supreme Court
+    if 'supreme court' in off_lower:
+        m = re.search(r'(\d+)', office)
+        return ('Supreme Court', m.group(1) if m else '?')
+
+    # Court of Appeals
+    if 'court of appeals' in off_lower or 'appeals-div' in race_id:
+        div_m = re.search(r'div[.-]?\s*(\d+)', race_id)
+        dist_m = re.search(r'dist[.-]?\s*(\d+)', race_id)
+        pos_m = re.search(r'pos[.-]?\s*(\d+)', race_id)
+        key = f"div{div_m.group(1) if div_m else '?'}-dist{dist_m.group(1) if dist_m else '?'}-pos{pos_m.group(1) if pos_m else '?'}"
+        return ('Court of Appeals', key)
+
+    # Superior Court (but not Clerk of Superior Court)
+    if 'superior court' in off_lower and 'clerk' not in off_lower:
+        pos_m = re.search(r'(\d+)', office)
+        return ('Superior Court', f"{office}|{pos_m.group(1) if pos_m else '?'}")
+
+    # PUD Commissioner (before generic Commissioner)
+    if 'pud' in off_lower or 'pud' in race_id:
+        pos_m = re.search(r'dist[.-]?\s*(\d+|[a-z])', race_id)
+        return ('PUD Commissioner', f"{office}|{pos_m.group(1) if pos_m else '?'}")
+
+    # Port Commissioner (before generic Commissioner)
+    if 'port' in off_lower and 'commissioner' in off_lower:
+        pos_m = re.search(r'dist[.-]?\s*(\d+)', race_id)
+        return ('Port Commissioner', f"{office}|{pos_m.group(1) if pos_m else '?'}")
+
+    # Municipal Court
+    if 'municipal court' in off_lower:
+        pos_m = re.search(r'(\d+)', office)
+        return ('Municipal Court', f"{office}|{pos_m.group(1) if pos_m else '?'}")
+
+    # KC Electoral District Court
+    if 'electoral' in off_lower or 'electoral' in race_id:
+        pos_m = re.search(r'(\d+)', office)
+        return ('KC Electoral Court', f"{office}|{pos_m.group(1) if pos_m else '?'}")
+
+    # County Council
+    if 'county council' in off_lower:
+        pos_m = re.search(r'(\d+)', office)
+        return ('County Council', f"{office}|{pos_m.group(1) if pos_m else '?'}")
+
+    # City Council
+    if 'city council' in off_lower:
+        pos_m = re.search(r'(\d+)', office)
+        return ('City Council', f"{office}|{pos_m.group(1) if pos_m else '?'}")
+
+    # County-level normalization
     if 'assessor' in off_lower:
         return ('Assessor', 'county')
     if 'auditor' in off_lower:
@@ -368,21 +452,23 @@ def match_candidates(csv_cands, json_cands):
                         csv_matched.add(i)
                         break
 
-    # Pass 2: Exact name match for county-level (no district key)
+    # Pass 2: Exact name match by category (county-level + new race types)
+    NEW_CATS = {'Supreme Court', 'Court of Appeals', 'Superior Court', 'PUD Commissioner',
+                'Port Commissioner', 'Municipal Court', 'KC Electoral Court', 'County Council',
+                'City Council', 'District Court Judge'}
     for i, cc in enumerate(csv_cands):
         if i in csv_matched:
             continue
-        if cc['race_key'] == 'county':
-            cat = cc['race_category']
-            # Normalize prosecutor categories for matching
-            match_cats = {cat}
-            if cat in ('Prosecuting Attorney', 'Prosecutor'):
-                match_cats = {'Prosecuting Attorney', 'Prosecutor'}
+        cat = cc['race_category']
+        match_cats = {cat}
+        if cat in ('Prosecuting Attorney', 'Prosecutor'):
+            match_cats = {'Prosecuting Attorney', 'Prosecutor'}
+        if cc['race_key'] == 'county' or cat in NEW_CATS:
             for jc in json_by_name.get(cc['name_norm'], []):
                 jid = id(jc)
                 if jid in json_matched:
                     continue
-                if jc['race_category'] in match_cats or jc['race_key'] == 'county':
+                if jc['race_category'] in match_cats or (cc['race_key'] == 'county' and jc['race_key'] == 'county'):
                     results['matched'].append((cc, jc))
                     json_matched.add(jid)
                     csv_matched.add(i)
