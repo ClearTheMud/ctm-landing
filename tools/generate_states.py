@@ -25,6 +25,13 @@ SITE_URL = "https://clearthemud.org"
 
 SENATE_CLASS_YEARS = {1: 2030, 2: 2026, 3: 2028}
 
+SENATE_2026_STATES = {
+    "AL", "AK", "AR", "CO", "DE", "GA", "ID", "IL", "IA", "KS",
+    "KY", "LA", "ME", "MA", "MI", "MN", "MS", "MT", "NE", "NH",
+    "NJ", "NM", "NC", "OK", "OR", "RI", "SC", "SD", "TN", "TX",
+    "VA", "WV", "WY",
+}
+
 
 def load_data():
     with open(DATA_DIR / "states.json") as f:
@@ -377,13 +384,17 @@ def render_states_index(states, races_by_state, cycle):
     active_count = sum(1 for s in states if s["abbr"] in races_by_state)
     total_races = sum(len(v) for v in races_by_state.values())
 
-    # State data for JS — includes dossier counts per state
+    # State data for JS — includes dossier counts and senate flag per state
+    all_abbrs = sorted(set(list(races_by_state.keys()) + list(SENATE_2026_STATES)))
     state_data_entries = []
-    for abbr in sorted(races_by_state.keys()):
-        state_races = races_by_state[abbr]
+    for abbr in all_abbrs:
+        state_races = races_by_state.get(abbr, [])
         total_candidates = sum(len(r.get("candidates", [])) for r in state_races)
-        total_races = len(state_races)
-        state_data_entries.append(f'"{abbr}":{{"dossiers":{total_candidates},"races":{total_races}}}')
+        race_count = len(state_races)
+        senate = "true" if abbr in SENATE_2026_STATES else "false"
+        state_data_entries.append(
+            f'"{abbr}":{{"dossiers":{total_candidates},"races":{race_count},"senate":{senate}}}'
+        )
     state_data_js = "{" + ",".join(state_data_entries) + "}"
 
     # SVG map
@@ -395,6 +406,7 @@ def render_states_index(states, races_by_state, cycle):
     {svg_content}
     <div class="map-legend">
       <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--active"></span> Published dossiers</span>
+      <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--senate"></span> 2026 U.S. Senate race</span>
       <span class="map-legend-item"><span class="map-legend-swatch map-legend-swatch--inactive"></span> Not yet covered</span>
     </div>
     <p class="map-fallback-link">Or <a href="#state-grid">browse the full list below</a></p>
