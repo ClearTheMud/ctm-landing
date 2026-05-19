@@ -1,5 +1,5 @@
 # WA Candidate Validation Report
-**Generated:** 2026-05-18 17:17
+**Generated:** 2026-05-19 07:25
 **Data Source:** WA Secretary of State CandidateList.csv (voter.votewa.gov)
 **Engagement:** C6S Data Quality Assessment — Engagement 7
 
