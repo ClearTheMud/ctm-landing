@@ -129,7 +129,7 @@ Only T0-T2 verified findings may be published. T3/T4 data, "RESEARCH NOTE" items
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **ctm-landing** (3848 symbols, 5213 relationships, 58 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **ctm-landing** (3877 symbols, 5244 relationships, 57 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 
