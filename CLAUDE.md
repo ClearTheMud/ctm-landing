@@ -138,6 +138,15 @@ No build tools, no JS frameworks. Push HTML to deploy.
 
 Only T0-T2 verified findings may be published. T3/T4 data, "RESEARCH NOTE" items, and "Journalist Leads" sections stay in local deliverables until vetted. Audit every finding's source tier before committing to this repo.
 
+### Findings Quality Gates
+
+Before publishing any finding, apply these filters:
+
+1. **T1 trumps T2/T3.** If a T1 source (SOS filing, official record) directly contradicts or renders a T2/T3 finding moot, drop the finding entirely. Example: SOS filing confirms residency → don't publish a "possible non-residency" finding based on an old media bio.
+2. **Verify domain ownership before claiming misuse.** A `.com` domain is not a government resource. Only `.gov`, `.us`, or domains confirmed as official county/state property count as government resources. Personal websites styled after an office name are not government resource misuse.
+3. **No speculative findings.** If a finding requires "may be," "could be," "raises questions," or "needs clarification" in its core claim, it is not verified — it is speculation. Either verify the claim to T1/T2 or drop it.
+4. **Temporal relevance.** Old media coverage does not establish current facts. Board bios, news articles, and social media posts reflect the time they were written. If stronger current evidence exists (SOS filings, current employment records), use the current evidence.
+
 ## Related
 
 - Data pipeline: `~/Local/Projects/github/clearthemud/` (private, ADO civic-tech)
@@ -147,7 +156,7 @@ Only T0-T2 verified findings may be published. T3/T4 data, "RESEARCH NOTE" items
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **ctm-landing** (3877 symbols, 5244 relationships, 57 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **ctm-landing** (3938 symbols, 5334 relationships, 60 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 
