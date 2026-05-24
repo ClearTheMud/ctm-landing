@@ -34,7 +34,10 @@ js/
   us-map.js                             -- Map interactivity (click, hover, keyboard, touch)
 tools/
   generate_states.py                    -- Generates states/ pages from data files
+  generate_candidate_pages.py           -- Generates race/candidate HTML from dossier JSON
+  build_county_hub.py                   -- End-to-end county buildout pipeline
   update_races.py                       -- CLI to add races/candidates and regenerate
+  COUNTY_BUILDOUT.md                    -- County buildout process documentation
   data/states.json                      -- 50-state reference data (static)
   data/races.json                       -- Active research tracker (edit per new race)
 ```
@@ -84,6 +87,21 @@ python3 tools/update_races.py regenerate
 4. Must include: `<link rel="stylesheet" href="/css/dossier.css">`, breadcrumb nav, party class on header
 5. Add link in the race overview page
 6. `git push` to deploy
+
+### County Buildout (After Dossiers Are Complete)
+
+```bash
+# Preview
+python3 tools/build_county_hub.py WA {county-slug} --dry-run
+
+# Build pages, regenerate state hub, get landing page snippet
+python3 tools/build_county_hub.py WA {county-slug}
+
+# List all counties and their build status
+python3 tools/build_county_hub.py WA --list-counties
+```
+
+See `tools/COUNTY_BUILDOUT.md` for the full process documentation.
 
 ### Manual Edit Alternative
 
