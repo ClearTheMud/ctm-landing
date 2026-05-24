@@ -1,0 +1,145 @@
+candidate_id: wa_prosecutor_grays-harbor_crawford_2026
+full_name: Daniel Crawford
+collector: clearasmud/wa_county_deep_dive
+source_aliases:
+  wa_sos:
+    tier: T1
+    source_name: Washington Secretary of State — Elections Division
+    url: https://www.sos.wa.gov/elections/
+    access_date: '2026-05-23'
+  wa_pdc:
+    tier: T1
+    source_name: Washington Public Disclosure Commission (PDC)
+    url: https://www.pdc.wa.gov/
+    access_date: '2026-05-23'
+  daily_world:
+    tier: T2
+    source_name: The Daily World (Aberdeen)
+    url: https://www.thedailyworld.com/
+    access_date: '2026-05-23'
+  chronline:
+    tier: T2
+    source_name: The Daily Chronicle (Centralia-Chehalis)
+    url: https://www.chronline.com/
+    access_date: '2026-05-23'
+  chinook_observer:
+    tier: T2
+    source_name: Chinook Observer
+    url: https://chinookobserver.com/
+    access_date: '2026-05-23'
+  opengovwa:
+    tier: T2
+    source_name: OpenGovWA — WSBA Attorney Records
+    url: https://opengovwa.com/
+    access_date: '2026-05-23'
+biographical:
+  residence:
+    claim: Grays Harbor County, Washington
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  party_affiliation:
+    claim: Republican
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  employment_history:
+  - claim: Grant County Prosecutor's Office, Ephrata, WA (early career, dates unknown)
+    sources:
+    - opengovwa
+    highest_tier: T2
+    confidence: single-source
+  - claim: Chief Deputy Prosecutor, Pacific County Prosecutor's Office (~2022 — mid-2024, approximately 2 years). Second-in-command. Described by Pacific County Prosecutor Michael Rothman as 'the backbone of the criminal division' and 'the driving force behind the homicide convictions obtained by the Pacific County Prosecutor's Office both by plea and trial since his arrival.' Salary at departure $10,816/month (~$129,800/year).
+    sources:
+    - chinook_observer
+    highest_tier: T2
+    confidence: corroborated
+  - claim: "Chief Criminal Deputy Prosecutor, Grays Harbor County Prosecutor's Office (August 2024 — present). Currently #2 prosecutor in the office, serving under appointed Prosecutor Jason Walker. Recruited from Pacific County with higher salary."
+    sources:
+    - daily_world
+    - chinook_observer
+    highest_tier: T2
+    confidence: corroborated
+  full_name:
+    claim: Daniel Crawford
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  bar_admission:
+    claim: "WSBA #43617, admitted May 23, 2011, Active status"
+    sources:
+    - opengovwa
+    highest_tier: T1
+    confidence: verified
+political_positions:
+  positions:
+  - topic: Criminal Prosecution Philosophy
+    topic_id: prosecution
+    current_position:
+      claim: Hard on crime approach. Advocates getting 'the worst of the worst people out of our community' while using therapeutic courts for those who can be helped. Pushes for more trials over plea deals.
+      sources:
+      - daily_world
+      highest_tier: T2
+      confidence: corroborated
+  - topic: Staff Retention and Compensation
+    topic_id: staff_retention
+    current_position:
+      claim: Vocal advocate for competitive prosecutor salaries. Requested $89,376 in annual raises for three prosecutors, warning that losing them would be 'catastrophic for being able to prosecute crime.' Clashed with Commissioner Georgia Miller over whether the issue was compensation or workplace culture.
+      sources:
+      - daily_world
+      highest_tier: T2
+      confidence: corroborated
+voting_record:
+  votes: []
+campaign_finance:
+  filing_entity:
+    claim: Campaign committee registered with WA PDC (details pending)
+    sources:
+    - wa_pdc
+    highest_tier: T1
+    confidence: single-source
+public_statements:
+  statements:
+  - statement: For the culture we're trying to grow here, we're going to be hard on crime, we're going to get the worst of the worst people out of our community, and the people we can help, we're going to do our best to put them in our therapeutic courts and help them.
+    is_direct_quote: true
+    date: '2025'
+    context: Interview with Daily World on office philosophy
+    topic_ids:
+    - prosecution
+  - statement: There were good reasons for that to be the final resolution, however, based on the actions, I am very disappointed this wasn't handled properly in the beginning.
+    is_direct_quote: true
+    date: '2025-02'
+    context: Regarding the Iseminger plea deal — charging errors made before Crawford's arrival forced a lesser plea
+    topic_ids:
+    - prosecution
+  - statement: We've been pushing for more trials, and public defense is less willing to accept plea deals.
+    is_direct_quote: true
+    date: '2025'
+    context: Statement on compensation negotiations
+    topic_ids:
+    - prosecution
+    - staff_retention
+notable_cases:
+- case: State v. Riley T. Carter
+  description: Former Aberdeen City Councilor. Found guilty on all 8 charges including 3 counts of rape of a child in the first degree, 3 counts of incest in the first degree, 1 count of child molestation in the first degree, 1 count of incest in the second degree. All counts with aggravating circumstances. Sentenced to minimum 46.5 years.
+  sources:
+  - daily_world
+- case: State v. Michael Leon Palmer
+  description: Convicted of 4 counts child molestation first degree, 1 count assault of a child second degree, 1 count assault fourth degree. Sentenced to 149-198 months to life after retrial.
+  sources:
+  - chronline
+- case: State v. Chad Baier
+  description: Pleaded guilty to incest first degree, rape of a child second degree, child molestation second degree, rape of a child third degree, child molestation third degree. Sentenced to 23 years to life.
+  sources:
+  - chronline
+endorsements:
+  received: []
+election_history:
+- year: 2026
+  race: Grays Harbor County Prosecuting Attorney
+  result: Pending (first-time candidate)
+  sources:
+  - wa_sos

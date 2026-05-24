@@ -1,0 +1,17 @@
+candidate_name: Josh Nuxoll
+findings:
+- title: No Identifiable Qualifications or Campaign Infrastructure
+  category: character
+  description: Josh Nuxoll has virtually no public digital footprint. No campaign
+    website, no press coverage beyond filing-week roundups, no campaign platform,
+    no professional appraisal credentials found in public records, no LinkedIn
+    profile, no news articles, and no PDC campaign finance filings. He filed on
+    May 4, 2026, and has produced no public campaign communications since.
+  source_tier: T1
+  political_impact: High
+  defense: Nuxoll may have relevant qualifications not discoverable through web
+    search. He may be building a grassroots campaign through personal networks
+    rather than digital media. Some county races in rural Washington are won on
+    personal relationships rather than campaign infrastructure.
+  source_urls:
+  - https://www.thedailyworld.com/2026/05/11/grays-harbor-county-2026-primary-races-set/

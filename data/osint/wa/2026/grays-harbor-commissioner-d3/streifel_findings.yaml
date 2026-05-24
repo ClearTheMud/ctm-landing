@@ -1,0 +1,48 @@
+candidate_name: JR Streifel
+findings:
+- title: Two Prior Election Losses — Serial Candidate Pattern
+  category: pattern
+  description: Streifel has lost two consecutive races — Commissioner D3 in 2022
+    (22.17%, third place) and State House LD24 in 2024 (23.12%, third place). Both
+    times he finished third and did not advance past the primary. His appointment to
+    the very position he lost in 2022 raises questions about persistence vs. electoral
+    appeal. Voters explicitly rejected him in favor of Raines and Zaborac in 2022.
+  source_tier: T1
+  political_impact: High
+  defense: Streifel's appointment demonstrates that the current commissioners (who
+    interviewed all 5 applicants) found him the most qualified for the job. His prior
+    losses were to a strong incumbent (Raines, who served 11 years) and in a crowded
+    primary. The appointment gives him an opportunity to demonstrate competence before
+    voters decide.
+  source_urls:
+  - https://ballotpedia.org/J.R._Streifel_(Grays_Harbor_County_Commissioner_3,_Washington,_candidate_2022)
+  - https://results.vote.wa.gov/results/20220802/graysharbor/
+- title: PDC Enforcement Warning — Late Disclosure Filings
+  category: financial
+  description: >-
+    In 2022, PDC enforcement Case #111040 was filed against Streifel for
+    failing to timely disclose contributions and expenditures on C-3 and C-4 reports,
+    violating RCW 42.17A.235 and .240. The case was closed with a written warning.
+    For a candidate running on public accountability, a campaign finance disclosure
+    violation is an optics issue.
+  source_tier: T1
+  political_impact: Moderate
+  defense: The violation was deemed minor by PDC staff — no financial penalties were
+    imposed, only a written warning. The amounts involved were small (his 2024 campaign
+    raised only $3,000 total).
+  source_urls:
+  - https://www.pdc.wa.gov/rules-enforcement/enforcement/enforcement-cases/111040
+- title: Appointed by the Board He'll Serve On — Insider Selection
+  category: pattern
+  description: Streifel was appointed to the commissioner seat by the same two
+    commissioners he will serve alongside (Georgia Miller, Rick Hole). This creates a
+    perception of insider selection rather than voter mandate. The other two
+    commissioners chose their own colleague from a pool of 5 applicants.
+  source_tier: T2
+  political_impact: Moderate
+  defense: The appointment process was public — all 5 candidates were interviewed in
+    an open meeting on April 28, 2026. This is the standard legal process under WA
+    law for filling mid-term vacancies. Streifel must still win the election to keep
+    the seat.
+  source_urls:
+  - https://www.thedailyworld.com/2026/05/06/grays-harbor-county-appoints-j-r-streifel-jr-as-district-3-commissioner/

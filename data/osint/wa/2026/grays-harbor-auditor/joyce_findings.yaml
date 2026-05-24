@@ -1,0 +1,18 @@
+candidate_name: Brielle S Joyce
+findings:
+- title: No Discoverable Public Profile or Campaign Infrastructure
+  category: character
+  description: Extensive OSINT research found virtually no information about Brielle
+    Joyce beyond her candidate filing. No campaign website, no social media campaign
+    accounts, no press coverage, no professional background, no endorsements, and
+    no public policy statements were discoverable. Her campaign email
+    (brielleforgraysharbor@gmail.com) suggests campaign intent, but no public-facing
+    activity has been identified.
+  source_tier: T1
+  political_impact: High
+  defense: Joyce may be building campaign infrastructure through personal networks or
+    has not yet launched her public campaign. As a Democratic candidate in a county
+    auditor race, she may be counting on party-line voting. Some first-time candidates
+    emerge later in the cycle.
+  source_urls:
+  - https://www.thedailyworld.com/2026/05/11/grays-harbor-county-2026-primary-races-set/

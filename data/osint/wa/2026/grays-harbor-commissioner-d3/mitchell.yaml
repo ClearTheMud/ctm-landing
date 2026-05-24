@@ -1,0 +1,55 @@
+candidate_id: wa_commissioner-d3_grays-harbor_mitchell_2026
+full_name: Gordon E. Mitchell
+collector: clearasmud/wa_county_deep_dive
+source_aliases:
+  wa_sos:
+    tier: T1
+    source_name: Washington Secretary of State — Elections Division
+    url: https://www.sos.wa.gov/elections/
+    access_date: '2026-05-23'
+  daily_world:
+    tier: T2
+    source_name: The Daily World (Aberdeen)
+    url: https://www.thedailyworld.com/
+    access_date: '2026-05-23'
+biographical:
+  residence:
+    claim: Grays Harbor County, Washington (within Commissioner District 3)
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  party_affiliation:
+    claim: Republican
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  full_name:
+    claim: Gordon E. Mitchell
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+political_positions:
+  positions: []
+voting_record:
+  votes: []
+campaign_finance:
+  filing_entity:
+    claim: PDC candidate page exists (ID 3253581) but shows no contributions or expenditures reported
+    sources:
+    - wa_pdc
+    highest_tier: T1
+    confidence: single-source
+public_statements:
+  statements: []
+endorsements:
+  received: []
+election_history:
+- year: 2026
+  race: Grays Harbor County Commissioner District 3
+  result: Pending (first-time candidate, was one of 5 applicants interviewed for the appointed vacancy but not selected)
+  sources:
+  - wa_sos
+  - daily_world

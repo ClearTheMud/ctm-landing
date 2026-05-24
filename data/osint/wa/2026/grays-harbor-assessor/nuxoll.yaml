@@ -1,0 +1,49 @@
+candidate_id: wa_assessor_grays-harbor_nuxoll_2026
+full_name: Josh Nuxoll
+collector: clearasmud/wa_county_deep_dive
+source_aliases:
+  wa_sos:
+    tier: T1
+    source_name: Washington Secretary of State — Elections Division
+    url: https://www.sos.wa.gov/elections/
+    access_date: '2026-05-23'
+biographical:
+  residence:
+    claim: 102 Anderson Pl, Elma, WA 98541
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  party_affiliation:
+    claim: Independent
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  full_name:
+    claim: Josh Nuxoll
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+political_positions:
+  positions: []
+voting_record:
+  votes: []
+campaign_finance:
+  filing_entity:
+    claim: No PDC campaign finance records identified. Campaign email joshnuxoll@gmail.com.
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: single-source
+public_statements:
+  statements: []
+endorsements:
+  received: []
+election_history:
+- year: 2026
+  race: Grays Harbor County Assessor
+  result: Pending (first-time candidate, filed May 4, 2026)
+  sources:
+  - wa_sos

@@ -1,0 +1,48 @@
+candidate_name: Dan Lindgren
+findings:
+- title: Party Switch — Democrat to Republican in Election Year
+  category: pattern
+  description: Lindgren served as a Democrat for his entire political career (2010,
+    2014, 2018, 2022 elections) and switched to Republican in April 2026, less than
+    four months before the primary. In a county that has trended Republican (Trump
+    51.4% in 2024), this appears strategically timed. His statement that his 'values
+    now align more closely with the Republican Party' raises questions about whether
+    this is conviction or calculation.
+  source_tier: T1
+  political_impact: High
+  defense: Lindgren emphasized the assessor role is nonpartisan and focused on
+    applying the law equitably. He stated this reflects 'personal integrity rather
+    than disagreement with local Democratic leaders.' Many elected officials in
+    rural Washington have made similar switches as the parties have realigned.
+  source_urls:
+  - https://www.thedailyworld.com/2026/04/06/lindgren-announces-campaign-for-county-assessor/
+- title: "PDC Complaint Filed — Case #6580"
+  category: financial
+  description: >-
+    A Public Disclosure Commission complaint (Case #6580) was filed against
+    Dan Lindgren. The specific allegations and resolution are not available from
+    public search results — the complaint document exists in the PDC case tracking
+    system but requires direct retrieval.
+  source_tier: T1
+  political_impact: Moderate
+  defense: The complaint's content and resolution are unknown. Many PDC complaints
+    are dismissed or result in minor findings. Without knowing the specific
+    allegations, the impact cannot be fully assessed.
+  source_urls:
+  - https://pdc-case-tracking.s3.us-gov-west-1.amazonaws.com/6580/151198%20Lindgren%20Dan%20Complaint.pdf
+- title: Three-Term Incumbent — Change Fatigue Risk
+  category: pattern
+  description: Lindgren has held the assessor position since January 2015 and is
+    seeking his fourth term. While his margins have been consistent (~54%), he has
+    always faced the same opponent (Rick Hole) and never won by a commanding margin.
+    After 11 years in office, voters may be ready for change, especially in the
+    context of broader dissatisfaction with county government (DOL contract
+    termination, prosecutor office dysfunction, commissioner resignation).
+  source_tier: T1
+  political_impact: Moderate
+  defense: Lindgren's office has been well-run — record-low property value appeals,
+    technology modernization, statewide leadership. His consistent margins against
+    Hole demonstrate durable support. His opponent Nuxoll has no apparent qualifications
+    or campaign infrastructure.
+  source_urls:
+  - https://www.thedailyworld.com/2026/04/06/lindgren-announces-campaign-for-county-assessor/

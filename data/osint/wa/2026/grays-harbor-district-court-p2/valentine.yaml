@@ -1,0 +1,43 @@
+candidate_id: wa_district-court-p2_grays-harbor_valentine_2026
+full_name: Megan Valentine
+collector: clearasmud/wa_county_deep_dive
+source_aliases:
+  wa_sos:
+    tier: T1
+    source_name: Washington Secretary of State — Elections Division
+    url: https://www.sos.wa.gov/elections/
+    access_date: '2026-05-23'
+  daily_world:
+    tier: T2
+    source_name: The Daily World (Aberdeen)
+    url: https://www.thedailyworld.com/
+    access_date: '2026-05-23'
+biographical:
+  full_name:
+    claim: Megan Valentine
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  employment_history:
+  - claim: Incumbent District Court Judge (Position 2)
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+political_positions:
+  positions: []
+voting_record:
+  votes: []
+campaign_finance: {}
+public_statements:
+  statements: []
+endorsements:
+  received: []
+election_history:
+- year: 2026
+  race: Grays Harbor County District Court Judge, Position 2
+  result: Pending (incumbent, advancing to general — non-partisan judicial race)
+  sources:
+  - wa_sos
+  - daily_world

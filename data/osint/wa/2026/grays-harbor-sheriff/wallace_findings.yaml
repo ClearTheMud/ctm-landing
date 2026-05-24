@@ -1,0 +1,44 @@
+candidate_name: Darrin E. Wallace
+findings:
+- title: Severe Budget Cuts Threaten Department Staffing
+  category: pattern
+  description: In 2024, Wallace warned publicly that the sheriff's department would have
+    to cut 7 deputies if proposed county budget cuts proceeded. The department already
+    faces staffing shortages — one patrol deputy, four to five corrections deputies,
+    and four support specialists vacant. Budget constraints limit the sheriff's ability
+    to deliver on public safety promises.
+  source_tier: T2
+  political_impact: High
+  defense: Budget is set by the Board of County Commissioners, not the sheriff. Wallace
+    has been vocal about the impact of cuts and has sought alternative funding. Secured
+    $900,000 for body cameras despite budget pressures.
+  source_urls:
+  - https://www.king5.com/article/news/local/grays-harbor-county-budget-cuts-sheriffs-department/281-7a8464f9-3760-4c2d-9e4b-9d735054d47a
+- title: $80 Million Jail Replacement — Ambitious and Unfunded
+  category: financial
+  description: Wallace's top priority is replacing the 45-year-old county jail at an
+    estimated cost of $80 million. In a county with a median household income of $63,539
+    and a 15% poverty rate, securing voter approval for this scale of capital project
+    is a significant political challenge. No concrete funding plan has been publicly
+    detailed.
+  source_tier: T2
+  political_impact: Moderate
+  defense: The facility genuinely requires replacement — constant repairs, vertical
+    design creates safety hazards for corrections staff. Wallace cited Skagit County's
+    linear design as a model. A new jail is a public safety necessity, not a discretionary
+    project.
+  source_urls:
+  - https://www.thedailyworld.com/news/qa-grays-harbor-county-sheriff-talks-new-job/
+- title: Continuity vs. Change — 'Continue the Legacy' Messaging
+  category: pattern
+  description: Wallace's stated vision is to "continue on the path that I was taught"
+    and "continue the legacy" of previous sheriffs. In a county facing significant public
+    safety challenges (staffing crisis, drug crimes, property crimes, aging infrastructure),
+    a continuity-focused message may be vulnerable to a change-oriented challenger.
+  source_tier: T2
+  political_impact: Moderate
+  defense: Wallace won with 73-75% of the vote in 2022, suggesting strong community
+    support for the existing direction. Body camera investment and new jail advocacy
+    represent meaningful changes from predecessors.
+  source_urls:
+  - https://www.thedailyworld.com/news/qa-grays-harbor-county-sheriff-talks-new-job/

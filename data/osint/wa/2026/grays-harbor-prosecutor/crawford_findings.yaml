@@ -1,0 +1,48 @@
+candidate_name: Daniel Crawford
+findings:
+- title: Challenging His Own Boss — Subordinate vs Appointed Superior
+  category: character
+  description: >-
+    Crawford serves as Chief Criminal Deputy Prosecutor under Walker, who
+    was appointed over the position Crawford is now running for. The BOCC chose Walker
+    through the Democratic Party nomination process rather than elevating Crawford,
+    the existing #2 in the office. This creates an unusual dynamic where the challenger
+    reports directly to the incumbent daily.
+  source_tier: T2
+  political_impact: High
+  defense: Crawford was not eligible for appointment through the Democratic process
+    because he is a Republican. The appointment followed partisan rules, not merit
+    selection. Crawford's decision to run demonstrates independence and willingness
+    to let voters decide rather than accept a party-line appointment.
+  source_urls:
+  - https://www.thedailyworld.com/2026/02/24/bocc-appoints-walker-as-prosecuting-attorney/
+- title: Short Tenure in Grays Harbor — Newcomer vs Returning Native
+  category: character
+  description: Crawford has been in Grays Harbor County only since August 2024
+    (~22 months). He came from Pacific County before that and Grant County before
+    that. Walker, by contrast, spent 11 years in the Grays Harbor office. Crawford
+    may be perceived as a carpetbagger seeking the highest-paid elected position in
+    the county ($237,460/year) rather than someone invested in the community.
+  source_tier: T2
+  political_impact: Moderate
+  defense: Crawford was recruited to Grays Harbor with a higher salary specifically
+    because of his trial skills. He has already won major convictions in Grays Harbor
+    (Carter, Palmer, Baier cases). His Pacific County prosecutor called him 'the
+    backbone of the criminal division.'
+  source_urls:
+  - https://chinookobserver.com/2024/07/29/prosecutors-office-loses-its-criminal-expert/
+- title: Compensation Clash with County Commissioners
+  category: financial
+  description: Crawford publicly clashed with Commissioner Georgia Miller over
+    prosecutor salary negotiations in late 2025. Miller suggested 'workplace culture
+    and leadership issues — not compensation — were causing retention problems' and
+    cited internal investigations and pending litigation from former employees.
+    Crawford's salary advocacy was effective but the public disagreement with a
+    commissioner could be a liability.
+  source_tier: T2
+  political_impact: Moderate
+  defense: Crawford was advocating for his staff, not himself. He warned losing
+    prosecutors would be 'catastrophic for being able to prosecute crime.' The
+    raises he sought were for three positions critical to public safety.
+  source_urls:
+  - https://www.thedailyworld.com/news/commissioners-prosecutor-compensation-compromise-negotiations-falter/

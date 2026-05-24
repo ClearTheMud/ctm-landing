@@ -1,0 +1,146 @@
+candidate_id: wa_assessor_grays-harbor_lindgren_2026
+full_name: Dan Lindgren
+collector: clearasmud/wa_county_deep_dive
+source_aliases:
+  wa_sos:
+    tier: T1
+    source_name: Washington Secretary of State — Elections Division
+    url: https://www.sos.wa.gov/elections/
+    access_date: '2026-05-23'
+  wa_pdc:
+    tier: T1
+    source_name: Washington Public Disclosure Commission (PDC)
+    url: https://www.pdc.wa.gov/
+    access_date: '2026-05-23'
+  daily_world:
+    tier: T2
+    source_name: The Daily World (Aberdeen)
+    url: https://www.thedailyworld.com/
+    access_date: '2026-05-23'
+  kxro:
+    tier: T2
+    source_name: KXRO News Radio
+    url: https://www.kxro.com/
+    access_date: '2026-05-23'
+biographical:
+  residence:
+    claim: PO Box 166, Montesano, WA 98563 (campaign); also associated with 1515 W 6th, Aberdeen, WA 98520
+    sources:
+    - wa_sos
+    - wa_pdc
+    highest_tier: T1
+    confidence: verified
+  party_affiliation:
+    claim: Republican (switched from Democrat in April 2026). Stated his values now align more closely with Republican principles. Emphasized the assessor role remains nonpartisan.
+    sources:
+    - wa_sos
+    - daily_world
+    highest_tier: T1
+    confidence: verified
+  education:
+  - claim: Hoquiam High School graduate
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  - claim: Grays Harbor College graduate
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  - claim: Completed Leadership Grays Harbor program (Greater Grays Harbor, Inc.)
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: single-source
+  family:
+    claim: Has at least one daughter, Dezy Lindgren, who has publicly endorsed his campaigns on social media.
+    sources:
+    - daily_world
+    highest_tier: T4
+    confidence: single-source
+  employment_history:
+  - claim: Appraiser, Grays Harbor County Assessor's Office (joined March 2007)
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  - claim: Grays Harbor County Assessor (elected November 2014, serving since January 2015). Now in his third term, seeking fourth. 19+ years total in the Assessor's Office.
+    sources:
+    - daily_world
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  full_name:
+    claim: Dan Lindgren
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+political_positions:
+  positions:
+  - topic: Property Assessment
+    topic_id: property_assessment
+    current_position:
+      claim: Committed to fair, accurate, and transparent property assessments. Continued modernization and public access to property data. Emphasis on professional nonpartisanship in the assessor's role.
+      sources:
+      - daily_world
+      highest_tier: T2
+      confidence: corroborated
+  - topic: Technology Modernization
+    topic_id: technology
+    current_position:
+      claim: Implemented Computer Aided Mass Appraisal System upgrade, launched Taxsifter parcel data site (2017), deployed MapGeo GIS platform (2024, first county in WA to adopt it), and issued new field devices for appraisers (2025).
+      sources:
+      - daily_world
+      - kxro
+      highest_tier: T2
+      confidence: corroborated
+  - topic: Property Tax Policy
+    topic_id: tax_policy
+    current_position:
+      claim: Serves on WSACA legislative committee focusing on property tax policy at state level. 11-year technology committee chair for Washington State Association of County Assessors. Elected unanimously to executive board of Washington Association of County Officials by all 38 other state assessors.
+      sources:
+      - daily_world
+      highest_tier: T2
+      confidence: corroborated
+voting_record:
+  votes: []
+campaign_finance:
+  filing_entity:
+    claim: PDC Filer ID LINDD__520. 2026 cycle PDC candidate ID 567229. Campaign email votelindgren@gmail.com.
+    sources:
+    - wa_pdc
+    highest_tier: T1
+    confidence: verified
+public_statements:
+  statements:
+  - statement: Over the past several years, I have spent a great deal of time reflecting on my personal values and how they align with my party affiliation. I have come to the conclusion that my values now align more closely with the Republican Party.
+    is_direct_quote: true
+    date: '2026-04-06'
+    context: Campaign announcement explaining party switch from Democrat to Republican
+    topic_ids:
+    - property_assessment
+endorsements:
+  received: []
+election_history:
+- year: 2010
+  race: Grays Harbor County Assessor
+  result: Lost general election to Rick Hole (No Party)
+  sources:
+  - daily_world
+- year: 2014
+  race: Grays Harbor County Assessor
+  result: Won primary and general
+  sources:
+  - wa_sos
+- year: 2018
+  race: Grays Harbor County Assessor
+  result: Won — approximately 54% to 46% vs Rick Hole (R)
+  sources:
+  - daily_world
+- year: 2022
+  race: Grays Harbor County Assessor
+  result: Won — 54.45% to 45.45% vs Rick Hole (R), approximately 1,600-vote margin
+  sources:
+  - daily_world

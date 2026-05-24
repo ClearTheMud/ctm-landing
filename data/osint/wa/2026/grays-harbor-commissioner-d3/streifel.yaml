@@ -1,0 +1,127 @@
+candidate_id: wa_commissioner-d3_grays-harbor_streifel_2026
+full_name: JR Streifel
+collector: clearasmud/wa_county_deep_dive
+source_aliases:
+  wa_sos:
+    tier: T1
+    source_name: Washington Secretary of State — Elections Division
+    url: https://www.sos.wa.gov/elections/
+    access_date: '2026-05-23'
+  wa_pdc:
+    tier: T1
+    source_name: Washington Public Disclosure Commission (PDC)
+    url: https://www.pdc.wa.gov/
+    access_date: '2026-05-23'
+  daily_world:
+    tier: T2
+    source_name: The Daily World (Aberdeen)
+    url: https://www.thedailyworld.com/
+    access_date: '2026-05-23'
+  kxro:
+    tier: T2
+    source_name: KXRO News Radio
+    url: https://www.kxro.com/
+    access_date: '2026-05-23'
+  ballotpedia:
+    tier: T2
+    source_name: Ballotpedia
+    url: https://ballotpedia.org/
+    access_date: '2026-05-23'
+biographical:
+  residence:
+    claim: Cosmopolis/Aberdeen area, Grays Harbor County (inferred from Cosmopolis School Board service and Aberdeen Fire career)
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  party_affiliation:
+    claim: Republican
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  employment_history:
+  - claim: Aberdeen Fire Department (September 17, 1979 — June 30, 2008). Rose from Hoseman through ranks to Battalion Chief. EMT since March 1980, Paramedic since April 1984. Nearly 29 years of fire/EMS service. Retired as Captain.
+    sources:
+    - daily_world
+    - kxro
+    highest_tier: T2
+    confidence: corroborated
+  - claim: State employee (specific agency not identified, post-fire retirement)
+    sources:
+    - daily_world
+    highest_tier: T4
+    confidence: single-source
+  - claim: Cosmopolis School Board member
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  - claim: Grays Harbor County Commissioner District 3 (appointed May 5, 2026, assumed office May 16, 2026, replacing resigned Vickie Raines). Selected from 5 applicants after public interviews.
+    sources:
+    - daily_world
+    - kxro
+    highest_tier: T2
+    confidence: verified
+  full_name:
+    claim: James J. Streifel Jr. (known as JR Streifel)
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: verified
+political_positions:
+  positions:
+  - topic: Public Safety
+    topic_id: public_safety
+    current_position:
+      claim: Believes police have been 'handcuffed' by post-2020 reforms and recruitment has suffered. Supports law enforcement and public safety funding.
+      sources:
+      - daily_world
+      highest_tier: T2
+      confidence: corroborated
+  - topic: County Operations
+    topic_id: county_ops
+    current_position:
+      claim: Committed to strengthening county operations, supporting economic development, and addressing local challenges through community partnerships.
+      sources:
+      - daily_world
+      highest_tier: T2
+      confidence: corroborated
+  - topic: Affordable Housing
+    topic_id: housing
+    current_position:
+      claim: Identified affordable housing and rising costs as top concerns during 2024 legislative campaign.
+      sources:
+      - daily_world
+      highest_tier: T2
+      confidence: single-source
+voting_record:
+  votes: []
+campaign_finance:
+  filing_entity:
+    claim: "PDC records show no contributions or expenditures reported for 2026 commissioner race. 2024 State House race raised more than $3,000, primarily from individual donations. PDC enforcement Case #111040 (2022) resulted in written warning for late disclosure filings."
+    sources:
+    - wa_pdc
+    highest_tier: T1
+    confidence: verified
+public_statements:
+  statements:
+  - statement: We used to get a ton of people applying. Now they can't even get enough people to fill their list because they don't have the support of our leaders.
+    is_direct_quote: true
+    date: '2024'
+    context: 2024 LD24 candidate forum, discussing law enforcement recruitment challenges
+    topic_ids:
+    - public_safety
+endorsements:
+  received: []
+election_history:
+- year: 2022
+  race: Grays Harbor County Commissioner District 3
+  result: Lost primary — third place with 22.17% (1,663 votes) behind Vickie Raines (46.01%) and Lisa Zaborac (31.55%)
+  sources:
+  - ballotpedia
+- year: 2024
+  race: WA State House LD24 Position 1
+  result: Lost primary — third place with 23.12% (3,032 votes) in Grays Harbor County
+  sources:
+  - ballotpedia

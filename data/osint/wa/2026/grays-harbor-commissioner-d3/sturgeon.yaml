@@ -1,0 +1,60 @@
+candidate_id: wa_commissioner-d3_grays-harbor_sturgeon_2026
+full_name: Stan Sturgeon
+collector: clearasmud/wa_county_deep_dive
+source_aliases:
+  wa_sos:
+    tier: T1
+    source_name: Washington Secretary of State — Elections Division
+    url: https://www.sos.wa.gov/elections/
+    access_date: '2026-05-23'
+  daily_world:
+    tier: T2
+    source_name: The Daily World (Aberdeen)
+    url: https://www.thedailyworld.com/
+    access_date: '2026-05-23'
+biographical:
+  residence:
+    claim: Ocean City, Washington (within Commissioner District 3)
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  party_affiliation:
+    claim: States No Party Preference
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  employment_history:
+  - claim: Ocean City Drainage District Commissioner (appointed February 24, 2026, sworn in February 26, 2026). Elected chair of the drainage district board. The district was created by an 80.48% vote to address chronic flooding along Connor Creek and SR-109.
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  full_name:
+    claim: Stanley Sturgeon
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+political_positions:
+  positions: []
+voting_record:
+  votes: []
+campaign_finance:
+  filing_entity:
+    claim: No PDC campaign finance filings identified
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: single-source
+public_statements:
+  statements: []
+endorsements:
+  received: []
+election_history:
+- year: 2026
+  race: Grays Harbor County Commissioner District 3
+  result: Pending (first-time candidate)
+  sources:
+  - wa_sos

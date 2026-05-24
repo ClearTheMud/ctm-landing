@@ -1,0 +1,34 @@
+candidate_name: Shawn D. Hill
+findings:
+- title: Appointed Incumbent — Selected by Party Process, Not Elected
+  category: pattern
+  description: Hill was appointed Treasurer in July 2025 through a partisan nomination
+    process after Kenneth Albert retired. The Grays Harbor Democrats submitted three
+    nominees (Hill, Susan Ancich, Mike Cooper), and the BOCC selected Hill by a 2-1
+    vote, with Commissioner Vickie Raines dissenting. He has never won a competitive
+    election. The non-unanimous vote suggests the appointment was not universally
+    embraced even within the BOCC.
+  source_tier: T2
+  political_impact: Moderate
+  defense: Hill's appointment followed the legally mandated process for filling
+    partisan vacancies under WA law. His selection was based on nearly 9 years as
+    Chief Deputy Treasurer — he is the most operationally experienced person for the
+    role. The dissenting vote may have been about process or other candidates rather
+    than Hill's qualifications.
+  source_urls:
+  - https://www.thedailyworld.com/news/bocc-names-shawn-hill-new-county-treasurer/
+- title: Running as Democrat in R+6 County
+  category: pattern
+  description: Hill is running as a Democrat in a county where Trump won 51.4% in
+    2024. His emphasis on 'non-partisan management' appears designed to neutralize
+    this disadvantage, but the partisan label is on the ballot. His opponent Cormier
+    is a well-known Republican with 8 years as county commissioner.
+  source_tier: T1
+  political_impact: Moderate
+  defense: Hill's emphasis on non-partisan management directly addresses this
+    vulnerability. The treasurer's office is genuinely operational rather than
+    political — property tax processing, deposits, and financial accounting don't
+    have partisan valence. His clean audit record and Leadership and Service Award
+    demonstrate competence above partisanship.
+  source_urls:
+  - https://www.thedailyworld.com/2026/05/19/shawn-hill-announces-campaign-for-grays-harbor-county-treasurer/

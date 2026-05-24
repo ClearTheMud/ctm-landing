@@ -1,0 +1,110 @@
+candidate_id: wa_auditor_grays-harbor_paull_2026
+full_name: Charlee Paull
+collector: clearasmud/wa_county_deep_dive
+source_aliases:
+  wa_sos:
+    tier: T1
+    source_name: Washington Secretary of State — Elections Division
+    url: https://www.sos.wa.gov/elections/
+    access_date: '2026-05-23'
+  wa_pdc:
+    tier: T1
+    source_name: Washington Public Disclosure Commission (PDC)
+    url: https://www.pdc.wa.gov/
+    access_date: '2026-05-23'
+  daily_world:
+    tier: T2
+    source_name: The Daily World (Aberdeen)
+    url: https://www.thedailyworld.com/
+    access_date: '2026-05-23'
+  chronline:
+    tier: T2
+    source_name: The Daily Chronicle (Centralia-Chehalis)
+    url: https://www.chronline.com/
+    access_date: '2026-05-23'
+  campaign_paull:
+    tier: T3
+    source_name: Charlee for Grays Harbor Campaign Website
+    url: https://charleeforgraysharbor.com/
+    access_date: '2026-05-23'
+biographical:
+  residence:
+    claim: Oakville, Washington (lives on a farm near where she grew up, with husband, children, and two grandchildren)
+    sources:
+    - chronline
+    - wa_sos
+    highest_tier: T2
+    confidence: corroborated
+  party_affiliation:
+    claim: Republican
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  family:
+    claim: Married with children and two grandchildren. Lives on a farm with cows, horses, pigs, chickens, and ducks.
+    sources:
+    - chronline
+    highest_tier: T2
+    confidence: single-source
+  employment_history:
+  - claim: Started as part-time bank teller 19 years ago (~2006-2007). Progressed through new accounts, personal banker, and bank manager roles.
+    sources:
+    - chronline
+    highest_tier: T2
+    confidence: corroborated
+  - claim: Mortgage Loan Originator, U.S. Bank, Hoquiam, WA (NMLS# 831095). Transitioned to exclusively mortgage lending in 2018.
+    sources:
+    - chronline
+    - campaign_paull
+    highest_tier: T2
+    confidence: corroborated
+  full_name:
+    claim: Charlee Paull
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+political_positions:
+  positions:
+  - topic: County Auditor Reform
+    topic_id: auditor_reform
+    current_position:
+      claim: Campaign motto is 'Community first and integrity always, for transparency you can trust and service you can depend on.' Running to bring accountability, accuracy, and a fresh commitment to the community. Implicitly contrasts with incumbent MacLean's DOL scandal.
+      sources:
+      - campaign_paull
+      - chronline
+      highest_tier: T2
+      confidence: corroborated
+voting_record:
+  votes: []
+campaign_finance:
+  filing_entity:
+    claim: PDC committee record exists (committee ID co-2026-38851). Campaign website charleeforgraysharbor.com. Two Facebook campaign pages active. Sells campaign merchandise.
+    sources:
+    - wa_pdc
+    - campaign_paull
+    highest_tier: T1
+    confidence: verified
+public_statements:
+  statements:
+  - statement: Grays Harbor County deserves an auditor that will be community first and integrity always.
+    is_direct_quote: true
+    date: '2025-11-24'
+    context: Candidacy declaration at Showcase Oakville event at Oakville High School
+    topic_ids:
+    - auditor_reform
+  - statement: Our county deserves better.
+    is_direct_quote: true
+    date: '2025-11-24'
+    context: Campaign launch speech
+    topic_ids:
+    - auditor_reform
+endorsements:
+  received: []
+election_history:
+- year: 2026
+  race: Grays Harbor County Auditor
+  result: Pending (first-time candidate, declared November 24, 2025 — six months before filing week)
+  sources:
+  - wa_sos

@@ -1,0 +1,31 @@
+candidate_name: Gordon E. Mitchell
+findings:
+- title: Near-Total Unknown — No Public Profile Discoverable
+  category: character
+  description: Despite extensive OSINT research, virtually no biographical information
+    about Gordon E. Mitchell in the Grays Harbor County context was found. No
+    professional background, election history, campaign website, media coverage,
+    endorsements, or policy positions identified. He was one of 5 applicants
+    interviewed for the appointed vacancy but was not selected.
+  source_tier: T1
+  political_impact: High
+  defense: Mitchell's interview responses during the April 28, 2026 BOCC meeting may
+    contain policy positions and qualifications — the meeting was public but content
+    was not accessible through web search. Some candidates are known locally but have
+    minimal digital footprints.
+  source_urls:
+  - https://www.thedailyworld.com/2026/04/27/interviews-scheduled-for-district-3-county-commissioner/
+- title: Republican Vote Splitting — Two Rs vs One Non-Partisan
+  category: pattern
+  description: Mitchell and Streifel are both running as Republicans, while Sturgeon
+    is non-partisan. In Washington's top-two primary, the two Republican candidates
+    will split the conservative vote, potentially allowing the non-partisan Sturgeon
+    to advance alongside one Republican. Mitchell's candidacy may function as a spoiler
+    in a county where R-leaning voters dominate.
+  source_tier: T1
+  political_impact: Moderate
+  defense: Mitchell may have genuine policy disagreements with Streifel that justify
+    his candidacy. Under the top-two system, the strongest two candidates advance
+    regardless, so the outcome reflects genuine voter preferences.
+  source_urls:
+  - https://www.thedailyworld.com/2026/05/11/grays-harbor-county-2026-primary-races-set/

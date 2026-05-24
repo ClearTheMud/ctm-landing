@@ -1,0 +1,82 @@
+candidate_name: Edward Welter
+findings:
+- title: Brady List Profile — Credibility Disclosure Flag
+  category: character
+  description: Edward Welter has a profile on the Giglio-Brady List database for the
+    Grays Harbor County Sheriff's Office. While the database indicates 'no Brady material
+    at this time,' it also notes that his employer (GHCSO) 'is not in compliance with
+    their Brady disclosure obligations.' The Brady/Giglio framework requires prosecutors
+    to disclose information about officers' credibility issues. A candidate for sheriff
+    having any Brady List presence — even without documented material — creates a
+    vulnerability in a race about public trust and law enforcement integrity.
+  source_tier: T2
+  political_impact: High
+  defense: The database explicitly states no Brady material exists for Welter. The
+    compliance issue is with the employer (GHCSO under Wallace), not with Welter personally.
+    The profile may simply reflect the database's systematic tracking of all officers
+    at non-compliant agencies.
+  source_urls:
+  - https://giglio-bradylist.com/individual/edward-c-%20welter
+  - https://giglio-bradylist.com/washington/grays-harbor-county-sheriffs-office
+- title: Running Against His Own Boss — Workplace Conflict Dynamic
+  category: character
+  description: Welter is a current GHCSO detective running against incumbent Sheriff
+    Wallace, who is his direct chain of command. This creates workplace tension and
+    potential for retaliation or claims of insubordination. Unlike the Thurston County
+    parallel (Burton-Crow vs Sanders), there is no public evidence of union endorsement
+    or organized internal support for Welter's candidacy.
+  source_tier: T2
+  political_impact: Moderate
+  defense: Welter holds multiple independent leadership positions (Mayor of Westport,
+    Hospital District Board member) demonstrating community confidence beyond his
+    sheriff's office role. The challenger-from-within dynamic is not unprecedented
+    in WA sheriff races.
+  source_urls:
+  - https://www.thedailyworld.com/2026/05/11/grays-harbor-county-2026-primary-races-set/
+- title: Campaign Email Uses Official Sheriff's Office Domain
+  category: pattern
+  description: Welter's campaign filing with the Secretary of State lists
+    edwelter@graysharborsheriff.com as his contact email. Using an official
+    sheriff's office email domain for campaign purposes raises questions about
+    separation of official duties and political activity, and potential misuse
+    of government resources.
+  source_tier: T1
+  political_impact: Moderate
+  defense: The domain 'graysharborsheriff.com' may be a personal domain rather than
+    the official county domain (graysharbor.us/departments/sheriff/). If it is a
+    personal domain styled to look official, it raises different concerns about
+    impersonation. Needs clarification.
+  source_urls:
+  - https://www.sos.wa.gov/elections/
+- title: Multiple Simultaneous Public Offices — Capacity and Conflict Questions
+  category: pattern
+  description: >-
+    Welter simultaneously holds three public positions — GHCSO Detective,
+    Mayor of Westport (term through 2027), and Public Hospital District #2 Board
+    member. Running for sheriff while serving as mayor raises questions about whether
+    he would resign the mayoral position if elected, and whether he can adequately
+    serve multiple roles simultaneously.
+  source_tier: T1
+  political_impact: High
+  defense: Multi-office holding demonstrates broad community engagement and public
+    service commitment. Welter may intend to resign other positions if elected sheriff.
+    Small-town elected officials in rural Washington frequently hold multiple roles.
+  source_urls:
+  - https://ballotpedia.org/Edward_Welter_(Mayor_of_Westport,_Washington,_candidate_2023)
+  - https://www.thedailyworld.com/2025/11/04/welter-appointed-to-hospital-district-board/
+- title: Limited Detective-Level Experience for Top Executive Role
+  category: character
+  description: Welter lateralled to GHCSO in 2018 as a resident deputy for the South
+    Beach area and currently serves as a detective. He has approximately 8 years of
+    county law enforcement experience with no documented supervisory or command rank
+    within the sheriff's office. His prior law enforcement was as a Fish and Wildlife
+    officer. Running for the top executive law enforcement position in a county of
+    78,000 without command experience is a significant gap.
+  source_tier: T2
+  political_impact: Moderate
+  defense: Welter brings Coast Guard command experience, demonstrated executive
+    leadership as Mayor of Westport, and diverse law enforcement roles (K9, CRU,
+    fire investigation, defensive tactics instruction). Practical experience across
+    multiple agencies may compensate for lack of formal GHCSO rank.
+  source_urls:
+  - https://www.westportmayor.com/about-me

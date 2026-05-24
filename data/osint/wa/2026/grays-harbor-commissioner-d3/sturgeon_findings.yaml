@@ -1,0 +1,17 @@
+candidate_name: Stan Sturgeon
+findings:
+- title: No Identifiable Background or Campaign Infrastructure
+  category: character
+  description: Stan Sturgeon has virtually no public footprint beyond his role as
+    chair of the Ocean City Drainage District (appointed February 2026). No professional
+    background, education, prior employment, or campaign platform has been identified
+    through extensive public records research. No campaign website, no media
+    interviews, no PDC filings, and no endorsements.
+  source_tier: T1
+  political_impact: High
+  defense: Sturgeon may have community connections and qualifications not discoverable
+    through web search. His election as drainage district chair suggests some level
+    of community trust in the Ocean City/North Beach area. Rural candidates sometimes
+    run on personal networks rather than digital presence.
+  source_urls:
+  - https://www.thedailyworld.com/2026/03/02/ocean-city-drainage-district-commissioners-sworn-in/

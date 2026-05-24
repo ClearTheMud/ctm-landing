@@ -1,0 +1,160 @@
+candidate_id: wa_prosecutor_grays-harbor_walker_2026
+full_name: Jason F. Walker
+collector: clearasmud/wa_county_deep_dive
+source_aliases:
+  wa_sos:
+    tier: T1
+    source_name: Washington Secretary of State — Elections Division
+    url: https://www.sos.wa.gov/elections/
+    access_date: '2026-05-23'
+  wa_pdc:
+    tier: T1
+    source_name: Washington Public Disclosure Commission (PDC)
+    url: https://www.pdc.wa.gov/
+    access_date: '2026-05-23'
+  daily_world:
+    tier: T2
+    source_name: The Daily World (Aberdeen)
+    url: https://www.thedailyworld.com/
+    access_date: '2026-05-23'
+  wsba:
+    tier: T1
+    source_name: Washington State Bar Association
+    url: https://www.wsba.org/
+    access_date: '2026-05-23'
+  opengovwa:
+    tier: T2
+    source_name: OpenGovWA — WSBA Attorney Records
+    url: https://opengovwa.com/
+    access_date: '2026-05-23'
+  campaign_walker:
+    tier: T3
+    source_name: Walker for Prosecutor Campaign Website
+    url: https://www.walkerforprosecutor.com/
+    access_date: '2026-05-23'
+biographical:
+  residence:
+    claim: Montesano, Washington (PO Box 608, Montesano, WA 98563)
+    sources:
+    - campaign_walker
+    highest_tier: T3
+    confidence: single-source
+  party_affiliation:
+    claim: Democrat
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  education:
+  - claim: Associate degree, Portland Community College
+    sources:
+    - campaign_walker
+    highest_tier: T3
+    confidence: single-source
+  - claim: Bachelor of Science, Portland State University
+    sources:
+    - campaign_walker
+    highest_tier: T3
+    confidence: single-source
+  - claim: Juris Doctor, Lewis & Clark Law School, Portland, Oregon
+    sources:
+    - campaign_walker
+    highest_tier: T3
+    confidence: single-source
+  employment_history:
+  - claim: Deputy Prosecutor, then Chief Criminal Deputy Prosecutor, Grays Harbor County Prosecutor's Office (December 2011 — December 2022, 11 years). Served 7+ years as chief criminal deputy. Tried 85+ criminal jury trials. Argued 60+ criminal appeals before the Washington Court of Appeals. Modernized case management systems.
+    sources:
+    - daily_world
+    - campaign_walker
+    highest_tier: T2
+    confidence: corroborated
+  - claim: Staff Attorney, Washington Association of Prosecuting Attorneys (WAPA) (~2023 — March 2026). Created and led the first statewide prosecutor basic training program, training 150+ new prosecutors. Helped address attorney shortages in rural communities.
+    sources:
+    - daily_world
+    - campaign_walker
+    highest_tier: T2
+    confidence: corroborated
+  - claim: Grays Harbor County Prosecuting Attorney (appointed March 17, 2026, replacing resigned Norma Tillotson). Selected from three nominees submitted by Grays Harbor Democrats (Walker, Brian Lane, Mac Jardine).
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: verified
+  full_name:
+    claim: Jason Fielding Walker
+    sources:
+    - opengovwa
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  bar_admission:
+    claim: "WSBA #44358, admitted December 1, 2011, Active status"
+    sources:
+    - opengovwa
+    highest_tier: T1
+    confidence: verified
+political_positions:
+  positions:
+  - topic: Criminal Accountability
+    topic_id: criminal_accountability
+    current_position:
+      claim: Prosecuting serious crimes and securing convictions in complex cases, with focus on violent and repeat offenders.
+      sources:
+      - campaign_walker
+      highest_tier: T3
+      confidence: single-source
+  - topic: Victim Support
+    topic_id: victim_support
+    current_position:
+      claim: Ensuring victims are heard, supported, and protected every step of the way using trauma-informed methods.
+      sources:
+      - campaign_walker
+      highest_tier: T3
+      confidence: single-source
+  - topic: Office Stability
+    topic_id: office_stability
+    current_position:
+      claim: Rebuilding a professional, consistent prosecutorial team after years of high turnover under predecessor Norma Tillotson.
+      sources:
+      - campaign_walker
+      - daily_world
+      highest_tier: T2
+      confidence: corroborated
+  - topic: Law Enforcement Partnerships
+    topic_id: law_enforcement
+    current_position:
+      claim: Strengthening collaboration with law enforcement to build stronger cases.
+      sources:
+      - campaign_walker
+      highest_tier: T3
+      confidence: single-source
+voting_record:
+  votes: []
+campaign_finance:
+  filing_entity:
+    claim: People for Jason Walker campaign committee
+    sources:
+    - campaign_walker
+    highest_tier: T3
+    confidence: single-source
+public_statements:
+  statements:
+  - statement: My first job as a prosecutor was at the Grays Harbor prosecutor's office, and I am glad to be back. It feels like I've come back home.
+    is_direct_quote: true
+    date: '2026-02-27'
+    context: Interview with Daily World after appointment
+    topic_ids:
+    - office_stability
+  - statement: I am grateful to the board for giving me this opportunity to serve.
+    is_direct_quote: true
+    date: '2026-02-24'
+    context: Statement at appointment
+    topic_ids:
+    - office_stability
+endorsements:
+  received: []
+election_history:
+- year: 2026
+  race: Grays Harbor County Prosecuting Attorney
+  result: Pending (appointed incumbent, first-time candidate)
+  sources:
+  - wa_sos

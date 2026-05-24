@@ -1,0 +1,114 @@
+candidate_id: wa_treasurer_grays-harbor_cormier_2026
+full_name: Wes Cormier
+collector: clearasmud/wa_county_deep_dive
+source_aliases:
+  wa_sos:
+    tier: T1
+    source_name: Washington Secretary of State — Elections Division
+    url: https://www.sos.wa.gov/elections/
+    access_date: '2026-05-23'
+  wa_pdc:
+    tier: T1
+    source_name: Washington Public Disclosure Commission (PDC)
+    url: https://www.pdc.wa.gov/
+    access_date: '2026-05-23'
+  daily_world:
+    tier: T2
+    source_name: The Daily World (Aberdeen)
+    url: https://www.thedailyworld.com/
+    access_date: '2026-05-23'
+  ballotpedia:
+    tier: T2
+    source_name: Ballotpedia
+    url: https://ballotpedia.org/
+    access_date: '2026-05-23'
+biographical:
+  residence:
+    claim: Elma, Washington. Lifelong Grays Harbor County resident.
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  party_affiliation:
+    claim: Republican
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  family:
+    claim: Father, husband (wife Ambrea), and father of three sons — Noah, Samuel, and Michael (elementary-school age as of 2020).
+    sources:
+    - ballotpedia
+    highest_tier: T2
+    confidence: single-source
+  employment_history:
+  - claim: Grays Harbor County Juvenile Officer (2003-2005)
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  - claim: Senior Real Estate Appraiser, Grays Harbor County Assessor's Office (2005-2012, 7 years). Gained knowledge of property tax and levy systems.
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  - claim: Grays Harbor County Commissioner, District 1 (2012-2020, 8 years, two terms). Oversaw $100+ million annual county budget and approximately 200 employees. Voted against raising property taxes seven consecutive years. Repealed county admission tax. Created hiring committee to curtail nepotism.
+    sources:
+    - daily_world
+    - ballotpedia
+    highest_tier: T2
+    confidence: corroborated
+  full_name:
+    claim: Wes Cormier
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+political_positions:
+  positions:
+  - topic: Fiscal Responsibility
+    topic_id: fiscal
+    current_position:
+      claim: Emphasizes deep, hands-on experience in county financial systems. Highlights eight years of budget oversight and financial policy decisions as Commissioner. Runs on record of transparency, fiscal responsibility, and property rights.
+      sources:
+      - daily_world
+      highest_tier: T2
+      confidence: corroborated
+  - topic: Taxpayer Protection
+    topic_id: taxpayer
+    current_position:
+      claim: Platform centers on protecting taxpayer dollars, ensuring accountability, and delivering reliable service. Voted against property tax increases seven consecutive years as commissioner. Repealed the county admission tax.
+      sources:
+      - daily_world
+      - ballotpedia
+      highest_tier: T2
+      confidence: corroborated
+voting_record:
+  votes: []
+campaign_finance:
+  filing_entity:
+    claim: No specific PDC filings found for 2026 treasurer campaign yet
+    sources:
+    - wa_pdc
+    highest_tier: T1
+    confidence: single-source
+public_statements:
+  statements: []
+endorsements:
+  received: []
+election_history:
+- year: 2012
+  race: Grays Harbor County Commissioner District 1
+  result: Won (first term)
+  sources:
+  - ballotpedia
+- year: 2016
+  race: Grays Harbor County Commissioner District 1
+  result: Won (second term)
+  sources:
+  - ballotpedia
+- year: 2020
+  race: WA State Senate, Legislative District 19
+  result: Lost primary — third place with approximately 17-18.5% of the vote (1,997 votes in Grays Harbor County). Finished behind incumbent Democrat Dean Takko and Republican Jeff Wilson.
+  sources:
+  - ballotpedia

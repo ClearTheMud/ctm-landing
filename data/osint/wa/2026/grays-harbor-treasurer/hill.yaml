@@ -1,0 +1,122 @@
+candidate_id: wa_treasurer_grays-harbor_hill_2026
+full_name: Shawn D. Hill
+collector: clearasmud/wa_county_deep_dive
+source_aliases:
+  wa_sos:
+    tier: T1
+    source_name: Washington Secretary of State — Elections Division
+    url: https://www.sos.wa.gov/elections/
+    access_date: '2026-05-23'
+  wa_pdc:
+    tier: T1
+    source_name: Washington Public Disclosure Commission (PDC)
+    url: https://www.pdc.wa.gov/
+    access_date: '2026-05-23'
+  daily_world:
+    tier: T2
+    source_name: The Daily World (Aberdeen)
+    url: https://www.thedailyworld.com/
+    access_date: '2026-05-23'
+  go_grays_harbor:
+    tier: T2
+    source_name: Go Grays Harbor
+    url: https://www.gograysharbor.com/
+    access_date: '2026-05-23'
+biographical:
+  residence:
+    claim: Lifelong Grays Harbor County resident
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  party_affiliation:
+    claim: Democrat
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  education:
+  - claim: Associate degree, Grays Harbor College (1997)
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: single-source
+  - claim: Bachelor of Science in Accounting, Western Governors University (2013)
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: single-source
+  employment_history:
+  - claim: Chief Deputy Treasurer, Grays Harbor County (nearly 9 years, approximately 2016-2025). Worked closely with Treasurer Kenneth Albert. Oversaw software adoption, credit card processing, electronic excise filing, and property tax lock box implementation.
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  - claim: Grays Harbor County Treasurer (appointed July 25, 2025, replacing retired Kenneth Albert). Selected by BOCC from three nominees submitted by Grays Harbor Democrats (Hill, Susan Ancich, Mike Cooper). Approved by 2-1 vote (Commissioner Raines dissenting).
+    sources:
+    - daily_world
+    - go_grays_harbor
+    highest_tier: T2
+    confidence: verified
+  full_name:
+    claim: Shawn D. Hill
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+political_positions:
+  positions:
+  - topic: Non-Partisan Management
+    topic_id: nonpartisan
+    current_position:
+      claim: Emphasizes that the office of County Treasurer must be managed in a non-partisan manner. Stresses impartiality regardless of political affiliation.
+      sources:
+      - daily_world
+      highest_tier: T2
+      confidence: corroborated
+  - topic: Fiscal Security
+    topic_id: fiscal_security
+    current_position:
+      claim: Safety and security of all county deposits are his top priorities. Building trust with departments and districts across the county.
+      sources:
+      - daily_world
+      highest_tier: T2
+      confidence: corroborated
+  - topic: Process Modernization
+    topic_id: modernization
+    current_position:
+      claim: Track record of process improvements — property tax lock box reduced processing from weeks to as quickly as one day. Only chief deputy in WA to correctly complete new state reporting schedule on first attempt. Identified missing data points on the new state form.
+      sources:
+      - daily_world
+      highest_tier: T2
+      confidence: corroborated
+voting_record:
+  votes: []
+campaign_finance:
+  filing_entity:
+    claim: No specific PDC filings found for 2026 campaign yet
+    sources:
+    - wa_pdc
+    highest_tier: T1
+    confidence: single-source
+public_statements:
+  statements:
+  - statement: Trust is paramount — it is my goal to earn and maintain the trust of everyone I serve.
+    is_direct_quote: true
+    date: '2026-05-19'
+    context: Campaign announcement in Daily World
+    topic_ids:
+    - nonpartisan
+    - fiscal_security
+endorsements:
+  received: []
+awards:
+- claim: Grays Harbor Board of County Commissioners Leadership and Service Award (October 2024) for exemplary audit work in achieving a clean financial audit report from the Office of the Washington State Auditor.
+  sources:
+  - daily_world
+election_history:
+- year: 2026
+  race: Grays Harbor County Treasurer
+  result: Pending (appointed incumbent, first-time candidate)
+  sources:
+  - wa_sos

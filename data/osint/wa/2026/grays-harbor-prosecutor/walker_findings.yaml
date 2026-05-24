@@ -1,0 +1,47 @@
+candidate_name: Jason F. Walker
+findings:
+- title: Appointed Incumbent — Never Elected, Chosen by Party Process
+  category: pattern
+  description: Walker was appointed prosecutor on March 17, 2026, through a partisan
+    nomination process. The Grays Harbor Democrats submitted three nominees (Walker,
+    Brian Lane, Mac Jardine), and the BOCC selected Walker. He has never won a
+    competitive election. Opponents may frame this as a party-insider appointment
+    rather than a democratic mandate.
+  source_tier: T2
+  political_impact: Moderate
+  defense: Washington law requires partisan appointment when a partisan office is
+    vacated mid-term. The process is transparent and legally mandated. Walker's
+    selection was based on demonstrated qualifications — 11 years in the office
+    plus statewide training leadership.
+  source_urls:
+  - https://www.thedailyworld.com/2026/02/24/bocc-appoints-walker-as-prosecuting-attorney/
+- title: Left Grays Harbor for Three Years — Returning Outsider Perception
+  category: character
+  description: Walker left the Grays Harbor Prosecutor's Office in December 2022
+    after 11 years to take a statewide position with WAPA. He returned only upon
+    appointment in March 2026. His opponent Crawford has been actively prosecuting
+    cases in Grays Harbor since August 2024. Critics may argue Walker left when the
+    office was struggling and returned to claim the top job.
+  source_tier: T2
+  political_impact: Moderate
+  defense: Walker's departure predated Tillotson's worst period. His WAPA role
+    training 150+ prosecutors statewide demonstrates commitment to the profession.
+    His return was to a familiar office where he had deep institutional knowledge.
+    Commissioner Miller praised his 'deep commitment to public safety.'
+  source_urls:
+  - https://www.thedailyworld.com/2026/02/27/walker-it-feels-like-ive-come-back-home/
+- title: Inherits a Dysfunctional Office — Tillotson's Legacy
+  category: pattern
+  description: Walker inherited an office plagued by two internal investigations,
+    high staff turnover (of 11 positions that received raises in 2023, only 3
+    employees remained), and what Commissioner Miller called a 'negative reputation'
+    hindering recruitment. Walker must demonstrate he can stabilize the office
+    while simultaneously campaigning.
+  source_tier: T2
+  political_impact: High
+  defense: Walker's campaign platform explicitly addresses office stability. His
+    WAPA training experience is directly relevant to rebuilding a prosecutorial
+    team. The dysfunction predated his tenure — he was not part of the Tillotson
+    administration.
+  source_urls:
+  - https://www.thedailyworld.com/news/county-prosecuting-attorney-tillotson-tenders-resignation/

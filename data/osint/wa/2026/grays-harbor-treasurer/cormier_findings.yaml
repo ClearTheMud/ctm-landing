@@ -1,0 +1,48 @@
+candidate_name: Wes Cormier
+findings:
+- title: Prior Election Loss — 2020 Senate Primary (Third Place)
+  category: pattern
+  description: Cormier ran for WA State Senate LD19 in 2020 and finished third in
+    the primary with approximately 17-18.5% of the vote, behind both incumbent
+    Democrat Dean Takko and Republican Jeff Wilson. His inability to consolidate
+    Republican voters against Wilson suggests limited crossover appeal.
+  source_tier: T1
+  political_impact: Moderate
+  defense: The 2020 Senate race was a very different contest — statewide legislative
+    races attract different voter dynamics than county administrative offices.
+    Cormier's strong name recognition from 8 years as commissioner is his primary
+    asset for a county-level race.
+  source_urls:
+  - https://ballotpedia.org/Wes_Cormier
+- title: No Operational Treasurer Experience — Executive vs Operational Gap
+  category: character
+  description: Cormier's experience is executive/legislative (budget oversight, policy
+    decisions as commissioner) and appraisal-based (real estate appraiser in
+    Assessor's Office). He has no direct experience in treasury operations — deposit
+    management, property tax processing, investment of county funds, or the day-to-day
+    accounting that the treasurer's office performs. His opponent has 9 years of
+    hands-on operational experience in the very office.
+  source_tier: T2
+  political_impact: Moderate
+  defense: Cormier oversaw a $100+ million county budget for 8 years, making
+    financial policy decisions and managing contracts. His 7 years in the Assessor's
+    Office gave him direct experience with property tax and levy systems. Executive
+    oversight experience is arguably more important than operational experience for
+    a department head role.
+  source_urls:
+  - https://www.thedailyworld.com/2026/03/24/cormier-announces-run-for-county-treasurer/
+- title: Weyerhaeuser Ordinance Repeal — Controversial Policy Record
+  category: policy
+  description: As commissioner, Cormier championed an ordinance targeting Weyerhaeuser
+    and large timber companies that charged recreational access fees on private land
+    receiving property tax breaks. The timber industry fought back, and the
+    commissioners ultimately repealed the ordinance. In a timber-dependent county,
+    taking on major employers is a double-edged sword.
+  source_tier: T2
+  political_impact: Moderate
+  defense: Cormier argued for taxpayer equity — public access was part of the
+    designated forest land tax break. His willingness to challenge powerful interests
+    demonstrates independence. He expressed disappointment when the ordinance was
+    repealed, showing conviction.
+  source_urls:
+  - https://kbkw.com/grays-harbor-county-commissioners-repeal-challenge-to-designated-forest-land-owners/

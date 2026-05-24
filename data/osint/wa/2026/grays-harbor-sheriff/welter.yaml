@@ -1,0 +1,152 @@
+candidate_id: wa_sheriff_grays-harbor_welter_2026
+full_name: Edward Welter
+collector: clearasmud/wa_county_deep_dive
+source_aliases:
+  wa_sos:
+    tier: T1
+    source_name: Washington Secretary of State — Elections Division
+    url: https://www.sos.wa.gov/elections/
+    access_date: '2026-05-23'
+  wa_pdc:
+    tier: T1
+    source_name: Washington Public Disclosure Commission (PDC)
+    url: https://www.pdc.wa.gov/
+    access_date: '2026-05-23'
+  daily_world:
+    tier: T2
+    source_name: The Daily World (Aberdeen)
+    url: https://www.thedailyworld.com/
+    access_date: '2026-05-23'
+  ballotpedia:
+    tier: T2
+    source_name: Ballotpedia
+    url: https://ballotpedia.org/
+    access_date: '2026-05-23'
+  westport_mayor:
+    tier: T3
+    source_name: Mayor Ed Welter Campaign Website
+    url: https://www.westportmayor.com/
+    access_date: '2026-05-23'
+  brady_list:
+    tier: T2
+    source_name: Giglio-Brady List Database
+    url: https://giglio-bradylist.com/
+    access_date: '2026-05-23'
+  gh_scanner:
+    tier: T2
+    source_name: Grays Harbor Scanner (Facebook)
+    url: https://www.facebook.com/GraysHarborScanner/
+    access_date: '2026-05-23'
+  gh_chamber:
+    tier: T2
+    source_name: Greater Grays Harbor Chamber of Commerce
+    url: https://chamber.graysharbor.org/
+    access_date: '2026-05-23'
+biographical:
+  residence:
+    claim: Westport, Washington (PO BOX 2216, WESTPORT, WA 98595)
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  party_affiliation:
+    claim: States No Party Preference
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  family:
+    claim: Born in Tacoma, Washington to Chuck and Joan Welter. Family has lived in Puget Sound and Washington coastal areas for several generations. Uncle introduced him to Westport at age 16 and taught him to surf.
+    sources:
+    - westport_mayor
+    highest_tier: T3
+    confidence: single-source
+  education:
+  - claim: Bachelor of Economics, Pacific Lutheran University. While completing degree, spent three months in Namibia researching effects of land repatriation policies. Presented research at the 2006 Western Economics Association International Conference.
+    sources:
+    - westport_mayor
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  military_service:
+    claim: Joined the U.S. Coast Guard in 2010. Requested and received assignment to Westport station in 2013.
+    sources:
+    - westport_mayor
+    highest_tier: T3
+    confidence: single-source
+  employment_history:
+  - claim: U.S. Coast Guard, enlisted (2010-approximately 2016). Stationed at Westport from 2013.
+    sources:
+    - westport_mayor
+    highest_tier: T3
+    confidence: single-source
+  - claim: Washington Fish and Wildlife Officer, assigned to Westport permanently (after Coast Guard enlistment)
+    sources:
+    - westport_mayor
+    highest_tier: T3
+    confidence: single-source
+  - claim: Deputy Sheriff / Resident Deputy, Grays Harbor County Sheriff's Office — South Beach area (lateralled in 2018). Duties include Narcotics K9 Handler, Critical Response Unit member, Fire Investigator, and Defensive Tactics Instructor.
+    sources:
+    - westport_mayor
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  - claim: Detective, Grays Harbor County Sheriff's Office (current rank)
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  - claim: Mayor of Westport, Washington (elected 2023, term expires December 31, 2027)
+    sources:
+    - ballotpedia
+    - daily_world
+    highest_tier: T2
+    confidence: verified
+  - claim: "Board Member, Public Hospital District #2 (appointed October 28, 2025 to fill vacancy from Michael Bruce's death)"
+    sources:
+    - daily_world
+    - gh_chamber
+    highest_tier: T2
+    confidence: corroborated
+  full_name:
+    claim: Edward C. Welter
+    sources:
+    - wa_sos
+    - brady_list
+    highest_tier: T1
+    confidence: verified
+political_positions:
+  positions:
+  - topic: Law Enforcement Reform
+    topic_id: law_enforcement
+    current_position:
+      claim: Running against his current boss, incumbent Sheriff Wallace. Positions not yet detailed in public media coverage.
+      sources:
+      - daily_world
+      highest_tier: T2
+      confidence: single-source
+voting_record:
+  votes: []
+campaign_finance:
+  filing_entity:
+    claim: Campaign email edwelter@graysharborsheriff.com — uses official sheriff's office domain for campaign contact
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+public_statements:
+  statements: []
+endorsements:
+  received: []
+election_history:
+- year: 2023
+  race: Mayor of Westport
+  result: Won election
+  sources:
+  - ballotpedia
+- year: 2025
+  race: "Public Hospital District #2, Position 2"
+  result: Lost narrowly — Kyle Pauley 50.67% (5,507) vs Welter 48.68% (5,290). Had been appointed to fill vacancy from Michael Bruce's death.
+  sources:
+  - daily_world
+  - ballotpedia

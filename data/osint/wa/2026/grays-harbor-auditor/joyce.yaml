@@ -1,0 +1,50 @@
+candidate_id: wa_auditor_grays-harbor_joyce_2026
+full_name: Brielle S Joyce
+collector: clearasmud/wa_county_deep_dive
+source_aliases:
+  wa_sos:
+    tier: T1
+    source_name: Washington Secretary of State — Elections Division
+    url: https://www.sos.wa.gov/elections/
+    access_date: '2026-05-23'
+biographical:
+  residence:
+    claim: 1810 Isabel Way, Aberdeen, WA 98520
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  party_affiliation:
+    claim: Democrat
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  full_name:
+    claim: Brielle S Joyce
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+political_positions:
+  positions: []
+voting_record:
+  votes: []
+campaign_finance:
+  filing_entity:
+    claim: PDC candidate file exists (candidate ID 567258). Campaign email brielleforgraysharbor@gmail.com.
+    sources:
+    - wa_pdc
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+public_statements:
+  statements: []
+endorsements:
+  received: []
+election_history:
+- year: 2026
+  race: Grays Harbor County Auditor
+  result: Pending (first-time candidate)
+  sources:
+  - wa_sos

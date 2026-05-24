@@ -1,0 +1,189 @@
+candidate_id: wa_sheriff_grays-harbor_wallace_2026
+full_name: Darrin E. Wallace
+collector: clearasmud/wa_county_deep_dive
+source_aliases:
+  wa_sos:
+    tier: T1
+    source_name: Washington Secretary of State — Elections Division
+    url: https://www.sos.wa.gov/elections/
+    access_date: '2026-05-23'
+  wa_pdc:
+    tier: T1
+    source_name: Washington Public Disclosure Commission (PDC)
+    url: https://www.pdc.wa.gov/
+    access_date: '2026-05-23'
+  daily_world:
+    tier: T2
+    source_name: The Daily World (Aberdeen)
+    url: https://www.thedailyworld.com/
+    access_date: '2026-05-23'
+  kxro:
+    tier: T2
+    source_name: KXRO News Radio
+    url: https://www.kxro.com/
+    access_date: '2026-05-23'
+  go_grays_harbor:
+    tier: T2
+    source_name: Go Grays Harbor
+    url: https://www.gograysharbor.com/
+    access_date: '2026-05-23'
+  ballotpedia:
+    tier: T2
+    source_name: Ballotpedia
+    url: https://ballotpedia.org/
+    access_date: '2026-05-23'
+  king5:
+    tier: T2
+    source_name: KING 5 News (Seattle)
+    url: https://www.king5.com/
+    access_date: '2026-05-23'
+  campaign_wallace:
+    tier: T3
+    source_name: Wallace for Sheriff Campaign
+    url: https://wallaceforsheriff.com/
+    access_date: '2026-05-23'
+biographical:
+  residence:
+    claim: Grays Harbor County, Washington
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  party_affiliation:
+    claim: States No Party Preference
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+  education:
+  - claim: U.S. Coast Guard training and command qualifications
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  military_service:
+    claim: 20 years active duty U.S. Coast Guard, retired as Chief Warrant Officer. 5 years at National Motor Lifeboat School in Ilwaco, WA as Senior Surfman Instructor — trained approximately 150 students, logged over 1,000 hours in surf with zero injuries. 3 years as Executive Petty Officer (2nd in command) of USCG Station Golden Gate, Sausalito, CA — supervised 50 personnel. 3 years as Commanding Officer of USCG Station Grays Harbor in Westport — supervised 55 personnel. Awarded 5 Commendation Medals, 7 Achievement Medals, 3 Commandant's Letters of Commendation.
+    sources:
+    - daily_world
+    - go_grays_harbor
+    - campaign_wallace
+    highest_tier: T2
+    confidence: corroborated
+  employment_history:
+  - claim: Commanding Officer, U.S. Coast Guard Station Grays Harbor, Westport, WA (3 years)
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  - claim: Deputy Sheriff, Grays Harbor County Sheriff's Office (joined after Coast Guard retirement)
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  - claim: Sergeant, Grays Harbor County Sheriff's Office — supervised patrol operations
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  - claim: Detective Sergeant, Grays Harbor County Sheriff's Office — supervised Investigations Division. Supervisor for Region III Critical Incident Investigation Team for 2 years. Assisted, led, or supervised 15 homicide investigations.
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  - claim: Chief Civil Deputy, Grays Harbor County Sheriff's Office (promoted December 2019). Second-in-command under Sheriff Rick Scott.
+    sources:
+    - daily_world
+    highest_tier: T2
+    confidence: corroborated
+  - claim: Sheriff, Grays Harbor County (sworn in January 2023, replacing retiring 45-year veteran Sheriff Rick Scott)
+    sources:
+    - wa_sos
+    - go_grays_harbor
+    - daily_world
+    highest_tier: T1
+    confidence: verified
+  full_name:
+    claim: Darrin E. Wallace
+    sources:
+    - wa_sos
+    highest_tier: T1
+    confidence: verified
+political_positions:
+  positions:
+  - topic: Jail Replacement
+    topic_id: jail
+    current_position:
+      claim: Top priority is a new jail facility. Current 45-year-old facility requires constant repairs and is vertical in design, which is cumbersome. Wants to model new facility after Skagit County's linear design. Estimated cost $80 million. Goal is securing approvals during his term.
+      sources:
+      - daily_world
+      highest_tier: T2
+      confidence: corroborated
+  - topic: Transparency / Body Cameras
+    topic_id: transparency
+    current_position:
+      claim: Invested $900,000 in body cameras for deputies and patrol cars, plus interview room cameras. Prioritizes transparency and positive community communication.
+      sources:
+      - daily_world
+      highest_tier: T2
+      confidence: corroborated
+  - topic: Staffing
+    topic_id: staffing
+    current_position:
+      claim: Faces staffing shortages including one patrol deputy, four to five corrections deputies, and four support specialists. Acknowledges recruiting challenges.
+      sources:
+      - daily_world
+      highest_tier: T2
+      confidence: corroborated
+  - topic: Crime Priorities
+    topic_id: crime
+    current_position:
+      claim: Major crime issues are stolen vehicles, catalytic converter thefts, and drug-related crimes.
+      sources:
+      - daily_world
+      highest_tier: T2
+      confidence: corroborated
+  - topic: Budget
+    topic_id: budget
+    current_position:
+      claim: Sheriff's department faces significant budget cuts. In 2024, warned that the department would have to cut 7 deputies if budget cuts proceeded.
+      sources:
+      - king5
+      highest_tier: T2
+      confidence: corroborated
+voting_record:
+  votes: []
+campaign_finance:
+  filing_entity:
+    claim: Wallace for Sheriff campaign committee
+    sources:
+    - campaign_wallace
+    highest_tier: T3
+    confidence: single-source
+public_statements:
+  statements:
+  - statement: Not at all. I loved being a deputy. There was a lot of freedom to go do what you needed to do.
+    is_direct_quote: true
+    date: '2023-01'
+    context: When asked if he ever envisioned becoming sheriff
+    topic_ids:
+    - staffing
+  - statement: Continue on the path that I was taught. Continue the legacy that (previous sheriffs) laid down before.
+    is_direct_quote: true
+    date: '2023-01'
+    context: Q&A with Daily World on vision for the office
+    topic_ids:
+    - transparency
+endorsements:
+  received: []
+election_history:
+- year: 2022
+  race: Grays Harbor County Sheriff (Primary)
+  result: Won with over 71% of the vote
+  sources:
+  - ballotpedia
+- year: 2022
+  race: Grays Harbor County Sheriff (General)
+  result: Won with 73.41% of the vote (~8,000-vote margin), defeating Michael Catlett (former Brier Police Chief). Replaced retiring 45-year veteran Sheriff Rick Scott.
+  sources:
+  - go_grays_harbor
+  - ballotpedia

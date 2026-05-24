@@ -1,0 +1,45 @@
+county: Grays Harbor
+state: WA
+election_year: 2026
+primary_date: '2026-08-04'
+general_date: '2026-11-03'
+partisan_lean: Lean Republican (R+6). Assessor race historically competitive — Lindgren
+  has won three elections but never by more than ~54%.
+incumbent: Dan Lindgren (Republican, formerly Democrat — switched April 2026. Serving
+  since January 2015, seeking fourth term.)
+candidates:
+- name: Dan Lindgren
+  party: Republican (switched from Democrat April 2026)
+  status: Incumbent (three-term assessor, 19+ years in the office)
+- name: Josh Nuxoll
+  party: Independent
+  status: Challenger (first-time candidate, no public campaign infrastructure)
+prediction: Lindgren wins comfortably. He is a deeply experienced incumbent with statewide
+  professional credentials, technology modernization accomplishments, and record-low
+  property value appeals. His party switch to Republican removes the partisan liability
+  he carried in prior races (winning as a Democrat in an R+6 county). Nuxoll has no
+  identifiable qualifications, campaign infrastructure, or media presence. Unless
+  Nuxoll surfaces significant office mismanagement, this is a non-competitive race.
+key_issues:
+- Property values rising — increased demand driving higher assessments and appeal concerns
+- Technology modernization — Taxsifter, MapGeo GIS platform deployment
+- "PDC complaint (Case #6580) — filed against Lindgren, details and resolution unknown"
+- Party switch optics — Lindgren's Democrat-to-Republican conversion in election year
+context: >
+  The 2026 Grays Harbor Assessor race is an asymmetric contest between a well-established
+  three-term incumbent and an unknown challenger. Dan Lindgren has held the office
+  since January 2015, having joined the Assessor's Office as an appraiser in 2007.
+  His tenure has been marked by technology modernization (MapGeo GIS platform — first
+  county in WA to adopt it), record-low property value appeals, and statewide
+  professional leadership (WSACA technology committee chair for 11 years, unanimously
+  elected to WACO executive board).
+
+  The most notable development is Lindgren's party switch from Democrat to Republican
+  in April 2026. He previously won three elections as a Democrat in a county that has
+  trended Republican (Trump 51.4% in 2024). His opponent Josh Nuxoll, filing as
+  Independent, has no discoverable public record of relevant experience, no campaign
+  infrastructure, and no media coverage.
+
+  Note: Patti McLean, initially identified as a candidate, is actually the Mason County
+  Assessor running unopposed for re-election in Mason County. She previously worked
+  14 months in the Grays Harbor Assessor's Office but is not a candidate here.
