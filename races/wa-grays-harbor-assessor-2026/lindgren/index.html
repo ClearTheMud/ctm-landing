@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
 <title>Dan Lindgren &mdash; Grays Harbor County Assessor | clearthemud.org</title>
-<meta name="description" content="Deep-dive OSINT dossier for Dan Lindgren (Republican) running for Grays Harbor County Assessor 2026. 3 sourced vulnerability findings.">
+<meta name="description" content="Deep-dive OSINT dossier for Dan Lindgren (Republican) running for Grays Harbor County Assessor 2026. 2 sourced vulnerability findings.">
 <meta property="og:title" content="Dan Lindgren &mdash; Grays Harbor County Assessor">
-<meta property="og:description" content="Deep-dive OSINT dossier for Dan Lindgren (Republican) running for Grays Harbor County Assessor 2026. 3 sourced vulnerability findings.">
+<meta property="og:description" content="Deep-dive OSINT dossier for Dan Lindgren (Republican) running for Grays Harbor County Assessor 2026. 2 sourced vulnerability findings.">
 <meta property="og:type" content="article">
 <link rel="canonical" href="https://clearthemud.org/races/wa-grays-harbor-assessor-2026/lindgren/">
 <link rel="stylesheet" href="/css/dossier.css">
@@ -30,13 +30,13 @@
   <span class="nav-current">Dan Lindgren</span>
 </nav>
 
-<div class="header party-rep">
+<div class="header party-dem">
   <div class="page">
     <h1>Candidate Dossier: Dan Lindgren</h1>
     <h2>2026 Grays Harbor County Assessor</h2>
     <div class="header-meta">
       <span><span class="tlp-badge">TLP:GREEN</span></span>
-      <span><strong>Date:</strong> 2026-05-23</span>
+      <span><strong>Date:</strong> 2026-05-25</span>
       <span><strong>Party:</strong> Republican</span>
       <span><strong>District:</strong> Grays Harbor County</span>
     </div>
@@ -107,22 +107,40 @@
   <div class="section">
     <h2><span class="section-num">5</span> Vulnerability Assessment</h2>
 
-    <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">1 sourced finding. Sourced at T1 (Official Record) per clearthemud provenance model. No T3/T4 claims included.</p>
+    <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">2 sourced findings. All sourced at T1 (Official Record) or T2 (Multi-Source Media) per clearthemud provenance model. No T3/T4 claims included.</p>
 
-    <div class="finding moderate">
-      <h4>Finding 5.1: PDC Complaint Filed &mdash; Case #6580 <span class="impact-badge impact-moderate">MODERATE</span></h4>
+    <div class="finding high">
+      <h4>Finding 5.1: Party Switch &mdash; Democrat to Republican in Election Year <span class="impact-badge impact-high">HIGH</span></h4>
       <dl>
         <dt>What happened</dt>
-        <dd>A Public Disclosure Commission complaint (Case #6580) was filed against Dan Lindgren. The specific allegations and resolution are not available from public search results &mdash; the complaint document exists in the PDC case tracking system but requires direct retrieval.</dd>
+        <dd>Lindgren served as a Democrat for his entire political career (2010, 2014, 2018, 2022 elections) and switched to Republican in April 2026, less than four months before the primary. In a county that has trended Republican (Trump 51.4% in 2024), the timing is notable. His statement that his &#x27;values now align more closely with the Republican Party&#x27; accompanied the switch.</dd>
+        <dt>Source tier</dt>
+        <dd>T2</dd>
+        <dt>Political impact</dt>
+        <dd>High</dd>
+        <dt>Defense</dt>
+        <dd>Lindgren emphasized the assessor role is nonpartisan and focused on applying the law equitably. He stated this reflects &#x27;personal integrity rather than disagreement with local Democratic leaders.&#x27; Many elected officials in rural Washington have made similar switches as the parties have realigned.</dd>
+      </dl>
+      <ul class="source-list">
+        <li>https://www.thedailyworld.com/2026/04/06/lindgren-announces-campaign-for-county-assessor/</li>
+      </ul>
+    </div>
+
+    <div class="finding low">
+      <h4>Finding 5.2: PDC Complaint Filed &mdash; Case #6580 <span class="impact-badge impact-low">LOW</span></h4>
+      <dl>
+        <dt>What happened</dt>
+        <dd>A Public Disclosure Commission complaint (Case #6580, filing #151198) was filed against Dan Lindgren by Conner Edwards on February 15, 2024. The complaint alleges violation of RCW 42.17A.235 and .240 for failure to timely and accurately report contributions and expenditures &mdash; specifically, failure to file mandatory C-4 reports for the 2022 election cycle. As of March 2026, the case status is &quot;Investigation of Possible Violation&quot; with no penalties assessed.</dd>
         <dt>Source tier</dt>
         <dd>T1</dd>
         <dt>Political impact</dt>
-        <dd>Moderate</dd>
+        <dd>Low</dd>
         <dt>Defense</dt>
-        <dd>The complaint&#x27;s content and resolution are unknown. Many PDC complaints are dismissed or result in minor findings. Without knowing the specific allegations, the impact cannot be fully assessed.</dd>
+        <dd>C-4 filing violations are among the most common PDC complaints and frequently result in warnings or small fines. No penalties have been assessed. The complaint was filed by a private citizen, not initiated by PDC staff.</dd>
       </dl>
       <ul class="source-list">
-        <li>https://pdc-case-tracking.s3.us-gov-west-1.amazonaws.com/6580/151198%20Lindgren%20Dan%20Complaint.pdf</li>
+        <li>https://data.wa.gov/resource/a4ma-dq6s.json?case_id=6580</li>
+        <li>https://www.pdc.wa.gov/rules-enforcement/enforcement/enforcement-cases</li>
       </ul>
     </div>
 
@@ -133,7 +151,7 @@
     <div class="finding">
       <dl>
         <dt>Data Sources</dt><dd>WA SOS, WA PDC, local media, public records</dd>
-        <dt>Collection Date</dt><dd>2026-05-23</dd>
+        <dt>Collection Date</dt><dd>2026-05-25</dd>
         <dt>Highest Tier</dt><dd>T1 (Official Record)</dd>
         <dt>Methodology</dt><dd>OSINT deep-dive using exclusively public-record sources. All findings at T1 or T2. No T3/T4 claims included.</dd>
       </dl>
