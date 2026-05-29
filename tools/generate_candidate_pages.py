@@ -59,6 +59,16 @@ def load_states_data():
     return {s["abbr"]: s for s in data["states"]}
 
 
+def load_curated_race_ids():
+    """Race-ids whose pages are hand-authored deep-dives and must NOT be
+    overwritten by this bulk generator. See tools/data/curated_races.json."""
+    path = DATA_DIR / "curated_races.json"
+    if not path.exists():
+        return set()
+    with open(path) as f:
+        return set(json.load(f).get("curated_race_ids", []))
+
+
 def _county_office_to_filename(office):
     """Convert county office name to dossier filename component."""
     import re
@@ -461,6 +471,16 @@ def main():
     if not target_races:
         print("No races found for the specified states.")
         return
+
+    # Preserve hand-authored deep-dives: never overwrite curated pages with
+    # bulk T1 stubs. See tools/data/curated_races.json.
+    curated_ids = load_curated_race_ids()
+    skipped = [r["id"] for r in target_races if r["id"] in curated_ids]
+    target_races = [r for r in target_races if r["id"] not in curated_ids]
+    if skipped:
+        print(f"Preserving {len(skipped)} curated deep-dive race(s) (not regenerated):")
+        for rid in sorted(skipped):
+            print(f"  - {rid}")
 
     total_pages = 0
     states_processed = set()

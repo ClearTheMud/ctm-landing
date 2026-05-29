@@ -103,6 +103,17 @@ python3 tools/build_county_hub.py WA --list-counties
 
 See `tools/COUNTY_BUILDOUT.md` for the full process documentation.
 
+### Curated Deep-Dive Protection
+
+`generate_candidate_pages.py` regenerates every race in `races.json` from
+clearthemud dossier JSON. Hand-authored OSINT deep-dives would otherwise be
+overwritten with thin T1 stubs. The generator reads `tools/data/curated_races.json`
+and **skips** every race-id listed there (it logs each preserved race on run).
+
+**When you publish a new deep-dive** (via clearthemud's `convert_to_ctm_landing.py`),
+add its race-id to `tools/data/curated_races.json` or the next bulk regen will
+clobber it. Tests: `tools/tests/test_curated_skip.py`.
+
 ### Manual Edit Alternative
 
 Edit `tools/data/races.json` directly, then run:
