@@ -11817,15 +11817,6 @@
       "url": "/races/wa-thurston-auditor-2026/",
       "candidates": [
         {
-          "name": "Vivian Glass",
-          "party": "nonpartisan",
-          "role": "challenger",
-          "slug": "glass",
-          "status": "In Primary",
-          "url": "/races/wa-thurston-auditor-2026/glass/",
-          "election_status": "In Primary"
-        },
-        {
           "name": "Tillie Naputi-Pullar",
           "party": "dem",
           "role": "challenger",
@@ -12021,15 +12012,6 @@
           "status": "Advanced to General",
           "url": "/races/wa-thurston-district-court-judge-pos-3-2026/wohl/",
           "election_status": "Advanced to General"
-        },
-        {
-          "name": "M. Brett Buckley",
-          "party": "nonpartisan",
-          "role": "incumbent",
-          "url": "/races/wa-thurston-district-court-judge-pos-3-2026/buckley/",
-          "slug": "buckley",
-          "status": "Advanced to General",
-          "note": "Not found in SOS CandidateList.csv as of 2026-05-18; may have filed after CSV export or under different name"
         }
       ]
     },

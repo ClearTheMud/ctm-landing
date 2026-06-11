@@ -167,7 +167,7 @@ Before publishing any finding, apply these filters:
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **ctm-landing** (3939 symbols, 5334 relationships, 60 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **ctm-landing** (4764 symbols, 6164 relationships, 57 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 
