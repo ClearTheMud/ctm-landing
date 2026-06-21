@@ -7379,15 +7379,6 @@
       "url": "/races/wa-grays-harbor-assessor-2026/",
       "candidates": [
         {
-          "name": "Patti McLean",
-          "party": "ind",
-          "role": "challenger",
-          "slug": "mclean",
-          "status": "In Primary",
-          "url": "/races/wa-grays-harbor-assessor-2026/mclean/",
-          "election_status": "In Primary"
-        },
-        {
           "name": "Dan Lindgren",
           "party": "rep",
           "role": "incumbent",
