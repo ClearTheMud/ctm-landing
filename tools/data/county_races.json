@@ -1832,13 +1832,6 @@
           "office": "Assessor",
           "candidates": [
             {
-              "name": "Patti McLean",
-              "party": "INDEPENDENT",
-              "filing_date": "5/4/2026 6:19:17 PM",
-              "election_status": "In Primary",
-              "status": "Active"
-            },
-            {
               "name": "Dan Lindgren",
               "party": "REPUBLICAN",
               "filing_date": "5/6/2026 10:03:11 AM",
@@ -1932,13 +1925,6 @@
               "filing_date": "5/4/2026 1:13:00 PM",
               "election_status": "Advanced to General",
               "status": "Active"
-            },
-            {
-              "name": "David Mistachkin",
-              "party": "Nonpartisan",
-              "filing_date": "5/8/2026 2:36:14 PM",
-              "election_status": "",
-              "status": "Withdrawn"
             }
           ]
         },
