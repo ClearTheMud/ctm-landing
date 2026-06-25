@@ -286,9 +286,9 @@ def render_candidate_page(race, candidate, dossier, state_info):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
-<title>{name} &mdash; {race_title} | clearthemud.org</title>
+<title>{name}, {race_title} | clearthemud.org</title>
 <meta name="description" content="Verified candidate dossier for {name} ({party_full}) running in the {race_title}.">
-<meta property="og:title" content="{name} &mdash; {race_title}">
+<meta property="og:title" content="{name}, {race_title}">
 <meta property="og:description" content="Verified candidate dossier for {name} ({party_full}) running in the {race_title}.">
 <meta property="og:type" content="website">
 <link rel="canonical" href="{SITE_URL}{candidate['url']}">
@@ -296,7 +296,7 @@ def render_candidate_page(race, candidate, dossier, state_info):
 </head>
 <body>
 
-<div class="classification-bar">TLP:GREEN &mdash; Approved for public sharing</div>
+<div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
 <nav class="dossier-nav">
   <a href="/">clearthemud.org</a>
@@ -328,7 +328,7 @@ def render_candidate_page(race, candidate, dossier, state_info):
     <div class="section">
       <h2><span class="section-num">1</span> Candidate Overview</h2>
       <div class="bluf">
-        <h3>BLUF &mdash; Bottom Line Up Front</h3>
+        <h3>BLUF, Bottom Line Up Front</h3>
         <p>{name} is a {party_full} {role.lower()} in the {race_title}.</p>
       </div>
     </div>
@@ -339,19 +339,19 @@ def render_candidate_page(race, candidate, dossier, state_info):
         <dl>
           <dt>Data Source</dt><dd>clearthemud.org data pipeline</dd>
           <dt>Collection Date</dt><dd>{meta.get("collected_date", "2026-05-09")}</dd>
-          <dt>Party Verification</dt><dd>{source_tier} &mdash; {meta.get("party", {}).get("confidence", "unverified")}</dd>
+          <dt>Party Verification</dt><dd>{source_tier}, {meta.get("party", {}).get("confidence", "unverified")}</dd>
         </dl>
       </div>
     </div>
 
   <div class="footer">
-    <strong>clearthemud.org</strong> &mdash; Verified public-record candidate intelligence<br>
+    <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
 
 </div>
 
-<div class="classification-bar">TLP:GREEN &mdash; Approved for public sharing</div>
+<div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
 </body>
 </html>
@@ -382,7 +382,7 @@ def render_race_overview(race, dossiers, state_info):
         status_class = "status-incumbent" if role.lower() == "incumbent" else "status-active"
         candidate_cards.append(f"""      <a href="{c['url']}" class="dossier-link">
         <h4>{c['name']} ({party_label})</h4>
-        <p><span class="{status_class}">{role.upper()}</span> &mdash; Raised: {raised}</p>
+        <p><span class="{status_class}">{role.upper()}</span>, Raised: {raised}</p>
       </a>""")
 
     cards_html = "\n".join(candidate_cards)
@@ -401,9 +401,9 @@ def render_race_overview(race, dossiers, state_info):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
-<title>{title} &mdash; Race Overview | clearthemud.org</title>
+<title>{title}, Race Overview | clearthemud.org</title>
 <meta name="description" content="Candidate field and race dynamics for the {title}. {len(candidates)} candidates filed.">
-<meta property="og:title" content="{title} &mdash; Race Overview">
+<meta property="og:title" content="{title}, Race Overview">
 <meta property="og:description" content="Candidate field and race dynamics for the {title}. {len(candidates)} candidates filed.">
 <meta property="og:type" content="website">
 <link rel="canonical" href="{SITE_URL}{race['url']}">
@@ -411,7 +411,7 @@ def render_race_overview(race, dossiers, state_info):
 </head>
 <body>
 
-<div class="classification-bar">TLP:GREEN &mdash; Approved for public sharing</div>
+<div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
 <nav class="dossier-nav">
   <a href="/">clearthemud.org</a>
@@ -446,13 +446,13 @@ def render_race_overview(race, dossiers, state_info):
   </div>
 
   <div class="footer">
-    <strong>clearthemud.org</strong> &mdash; Verified public-record candidate intelligence<br>
+    <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
 
 </div>
 
-<div class="classification-bar">TLP:GREEN &mdash; Approved for public sharing</div>
+<div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
 </body>
 </html>

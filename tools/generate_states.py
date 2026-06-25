@@ -65,7 +65,7 @@ def render_race_card(race):
         date_line = ""
     return f"""      <a href="{race['url']}" class="dossier-link">
         <h4>{race['title']}</h4>{date_line}
-        <p><span class="status-active">{status_label}</span> &mdash; {summary}</p>
+        <p><span class="status-active">{status_label}</span>, {summary}</p>
       </a>"""
 
 
@@ -135,7 +135,7 @@ def render_legislature_section(state_name, leg_senate, leg_house, state_abbr="")
 """
 
     return f"""{map_html}    <div class="finding">
-      <p>{total_races} races tracked &mdash; {total_cands} candidates filed</p>
+      <p>{total_races} races tracked, {total_cands} candidates filed</p>
       <table>
         <thead><tr><th>District</th><th>Races</th></tr></thead>
         <tbody>
@@ -300,9 +300,9 @@ def render_state_page(state, state_races, cycle):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
-<title>{name} &mdash; Candidate Research | clearthemud.org</title>
+<title>{name}, Candidate Research | clearthemud.org</title>
 <meta name="description" content="Verified candidate intelligence for {name} races: US Senate, US House, Governor, and state offices.">
-<meta property="og:title" content="{name} &mdash; Candidate Research">
+<meta property="og:title" content="{name}, Candidate Research">
 <meta property="og:description" content="Verified candidate intelligence for {name} races: US Senate, US House, Governor, and state offices.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{SITE_URL}/states/{slug}/">
@@ -311,7 +311,7 @@ def render_state_page(state, state_races, cycle):
 </head>
 <body>
 
-<div class="classification-bar">TLP:GREEN &mdash; Approved for public sharing</div>
+<div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
 <nav class="dossier-nav">
   <a href="/">clearthemud.org</a>
@@ -324,7 +324,7 @@ def render_state_page(state, state_races, cycle):
 <div class="header party-neutral">
   <div class="page">
     <h1>{name}</h1>
-    <h2>Candidate Research &mdash; {cycle} Election Cycle</h2>
+    <h2>Candidate Research, {cycle} Election Cycle</h2>
     <div class="header-meta">
       <span><span class="tlp-badge">TLP:GREEN</span></span>
       <span><strong>Capital:</strong> {capital}</span>
@@ -356,13 +356,13 @@ def render_state_page(state, state_races, cycle):
   </div>
 
   <div class="footer">
-    <strong>clearthemud.org</strong> &mdash; Verified public-record candidate intelligence<br>
+    <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
 
 </div>
 
-<div class="classification-bar">TLP:GREEN &mdash; Approved for public sharing</div>
+<div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 {district_map_script}
 {county_map_script}
 </body>
@@ -447,9 +447,9 @@ def render_states_index(states, races_by_state, cycle):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
-<title>All States &mdash; Candidate Research by State | clearthemud.org</title>
+<title>All States, Candidate Research by State | clearthemud.org</title>
 <meta name="description" content="Browse verified candidate intelligence organized by state. Federal, state, and local race coverage across all 50 states.">
-<meta property="og:title" content="All States &mdash; Candidate Research by State">
+<meta property="og:title" content="All States, Candidate Research by State">
 <meta property="og:description" content="Browse verified candidate intelligence organized by state. Federal, state, and local race coverage across all 50 states.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{SITE_URL}/states/">
@@ -458,7 +458,7 @@ def render_states_index(states, races_by_state, cycle):
 </head>
 <body>
 
-<div class="classification-bar">TLP:GREEN &mdash; Approved for public sharing</div>
+<div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
 <nav class="dossier-nav">
   <a href="/">clearthemud.org</a>
@@ -469,7 +469,7 @@ def render_states_index(states, races_by_state, cycle):
 <div class="header party-neutral">
   <div class="page">
     <h1>Browse by State</h1>
-    <h2>Candidate Research &mdash; {cycle} Election Cycle</h2>
+    <h2>Candidate Research, {cycle} Election Cycle</h2>
     <div class="header-meta">
       <span><span class="tlp-badge">TLP:GREEN</span></span>
       <span><strong>Active Research:</strong> {active_count} {"state" if active_count == 1 else "states"}</span>
@@ -485,13 +485,13 @@ def render_states_index(states, races_by_state, cycle):
   </div>
 
   <div class="footer">
-    <strong>clearthemud.org</strong> &mdash; Verified public-record candidate intelligence<br>
+    <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
 
 </div>
 
-<div class="classification-bar">TLP:GREEN &mdash; Approved for public sharing</div>
+<div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 {map_script}
 </body>
 </html>
@@ -628,9 +628,9 @@ def render_county_page(state, county, cycle, county_races=None):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
-<title>{county_name} County, {name} &mdash; Local Races | clearthemud.org</title>
+<title>{county_name} County, {name}, Local Races | clearthemud.org</title>
 <meta name="description" content="Local race coverage for {county_name} County, {name}. Browse cities and towns with verified candidate intelligence.">
-<meta property="og:title" content="{county_name} County, {name} &mdash; Local Races">
+<meta property="og:title" content="{county_name} County, {name}, Local Races">
 <meta property="og:description" content="Local race coverage for {county_name} County, {name}.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{SITE_URL}/states/{slug}/{county_slug}/">
@@ -639,7 +639,7 @@ def render_county_page(state, county, cycle, county_races=None):
 </head>
 <body>
 
-<div class="classification-bar">TLP:GREEN &mdash; Approved for public sharing</div>
+<div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
 <nav class="dossier-nav">
   <a href="/">clearthemud.org</a>
@@ -654,7 +654,7 @@ def render_county_page(state, county, cycle, county_races=None):
 <div class="header party-neutral">
   <div class="page">
     <h1>{county_name} County</h1>
-    <h2>Local Races &mdash; {cycle} Election Cycle</h2>
+    <h2>Local Races, {cycle} Election Cycle</h2>
     <div class="header-meta">
       <span><span class="tlp-badge">TLP:GREEN</span></span>
       <span><strong>State:</strong> {name}</span>
@@ -672,13 +672,13 @@ def render_county_page(state, county, cycle, county_races=None):
 {places_section}
 
   <div class="footer">
-    <strong>clearthemud.org</strong> &mdash; Verified public-record candidate intelligence<br>
+    <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
 
 </div>
 
-<div class="classification-bar">TLP:GREEN &mdash; Approved for public sharing</div>
+<div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 {place_map_script}
 </body>
 </html>
