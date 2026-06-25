@@ -9413,7 +9413,7 @@
         {
           "name": "Steve Duenkel",
           "party": "rep",
-          "role": "challenger",
+          "role": "incumbent",
           "slug": "duenkel",
           "status": "In Primary",
           "url": "/races/wa-mason-auditor-2026/duenkel/",
@@ -9426,6 +9426,15 @@
           "slug": "balmer",
           "status": "In Primary",
           "url": "/races/wa-mason-auditor-2026/balmer/",
+          "election_status": "In Primary"
+        },
+        {
+          "name": "Vivian Glass",
+          "party": "nonpartisan",
+          "role": "challenger",
+          "slug": "glass",
+          "status": "In Primary",
+          "url": "/races/wa-mason-auditor-2026/glass/",
           "election_status": "In Primary"
         }
       ]
