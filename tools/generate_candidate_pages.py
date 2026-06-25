@@ -345,7 +345,8 @@ def render_candidate_page(race, candidate, dossier, state_info):
     </div>
 
   <div class="footer">
-    <strong>clearthemud.org</strong> &mdash; Verified public-record candidate intelligence
+    <strong>clearthemud.org</strong> &mdash; Verified public-record candidate intelligence<br>
+    <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
 
 </div>
@@ -445,7 +446,8 @@ def render_race_overview(race, dossiers, state_info):
   </div>
 
   <div class="footer">
-    <strong>clearthemud.org</strong> &mdash; Verified public-record candidate intelligence
+    <strong>clearthemud.org</strong> &mdash; Verified public-record candidate intelligence<br>
+    <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
 
 </div>

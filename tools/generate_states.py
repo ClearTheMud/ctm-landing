@@ -356,7 +356,8 @@ def render_state_page(state, state_races, cycle):
   </div>
 
   <div class="footer">
-    <strong>clearthemud.org</strong> &mdash; Verified public-record candidate intelligence
+    <strong>clearthemud.org</strong> &mdash; Verified public-record candidate intelligence<br>
+    <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
 
 </div>
@@ -484,7 +485,8 @@ def render_states_index(states, races_by_state, cycle):
   </div>
 
   <div class="footer">
-    <strong>clearthemud.org</strong> &mdash; Verified public-record candidate intelligence
+    <strong>clearthemud.org</strong> &mdash; Verified public-record candidate intelligence<br>
+    <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
 
 </div>
@@ -670,7 +672,8 @@ def render_county_page(state, county, cycle, county_races=None):
 {places_section}
 
   <div class="footer">
-    <strong>clearthemud.org</strong> &mdash; Verified public-record candidate intelligence
+    <strong>clearthemud.org</strong> &mdash; Verified public-record candidate intelligence<br>
+    <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
 
 </div>
