@@ -177,7 +177,7 @@ Candidates in races.json with no directory on disk.
 | Jeff Baine | wa-lewis-pud-pud-commissioner-dist-1-2026 | /races/wa-lewis-pud-pud-commissioner-dist-1-2026/baine/ |
 | Ben Kostick | wa-lewis-pud-pud-commissioner-dist-1-2026 | /races/wa-lewis-pud-pud-commissioner-dist-1-2026/kostick/ |
 | Paul Sander | wa-lower-county-district-court-pos-1-2026 | /races/wa-lower-county-district-court-pos-1-2026/sander/ |
-| Ronald S. Gold | wa-mason-pud-1-pud-commissioner-dist-2-2026 | /races/wa-mason-pud-1-pud-commissioner-dist-2-2026/gold/ |
+| Ronald S. Gold | wa-mason-pud-1-pud-commissioner-dist-3-2026 | /races/wa-mason-pud-1-pud-commissioner-dist-3-2026/gold/ |
 | Mick Sprouffske | wa-mason-pud-3-pud-commissioner-dist-2-2026 | /races/wa-mason-pud-3-pud-commissioner-dist-2-2026/sprouffske/ |
 | Randy Neatherlin | wa-mason-pud-3-pud-commissioner-dist-2-2026 | /races/wa-mason-pud-3-pud-commissioner-dist-2-2026/neatherlin/ |
 | Scott Vejraska | wa-okanogan-pud-pud-commissioner-dist-1-2026 | /races/wa-okanogan-pud-pud-commissioner-dist-1-2026/vejraska/ |
