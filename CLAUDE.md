@@ -145,6 +145,20 @@ Single shared stylesheet at `/css/dossier.css`. Covers:
 
 No build tools, no JS frameworks. Push HTML to deploy.
 
+## Public Repo Boundary — Do Not Leak Internal Info (MANDATORY)
+
+This repo is **public solely so GitHub Pages can host clearthemud.org.** Public visibility is a
+hosting requirement, not an invitation to track internal work here. Hard rules:
+
+- **This repo receives ONLY validated public site files** — T0–T2 published HTML/CSS/site assets
+  and the generators/registry needed to build them. Never commit T3/T4 data, internal research,
+  raw collection reports, journalist leads, or other internal artifacts here.
+- **ALL issues, bugs, and work items go to the private ADO tracker** (the `clearthemud` data
+  pipeline repo) — *including bugs about this repo's own code/tests.* **Never open GitHub issues
+  on this repo.** This overrides the generic workspace rule "public repo → GitHub issue."
+- The private data pipeline and system of record live in `~/Local/Projects/github/clearthemud/`.
+  When unsure whether something is public-ready, it stays there, not here.
+
 ## Publication Rules
 
 Only T0-T2 verified findings may be published. T3/T4 data, "RESEARCH NOTE" items, and "Journalist Leads" sections stay in local deliverables until vetted. Audit every finding's source tier before committing to this repo.
