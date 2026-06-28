@@ -146,3 +146,11 @@ vite.config.ts.timestamp-*
 __pycache__/
 *.pyc
 .gitnexus
+
+# ClearAsMud private artifacts — never publish to the public site repo
+# (canonical copies live in the private clearthemud ADO repo)
+data/
+CandidateList.csv
+AGENTS.md
+.claude/
+.DS_Store
