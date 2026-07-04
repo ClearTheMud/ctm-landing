@@ -545,7 +545,9 @@ def render_county_race_table(county_races_list, county_slug, abbr_lower):
     rows = []
     for race in county_races_list:
         office = race["office"]
-        race_id = f"{abbr_lower}-{county_slug}-{_office_slug(office)}-2026"
+        # An entry may carry an explicit race_id when the registry slug does not
+        # match the office-name slug (e.g. council districts, or a malformed PUD id).
+        race_id = race.get("race_id") or f"{abbr_lower}-{county_slug}-{_office_slug(office)}-2026"
         race_url = f"/races/{race_id}/"
         cand_parts = []
         for c in race["candidates"]:
