@@ -13863,7 +13863,7 @@
       "level": "county",
       "year": 2026,
       "title": "2026 WA Clark County Council Dist. 1",
-      "status": "draft",
+      "status": "active",
       "url": "/races/wa-clark-county-council-dist-1-2026/",
       "primary_date": "August 4, 2026",
       "general_date": "November 3, 2026",
@@ -13904,7 +13904,8 @@
           "url": "/races/wa-clark-county-council-dist-1-2026/shull/",
           "election_status": "In Primary"
         }
-      ]
+      ],
+      "county_slug": "clark"
     },
     {
       "id": "wa-clark-county-council-dist-2-2026",
@@ -13913,7 +13914,7 @@
       "level": "county",
       "year": 2026,
       "title": "2026 WA Clark County Council Dist. 2",
-      "status": "draft",
+      "status": "active",
       "url": "/races/wa-clark-county-council-dist-2-2026/",
       "primary_date": "August 4, 2026",
       "general_date": "November 3, 2026",
@@ -13945,7 +13946,8 @@
           "url": "/races/wa-clark-county-council-dist-2-2026/zingale/",
           "election_status": "In Primary"
         }
-      ]
+      ],
+      "county_slug": "clark"
     },
     {
       "id": "wa-clark-county-council-dist-5-2026",
@@ -13954,7 +13956,7 @@
       "level": "county",
       "year": 2026,
       "title": "2026 WA Clark County Council Dist. 5",
-      "status": "draft",
+      "status": "active",
       "url": "/races/wa-clark-county-council-dist-5-2026/",
       "primary_date": "August 4, 2026",
       "general_date": "November 3, 2026",
@@ -13977,7 +13979,8 @@
           "url": "/races/wa-clark-county-council-dist-5-2026/mccoy/",
           "election_status": "In Primary"
         }
-      ]
+      ],
+      "county_slug": "clark"
     },
     {
       "id": "wa-clark-pud-pud-commissioner-dist-3-2026",
@@ -13986,7 +13989,7 @@
       "level": "special_district",
       "year": 2026,
       "title": "2026 WA Clark PUD Commissioner Dist. 3",
-      "status": "draft",
+      "status": "active",
       "url": "/races/wa-clark-pud-pud-commissioner-dist-3-2026/",
       "primary_date": "August 4, 2026",
       "general_date": "November 3, 2026",
@@ -14018,7 +14021,8 @@
           "url": "/races/wa-clark-pud-pud-commissioner-dist-3-2026/dyke/",
           "election_status": "In Primary"
         }
-      ]
+      ],
+      "county_slug": "clark"
     },
     {
       "id": "wa-columbia-district-court-pos-1-2026",
