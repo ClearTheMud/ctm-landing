@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
 <title>Gary L. Warnock, Thurston County Coroner | clearthemud.org</title>
-<meta name="description" content="Deep-dive OSINT dossier for Gary L. Warnock (Democrat) running for Thurston County Coroner 2026.">
+<meta name="description" content="Deep-dive OSINT dossier for Gary L. Warnock (Democrat) running for Thurston County Coroner 2026. 1 sourced vulnerability findings.">
 <meta property="og:title" content="Gary L. Warnock, Thurston County Coroner">
-<meta property="og:description" content="Deep-dive OSINT dossier for Gary L. Warnock (Democrat) running for Thurston County Coroner 2026.">
+<meta property="og:description" content="Deep-dive OSINT dossier for Gary L. Warnock (Democrat) running for Thurston County Coroner 2026. 1 sourced vulnerability findings.">
 <meta property="og:type" content="article">
 <link rel="canonical" href="https://clearthemud.org/races/wa-thurston-coroner-2026/warnock/">
 <link rel="stylesheet" href="/css/dossier.css">
@@ -36,7 +36,7 @@
     <h2>2026 Thurston County Coroner</h2>
     <div class="header-meta">
       <span><span class="tlp-badge">TLP:GREEN</span></span>
-      <span><strong>Date:</strong> 2026-06-24</span>
+      <span><strong>Date:</strong> 2026-07-04</span>
       <span><strong>Party:</strong> Democrat</span>
       <span><strong>District:</strong> Thurston County</span>
     </div>
@@ -66,7 +66,7 @@
       <tbody>
         <tr><td>2006</td><td>Thurston County Coroner</td><td>Won (first term)</td></tr>
         <tr><td>2022</td><td>Thurston County Coroner</td><td>Won (re-elected)</td></tr>
-        <tr><td>2026</td><td>Thurston County Coroner</td><td>Pending (filed May 2026, running unopposed)</td></tr>
+        <tr><td>2026</td><td>Thurston County Coroner</td><td>Pending (filed May 2026, running unopposed; confirmed 2026-07-04, no additional filers)</td></tr>
       </tbody>
     </table>
   </div>
@@ -86,20 +86,49 @@
     <table>
       <thead><tr><th>Metric</th><th>Value</th><th>Source</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>2026 PDC candidacy registration indexed (ca-2026-3391343), registered 2026-03-03, declared 2026-05-08, mini reporting option. No itemized contribution or expenditure reports filed or required under mini reporting (zero 2026 records in PDC contributions and expenditures datasets, the expected state for a mini filer; Warnock also filed mini in 2014 and 2022)</td><td><span class="tier-badge tier-t0">T0</span></td></tr>
+        <tr><td>Total Raised</td><td>2026 PDC candidacy registration indexed (ca-2026-3391343), registered 2026-03-03, declared 2026-05-08, mini reporting option. Re-verified 2026-07-04 against PDC SODA datasets, no change (has_reports false; active_candidate true). No itemized contribution or expenditure reports filed or required under mini reporting (zero 2026 records in PDC contributions and expenditures datasets, the expected state for a mini filer; Warnock also filed mini in 2014 and 2022)</td><td><span class="tier-badge tier-t0">T0</span></td></tr>
         <tr><td>Filing Entity</td><td>Filed May 2026 for Thurston County Coroner (unopposed)</td><td><span class="tier-badge tier-t0">T0</span></td></tr>
       </tbody>
     </table>
   </div>
 
+  <!-- VULNERABILITY FINDINGS -->
   <div class="section">
-    <h2><span class="section-num">4</span> Source Verification</h2>
+    <h2><span class="section-num">4</span> Vulnerability Assessment</h2>
+
+    <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">1 sourced findings. All sourced at T1 (Official Record) or T2 (Multi-Source Media) per clearthemud provenance model. No T3/T4 claims included.</p>
+
+    <div class="finding low">
+      <h4>Finding 4.1: Public scrutiny of the coroner&#x27;s office handling of the 2018 Yvonne McDonald death <span class="impact-badge impact-low">LOW</span></h4>
+      <dl>
+        <dt>What happened</dt>
+        <dd>In August 2018, Yvonne McDonald, a 56-year-old Black woman, was found unconscious and partially clothed in a yard on Division Street Northwest in Olympia and died that evening at Providence St. Peter Hospital. Warnock&#x27;s office conducted an autopsy, found no signs of strangulation, stab wounds or gunshot wounds, and sent toxicology and physical evidence to the Washington State Patrol. After public pressure, Warnock classified the death as suspicious, stating that the classification was a way to investigate the death rather than a determination that a crime had occurred. McDonald&#x27;s family said they believed she was murdered, reported that she had bruising and internal injuries, and expressed frustration that the office took time to issue the suspicious ruling. The case drew sustained regional media coverage and a public campaign, Justice for Yvonne. The criminal investigation was led by the Olympia Police Department.
+</dd>
+        <dt>Source tier</dt>
+        <dd>T2</dd>
+        <dt>Political impact</dt>
+        <dd>Low</dd>
+        <dt>Defense</dt>
+        <dd>Warnock&#x27;s office performed an autopsy, ordered state toxicology and crime-lab testing, and ruled the death suspicious, which is the classification that keeps a death investigation open. The criminal investigation was conducted by the Olympia Police Department, not the coroner. The family&#x27;s concern centered on the pace and on transparency, not on a documented legal violation. No disciplinary action, official complaint finding, or court ruling against Warnock resulted. The events are from 2018.
+</dd>
+      </dl>
+      <ul class="source-list">
+        <li>https://www.chronline.com/stories/coroner-calls-olympia-womans-death-suspicious-amid-public-pressure-to-investigate,15251</li>
+        <li>https://seattletimes.com/seattle-news/crime/olympia-police-chief-asks-for-patience-as-womans-death-is-probed</li>
+        <li>https://www.kiro7.com/news/south-sound-news/family-searching-for-answers-about-womans-suspicious-death/822354200/</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="section">
+    <h2><span class="section-num">5</span> Source Verification</h2>
     <div class="finding">
       <dl>
         <dt>Data Sources</dt><dd>WA SOS, WA PDC, local media, public records</dd>
-        <dt>Collection Date</dt><dd>2026-06-24</dd>
+        <dt>Collection Date</dt><dd>2026-07-04</dd>
         <dt>Highest Tier</dt><dd>T1 (Official Record)</dd>
-        <dt>Methodology</dt><dd>Public filing data with OSINT enrichment. No T3/T4 claims included.</dd>
+        <dt>Methodology</dt><dd>OSINT deep-dive using exclusively public-record sources. All findings at T1 or T2. No T3/T4 claims included.</dd>
       </dl>
     </div>
   </div>
