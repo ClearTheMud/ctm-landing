@@ -208,6 +208,13 @@ def render_state_page(state, state_races, cycle):
     gov_races = [r for r in state_races if "Governor" in r["office"]]
     leg_senate = [r for r in state_races if r["office"] == "State Senate"]
     leg_house = [r for r in state_races if r["office"].startswith("State House")]
+    # Statewide judicial (Supreme Court, Court of Appeals). Gated on status so
+    # draft stub pages do not render on the live hub until enriched and activated.
+    judicial_races = [
+        r for r in state_races
+        if ("Supreme Court" in r["office"] or "Court of Appeals" in r["office"])
+        and r.get("status") != "draft"
+    ]
 
     if senate_races:
         senate_section = '    <h3>US Senate</h3>\n    <div class="dossier-links">\n' + "\n".join(render_race_card(r) for r in senate_races) + "\n    </div>"
@@ -230,6 +237,11 @@ def render_state_page(state, state_races, cycle):
         gov_section = '    <h3>Governor</h3>\n' + render_no_research(f"The {name} governor&rsquo;s race is on the ballot in {cycle}. Research will be added when available.")
     else:
         gov_section = ""
+
+    if judicial_races:
+        judicial_section = '    <h3>Statewide Judicial</h3>\n    <div class="dossier-links">\n' + "\n".join(render_race_card(r) for r in judicial_races) + "\n    </div>"
+    else:
+        judicial_section = ""
 
     hero_html = ""
     if not has_races:
@@ -348,6 +360,7 @@ def render_state_page(state, state_races, cycle):
 {gov_section}
     <h3>State Legislature</h3>
 {render_legislature_section(name, leg_senate, leg_house, abbr)}
+{judicial_section}
   </div>
 
   <div class="section">
