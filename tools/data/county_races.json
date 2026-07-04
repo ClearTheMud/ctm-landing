@@ -864,6 +864,114 @@
               "status": "Active"
             }
           ]
+        },
+        {
+          "office": "County Council District 1",
+          "race_id": "wa-clark-county-council-dist-1-2026",
+          "candidates": [
+            {
+              "name": "Dusti Arab",
+              "party": "Nonpartisan",
+              "party_code": "nonpartisan",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Lukas Bardue",
+              "party": "Nonpartisan",
+              "party_code": "nonpartisan",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Glen Yung",
+              "party": "Nonpartisan",
+              "party_code": "nonpartisan",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Bryan Shull",
+              "party": "Nonpartisan",
+              "party_code": "nonpartisan",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Council District 2",
+          "race_id": "wa-clark-county-council-dist-2-2026",
+          "candidates": [
+            {
+              "name": "Martin Pittioni",
+              "party": "Nonpartisan",
+              "party_code": "nonpartisan",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Michelle Belkot",
+              "party": "Nonpartisan",
+              "party_code": "nonpartisan",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "John Zingale",
+              "party": "Nonpartisan",
+              "party_code": "nonpartisan",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "County Council District 5",
+          "race_id": "wa-clark-county-council-dist-5-2026",
+          "candidates": [
+            {
+              "name": "Peter Silliman",
+              "party": "Nonpartisan",
+              "party_code": "nonpartisan",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Troy McCoy",
+              "party": "Nonpartisan",
+              "party_code": "nonpartisan",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
+        },
+        {
+          "office": "PUD Commissioner District 3",
+          "race_id": "wa-clark-pud-pud-commissioner-dist-3-2026",
+          "candidates": [
+            {
+              "name": "Gordon Matthews",
+              "party": "Nonpartisan",
+              "party_code": "nonpartisan",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Kevin Roegner",
+              "party": "Nonpartisan",
+              "party_code": "nonpartisan",
+              "election_status": "In Primary",
+              "status": "Active"
+            },
+            {
+              "name": "Jane A. Van Dyke",
+              "party": "Nonpartisan",
+              "party_code": "nonpartisan",
+              "election_status": "In Primary",
+              "status": "Active"
+            }
+          ]
         }
       ]
     },
