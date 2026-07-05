@@ -12322,15 +12322,6 @@
       "url": "/races/wa-walla-walla-auditor-2026/",
       "candidates": [
         {
-          "name": "Gregory A. Tompkins",
-          "party": "nonpartisan",
-          "role": "challenger",
-          "slug": "tompkins",
-          "status": "In Primary",
-          "url": "/races/wa-walla-walla-auditor-2026/tompkins/",
-          "election_status": "In Primary"
-        },
-        {
           "name": "MARJORIE DENTON SANBORN",
           "party": "nonpartisan",
           "role": "challenger",
@@ -13846,7 +13837,7 @@
           "election_status": "In Primary"
         },
         {
-          "name": "John W “Jack” Smith",
+          "name": "John W \u201cJack\u201d Smith",
           "party": "nonpartisan",
           "role": "Filed",
           "slug": "smith",
@@ -14477,12 +14468,12 @@
           "election_status": "In Primary"
         },
         {
-          "name": "Rebecca Saldaña",
+          "name": "Rebecca Salda\u00f1a",
           "party": "nonpartisan",
           "role": "Filed",
-          "slug": "saldaña",
+          "slug": "salda\u00f1a",
           "status": "In Primary",
-          "url": "/races/wa-king-county-council-dist-2-2026/saldaña/",
+          "url": "/races/wa-king-county-council-dist-2-2026/salda\u00f1a/",
           "election_status": "In Primary"
         }
       ]
@@ -14500,12 +14491,12 @@
       "general_date": "November 3, 2026",
       "candidates": [
         {
-          "name": "Jorge L. Barón",
+          "name": "Jorge L. Bar\u00f3n",
           "party": "nonpartisan",
           "role": "incumbent",
-          "slug": "barón",
+          "slug": "bar\u00f3n",
           "status": "Advanced to General",
-          "url": "/races/wa-king-county-council-dist-4-2026/barón/",
+          "url": "/races/wa-king-county-council-dist-4-2026/bar\u00f3n/",
           "election_status": "Advanced to General"
         }
       ]
