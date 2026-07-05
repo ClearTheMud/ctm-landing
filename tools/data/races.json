@@ -12411,15 +12411,6 @@
           "status": "In Primary",
           "url": "/races/wa-walla-walla-commissioner-district-3-2026/wescott/",
           "election_status": "In Primary"
-        },
-        {
-          "name": "Jack Miller",
-          "party": "rep",
-          "role": "challenger",
-          "slug": "miller",
-          "status": "In Primary",
-          "url": "/races/wa-walla-walla-commissioner-district-3-2026/miller/",
-          "election_status": "In Primary"
         }
       ]
     },
