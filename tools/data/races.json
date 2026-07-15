@@ -18,16 +18,52 @@
           "url": "/races/me-senate-2026/collins/"
         },
         {
-          "name": "Graham Platner",
+          "name": "Troy Jackson",
           "party": "dem",
-          "role": "frontrunner",
-          "url": "/races/me-senate-2026/platner/"
+          "role": "convention candidate",
+          "url": "/races/me-senate-2026/jackson/"
+        },
+        {
+          "name": "Shenna Bellows",
+          "party": "dem",
+          "role": "convention candidate",
+          "url": "/races/me-senate-2026/bellows/"
+        },
+        {
+          "name": "Nirav Shah",
+          "party": "dem",
+          "role": "convention candidate",
+          "url": "/races/me-senate-2026/shah/"
+        },
+        {
+          "name": "Dan Kleban",
+          "party": "dem",
+          "role": "convention candidate",
+          "url": "/races/me-senate-2026/kleban/"
+        },
+        {
+          "name": "Jordan Wood",
+          "party": "dem",
+          "role": "convention candidate",
+          "url": "/races/me-senate-2026/wood/"
         },
         {
           "name": "David Costello",
           "party": "dem",
-          "role": "Longshot",
+          "role": "convention candidate",
           "url": "/races/me-senate-2026/costello/"
+        },
+        {
+          "name": "Paige Loud",
+          "party": "dem",
+          "role": "convention candidate",
+          "url": "/races/me-senate-2026/loud/"
+        },
+        {
+          "name": "Graham Platner",
+          "party": "dem",
+          "role": "withdrew",
+          "url": "/races/me-senate-2026/platner/"
         }
       ]
     },
