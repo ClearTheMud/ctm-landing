@@ -230,6 +230,17 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .legislative-map-container .leg-district-label { font-size: 8px; fill: #fff; text-anchor: middle; pointer-events: none; opacity: 0.8; }
 
 /* Responsive */
+/* Voters' pamphlet statement (candidate's own words, reproduced verbatim) */
+.pamphlet-statement { background: var(--gray-light); border-left: 4px solid var(--blue); border-radius: 8px; padding: 20px 24px; margin: 16px 0; color: var(--text); }
+.pamphlet-statement p { margin: 12px 0; }
+.pamphlet-statement p:first-child { margin-top: 0; }
+.pamphlet-statement p:last-child { margin-bottom: 0; }
+.pamphlet-statement strong, .pamphlet-statement b { color: var(--navy); }
+.pamphlet-statement a { color: var(--blue); }
+.pamphlet-none { background: var(--gray-light); border-left: 4px solid var(--gray-mid); border-radius: 8px; padding: 16px 24px; margin: 16px 0; color: var(--gray-dark); }
+.source-note { font-size: 13px; color: var(--gray-dark); margin-top: 12px; }
+.source-note a { color: var(--blue); }
+
 @media (max-width: 900px) { .state-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 700px) { .matchup { grid-template-columns: 1fr; } }
 @media (max-width: 600px) { .finding dl { grid-template-columns: 1fr; } td:first-child { white-space: normal; } }
