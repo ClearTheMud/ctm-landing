@@ -5069,45 +5069,158 @@
       "fips": "073",
       "races": [
         {
+          "office": "Prosecuting Attorney",
+          "race_id": "wa-whatcom-prosecuting-attorney-2026",
+          "candidates": [
+            {
+              "name": "Dona Bracke",
+              "election_status": "In Primary",
+              "status": "Active",
+              "party": "DEMOCRAT"
+            },
+            {
+              "name": "Erik Sigmar",
+              "election_status": "In Primary",
+              "status": "Active",
+              "party": "DEMOCRAT"
+            },
+            {
+              "name": "Jesse Corkern",
+              "election_status": "In Primary",
+              "status": "Active",
+              "party": "DEMOCRAT"
+            },
+            {
+              "name": "Ryan Swinburnson",
+              "election_status": "In Primary",
+              "status": "Active",
+              "party": "NONPARTISAN"
+            }
+          ]
+        },
+        {
+          "office": "Port of Bellingham Commissioner District 4",
+          "race_id": "wa-bellingham-port-commissioner-dist-4-2026",
+          "candidates": [
+            {
+              "name": "Tim Chartier",
+              "election_status": "In Primary",
+              "status": "Active",
+              "party": "NONPARTISAN"
+            },
+            {
+              "name": "Samantha Cruz-Mendoza",
+              "election_status": "In Primary",
+              "status": "Active",
+              "party": "NONPARTISAN"
+            },
+            {
+              "name": "Paul Burrill",
+              "election_status": "In Primary",
+              "status": "Active",
+              "party": "NONPARTISAN"
+            },
+            {
+              "name": "Dean Berkeley",
+              "election_status": "In Primary",
+              "status": "Active",
+              "party": "NONPARTISAN"
+            },
+            {
+              "name": "Tor Benson",
+              "election_status": "In Primary",
+              "status": "Active",
+              "party": "NONPARTISAN"
+            },
+            {
+              "name": "Jaden McConnell",
+              "election_status": "In Primary",
+              "status": "Active",
+              "party": "NONPARTISAN"
+            }
+          ]
+        },
+        {
+          "office": "Port of Bellingham Commissioner District 5",
+          "race_id": "wa-bellingham-port-commissioner-dist-5-2026",
+          "candidates": [
+            {
+              "name": "Todd Lagestee",
+              "election_status": "In Primary",
+              "status": "Active",
+              "party": "NONPARTISAN"
+            },
+            {
+              "name": "Chris Elder",
+              "election_status": "In Primary",
+              "status": "Active",
+              "party": "NONPARTISAN"
+            },
+            {
+              "name": "Shawn Ensley",
+              "election_status": "In Primary",
+              "status": "Active",
+              "party": "NONPARTISAN"
+            },
+            {
+              "name": "Randall Wood",
+              "election_status": "In Primary",
+              "status": "Active",
+              "party": "NONPARTISAN"
+            },
+            {
+              "name": "Spenser R. New",
+              "election_status": "In Primary",
+              "status": "Active",
+              "party": "NONPARTISAN"
+            },
+            {
+              "name": "Jerry Burns",
+              "election_status": "In Primary",
+              "status": "Active",
+              "party": "NONPARTISAN"
+            }
+          ]
+        },
+        {
+          "office": "PUD No. 1 Commissioner District 1",
+          "race_id": "wa-whatcom-pud-1-pud-commissioner-dist-1-2026",
+          "candidates": [
+            {
+              "name": "Eddy Ury",
+              "election_status": "On November Ballot",
+              "status": "Active",
+              "party": "NONPARTISAN"
+            },
+            {
+              "name": "Frank Imhof",
+              "election_status": "On November Ballot",
+              "status": "Active",
+              "party": "NONPARTISAN"
+            }
+          ]
+        },
+        {
           "office": "District Court Judge Position 1",
+          "race_id": "wa-whatcom-district-court-judge-position-1-2026",
           "candidates": [
             {
               "name": "Angela Anderson",
-              "party": "Nonpartisan",
-              "filing_date": "5/4/2026 10:46:45 AM",
               "election_status": "Advanced to General",
-              "status": "Active"
+              "status": "Active",
+              "party": "NONPARTISAN"
             }
           ]
         },
         {
           "office": "District Court Judge Position 2",
+          "race_id": "wa-whatcom-district-court-judge-position-2-2026",
           "candidates": [
             {
               "name": "Jonathan Rands",
-              "party": "Nonpartisan",
-              "filing_date": "5/4/2026 8:08:42 AM",
               "election_status": "Advanced to General",
-              "status": "Active"
-            }
-          ]
-        },
-        {
-          "office": "Prosecuting Attorney",
-          "candidates": [
-            {
-              "name": "Dona Bracke",
-              "party": "DEMOCRAT",
-              "filing_date": "5/4/2026 10:39:34 AM",
-              "election_status": "In Primary",
-              "status": "Active"
-            },
-            {
-              "name": "Ryan Swinburnson",
-              "party": "STATES NO PARTY PREFERENCE",
-              "filing_date": "5/4/2026 7:30:36 PM",
-              "election_status": "In Primary",
-              "status": "Active"
+              "status": "Active",
+              "party": "NONPARTISAN"
             }
           ]
         }
