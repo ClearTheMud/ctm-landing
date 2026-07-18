@@ -93,8 +93,14 @@
   <url><loc>https://clearthemud.org/states/wyoming/</loc></url>
   <url><loc>https://clearthemud.org/races/me-senate-2026/</loc></url>
   <url><loc>https://clearthemud.org/races/me-senate-2026/collins/</loc></url>
-  <url><loc>https://clearthemud.org/races/me-senate-2026/platner/</loc></url>
+  <url><loc>https://clearthemud.org/races/me-senate-2026/jackson/</loc></url>
+  <url><loc>https://clearthemud.org/races/me-senate-2026/bellows/</loc></url>
+  <url><loc>https://clearthemud.org/races/me-senate-2026/shah/</loc></url>
+  <url><loc>https://clearthemud.org/races/me-senate-2026/kleban/</loc></url>
+  <url><loc>https://clearthemud.org/races/me-senate-2026/wood/</loc></url>
   <url><loc>https://clearthemud.org/races/me-senate-2026/costello/</loc></url>
+  <url><loc>https://clearthemud.org/races/me-senate-2026/loud/</loc></url>
+  <url><loc>https://clearthemud.org/races/me-senate-2026/platner/</loc></url>
   <url><loc>https://clearthemud.org/races/ga-senate-2026/</loc></url>
   <url><loc>https://clearthemud.org/races/ga-senate-2026/ossoff/</loc></url>
   <url><loc>https://clearthemud.org/races/ga-senate-2026/collins/</loc></url>
@@ -121,7 +127,6 @@
   <url><loc>https://clearthemud.org/races/wa-house-2-2026/feller/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-house-2-2026/hermanson/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-house-2-2026/larsen/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-house-2-2026/pelletti/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-house-2-2026/scheel/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-house-3-2026/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-house-3-2026/barran/</loc></url>
@@ -152,7 +157,6 @@
   <url><loc>https://clearthemud.org/races/wa-house-5-2026/danimus/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-house-5-2026/fagan/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-house-5-2026/freudenberg/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-house-5-2026/gahvarehchee/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-house-5-2026/hayes/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-house-5-2026/mavalwalla/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-house-5-2026/mcgarr/</loc></url>
@@ -1339,7 +1343,6 @@
   <url><loc>https://clearthemud.org/races/wa-walla-walla-assessor-2026/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-walla-walla-assessor-2026/burres/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-walla-walla-auditor-2026/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-walla-walla-auditor-2026/tompkins/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-walla-walla-auditor-2026/sanborn/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-walla-walla-auditor-2026/park/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-walla-walla-auditor-2026/reeves/</loc></url>
@@ -1349,7 +1352,6 @@
   <url><loc>https://clearthemud.org/races/wa-walla-walla-commissioner-district-3-2026/woody/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-walla-walla-commissioner-district-3-2026/fulmer/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-walla-walla-commissioner-district-3-2026/wescott/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-walla-walla-commissioner-district-3-2026/miller/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-walla-walla-coroner-2026/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-walla-walla-coroner-2026/greenwood/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-walla-walla-district-court-judge-full-time-2026/</loc></url>
@@ -1371,6 +1373,8 @@
   <url><loc>https://clearthemud.org/races/wa-whatcom-prosecuting-attorney-2026/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-whatcom-prosecuting-attorney-2026/bracke/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-whatcom-prosecuting-attorney-2026/swinburnson/</loc></url>
+  <url><loc>https://clearthemud.org/races/wa-whatcom-prosecuting-attorney-2026/sigmar/</loc></url>
+  <url><loc>https://clearthemud.org/races/wa-whatcom-prosecuting-attorney-2026/corkern/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-whitman-assessor-2026/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-whitman-assessor-2026/flodin/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-whitman-auditor-2026/</loc></url>
@@ -1804,11 +1808,6 @@
   <url><loc>https://clearthemud.org/races/wa-upper-county-district-court-pos-1-2026/juris/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-wahkiakum-pud-pud-commissioner-dist-1-2026/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-wahkiakum-pud-pud-commissioner-dist-1-2026/healy/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-whatcom-1-district-court-pos-1-2026/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-whatcom-1-district-court-pos-1-2026/schodowski/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-whatcom-1-district-court-pos-1-2026/murphy/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-whatcom-2-district-court-pos-2-2026/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-whatcom-2-district-court-pos-2-2026/hanify/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-whatcom-pud-1-pud-commissioner-dist-1-2026/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-whatcom-pud-1-pud-commissioner-dist-1-2026/ury/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-whatcom-pud-1-pud-commissioner-dist-1-2026/imhof/</loc></url>
