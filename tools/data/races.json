@@ -13826,7 +13826,7 @@
    "level": "special_district",
    "year": 2026,
    "title": "2026 WA Clallam County PUD No. 1 Commissioner Dist. 2",
-   "status": "draft",
+   "status": "active",
    "url": "/races/wa-clallam-pud-1-pud-commissioner-dist-2-2026/",
    "primary_date": "August 4, 2026",
    "general_date": "November 3, 2026",
@@ -13876,7 +13876,8 @@
      "url": "/races/wa-clallam-pud-1-pud-commissioner-dist-2-2026/smith/",
      "election_status": "In Primary"
     }
-   ]
+   ],
+   "county_slug": "clallam"
   },
   {
    "id": "wa-clark-county-council-dist-1-2026",
@@ -14076,7 +14077,7 @@
    "level": "special_district",
    "year": 2026,
    "title": "2026 WA Cowlitz PUD Commissioner Dist. 1",
-   "status": "draft",
+   "status": "active",
    "url": "/races/wa-cowlitz-pud-pud-commissioner-dist-1-2026/",
    "primary_date": "August 4, 2026",
    "general_date": "November 3, 2026",
@@ -14090,7 +14091,8 @@
      "url": "/races/wa-cowlitz-pud-pud-commissioner-dist-1-2026/pollock/",
      "election_status": "Advanced to General"
     }
-   ]
+   ],
+   "county_slug": "cowlitz"
   },
   {
    "id": "wa-cowlitz-superior-court-pos-4-2026",
@@ -14099,7 +14101,7 @@
    "level": "county",
    "year": 2026,
    "title": "2026 WA Cowlitz Superior Court Pos. 4",
-   "status": "draft",
+   "status": "active",
    "url": "/races/wa-cowlitz-superior-court-pos-4-2026/",
    "primary_date": "August 4, 2026",
    "general_date": "November 3, 2026",
@@ -14122,7 +14124,8 @@
      "url": "/races/wa-cowlitz-superior-court-pos-4-2026/lervold/",
      "election_status": "Advanced to General"
     }
-   ]
+   ],
+   "county_slug": "cowlitz"
   },
   {
    "id": "wa-douglas-pud-2-pud-commissioner-dist-2-2026",
@@ -14443,7 +14446,7 @@
    "level": "special_district",
    "year": 2026,
    "title": "2026 WA Jefferson County PUD Commissioner Dist. 2",
-   "status": "draft",
+   "status": "active",
    "url": "/races/wa-jefferson-pud-pud-commissioner-dist-2-2026/",
    "primary_date": "August 4, 2026",
    "general_date": "November 3, 2026",
@@ -15503,7 +15506,7 @@
    "level": "county",
    "year": 2026,
    "title": "2026 WA Klickitat East District Court Pos. 1",
-   "status": "draft",
+   "status": "active",
    "url": "/races/wa-klickitat-east-district-court-pos-1-2026/",
    "primary_date": "August 4, 2026",
    "general_date": "November 3, 2026",
@@ -15517,7 +15520,8 @@
      "url": "/races/wa-klickitat-east-district-court-pos-1-2026/hansen/",
      "election_status": "Advanced to General"
     }
-   ]
+   ],
+   "county_slug": "klickitat"
   },
   {
    "id": "wa-klickitat-pud-1-pud-commissioner-dist-3-2026",
@@ -15526,7 +15530,7 @@
    "level": "special_district",
    "year": 2026,
    "title": "2026 WA Klickitat PUD No. 1 Commissioner Dist. 3",
-   "status": "draft",
+   "status": "active",
    "url": "/races/wa-klickitat-pud-1-pud-commissioner-dist-3-2026/",
    "primary_date": "August 4, 2026",
    "general_date": "November 3, 2026",
@@ -15558,7 +15562,8 @@
      "url": "/races/wa-klickitat-pud-1-pud-commissioner-dist-3-2026/christopher/",
      "election_status": "In Primary"
     }
-   ]
+   ],
+   "county_slug": "klickitat"
   },
   {
    "id": "wa-klickitat-west-district-court-pos-1-2026",
@@ -15567,7 +15572,7 @@
    "level": "county",
    "year": 2026,
    "title": "2026 WA Klickitat West District Court Pos. 1",
-   "status": "draft",
+   "status": "active",
    "url": "/races/wa-klickitat-west-district-court-pos-1-2026/",
    "primary_date": "August 4, 2026",
    "general_date": "November 3, 2026",
@@ -15581,7 +15586,8 @@
      "url": "/races/wa-klickitat-west-district-court-pos-1-2026/baker/",
      "election_status": "Advanced to General"
     }
-   ]
+   ],
+   "county_slug": "klickitat"
   },
   {
    "id": "wa-lewis-pud-pud-commissioner-dist-1-2026",
@@ -15654,7 +15660,7 @@
    "level": "special_district",
    "year": 2026,
    "title": "2026 WA Mason County PUD No. 1 Commissioner Dist. 3",
-   "status": "draft",
+   "status": "active",
    "url": "/races/wa-mason-pud-1-pud-commissioner-dist-3-2026/",
    "primary_date": "August 4, 2026",
    "general_date": "November 3, 2026",
@@ -15668,7 +15674,8 @@
      "url": "/races/wa-mason-pud-1-pud-commissioner-dist-3-2026/gold/",
      "election_status": "Advanced to General"
     }
-   ]
+   ],
+   "county_slug": "mason"
   },
   {
    "id": "wa-mason-pud-3-pud-commissioner-dist-2-2026",
@@ -15677,7 +15684,7 @@
    "level": "special_district",
    "year": 2026,
    "title": "2026 WA Mason County PUD No. 3 Commissioner Dist. 2",
-   "status": "draft",
+   "status": "active",
    "url": "/races/wa-mason-pud-3-pud-commissioner-dist-2-2026/",
    "primary_date": "August 4, 2026",
    "general_date": "November 3, 2026",
@@ -15700,7 +15707,8 @@
      "url": "/races/wa-mason-pud-3-pud-commissioner-dist-2-2026/neatherlin/",
      "election_status": "Advanced to General"
     }
-   ]
+   ],
+   "county_slug": "mason"
   },
   {
    "id": "wa-okanogan-pud-pud-commissioner-dist-1-2026",
@@ -15764,7 +15772,7 @@
    "level": "special_district",
    "year": 2026,
    "title": "2026 WA Pacific County PUD No. 2 Commissioner Dist. 1",
-   "status": "draft",
+   "status": "active",
    "url": "/races/wa-pacific-pud-2-pud-commissioner-dist-1-2026/",
    "primary_date": "August 4, 2026",
    "general_date": "November 3, 2026",
@@ -15778,7 +15786,8 @@
      "url": "/races/wa-pacific-pud-2-pud-commissioner-dist-1-2026/hickey/",
      "election_status": "Advanced to General"
     }
-   ]
+   ],
+   "county_slug": "pacific"
   },
   {
    "id": "wa-pasco-port-commissioner-dist-3-2026",
@@ -15954,6 +15963,15 @@
      "slug": "lykins",
      "status": "In Primary",
      "url": "/races/wa-pierce-county-council-dist-7-2026/lykins/",
+     "election_status": "In Primary"
+    },
+    {
+     "name": "Michael P. Solan",
+     "party": "rep",
+     "role": "Filed",
+     "slug": "solan",
+     "status": "In Primary",
+     "url": "/races/wa-pierce-county-council-dist-7-2026/solan/",
      "election_status": "In Primary"
     },
     {
@@ -16551,7 +16569,7 @@
    "level": "special_district",
    "year": 2026,
    "title": "2026 WA Skamania PUD Commissioner Dist. 3",
-   "status": "draft",
+   "status": "active",
    "url": "/races/wa-skamania-pud-pud-commissioner-dist-3-2026/",
    "primary_date": "August 4, 2026",
    "general_date": "November 3, 2026",
@@ -16574,7 +16592,8 @@
      "url": "/races/wa-skamania-pud-pud-commissioner-dist-3-2026/dillon/",
      "election_status": "Advanced to General"
     }
-   ]
+   ],
+   "county_slug": "skamania"
   },
   {
    "id": "wa-snohomish-district-court-pos-1-2026",
@@ -17398,7 +17417,7 @@
    "level": "special_district",
    "year": 2026,
    "title": "2026 WA Wahkiakum PUD Commissioner Dist. 1",
-   "status": "draft",
+   "status": "active",
    "url": "/races/wa-wahkiakum-pud-pud-commissioner-dist-1-2026/",
    "primary_date": "August 4, 2026",
    "general_date": "November 3, 2026",
@@ -17412,7 +17431,8 @@
      "url": "/races/wa-wahkiakum-pud-pud-commissioner-dist-1-2026/healy/",
      "election_status": "Advanced to General"
     }
-   ]
+   ],
+   "county_slug": "wahkiakum"
   },
   {
    "id": "wa-whatcom-pud-1-pud-commissioner-dist-1-2026",
@@ -17443,6 +17463,231 @@
      "status": "Advanced to General",
      "url": "/races/wa-whatcom-pud-1-pud-commissioner-dist-1-2026/imhof/",
      "election_status": "Advanced to General"
+    }
+   ]
+  },
+  {
+   "id": "wa-jefferson-district-court-judge-district-1-2026",
+   "state_abbr": "WA",
+   "office": "District Court Judge District 1",
+   "county": "Jefferson",
+   "county_slug": "jefferson",
+   "level": "county",
+   "year": 2026,
+   "title": "Jefferson County District Court Judge District 1",
+   "status": "active",
+   "url": "/races/wa-jefferson-district-court-judge-district-1-2026/",
+   "candidates": [
+    {
+     "name": "Mindy Walker",
+     "party": "nonpartisan",
+     "role": "incumbent",
+     "slug": "walker",
+     "status": "On November Ballot",
+     "url": "/races/wa-jefferson-district-court-judge-district-1-2026/walker/",
+     "election_status": "On November Ballot"
+    }
+   ]
+  },
+  {
+   "id": "wa-mason-assessor-2026",
+   "state_abbr": "WA",
+   "office": "Assessor",
+   "county": "Mason",
+   "county_slug": "mason",
+   "level": "county",
+   "year": 2026,
+   "title": "Mason County Assessor",
+   "status": "active",
+   "url": "/races/wa-mason-assessor-2026/",
+   "candidates": [
+    {
+     "name": "Patti McLean",
+     "party": "nonpartisan",
+     "role": "incumbent",
+     "slug": "mclean",
+     "status": "On November Ballot",
+     "url": "/races/wa-mason-assessor-2026/mclean/",
+     "election_status": "On November Ballot"
+    }
+   ]
+  },
+  {
+   "id": "wa-pacific-district-court-judge-north-2026",
+   "state_abbr": "WA",
+   "office": "District Court Judge North",
+   "county": "Pacific",
+   "county_slug": "pacific",
+   "level": "county",
+   "year": 2026,
+   "title": "Pacific County District Court Judge North",
+   "status": "active",
+   "url": "/races/wa-pacific-district-court-judge-north-2026/",
+   "candidates": [
+    {
+     "name": "Scott Harmer",
+     "party": "nonpartisan",
+     "role": "candidate",
+     "slug": "harmer",
+     "status": "On November Ballot",
+     "url": "/races/wa-pacific-district-court-judge-north-2026/harmer/",
+     "election_status": "On November Ballot"
+    }
+   ]
+  },
+  {
+   "id": "wa-pacific-district-court-judge-south-2026",
+   "state_abbr": "WA",
+   "office": "District Court Judge South",
+   "county": "Pacific",
+   "county_slug": "pacific",
+   "level": "county",
+   "year": 2026,
+   "title": "Pacific County District Court Judge South",
+   "status": "active",
+   "url": "/races/wa-pacific-district-court-judge-south-2026/",
+   "candidates": [
+    {
+     "name": "Nancy R. McAllister",
+     "party": "nonpartisan",
+     "role": "candidate",
+     "slug": "mcallister",
+     "status": "On November Ballot",
+     "url": "/races/wa-pacific-district-court-judge-south-2026/mcallister/",
+     "election_status": "On November Ballot"
+    }
+   ]
+  },
+  {
+   "id": "wa-clallam-district-court-judge-1-2026",
+   "state_abbr": "WA",
+   "office": "District Court Judge 1",
+   "county": "Clallam",
+   "county_slug": "clallam",
+   "level": "county",
+   "year": 2026,
+   "title": "Clallam County District Court Judge 1",
+   "status": "active",
+   "url": "/races/wa-clallam-district-court-judge-1-2026/",
+   "candidates": [
+    {
+     "name": "Alex Schodowski",
+     "party": "nonpartisan",
+     "role": "candidate",
+     "slug": "schodowski",
+     "status": "On November Ballot",
+     "url": "/races/wa-clallam-district-court-judge-1-2026/schodowski/",
+     "election_status": "On November Ballot"
+    },
+    {
+     "name": "Patrick David Murphy",
+     "party": "nonpartisan",
+     "role": "candidate",
+     "slug": "murphy",
+     "status": "On November Ballot",
+     "url": "/races/wa-clallam-district-court-judge-1-2026/murphy/",
+     "election_status": "On November Ballot"
+    }
+   ]
+  },
+  {
+   "id": "wa-clallam-district-court-judge-2-2026",
+   "state_abbr": "WA",
+   "office": "District Court Judge 2",
+   "county": "Clallam",
+   "county_slug": "clallam",
+   "level": "county",
+   "year": 2026,
+   "title": "Clallam County District Court Judge 2",
+   "status": "active",
+   "url": "/races/wa-clallam-district-court-judge-2-2026/",
+   "candidates": [
+    {
+     "name": "Bruce Hanify",
+     "party": "nonpartisan",
+     "role": "candidate",
+     "slug": "hanify",
+     "status": "On November Ballot",
+     "url": "/races/wa-clallam-district-court-judge-2-2026/hanify/",
+     "election_status": "On November Ballot"
+    }
+   ]
+  },
+  {
+   "id": "wa-cowlitz-district-court-judge-pos-1-2026",
+   "state_abbr": "WA",
+   "office": "District Court Judge Position 1",
+   "county": "Cowlitz",
+   "county_slug": "cowlitz",
+   "level": "county",
+   "year": 2026,
+   "title": "Cowlitz County District Court Judge Position 1",
+   "status": "active",
+   "url": "/races/wa-cowlitz-district-court-judge-pos-1-2026/",
+   "candidates": [
+    {
+     "name": "Kevin Blondin",
+     "party": "nonpartisan",
+     "role": "candidate",
+     "slug": "blondin",
+     "status": "On November Ballot",
+     "url": "/races/wa-cowlitz-district-court-judge-pos-1-2026/blondin/",
+     "election_status": "On November Ballot"
+    }
+   ]
+  },
+  {
+   "id": "wa-cowlitz-district-court-judge-pos-2-2026",
+   "state_abbr": "WA",
+   "office": "District Court Judge Position 2",
+   "county": "Cowlitz",
+   "county_slug": "cowlitz",
+   "level": "county",
+   "year": 2026,
+   "title": "Cowlitz County District Court Judge Position 2",
+   "status": "active",
+   "url": "/races/wa-cowlitz-district-court-judge-pos-2-2026/",
+   "candidates": [
+    {
+     "name": "Jamie Imboden",
+     "party": "nonpartisan",
+     "role": "candidate",
+     "slug": "imboden",
+     "status": "On November Ballot",
+     "url": "/races/wa-cowlitz-district-court-judge-pos-2-2026/imboden/",
+     "election_status": "On November Ballot"
+    }
+   ]
+  },
+  {
+   "id": "wa-cowlitz-district-court-judge-pos-3-2026",
+   "state_abbr": "WA",
+   "office": "District Court Judge Position 3",
+   "county": "Cowlitz",
+   "county_slug": "cowlitz",
+   "level": "county",
+   "year": 2026,
+   "title": "Cowlitz County District Court Judge Position 3",
+   "status": "active",
+   "url": "/races/wa-cowlitz-district-court-judge-pos-3-2026/",
+   "candidates": [
+    {
+     "name": "Christopher Eastwood",
+     "party": "nonpartisan",
+     "role": "candidate",
+     "slug": "eastwood",
+     "status": "On November Ballot",
+     "url": "/races/wa-cowlitz-district-court-judge-pos-3-2026/eastwood/",
+     "election_status": "On November Ballot"
+    },
+    {
+     "name": "Nicole Knowles",
+     "party": "nonpartisan",
+     "role": "candidate",
+     "slug": "knowles",
+     "status": "On November Ballot",
+     "url": "/races/wa-cowlitz-district-court-judge-pos-3-2026/knowles/",
+     "election_status": "On November Ballot"
     }
    ]
   }
