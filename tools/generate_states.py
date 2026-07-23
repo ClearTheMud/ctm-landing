@@ -239,7 +239,7 @@ def render_state_page(state, state_races, cycle):
         gov_section = ""
 
     if judicial_races:
-        judicial_section = '    <h3>Statewide Judicial</h3>\n    <div class="dossier-links">\n' + "\n".join(render_race_card(r) for r in judicial_races) + "\n    </div>"
+        judicial_section = f'    <h3><a href="/states/{slug}/judicial/">Statewide Judicial</a></h3>\n    <div class="dossier-links">\n' + "\n".join(render_race_card(r) for r in judicial_races) + "\n    </div>"
     else:
         judicial_section = ""
 
@@ -378,6 +378,111 @@ def render_state_page(state, state_races, cycle):
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 {district_map_script}
 {county_map_script}
+</body>
+</html>
+"""
+
+
+def render_judicial_page(state, state_races, cycle):
+    """Dedicated statewide-judicial hub: Supreme Court + Court of Appeals tiers.
+
+    Draft (stub) races are gated out exactly as on the state hub. While the Court
+    of Appeals stubs remain draft, that tier shows a coming-soon note rather than
+    an empty heading.
+    """
+    name = state["name"]
+    slug = state["slug"]
+
+    supreme = [
+        r for r in state_races
+        if "Supreme Court" in r["office"] and r.get("status") != "draft"
+    ]
+    appeals = [
+        r for r in state_races
+        if "Court of Appeals" in r["office"] and r.get("status") != "draft"
+    ]
+
+    if supreme:
+        supreme_section = '    <div class="dossier-links">\n' + "\n".join(
+            render_race_card(r) for r in supreme
+        ) + "\n    </div>"
+    else:
+        supreme_section = render_no_research(
+            f"No active {name} Supreme Court research yet."
+        )
+
+    if appeals:
+        appeals_section = '    <div class="dossier-links">\n' + "\n".join(
+            render_race_card(r) for r in appeals
+        ) + "\n    </div>"
+    else:
+        appeals_section = render_no_research(
+            "Court of Appeals dossiers are in progress. All current seats are "
+            "unopposed incumbents; verified judicial-record profiles will appear "
+            "here as research is completed."
+        )
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
+<title>{name} Statewide Judicial, Candidate Research | clearthemud.org</title>
+<meta name="description" content="Verified candidate intelligence for {name} statewide judicial races: Supreme Court and Court of Appeals.">
+<meta property="og:title" content="{name} Statewide Judicial, Candidate Research">
+<meta property="og:description" content="Verified candidate intelligence for {name} statewide judicial races: Supreme Court and Court of Appeals.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{SITE_URL}/states/{slug}/judicial/">
+<link rel="canonical" href="{SITE_URL}/states/{slug}/judicial/">
+<link rel="stylesheet" href="/css/dossier.css">
+</head>
+<body>
+
+<div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+
+<nav class="dossier-nav">
+  <a href="/">clearthemud.org</a>
+  <span class="nav-sep">/</span>
+  <a href="/states/">States</a>
+  <span class="nav-sep">/</span>
+  <a href="/states/{slug}/">{name}</a>
+  <span class="nav-sep">/</span>
+  <span class="nav-current">Judicial</span>
+</nav>
+
+<div class="header party-neutral">
+  <div class="page">
+    <h1>{name} Statewide Judicial</h1>
+    <h2>Candidate Research, {cycle} Election Cycle</h2>
+    <div class="header-meta">
+      <span><span class="tlp-badge">TLP:GREEN</span></span>
+      <span><strong>Supreme Court:</strong> {len(supreme)} {"race" if len(supreme) == 1 else "races"}</span>
+      <span><strong>Court of Appeals:</strong> {len(appeals)} {"race" if len(appeals) == 1 else "races"}</span>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+
+  <div class="section">
+    <h2><span class="section-num">1</span> Supreme Court</h2>
+{supreme_section}
+  </div>
+
+  <div class="section">
+    <h2><span class="section-num">2</span> Court of Appeals</h2>
+{appeals_section}
+  </div>
+
+  <div class="footer">
+    <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
+    <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
+  </div>
+
+</div>
+
+<div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 </body>
 </html>
 """
@@ -707,6 +812,12 @@ def render_sitemap(states, races_by_state, counties_data):
     ]
     for state in sorted(states, key=lambda s: s["slug"]):
         urls.append(f'{SITE_URL}/states/{state["slug"]}/')
+        state_races = races_by_state.get(state["abbr"], [])
+        if any(
+            "Supreme Court" in r["office"] or "Court of Appeals" in r["office"]
+            for r in state_races
+        ):
+            urls.append(f'{SITE_URL}/states/{state["slug"]}/judicial/')
         for county in counties_data.get(state["abbr"], []):
             urls.append(f'{SITE_URL}/states/{state["slug"]}/{county["slug"]}/')
     for race_list in races_by_state.values():
@@ -744,6 +855,19 @@ def main():
         page_html = render_state_page(state, sr, cycle)
         (state_dir / "index.html").write_text(page_html)
         print(f"  wrote states/{slug}/index.html")
+
+        # Dedicated statewide-judicial hub for states with Supreme Court /
+        # Court of Appeals races (gating handled inside render_judicial_page).
+        if any(
+            "Supreme Court" in r["office"] or "Court of Appeals" in r["office"]
+            for r in sr
+        ):
+            judicial_dir = state_dir / "judicial"
+            judicial_dir.mkdir(exist_ok=True)
+            (judicial_dir / "index.html").write_text(
+                render_judicial_page(state, sr, cycle)
+            )
+            print(f"  wrote states/{slug}/judicial/index.html")
 
         for county in counties_data.get(abbr, []):
             county_dir = state_dir / county["slug"]
