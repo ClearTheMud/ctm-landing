@@ -59,6 +59,10 @@ caption { caption-side: top; text-align: left; font-size: 13px; font-weight: 600
 /* Wide tables scroll inside their own box so the page body never scrolls sideways. */
 .table-scroll { overflow-x: auto; }
 
+/* Sourced context on an endorsement. Endorser identity lives in the name; any
+   claim about them lives here with its own sourcing (ADO #1962, gate 8). */
+.endorser-note { display: block; margin-top: 4px; font-size: 13px; line-height: 1.5; color: var(--gray-dark); font-weight: 400; }
+
 /* Sections */
 .section { margin-top: 48px; padding-top: 32px; border-top: 2px solid var(--gray-mid); }
 .section:first-of-type { border-top: none; margin-top: 32px; }
