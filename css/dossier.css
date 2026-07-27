@@ -55,6 +55,9 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid var(--gray-mid); vertical
 tbody tr:hover { background: var(--gray-light); }
 tbody tr:nth-child(even) { background: #fafbfc; }
 td:first-child { font-weight: 600; white-space: nowrap; width: 220px; }
+caption { caption-side: top; text-align: left; font-size: 13px; font-weight: 600; color: var(--gray-dark); padding-bottom: 8px; }
+/* Wide tables scroll inside their own box so the page body never scrolls sideways. */
+.table-scroll { overflow-x: auto; }
 
 /* Sections */
 .section { margin-top: 48px; padding-top: 32px; border-top: 2px solid var(--gray-mid); }
