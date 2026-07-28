@@ -80,6 +80,36 @@ def _county_office_to_filename(office):
     return s
 
 
+# Markup that only a deep-dive dossier emits. clearthemud's converter writes
+# these; this bulk generator never does, so their presence identifies a page
+# that must not be overwritten with a T1 stub (ADO #1969).
+_DEEP_DIVE_MARKERS = (
+    'content="Deep-dive OSINT dossier',
+    "<h1>Candidate Dossier:",
+    '<meta property="og:type" content="article">',
+)
+
+
+def is_deep_dive_page(path):
+    """True when `path` already holds a deep-dive dossier.
+
+    curated_races.json was the only guard and it is maintained by hand, so it
+    drifted: a 2026-07-27 run overwrote 509 deep-dive dossiers with stubs
+    because nobody had registered those races. The page's own markup cannot
+    drift, so it is checked directly.
+
+    Unreadable paths are reported as deep-dives. If we cannot tell what a file
+    is, refusing to overwrite loses a rebuild; overwriting loses research.
+    """
+    try:
+        if not path.exists():
+            return False          # nothing there yet: generate normally
+        html = path.read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        return True               # exists but unreadable: refuse to clobber
+    return any(marker in html for marker in _DEEP_DIVE_MARKERS)
+
+
 def find_dossier_json(race, lastname):
     state = race["state_abbr"].lower()
     year = race["year"]
@@ -549,6 +579,7 @@ def main():
 
     total_pages = 0
     states_processed = set()
+    preserved_deep_dives = []
 
     for race in target_races:
         abbr = race["state_abbr"]
@@ -557,6 +588,7 @@ def main():
         race_dir.mkdir(parents=True, exist_ok=True)
 
         dossiers = {}
+        preserved_here = 0
         for c in race["candidates"]:
             lastname = c["url"].rstrip("/").split("/")[-1]
             candidate_dir = race_dir / lastname
@@ -565,17 +597,32 @@ def main():
             dossier = find_dossier_json(race, lastname)
             dossiers[lastname] = dossier
 
+            target = candidate_dir / "index.html"
+            # A deep-dive dossier is researched output; a stub is derived from
+            # the roster. Never trade the first for the second (ADO #1969).
+            if is_deep_dive_page(target):
+                preserved_deep_dives.append(f"{race['id']}/{lastname}")
+                preserved_here += 1
+                continue
+
             page_html = render_candidate_page(race, c, dossier, state_info)
-            (candidate_dir / "index.html").write_text(page_html)
+            target.write_text(page_html)
             total_pages += 1
 
+        # The overview lists the field, so it is regenerated even when some of
+        # its candidates are preserved; it carries no researched content.
         overview_html = render_race_overview(race, dossiers, state_info)
         (race_dir / "index.html").write_text(overview_html)
         total_pages += 1
         states_processed.add(abbr)
-        print(f"  wrote {race['id']}/: {len(race['candidates'])} candidates + overview")
+        note = f", {preserved_here} deep-dive preserved" if preserved_here else ""
+        print(f"  wrote {race['id']}/: "
+              f"{len(race['candidates']) - preserved_here} candidates + overview{note}")
 
     print(f"\nDone: {total_pages} pages across {len(target_races)} races in {len(states_processed)} state(s)")
+    if preserved_deep_dives:
+        print(f"Preserved {len(preserved_deep_dives)} existing deep-dive page(s), "
+              f"not overwritten with stubs.")
 
 
 if __name__ == "__main__":
