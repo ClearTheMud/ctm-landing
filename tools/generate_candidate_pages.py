@@ -16,6 +16,7 @@ Writes:
     races/{race-id}/{lastname}/index.html — candidate dossier page
 """
 
+import html as _html
 import json
 import sys
 from pathlib import Path
@@ -113,6 +114,60 @@ def find_dossier_json(race, lastname):
         with open(path) as f:
             return json.load(f)
     return None
+
+
+# Byte-identical to the caveat in clearthemud's convert_to_ctm_landing.py. The
+# SOS export has no identity key, so rows are matched on printed name alone;
+# a page that shows them without saying so asserts an identity nobody verified.
+# Keep the two copies in sync, or the site explains one limitation two ways.
+SOS_NAME_MATCH_CAVEAT = (
+    "Rows marked WA SOS come from official Washington Secretary of State "
+    "election results and are <strong>matched by name</strong>, not by a "
+    "verified identity. A candidate who shares a name with another "
+    "person may show results that are not theirs. "
+    '<a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.'
+)
+
+
+def render_election_history(history, section_num):
+    """Election History section for a T1 stub page, or "" when there is none.
+
+    Mirrors the deep-dive renderer: a Source column per row so a reader can
+    tell researched history from a name match, and the caveat only when at
+    least one row actually came from the SOS export (ADO #1969).
+    """
+    if not history:
+        return ""
+
+    rows = []
+    for entry in history:
+        src = entry.get("source")
+        label = {"wa-sos": "WA SOS", "research": "Research"}.get(src, "Research")
+        rows.append(
+            f'        <tr><td>{_html.escape(str(entry.get("year", "")))}</td>'
+            f'<td>{_html.escape(str(entry.get("race", "")))}</td>'
+            f'<td>{_html.escape(str(entry.get("result", "")))}</td>'
+            f'<td>{_html.escape(label)}</td></tr>'
+        )
+
+    caveat = ""
+    if any(e.get("source") == "wa-sos" for e in history):
+        caveat = (
+            '\n      <p style="font-size:13px; color:var(--gray-dark);">'
+            f'{SOS_NAME_MATCH_CAVEAT}</p>'
+        )
+
+    body = "\n".join(rows)
+    return f"""
+    <div class="section">
+      <h2><span class="section-num">{section_num}</span> Election History</h2>
+      <table>
+        <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+        <tbody>
+{body}
+        </tbody>
+      </table>{caveat}
+    </div>"""
 
 
 def format_currency(amount):
@@ -280,6 +335,13 @@ def render_candidate_page(race, candidate, dossier, state_info):
       </div>
     </div>"""
 
+    # Election History sits between finance and sourcing, and only when the
+    # candidate has any. Source Verification shifts to 4 in that case so the
+    # numbering never gaps or repeats (ADO #1969).
+    election_history = dossier.get("election_history", []) if dossier else []
+    election_history_section = render_election_history(election_history, 3)
+    source_verification_num = 4 if election_history_section else 3
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -333,8 +395,9 @@ def render_candidate_page(race, candidate, dossier, state_info):
       </div>
     </div>
 {finance_section}
+{election_history_section}
     <div class="section">
-      <h2><span class="section-num">3</span> Source Verification</h2>
+      <h2><span class="section-num">{source_verification_num}</span> Source Verification</h2>
       <div class="finding">
         <dl>
           <dt>Data Source</dt><dd>clearthemud.org data pipeline</dd>
