@@ -149,7 +149,12 @@ __pycache__/
 
 # ClearAsMud private artifacts — never publish to the public site repo
 # (canonical copies live in the private clearthemud ADO repo)
-data/
+#
+# Anchored to the repo root on purpose. Unanchored, `data/` also matched
+# tools/data/, which holds tracked site config (races.json, counties.json and
+# friends). Those were already tracked so the rule never bit, but it silently
+# blocked any NEW file there, including the do-not-publish list (ADO #1974).
+/data/
 CandidateList.csv
 AGENTS.md
 .claude/

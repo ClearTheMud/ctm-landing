@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+#
+# Block staging of pages that must never be published (ADO #1971, #1974).
+#
+# This repo is public only so GitHub Pages can serve clearthemud.org, so
+# anything committed here is published. Untracked pages under races/ exist
+# because someone decided NOT to publish them, and `git add races/` stages
+# them along with everything else. That happened twice on 2026-07-28 and
+# reached the live site once.
+#
+# Install:  git config core.hooksPath .githooks
+#
+# The authoritative list is tools/data/do-not-publish.json, also enforced by
+# tools/tests/test_do_not_publish.py so CI catches it even without the hook.
+
+set -euo pipefail
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+LIST="$REPO_ROOT/tools/data/do-not-publish.json"
+
+[ -f "$LIST" ] || exit 0
+
+staged="$(git diff --cached --name-only --diff-filter=A || true)"
+[ -n "$staged" ] || exit 0
+
+# Read the prefixes without needing jq.
+prefixes="$(python3 - "$LIST" <<'PY'
+import json, sys
+with open(sys.argv[1]) as f:
+    for e in json.load(f)["paths"]:
+        print(e["path"].rstrip("/") + "/")
+PY
+)"
+
+violations=""
+while IFS= read -r file; do
+    [ -n "$file" ] || continue
+    while IFS= read -r prefix; do
+        [ -n "$prefix" ] || continue
+        case "$file" in
+            "$prefix"*) violations="${violations}  ${file}"$'\n' ;;
+        esac
+    done <<< "$prefixes"
+done <<< "$staged"
+
+if [ -n "$violations" ]; then
+    cat >&2 <<EOF
+
+COMMIT BLOCKED: staged pages are on the do-not-publish list.
+
+$violations
+These are untracked on purpose. Committing them publishes them to
+clearthemud.org. Phantom candidates are not real people, and orphan pages
+are held pending an explanation.
+
+Unstage them:
+  git restore --staged <path>
+
+Prefer staging explicit paths over 'git add races/', which cannot tell a
+regenerated page from one being deliberately withheld.
+
+If a page genuinely should be published, remove it from
+tools/data/do-not-publish.json in the same commit, with a reason.
+
+EOF
+    exit 1
+fi
+
+exit 0

@@ -1,0 +1,28 @@
+{
+  "_comment": [
+    "Pages that must never be tracked in this repo (ADO #1971, #1974).",
+    "",
+    "This repo is public only so GitHub Pages can serve clearthemud.org, so",
+    "anything tracked here is published. Untracked pages under races/ exist",
+    "precisely because someone decided NOT to publish them, and 'git add",
+    "races/' cannot tell the difference: it stages them along with everything",
+    "else. That happened twice on 2026-07-28, once reaching the live site.",
+    "",
+    "tools/tests/test_do_not_publish.py fails if any path here is tracked.",
+    "Install the hook for a pre-commit check: git config core.hooksPath .githooks"
+  ],
+  "paths": [
+    {
+      "path": "races/wa-king-prosecuting-attorney-2026/corkern",
+      "reason": "Phantom candidate from a stub roster scrape. Not a real person; appears in King and Whatcom prosecutor races with no filing record."
+    },
+    {
+      "path": "races/wa-king-prosecuting-attorney-2026/sigmar",
+      "reason": "Phantom candidate from a stub roster scrape, same scrape as corkern."
+    },
+    {
+      "path": "races/wa-state-house-3-pos2-2026/jasmin",
+      "reason": "Orphan page with zero content sections and no link from its race index. Held pending an explanation of where it came from."
+    }
+  ]
+}
