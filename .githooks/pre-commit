@@ -1,57 +1,108 @@
 #!/usr/bin/env bash
 #
-# Block staging of pages that must never be published (ADO #1971, #1974).
+# Block staging of anything that must not be published (ADO #1971, #1974, #1980, #1981).
 #
 # This repo is public only so GitHub Pages can serve clearthemud.org, so
-# anything committed here is published. Untracked pages under races/ exist
-# because someone decided NOT to publish them, and `git add races/` stages
-# them along with everything else. That happened twice on 2026-07-28 and
-# reached the live site once.
+# anything committed here is published. Two different mistakes reach the live
+# site, and this hook guards both:
+#
+#   1. Untracked pages under races/ exist because someone decided NOT to
+#      publish them, and `git add races/` stages them along with everything
+#      else. That happened twice on 2026-07-28 and reached the live site once.
+#      Guarded by tools/data/do-not-publish.json.
+#
+#   2. Files that are not site content at all. Eight session status docs under
+#      docs/status/ and the internal candidate-validation report under
+#      tools/reports/ were published this way. A per-page denylist could never
+#      have caught them, because it only knows about pages someone already
+#      thought to name. Guarded by tools/data/publish-allowlist.json, which
+#      inverts the question: a path must match the allowlist to be staged.
 #
 # Install:  git config core.hooksPath .githooks
 #
-# The authoritative list is tools/data/do-not-publish.json, also enforced by
-# tools/tests/test_do_not_publish.py so CI catches it even without the hook.
+# An uninstalled hook is the same as no hook, so both lists are also enforced
+# by tools/tests/test_do_not_publish.py and tools/tests/test_publish_allowlist.py
+# to catch it in CI.
 
 set -euo pipefail
 
 REPO_ROOT="$(git rev-parse --show-toplevel)"
-LIST="$REPO_ROOT/tools/data/do-not-publish.json"
 
-[ -f "$LIST" ] || exit 0
+CHECK=$(cat <<'PY'
+import json, os, sys
 
-staged="$(git diff --cached --name-only --diff-filter=A || true)"
-[ -n "$staged" ] || exit 0
+repo = sys.argv[1]
+staged = [p for p in sys.stdin.read().split("\0") if p]
 
-# Read the prefixes without needing jq.
-prefixes="$(python3 - "$LIST" <<'PY'
-import json, sys
-with open(sys.argv[1]) as f:
-    for e in json.load(f)["paths"]:
-        print(e["path"].rstrip("/") + "/")
+def load(name):
+    path = os.path.join(repo, "tools", "data", name)
+    if not os.path.exists(path):
+        return None
+    with open(path) as f:
+        return json.load(f)
+
+problems = []
+
+# 1. Pages explicitly withheld.
+dnp = load("do-not-publish.json")
+if dnp:
+    for entry in dnp["paths"]:
+        prefix = entry["path"].rstrip("/") + "/"
+        for f in staged:
+            if f.startswith(prefix):
+                problems.append((f, "on the do-not-publish list: " + entry["reason"]))
+
+# 2. Anything that is not static site content. Deny wins over allow.
+allowlist = load("publish-allowlist.json")
+if allowlist:
+    def publishable(path):
+        for entry in allowlist["deny"]:
+            p = entry["path"]
+            if path == p or path.startswith(p.rstrip("/") + "/"):
+                return False
+        for entry in allowlist["allow"]:
+            p = entry["path"]
+            if p.endswith("/"):
+                if path.startswith(p):
+                    return True
+            elif path == p:
+                return True
+        return False
+
+    for f in staged:
+        if not publishable(f):
+            problems.append((f, "not on the publish allowlist"))
+
+seen = set()
+for path, why in problems:
+    if (path, why) in seen:
+        continue
+    seen.add((path, why))
+    print("  {}\n      {}".format(path, why))
 PY
-)"
+)
 
-violations=""
-while IFS= read -r file; do
-    [ -n "$file" ] || continue
-    while IFS= read -r prefix; do
-        [ -n "$prefix" ] || continue
-        case "$file" in
-            "$prefix"*) violations="${violations}  ${file}"$'\n' ;;
-        esac
-    done <<< "$prefixes"
-done <<< "$staged"
+# The -z and the direct pipe are both load-bearing. Without -z, git C-quotes
+# any path containing a non-ASCII byte, so races/.../saldana/index.html with a
+# tilde-n arrives as the literal string "races/.../salda\303\261a/index.html",
+# quotes and all. That matches no prefix, so a non-ASCII page slipped past both
+# lists silently. Two real candidates are affected today, Saldana and Baron.
+# And the output cannot be buffered through a bash variable on the way here,
+# because command substitution strips NUL bytes, which would throw away the
+# separators that -z just added.
+report="$(git diff --cached --name-only --diff-filter=A -z | python3 -c "$CHECK" "$REPO_ROOT")"
 
-if [ -n "$violations" ]; then
+if [ -n "$report" ]; then
     cat >&2 <<EOF
 
-COMMIT BLOCKED: staged pages are on the do-not-publish list.
+COMMIT BLOCKED: staged files must not be published.
 
-$violations
-These are untracked on purpose. Committing them publishes them to
-clearthemud.org. Phantom candidates are not real people, and orphan pages
-are held pending an explanation.
+$report
+
+Everything tracked in this repo is served from clearthemud.org. Pages on the
+do-not-publish list are untracked on purpose: phantom candidates are not real
+people, and orphan pages are held pending an explanation. Files off the
+allowlist are not site content and belong in the private clearthemud ADO repo.
 
 Unstage them:
   git restore --staged <path>
@@ -59,8 +110,9 @@ Unstage them:
 Prefer staging explicit paths over 'git add races/', which cannot tell a
 regenerated page from one being deliberately withheld.
 
-If a page genuinely should be published, remove it from
-tools/data/do-not-publish.json in the same commit, with a reason.
+If something genuinely should be published, add it to
+tools/data/publish-allowlist.json (or remove it from
+tools/data/do-not-publish.json) in the same commit, with a reason.
 
 EOF
     exit 1

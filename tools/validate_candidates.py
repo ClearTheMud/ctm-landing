@@ -21,6 +21,25 @@ CSV_PATH = REPO_ROOT / "CandidateList.csv"
 RACES_JSON = REPO_ROOT / "tools" / "data" / "races.json"
 RACES_DIR = REPO_ROOT / "races"
 
+
+def _report_dir():
+    """Where the validation report is written.
+
+    This report enumerates match failures, orphan directories and unresolved
+    records. That is internal QA output, not site content, and this repo is
+    public: anything written under the repo root and committed is served from
+    clearthemud.org. It used to land in tools/reports/ and was published
+    (ADO #1980).
+
+    Set CTM_REPORT_DIR to write into the private clearthemud ADO repo, which
+    is where the canonical copy belongs. The default keeps the script runnable
+    from a bare clone, and tools/reports/ is gitignored so the output cannot be
+    staged by accident.
+    """
+    override = os.environ.get("CTM_REPORT_DIR")
+    return Path(override).expanduser().resolve() if override else REPO_ROOT / "tools" / "reports"
+
+
 # --- Name Normalization ---
 
 def normalize_name(name):
@@ -878,7 +897,8 @@ def main():
     print("Generating report...")
     report = generate_report(scores, match_results, dir_results, coverage_gaps)
 
-    report_path = REPO_ROOT / "tools" / "reports" / "wa-candidate-validation-report.md"
+    report_dir = _report_dir()
+    report_path = report_dir / "wa-candidate-validation-report.md"
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(report)
     print(f"Report written to: {report_path}")
@@ -913,7 +933,7 @@ def main():
             for cc, jc in match_results['party_mismatch']
         ],
     }
-    json_path = REPO_ROOT / "tools" / "reports" / "wa-candidate-validation-summary.json"
+    json_path = report_dir / "wa-candidate-validation-summary.json"
     json_path.write_text(json.dumps(json_summary, indent=2))
     print(f"JSON summary written to: {json_path}")
 

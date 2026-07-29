@@ -159,3 +159,9 @@ CandidateList.csv
 AGENTS.md
 .claude/
 .DS_Store
+
+# Internal process files. Canonical copies live in the private clearthemud
+# ADO repo. These were published from this public repo until ADO #1980.
+# Enforced by tools/tests/test_publish_allowlist.py and .githooks/pre-commit.
+/docs/
+tools/reports/

@@ -1,0 +1,79 @@
+{
+  "_comment": "Only static site content may be tracked in this public repo (ADO #1980, #1981). Everything tracked here is served from clearthemud.org. Deny wins over allow. Enforced by tools/tests/test_publish_allowlist.py and .githooks/pre-commit.",
+  "allow": [
+    {
+      "path": "races/",
+      "reason": "Published candidate and race pages. This is the site's primary content, gated further by tools/data/do-not-publish.json."
+    },
+    {
+      "path": "states/",
+      "reason": "Published per-state hub pages linking to the race directories below them."
+    },
+    {
+      "path": "geo/",
+      "reason": "GeoJSON district and county boundaries used by the map views. Public reference data from official sources."
+    },
+    {
+      "path": "css/",
+      "reason": "Stylesheets served to the browser, including the dossier.css that all published pages link."
+    },
+    {
+      "path": "js/",
+      "reason": "Client-side scripts served to the browser for map rendering and race table filtering."
+    },
+    {
+      "path": "methodology/",
+      "reason": "Published methodology page explaining the source-tier model to readers of the site."
+    },
+    {
+      "path": "tools/",
+      "reason": "Generators, tests, and the site registry needed to build the published pages. Permitted explicitly by CLAUDE.md; see the deny list for the parts that are not."
+    },
+    {
+      "path": ".githooks/",
+      "reason": "The pre-commit promotion gate itself. Must be tracked so a fresh clone can install it."
+    },
+    {
+      "path": "index.html",
+      "reason": "The site's landing page."
+    },
+    {
+      "path": "sitemap.xml",
+      "reason": "Search engine sitemap for the published pages."
+    },
+    {
+      "path": "CNAME",
+      "reason": "GitHub Pages custom domain binding for clearthemud.org. Removing it takes the site down."
+    },
+    {
+      "path": "CLAUDE.md",
+      "reason": "Build and contribution instructions for this repo. Contains no internal research or findings."
+    },
+    {
+      "path": ".gitignore",
+      "reason": "Blocks private artifacts from being staged. Must be tracked for the protection to reach every clone."
+    }
+  ],
+  "deny": [
+    {
+      "path": "docs/",
+      "reason": "Session status files and working docs are internal process records, not site content. Canonical copies live in the private clearthemud ADO repo under docs/status/."
+    },
+    {
+      "path": "tools/reports/",
+      "reason": "Internal QA output. The candidate-validation report enumerates matching defects and unresolved records, which is internal research rather than anything a site reader consumes."
+    },
+    {
+      "path": "data/",
+      "reason": "Private collection artifacts. Note tools/data/ is a different path and stays allowed; this entry is the repo-root data directory that .gitignore also anchors against."
+    },
+    {
+      "path": "AGENTS.md",
+      "reason": "Internal agent operating instructions. Describes collection workflow and is not site content."
+    },
+    {
+      "path": ".claude/",
+      "reason": "Local agent configuration, which can carry internal paths and prompts. Never site content."
+    }
+  ]
+}
