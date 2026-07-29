@@ -159,6 +159,31 @@ hosting requirement, not an invitation to track internal work here. Hard rules:
 - The private data pipeline and system of record live in `~/Local/Projects/github/clearthemud/`.
   When unsure whether something is public-ready, it stays there, not here.
 
+### Install the promotion gate first (every clone)
+
+```bash
+git config core.hooksPath .githooks
+```
+
+This is **not** optional and is **not** inherited by a clone. `core.hooksPath` is
+local config, so a fresh clone has the gate switched off until someone runs that
+line. Run it before your first commit.
+
+The gate enforces two lists:
+
+| List | Question it answers |
+|---|---|
+| `tools/data/publish-allowlist.json` | Is this path site content at all? A path must match `allow` (and miss `deny`) to be tracked. |
+| `tools/data/do-not-publish.json` | Is this specific page withheld on purpose? |
+
+The allowlist is the broader of the two. A denylist only knows about pages someone
+already thought to name, so it cannot catch a whole category of file that nobody
+anticipated. If you need to track something new, add it to the allowlist with a
+reason in the same commit.
+
+Both lists are also enforced by `tools/tests/test_publish_allowlist.py` and
+`tools/tests/test_do_not_publish.py`, so CI catches an uninstalled hook.
+
 ## Publication Rules
 
 Only T0-T2 verified findings may be published. T3/T4 data, "RESEARCH NOTE" items, and "Journalist Leads" sections stay in local deliverables until vetted. Audit every finding's source tier before committing to this repo.
