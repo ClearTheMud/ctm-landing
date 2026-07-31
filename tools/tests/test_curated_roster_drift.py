@@ -105,7 +105,11 @@ class TestCuratedRostersMatchRegistry:
             m = re.search(r"<strong>Candidates:</strong>\s*(\d+)", h)
             if not m:
                 continue
-            shown, actual = int(m.group(1)), h.count('class="dossier-link"')
+            # Match the class as a prefix. A withdrawn card carries
+            # class="dossier-link withdrawn", so an exact-string count silently
+            # undercounts and reports drift that is not there.
+            shown = int(m.group(1))
+            actual = len(re.findall(r'class="dossier-link(?:\s[^"]*)?"', h))
             if shown != actual:
                 bad.append(f"{rid}: header says {shown}, page has {actual} cards")
         assert not bad, "Candidate counts disagree with the cards:\n  " + "\n  ".join(bad)

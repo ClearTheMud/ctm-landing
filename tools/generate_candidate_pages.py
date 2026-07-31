@@ -240,6 +240,10 @@ def render_candidate_page(race, candidate, dossier, state_info):
     party_class = PARTY_CLASS.get(party_short, "party-neutral")
     role = candidate.get("role", "challenger").title()
     district = _district_label(race)
+    # Omit the field entirely when there is no district. A race that belongs
+    # to no district rendered as a bare "District:" label (ADO #1996).
+    district_meta = (f'      <span><strong>District:</strong> {district}</span>\n'
+                     if str(district).strip() else "")
     race_title = race["title"]
     race_url = race["url"]
     is_county = race.get("level") == "county"
@@ -410,8 +414,7 @@ def render_candidate_page(race, candidate, dossier, state_info):
       <span><span class="tlp-badge">TLP:GREEN</span></span>
       <span><strong>Party:</strong> {party_full}</span>
       <span><strong>Status:</strong> {role}</span>
-      <span><strong>District:</strong> {district}</span>
-    </div>
+{district_meta}    </div>
   </div>
 </div>
 
@@ -454,6 +457,10 @@ def render_candidate_page(race, candidate, dossier, state_info):
 def render_race_overview(race, dossiers, state_info):
     title = race["title"]
     district = _district_label(race)
+    # Omit the field entirely when there is no district. A race that belongs
+    # to no district rendered as a bare "District:" label (ADO #1996).
+    district_meta = (f'      <span><strong>District:</strong> {district}</span>\n'
+                     if str(district).strip() else "")
     candidates = race["candidates"]
     is_county = race.get("level") == "county"
 
@@ -472,10 +479,20 @@ def render_race_overview(race, dossiers, state_info):
         raised_claim = scf.get("total_raised", {}).get("claim", "") or cf.get("total_raised", {}).get("claim", "")
         raised = format_currency(extract_amount_from_claim(raised_claim)) if raised_claim else "Not reported"
 
-        status_class = "status-incumbent" if role.lower() == "incumbent" else "status-active"
-        candidate_cards.append(f"""      <a href="{c['url']}" class="dossier-link">
+        # A withdrawn candidate is not on the ballot, so the field must not
+        # show them as running. They stay listed rather than being removed: a
+        # reader who remembers the name deserves to learn what happened rather
+        # than find nothing (ADO #1992).
+        if c.get("withdrawn"):
+            status_class, status_text = "status-withdrawn", "WITHDRAWN"
+            link_class, detail = "dossier-link withdrawn", "Withdrew from the race"
+        else:
+            status_class = "status-incumbent" if role.lower() == "incumbent" else "status-active"
+            status_text, link_class, detail = role.upper(), "dossier-link", f"Raised: {raised}"
+
+        candidate_cards.append(f"""      <a href="{c['url']}" class="{link_class}">
         <h4>{c['name']} ({party_label})</h4>
-        <p><span class="{status_class}">{role.upper()}</span>, Raised: {raised}</p>
+        <p><span class="{status_class}">{status_text}</span>, {detail}</p>
       </a>""")
 
     cards_html = "\n".join(candidate_cards)
@@ -522,8 +539,7 @@ def render_race_overview(race, dossiers, state_info):
     <h2>2026 Primary Election</h2>
     <div class="header-meta">
       <span><span class="tlp-badge">TLP:GREEN</span></span>
-      <span><strong>District:</strong> {district}</span>
-      <span><strong>Candidates:</strong> {len(candidates)}</span>
+{district_meta}      <span><strong>Candidates:</strong> {len(candidates)}</span>
       <span><strong>Office:</strong> {race['office']}</span>
     </div>
   </div>

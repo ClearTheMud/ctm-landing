@@ -1652,6 +1652,7 @@
    "candidates": [
     {
      "name": "Joel Ard",
+     "withdrawn": true,
      "party": "R",
      "role": "challenger",
      "url": "/races/wa-state-house-23-pos1-2026/ard/",
@@ -2034,6 +2035,7 @@
    "candidates": [
     {
      "name": "Brett Johnson",
+     "withdrawn": true,
      "party": "R",
      "role": "challenger",
      "url": "/races/wa-state-house-29-pos1-2026/johnson/",
@@ -3539,6 +3541,7 @@
     },
     {
      "name": "Julia Payne",
+     "withdrawn": true,
      "party": "D",
      "role": "challenger",
      "url": "/races/wa-state-house-6-pos2-2026/payne/",
@@ -3977,6 +3980,7 @@
     },
     {
      "name": "Emijah Smith",
+     "withdrawn": true,
      "party": "D",
      "role": "challenger",
      "url": "/races/wa-state-senate-37-2026/smith/",
@@ -4284,6 +4288,7 @@
     },
     {
      "name": "Douglas McKinley",
+     "withdrawn": true,
      "party": "D",
      "role": "challenger",
      "url": "/races/wa-state-senate-8-2026/mckinley/",
@@ -7576,6 +7581,7 @@
    "candidates": [
     {
      "name": "David Mistachkin",
+     "withdrawn": true,
      "party": "nonpartisan",
      "role": "challenger",
      "slug": "mistachkin",
@@ -8422,6 +8428,7 @@
     },
     {
      "name": "Kitty Candelaria",
+     "withdrawn": true,
      "party": "nonpartisan",
      "role": "challenger",
      "slug": "candelaria",
@@ -13700,6 +13707,7 @@
     },
     {
      "name": "Pat Tucker",
+     "withdrawn": true,
      "party": "nonpartisan",
      "role": "Filed",
      "slug": "tucker",
@@ -15169,6 +15177,7 @@
    "candidates": [
     {
      "name": "Laurel Gibson",
+     "withdrawn": true,
      "party": "nonpartisan",
      "role": "Filed",
      "slug": "gibson",
@@ -15187,6 +15196,7 @@
     },
     {
      "name": "Quita St. John",
+     "withdrawn": true,
      "party": "nonpartisan",
      "role": "Filed",
      "slug": "john",
@@ -15621,6 +15631,7 @@
     },
     {
      "name": "Ben Kostick",
+     "withdrawn": true,
      "party": "nonpartisan",
      "role": "Filed",
      "slug": "kostick",
