@@ -40,11 +40,35 @@ class TestCuratedConfig:
         assert isinstance(config["curated_race_ids"], list)
         assert len(config["curated_race_ids"]) > 0
 
+    # Spot-checked deep dives. Every entry must be BOTH listed as curated and
+    # present on disk; see test_spot_checked_ids_exist_on_disk for why.
+    SPOT_CHECKED = (
+        "wa-lewis-sheriff-2026",
+        "wa-thurston-assessor-2026",
+        "wa-grays-harbor-coroner-2026",
+        "wa-state-house-2-pos1-2026",
+    )
+
     def test_includes_known_wa_deep_dives(self, config):
         ids = set(config["curated_race_ids"])
-        for rid in ("wa-lewis-sheriff-2026", "wa-thurston-assessor-2026",
-                    "wa-grays-harbor-coroner-2026", "wa-ld-02-position-1-2026"):
-            assert rid in ids
+        for rid in self.SPOT_CHECKED:
+            assert rid in ids, f"{rid} lost its curated protection"
+
+    def test_spot_checked_ids_exist_on_disk(self):
+        """A spot check against a race that does not exist proves nothing.
+
+        This test previously asserted `wa-ld-02-position-1-2026`, a slug that
+        exists neither in races/ nor in the curated list. The LD-02 pages live
+        at `wa-state-house-2-pos1-2026`. The assertion could therefore only
+        fail, and it did, so the suite stayed red and the signal was ignored.
+
+        Checking that each spot-checked id resolves to a real directory keeps a
+        future slug migration from turning this class back into a fiction.
+        """
+        for rid in self.SPOT_CHECKED:
+            assert (REPO_ROOT / "races" / rid).is_dir(), (
+                f"{rid} is spot-checked here but has no races/ directory. "
+                f"If the slug moved, update SPOT_CHECKED to the new one.")
 
     def test_includes_non_wa_deep_dives(self, config):
         ids = set(config["curated_race_ids"])

@@ -187,6 +187,21 @@ class TestCandidatePages:
         assert "Unknown" not in jayapal_page, "Expenditure rows should not contain 'Unknown'"
 
     def test_expenditures_show_vendor_names(self, jayapal_page):
+        """KNOWN FAILING, and correctly so. Tracked as ADO #1989.
+
+        The page generator has no expenditure rendering path, so vendor data
+        that is already collected and cited never reaches the published page.
+        The source dossier for this candidate carries 200 expenditure records
+        and the page shows none of them.
+
+        Do NOT make this pass by weakening the assertion. It is the only signal
+        that the data is being dropped. Fixing it means adding the section to
+        the generator and republishing, which is a content change needing its
+        own review.
+
+        Its sibling test_no_unknown_in_expenditures passes vacuously for the
+        same reason: there are no expenditure rows to contain "Unknown".
+        """
         assert "SYMMETRY MEDIA" in jayapal_page or "MEDIA BUY" in jayapal_page, \
             "Expenditure table should show actual vendor names or purposes"
 
