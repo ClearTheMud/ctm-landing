@@ -187,23 +187,44 @@ class TestCandidatePages:
         assert "Unknown" not in jayapal_page, "Expenditure rows should not contain 'Unknown'"
 
     def test_expenditures_show_vendor_names(self, jayapal_page):
-        """KNOWN FAILING, and correctly so. Tracked as ADO #1989.
+        """Expenditures must reach the page with real recipients and purposes.
 
-        The page generator has no expenditure rendering path, so vendor data
-        that is already collected and cited never reaches the published page.
-        The source dossier for this candidate carries 200 expenditure records
-        and the page shows none of them.
+        This was red for a long time and was right to be: the generator had no
+        expenditure path at all, so collected and cited vendor data never
+        reached a reader (ADO #1989).
 
-        Do NOT make this pass by weakening the assertion. It is the only signal
-        that the data is being dropped. Fixing it means adding the section to
-        the generator and republishing, which is a content change needing its
-        own review.
-
-        Its sibling test_no_unknown_in_expenditures passes vacuously for the
-        same reason: there are no expenditure rows to contain "Unknown".
+        It used to pin SYMMETRY MEDIA / MEDIA BUY. Those come from a 2024
+        disbursement, and the section is now scoped to the current cycle, so
+        pinning them would either fail forever or force the prior cycle back
+        onto a 2026 page. It now asserts what the test was actually for: the
+        table exists and carries real recipient and purpose values rather than
+        placeholders.
         """
-        assert "SYMMETRY MEDIA" in jayapal_page or "MEDIA BUY" in jayapal_page, \
-            "Expenditure table should show actual vendor names or purposes"
+        assert "Largest Reported Expenditures" in jayapal_page, \
+            "expenditure section missing from the page"
+        rows = re.findall(
+            r"<tr><td>([^<]+)</td><td>([^<]*)</td><td>\$[\d,.]+</td><td>[\d-]+</td></tr>",
+            jayapal_page)
+        assert rows, "expenditure table rendered no rows"
+        recipients = [r.strip() for r, _ in rows]
+        assert all(r and r != "Unknown" for r in recipients), \
+            f"placeholder recipients in the expenditure table: {recipients}"
+        assert any(p.strip() for _, p in rows), \
+            "no expenditure row carried a purpose"
+
+    def test_expenditures_are_current_cycle_only(self, jayapal_page):
+        """A prior-cycle disbursement on a 2026 page misleads about current spending.
+
+        The collected records run back to 2000 for some candidates and are
+        sorted by amount, so without scoping the largest rows would routinely
+        be from an earlier race.
+        """
+        dates = re.findall(
+            r"<tr><td>[^<]+</td><td>[^<]*</td><td>\$[\d,.]+</td><td>(\d{4})-\d\d-\d\d</td></tr>",
+            jayapal_page)
+        assert dates, "no dated expenditure rows found"
+        stale = sorted({d for d in dates if d not in ("2025", "2026")})
+        assert not stale, f"prior-cycle expenditures published: {stale}"
 
     def test_no_na_raised_text(self):
         overview = (REPO_ROOT / "races" / "wa-house-7-2026" / "index.html").read_text()
