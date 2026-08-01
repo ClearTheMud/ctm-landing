@@ -239,6 +239,11 @@ def render_candidate_page(race, candidate, dossier, state_info):
     party_full = PARTY_FULL.get(party_short, party_short)
     party_class = PARTY_CLASS.get(party_short, "party-neutral")
     role = candidate.get("role", "challenger").title()
+    # A withdrawn candidate is not on the ballot, so nothing on their own page
+    # may present them as running. They are never removed: a reader who
+    # remembers the name deserves to learn what happened (ADO #2014, #1992).
+    withdrawn = bool(candidate.get("withdrawn"))
+    status_display = "Withdrawn" if withdrawn else role
     district = _district_label(race)
     # Omit the field entirely when there is no district. A race that belongs
     # to no district rendered as a bare "District:" label (ADO #1996).
@@ -252,6 +257,25 @@ def render_candidate_page(race, candidate, dossier, state_info):
         county_slug = race.get("county_slug", "")
         county_name = race.get("county", "")
         county_crumb = f'  <a href="/states/{state_info["slug"]}/{county_slug}/">{county_name} County</a>\n  <span class="nav-sep">/</span>\n'
+
+    if withdrawn:
+        page_desc = (f"Candidate record for {name} ({party_full}), who filed in the "
+                     f"{race_title} and withdrew from the race.")
+        bluf = (f"{name} filed as a {party_full} candidate in the {race_title} and "
+                f"withdrew from the race. They are not on the ballot.")
+        withdrawn_banner = (
+            '  <div class="withdrawn-notice" role="note">\n'
+            f'    <p><strong>WITHDRAWN.</strong> {name} withdrew from the race and is not on '
+            f'the ballot for the {race_title}. The record below is kept for reference and '
+            'describes the period before the withdrawal.</p>\n'
+            '  </div>\n')
+        finance_scope = ('\n      <p class="finance-scope">Figures below were reported before '
+                         'withdrawing from the race and are not current fundraising totals.</p>')
+    else:
+        page_desc = f"Verified candidate dossier for {name} ({party_full}) running in the {race_title}."
+        bluf = f"{name} is a {party_full} {role.lower()} in the {race_title}."
+        withdrawn_banner = ""
+        finance_scope = ""
 
     meta = dossier["meta"] if dossier else {}
     cf = dossier.get("campaign_finance", {}) if dossier else {}
@@ -369,6 +393,12 @@ def render_candidate_page(race, candidate, dossier, state_info):
       </div>
     </div>"""
 
+    # Only when there are actually figures to scope. A "no filings found"
+    # section has nothing to qualify (ADO #2014).
+    if finance_scope and (has_state_finance or has_fec_finance):
+        finance_section = finance_section.replace(
+            "Campaign Finance</h2>", "Campaign Finance</h2>" + finance_scope)
+
     # Election History sits between finance and sourcing, and only when the
     # candidate has any. Source Verification shifts to 4 in that case so the
     # numbering never gaps or repeats (ADO #1969).
@@ -383,9 +413,9 @@ def render_candidate_page(race, candidate, dossier, state_info):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
 <title>{name}, {race_title} | clearthemud.org</title>
-<meta name="description" content="Verified candidate dossier for {name} ({party_full}) running in the {race_title}.">
+<meta name="description" content="{page_desc}">
 <meta property="og:title" content="{name}, {race_title}">
-<meta property="og:description" content="Verified candidate dossier for {name} ({party_full}) running in the {race_title}.">
+<meta property="og:description" content="{page_desc}">
 <meta property="og:type" content="website">
 <link rel="canonical" href="{SITE_URL}{candidate['url']}">
 <link rel="stylesheet" href="/css/dossier.css">
@@ -413,18 +443,18 @@ def render_candidate_page(race, candidate, dossier, state_info):
     <div class="header-meta">
       <span><span class="tlp-badge">TLP:GREEN</span></span>
       <span><strong>Party:</strong> {party_full}</span>
-      <span><strong>Status:</strong> {role}</span>
+      <span><strong>Status:</strong> {status_display}</span>
 {district_meta}    </div>
   </div>
 </div>
 
 <div class="page">
 
-    <div class="section">
+{withdrawn_banner}    <div class="section">
       <h2><span class="section-num">1</span> Candidate Overview</h2>
       <div class="bluf">
         <h3>BLUF, Bottom Line Up Front</h3>
-        <p>{name} is a {party_full} {role.lower()} in the {race_title}.</p>
+        <p>{bluf}</p>
       </div>
     </div>
 {finance_section}
