@@ -138,6 +138,18 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 /* Scopes a withdrawn candidate's reported totals to the period before they left
    the race, so a finance refresh cannot read as current (ADO #2014). */
 .finance-scope { font-size: 13px; color: var(--gray-dark); font-style: italic; margin: 0 0 10px; }
+/* Primary results (ADO #2020). Eliminated is a different fact from withdrawn:
+   withdrawing is a choice made before ballots, elimination is an outcome after
+   them. Both are muted, and both carry a word as well as a colour, so the
+   status never depends on seeing the difference between two greys. */
+.status-advanced { display: inline-block; background: var(--green); color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 3px; }
+.status-eliminated { display: inline-block; background: #6b7280; color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 3px; }
+.dossier-link.eliminated { opacity: 0.62; }
+.eliminated-header { margin: 24px 0 4px; font-size: 16px; color: var(--gray-dark); }
+.eliminated-note { margin: 0 0 12px; font-size: 13px; color: var(--gray-dark); }
+/* Provisional until county certification. Washington counts mail ballots for
+   days after election night and standings can change. */
+.partial-count { background: #fffbeb; border-left: 4px solid #d97706; padding: 10px 14px; margin: 0 0 16px; font-size: 13px; }
 .conduit-tag { display: inline-block; background: #fef3c7; color: #92400e; font-size: 10px; font-weight: 600; padding: 1px 6px; border-radius: 3px; margin-left: 4px; vertical-align: middle; }
 .status-withdrawn { display: inline-block; background: var(--gray-dark); color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 3px; }
 .status-suspended { display: inline-block; background: var(--orange); color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 3px; }
