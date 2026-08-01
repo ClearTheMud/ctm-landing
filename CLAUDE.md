@@ -23,10 +23,23 @@ tests and its review process, and the two copies drift apart silently: a fix
 lands in one, the other overwrites it on the next run, and the correction
 disappears from the live site with nothing failing.
 
-`tools/` predates this rule. It is **legacy, frozen, and scheduled to move**
-to the build repo. Do not extend it, do not add tests to it, and do not treat
-its presence as precedent. If a task seems to require editing `tools/`, that
-task belongs in the build repo instead.
+`tools/` predated this rule. The nine site generators it held moved to the
+build repo on 2026-08-01 (ADO #1975) and now live there under `site_tools/`,
+with their tests. What is left is **frozen and finishes moving after the
+2026-08-04 primary is certified**:
+
+- `primary_results.py` and `inject_primary_results.py`, which run on election
+  night and own a contested write path. Moving them days before the primary
+  was the larger risk, so they stayed.
+- `tools/data/`, the registry and the two publication gate lists. The
+  pre-commit gate reads the lists from this repo, and the results injector
+  writes `races.json` here, so the data cannot lead the code out.
+- `tools/tests/`, covering the two files above plus the gate lists and
+  published site content.
+
+Do not extend any of it, do not add tests to it, and do not treat its presence
+as precedent. If a task seems to require adding to `tools/`, it belongs in the
+build repo instead, and the publish allowlist will refuse it here.
 
 Issues and work items go to Azure DevOps, project `civic-tech`. Do not open
 GitHub issues on this repository, including issues about this repository's own
@@ -62,14 +75,19 @@ geo/
   us-states.svg                         -- Clickable US map SVG (50 states + DC)
 js/
   us-map.js                             -- Map interactivity (click, hover, keyboard, touch)
-tools/                                  -- LEGACY, frozen, moving to the build repo. Do not extend.
-  generate_states.py                    -- Generates states/ pages from data files
-  generate_candidate_pages.py           -- Generates race/candidate HTML from dossier JSON
-  build_county_hub.py                   -- End-to-end county buildout pipeline
-  update_races.py                       -- CLI to add races/candidates and regenerate
-  COUNTY_BUILDOUT.md                    -- County buildout process documentation
-  data/states.json                      -- 50-state reference data (static)
-  data/races.json                       -- Active research tracker (edit per new race)
+tools/                                  -- FROZEN. Generators moved to the build repo (ADO #1975).
+  primary_results.py                    -- Election-night results block. Moves after certification.
+  inject_primary_results.py             -- Injects that block into race hubs. Moves after certification.
+  data/races.json                       -- Race and candidate registry, and the ballot-status truth
+                                           the build repo's converter reads. Written here on election
+                                           night by inject_primary_results.py.
+  data/publish-allowlist.json           -- What may be tracked here at all. Read by .githooks/pre-commit.
+  data/do-not-publish.json              -- Pages withheld on purpose. Read by the same hook.
+  data/states.json, counties.json,      -- Reference and registry data the generators read from the
+    places.json, county_races.json,        build repo. Still served from here as one registry.
+    curated_races.json
+  tests/                                -- Covers the two files above, the gate lists, and published
+                                           site content. Generator tests went to the build repo.
 ```
 
 ## URL Scheme
@@ -99,25 +117,28 @@ paths you intended to change.
 - Untracked directories under `races/` are not automatically safe to publish.
   A candidate can end up with two pages at two URLs that way.
 
-### The legacy scripts in tools/
+### What is left in tools/
 
-`tools/` contains generators that were added here before the boundary rule
-existed. They are retained only so currently published pages remain
-reproducible while the migration to the build repo is completed.
+The generators moved to the build repo on 2026-08-01 and are gone from here.
+`tools/data/publish-allowlist.json` now names each of them on the deny list,
+so a copy cannot come back without someone deliberately editing the gate.
 
-Treat them as read-only. In particular, the bulk page generator regenerates
-races from build-repo dossier JSON and will replace a detailed page with a
-thin one unless that race is listed in `tools/data/curated_races.json`. That
-list is maintained by hand, which is exactly why this arrangement is being
-retired rather than documented as a workflow. Running these scripts is not a
-routine operation and should not be treated as one.
+Two files remain, `primary_results.py` and `inject_primary_results.py`. They
+run on election night, which is why they did not move three days before the
+primary. They move after certification, and the deny entries above are the
+pattern to follow when they do.
+
+The bulk page generator that used to live here still behaves the same way,
+now from the build repo: it regenerates races from dossier JSON and will
+replace a detailed page with a thin one unless the race is listed in
+`tools/data/curated_races.json`. That list is still maintained by hand.
 
 ## Interactive Map
 
 The `/states/` page displays an interactive SVG US map above the state grid.
 - States with races in `races.json` appear gold (clickable, navigate to state page)
 - States without data appear dark/inactive with "Research coming soon" tooltip
-- Map is generated inline by `generate_states.py` from `geo/us-states.svg`
+- Map is generated inline by the build repo's `site_tools/generate_states.py` from `geo/us-states.svg`
 - `window.CTM_ACTIVE_STATES` is set automatically from races.json state_abbr values
 - Same inactive/active pattern applies to future state-level district/county maps (Tier 2)
 

@@ -101,8 +101,45 @@ class TestMatching:
             "allow": [{"path": "tools/"}],
             "deny": [{"path": "tools/reports/"}],
         }
-        assert is_publishable("tools/build_county_hub.py", config)
+        assert is_publishable("tools/primary_results.py", config)
         assert not is_publishable("tools/reports/wa-candidate-validation-report.md", config)
+
+    def test_migrated_generators_are_refused_by_the_real_list(self):
+        """Site generation code moved to the build repo and must not return.
+
+        The generators lived here until 2026-08-01 (ADO #1975). A copy landing
+        back in this repo is invisible to the build repo's tests, and the two
+        drift silently: a fix lands in one and the other overwrites it on the
+        next run. The allowlist is where that gets refused.
+        """
+        config = _config()
+        for path in (
+            "tools/generate_states.py",
+            "tools/generate_candidate_pages.py",
+            "tools/generate_county_maps.py",
+            "tools/build_county_hub.py",
+            "tools/build_county_races.py",
+            "tools/detect_roles.py",
+            "tools/ingest_sos_candidates.py",
+            "tools/update_races.py",
+            "tools/validate_candidates.py",
+        ):
+            assert not is_publishable(path, config), (
+                f"{path} is publishable again. Site generators belong in the "
+                f"build repo's site_tools/, not here.")
+
+    def test_the_two_retained_tools_are_still_allowed(self):
+        """The election-night path must not be broken by the migration.
+
+        primary_results.py and inject_primary_results.py stay here until the
+        2026-08-04 primary is certified. Denying them would block the commit
+        that publishes results on election night.
+        """
+        config = _config()
+        assert is_publishable("tools/primary_results.py", config)
+        assert is_publishable("tools/inject_primary_results.py", config)
+        assert is_publishable("tools/data/races.json", config)
+        assert is_publishable("tools/tests/test_primary_results.py", config)
 
     def test_non_ascii_path_matches_its_prefix(self):
         """Real candidates have non-ASCII names; matching must not depend on git quoting."""

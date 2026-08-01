@@ -1,5 +1,5 @@
 {
-  "_comment": "Only static site content may be tracked in this public repo (ADO #1980, #1981). Everything tracked here is served from clearthemud.org. Deny wins over allow. Enforced by tools/tests/test_publish_allowlist.py and .githooks/pre-commit.",
+  "_comment": "Only static site content may be tracked in this public repo (ADO #1980, #1981). Everything tracked here is served from clearthemud.org. Deny wins over allow. Enforced by tools/tests/test_publish_allowlist.py and .githooks/pre-commit. Site generation code moved to the build repo on 2026-08-01 (ADO #1975); the deny entries under tools/ keep it from coming back.",
   "allow": [
     {
       "path": "races/",
@@ -26,8 +26,20 @@
       "reason": "Published methodology page explaining the source-tier model to readers of the site."
     },
     {
-      "path": "tools/",
-      "reason": "Generators, tests, and the site registry needed to build the published pages. Permitted explicitly by CLAUDE.md; see the deny list for the parts that are not."
+      "path": "tools/data/",
+      "reason": "The site registry (races.json) and the two publication gate lists the pre-commit hook reads. Data, not code. The build repo's converter reads races.json as ballot-status truth and the election-night results injector writes it, so it stays here until the primary is certified."
+    },
+    {
+      "path": "tools/primary_results.py",
+      "reason": "Renders the primary results block. Held back from the generator migration (ADO #1975) because the 2026-08-04 primary is imminent; it moves to the build repo after certification."
+    },
+    {
+      "path": "tools/inject_primary_results.py",
+      "reason": "Injects results into race hubs on election night and owns a contested write path. Held back from the generator migration for the same reason; moves after certification."
+    },
+    {
+      "path": "tools/tests/",
+      "reason": "Tests for the two retained tools above, plus the guards on the publication gate lists and on published site content. The tests for the migrated generators went to the build repo with them."
     },
     {
       "path": ".githooks/",
@@ -58,6 +70,42 @@
     {
       "path": "docs/",
       "reason": "Session status files and working docs are internal process records, not site content. Canonical copies live in the private clearthemud ADO repo under docs/status/."
+    },
+    {
+      "path": "tools/generate_states.py",
+      "reason": "Generates the state hub pages and sitemap.xml. Site generation code lives in the build repo's site_tools/ (ADO #1975); this entry stops a copy reappearing here, where the build repo's tests cannot see it and the two would drift."
+    },
+    {
+      "path": "tools/generate_candidate_pages.py",
+      "reason": "Generates race and candidate HTML from build-repo dossier JSON. Site generation code lives in the build repo's site_tools/ (ADO #1975); this entry stops a copy reappearing here, where the build repo's tests cannot see it and the two would drift."
+    },
+    {
+      "path": "tools/generate_county_maps.py",
+      "reason": "Builds the county and place SVG maps from Census shapefiles. Site generation code lives in the build repo's site_tools/ (ADO #1975); this entry stops a copy reappearing here, where the build repo's tests cannot see it and the two would drift."
+    },
+    {
+      "path": "tools/build_county_hub.py",
+      "reason": "End-to-end county buildout pipeline. Site generation code lives in the build repo's site_tools/ (ADO #1975); this entry stops a copy reappearing here, where the build repo's tests cannot see it and the two would drift."
+    },
+    {
+      "path": "tools/build_county_races.py",
+      "reason": "Maps the WA SOS roster onto counties to produce county_races.json. Site generation code lives in the build repo's site_tools/ (ADO #1975); this entry stops a copy reappearing here, where the build repo's tests cannot see it and the two would drift."
+    },
+    {
+      "path": "tools/validate_candidates.py",
+      "reason": "Same migration (ADO #1975). The candidate validator ran against the roster registry and wrote an internal QA report, neither of which is site content."
+    },
+    {
+      "path": "tools/detect_roles.py",
+      "reason": "Same migration (ADO #1975). Assigns incumbent and challenger roles in the registry; it is build-time logic, not a served file."
+    },
+    {
+      "path": "tools/ingest_sos_candidates.py",
+      "reason": "Same migration (ADO #1975). Turns the WA SOS filing roster into registry entries, reading a CSV that only exists in the build repo."
+    },
+    {
+      "path": "tools/update_races.py",
+      "reason": "Same migration (ADO #1975). CLI for adding races and candidates to the registry and regenerating pages from it."
     },
     {
       "path": "tools/reports/",

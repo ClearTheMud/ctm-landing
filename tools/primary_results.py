@@ -17,12 +17,24 @@ from __future__ import annotations
 
 import html as _html
 
-# Reuse the hub's own party map so the block reads "(Democratic)" like the
-# cards beside it, rather than "(D)" (ADO #2020).
-try:
-    from generate_candidate_pages import PARTY_FULL
-except ImportError:                                   # pragma: no cover
-    PARTY_FULL = {}
+# The block reads "(Democratic)" like the cards beside it, rather than "(D)"
+# (ADO #2020).
+#
+# This used to import PARTY_FULL from generate_candidate_pages. That generator
+# moved to the build repo with the rest of the site generation code, and this
+# file stayed behind only until the primary is certified. Reaching across the
+# repo boundary for a nine-entry dictionary would make the public repo depend
+# on a private checkout being present, and the import already failed silently
+# to an empty dict, which is how party labels would have quietly disappeared
+# from every results block on election night. Copied deliberately; both copies
+# retire together when this file moves after certification.
+PARTY_FULL = {
+    "D": "Democratic", "R": "Republican", "I": "Independent",
+    "NP": "Non-Partisan", "L": "Libertarian",
+    "dem": "Democratic", "rep": "Republican", "ind": "Independent",
+    "lib": "Libertarian", "nonpartisan": "Non-Partisan",
+    "other": "Other",
+}
 
 BLOCK_START = "<!-- primary-results:start -->"
 BLOCK_END = "<!-- primary-results:end -->"
