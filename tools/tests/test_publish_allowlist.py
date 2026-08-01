@@ -102,7 +102,7 @@ class TestMatching:
             "allow": [{"path": "tools/"}],
             "deny": [{"path": "tools/reports/"}],
         }
-        assert is_publishable("tools/primary_results.py", config)
+        assert is_publishable("tools/data/races.json", config)
         assert not is_publishable("tools/reports/wa-candidate-validation-report.md", config)
 
     def test_migrated_generators_are_refused_by_the_real_list(self):
@@ -112,9 +112,15 @@ class TestMatching:
         back in this repo is invisible to the build repo's tests, and the two
         drift silently: a fix lands in one and the other overwrites it on the
         next run. The allowlist is where that gets refused.
+
+        The last two entries are the election-night pair. They were held back
+        from the first wave and moved in the second (ADO #2045), so no site
+        generation code remains in this repo at all.
         """
         config = _config()
         for path in (
+            "tools/primary_results.py",
+            "tools/inject_primary_results.py",
             "tools/generate_states.py",
             "tools/generate_candidate_pages.py",
             "tools/generate_county_maps.py",
@@ -141,6 +147,7 @@ class TestMatching:
         """
         config = _config()
         for name in (
+            "test_primary_results.py",
             "test_county_race_table.py",
             "test_curated_skip.py",
             "test_deep_dive_preservation.py",
@@ -177,18 +184,43 @@ class TestMatching:
                 f"is exact-path or directory prefix; a partial name prefix "
                 f"never matches and is silently ignored.")
 
-    def test_the_two_retained_tools_are_still_allowed(self):
-        """The election-night path must not be broken by the migration.
+    def test_no_python_is_publishable_under_tools(self):
+        """Wave 2 finished the job: this repo runs no site code of its own.
 
-        primary_results.py and inject_primary_results.py stay here until the
-        2026-08-04 primary is certified. Denying them would block the commit
-        that publishes results on election night.
+        The first wave left two files behind, so `tools/` still held Python
+        that generated site content and the boundary was a statement about
+        most of the code rather than all of it. Both moved in the second wave
+        (ADO #2045). Stated as a rule about the directory rather than as three
+        more names, because the failure being prevented is a NEW generator
+        being written here, which no list of existing names can catch.
+
+        tools/tests/ is excluded: the guards on published pages and on these
+        gate lists genuinely belong beside the repo they inspect, since they
+        read the tracked tree through git.
         """
         config = _config()
-        assert is_publishable("tools/primary_results.py", config)
-        assert is_publishable("tools/inject_primary_results.py", config)
+        offenders = [
+            f for f in _tracked_files()
+            if f.startswith("tools/") and f.endswith(".py")
+            and not f.startswith("tools/tests/")
+        ]
+        assert not offenders, (
+            "Python under tools/ is site generation code, which lives in the "
+            "build repo's site_tools/:\n  " + "\n  ".join(sorted(offenders)))
+
+    def test_the_registry_and_the_gate_lists_are_still_allowed(self):
+        """tools/data/ stays here, and nothing above may deny it by accident.
+
+        races.json is the ballot-status registry the build repo's converter
+        reads, and publish-allowlist.json and do-not-publish.json are read by
+        this repo's own pre-commit hook, which cannot reach across a repo
+        boundary to find them. Denying any of the three would break either the
+        converter or the gate itself.
+        """
+        config = _config()
         assert is_publishable("tools/data/races.json", config)
-        assert is_publishable("tools/tests/test_primary_results.py", config)
+        assert is_publishable("tools/data/publish-allowlist.json", config)
+        assert is_publishable("tools/data/do-not-publish.json", config)
 
     def test_non_ascii_path_matches_its_prefix(self):
         """Real candidates have non-ASCII names; matching must not depend on git quoting."""

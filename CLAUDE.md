@@ -23,23 +23,27 @@ tests and its review process, and the two copies drift apart silently: a fix
 lands in one, the other overwrites it on the next run, and the correction
 disappears from the live site with nothing failing.
 
-`tools/` predated this rule. The nine site generators it held moved to the
-build repo on 2026-08-01 (ADO #1975) and now live there under `site_tools/`,
-with their tests. What is left is **frozen and finishes moving after the
-2026-08-04 primary is certified**:
+`tools/` predated this rule. **All eleven site generators are gone**: nine
+moved to the build repo on 2026-08-01 (ADO #1975) and the election-night pair,
+`primary_results.py` and `inject_primary_results.py`, followed in a second wave
+(ADO #2045). They live there under `site_tools/` with their tests. **This repo
+now runs no site generation code of its own.** What is left is data and guards:
 
-- `primary_results.py` and `inject_primary_results.py`, which run on election
-  night and own a contested write path. Moving them days before the primary
-  was the larger risk, so they stayed.
-- `tools/data/`, the registry and the two publication gate lists. The
-  pre-commit gate reads the lists from this repo, and the results injector
-  writes `races.json` here, so the data cannot lead the code out.
-- `tools/tests/`, covering the two files above plus the gate lists and
-  published site content.
+- `tools/data/`, the registry and the two publication gate lists. The gate
+  lists must stay: `.githooks/pre-commit` reads them out of this repo's own
+  working tree and cannot reach across a repo boundary to find them. The
+  registry files stay pending an owner decision on inverting their ownership.
+  The build repo reads and writes them through a single named seam,
+  `site_data_dir()`.
+- `tools/tests/`, covering the gate lists and published site content. These
+  read the tracked tree through git, so they belong beside the repo they
+  inspect.
 
-Do not extend any of it, do not add tests to it, and do not treat its presence
-as precedent. If a task seems to require adding to `tools/`, it belongs in the
-build repo instead, and the publish allowlist will refuse it here.
+Do not extend any of it, do not add tests for generation logic to it, and do
+not treat its presence as precedent. If a task seems to require adding Python
+to `tools/`, it belongs in the build repo instead, and the publish allowlist
+will refuse it here: every one of the eleven generators and their tests is
+denied by exact path.
 
 Issues and work items go to Azure DevOps, project `civic-tech`. Do not open
 GitHub issues on this repository, including issues about this repository's own
@@ -75,19 +79,18 @@ geo/
   us-states.svg                         -- Clickable US map SVG (50 states + DC)
 js/
   us-map.js                             -- Map interactivity (click, hover, keyboard, touch)
-tools/                                  -- FROZEN. Generators moved to the build repo (ADO #1975).
-  primary_results.py                    -- Election-night results block. Moves after certification.
-  inject_primary_results.py             -- Injects that block into race hubs. Moves after certification.
+tools/                                  -- Data and guards only. All generators moved to the build
+                                           repo (ADO #1975, #2045). No Python here outside tests/.
   data/races.json                       -- Race and candidate registry, and the ballot-status truth
-                                           the build repo's converter reads. Written here on election
-                                           night by inject_primary_results.py.
+                                           the build repo's converter reads. Written by the build
+                                           repo's generators through site_data_dir().
   data/publish-allowlist.json           -- What may be tracked here at all. Read by .githooks/pre-commit.
   data/do-not-publish.json              -- Pages withheld on purpose. Read by the same hook.
   data/states.json, counties.json,      -- Reference and registry data the generators read from the
     places.json, county_races.json,        build repo. Still served from here as one registry.
     curated_races.json
-  tests/                                -- Covers the two files above, the gate lists, and published
-                                           site content. Generator tests went to the build repo.
+  tests/                                -- Covers the gate lists and published site content.
+                                           Generator tests went to the build repo with their code.
 .github/
   workflows/tests.yml                   -- Runs tools/tests on pull requests and on pushes to main.
                                            Tests only: no build, no deploy, no secrets.
@@ -122,17 +125,25 @@ paths you intended to change.
 
 ### What is left in tools/
 
-The generators moved to the build repo on 2026-08-01 and are gone from here.
-`tools/data/publish-allowlist.json` now names each of them on the deny list,
-so a copy cannot come back without someone deliberately editing the gate.
+All eleven generators moved to the build repo and are gone from here: nine on
+2026-08-01 (ADO #1975), then `primary_results.py` and
+`inject_primary_results.py` in a second wave (ADO #2045). The election-night
+pair was held back the first time because the primary was three days away and
+their one run cannot be retried.
 
-Two files remain, `primary_results.py` and `inject_primary_results.py`. They
-run on election night, which is why they did not move three days before the
-primary. They move after certification, and the deny entries above are the
-pattern to follow when they do.
+`tools/data/publish-allowlist.json` names all eleven, and all fifteen of their
+tests, on the deny list by exact path, so a copy cannot come back without
+someone deliberately editing the gate. A partial name prefix such as
+`tools/generate_` would match nothing and be silently ignored, which is why
+`test_publish_allowlist.py` executes every deny entry against the path it
+names.
 
-The bulk page generator that used to live here still behaves the same way,
-now from the build repo: it regenerates races from dossier JSON and will
+What remains under `tools/` is `data/` and `tests/`. Nothing under it is
+executable site code, and `test_publish_allowlist.py` asserts that directly
+rather than by listing names, so a NEW generator written here fails the suite
+even though no deny entry could have anticipated it.
+
+The bulk page generator still behaves the same way, now from the build repo: it regenerates races from dossier JSON and will
 replace a detailed page with a thin one unless the race is listed in
 `tools/data/curated_races.json`. That list is still maintained by hand.
 

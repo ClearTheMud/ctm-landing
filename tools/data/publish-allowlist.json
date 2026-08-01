@@ -27,19 +27,11 @@
     },
     {
       "path": "tools/data/",
-      "reason": "The site registry (races.json) and the two publication gate lists the pre-commit hook reads. Data, not code. The build repo's converter reads races.json as ballot-status truth and the election-night results injector writes it, so it stays here until the primary is certified."
-    },
-    {
-      "path": "tools/primary_results.py",
-      "reason": "Renders the primary results block. Held back from the generator migration (ADO #1975) because the 2026-08-04 primary is imminent; it moves to the build repo after certification."
-    },
-    {
-      "path": "tools/inject_primary_results.py",
-      "reason": "Injects results into race hubs on election night and owns a contested write path. Held back from the generator migration for the same reason; moves after certification."
+      "reason": "The site registry (races.json) and the two publication gate lists. Data, not code. The gate lists must stay because this repo's own pre-commit hook reads them from here and cannot reach across the repo boundary. races.json and the reference files stay pending an owner decision on inverting registry ownership; the build repo's converter reads races.json as ballot-status truth and its generators write it, all through site_data_dir()."
     },
     {
       "path": "tools/tests/",
-      "reason": "Tests for the two retained tools above, plus the guards on the publication gate lists and on published site content. The tests for the migrated generators went to the build repo with them."
+      "reason": "Guards on published site content and on the two publication gate lists. These read the tracked tree through git, so they belong beside the repo they inspect. Tests for generation code went to the build repo with the code they cover."
     },
     {
       "path": ".githooks/",
@@ -182,6 +174,18 @@
     {
       "path": "tools/tests/test_withdrawn_candidate_page.py",
       "reason": "Test for a migrated generator (ADO #1975). It went to the build repo's tests/site_tools/ with the code it covers. tools/tests/ is allowed as a whole directory, so without this entry the file could return silently and drift from the copy the build repo's suite actually runs."
+    },
+    {
+      "path": "tools/primary_results.py",
+      "reason": "Renders the primary results block. Wave 2 of the generator migration (ADO #2045). This ran on election night and was held back from wave 1 for that reason; it now lives in the build repo's site_tools/ with every other generator, inside the only test suite that runs. A copy here would be invisible to that suite and would drift from the one that is maintained."
+    },
+    {
+      "path": "tools/inject_primary_results.py",
+      "reason": "Injects the results block into race hubs and owns a contested write path. Wave 2 of the generator migration (ADO #2045). This ran on election night and was held back from wave 1 for that reason; it now lives in the build repo's site_tools/ with every other generator, inside the only test suite that runs. A copy here would be invisible to that suite and would drift from the one that is maintained."
+    },
+    {
+      "path": "tools/tests/test_primary_results.py",
+      "reason": "Test for a migrated generator (ADO #2045). It went to the build repo's tests/site_tools/ with the code it covers. tools/tests/ is allowed as a whole directory, so without this entry the file could return silently and drift from the copy the build repo's suite actually runs."
     }
   ]
 }
