@@ -17,6 +17,7 @@ file has to be declared before it can be published.
 """
 
 import json
+import re
 import subprocess
 from pathlib import Path
 
@@ -128,6 +129,54 @@ class TestMatching:
                 f"{path} is publishable again. Site generators belong in the "
                 f"build repo's site_tools/, not here.")
 
+    def test_migrated_tests_are_refused_by_the_real_list(self):
+        """The 14 tests that moved with the generators must not return either.
+
+        `tools/tests/` is allowed as a whole directory prefix, so denying the
+        nine generators protected the code and left every one of their tests
+        free to reappear. A returning test is the same drift problem in a
+        quieter form: two copies of an assertion, one of which the build
+        repo's suite never runs, so a fix in one is silently contradicted by
+        the other.
+        """
+        config = _config()
+        for name in (
+            "test_county_race_table.py",
+            "test_curated_skip.py",
+            "test_deep_dive_preservation.py",
+            "test_detect_roles.py",
+            "test_ingest_candidates.py",
+            "test_judicial_hub.py",
+            "test_legislative_pages.py",
+            "test_name_parser.py",
+            "test_senate_map.py",
+            "test_state_maps.py",
+            "test_stub_election_history.py",
+            "test_supreme_court_nav.py",
+            "test_validator_normalization.py",
+            "test_withdrawn_candidate_page.py",
+        ):
+            path = "tools/tests/" + name
+            assert not is_publishable(path, config), (
+                f"{path} is publishable again. It moved to the build repo's "
+                f"tests/site_tools/ with the generator it covers.")
+
+    def test_every_deny_entry_refuses_the_path_it_names(self):
+        """A deny entry that matches nothing is decoration, not a control.
+
+        The matcher is exact-path or directory-prefix. A partial name prefix
+        such as `tools/generate_` matches no real path and is silently
+        ignored, so an entry can look like protection while providing none.
+        """
+        config = _config()
+        for entry in config["deny"]:
+            path = entry["path"]
+            probe = path.rstrip("/") + "/probe.txt" if path.endswith("/") else path
+            assert not is_publishable(probe, config), (
+                f"deny entry {path!r} does not refuse {probe!r}. The matcher "
+                f"is exact-path or directory prefix; a partial name prefix "
+                f"never matches and is silently ignored.")
+
     def test_the_two_retained_tools_are_still_allowed(self):
         """The election-night path must not be broken by the migration.
 
@@ -156,6 +205,43 @@ class TestMatching:
     def test_unlisted_path_is_refused_by_default(self):
         config = {"allow": [{"path": "races/"}], "deny": []}
         assert not is_publishable("docs/status/2026-05-09-county-incumbents.md", config)
+
+
+class TestTheHookInspectsMoreThanAdditions:
+    """Regression guard for the diff-filter widening (2026-08-01).
+
+    The hook read `--diff-filter=A`, so it saw only additions. Three bypasses
+    followed, each confirmed by running real commits in a scratch clone:
+
+      * a file already tracked at a denied path could be modified forever
+      * a page on the do-not-publish list could be edited once it was tracked
+      * `git mv tools/primary_results.py tools/generate_states.py` committed
+        clean, because git reports a rename as R and never as A
+
+    The filter is now ACMRT. D stays out on purpose: deleting a file here
+    unpublishes it, which is not the mistake this hook exists to catch.
+    """
+
+    HOOK = REPO_ROOT / ".githooks" / "pre-commit"
+
+    def _filter(self):
+        match = re.search(r"--diff-filter=([A-Z]+)", self.HOOK.read_text())
+        assert match, "the hook no longer passes --diff-filter at all"
+        return set(match.group(1))
+
+    def test_modifications_and_renames_are_inspected(self):
+        letters = self._filter()
+        for needed in "ACMRT":
+            assert needed in letters, (
+                f"--diff-filter is missing {needed!r}. With only additions "
+                f"inspected, a rename or a modification walks past both the "
+                f"deny list and the do-not-publish list.")
+
+    def test_deletions_are_still_not_gated(self):
+        assert "D" not in self._filter(), (
+            "gating deletions blocks the commits that remove a denied path, "
+            "and removing a file from this repo unpublishes it rather than "
+            "publishing anything.")
 
 
 class TestNothingUnpublishableIsTracked:

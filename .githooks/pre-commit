@@ -20,9 +20,18 @@
 #
 # Install:  git config core.hooksPath .githooks
 #
-# An uninstalled hook is the same as no hook, so both lists are also enforced
-# by tools/tests/test_do_not_publish.py and tools/tests/test_publish_allowlist.py
-# to catch it in CI.
+# There is no CI in this repo. No GitHub Actions workflow, no branch
+# protection, no ruleset, no required review. GitHub Pages publishes whatever
+# reaches main. This hook, installed locally, is the only gate between a
+# staged file and the live site, and `git commit --no-verify` bypasses it by
+# design.
+#
+# tools/tests/test_do_not_publish.py and tools/tests/test_publish_allowlist.py
+# assert the same two lists against the already-tracked tree, so they catch a
+# file that got in past an uninstalled hook. They do not run on commit or on
+# push in this repo. They run when the build repo's scripts/ci_local.sh runs
+# them, on its pre-push hook and on its 03:30 nightly. That is after the fact,
+# not a gate.
 
 set -euo pipefail
 
@@ -90,7 +99,23 @@ PY
 # And the output cannot be buffered through a bash variable on the way here,
 # because command substitution strips NUL bytes, which would throw away the
 # separators that -z just added.
-report="$(git diff --cached --name-only --diff-filter=A -z | python3 -c "$CHECK" "$REPO_ROOT")"
+#
+# The filter is ACMRT, not A. Inspecting only additions left three live
+# bypasses, all confirmed by execution on 2026-08-01:
+#
+#   M    a file already tracked at a denied path could be modified forever,
+#        and a withheld page under races/ could be edited after the fact.
+#        Anything that arrived by a merge, a revert, a cherry pick, or a
+#        --no-verify commit is tracked, so the gate never looked again.
+#   R    `git mv tools/primary_results.py tools/generate_states.py` committed
+#        clean, because git reports a rename as R and never as A. That is a
+#        one-command route back to the layout the deny entries exist to stop.
+#   C,T  copies and type changes are the same shape and cost nothing to add.
+#
+# D is deliberately excluded. Removing a file from this repo unpublishes it,
+# which is never the mistake this hook exists to catch, and gating deletions
+# would block the very commits that empty a denied path.
+report="$(git diff --cached --name-only --diff-filter=ACMRT -z | python3 -c "$CHECK" "$REPO_ROOT")"
 
 if [ -n "$report" ]; then
     cat >&2 <<EOF

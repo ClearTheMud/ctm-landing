@@ -1,5 +1,5 @@
 {
-  "_comment": "Only static site content may be tracked in this public repo (ADO #1980, #1981). Everything tracked here is served from clearthemud.org. Deny wins over allow. Enforced by tools/tests/test_publish_allowlist.py and .githooks/pre-commit. Site generation code moved to the build repo on 2026-08-01 (ADO #1975); the deny entries under tools/ keep it from coming back.",
+  "_comment": "Only static site content may be tracked in this public repo (ADO #1980, #1981). Everything tracked here is served from clearthemud.org. Deny wins over allow. Site generation code moved to the build repo on 2026-08-01 (ADO #1975); the deny entries under tools/ keep it from coming back. This list is checked at commit time by .githooks/pre-commit, which is only active in a clone where someone has run 'git config core.hooksPath .githooks', and which 'git commit --no-verify' bypasses. There is no CI in this repo: no GitHub Actions, no branch protection, no ruleset, no required review, and GitHub Pages publishes whatever reaches main. tools/tests/test_publish_allowlist.py re-checks this list against the tracked tree, but only when something runs it, which is the build repo's scripts/ci_local.sh on pre-push and nightly. That is a detection, after the file is already committed, not an enforcement.",
   "allow": [
     {
       "path": "races/",
@@ -122,6 +122,62 @@
     {
       "path": ".claude/",
       "reason": "Local agent configuration, which can carry internal paths and prompts. Never site content."
+    },
+    {
+      "path": "tools/tests/test_county_race_table.py",
+      "reason": "Test for a migrated generator (ADO #1975). It went to the build repo's tests/site_tools/ with the code it covers. tools/tests/ is allowed as a whole directory, so without this entry the file could return silently and drift from the copy the build repo's suite actually runs."
+    },
+    {
+      "path": "tools/tests/test_curated_skip.py",
+      "reason": "Test for a migrated generator (ADO #1975). It went to the build repo's tests/site_tools/ with the code it covers. tools/tests/ is allowed as a whole directory, so without this entry the file could return silently and drift from the copy the build repo's suite actually runs."
+    },
+    {
+      "path": "tools/tests/test_deep_dive_preservation.py",
+      "reason": "Test for a migrated generator (ADO #1975). It went to the build repo's tests/site_tools/ with the code it covers. tools/tests/ is allowed as a whole directory, so without this entry the file could return silently and drift from the copy the build repo's suite actually runs."
+    },
+    {
+      "path": "tools/tests/test_detect_roles.py",
+      "reason": "Test for a migrated generator (ADO #1975). It went to the build repo's tests/site_tools/ with the code it covers. tools/tests/ is allowed as a whole directory, so without this entry the file could return silently and drift from the copy the build repo's suite actually runs."
+    },
+    {
+      "path": "tools/tests/test_ingest_candidates.py",
+      "reason": "Test for a migrated generator (ADO #1975). It went to the build repo's tests/site_tools/ with the code it covers. tools/tests/ is allowed as a whole directory, so without this entry the file could return silently and drift from the copy the build repo's suite actually runs."
+    },
+    {
+      "path": "tools/tests/test_judicial_hub.py",
+      "reason": "Test for a migrated generator (ADO #1975). It went to the build repo's tests/site_tools/ with the code it covers. tools/tests/ is allowed as a whole directory, so without this entry the file could return silently and drift from the copy the build repo's suite actually runs."
+    },
+    {
+      "path": "tools/tests/test_legislative_pages.py",
+      "reason": "Test for a migrated generator (ADO #1975). It went to the build repo's tests/site_tools/ with the code it covers. tools/tests/ is allowed as a whole directory, so without this entry the file could return silently and drift from the copy the build repo's suite actually runs."
+    },
+    {
+      "path": "tools/tests/test_name_parser.py",
+      "reason": "Test for a migrated generator (ADO #1975). It went to the build repo's tests/site_tools/ with the code it covers. tools/tests/ is allowed as a whole directory, so without this entry the file could return silently and drift from the copy the build repo's suite actually runs."
+    },
+    {
+      "path": "tools/tests/test_senate_map.py",
+      "reason": "Test for a migrated generator (ADO #1975). It went to the build repo's tests/site_tools/ with the code it covers. tools/tests/ is allowed as a whole directory, so without this entry the file could return silently and drift from the copy the build repo's suite actually runs."
+    },
+    {
+      "path": "tools/tests/test_state_maps.py",
+      "reason": "Test for a migrated generator (ADO #1975). It went to the build repo's tests/site_tools/ with the code it covers. tools/tests/ is allowed as a whole directory, so without this entry the file could return silently and drift from the copy the build repo's suite actually runs."
+    },
+    {
+      "path": "tools/tests/test_stub_election_history.py",
+      "reason": "Test for a migrated generator (ADO #1975). It went to the build repo's tests/site_tools/ with the code it covers. tools/tests/ is allowed as a whole directory, so without this entry the file could return silently and drift from the copy the build repo's suite actually runs."
+    },
+    {
+      "path": "tools/tests/test_supreme_court_nav.py",
+      "reason": "Test for a migrated generator (ADO #1975). It went to the build repo's tests/site_tools/ with the code it covers. tools/tests/ is allowed as a whole directory, so without this entry the file could return silently and drift from the copy the build repo's suite actually runs."
+    },
+    {
+      "path": "tools/tests/test_validator_normalization.py",
+      "reason": "Test for a migrated generator (ADO #1975). It went to the build repo's tests/site_tools/ with the code it covers. tools/tests/ is allowed as a whole directory, so without this entry the file could return silently and drift from the copy the build repo's suite actually runs."
+    },
+    {
+      "path": "tools/tests/test_withdrawn_candidate_page.py",
+      "reason": "Test for a migrated generator (ADO #1975). It went to the build repo's tests/site_tools/ with the code it covers. tools/tests/ is allowed as a whole directory, so without this entry the file could return silently and drift from the copy the build repo's suite actually runs."
     }
   ]
 }
