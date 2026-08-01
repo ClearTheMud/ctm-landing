@@ -20,18 +20,18 @@
 #
 # Install:  git config core.hooksPath .githooks
 #
-# There is no CI in this repo. No GitHub Actions workflow, no branch
-# protection, no ruleset, no required review. GitHub Pages publishes whatever
-# reaches main. This hook, installed locally, is the only gate between a
-# staged file and the live site, and `git commit --no-verify` bypasses it by
-# design.
+# This hook, installed locally, is still the only thing that stops a bad file
+# before the commit exists, and `git commit --no-verify` bypasses it by design.
 #
 # tools/tests/test_do_not_publish.py and tools/tests/test_publish_allowlist.py
 # assert the same two lists against the already-tracked tree, so they catch a
-# file that got in past an uninstalled hook. They do not run on commit or on
-# push in this repo. They run when the build repo's scripts/ci_local.sh runs
-# them, on its pre-push hook and on its 03:30 nightly. That is after the fact,
-# not a gate.
+# file that got in past an uninstalled hook. Since 2026-08-01 they run in
+# .github/workflows/tests.yml on every pull request and on every push to main,
+# and in the build repo's scripts/ci_local.sh on its pre-push hook and its
+# 03:30 nightly. On a pull request that finishes before a merge. On a direct
+# push to main it finishes after the commit has landed and after GitHub Pages
+# has begun publishing it, and main carries no branch protection and no
+# required status check, so there it reports rather than prevents.
 
 set -euo pipefail
 

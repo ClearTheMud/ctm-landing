@@ -1,5 +1,5 @@
 {
-  "_comment": "Only static site content may be tracked in this public repo (ADO #1980, #1981). Everything tracked here is served from clearthemud.org. Deny wins over allow. Site generation code moved to the build repo on 2026-08-01 (ADO #1975); the deny entries under tools/ keep it from coming back. This list is checked at commit time by .githooks/pre-commit, which is only active in a clone where someone has run 'git config core.hooksPath .githooks', and which 'git commit --no-verify' bypasses. There is no CI in this repo: no GitHub Actions, no branch protection, no ruleset, no required review, and GitHub Pages publishes whatever reaches main. tools/tests/test_publish_allowlist.py re-checks this list against the tracked tree, but only when something runs it, which is the build repo's scripts/ci_local.sh on pre-push and nightly. That is a detection, after the file is already committed, not an enforcement.",
+  "_comment": "Only static site content may be tracked in this public repo (ADO #1980, #1981). Everything tracked here is served from clearthemud.org. Deny wins over allow. Site generation code moved to the build repo on 2026-08-01 (ADO #1975); the deny entries under tools/ keep it from coming back. This list is checked at commit time by .githooks/pre-commit, which is only active in a clone where someone has run 'git config core.hooksPath .githooks', and which 'git commit --no-verify' bypasses. tools/tests/test_publish_allowlist.py re-checks this list against the tracked tree, and .github/workflows/tests.yml runs that check on every pull request and on every push to main. GitHub Pages publishes main, and as of 2026-08-01 main carries no branch protection and no required status check, so the workflow reports on a push rather than gating it.",
   "allow": [
     {
       "path": "races/",
@@ -44,6 +44,10 @@
     {
       "path": ".githooks/",
       "reason": "The pre-commit promotion gate itself. Must be tracked so a fresh clone can install it."
+    },
+    {
+      "path": ".github/workflows/",
+      "reason": "The GitHub Actions workflow that runs tools/tests on pull requests and on pushes to main. Not served to readers, but it must be tracked here because GitHub only runs workflows that live in the repository they check."
     },
     {
       "path": "index.html",

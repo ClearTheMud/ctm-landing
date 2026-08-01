@@ -17,6 +17,23 @@ COUNTY_RACES_JSON = DATA_DIR / "county_races.json"
 CSS_FILE = REPO_ROOT / "css" / "dossier.css"
 DOSSIER_ROOT = Path.home() / "Local" / "Projects" / "github" / "clearthemud" / "output" / "dossiers"
 
+# The dossier JSON that TestCountyDossierResolution reads is built in the
+# private build repo and is not part of this repository. On a workstation that
+# has the build repo checked out they run and must pass. In a fresh clone, and
+# in CI, there is nothing to assert against, so they skip with a named reason
+# rather than fail on a missing path.
+#
+# This is the only place under tools/tests that reaches outside this
+# repository. Every other test here reads the site tree, so the checks on
+# published content run everywhere, including CI.
+requires_dossiers = pytest.mark.skipif(
+    not DOSSIER_ROOT.is_dir(),
+    reason=(
+        f"build-repo dossier output not present at {DOSSIER_ROOT}; "
+        "these run where the build repo is checked out"
+    ),
+)
+
 
 # ---------------------------------------------------------------------------
 # Phase 1: County-Candidate Mapping
@@ -250,6 +267,7 @@ class TestCountyCandidateDossierPages:
 # Phase 5: Dossier Path Resolution for County Races
 # ---------------------------------------------------------------------------
 
+@requires_dossiers
 class TestCountyDossierResolution:
     """Validate that county dossiers can be found for Thurston candidates."""
 

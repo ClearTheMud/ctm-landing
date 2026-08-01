@@ -1,0 +1,51 @@
+# Runs the site content checks in tools/tests on every pull request and on
+# every push to main.
+#
+# Everything tracked in this repository is served from clearthemud.org, so the
+# tests here are checks on published content: that every candidate shown on a
+# race page is in the registry, that no page claims an endorsement that was not
+# given, that no page held back from publication is tracked, and that only site
+# content is tracked at all.
+#
+# This workflow only tests. It builds nothing, publishes nothing, and needs no
+# secrets. GitHub Pages continues to publish main on its own.
+
+name: tests
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+# Read-only. Nothing here writes to the repository or to any GitHub API.
+permissions:
+  contents: read
+
+# A newer push to the same branch supersedes an in-flight run.
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      # Third-party actions are pinned to a full commit SHA rather than a tag,
+      # because a tag can be moved to point at different code later.
+      - name: Check out the repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.14'
+
+      # The tests import only the standard library, so pytest is the one
+      # dependency. Pinned so a run reproduces.
+      - name: Install pytest
+        run: python -m pip install --disable-pip-version-check --no-input pytest==9.0.2
+
+      - name: Run the site content checks
+        run: python -m pytest tools/tests -q

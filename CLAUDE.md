@@ -88,6 +88,9 @@ tools/                                  -- FROZEN. Generators moved to the build
     curated_races.json
   tests/                                -- Covers the two files above, the gate lists, and published
                                            site content. Generator tests went to the build repo.
+.github/
+  workflows/tests.yml                   -- Runs tools/tests on pull requests and on pushes to main.
+                                           Tests only: no build, no deploy, no secrets.
 ```
 
 ## URL Scheme
@@ -193,12 +196,25 @@ anticipated. If you need to track something new, add it to the allowlist with a
 reason in the same commit.
 
 `tools/tests/test_publish_allowlist.py` and `tools/tests/test_do_not_publish.py`
-cover both lists, but **nothing runs them automatically**. This repository has
-no continuous integration, no pre-push hook and no branch protection. The
-pre-commit hook is the only gate, it is per-clone, and it only sees files it is
-installed to see.
+cover both lists. As of 2026-08-01 they run automatically:
+`.github/workflows/tests.yml` runs the whole of `tools/tests` on every pull
+request and on every push to `main`.
 
-Do not rely on a check catching a mistake here. Read the diff before pushing.
+Be precise about what that buys, because an overstated control is worse than a
+missing one. On a pull request the run finishes before anything merges, so it
+is a real check. On a direct push to `main` the run starts after the commit has
+already landed and GitHub Pages has already begun publishing it, so there it
+reports rather than prevents. `main` currently has no branch protection and no
+required status check, so a red run blocks nothing on its own.
+
+The pre-commit hook stays the only thing that stops a bad file before it exists.
+It is per-clone, it needs `git config core.hooksPath .githooks` in every
+checkout, `git commit --no-verify` bypasses it, and it compares paths and never
+file contents.
+
+Read the diff before pushing. Prefer a pull request over a direct push to
+`main` when the change is not urgent, because that is the path where the checks
+actually gate.
 
 ## Publication Rules
 
