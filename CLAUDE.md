@@ -2,6 +2,36 @@
 
 Static site for clearthemud.org, hosted on GitHub Pages with Cloudflare DNS. Publishes verified candidate dossiers organized by race.
 
+## What belongs in this repository
+
+This repo is **published output only**. It is public because GitHub Pages must
+serve clearthemud.org from a public repository. That is a hosting requirement,
+not an invitation to work here.
+
+**Site generation code lives in the clearthemud build repo, not here.**
+
+| Belongs here | Does not belong here |
+|---|---|
+| Rendered HTML under `races/`, `states/` | Generators, builders, converters |
+| `css/`, `js/`, `geo/` site assets | Research data, YAML, working notes |
+| `CNAME`, `sitemap.xml`, `index.html` | Anything that produces the files above |
+
+**Do not add a script to this repository.** If a page needs to change, the
+change belongs in the build repo that generates it, and the output is
+published from there. A generator added here is invisible to the build repo's
+tests and its review process, and the two copies drift apart silently: a fix
+lands in one, the other overwrites it on the next run, and the correction
+disappears from the live site with nothing failing.
+
+`tools/` predates this rule. It is **legacy, frozen, and scheduled to move**
+to the build repo. Do not extend it, do not add tests to it, and do not treat
+its presence as precedent. If a task seems to require editing `tools/`, that
+task belongs in the build repo instead.
+
+Issues and work items go to Azure DevOps, project `civic-tech`. Do not open
+GitHub issues on this repository, including issues about this repository's own
+code.
+
 ## Hosting
 
 - **GitHub Pages**: Deployed from `main` branch root (`/`)
@@ -32,7 +62,7 @@ geo/
   us-states.svg                         -- Clickable US map SVG (50 states + DC)
 js/
   us-map.js                             -- Map interactivity (click, hover, keyboard, touch)
-tools/
+tools/                                  -- LEGACY, frozen, moving to the build repo. Do not extend.
   generate_states.py                    -- Generates states/ pages from data files
   generate_candidate_pages.py           -- Generates race/candidate HTML from dossier JSON
   build_county_hub.py                   -- End-to-end county buildout pipeline
@@ -50,79 +80,37 @@ tools/
 - `/races/{state}-{office}-{year}/{lastname}/` — Candidate dossier
 - Folder-based routing: each page is `index.html` inside its folder for clean URLs
 
-## Data Update Workflow (Default Method)
+## Changing site data
 
-**This is the standard process for adding or modifying race data. Always use this workflow.**
+**Race and candidate content is generated in the build repo and published from
+there.** There is no supported workflow for authoring content in this
+repository.
 
-### Quick Commands
+To add a race, add a candidate, refresh finance figures, or publish a
+dossier, do the work in the build repo and let its publish step write the
+output here. Then review the resulting diff before pushing, and stage only the
+paths you intended to change.
 
-```bash
-# List all races
-python3 tools/update_races.py list
+### Before you push
 
-# Add a new race (interactive prompts)
-python3 tools/update_races.py add-race
+- Stage explicit paths. Never `git add .` or `git add -A` in this repo.
+- Read the diff. An unexpected file in it means something regenerated content
+  it did not own, and pushing it will overwrite work.
+- Untracked directories under `races/` are not automatically safe to publish.
+  A candidate can end up with two pages at two URLs that way.
 
-# Add a candidate to an existing race
-python3 tools/update_races.py add-candidate me-senate-2026
+### The legacy scripts in tools/
 
-# Regenerate all pages after manual edits to races.json
-python3 tools/update_races.py regenerate
-```
+`tools/` contains generators that were added here before the boundary rule
+existed. They are retained only so currently published pages remain
+reproducible while the migration to the build repo is completed.
 
-### Full Process: Adding a New Race
-
-1. Run `python3 tools/update_races.py add-race` — fills in races.json, regenerates map + state pages
-2. Create folder: `races/{race-id}/`
-3. Create `index.html` race overview (copy `me-senate-2026/index.html` as template)
-4. Create candidate subfolders with `index.html` each
-5. Optionally add a `.race-card` block to the landing page for featured races
-6. `git push` to deploy — the state lights up on the map automatically
-
-### Full Process: Adding a New Candidate
-
-1. Run `python3 tools/update_races.py add-candidate <race-id>` — updates races.json, regenerates pages
-2. Create folder: `races/{race-id}/{lastname}/`
-3. Create `index.html` dossier (copy existing dossier as template)
-4. Must include: `<link rel="stylesheet" href="/css/dossier.css">`, breadcrumb nav, party class on header
-5. Add link in the race overview page
-6. `git push` to deploy
-
-### County Buildout (After Dossiers Are Complete)
-
-```bash
-# Preview
-python3 tools/build_county_hub.py WA {county-slug} --dry-run
-
-# Build pages, regenerate state hub, get landing page snippet
-python3 tools/build_county_hub.py WA {county-slug}
-
-# List all counties and their build status
-python3 tools/build_county_hub.py WA --list-counties
-```
-
-See `tools/COUNTY_BUILDOUT.md` for the full process documentation.
-
-### Curated Deep-Dive Protection
-
-`generate_candidate_pages.py` regenerates every race in `races.json` from
-clearthemud dossier JSON. Hand-authored OSINT deep-dives would otherwise be
-overwritten with thin T1 stubs. The generator reads `tools/data/curated_races.json`
-and **skips** every race-id listed there (it logs each preserved race on run).
-
-**When you publish a new deep-dive** (via clearthemud's `convert_to_ctm_landing.py`),
-add its race-id to `tools/data/curated_races.json` or the next bulk regen will
-clobber it. Tests: `tools/tests/test_curated_skip.py`.
-
-### Manual Edit Alternative
-
-Edit `tools/data/races.json` directly, then run:
-```bash
-python3 tools/generate_states.py
-```
-
-Reads `tools/data/states.json` + `tools/data/races.json`, writes all `states/` pages + `sitemap.xml`.
-Re-run after editing `races.json`. Does NOT touch `index.html`, `races/*`, or `css/*`.
+Treat them as read-only. In particular, the bulk page generator regenerates
+races from build-repo dossier JSON and will replace a detailed page with a
+thin one unless that race is listed in `tools/data/curated_races.json`. That
+list is maintained by hand, which is exactly why this arrangement is being
+retired rather than documented as a workflow. Running these scripts is not a
+routine operation and should not be treated as one.
 
 ## Interactive Map
 
@@ -150,9 +138,11 @@ No build tools, no JS frameworks. Push HTML to deploy.
 This repo is **public solely so GitHub Pages can host clearthemud.org.** Public visibility is a
 hosting requirement, not an invitation to track internal work here. Hard rules:
 
-- **This repo receives ONLY validated public site files** — T0–T2 published HTML/CSS/site assets
-  and the generators/registry needed to build them. Never commit T3/T4 data, internal research,
-  raw collection reports, journalist leads, or other internal artifacts here.
+- **This repo receives ONLY validated public site files**: published HTML, CSS and site assets,
+  plus the small data registry the site needs at serve time. It does **not** receive the code that
+  produces them. Generators, builders and converters belong in the build repo. See "What belongs
+  in this repository" at the top of this file. Never commit T4 data, internal research, raw
+  collection reports, journalist leads, or other internal artifacts here.
 - **ALL issues, bugs, and work items go to the private ADO tracker** (the `clearthemud` data
   pipeline repo) — *including bugs about this repo's own code/tests.* **Never open GitHub issues
   on this repo.** This overrides the generic workspace rule "public repo → GitHub issue."
@@ -181,12 +171,28 @@ already thought to name, so it cannot catch a whole category of file that nobody
 anticipated. If you need to track something new, add it to the allowlist with a
 reason in the same commit.
 
-Both lists are also enforced by `tools/tests/test_publish_allowlist.py` and
-`tools/tests/test_do_not_publish.py`, so CI catches an uninstalled hook.
+`tools/tests/test_publish_allowlist.py` and `tools/tests/test_do_not_publish.py`
+cover both lists, but **nothing runs them automatically**. This repository has
+no continuous integration, no pre-push hook and no branch protection. The
+pre-commit hook is the only gate, it is per-clone, and it only sees files it is
+installed to see.
+
+Do not rely on a check catching a mistake here. Read the diff before pushing.
 
 ## Publication Rules
 
-Only T0-T2 verified findings may be published. T3/T4 data, "RESEARCH NOTE" items, and "Journalist Leads" sections stay in local deliverables until vetted. Audit every finding's source tier before committing to this repo.
+T0 through T3 may be published. T4 is withheld, along with "RESEARCH NOTE"
+items and "Journalist Leads" sections, which stay in the build repo.
+
+The tier gate lives in the build repo's converter, which is the single place
+that decides. Do not re-implement a tier check here, and do not hand-edit a
+page to add a claim the gate withheld.
+
+**A tier is not the only test.** A claim about someone who is not the
+candidate, a spouse, a child, a named private associate, publishes only when
+that person's own disclosure is the source, for example a candidate naming
+their spouse in their own campaign biography. Something we observed and wrote
+up about a private individual is not published at any tier.
 
 ### Findings Quality Gates
 
