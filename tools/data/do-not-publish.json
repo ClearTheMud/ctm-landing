@@ -19,10 +19,6 @@
     {
       "path": "races/wa-king-prosecuting-attorney-2026/sigmar",
       "reason": "Phantom candidate from a stub roster scrape, same scrape as corkern."
-    },
-    {
-      "path": "races/wa-state-house-3-pos2-2026/jasmin",
-      "reason": "Orphan page with zero content sections and no link from its race index. Held pending an explanation of where it came from."
     }
   ]
 }
