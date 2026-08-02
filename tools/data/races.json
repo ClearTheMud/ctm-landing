@@ -16635,29 +16635,6 @@
    ]
   },
   {
-   "id": "wa-snohomish-north-district-court-pos-1-2026",
-   "state_abbr": "WA",
-   "office": "Snohomish North District Court Pos. 1",
-   "level": "county",
-   "year": 2026,
-   "title": "2026 WA Snohomish North District Court Pos. 1",
-   "status": "draft",
-   "url": "/races/wa-snohomish-north-district-court-pos-1-2026/",
-   "primary_date": "August 4, 2026",
-   "general_date": "November 3, 2026",
-   "candidates": [
-    {
-     "name": "Scott Harmer",
-     "party": "nonpartisan",
-     "role": "incumbent",
-     "slug": "harmer",
-     "status": "Advanced to General",
-     "url": "/races/wa-snohomish-north-district-court-pos-1-2026/harmer/",
-     "election_status": "Advanced to General"
-    }
-   ]
-  },
-  {
    "id": "wa-snohomish-pud-1-pud-commissioner-dist-1-2026",
    "state_abbr": "WA",
    "office": "Snohomish County PUD No. 1 Commissioner Dist. 1",
@@ -16763,93 +16740,6 @@
      "slug": "baldock",
      "status": "Advanced to General",
      "url": "/races/wa-snohomish-south-district-court-pos-3-2026/baldock/",
-     "election_status": "Advanced to General"
-    }
-   ]
-  },
-  {
-   "id": "wa-spokane-district-court-pos-1-2026",
-   "state_abbr": "WA",
-   "office": "Spokane District Court Pos. 1",
-   "level": "county",
-   "year": 2026,
-   "title": "2026 WA Spokane District Court Pos. 1",
-   "status": "draft",
-   "url": "/races/wa-spokane-district-court-pos-1-2026/",
-   "primary_date": "August 4, 2026",
-   "general_date": "November 3, 2026",
-   "candidates": [
-    {
-     "name": "Mindy Walker",
-     "party": "nonpartisan",
-     "role": "Filed",
-     "slug": "walker",
-     "status": "Advanced to General",
-     "url": "/races/wa-spokane-district-court-pos-1-2026/walker/",
-     "election_status": "Advanced to General"
-    },
-    {
-     "name": "Kevin G. Blondin",
-     "party": "nonpartisan",
-     "role": "Filed",
-     "slug": "blondin",
-     "status": "Advanced to General",
-     "url": "/races/wa-spokane-district-court-pos-1-2026/blondin/",
-     "election_status": "Advanced to General"
-    }
-   ]
-  },
-  {
-   "id": "wa-spokane-district-court-pos-2-2026",
-   "state_abbr": "WA",
-   "office": "Spokane District Court Pos. 2",
-   "level": "county",
-   "year": 2026,
-   "title": "2026 WA Spokane District Court Pos. 2",
-   "status": "draft",
-   "url": "/races/wa-spokane-district-court-pos-2-2026/",
-   "primary_date": "August 4, 2026",
-   "general_date": "November 3, 2026",
-   "candidates": [
-    {
-     "name": "M. Jamie Imboden",
-     "party": "nonpartisan",
-     "role": "incumbent",
-     "slug": "imboden",
-     "status": "Advanced to General",
-     "url": "/races/wa-spokane-district-court-pos-2-2026/imboden/",
-     "election_status": "Advanced to General"
-    }
-   ]
-  },
-  {
-   "id": "wa-spokane-district-court-pos-3-2026",
-   "state_abbr": "WA",
-   "office": "Spokane District Court Pos. 3",
-   "level": "county",
-   "year": 2026,
-   "title": "2026 WA Spokane District Court Pos. 3",
-   "status": "draft",
-   "url": "/races/wa-spokane-district-court-pos-3-2026/",
-   "primary_date": "August 4, 2026",
-   "general_date": "November 3, 2026",
-   "candidates": [
-    {
-     "name": "Christopher Eastwood",
-     "party": "nonpartisan",
-     "role": "Filed",
-     "slug": "eastwood",
-     "status": "Advanced to General",
-     "url": "/races/wa-spokane-district-court-pos-3-2026/eastwood/",
-     "election_status": "Advanced to General"
-    },
-    {
-     "name": "Nicole G. Knowles",
-     "party": "nonpartisan",
-     "role": "Filed",
-     "slug": "knowles",
-     "status": "Advanced to General",
-     "url": "/races/wa-spokane-district-court-pos-3-2026/knowles/",
      "election_status": "Advanced to General"
     }
    ]

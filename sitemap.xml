@@ -2,7 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://clearthemud.org/</loc></url>
   <url><loc>https://clearthemud.org/states/</loc></url>
-  <url><loc>https://clearthemud.org/methodology/</loc></url>
   <url><loc>https://clearthemud.org/states/alabama/</loc></url>
   <url><loc>https://clearthemud.org/states/alaska/</loc></url>
   <url><loc>https://clearthemud.org/states/arizona/</loc></url>
@@ -163,7 +162,7 @@
   <url><loc>https://clearthemud.org/races/wa-house-5-2026/mavalwalla/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-house-5-2026/mcgarr/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-house-5-2026/powell/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-house-5-2026/ursey/</loc></url>
+  <url><loc>https://clearthemud.org/races/wa-house-5-2026/usrey/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-house-5-2026/womack/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-house-6-2026/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-house-6-2026/fox/</loc></url>
@@ -361,7 +360,7 @@
   <url><loc>https://clearthemud.org/races/wa-state-house-3-pos1-2026/kness/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-state-house-3-pos2-2026/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-state-house-3-pos2-2026/deleon/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-state-house-3-pos2-2026/iii/</loc></url>
+  <url><loc>https://clearthemud.org/races/wa-state-house-3-pos2-2026/jasmin/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-state-house-3-pos2-2026/kohlmeier/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-state-house-3-pos2-2026/poulson/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-state-house-30-pos1-2026/</loc></url>
@@ -976,8 +975,6 @@
   <url><loc>https://clearthemud.org/races/wa-king-district-court-judge-position-3-2026/howson/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-king-prosecuting-attorney-2026/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-king-prosecuting-attorney-2026/manion/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-king-prosecuting-attorney-2026/corkern/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-king-prosecuting-attorney-2026/sigmar/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-kitsap-assessor-2026/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-kitsap-assessor-2026/cook/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-kitsap-assessor-2026/simonds/</loc></url>
@@ -1738,8 +1735,6 @@
   <url><loc>https://clearthemud.org/races/wa-snohomish-district-court-pos-1-2026/samuelson/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-snohomish-district-court-pos-2-2026/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-snohomish-district-court-pos-2-2026/buzzard/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-snohomish-north-district-court-pos-1-2026/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-snohomish-north-district-court-pos-1-2026/harmer/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-snohomish-pud-1-pud-commissioner-dist-1-2026/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-snohomish-pud-1-pud-commissioner-dist-1-2026/logan/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-snohomish-pud-1-pud-commissioner-dist-1-2026/clair/</loc></url>
@@ -1750,14 +1745,6 @@
   <url><loc>https://clearthemud.org/races/wa-snohomish-south-district-court-pos-2-2026/goodwin/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-snohomish-south-district-court-pos-3-2026/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-snohomish-south-district-court-pos-3-2026/baldock/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-spokane-district-court-pos-1-2026/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-spokane-district-court-pos-1-2026/walker/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-spokane-district-court-pos-1-2026/blondin/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-spokane-district-court-pos-2-2026/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-spokane-district-court-pos-2-2026/imboden/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-spokane-district-court-pos-3-2026/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-spokane-district-court-pos-3-2026/eastwood/</loc></url>
-  <url><loc>https://clearthemud.org/races/wa-spokane-district-court-pos-3-2026/knowles/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-spokane-superior-court-pos-3-2026/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-spokane-superior-court-pos-3-2026/dibble/</loc></url>
   <url><loc>https://clearthemud.org/races/wa-stevens-pud-1-pud-commissioner-dist-2-2026/</loc></url>
