@@ -519,10 +519,10 @@
      "election_status": "In Primary"
     },
     {
-     "name": "Kyle Ursey",
+     "name": "Kyle Usrey",
      "party": "I",
      "role": "challenger",
-     "url": "/races/wa-house-5-2026/ursey/",
+     "url": "/races/wa-house-5-2026/usrey/",
      "election_status": "In Primary"
     },
     {
@@ -8297,24 +8297,6 @@
      "status": "Advanced to General",
      "url": "/races/wa-king-prosecuting-attorney-2026/manion/",
      "election_status": "Advanced to General"
-    },
-    {
-     "name": "Jesse Corkern",
-     "party": "dem",
-     "role": "challenger",
-     "slug": "corkern",
-     "status": "In Primary",
-     "url": "/races/wa-king-prosecuting-attorney-2026/corkern/",
-     "election_status": "In Primary"
-    },
-    {
-     "name": "Erik Sigmar",
-     "party": "dem",
-     "role": "challenger",
-     "slug": "sigmar",
-     "status": "In Primary",
-     "url": "/races/wa-king-prosecuting-attorney-2026/sigmar/",
-     "election_status": "In Primary"
     }
    ]
   },
