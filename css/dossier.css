@@ -13,6 +13,53 @@
   --bg: #ffffff;
   --dem-blue: #2166ac;
   --rep-red: #b2182b;
+  /* Added for the primary-results panels (ADO #2117/#2110/#2111 Stage 3).
+     Named distinctly from the vars above (--dem-blue/--rep-red/--green/
+     --gray-dark/--gray-mid/--gray-light/--text/--navy) which are reused
+     as-is rather than duplicated. Only what was missing is new here:
+     an independent/other party colour, an amber "in progress" colour for
+     the provisional state, and a soft background for its banner. */
+  --ind-purple: #6d5a8c;
+  --amber: #d97706;
+  --amber-soft: #fffbeb;
+  /* Light-mode defaults for the results-component tokens, so component
+     rules can reference one name in both themes. The dark override below
+     must come after this block: CSS custom properties cascade by source
+     order at equal specificity, so defining light values second would have
+     silently beaten the `prefers-color-scheme: dark` block every time. */
+  --results-bg: var(--bg);
+  --results-panel: #ffffff;
+  --results-ink: var(--text);
+  --results-muted: var(--gray-dark);
+  --results-line: var(--gray-mid);
+  --results-rail: #cbd3dc;
+  --results-track: var(--gray-light);
+  --dem-blue-results: var(--dem-blue);
+  --rep-red-results: var(--rep-red);
+  --ind-purple-results: var(--ind-purple);
+  --amber-results: var(--amber);
+  --amber-soft-results: var(--amber-soft);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Scoped to the results components below. The rest of this stylesheet
+       has no dark-mode palette yet; widening this beyond the new
+       components would repaint pages that were never designed against a
+       dark background, which is a separate decision from this one. */
+    --results-bg: #0f141c;
+    --results-panel: #1a222e;
+    --results-ink: #e8ecf1;
+    --results-muted: #9aa5b3;
+    --results-line: #2b3543;
+    --results-rail: #38434f;
+    --results-track: #232d3a;
+    --dem-blue-results: #5b8fd0;
+    --rep-red-results: #d4586b;
+    --ind-purple-results: #9c86bd;
+    --amber-results: #f0a835;
+    --amber-soft-results: #241c0c;
+  }
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -272,3 +319,100 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 @media (max-width: 600px) { .finding dl { grid-template-columns: 1fr; } td:first-child { white-space: normal; } }
 @media (max-width: 500px) { .state-grid { grid-template-columns: repeat(2, 1fr); } }
 @media print { .page { max-width: 100%; } .finding, .matchup-card, .state-card { break-inside: avoid; } body { font-size: 12px; } .dossier-nav { display: none; } .state-grid { grid-template-columns: repeat(5, 1fr); } }
+
+/* ==========================================================================
+   Primary results: hub block (.primary-results) and candidate panel
+   (.result-panel). ADO #2117/#2110/#2111 Stage 3, owner-approved 2026-08-05
+   against docs/mockups/certified-results-display.html in the build repo.
+   Rendered by site_tools/primary_results.py and site_tools/candidate_results.py
+   there; this file only supplies the styling for the markup they emit.
+   Uses the --results-*/--*-results tokens defined at the top of this file,
+   which resolve to this stylesheet's existing palette in light mode and to
+   a dark palette under `prefers-color-scheme: dark` (see the two blocks
+   near the top). Vote bars are decorative (aria-hidden in the markup); the
+   vote count and share percent beside them are the accessible text, so
+   status is never colour- or bar-only. */
+
+.primary-results .banner { display: flex; gap: 10px; align-items: flex-start; padding: 11px 14px; border-radius: 4px; font-size: 13px; margin-bottom: 8px; border-left: 4px solid; }
+.primary-results .banner b { color: var(--results-ink); }
+.primary-results .banner.provisional { background: var(--amber-soft-results); border-color: var(--amber-results); }
+.primary-results .banner.provisional .ico { color: var(--amber-results); font-weight: 800; }
+.primary-results .banner.certified { background: color-mix(in srgb, var(--green) 12%, var(--results-panel)); border-color: var(--green); }
+.primary-results .banner.certified .ico { color: var(--green); font-weight: 800; }
+
+.primary-results .collected { display: flex; align-items: center; gap: 7px; font-size: 12.5px; color: var(--results-muted); margin: 0 0 18px; font-variant-numeric: tabular-nums; }
+.primary-results .collected .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--amber-results); box-shadow: 0 0 0 0 color-mix(in srgb, var(--amber-results) 70%, transparent); animation: primary-results-pulse 2s infinite; }
+@keyframes primary-results-pulse {
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--amber-results) 55%, transparent); }
+  70% { box-shadow: 0 0 0 7px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .primary-results .collected .pulse { animation: none; }
+}
+
+.primary-results .section-h { font-size: 16px; margin: 0 0 4px; }
+.primary-results .as-of { color: var(--results-muted); font-size: 12.5px; margin: 0 0 16px; font-variant-numeric: tabular-nums; }
+
+.primary-results .results { display: flex; flex-direction: column; gap: 10px; }
+.primary-results .row { display: grid; grid-template-columns: 26px 1fr auto; gap: 12px; align-items: center; padding: 12px 14px; border: 1px solid var(--results-line); border-radius: 8px; background: var(--results-panel); }
+.primary-results .row.advanced { border-color: color-mix(in srgb, var(--green) 55%, var(--results-line)); }
+.primary-results .row.leading { border-color: color-mix(in srgb, var(--amber-results) 50%, var(--results-line)); }
+.primary-results .rank { font-variant-numeric: tabular-nums; font-weight: 800; color: var(--results-muted); font-size: 15px; text-align: center; }
+.primary-results .cand .name { font-weight: 700; font-size: 15px; }
+.primary-results .cand .name a { color: var(--results-ink); text-decoration: none; border-bottom: 1px solid transparent; }
+.primary-results .cand .name a:hover, .primary-results .cand .name a:focus-visible { border-bottom-color: var(--results-rail); outline: 2px solid var(--accent); outline-offset: 2px; }
+.primary-results .cand .meta { font-size: 12.5px; color: var(--results-muted); display: flex; gap: 8px; margin-top: 2px; }
+.primary-results .party { font-weight: 700; }
+.primary-results .party.dem { color: var(--dem-blue-results); }
+.primary-results .party.rep { color: var(--rep-red-results); }
+.primary-results .party.ind { color: var(--ind-purple-results); }
+.primary-results .bar { grid-column: 2 / 3; height: 6px; background: var(--results-track); border-radius: 3px; overflow: hidden; margin-top: 8px; }
+.primary-results .bar > i { display: block; height: 100%; border-radius: 3px; }
+.primary-results .bar > i.dem { background: var(--dem-blue-results); }
+.primary-results .bar > i.rep { background: var(--rep-red-results); }
+.primary-results .bar > i.ind { background: var(--ind-purple-results); }
+/* Provisional bars: hatched, so the count reads as not-final even without
+   colour or text (the text label is still present alongside it). */
+.primary-results .bar.prov > i.dem { background: repeating-linear-gradient(45deg, var(--dem-blue-results), var(--dem-blue-results) 5px, color-mix(in srgb, var(--dem-blue-results) 60%, transparent) 5px, color-mix(in srgb, var(--dem-blue-results) 60%, transparent) 10px); }
+.primary-results .bar.prov > i.rep { background: repeating-linear-gradient(45deg, var(--rep-red-results), var(--rep-red-results) 5px, color-mix(in srgb, var(--rep-red-results) 60%, transparent) 5px, color-mix(in srgb, var(--rep-red-results) 60%, transparent) 10px); }
+.primary-results .bar.prov > i.ind { background: repeating-linear-gradient(45deg, var(--ind-purple-results), var(--ind-purple-results) 5px, color-mix(in srgb, var(--ind-purple-results) 60%, transparent) 5px, color-mix(in srgb, var(--ind-purple-results) 60%, transparent) 10px); }
+.primary-results .tally { text-align: right; font-variant-numeric: tabular-nums; }
+.primary-results .tally .votes { font-weight: 800; font-size: 16px; }
+.primary-results .tally .pct { font-size: 12.5px; color: var(--results-muted); }
+.primary-results .badge { display: inline-block; font-size: 10.5px; font-weight: 700; letter-spacing: .04em; padding: 2px 8px; border-radius: 3px; color: #fff; text-transform: uppercase; }
+.primary-results .badge.advanced { background: var(--green); }
+.primary-results .badge.leading { background: var(--amber-results); }
+.primary-results .elim-head { margin: 22px 0 4px; font-size: 13px; font-weight: 700; color: var(--results-muted); text-transform: uppercase; letter-spacing: .05em; }
+.primary-results .elim-note { font-size: 12.5px; color: var(--results-muted); margin: 0 0 12px; }
+.primary-results .row.eliminated { opacity: .82; }
+
+.primary-results .legend { display: flex; flex-wrap: wrap; gap: 16px; margin: 12px 0 0; font-size: 12.5px; color: var(--results-muted); }
+.primary-results .legend span { display: inline-flex; align-items: center; gap: 6px; }
+.primary-results .sw { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.primary-results .sw.hatch { background: repeating-linear-gradient(45deg, var(--results-muted), var(--results-muted) 3px, transparent 3px, transparent 6px); }
+
+/* Candidate page: the 3-stat Primary Result panel. */
+.result-panel { border: 1px solid color-mix(in srgb, var(--green) 45%, var(--results-line)); border-radius: 10px; overflow: hidden; margin: 16px 0; }
+.result-panel.prov { border-color: color-mix(in srgb, var(--amber-results) 45%, var(--results-line)); }
+.result-panel .phead { padding: 10px 16px; font-weight: 700; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; color: var(--results-ink); border-bottom: 1px solid var(--results-line); display: flex; align-items: center; gap: 8px; background: color-mix(in srgb, var(--green) 14%, var(--results-panel)); }
+.result-panel.prov .phead { background: var(--amber-soft-results); }
+.result-panel .stat-row { display: grid; grid-template-columns: repeat(3, 1fr); }
+.result-panel .stat { padding: 16px; text-align: center; border-right: 1px solid var(--results-line); }
+.result-panel .stat:last-child { border-right: 0; }
+.result-panel .stat .big { font-size: 28px; font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; color: var(--results-ink); }
+.result-panel .stat .big.small { font-size: 19px; }
+.result-panel .stat .lab { font-size: 11.5px; color: var(--results-muted); text-transform: uppercase; letter-spacing: .06em; margin-top: 2px; }
+.result-panel .stat .big.green { color: var(--green); }
+.result-panel .stat .big.amber { color: var(--amber-results); }
+.result-panel .stat .big.gray { color: var(--results-muted); }
+.result-panel .pfoot { padding: 11px 16px; font-size: 12px; color: var(--results-muted); border-top: 1px solid var(--results-line); font-variant-numeric: tabular-nums; }
+.result-panel .pfoot .stamp { color: var(--amber-results); font-weight: 700; }
+.result-panel .pfoot a { color: inherit; text-decoration: underline; }
+.result-panel .pfoot a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+@media (max-width: 600px) {
+  .result-panel .stat-row { grid-template-columns: 1fr; }
+  .result-panel .stat { border-right: 0; border-bottom: 1px solid var(--results-line); }
+  .result-panel .stat:last-child { border-bottom: 0; }
+}
