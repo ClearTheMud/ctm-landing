@@ -1,7 +1,12 @@
 :root {
   --navy: #1a2332;
   --blue: #2c5f8a;
-  --accent: #3a8fd4;
+  /* #3a8fd4 measured 3.47:1 on white body text (--bg), below the WCAG 2.1 AA
+     4.5:1 floor for normal-size link text; the default `a { color }` and
+     footer/map-fallback links use this token at 15px. Darkened to the same
+     hue family at 6.69:1. Also used for focus outlines and map hover states,
+     which only need 3:1, so this stays safely above both floors. */
+  --accent: #1a5f99;
   --gold: #c9a84c;
   --red: #c0392b;
   --green: #27ae60;
@@ -39,6 +44,19 @@
   --ind-purple-results: var(--ind-purple);
   --amber-results: var(--amber);
   --amber-soft-results: var(--amber-soft);
+  /* Flat fills for the white-text status badges below (.badge.advanced /
+     .badge.leading). White-on-#27ae60 and white-on-#d97706 both measured
+     under 3:1, failing WCAG 2.1 AA 1.4.3 at the badges' 10.5px bold size.
+     These are solid fills, not blended with the surrounding panel, so one
+     value covers both themes rather than needing a dark override. */
+  --green-badge-results: #1a7a43;
+  --amber-badge-results: #a1520a;
+  /* Text-on-panel use of amber (e.g. .pfoot .stamp) needs 4.5:1 against
+     --results-panel, not the 3:1 UI-component floor --amber-results was
+     picked for. #d97706 measured 3.19:1 on the light panel; this passes at
+     5.63:1. The dark override below reuses --amber-results, which already
+     clears 7.89:1 against the dark panel. */
+  --amber-results-text: #a1520a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -55,10 +73,14 @@
     --results-rail: #38434f;
     --results-track: #232d3a;
     --dem-blue-results: #5b8fd0;
-    --rep-red-results: #d4586b;
+    /* Lightened from #d4586b: 12.5px bold party-code text on --results-panel
+       measured 4.12:1, below the 4.5:1 normal-text floor (12.5px bold does
+       not reach the 18.66px-bold large-text threshold). Now 5.00:1. */
+    --rep-red-results: #de6c7f;
     --ind-purple-results: #9c86bd;
     --amber-results: #f0a835;
     --amber-soft-results: #241c0c;
+    --amber-results-text: var(--amber-results);
   }
 }
 
@@ -333,7 +355,12 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
    vote count and share percent beside them are the accessible text, so
    status is never colour- or bar-only. */
 
-.primary-results .banner { display: flex; gap: 10px; align-items: flex-start; padding: 11px 14px; border-radius: 4px; font-size: 13px; margin-bottom: 8px; border-left: 4px solid; }
+/* Pin ALL banner text to the results ink token, not just <b>. The banner
+   background uses --amber-soft-results (dark in dark mode), but the regular
+   text used to inherit body's --text (#2c3e50), which has no dark override.
+   In dark mode that rendered #2c3e50 on #241c0c (about 1.3:1), a WCAG 2.1 AA
+   failure. --results-ink tracks the theme, so text stays legible in both. */
+.primary-results .banner { display: flex; gap: 10px; align-items: flex-start; padding: 11px 14px; border-radius: 4px; font-size: 13px; margin-bottom: 8px; border-left: 4px solid; color: var(--results-ink); }
 .primary-results .banner b { color: var(--results-ink); }
 .primary-results .banner.provisional { background: var(--amber-soft-results); border-color: var(--amber-results); }
 .primary-results .banner.provisional .ico { color: var(--amber-results); font-weight: 800; }
@@ -381,8 +408,8 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .primary-results .tally .votes { font-weight: 800; font-size: 16px; }
 .primary-results .tally .pct { font-size: 12.5px; color: var(--results-muted); }
 .primary-results .badge { display: inline-block; font-size: 10.5px; font-weight: 700; letter-spacing: .04em; padding: 2px 8px; border-radius: 3px; color: #fff; text-transform: uppercase; }
-.primary-results .badge.advanced { background: var(--green); }
-.primary-results .badge.leading { background: var(--amber-results); }
+.primary-results .badge.advanced { background: var(--green-badge-results); }
+.primary-results .badge.leading { background: var(--amber-badge-results); }
 .primary-results .elim-head { margin: 22px 0 4px; font-size: 13px; font-weight: 700; color: var(--results-muted); text-transform: uppercase; letter-spacing: .05em; }
 .primary-results .elim-note { font-size: 12.5px; color: var(--results-muted); margin: 0 0 12px; }
 .primary-results .row.eliminated { opacity: .82; }
@@ -407,7 +434,7 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .result-panel .stat .big.amber { color: var(--amber-results); }
 .result-panel .stat .big.gray { color: var(--results-muted); }
 .result-panel .pfoot { padding: 11px 16px; font-size: 12px; color: var(--results-muted); border-top: 1px solid var(--results-line); font-variant-numeric: tabular-nums; }
-.result-panel .pfoot .stamp { color: var(--amber-results); font-weight: 700; }
+.result-panel .pfoot .stamp { color: var(--amber-results-text); font-weight: 700; }
 .result-panel .pfoot a { color: inherit; text-decoration: underline; }
 .result-panel .pfoot a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
