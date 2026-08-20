@@ -5382,6 +5382,13 @@
      "status": "In Primary",
      "url": "/races/wa-chelan-treasurer-2026/viall/",
      "election_status": "In Primary"
+    },
+    {
+     "name": "Doug Miller",
+     "party": "dem",
+     "role": "candidate",
+     "slug": "miller",
+     "url": "/races/wa-chelan-treasurer-2026/miller/"
     }
    ]
   },
@@ -6358,15 +6365,6 @@
      "slug": "rosales",
      "status": "In Primary",
      "url": "/races/wa-douglas-treasurer-2026/rosales/",
-     "election_status": "In Primary"
-    },
-    {
-     "name": "Doug Miller",
-     "party": "dem",
-     "role": "challenger",
-     "slug": "miller",
-     "status": "In Primary",
-     "url": "/races/wa-douglas-treasurer-2026/miller/",
      "election_status": "In Primary"
     }
    ]
@@ -11247,29 +11245,6 @@
    ]
   },
   {
-   "id": "wa-spokane-coroner-2026",
-   "state_abbr": "WA",
-   "office": "Coroner",
-   "county": "Spokane",
-   "county_slug": "spokane",
-   "level": "county",
-   "year": 2026,
-   "title": "Spokane County Coroner",
-   "status": "active",
-   "url": "/races/wa-spokane-coroner-2026/",
-   "candidates": [
-    {
-     "name": "Roseanne Ennis Jezerinac",
-     "party": "rep",
-     "role": "challenger",
-     "slug": "jezerinac",
-     "status": "In Primary",
-     "url": "/races/wa-spokane-coroner-2026/jezerinac/",
-     "election_status": "In Primary"
-    }
-   ]
-  },
-  {
    "id": "wa-spokane-district-court-judge-1-2026",
    "state_abbr": "WA",
    "office": "District Court Judge 1",
@@ -11679,6 +11654,13 @@
      "status": "In Primary",
      "url": "/races/wa-stevens-coroner-2026/waldrop/",
      "election_status": "In Primary"
+    },
+    {
+     "name": "Roseanne Ennis Jezerinac",
+     "party": "rep",
+     "role": "candidate",
+     "slug": "jezerinac",
+     "url": "/races/wa-stevens-coroner-2026/jezerinac/"
     }
    ]
   },
