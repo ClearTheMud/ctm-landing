@@ -92,8 +92,12 @@ p { margin-bottom: 12px; }
 ul, ol { margin: 8px 0 16px 20px; }
 li { margin-bottom: 6px; }
 
-/* Classification bar */
-.classification-bar { background: var(--green); color: #fff; text-align: center; font-size: 12px; font-weight: 700; letter-spacing: 1px; padding: 6px; text-transform: uppercase; }
+/* Classification bar. White-on-var(--green) measured 2.87:1, below the WCAG
+   2.1 AA 1.4.3 floor of 4.5:1 for this 12px bold text (not large-text size).
+   Reuses --green-badge-results (#1a7a43), already introduced for the same
+   white-on-green problem on the results badges, which clears 5.38:1 here.
+   --green itself is left untouched: it backs many other unrelated uses. */
+.classification-bar { background: var(--green-badge-results); color: #fff; text-align: center; font-size: 12px; font-weight: 700; letter-spacing: 1px; padding: 6px; text-transform: uppercase; }
 
 /* Breadcrumb nav */
 .dossier-nav { background: var(--navy); padding: 8px 24px; font-size: 13px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
@@ -111,7 +115,9 @@ li { margin-bottom: 6px; }
 .header h2 { font-size: 18px; font-weight: 400; opacity: 0.9; margin-bottom: 16px; }
 .header-meta { display: flex; flex-wrap: wrap; gap: 20px; font-size: 13px; opacity: 0.85; }
 .header-meta span { white-space: nowrap; }
-.tlp-badge { display: inline-block; background: var(--green); color: #fff; font-weight: 700; font-size: 12px; padding: 3px 10px; border-radius: 3px; letter-spacing: 0.5px; text-transform: uppercase; }
+/* Same white-on-green contrast fix as .classification-bar above: measured
+   2.87:1 with --green, now 5.38:1 with --green-badge-results. */
+.tlp-badge { display: inline-block; background: var(--green-badge-results); color: #fff; font-weight: 700; font-size: 12px; padding: 3px 10px; border-radius: 3px; letter-spacing: 0.5px; text-transform: uppercase; }
 .status-badge { display: inline-block; color: #fff; font-weight: 700; font-size: 12px; padding: 3px 10px; border-radius: 3px; }
 .status-badge.dem { background: var(--dem-blue); }
 .status-badge.rep { background: var(--rep-red); }
