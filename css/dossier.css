@@ -348,7 +348,7 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
    against docs/mockups/certified-results-display.html in the build repo.
    Rendered by site_tools/primary_results.py and site_tools/candidate_results.py
    there; this file only supplies the styling for the markup they emit.
-   Uses the --results-*/--*-results tokens defined at the top of this file,
+   Uses the --results-* and --*-results tokens defined at the top of this file,
    which resolve to this stylesheet's existing palette in light mode and to
    a dark palette under `prefers-color-scheme: dark` (see the two blocks
    near the top). Vote bars are decorative (aria-hidden in the markup); the
