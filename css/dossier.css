@@ -468,7 +468,9 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
      surface. 9aa5b3-on-white measured 2.50:1; gray-dark-on-white is 5.55:1. */
   .primary-results .collected,
   .primary-results .as-of,
-  .primary-results .legend {
+  .primary-results .legend,
+  .primary-results .elim-head,
+  .primary-results .elim-note {
     color: var(--gray-dark);
   }
 
