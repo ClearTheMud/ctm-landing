@@ -405,7 +405,11 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .primary-results .bar.prov > i.rep { background: repeating-linear-gradient(45deg, var(--rep-red-results), var(--rep-red-results) 5px, color-mix(in srgb, var(--rep-red-results) 60%, transparent) 5px, color-mix(in srgb, var(--rep-red-results) 60%, transparent) 10px); }
 .primary-results .bar.prov > i.ind { background: repeating-linear-gradient(45deg, var(--ind-purple-results), var(--ind-purple-results) 5px, color-mix(in srgb, var(--ind-purple-results) 60%, transparent) 5px, color-mix(in srgb, var(--ind-purple-results) 60%, transparent) 10px); }
 .primary-results .tally { text-align: right; font-variant-numeric: tabular-nums; }
-.primary-results .tally .votes { font-weight: 800; font-size: 16px; }
+/* Fixes ADO #2180 item 1: this had no explicit color, so it inherited body's
+   --text (#2c3e50), which has no dark override. Against the dark --results-panel
+   .row background that measured 1.46:1. --results-ink tracks the theme, like the
+   candidate name link beside it already does. */
+.primary-results .tally .votes { font-weight: 800; font-size: 16px; color: var(--results-ink); }
 .primary-results .tally .pct { font-size: 12.5px; color: var(--results-muted); }
 .primary-results .badge { display: inline-block; font-size: 10.5px; font-weight: 700; letter-spacing: .04em; padding: 2px 8px; border-radius: 3px; color: #fff; text-transform: uppercase; }
 .primary-results .badge.advanced { background: var(--green-badge-results); }
@@ -442,4 +446,36 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
   .result-panel .stat-row { grid-template-columns: 1fr; }
   .result-panel .stat { border-right: 0; border-bottom: 1px solid var(--results-line); }
   .result-panel .stat:last-child { border-bottom: 0; }
+}
+
+/* ADO #2180: dark-mode contrast fixes for elements that sit on the page
+   background rather than a --results-panel surface. The page body has no
+   dark palette by design (see the note at the top of the dark token block),
+   so --results-muted and --results-ink, which are tuned for the dark
+   --results-panel surface, read as low contrast when used directly on the
+   still-light page. Two different fixes for two different surfaces: */
+@media (prefers-color-scheme: dark) {
+  /* Item 2: .collected, .as-of, and .legend render on the bare page (white),
+     not inside a .row or .result-panel. Pin them to --gray-dark, the same
+     muted color light mode already resolves --results-muted to, instead of
+     letting the dark override (tuned for a dark panel) leak onto a light
+     surface. 9aa5b3-on-white measured 2.50:1; gray-dark-on-white is 5.55:1. */
+  .primary-results .collected,
+  .primary-results .as-of,
+  .primary-results .legend {
+    color: var(--gray-dark);
+  }
+
+  /* Item 3/4: .result-panel has no background of its own, so its stat cells
+     (.big / .lab) and footer (.pfoot, the "full race results" link) sat on
+     the unpainted white page while using the dark-tuned --results-ink /
+     --results-muted tokens. .phead already looks correct because its
+     background is derived from --results-panel; give the rest of the panel
+     the same dark surface so the same text tokens read correctly on it,
+     matching how .row already behaves. ink-on-white was 1.19:1, now
+     ink-on-panel is 13.49:1; muted-on-white was 2.50:1, now
+     muted-on-panel is 6.41:1. */
+  .result-panel {
+    background: var(--results-panel);
+  }
 }
