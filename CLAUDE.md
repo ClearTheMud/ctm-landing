@@ -254,7 +254,7 @@ Before publishing any finding, apply these filters:
 ## Related
 
 - Data pipeline: `~/Local/ado/clearthemud/` (private, ADO civic-tech)
-- Source dossiers: `~/Local/00-Claude/Clients/Clear_the_Mud_dot_org/Deliverables/dossiers/`
+- Source dossiers: `~/Local/00-Claude/c6s/Clients/Clear_the_Mud_dot_org/Deliverables/dossiers/`
 - GitHub org: https://github.com/ClearTheMud
 
 **Scope note for the GitNexus section below.** This repo is published output
