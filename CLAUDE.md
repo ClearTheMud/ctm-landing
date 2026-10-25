@@ -181,7 +181,7 @@ hosting requirement, not an invitation to track internal work here. Hard rules:
 - **ALL issues, bugs, and work items go to the private ADO tracker** (the `clearthemud` data
   pipeline repo) — *including bugs about this repo's own code/tests.* **Never open GitHub issues
   on this repo.** This overrides the generic workspace rule "public repo → GitHub issue."
-- The private data pipeline and system of record live in `~/Local/Projects/github/clearthemud/`.
+- The private data pipeline and system of record live in `~/Local/ado/clearthemud/`.
   When unsure whether something is public-ready, it stays there, not here.
 
 ### Install the promotion gate first (every clone)
@@ -253,7 +253,7 @@ Before publishing any finding, apply these filters:
 
 ## Related
 
-- Data pipeline: `~/Local/Projects/github/clearthemud/` (private, ADO civic-tech)
+- Data pipeline: `~/Local/ado/clearthemud/` (private, ADO civic-tech)
 - Source dossiers: `~/Local/00-Claude/Clients/Clear_the_Mud_dot_org/Deliverables/dossiers/`
 - GitHub org: https://github.com/ClearTheMud
 
