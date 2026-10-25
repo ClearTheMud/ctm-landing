@@ -178,8 +178,8 @@ hosting requirement, not an invitation to track internal work here. Hard rules:
   produces them. Generators, builders and converters belong in the build repo. See "What belongs
   in this repository" at the top of this file. Never commit T4 data, internal research, raw
   collection reports, journalist leads, or other internal artifacts here.
-- **ALL issues, bugs, and work items go to the private ADO tracker** (the `clearthemud` data
-  pipeline repo) — *including bugs about this repo's own code/tests.* **Never open GitHub issues
+- **ALL issues, bugs, and work items go to the private ADO tracker**, project `civic-tech`
+  (filed against the `clearthemud` repo) — *including bugs about this repo's own code/tests.* **Never open GitHub issues
   on this repo.** This overrides the generic workspace rule "public repo → GitHub issue."
 - The private data pipeline and system of record live in `~/Local/ado/clearthemud/`.
   When unsure whether something is public-ready, it stays there, not here.
@@ -256,6 +256,11 @@ Before publishing any finding, apply these filters:
 - Data pipeline: `~/Local/ado/clearthemud/` (private, ADO civic-tech)
 - Source dossiers: `~/Local/00-Claude/Clients/Clear_the_Mud_dot_org/Deliverables/dossiers/`
 - GitHub org: https://github.com/ClearTheMud
+
+**Scope note for the GitNexus section below.** This repo is published output
+only (see "What belongs in this repository"). It has no site generation code,
+so the impact-analysis and change-detection steps below apply only to the small
+set of Python test files that remain under `tools/tests/`. They are not required before editing published HTML, CSS or assets.
 
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
