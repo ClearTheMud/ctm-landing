@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Nicolette Ocheltree</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Nicolette Ocheltree</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Nicolette Ocheltree</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -76,21 +79,21 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$1,763.00 (3 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$0.00 (0 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$1,763.00 (3 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$0.00 (0 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Higgins Harold T., Spokane</td><td>$1,043.00</td></tr>
-        <tr><td>Nicolette Ocheltree, Spokane</td><td>$500.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$220.00</td></tr>
+        <tr><th scope="row">Higgins Harold T., Spokane</th><td>$1,043.00</td></tr>
+        <tr><th scope="row">Nicolette Ocheltree, Spokane</th><td>$500.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$220.00</td></tr>
       </tbody>
     </table>
   </div>
@@ -107,16 +110,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

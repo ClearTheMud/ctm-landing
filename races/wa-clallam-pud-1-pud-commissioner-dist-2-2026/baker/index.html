@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Missi Baker</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,14 +60,14 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Melissa Lowe Baker (appears on the ballot as Missi Baker)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Port Angeles, Clallam County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan office (public utility district commissioner)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>BA in Journalism with a minor in Economics; English Teacher Certification; Social Studies Teacher Certification; continuing education professional development courses (per her Voters&#x27; Pamphlet statement).</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>School teacher (English, Economics, History), per her Voters&#x27; Pamphlet statement.; Journalism work as reporter, editor, and photographer, per her Voters&#x27; Pamphlet statement.; Public relations and client communications work, per her Voters&#x27; Pamphlet statement.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Melissa Lowe Baker (appears on the ballot as Missi Baker)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Port Angeles, Clallam County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan office (public utility district commissioner)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>BA in Journalism with a minor in Economics; English Teacher Certification; Social Studies Teacher Certification; continuing education professional development courses (per her Voters&#x27; Pamphlet statement).</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>School teacher (English, Economics, History), per her Voters&#x27; Pamphlet statement.; Journalism work as reporter, editor, and photographer, per her Voters&#x27; Pamphlet statement.; Public relations and client communications work, per her Voters&#x27; Pamphlet statement.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -85,12 +88,12 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Utility Rates</td><td>States she is committed to keeping rates reasonable while maintaining service quality within the current economic environment.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Transparency and Communication</td><td>States she will keep ratepayers informed about district decisions and budget priorities through open communication.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Infrastructure</td><td>States she supports upgrades to protect the district&#x27;s water and electric systems and to prepare for the future.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Utility Rates</th><td>States she is committed to keeping rates reasonable while maintaining service quality within the current economic environment.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Transparency and Communication</th><td>States she will keep ratepayers informed about district decisions and budget priorities through open communication.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Infrastructure</th><td>States she supports upgrades to protect the district&#x27;s water and electric systems and to prepare for the future.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -121,16 +124,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Michael Cathcart</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -64,60 +67,60 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$55,108.12 (146 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$52,637.13 (54 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$55,108.12 (146 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$52,637.13 (54 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Associated General Contractors, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>Associated General Contractors, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>Avista, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>Avista, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>Brooks Randy, San Angelo</td><td>$1,200.00</td></tr>
-        <tr><td>Crapo Dennis, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>Frank Jim, Liberty Lake</td><td>$1,200.00</td></tr>
-        <tr><td>Goodman Real Estate, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Goodman Real Estate, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>River Marketing, Mead</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Associated General Contractors, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Associated General Contractors, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Avista, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Avista, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Brooks Randy, San Angelo</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Crapo Dennis, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Frank Jim, Liberty Lake</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Goodman Real Estate, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Goodman Real Estate, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">River Marketing, Mead</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Walts Mailing</td><td>Mailing Postcard: Twenty One Thousand One Hundred Ninety One pieces; Postage = $7,789.04</td><td>$12,531.04</td></tr>
-        <tr><td>Walts Mailing</td><td>Mailing Postcard: Twenty One Thousand One Hundred Ninety One pieces; Postage = $7,789.04</td><td>$12,531.04</td></tr>
-        <tr><td>Walts Mailing</td><td>Eighteen Thousand Two Hundred postcards; USPS: 6,680.73</td><td>$10,496.67</td></tr>
-        <tr><td>Presscats</td><td>100 - 24&quot; x 48&quot; campaign signs + 250 18&quot; x 24&quot; campaign signs + 50 Stakes.</td><td>$3,068.90</td></tr>
-        <tr><td>Secretary of State</td><td>Filing fees</td><td>$1,340.57</td></tr>
-        <tr><td>River Marketing</td><td>Graphic Design Work</td><td>$1,200.00</td></tr>
-        <tr><td>River Marketing</td><td>Palm Card, Banner, Shirts graphic design</td><td>$1,050.00</td></tr>
-        <tr><td>MICHAEL CATHCART</td><td>IMPRINT.com Purchase 1,625 booth items (cups, magnets, can protectors, fans)</td><td>$995.73</td></tr>
-        <tr><td>MJW &amp; Associates LLC</td><td>Service for Text Message</td><td>$713.40</td></tr>
-        <tr><td>MJW &amp; Associates LLC</td><td>Texting Service communication to Twelve Thousand</td><td>$713.40</td></tr>
+        <tr><th scope="row">Walts Mailing</th><td>Mailing Postcard: Twenty One Thousand One Hundred Ninety One pieces; Postage = $7,789.04</td><td>$12,531.04</td></tr>
+        <tr><th scope="row">Walts Mailing</th><td>Mailing Postcard: Twenty One Thousand One Hundred Ninety One pieces; Postage = $7,789.04</td><td>$12,531.04</td></tr>
+        <tr><th scope="row">Walts Mailing</th><td>Eighteen Thousand Two Hundred postcards; USPS: 6,680.73</td><td>$10,496.67</td></tr>
+        <tr><th scope="row">Presscats</th><td>100 - 24&quot; x 48&quot; campaign signs + 250 18&quot; x 24&quot; campaign signs + 50 Stakes.</td><td>$3,068.90</td></tr>
+        <tr><th scope="row">Secretary of State</th><td>Filing fees</td><td>$1,340.57</td></tr>
+        <tr><th scope="row">River Marketing</th><td>Graphic Design Work</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">River Marketing</th><td>Palm Card, Banner, Shirts graphic design</td><td>$1,050.00</td></tr>
+        <tr><th scope="row">MICHAEL CATHCART</th><td>IMPRINT.com Purchase 1,625 booth items (cups, magnets, can protectors, fans)</td><td>$995.73</td></tr>
+        <tr><th scope="row">MJW &amp; Associates LLC</th><td>Service for Text Message</td><td>$713.40</td></tr>
+        <tr><th scope="row">MJW &amp; Associates LLC</th><td>Texting Service communication to Twelve Thousand</td><td>$713.40</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
       <h2><span class="section-num">3</span> Election History</h2>
-      <table>
-        <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+      <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+        <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
         <tbody>
-        <tr><td>2023</td><td>City Of Spokane District NO. 1 Council Position NO. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>County Commissioner District NO. 2 Commissioner District 2 (Primary)</td><td>Lost (2 of 5)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>County Commissioner District NO. 2 Commissioner District 2 (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2019</td><td>City Of Spokane C D 1 Dist. #1 Council Position #1 (Primary)</td><td>Lost (2 of 8)</td><td>WA SOS</td></tr>
-        <tr><td>2019</td><td>City Of Spokane C D 1 Dist. #1 Council Position NO. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2023</th><td>City Of Spokane District NO. 1 Council Position NO. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>County Commissioner District NO. 2 Commissioner District 2 (Primary)</td><td>Lost (2 of 5)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>County Commissioner District NO. 2 Commissioner District 2 (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2019</th><td>City Of Spokane C D 1 Dist. #1 Council Position #1 (Primary)</td><td>Lost (2 of 8)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2019</th><td>City Of Spokane C D 1 Dist. #1 Council Position NO. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
         </tbody>
-      </table>
+      </table></div>
       <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
     </div>
     <div class="section">
@@ -131,14 +134,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

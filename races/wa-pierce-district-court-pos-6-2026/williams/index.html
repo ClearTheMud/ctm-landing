@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Karl L. Williams</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -46,14 +49,14 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Karl L. Williams (WSBA record lists Karl Lin Williams; campaigns as Karl Williams)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Pierce County, Washington. Professional address of record is 930 Tacoma Ave S, Room 239, Tacoma, WA 98402 (Pierce County District Court).</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan (judicial race)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>Curtis High School (1978). Bachelor of Arts in Political Science, University of Washington (1982). Juris Doctor, University of Puget Sound School of Law (1986).</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Employment</td><td>Judge, Pierce County District Court, Position 6 (sitting judge since January 2019; WSBA license status Judicial with Pierce County District Court as employer of record).; Pierce County District Court Judge Pro Tem for approximately 22 years (roughly 1996 to 2018), including pro tem service for Fife, Puyallup, and Ruston.; Attorney and Managing Partner, Griffin &amp; Williams, P.S., in private practice before taking the bench.; Arbitrator for Pierce and King County Superior Courts since 1995; volunteer mediator since 1997.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Karl L. Williams (WSBA record lists Karl Lin Williams; campaigns as Karl Williams)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Pierce County, Washington. Professional address of record is 930 Tacoma Ave S, Room 239, Tacoma, WA 98402 (Pierce County District Court).</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan (judicial race)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>Curtis High School (1978). Bachelor of Arts in Political Science, University of Washington (1982). Juris Doctor, University of Puget Sound School of Law (1986).</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Judge, Pierce County District Court, Position 6 (sitting judge since January 2019; WSBA license status Judicial with Pierce County District Court as employer of record).; Pierce County District Court Judge Pro Tem for approximately 22 years (roughly 1996 to 2018), including pro tem service for Fife, Puyallup, and Ruston.; Attorney and Managing Partner, Griffin &amp; Williams, P.S., in private practice before taking the bench.; Arbitrator for Pierce and King County Superior Courts since 1995; volunteer mediator since 1997.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -68,15 +71,15 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Pierce County District Court Judge Position 6</td><td>Pending (incumbent; no PDC committee located as of 2026-07-20)</td><td>Research</td></tr>
-        <tr><td>2018</td><td>Pierce County District Court Judge Position 6</td><td>Won as a non-incumbent; began serving January 2019.</td><td>Research</td></tr>
-        <tr><td>2014</td><td>District Court District Court NO. 8 (Primary)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2014</td><td>District Court District Court NO. 8 (General)</td><td>Lost (2 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2026</th><td>Pierce County District Court Judge Position 6</td><td>Pending (incumbent; no PDC committee located as of 2026-07-20)</td><td>Research</td></tr>
+        <tr><th scope="row">2018</th><td>Pierce County District Court Judge Position 6</td><td>Won as a non-incumbent; began serving January 2019.</td><td>Research</td></tr>
+        <tr><th scope="row">2014</th><td>District Court District Court NO. 8 (Primary)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2014</th><td>District Court District Court NO. 8 (General)</td><td>Lost (2 of 2)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
@@ -113,16 +116,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

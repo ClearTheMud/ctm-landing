@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Logan Siebert</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,14 +60,14 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Logan B. Siebert</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Goldendale, Klickitat County, Washington (167 Crafton Rd, 98620)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan office (Public Utility District commissioner)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>Candidate states he is a graduate of Goldendale High School</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Employment</td><td>Owner and operator of Siebert Custom Slaughter and Meats LLC, Klickitat County (candidate states ten years of 4-H youth development involvement); Reserve Officer with the Goldendale Police Department (candidate states he passed a psychological and polygraph evaluation)</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Logan B. Siebert</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Goldendale, Klickitat County, Washington (167 Crafton Rd, 98620)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan office (Public Utility District commissioner)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>Candidate states he is a graduate of Goldendale High School</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Owner and operator of Siebert Custom Slaughter and Meats LLC, Klickitat County (candidate states ten years of 4-H youth development involvement); Reserve Officer with the Goldendale Police Department (candidate states he passed a psychological and polygraph evaluation)</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -79,21 +82,21 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Klickitat PUD No. 1 Commissioner Position 3 (Primary, three-way)</td><td>Candidate on the 2026 Primary ballot with Dan Christopher and incumbent Dan G. Gunkel</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>Klickitat PUD No. 1 Commissioner Position 3 (Primary, three-way)</td><td>Candidate on the 2026 Primary ballot with Dan Christopher and incumbent Dan G. Gunkel</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Rates and Reliability</td><td>Candidate states ratepayers deserve a commissioner who listens, and that reliable power and fair rates affect every family and business in Klickitat County.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Accountability</td><td>Candidate states his experience owning a small business taught him how to manage budgets and be accountable to the people he serves.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Rates and Reliability</th><td>Candidate states ratepayers deserve a commissioner who listens, and that reliable power and fair rates affect every family and business in Klickitat County.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Accountability</th><td>Candidate states his experience owning a small business taught him how to manage budgets and be accountable to the people he serves.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -124,16 +127,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

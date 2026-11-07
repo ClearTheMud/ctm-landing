@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Linda Farmer</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -46,12 +49,12 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Linda Farmer</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Lakewood, Pierce County, WA</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan office (Pierce County Auditor is elected on a nonpartisan basis). Farmer was endorsed by the 31st Legislative District Democrats in her 2022 campaign and is generally regarded as Democratic-aligned.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Linda Farmer</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Lakewood, Pierce County, WA</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan office (Pierce County Auditor is elected on a nonpartisan basis). Farmer was endorsed by the 31st Legislative District Democrats in her 2022 campaign and is generally regarded as Democratic-aligned.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -66,75 +69,75 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Pierce County Auditor</td><td>Pending, filed 2026, primary August 4, 2026</td><td>Research</td></tr>
-        <tr><td>2022</td><td>Pierce County Auditor (general)</td><td>Won, 165,769 votes (59.05%) over Deryl McCarty (40.34%)</td><td>Research</td></tr>
-        <tr><td>2022</td><td>Pierce County Auditor (primary)</td><td>Advanced first, 78,820 votes (43.87%); McCarty 32.06%; Damon Townsend 23.51%</td><td>Research</td></tr>
-        <tr><td>2019</td><td>Lakewood City Council</td><td>Elected; served 2019 to December 2022</td><td>Research</td></tr>
-        <tr><td>2016</td><td>County Council District NO. 6 County Council NO. 6 (Primary)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2016</td><td>County Council District NO. 6 County Council NO. 6 (General)</td><td>Lost (2 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2015</td><td>County Council District NO. 6 Charter Review Commissioner - District 6, Position 3 (Primary)</td><td>Lost (2 of 4)</td><td>WA SOS</td></tr>
-        <tr><td>2015</td><td>County Council District NO. 6 Charter Review Commissioner - District 6, Position 3 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2026</th><td>Pierce County Auditor</td><td>Pending, filed 2026, primary August 4, 2026</td><td>Research</td></tr>
+        <tr><th scope="row">2022</th><td>Pierce County Auditor (general)</td><td>Won, 165,769 votes (59.05%) over Deryl McCarty (40.34%)</td><td>Research</td></tr>
+        <tr><th scope="row">2022</th><td>Pierce County Auditor (primary)</td><td>Advanced first, 78,820 votes (43.87%); McCarty 32.06%; Damon Townsend 23.51%</td><td>Research</td></tr>
+        <tr><th scope="row">2019</th><td>Lakewood City Council</td><td>Elected; served 2019 to December 2022</td><td>Research</td></tr>
+        <tr><th scope="row">2016</th><td>County Council District NO. 6 County Council NO. 6 (Primary)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2016</th><td>County Council District NO. 6 County Council NO. 6 (General)</td><td>Lost (2 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2015</th><td>County Council District NO. 6 Charter Review Commissioner - District 6, Position 3 (Primary)</td><td>Lost (2 of 4)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2015</th><td>County Council District NO. 6 Charter Review Commissioner - District 6, Position 3 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Election Administration and Voter Access</td><td>Emphasizes professional, secure election administration and voter access. In 2025 she publicly urged younger voters to update their signatures on file to reduce ballot signature-verification rejections.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Following State Law on Ballot Measures</td><td>Maintains that her office followed state law in handling the City of Tacoma minimum-wage initiative signature verification and ballot placement timeline, a position upheld by the Pierce County Superior Court.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Election Administration and Voter Access</th><td>Emphasizes professional, secure election administration and voter access. In 2025 she publicly urged younger voters to update their signatures on file to reduce ballot signature-verification rejections.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Following State Law on Ballot Measures</th><td>Maintains that her office followed state law in handling the City of Tacoma minimum-wage initiative signature verification and ballot placement timeline, a position upheld by the Pierce County Superior Court.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$19,795.53 (72 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$15,871.59 (32 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$19,795.53 (72 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$15,871.59 (32 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>WA State Democrats, Seattle</td><td>$4,000.00</td></tr>
-        <tr><td>Farmer Jimmie, Lakewood</td><td>$1,200.00</td></tr>
-        <tr><td>Farmer Jimmie, Lakewood</td><td>$1,200.00</td></tr>
-        <tr><td>Gardner Laura, Tacoma</td><td>$1,200.00</td></tr>
-        <tr><td>Hartman Suzanne, Wenatchee</td><td>$1,000.00</td></tr>
-        <tr><td>26th District Democrats, Port Orchard</td><td>$750.00</td></tr>
-        <tr><td>McCament J.J., TACOMA</td><td>$750.00</td></tr>
-        <tr><td>Tonn Sheri, Tacoma</td><td>$525.00</td></tr>
-        <tr><td>Northwest Media Allies, Puyallup</td><td>$385.35</td></tr>
-        <tr><td>Fantz-Hancock Rachael, Steilacoom</td><td>$300.00</td></tr>
+        <tr><th scope="row">WA State Democrats, Seattle</th><td>$4,000.00</td></tr>
+        <tr><th scope="row">Farmer Jimmie, Lakewood</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Farmer Jimmie, Lakewood</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Gardner Laura, Tacoma</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Hartman Suzanne, Wenatchee</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">26th District Democrats, Port Orchard</th><td>$750.00</td></tr>
+        <tr><th scope="row">McCament J.J., TACOMA</th><td>$750.00</td></tr>
+        <tr><th scope="row">Tonn Sheri, Tacoma</th><td>$525.00</td></tr>
+        <tr><th scope="row">Northwest Media Allies, Puyallup</th><td>$385.35</td></tr>
+        <tr><th scope="row">Fantz-Hancock Rachael, Steilacoom</th><td>$300.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>WA State Democrats</td><td>VoteBuilder records</td><td>$4,000.00</td></tr>
-        <tr><td>Progressive Strategies NW</td><td>Political consulting</td><td>$3,850.00</td></tr>
-        <tr><td>LINDA FARMER</td><td>State of WA - Candidacy filing fee</td><td>$1,703.57</td></tr>
-        <tr><td>Progressive Strategies NW</td><td>Web development</td><td>$1,266.15</td></tr>
-        <tr><td>WA State Democrats</td><td>VoteBuilder records</td><td>$1,000.00</td></tr>
-        <tr><td>Lo Andy</td><td>Treasury services</td><td>$756.50</td></tr>
-        <tr><td>Progressive Strategies NW</td><td>Xpress Sign Co - Yard sign stickers (450)</td><td>$619.31</td></tr>
-        <tr><td>Northwest Media Allies</td><td>Photography</td><td>$385.35</td></tr>
-        <tr><td>Pierce Co Television</td><td>Video Voters&#x27; Guide</td><td>$350.00</td></tr>
-        <tr><td>Lo Andy</td><td>Treasury services</td><td>$225.00</td></tr>
+        <tr><th scope="row">WA State Democrats</th><td>VoteBuilder records</td><td>$4,000.00</td></tr>
+        <tr><th scope="row">Progressive Strategies NW</th><td>Political consulting</td><td>$3,850.00</td></tr>
+        <tr><th scope="row">LINDA FARMER</th><td>State of WA - Candidacy filing fee</td><td>$1,703.57</td></tr>
+        <tr><th scope="row">Progressive Strategies NW</th><td>Web development</td><td>$1,266.15</td></tr>
+        <tr><th scope="row">WA State Democrats</th><td>VoteBuilder records</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">Lo Andy</th><td>Treasury services</td><td>$756.50</td></tr>
+        <tr><th scope="row">Progressive Strategies NW</th><td>Xpress Sign Co - Yard sign stickers (450)</td><td>$619.31</td></tr>
+        <tr><th scope="row">Northwest Media Allies</th><td>Photography</td><td>$385.35</td></tr>
+        <tr><th scope="row">Pierce Co Television</th><td>Video Voters&#x27; Guide</td><td>$350.00</td></tr>
+        <tr><th scope="row">Lo Andy</th><td>Treasury services</td><td>$225.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -157,7 +160,7 @@
     <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">1 sourced findings. All sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model. No T4 claims included.</p>
 
     <div class="finding moderate">
-      <h4>Finding 6.1: Named in litigation over Tacoma minimum-wage initiative timeline; court ruled her office followed the law <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 6.1: Named in litigation over Tacoma minimum-wage initiative timeline; court ruled her office followed the law <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Farmer&#x27;s office was named in a 2025 lawsuit (Cause No. 25-2-10781-2) brought by UFCW Local 367, Tacoma for All, and the Tacoma Democratic Socialists of America. The plaintiffs alleged Pierce County delayed verification of signatures for a City of Tacoma initiative to raise the minimum wage to $20 per hour, and that the delay pushed the measure past the deadline for the November ballot. The complaint stated the county did not begin validating signatures until 13 days after they were submitted. The Pierce County Superior Court found the Auditor&#x27;s Office acted with reasonable promptness in validating over 2,000 pages of signatures and properly followed state law, and ordered the measure onto the February 2026 ballot. The Court of Appeals, Division Two, later stayed that placement pending review.</dd>
@@ -188,16 +191,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

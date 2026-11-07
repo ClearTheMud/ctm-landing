@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Ty Stober</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,12 +60,12 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Ty Stober</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Vancouver, Clark County, WA (PDC committee address PO Box 433, Vancouver, WA 98666). Described as a 27-year Clark County resident who lives in the county with his husband.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Clark County Auditor is a county nonpartisan office; the August 4, 2026 primary ballot lists no party preference for any auditor candidate. The Vancouver City Council seat Stober holds is also nonpartisan. Stober is broadly identified in local coverage as a Democrat, and his campaign frames the auditor role as one that &quot;works best when it is accurate, professional, and nonpartisan.&quot;</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Ty Stober</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Vancouver, Clark County, WA (PDC committee address PO Box 433, Vancouver, WA 98666). Described as a 27-year Clark County resident who lives in the county with his husband.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Clark County Auditor is a county nonpartisan office; the August 4, 2026 primary ballot lists no party preference for any auditor candidate. The Vancouver City Council seat Stober holds is also nonpartisan. Stober is broadly identified in local coverage as a Democrat, and his campaign frames the auditor role as one that &quot;works best when it is accurate, professional, and nonpartisan.&quot;</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -77,59 +80,59 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td></td><td>Pending. Open seat: incumbent Auditor Greg Kimsey announced he would not seek re-election after roughly 27 years in office. Four candidates filed: Ty Stober (Vancouver City Councilmember), Sharon Wylie (state representative), Eileen Quiring O&#x27;Brien (former Clark County Councilor), and Mitchell Kelly (county staffer). Nonpartisan office; top two advance from the August 4, 2026 primary to the November 3, 2026 general election.</td><td>Research</td></tr>
-        <tr><td>2023</td><td></td><td>Won. Elected to current term on November 7, 2023 (term through 2027).</td><td>Research</td></tr>
-        <tr><td>2019</td><td></td><td>Won re-election.</td><td>Research</td></tr>
-        <tr><td>2015</td><td></td><td>Won. First elected in November 2015.</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td></td><td>Pending. Open seat: incumbent Auditor Greg Kimsey announced he would not seek re-election after roughly 27 years in office. Four candidates filed: Ty Stober (Vancouver City Councilmember), Sharon Wylie (state representative), Eileen Quiring O&#x27;Brien (former Clark County Councilor), and Mitchell Kelly (county staffer). Nonpartisan office; top two advance from the August 4, 2026 primary to the November 3, 2026 general election.</td><td>Research</td></tr>
+        <tr><th scope="row">2023</th><td></td><td>Won. Elected to current term on November 7, 2023 (term through 2027).</td><td>Research</td></tr>
+        <tr><th scope="row">2019</th><td></td><td>Won re-election.</td><td>Research</td></tr>
+        <tr><th scope="row">2015</th><td></td><td>Won. First elected in November 2015.</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$51,945.89 (190 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$58,661.12 (55 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$51,945.89 (190 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$58,661.12 (55 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>WA STATE DEMOCRATS, SEATTLE</td><td>$4,000.00</td></tr>
-        <tr><td>Ty Stober, Vancouver</td><td>$3,050.00</td></tr>
-        <tr><td>Beckley David, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>HANSEN JO MARIE, VANCOUVER</td><td>$1,200.00</td></tr>
-        <tr><td>HANSEN STEVE, VANCOUVER</td><td>$1,200.00</td></tr>
-        <tr><td>HELZER MICHELLE, CANBY</td><td>$1,200.00</td></tr>
-        <tr><td>Heatherington Jeff, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>LYNCH MICHAEL, VANCOUVER</td><td>$1,200.00</td></tr>
-        <tr><td>Zahler Richard, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>Zahler Richard, Vancouver</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">WA STATE DEMOCRATS, SEATTLE</th><td>$4,000.00</td></tr>
+        <tr><th scope="row">Ty Stober, Vancouver</th><td>$3,050.00</td></tr>
+        <tr><th scope="row">Beckley David, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">HANSEN JO MARIE, VANCOUVER</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">HANSEN STEVE, VANCOUVER</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">HELZER MICHELLE, CANBY</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Heatherington Jeff, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">LYNCH MICHAEL, VANCOUVER</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Zahler Richard, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Zahler Richard, Vancouver</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Hype Strategies</td><td>82,095 impressions</td><td>$5,746.65</td></tr>
-        <tr><td>Hype Strategies</td><td>Texting service</td><td>$4,200.00</td></tr>
-        <tr><td>WA STATE DEMOCRATS</td><td>Database access</td><td>$4,000.00</td></tr>
-        <tr><td>Wright Spring</td><td>Management and consulting services</td><td>$3,500.00</td></tr>
-        <tr><td>InSync Printing</td><td>5 4x8 signs, 50 24x48 signs, 2500 business cards, 50 t-shirts</td><td>$3,488.13</td></tr>
-        <tr><td>BAIN LEANNE</td><td>Management and consulting services</td><td>$3,000.00</td></tr>
-        <tr><td>ALTOM KERRI</td><td>Management and consulting services</td><td>$2,500.00</td></tr>
-        <tr><td>Wright Spring</td><td>Management services</td><td>$2,500.00</td></tr>
-        <tr><td>MOREL INK</td><td>10 4x8 signs and 25 yard signs</td><td>$2,454.00</td></tr>
-        <tr><td>BAIN LEANNE</td><td>call time manager</td><td>$2,100.00</td></tr>
+        <tr><th scope="row">Hype Strategies</th><td>82,095 impressions</td><td>$5,746.65</td></tr>
+        <tr><th scope="row">Hype Strategies</th><td>Texting service</td><td>$4,200.00</td></tr>
+        <tr><th scope="row">WA STATE DEMOCRATS</th><td>Database access</td><td>$4,000.00</td></tr>
+        <tr><th scope="row">Wright Spring</th><td>Management and consulting services</td><td>$3,500.00</td></tr>
+        <tr><th scope="row">InSync Printing</th><td>5 4x8 signs, 50 24x48 signs, 2500 business cards, 50 t-shirts</td><td>$3,488.13</td></tr>
+        <tr><th scope="row">BAIN LEANNE</th><td>Management and consulting services</td><td>$3,000.00</td></tr>
+        <tr><th scope="row">ALTOM KERRI</th><td>Management and consulting services</td><td>$2,500.00</td></tr>
+        <tr><th scope="row">Wright Spring</th><td>Management services</td><td>$2,500.00</td></tr>
+        <tr><th scope="row">MOREL INK</th><td>10 4x8 signs and 25 yard signs</td><td>$2,454.00</td></tr>
+        <tr><th scope="row">BAIN LEANNE</th><td>call time manager</td><td>$2,100.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -152,7 +155,7 @@
     <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">1 sourced findings. All sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model. No T4 claims included.</p>
 
     <div class="finding low">
-      <h4>Finding 5.1: PDC issued a written warning to Stober&#x27;s 2023 council campaign for accepting an over-limit contribution <span class="impact-badge impact-low">LOW</span></h4>
+      <h3>Finding 5.1: PDC issued a written warning to Stober&#x27;s 2023 council campaign for accepting an over-limit contribution <span class="impact-badge impact-low">LOW</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>On August 2, 2023, the Washington Public Disclosure Commission opened enforcement case 140460 after a complaint that Ty Stober&#x27;s Vancouver City Council campaign received and deposited a contribution above the statutory limit set by RCW 42.17A.405. The over-limit portion traced to a donor whose original 2021 gift was sized on the expectation that additional opponents would appear on the general election ballot. After the complaint, the campaign refunded the over-limit amount and amended the affected reports. PDC staff treated it as a minor violation and closed the case with a written warning, with no monetary penalty, noting the expectation that Stober would follow contribution limits in future campaigns.</dd>
@@ -182,16 +185,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

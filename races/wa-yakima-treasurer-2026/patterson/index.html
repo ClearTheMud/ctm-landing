@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Stephanie Patterson</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -64,46 +67,46 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$5,073.24 (39 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$4,174.56 (36 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$5,073.24 (39 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$4,174.56 (36 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Washington Association of Realtors PAC, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>Curtis Kyle, Yakima</td><td>$250.00</td></tr>
-        <tr><td>Gilmore John P, Yakima</td><td>$250.00</td></tr>
-        <tr><td>Gilmore Linda D, Yakima</td><td>$250.00</td></tr>
-        <tr><td>Thomson Bruce, Yakima</td><td>$250.00</td></tr>
-        <tr><td>Thomson Ilene, Yakima</td><td>$250.00</td></tr>
-        <tr><td>Wyckoff Court, Yakim</td><td>$250.00</td></tr>
-        <tr><td>Wyckoff Katie, Yakima</td><td>$250.00</td></tr>
-        <tr><td>Lloyd Lynn, Tonasket</td><td>$200.00</td></tr>
-        <tr><td>Thomson Ilene, Yakima</td><td>$176.68</td></tr>
+        <tr><th scope="row">Washington Association of Realtors PAC, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Curtis Kyle, Yakima</th><td>$250.00</td></tr>
+        <tr><th scope="row">Gilmore John P, Yakima</th><td>$250.00</td></tr>
+        <tr><th scope="row">Gilmore Linda D, Yakima</th><td>$250.00</td></tr>
+        <tr><th scope="row">Thomson Bruce, Yakima</th><td>$250.00</td></tr>
+        <tr><th scope="row">Thomson Ilene, Yakima</th><td>$250.00</td></tr>
+        <tr><th scope="row">Wyckoff Court, Yakim</th><td>$250.00</td></tr>
+        <tr><th scope="row">Wyckoff Katie, Yakima</th><td>$250.00</td></tr>
+        <tr><th scope="row">Lloyd Lynn, Tonasket</th><td>$200.00</td></tr>
+        <tr><th scope="row">Thomson Ilene, Yakima</th><td>$176.68</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Yakima County Auditor</td><td>Accounting, legal, regulatory compliance, etc.</td><td>$1,403.04</td></tr>
-        <tr><td>Sign Craft</td><td>Campaign signs and banners</td><td>$542.50</td></tr>
-        <tr><td>Stephanie Patterson</td><td>Loan payment</td><td>$500.00</td></tr>
-        <tr><td>Selah Journal</td><td>Selah Journal &amp; Toppenish Journal - July Advertising</td><td>$280.00</td></tr>
-        <tr><td>Selah Downtown Association</td><td>Event Sponsorship</td><td>$250.00</td></tr>
-        <tr><td>Thomson Ilene</td><td>Heavy Duty Wire Stakes</td><td>$176.68</td></tr>
-        <tr><td>Chouinard Amber</td><td>Custom Printed Campaign Shirts</td><td>$150.00</td></tr>
-        <tr><td>Vistaprint</td><td>1,000 qty 4.5x11 door hangers @ $0.12 each</td><td>$135.67</td></tr>
-        <tr><td>Stephanie Patterson</td><td>Campaign Banner</td><td>$110.00</td></tr>
-        <tr><td>Selah Community Days</td><td>Parade Entry</td><td>$100.00</td></tr>
+        <tr><th scope="row">Yakima County Auditor</th><td>Accounting, legal, regulatory compliance, etc.</td><td>$1,403.04</td></tr>
+        <tr><th scope="row">Sign Craft</th><td>Campaign signs and banners</td><td>$542.50</td></tr>
+        <tr><th scope="row">Stephanie Patterson</th><td>Loan payment</td><td>$500.00</td></tr>
+        <tr><th scope="row">Selah Journal</th><td>Selah Journal &amp; Toppenish Journal - July Advertising</td><td>$280.00</td></tr>
+        <tr><th scope="row">Selah Downtown Association</th><td>Event Sponsorship</td><td>$250.00</td></tr>
+        <tr><th scope="row">Thomson Ilene</th><td>Heavy Duty Wire Stakes</td><td>$176.68</td></tr>
+        <tr><th scope="row">Chouinard Amber</th><td>Custom Printed Campaign Shirts</td><td>$150.00</td></tr>
+        <tr><th scope="row">Vistaprint</th><td>1,000 qty 4.5x11 door hangers @ $0.12 each</td><td>$135.67</td></tr>
+        <tr><th scope="row">Stephanie Patterson</th><td>Campaign Banner</td><td>$110.00</td></tr>
+        <tr><th scope="row">Selah Community Days</th><td>Parade Entry</td><td>$100.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -117,14 +120,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Janice Flynn</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -64,46 +67,46 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$18,380.00 (34 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$25,047.46 (33 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$18,380.00 (34 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$25,047.46 (33 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Allred Austin, Royal City</td><td>$1,000.00</td></tr>
-        <tr><td>Allred Camille, Royal City</td><td>$1,000.00</td></tr>
-        <tr><td>Carter Cindy, Royal City</td><td>$1,000.00</td></tr>
-        <tr><td>Carter Rick, Royal City</td><td>$1,000.00</td></tr>
-        <tr><td>Marcusen Land Co LLC, Beverly</td><td>$1,000.00</td></tr>
-        <tr><td>Marcusen Sandra, George</td><td>$1,000.00</td></tr>
-        <tr><td>Royal Family Farming, Royal City</td><td>$1,000.00</td></tr>
-        <tr><td>Valley Vista Acres LLC, Royal City</td><td>$1,000.00</td></tr>
-        <tr><td>F Martinez Antonio, Quincy</td><td>$900.00</td></tr>
-        <tr><td>Martinez Abigail, Quincy</td><td>$830.00</td></tr>
+        <tr><th scope="row">Allred Austin, Royal City</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Allred Camille, Royal City</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Carter Cindy, Royal City</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Carter Rick, Royal City</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Marcusen Land Co LLC, Beverly</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Marcusen Sandra, George</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Royal Family Farming, Royal City</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Valley Vista Acres LLC, Royal City</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">F Martinez Antonio, Quincy</th><td>$900.00</td></tr>
+        <tr><th scope="row">Martinez Abigail, Quincy</th><td>$830.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Signs on the Cheap</td><td>Campaign Signs</td><td>$4,527.97</td></tr>
-        <tr><td>Signs on the Cheap</td><td>Campaign Signs (80 4&#x27;x8&#x27;) (100 18&quot;x24&quot;)</td><td>$4,527.97</td></tr>
-        <tr><td>Source One LLC</td><td>Source One ads June 16 - Aug 4, 2026</td><td>$1,731.20</td></tr>
-        <tr><td>Grant County Elections</td><td>Filing fees</td><td>$1,258.53</td></tr>
-        <tr><td>Wrist-Band.com</td><td>Wristbands</td><td>$1,045.49</td></tr>
-        <tr><td>Wrist-Band.com</td><td>Wristbands (10,200)</td><td>$1,045.49</td></tr>
-        <tr><td>Source One LLC</td><td>Facebook/Digital Ads (run 06/15/26-6/30/26)</td><td>$908.88</td></tr>
-        <tr><td>US Bank ViSA</td><td>Facebook Ads</td><td>$908.88</td></tr>
-        <tr><td>4allpromos</td><td>Beach Balls large (500)</td><td>$721.78</td></tr>
-        <tr><td>Grant County Fair</td><td>Campaign booth at county fair</td><td>$566.50</td></tr>
+        <tr><th scope="row">Signs on the Cheap</th><td>Campaign Signs</td><td>$4,527.97</td></tr>
+        <tr><th scope="row">Signs on the Cheap</th><td>Campaign Signs (80 4&#x27;x8&#x27;) (100 18&quot;x24&quot;)</td><td>$4,527.97</td></tr>
+        <tr><th scope="row">Source One LLC</th><td>Source One ads June 16 - Aug 4, 2026</td><td>$1,731.20</td></tr>
+        <tr><th scope="row">Grant County Elections</th><td>Filing fees</td><td>$1,258.53</td></tr>
+        <tr><th scope="row">Wrist-Band.com</th><td>Wristbands</td><td>$1,045.49</td></tr>
+        <tr><th scope="row">Wrist-Band.com</th><td>Wristbands (10,200)</td><td>$1,045.49</td></tr>
+        <tr><th scope="row">Source One LLC</th><td>Facebook/Digital Ads (run 06/15/26-6/30/26)</td><td>$908.88</td></tr>
+        <tr><th scope="row">US Bank ViSA</th><td>Facebook Ads</td><td>$908.88</td></tr>
+        <tr><th scope="row">4allpromos</th><td>Beach Balls large (500)</td><td>$721.78</td></tr>
+        <tr><th scope="row">Grant County Fair</th><td>Campaign booth at county fair</td><td>$566.50</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -117,14 +120,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

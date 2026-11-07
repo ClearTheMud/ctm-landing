@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Natalie Bornfleth</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Natalie Bornfleth</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Natalie Bornfleth</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -87,46 +90,46 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$22,975.86 (81 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$22,975.86 (26 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$22,975.86 (81 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$22,975.86 (26 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$1,831.00</td></tr>
-        <tr><td>Bornfleth Andrew, Mill Creek</td><td>$1,200.00</td></tr>
-        <tr><td>Kitsap Co Central Labor Cncl, Silverdale</td><td>$1,200.00</td></tr>
-        <tr><td>SEIU Healthcare 1199NW, Kent</td><td>$1,200.00</td></tr>
-        <tr><td>SEIU Local 925, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>WA Education Assn, Federal Way</td><td>$1,200.00</td></tr>
-        <tr><td>Win with Women, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Natalie Bornfleth</td><td>$1,046.86</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$975.00</td></tr>
-        <tr><td>WA State Democrats, Seattle</td><td>$800.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$1,831.00</td></tr>
+        <tr><th scope="row">Bornfleth Andrew, Mill Creek</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Kitsap Co Central Labor Cncl, Silverdale</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">SEIU Healthcare 1199NW, Kent</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">SEIU Local 925, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">WA Education Assn, Federal Way</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Win with Women, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Natalie Bornfleth</th><td>$1,046.86</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$975.00</td></tr>
+        <tr><th scope="row">WA State Democrats, Seattle</th><td>$800.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>MFStrategies LLC</td><td>Political consulting</td><td>$3,000.00</td></tr>
-        <tr><td>MFStrategies LLC</td><td>Political consulting</td><td>$3,000.00</td></tr>
-        <tr><td>MFStrategies LLC</td><td>Political consulting</td><td>$3,000.00</td></tr>
-        <tr><td>MFStrategies LLC</td><td>Political consulting</td><td>$3,000.00</td></tr>
-        <tr><td>Capitol City Press</td><td>Postage (3.6k)</td><td>$1,335.85</td></tr>
-        <tr><td>Natalie Bornfleth</td><td>MFStrategies LLC - Political consulting</td><td>$1,046.86</td></tr>
-        <tr><td>MFStrategies LLC</td><td>Text messaging (23.5k)</td><td>$1,042.34</td></tr>
-        <tr><td>Capitol City Press</td><td>Mailer (3.6k)</td><td>$1,027.49</td></tr>
-        <tr><td>WA State Democrats</td><td>VoteBuilder records</td><td>$1,000.00</td></tr>
-        <tr><td>WA State Democrats</td><td>VoteBuilder records</td><td>$800.00</td></tr>
+        <tr><th scope="row">MFStrategies LLC</th><td>Political consulting</td><td>$3,000.00</td></tr>
+        <tr><th scope="row">MFStrategies LLC</th><td>Political consulting</td><td>$3,000.00</td></tr>
+        <tr><th scope="row">MFStrategies LLC</th><td>Political consulting</td><td>$3,000.00</td></tr>
+        <tr><th scope="row">MFStrategies LLC</th><td>Political consulting</td><td>$3,000.00</td></tr>
+        <tr><th scope="row">Capitol City Press</th><td>Postage (3.6k)</td><td>$1,335.85</td></tr>
+        <tr><th scope="row">Natalie Bornfleth</th><td>MFStrategies LLC - Political consulting</td><td>$1,046.86</td></tr>
+        <tr><th scope="row">MFStrategies LLC</th><td>Text messaging (23.5k)</td><td>$1,042.34</td></tr>
+        <tr><th scope="row">Capitol City Press</th><td>Mailer (3.6k)</td><td>$1,027.49</td></tr>
+        <tr><th scope="row">WA State Democrats</th><td>VoteBuilder records</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">WA State Democrats</th><td>VoteBuilder records</td><td>$800.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -141,16 +144,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

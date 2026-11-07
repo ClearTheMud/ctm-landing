@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Jason Cummings</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -64,57 +67,57 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$28,353.59 (106 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$12,873.85 (76 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$28,353.59 (106 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$12,873.85 (76 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>JASON CUMMINGS, Edmonds</td><td>$2,509.46</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$1,515.00</td></tr>
-        <tr><td>CYMBALUK JODIE, TULALIP</td><td>$1,200.00</td></tr>
-        <tr><td>DEARIE NATALIE, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>DEARIE RAYMOND, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>HELD MICHAEL, KENMORE</td><td>$1,200.00</td></tr>
-        <tr><td>MASTER BUILDERS ASSC OF KING &amp; SNO COUNTIES - AFFORDABLE HOUSING COUNCIL, BELLEVUE</td><td>$1,200.00</td></tr>
-        <tr><td>TOURTELLOT JASON, EDMONDS</td><td>$1,200.00</td></tr>
-        <tr><td>URBAN BREE, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>JOHNSON CHERYL, GRANITE FALLS</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">JASON CUMMINGS, Edmonds</th><td>$2,509.46</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$1,515.00</td></tr>
+        <tr><th scope="row">CYMBALUK JODIE, TULALIP</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">DEARIE NATALIE, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">DEARIE RAYMOND, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">HELD MICHAEL, KENMORE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">MASTER BUILDERS ASSC OF KING &amp; SNO COUNTIES - AFFORDABLE HOUSING COUNCIL, BELLEVUE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">TOURTELLOT JASON, EDMONDS</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">URBAN BREE, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">JOHNSON CHERYL, GRANITE FALLS</th><td>$1,000.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>KATHERINE BOBMAN CONSULTING LLC</td><td>FUNDRAISING</td><td>$3,000.00</td></tr>
-        <tr><td>JASON CUMMINGS</td><td>SNOHOMISH COUNTY ELECTIONS (EVERETT) - FILING FEE</td><td>$2,509.46</td></tr>
-        <tr><td>KATHERINE BOBMAN CONSULTING LLC</td><td>FUNDRAISING</td><td>$1,000.00</td></tr>
-        <tr><td>ABBOT TAYLOR</td><td>TREASURY SERVICES</td><td>$500.00</td></tr>
-        <tr><td>KATHERINE BOBMAN CONSULTING LLC</td><td>JAN FUNDRAISING</td><td>$500.00</td></tr>
-        <tr><td>EVERETT TRANSIT</td><td>EVENT SPACE RENTAL</td><td>$415.00</td></tr>
-        <tr><td>ANEDOT</td><td>CREDIT CARD PROCESSING</td><td>$386.90</td></tr>
-        <tr><td>OVERNIGHT PRINTING SEATTLE</td><td>500 REMITS</td><td>$376.56</td></tr>
-        <tr><td>JASON CUMMINGS</td><td>COSTCO (SEATTLE) - DRINKS FOR EVENT</td><td>$375.22</td></tr>
-        <tr><td>KATHERINE BOBMAN CONSULTING LLC</td><td>QFC (BELLINGHAM) - FOOD FOR EVENT</td><td>$320.91</td></tr>
+        <tr><th scope="row">KATHERINE BOBMAN CONSULTING LLC</th><td>FUNDRAISING</td><td>$3,000.00</td></tr>
+        <tr><th scope="row">JASON CUMMINGS</th><td>SNOHOMISH COUNTY ELECTIONS (EVERETT) - FILING FEE</td><td>$2,509.46</td></tr>
+        <tr><th scope="row">KATHERINE BOBMAN CONSULTING LLC</th><td>FUNDRAISING</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">ABBOT TAYLOR</th><td>TREASURY SERVICES</td><td>$500.00</td></tr>
+        <tr><th scope="row">KATHERINE BOBMAN CONSULTING LLC</th><td>JAN FUNDRAISING</td><td>$500.00</td></tr>
+        <tr><th scope="row">EVERETT TRANSIT</th><td>EVENT SPACE RENTAL</td><td>$415.00</td></tr>
+        <tr><th scope="row">ANEDOT</th><td>CREDIT CARD PROCESSING</td><td>$386.90</td></tr>
+        <tr><th scope="row">OVERNIGHT PRINTING SEATTLE</th><td>500 REMITS</td><td>$376.56</td></tr>
+        <tr><th scope="row">JASON CUMMINGS</th><td>COSTCO (SEATTLE) - DRINKS FOR EVENT</td><td>$375.22</td></tr>
+        <tr><th scope="row">KATHERINE BOBMAN CONSULTING LLC</th><td>QFC (BELLINGHAM) - FOOD FOR EVENT</td><td>$320.91</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
       <h2><span class="section-num">3</span> Election History</h2>
-      <table>
-        <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+      <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+        <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
         <tbody>
-        <tr><td>2022</td><td>Prosecuting Attorney (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Snohomish Prosecuting Attorney (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Prosecuting Attorney (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Snohomish Prosecuting Attorney (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
         </tbody>
-      </table>
+      </table></div>
       <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
     </div>
     <div class="section">
@@ -128,14 +131,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

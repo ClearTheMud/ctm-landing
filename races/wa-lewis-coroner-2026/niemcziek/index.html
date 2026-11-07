@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Chelsie Niemcziek</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,13 +60,13 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Chelsie Niemcziek</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>PO BOX 105, Chehalis, WA 98532</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Independent</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Deputy Coroner, Lewis County Coroner&#x27;s Office (current as of May 2026). Part of the team recognized by Lewis County Commissioners for going &quot;above and beyond&quot; and showing &quot;professionalism, care, and respect for the individuals and families they serve.&quot;</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Chelsie Niemcziek</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>PO BOX 105, Chehalis, WA 98532</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Independent</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Deputy Coroner, Lewis County Coroner&#x27;s Office (current as of May 2026). Part of the team recognized by Lewis County Commissioners for going &quot;above and beyond&quot; and showing &quot;professionalism, care, and respect for the individuals and families they serve.&quot;</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -78,12 +81,12 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Lewis County Coroner</td><td>Pending, filed as Independent on Friday of filing week (May 2026)</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>Lewis County Coroner</td><td>Pending, filed as Independent on Friday of filing week (May 2026)</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -98,7 +101,7 @@
     <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">2 sourced findings. All sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model. No T4 claims included.</p>
 
     <div class="finding high">
-      <h4>Finding 4.1: Current deputy coroner running against the incumbent <span class="impact-badge impact-high">HIGH</span></h4>
+      <h3>Finding 4.1: Current deputy coroner running against the incumbent <span class="impact-badge impact-high">HIGH</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Niemcziek is a current Lewis County Deputy Coroner who filed to run against her direct supervisor, incumbent Coroner Warren McLeod. She is challenging the person who hired her and directly oversees her work.
@@ -117,7 +120,7 @@
     </div>
 
     <div class="finding moderate">
-      <h4>Finding 4.2: No PDC campaign finance activity reported <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 4.2: No PDC campaign finance activity reported <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>As of May 23, 2026, Niemcziek has filed no contribution or expenditure reports with the PDC, despite registering as a candidate. By contrast, fellow challenger Jessica Stickley has already raised $2,451.71 and launched a campaign website. Incumbent McLeod also shows no financial activity but benefits from 16 years of name recognition.
@@ -149,16 +152,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

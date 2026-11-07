@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Joshua Thompson</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Joshua Thompson</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Joshua Thompson</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -78,58 +81,58 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2023</td><td>City Of Ellensburg Council 4 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2021</td><td>City Of Ellensburg Council 2 (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2023</th><td>City Of Ellensburg Council 4 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2021</th><td>City Of Ellensburg Council 2 (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$28,745.00 (51 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$18,579.34 (30 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$28,745.00 (51 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$18,579.34 (30 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Kittitas County Republican Party, Ellensburg</td><td>$5,000.00</td></tr>
-        <tr><td>Joshua D. Thompson (Joshua Thompson), Ellensburg</td><td>$2,000.00</td></tr>
-        <tr><td>MENDEZ FERNANDO, Bellevue</td><td>$1,200.00</td></tr>
-        <tr><td>Marcusen Land Co. LLC, Beverly</td><td>$1,200.00</td></tr>
-        <tr><td>NFIB Washington PAC, Washington</td><td>$1,200.00</td></tr>
-        <tr><td>THOMPSON CYNTHIA, Ellensburg</td><td>$1,200.00</td></tr>
-        <tr><td>THOMPSON EVERETT, Ellensburg</td><td>$1,200.00</td></tr>
-        <tr><td>Washington Affordable Housing Council, Tumwater</td><td>$1,200.00</td></tr>
-        <tr><td>Washington Affordable Housing Council, Tumwater</td><td>$1,200.00</td></tr>
-        <tr><td>Washington Association of Realtors PAC, Olympia</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Kittitas County Republican Party, Ellensburg</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">Joshua D. Thompson (Joshua Thompson), Ellensburg</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">MENDEZ FERNANDO, Bellevue</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Marcusen Land Co. LLC, Beverly</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">NFIB Washington PAC, Washington</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">THOMPSON CYNTHIA, Ellensburg</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">THOMPSON EVERETT, Ellensburg</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Washington Affordable Housing Council, Tumwater</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Washington Affordable Housing Council, Tumwater</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Washington Association of Realtors PAC, Olympia</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Signs on the Cheap</td><td>4&#x27;x8&#x27; Signs (20 ct) and 4&#x27;x4&#x27; Signs (20 ct)</td><td>$2,194.26</td></tr>
-        <tr><td>Signs on the Cheap</td><td>4&#x27;x8&#x27; Signs (20 ct)</td><td>$1,704.54</td></tr>
-        <tr><td>VistaPrint</td><td>10,000 Doorhangers</td><td>$1,374.87</td></tr>
-        <tr><td>Souceone</td><td>Facebook advertising</td><td>$1,368.36</td></tr>
-        <tr><td>THE COPY SHOP</td><td>Yard signs (25 ct), 5&#x27;x3&#x27; Banner (1 ct), 500 Flyers</td><td>$1,122.92</td></tr>
-        <tr><td>Elect Northwest</td><td>Treasury services</td><td>$1,062.00</td></tr>
-        <tr><td>VistaPrint</td><td>5,000 Door Hangers</td><td>$872.05</td></tr>
-        <tr><td>Signs on the Cheap</td><td>4&#x27;x4&#x27; Signs (25 ct)</td><td>$836.58</td></tr>
-        <tr><td>Outpost Digital Solutions</td><td>Website development</td><td>$813.00</td></tr>
-        <tr><td>Signs on the Cheap</td><td>4&#x27;x4&#x27; Signs (40 ct)</td><td>$788.71</td></tr>
+        <tr><th scope="row">Signs on the Cheap</th><td>4&#x27;x8&#x27; Signs (20 ct) and 4&#x27;x4&#x27; Signs (20 ct)</td><td>$2,194.26</td></tr>
+        <tr><th scope="row">Signs on the Cheap</th><td>4&#x27;x8&#x27; Signs (20 ct)</td><td>$1,704.54</td></tr>
+        <tr><th scope="row">VistaPrint</th><td>10,000 Doorhangers</td><td>$1,374.87</td></tr>
+        <tr><th scope="row">Souceone</th><td>Facebook advertising</td><td>$1,368.36</td></tr>
+        <tr><th scope="row">THE COPY SHOP</th><td>Yard signs (25 ct), 5&#x27;x3&#x27; Banner (1 ct), 500 Flyers</td><td>$1,122.92</td></tr>
+        <tr><th scope="row">Elect Northwest</th><td>Treasury services</td><td>$1,062.00</td></tr>
+        <tr><th scope="row">VistaPrint</th><td>5,000 Door Hangers</td><td>$872.05</td></tr>
+        <tr><th scope="row">Signs on the Cheap</th><td>4&#x27;x4&#x27; Signs (25 ct)</td><td>$836.58</td></tr>
+        <tr><th scope="row">Outpost Digital Solutions</th><td>Website development</td><td>$813.00</td></tr>
+        <tr><th scope="row">Signs on the Cheap</th><td>4&#x27;x4&#x27; Signs (40 ct)</td><td>$788.71</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -144,16 +147,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

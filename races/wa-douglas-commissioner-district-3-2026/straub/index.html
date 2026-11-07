@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">MARC S. STRAUB</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -64,47 +67,47 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$2,241.33 (17 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$1,927.20 (15 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$2,241.33 (17 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$1,927.20 (15 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Feil Andy, East Wenatchee</td><td>$1,200.00</td></tr>
-        <tr><td>Skylstad Stephen, East Wenatchee</td><td>$1,200.00</td></tr>
-        <tr><td>Steinburg Kyle, Rock Island</td><td>$1,200.00</td></tr>
-        <tr><td>Vickery Ryan, East Wenatchee</td><td>$1,200.00</td></tr>
-        <tr><td>Marc Straub</td><td>$1,009.22</td></tr>
-        <tr><td>Smith Dan, East Wenatchee</td><td>$1,000.00</td></tr>
-        <tr><td>Beardslee Dan, East Wenatchee</td><td>$500.00</td></tr>
-        <tr><td>Dufenhorst David, Orondo</td><td>$200.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$200.00</td></tr>
-        <tr><td>Marc Straub</td><td>$160.60</td></tr>
+        <tr><th scope="row">Feil Andy, East Wenatchee</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Skylstad Stephen, East Wenatchee</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Steinburg Kyle, Rock Island</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Vickery Ryan, East Wenatchee</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Marc Straub</th><td>$1,009.22</td></tr>
+        <tr><th scope="row">Smith Dan, East Wenatchee</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Beardslee Dan, East Wenatchee</th><td>$500.00</td></tr>
+        <tr><th scope="row">Dufenhorst David, Orondo</th><td>$200.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$200.00</td></tr>
+        <tr><th scope="row">Marc Straub</th><td>$160.60</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Feil Andy</td><td>Contribution return</td><td>$1,200.00</td></tr>
-        <tr><td>Skylstad Stephen</td><td>Contribution return</td><td>$1,200.00</td></tr>
-        <tr><td>Steinburg Kyle</td><td>Contribution Return</td><td>$1,200.00</td></tr>
-        <tr><td>Vickery Ryan</td><td>Contribution return</td><td>$1,200.00</td></tr>
-        <tr><td>Marc Straub</td><td>Filing fees</td><td>$1,009.22</td></tr>
-        <tr><td>Smith Dan</td><td>Contribution return</td><td>$1,000.00</td></tr>
-        <tr><td>Super Cheap Signs</td><td>100 18”x24” Double-Sided Campaign Yard Signs
+        <tr><th scope="row">Feil Andy</th><td>Contribution return</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Skylstad Stephen</th><td>Contribution return</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Steinburg Kyle</th><td>Contribution Return</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Vickery Ryan</th><td>Contribution return</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Marc Straub</th><td>Filing fees</td><td>$1,009.22</td></tr>
+        <tr><th scope="row">Smith Dan</th><td>Contribution return</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">Super Cheap Signs</th><td>100 18”x24” Double-Sided Campaign Yard Signs
 12 12”x24” Vinyl Stickers “Re Elect&quot;</td><td>$515.83</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$170.04</td></tr>
-        <tr><td>Marc Straub</td><td>(12) 12” x 24” Stickers that state, “Re-Elect” to be applied to 4x8 Signs</td><td>$160.60</td></tr>
-        <tr><td>Marc Straub</td><td>Website domain</td><td>$71.51</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$170.04</td></tr>
+        <tr><th scope="row">Marc Straub</th><td>(12) 12” x 24” Stickers that state, “Re-Elect” to be applied to 4x8 Signs</td><td>$160.60</td></tr>
+        <tr><th scope="row">Marc Straub</th><td>Website domain</td><td>$71.51</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -118,14 +121,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

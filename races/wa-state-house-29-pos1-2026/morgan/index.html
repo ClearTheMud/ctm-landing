@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Melanie Morgan</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,17 +60,17 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Melanie Morgan</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Date of Birth</td><td>Melanie Virginia Morgan, born November 11, 1967 (age 58-59 in 2026)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Residence</td><td>Spanaway, Pierce County, Washington (29th Legislative District)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Military Service</td><td>U.S. Army veteran</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Family</td><td>Domestic violence and sexual assault survivor advocate; longtime Tacoma-area resident.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Education</td><td>Bachelor of Arts, Saint Martin&#x27;s University (Lacey, WA)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>Mortgage banker and safe-housing coordinator; housing advocate since 1997. Prior roles include Pierce County Housing Authority commissioner and a community healthcare board member.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Melanie Morgan</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Date of Birth</th><td>Melanie Virginia Morgan, born November 11, 1967 (age 58-59 in 2026)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Spanaway, Pierce County, Washington (29th Legislative District)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Military Service</th><td>U.S. Army veteran</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Family</th><td>Domestic violence and sexual assault survivor advocate; longtime Tacoma-area resident.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Education</th><td>Bachelor of Arts, Saint Martin&#x27;s University (Lacey, WA)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Mortgage banker and safe-housing coordinator; housing advocate since 1997. Prior roles include Pierce County Housing Authority commissioner and a community healthcare board member.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -98,75 +101,75 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2024</td><td>WA House LD-29 Pos. 1 (General)</td><td>Won (defeated Richard Miller)</td><td>Research</td></tr>
-        <tr><td>2022</td><td>WA House LD-29 Pos. 1 (General)</td><td>Won (defeated Brett Johnson)</td><td>Research</td></tr>
-        <tr><td>2020</td><td>WA House LD-29 Pos. 1 (General)</td><td>Won (defeated Koshin Fidaar)</td><td>Research</td></tr>
-        <tr><td>2018</td><td>WA House LD-29 Pos. 1 (General)</td><td>Won (defeated Republican Terry Harder; open seat after incumbent David Sawyer)</td><td>Research</td></tr>
-        <tr><td>2015</td><td>Franklin Pierce School District NO. 402 Director Dist. 1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>WA House LD-29 Pos. 1 (General)</td><td>Won (defeated Richard Miller)</td><td>Research</td></tr>
+        <tr><th scope="row">2022</th><td>WA House LD-29 Pos. 1 (General)</td><td>Won (defeated Brett Johnson)</td><td>Research</td></tr>
+        <tr><th scope="row">2020</th><td>WA House LD-29 Pos. 1 (General)</td><td>Won (defeated Koshin Fidaar)</td><td>Research</td></tr>
+        <tr><th scope="row">2018</th><td>WA House LD-29 Pos. 1 (General)</td><td>Won (defeated Republican Terry Harder; open seat after incumbent David Sawyer)</td><td>Research</td></tr>
+        <tr><th scope="row">2015</th><td>Franklin Pierce School District NO. 402 Director Dist. 1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Housing</td><td>Signature issue. Advocate for affordable and safe housing since 1997. Has worked on renter protections and housing supply as a Pierce County Housing Authority commissioner and legislator.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Racial Equity / Civil Rights</td><td>Prime sponsor of the CROWN Act (HB 2602, 2020), which bans race-based hair discrimination in Washington. Frames much of her legislative work around racial and economic equity.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Drug Policy / Community Reinvestment</td><td>Established the Community Reinvestment Account (2022-2023), directing roughly $200 million toward communities harmed by the enforcement of drug laws. Supports a reinvestment rather than incarceration approach.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Juneteenth / State Holidays</td><td>Prime sponsor of HB 1016 (2021) establishing Juneteenth as a Washington state legal holiday. Passed House 89-9 and Senate 47-1, signed by Gov. Inslee.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Agriculture and Natural Resources</td><td>Vice Chair of the House Agriculture and Natural Resources Committee. Promotes equity and diversity in the agricultural sector.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Housing</th><td>Signature issue. Advocate for affordable and safe housing since 1997. Has worked on renter protections and housing supply as a Pierce County Housing Authority commissioner and legislator.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Racial Equity / Civil Rights</th><td>Prime sponsor of the CROWN Act (HB 2602, 2020), which bans race-based hair discrimination in Washington. Frames much of her legislative work around racial and economic equity.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Drug Policy / Community Reinvestment</th><td>Established the Community Reinvestment Account (2022-2023), directing roughly $200 million toward communities harmed by the enforcement of drug laws. Supports a reinvestment rather than incarceration approach.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Juneteenth / State Holidays</th><td>Prime sponsor of HB 1016 (2021) establishing Juneteenth as a Washington state legal holiday. Passed House 89-9 and Senate 47-1, signed by Gov. Inslee.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Agriculture and Natural Resources</th><td>Vice Chair of the House Agriculture and Natural Resources Committee. Promotes equity and diversity in the agricultural sector.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$96,644.35 (145 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$57,819.23 (61 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$96,644.35 (145 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$57,819.23 (61 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>AMR Holdco Inc, Greenwood Village</td><td>$1,200.00</td></tr>
-        <tr><td>Agri Beef Mgmt, Boise</td><td>$1,200.00</td></tr>
-        <tr><td>Altria Client Services, Richmond</td><td>$1,200.00</td></tr>
-        <tr><td>Anheuser-Busch, Van Nuys</td><td>$1,200.00</td></tr>
-        <tr><td>Anheuser-Busch, Van Nuys</td><td>$1,200.00</td></tr>
-        <tr><td>Atkison Paula, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>Confederated Tribes of the Colville Reservation, Nespelem</td><td>$1,200.00</td></tr>
-        <tr><td>Confederated Tribes of the Colville Reservation, Nespelem</td><td>$1,200.00</td></tr>
-        <tr><td>Courage PAC, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Delta Dental, Seattle</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">AMR Holdco Inc, Greenwood Village</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Agri Beef Mgmt, Boise</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Altria Client Services, Richmond</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Anheuser-Busch, Van Nuys</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Anheuser-Busch, Van Nuys</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Atkison Paula, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Confederated Tribes of the Colville Reservation, Nespelem</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Confederated Tribes of the Colville Reservation, Nespelem</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Courage PAC, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Delta Dental, Seattle</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>CN4 Partners</td><td>USPS - Postage (20k)</td><td>$7,116.92</td></tr>
-        <tr><td>CN4 Partners</td><td>Political consulting</td><td>$6,552.96</td></tr>
-        <tr><td>CN4 Partners</td><td>Cornerstone Printing - Mailers (20k)</td><td>$5,430.12</td></tr>
-        <tr><td>Walen Amy</td><td>Civic frame - Video production</td><td>$4,800.00</td></tr>
-        <tr><td>Jenkins Kendra</td><td>Campaign manager</td><td>$3,934.00</td></tr>
-        <tr><td>Capitol City Press</td><td>Postage (12.9k)</td><td>$2,356.59</td></tr>
-        <tr><td>Sole Strategies</td><td>Poltiical consulting</td><td>$2,333.33</td></tr>
-        <tr><td>CN4 Partners</td><td>Kébreau Kreatives - Design services</td><td>$1,922.50</td></tr>
-        <tr><td>Gibbs Glynn</td><td>Canvasser</td><td>$1,566.00</td></tr>
-        <tr><td>Bennett Ryan</td><td>Campaign manager</td><td>$1,525.00</td></tr>
+        <tr><th scope="row">CN4 Partners</th><td>USPS - Postage (20k)</td><td>$7,116.92</td></tr>
+        <tr><th scope="row">CN4 Partners</th><td>Political consulting</td><td>$6,552.96</td></tr>
+        <tr><th scope="row">CN4 Partners</th><td>Cornerstone Printing - Mailers (20k)</td><td>$5,430.12</td></tr>
+        <tr><th scope="row">Walen Amy</th><td>Civic frame - Video production</td><td>$4,800.00</td></tr>
+        <tr><th scope="row">Jenkins Kendra</th><td>Campaign manager</td><td>$3,934.00</td></tr>
+        <tr><th scope="row">Capitol City Press</th><td>Postage (12.9k)</td><td>$2,356.59</td></tr>
+        <tr><th scope="row">Sole Strategies</th><td>Poltiical consulting</td><td>$2,333.33</td></tr>
+        <tr><th scope="row">CN4 Partners</th><td>Kébreau Kreatives - Design services</td><td>$1,922.50</td></tr>
+        <tr><th scope="row">Gibbs Glynn</th><td>Canvasser</td><td>$1,566.00</td></tr>
+        <tr><th scope="row">Bennett Ryan</th><td>Campaign manager</td><td>$1,525.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -181,16 +184,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

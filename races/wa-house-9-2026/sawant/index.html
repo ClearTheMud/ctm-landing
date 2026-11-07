@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -27,6 +28,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Kshama Sawant</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -55,16 +58,16 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Kshama Sawant</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Date of Birth</td><td>Born October 17, 1973, in Pune, India (age 52 in 2026)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Residence</td><td>Seattle, King County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Independent</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Family</td><td>Previously married to Vivek Sawant (separated by 2013); married Calvin Priest in 2016.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Education</td><td>Bachelor&#x27;s in computer science, University of Mumbai (1994); M.A. and Ph.D. in economics, North Carolina State University (2009). Dissertation on elderly labor supply in a rural developing economy.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>Software engineer (roughly 18 months) before graduate study. Economics instructor at Seattle Central College, Seattle University, and University of Washington Tacoma; visiting assistant professor at Washington and Lee University.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Kshama Sawant</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Date of Birth</th><td>Born October 17, 1973, in Pune, India (age 52 in 2026)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Seattle, King County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Independent</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Family</th><td>Previously married to Vivek Sawant (separated by 2013); married Calvin Priest in 2016.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Education</th><td>Bachelor&#x27;s in computer science, University of Mumbai (1994); M.A. and Ph.D. in economics, North Carolina State University (2009). Dissertation on elderly labor supply in a rural developing economy.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Software engineer (roughly 18 months) before graduate study. Economics instructor at Seattle Central College, Seattle University, and University of Washington Tacoma; visiting assistant professor at Washington and Lee University.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -89,371 +92,371 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>WA-9 U.S. House (Primary, Aug 4)</td><td>Running as an independent against Democratic incumbent Adam Smith. Other filers include Melissa Chaudhry, Janis Clark, and C. Mark Greene.</td><td>Research</td></tr>
-        <tr><td>2021</td><td>Seattle City Council District 3 (Recall election, December 7)</td><td>Recall failed; Sawant retained her seat by 310 votes</td><td>Research</td></tr>
-        <tr><td>2019</td><td>Seattle City Council District 3</td><td>Won (51.8 percent); Amazon spent about $1.5 million opposing her</td><td>Research</td></tr>
-        <tr><td>2015</td><td>Seattle City Council District 3</td><td>Won (56 percent)</td><td>Research</td></tr>
-        <tr><td>2013</td><td>Seattle City Council Position 2 (at-large)</td><td>Won (50.7 percent), sworn in January 6, 2014</td><td>Research</td></tr>
-        <tr><td>2012</td><td>WA House of Representatives (43rd LD)</td><td>Lost (about 29 percent)</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>WA-9 U.S. House (Primary, Aug 4)</td><td>Running as an independent against Democratic incumbent Adam Smith. Other filers include Melissa Chaudhry, Janis Clark, and C. Mark Greene.</td><td>Research</td></tr>
+        <tr><th scope="row">2021</th><td>Seattle City Council District 3 (Recall election, December 7)</td><td>Recall failed; Sawant retained her seat by 310 votes</td><td>Research</td></tr>
+        <tr><th scope="row">2019</th><td>Seattle City Council District 3</td><td>Won (51.8 percent); Amazon spent about $1.5 million opposing her</td><td>Research</td></tr>
+        <tr><th scope="row">2015</th><td>Seattle City Council District 3</td><td>Won (56 percent)</td><td>Research</td></tr>
+        <tr><th scope="row">2013</th><td>Seattle City Council Position 2 (at-large)</td><td>Won (50.7 percent), sworn in January 6, 2014</td><td>Research</td></tr>
+        <tr><th scope="row">2012</th><td>WA House of Representatives (43rd LD)</td><td>Lost (about 29 percent)</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Minimum Wage</td><td>Calls for a $25 federal minimum wage. Led the 2014 effort that made Seattle the first major U.S. city to adopt a $15 minimum wage.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Healthcare</td><td>Campaigns for Medicare for All and universal healthcare. Backs a proposed Seattle ballot measure to tax the largest corporations to fund free citywide healthcare.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Israel and Gaza</td><td>Calls for a halt to U.S. military aid to Israel and frames her run as an antiwar, anti-genocide campaign. Criticizes incumbent Adam Smith for votes funding Israeli military operations.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Corporate Taxation</td><td>Advocates taxing large corporations to fund social services. Championed Seattle&#x27;s 2020 JumpStart payroll tax on large employers and earlier &quot;Tax Amazon&quot; efforts.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Housing and Rent Control</td><td>Supports rent control. Sponsored the 2016 &quot;Carl Haglund law&quot; setting rental housing maintenance standards before rent increases.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Minimum Wage</th><td>Calls for a $25 federal minimum wage. Led the 2014 effort that made Seattle the first major U.S. city to adopt a $15 minimum wage.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Healthcare</th><td>Campaigns for Medicare for All and universal healthcare. Backs a proposed Seattle ballot measure to tax the largest corporations to fund free citywide healthcare.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Israel and Gaza</th><td>Calls for a halt to U.S. military aid to Israel and frames her run as an antiwar, anti-genocide campaign. Criticizes incumbent Adam Smith for votes funding Israeli military operations.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Corporate Taxation</th><td>Advocates taxing large corporations to fund social services. Championed Seattle&#x27;s 2020 JumpStart payroll tax on large employers and earlier &quot;Tax Amazon&quot; efforts.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Housing and Rent Control</th><td>Supports rent control. Sponsored the 2016 &quot;Carl Haglund law&quot; setting rental housing maintenance standards before rent increases.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$754,221.76</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Total Spent</td><td>$752,357.74</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Total Raised</th><td>$754,221.76</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Total Spent</th><td>$752,357.74</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">Source: Federal Election Commission.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>LEAF, JOHN</td><td>$13,500.00</td></tr>
-        <tr><td>JIMENEZ, MAURICIO</td><td>$6,255.68</td></tr>
-        <tr><td>THIEL, JASON</td><td>$5,977.29</td></tr>
-        <tr><td>HART, GWENDOLYN</td><td>$4,600.00</td></tr>
-        <tr><td>BOLZ, LAURA</td><td>$4,375.00</td></tr>
-        <tr><td>STEWART, MATTHEW</td><td>$4,245.00</td></tr>
-        <tr><td>MCCLURE, LUKE</td><td>$3,692.29</td></tr>
-        <tr><td>CAMPBELL, PETER</td><td>$3,651.48</td></tr>
-        <tr><td>SCOTT, MICHAEL</td><td>$3,541.44</td></tr>
-        <tr><td>VITZ-WONG, MICHAEL</td><td>$3,532.24</td></tr>
-        <tr><td>LEMMER, DAVID</td><td>$3,500.00</td></tr>
-        <tr><td>REDDY, SHILPA</td><td>$3,500.00</td></tr>
-        <tr><td>PAULIS, RICARDAS</td><td>$3,500.00</td></tr>
-        <tr><td>BETITA, ANDRE</td><td>$3,500.00</td></tr>
-        <tr><td>PONATH, CHRISTOPH</td><td>$3,500.00</td></tr>
-        <tr><td>KALHAN, AJAY</td><td>$3,500.00</td></tr>
-        <tr><td>HAMILTON, LAWRENCE</td><td>$3,500.00</td></tr>
-        <tr><td>CAMPBELL, MARC</td><td>$3,500.00</td></tr>
-        <tr><td>ANDERSON, DAVID</td><td>$3,500.00</td></tr>
-        <tr><td>WAGDE, RASHMI</td><td>$3,500.00</td></tr>
-        <tr><td>SAARAL, PRIYA</td><td>$3,500.00</td></tr>
-        <tr><td>NICHOLS, ERIN</td><td>$3,500.00</td></tr>
-        <tr><td>MUFTI, YASSER</td><td>$3,500.00</td></tr>
-        <tr><td>KAUSHIK, RAGHAV</td><td>$3,500.00</td></tr>
-        <tr><td>IANNONE, PETER</td><td>$3,500.00</td></tr>
-        <tr><td>GROSSMAN, EMILY</td><td>$3,500.00</td></tr>
-        <tr><td>BUTTERFIELD, SEAN</td><td>$3,500.00</td></tr>
-        <tr><td>FISHER, SUE</td><td>$3,500.00</td></tr>
-        <tr><td>WAGDE, ANIL HIRAMAN</td><td>$3,500.00</td></tr>
-        <tr><td>GIBSON, PATRICK</td><td>$3,500.00</td></tr>
-        <tr><td>ROBERTS, JOHN</td><td>$3,500.00</td></tr>
-        <tr><td>MAHAN, GABRIEL</td><td>$3,498.00</td></tr>
-        <tr><td>GARLAND, BLAIR</td><td>$3,475.00</td></tr>
-        <tr><td>HENDERSON, SHIRLEY</td><td>$3,475.00</td></tr>
-        <tr><td>NGUYEN, LONG</td><td>$3,464.98</td></tr>
-        <tr><td>BANAHAN, STACEY</td><td>$3,437.00</td></tr>
-        <tr><td>SAMADI, AHMAD</td><td>$3,436.65</td></tr>
-        <tr><td>MALIK, OSMAN</td><td>$3,420.88</td></tr>
-        <tr><td>RICE, PERRY</td><td>$3,416.61</td></tr>
-        <tr><td>TURNER, MOSHI</td><td>$3,400.00</td></tr>
-        <tr><td>ROBALIK, ANTHONY</td><td>$3,400.00</td></tr>
-        <tr><td>BITO, JOHN</td><td>$3,400.00</td></tr>
-        <tr><td>RAIKEN, NANCY</td><td>$3,400.00</td></tr>
-        <tr><td>HUTCHINSON, AMY</td><td>$3,393.32</td></tr>
-        <tr><td>BARE, JUSTIN</td><td>$3,375.00</td></tr>
-        <tr><td>BATTLE, JASMINE</td><td>$3,359.24</td></tr>
-        <tr><td>BENNETT, DAKOTA</td><td>$3,290.00</td></tr>
-        <tr><td>PONATH, SONJA</td><td>$3,290.00</td></tr>
-        <tr><td>PATEL, NEAL</td><td>$3,143.46</td></tr>
-        <tr><td>HADDAD, DANY</td><td>$3,130.60</td></tr>
-        <tr><td>BAYZE, MARSELA</td><td>$3,129.00</td></tr>
-        <tr><td>WRIGHT, JOAN</td><td>$3,118.76</td></tr>
-        <tr><td>MELOY, MATTHEW</td><td>$3,116.94</td></tr>
-        <tr><td>BEILSTEIN, MIKE</td><td>$3,062.00</td></tr>
-        <tr><td>BACHUS, ARTHUR</td><td>$3,025.00</td></tr>
-        <tr><td>SMITH, SUE</td><td>$3,000.00</td></tr>
-        <tr><td>YASI, KATHERINE</td><td>$3,000.00</td></tr>
-        <tr><td>HARVEY, AMANDA</td><td>$3,000.00</td></tr>
-        <tr><td>DIXON, DANIEL</td><td>$2,990.00</td></tr>
-        <tr><td>CAPEHART, BETT</td><td>$2,800.00</td></tr>
-        <tr><td>HOTES, PEGGY</td><td>$2,800.00</td></tr>
-        <tr><td>FOGARTY, KENNETH</td><td>$2,700.00</td></tr>
-        <tr><td>VEMURI, SRIDHAR</td><td>$2,554.62</td></tr>
-        <tr><td>SWAN, LOGAN</td><td>$2,500.00</td></tr>
-        <tr><td>ALI, AMER</td><td>$2,354.36</td></tr>
-        <tr><td>PARKINSON, BENJAMIN MICHAEL</td><td>$2,300.00</td></tr>
-        <tr><td>ATTAR, STEPHANIE</td><td>$2,241.44</td></tr>
-        <tr><td>LEONARD, KENN</td><td>$2,222.11</td></tr>
-        <tr><td>CATTERSON, LAURA</td><td>$2,150.00</td></tr>
-        <tr><td>MAHMOOD, SUHAIL</td><td>$2,082.88</td></tr>
-        <tr><td>AWASARMOL, MILIND</td><td>$2,082.57</td></tr>
-        <tr><td>STIRLING, NIKO</td><td>$2,041.44</td></tr>
-        <tr><td>SCHAEFER, RUTH</td><td>$2,020.88</td></tr>
-        <tr><td>SHAW, STEPHAN</td><td>$2,000.00</td></tr>
-        <tr><td>RUFFALO, MARK</td><td>$2,000.00</td></tr>
-        <tr><td>ZALEWSKI, MARCIN</td><td>$2,000.00</td></tr>
-        <tr><td>UDDIN, JAMAL</td><td>$2,000.00</td></tr>
-        <tr><td>POWELSON, LAWRENCE H</td><td>$2,000.00</td></tr>
-        <tr><td>LILE, CHRISTOPHER</td><td>$1,789.00</td></tr>
-        <tr><td>IRLE, CHRISTOPHER</td><td>$1,789.00</td></tr>
-        <tr><td>LOEB, SAMUEL</td><td>$1,750.00</td></tr>
-        <tr><td>WALLACE, DOMINIC</td><td>$1,604.09</td></tr>
-        <tr><td>RAMNI, SUJATHA</td><td>$1,582.09</td></tr>
-        <tr><td>ROSENBLUM, JONATHAN</td><td>$1,562.00</td></tr>
-        <tr><td>BERNHAUT, STEVEN</td><td>$1,500.00</td></tr>
-        <tr><td>POWELSON, LAWRENCE</td><td>$1,500.00</td></tr>
-        <tr><td>MARINO, ROBERT</td><td>$1,500.00</td></tr>
-        <tr><td>SAWYER, MARK</td><td>$1,361.00</td></tr>
-        <tr><td>KULIGOWSKI, LUKAS</td><td>$1,320.88</td></tr>
-        <tr><td>CAMBRON, MELANIE</td><td>$1,316.61</td></tr>
-        <tr><td>CULLEN, JOANNA</td><td>$1,300.00</td></tr>
-        <tr><td>GREENE, ALEX</td><td>$1,250.00</td></tr>
-        <tr><td>NICHOLSON, J B</td><td>$1,200.00</td></tr>
-        <tr><td>KINGSTON, PALU</td><td>$1,054.62</td></tr>
-        <tr><td>MUHAMMAD, SHAZIA</td><td>$1,041.76</td></tr>
-        <tr><td>PHOUTHAVONG, SISO</td><td>$1,041.44</td></tr>
-        <tr><td>JOHNSON, DARYL</td><td>$1,041.44</td></tr>
-        <tr><td>WITTHUHN, JEFF</td><td>$1,041.44</td></tr>
-        <tr><td>SUDLOW, MARCI</td><td>$1,041.44</td></tr>
-        <tr><td>SELLES, DENNIS</td><td>$1,041.44</td></tr>
-        <tr><td>KUMAR, RAM</td><td>$1,027.47</td></tr>
-        <tr><td>BROOKBANK, DAVID</td><td>$1,020.88</td></tr>
-        <tr><td>HAUSER, PATRICIA</td><td>$1,000.00</td></tr>
-        <tr><td>DANIELS, SAADIQ</td><td>$1,000.00</td></tr>
-        <tr><td>BROWN, ROB AND APRIL</td><td>$1,000.00</td></tr>
-        <tr><td>YING, ANGELA</td><td>$1,000.00</td></tr>
-        <tr><td>HORNSTEIN, NORBERT</td><td>$1,000.00</td></tr>
-        <tr><td>GRAY, BETHANY</td><td>$1,000.00</td></tr>
-        <tr><td>SKOVRAN, JACOB</td><td>$1,000.00</td></tr>
-        <tr><td>HUTSON, ETHAN</td><td>$1,000.00</td></tr>
-        <tr><td>HERRMANN, WILLIAM</td><td>$1,000.00</td></tr>
-        <tr><td>SIKANDER, JAVED</td><td>$1,000.00</td></tr>
-        <tr><td>SHAHNAZ, AHEMED</td><td>$1,000.00</td></tr>
-        <tr><td>IORIO, DANA</td><td>$1,000.00</td></tr>
-        <tr><td>DYER, ERIK</td><td>$1,000.00</td></tr>
-        <tr><td>ANGIOLA, GINA</td><td>$1,000.00</td></tr>
-        <tr><td>JIT, CHARAN</td><td>$1,000.00</td></tr>
-        <tr><td>GOLDMAN, STEVEN</td><td>$1,000.00</td></tr>
-        <tr><td>SCHU, EMILY</td><td>$1,000.00</td></tr>
-        <tr><td>GUPTA, PRIYATI</td><td>$1,000.00</td></tr>
-        <tr><td>SHAMBHARKAR, MANO</td><td>$1,000.00</td></tr>
-        <tr><td>SRINIVASAN, VIBHA</td><td>$1,000.00</td></tr>
-        <tr><td>HOPKINS, KEVIN</td><td>$1,000.00</td></tr>
-        <tr><td>PARKINSON, BEN</td><td>$1,000.00</td></tr>
-        <tr><td>KASHYAP, MANASI</td><td>$850.00</td></tr>
-        <tr><td>SMITH, JACOB</td><td>$816.61</td></tr>
-        <tr><td>SAWANT, KSHAMA</td><td>$777.47</td></tr>
-        <tr><td>DODGE, VINCENT</td><td>$763.90</td></tr>
-        <tr><td>BOYD, LINDA</td><td>$750.00</td></tr>
-        <tr><td>MONTEQUIN, DAVID</td><td>$682.64</td></tr>
-        <tr><td>WIDMER, ALEXANDER G</td><td>$617.00</td></tr>
-        <tr><td>O&#x27;HALLORAN, JAMES</td><td>$600.05</td></tr>
-        <tr><td>LEVENSTEIN, SUSAN</td><td>$600.00</td></tr>
-        <tr><td>CORNEY III, ALFAROH</td><td>$597.75</td></tr>
-        <tr><td>WILDE, NICK</td><td>$527.47</td></tr>
-        <tr><td>PERUNOVIC, SENA</td><td>$527.47</td></tr>
-        <tr><td>LEIKA, ZU</td><td>$527.47</td></tr>
-        <tr><td>WOJAHN, RIAN</td><td>$527.47</td></tr>
-        <tr><td>LUCAS, JACK</td><td>$527.47</td></tr>
-        <tr><td>HATCHERSON, PERCY</td><td>$527.47</td></tr>
-        <tr><td>CALL, JASON</td><td>$527.47</td></tr>
-        <tr><td>TABORA, JOSE E</td><td>$527.47</td></tr>
-        <tr><td>BLACKETT, HILL</td><td>$520.88</td></tr>
-        <tr><td>MAHEDIA, MONALI</td><td>$520.88</td></tr>
-        <tr><td>GRAVES, KENNETH</td><td>$520.88</td></tr>
-        <tr><td>ZELTZER, STEVE</td><td>$520.88</td></tr>
-        <tr><td>ROBINSON, HALLE</td><td>$520.88</td></tr>
-        <tr><td>HADDAD, MICHEL G.</td><td>$520.88</td></tr>
-        <tr><td>GREEN, ANITA</td><td>$520.88</td></tr>
-        <tr><td>FRAGER, TOBY</td><td>$520.88</td></tr>
-        <tr><td>DIXON, DON</td><td>$510.00</td></tr>
-        <tr><td>PRETE, KYLE</td><td>$500.00</td></tr>
-        <tr><td>MELOY, RILEY</td><td>$500.00</td></tr>
-        <tr><td>MELOY, ANNABELLE</td><td>$500.00</td></tr>
-        <tr><td>MCARTHUR, EMILY</td><td>$500.00</td></tr>
-        <tr><td>JONES, NORRECE</td><td>$500.00</td></tr>
-        <tr><td>HOBBS, RICHARD</td><td>$500.00</td></tr>
-        <tr><td>HAMILTON, JAMIE</td><td>$500.00</td></tr>
-        <tr><td>FOLTZ, LISA</td><td>$500.00</td></tr>
-        <tr><td>ECKMAN, CLIFFORD G</td><td>$500.00</td></tr>
-        <tr><td>DEBAKER, STUART</td><td>$500.00</td></tr>
-        <tr><td>BROWN, ZACHARY</td><td>$500.00</td></tr>
-        <tr><td>ALONZO, ROSLYN</td><td>$500.00</td></tr>
-        <tr><td>TROLLSPLINTER, KESTREL</td><td>$500.00</td></tr>
-        <tr><td>SMITH, DEBORAH</td><td>$500.00</td></tr>
-        <tr><td>RITZOW, SOLOMON</td><td>$500.00</td></tr>
-        <tr><td>PHILLIPS, SAMUEL</td><td>$500.00</td></tr>
-        <tr><td>PAMATIAN, EDWARD</td><td>$500.00</td></tr>
-        <tr><td>OUSLEY, TYLER</td><td>$500.00</td></tr>
-        <tr><td>MATTHIS, LESLIE</td><td>$500.00</td></tr>
-        <tr><td>JEFFREY, ROBERT</td><td>$500.00</td></tr>
-        <tr><td>DAVID, EMUNA</td><td>$500.00</td></tr>
-        <tr><td>BOWES, ROBERT</td><td>$500.00</td></tr>
-        <tr><td>TREVINO, JORDAN</td><td>$500.00</td></tr>
-        <tr><td>SMITH, NICOLAS</td><td>$500.00</td></tr>
-        <tr><td>SINGH, HARCHAND</td><td>$500.00</td></tr>
-        <tr><td>SCHOONMAKER, MARK</td><td>$500.00</td></tr>
-        <tr><td>JADHAV, RAMESH</td><td>$500.00</td></tr>
-        <tr><td>GRAHAM, STEPHEN</td><td>$500.00</td></tr>
-        <tr><td>GILBERT, CATHY</td><td>$500.00</td></tr>
-        <tr><td>EL-HAGRASSY, MIRRET</td><td>$500.00</td></tr>
-        <tr><td>EDELMAN, BRYON</td><td>$500.00</td></tr>
-        <tr><td>CANFIELD, DONALD</td><td>$500.00</td></tr>
-        <tr><td>AMRA, RAWAN</td><td>$500.00</td></tr>
-        <tr><td>STONER, KYLE</td><td>$500.00</td></tr>
-        <tr><td>STONE, JEREMY</td><td>$500.00</td></tr>
-        <tr><td>SABNIS, GAURAV</td><td>$500.00</td></tr>
-        <tr><td>O&#x27;KEEFE, MARK</td><td>$500.00</td></tr>
-        <tr><td>MARTINEZ, HARIETTE</td><td>$500.00</td></tr>
-        <tr><td>LATHROP, ANDREW</td><td>$500.00</td></tr>
-        <tr><td>KRAUS, HENRY</td><td>$500.00</td></tr>
-        <tr><td>KLEINMAN, MICHAEL</td><td>$500.00</td></tr>
-        <tr><td>JAHSHAN, JIBRAN</td><td>$500.00</td></tr>
-        <tr><td>HERZMARK, JAY</td><td>$500.00</td></tr>
-        <tr><td>HARRAST, PORTER</td><td>$500.00</td></tr>
-        <tr><td>BROWN, JONATHAN</td><td>$500.00</td></tr>
-        <tr><td>BRIDGES, TIFFANY</td><td>$500.00</td></tr>
-        <tr><td>BETITA, ANTON</td><td>$500.00</td></tr>
-        <tr><td>BETITA, AMBER</td><td>$500.00</td></tr>
-        <tr><td>BENOIT, JOHN</td><td>$500.00</td></tr>
-        <tr><td>ATKINSON, ARLEIGH</td><td>$500.00</td></tr>
-        <tr><td>ZONDERVAN, QUINTON</td><td>$500.00</td></tr>
-        <tr><td>VANDER LINDEN, ABBY</td><td>$500.00</td></tr>
-        <tr><td>RAUCH, CONNOR</td><td>$500.00</td></tr>
-        <tr><td>PARKS, JOHN</td><td>$500.00</td></tr>
-        <tr><td>MOORE, DANIEL</td><td>$500.00</td></tr>
-        <tr><td>MAGONE, NATHANIEL</td><td>$500.00</td></tr>
-        <tr><td>JHA, ALEKH</td><td>$500.00</td></tr>
-        <tr><td>JAMES, SIBYL</td><td>$500.00</td></tr>
-        <tr><td>FERGUSON, SANDRA A</td><td>$500.00</td></tr>
-        <tr><td>ELGHANDOUR, RAMI</td><td>$500.00</td></tr>
-        <tr><td>CHEN-HAYES, STUART</td><td>$500.00</td></tr>
-        <tr><td>BERGSTEN, CHRIS</td><td>$500.00</td></tr>
-        <tr><td>AUGUST, BEN</td><td>$500.00</td></tr>
-        <tr><td>WITTENBREDER, ERNEST</td><td>$500.00</td></tr>
-        <tr><td>STOCCO, GABRIEL</td><td>$500.00</td></tr>
-        <tr><td>LUXENBERG, NINA</td><td>$500.00</td></tr>
-        <tr><td>KAZI, SABIHA</td><td>$500.00</td></tr>
-        <tr><td>JOHNSON, THOMAS</td><td>$500.00</td></tr>
-        <tr><td>IBRAHIM, IBRAHIM</td><td>$500.00</td></tr>
-        <tr><td>HAYNIE, ROSCOE</td><td>$500.00</td></tr>
-        <tr><td>GRANADA, MICHAEL</td><td>$500.00</td></tr>
-        <tr><td>DAHLGREN, DAVID</td><td>$500.00</td></tr>
-        <tr><td>ARNAOUT, RIMA</td><td>$500.00</td></tr>
-        <tr><td>HALE, CHRISTOPHER</td><td>$500.00</td></tr>
-        <tr><td>BRKANAC, ZORAN</td><td>$500.00</td></tr>
-        <tr><td>BROWN, SHEILA</td><td>$500.00</td></tr>
-        <tr><td>WAGNER, ARTHUR</td><td>$500.00</td></tr>
-        <tr><td>RING, ADIN</td><td>$500.00</td></tr>
-        <tr><td>SANDYS, JEFF</td><td>$437.59</td></tr>
-        <tr><td>TANAKA, PAULINE</td><td>$422.04</td></tr>
-        <tr><td>WRIGHT, SCOTT</td><td>$400.00</td></tr>
-        <tr><td>MILLER, JOHN</td><td>$400.00</td></tr>
-        <tr><td>BOUDEN, CLEMENT</td><td>$361.00</td></tr>
-        <tr><td>MOXLEY, LESLEY</td><td>$350.14</td></tr>
-        <tr><td>PAVLOVICZ, RYAN</td><td>$350.00</td></tr>
-        <tr><td>PITTS, T.J.</td><td>$316.61</td></tr>
-        <tr><td>URBAN, WILLIAM</td><td>$312.65</td></tr>
-        <tr><td>DERDER, SABRI</td><td>$312.65</td></tr>
-        <tr><td>OKUZUMI, MARGARET</td><td>$300.00</td></tr>
-        <tr><td>WURZ, NINA</td><td>$300.00</td></tr>
-        <tr><td>FELICIANO, SIGRID</td><td>$300.00</td></tr>
-        <tr><td>ARNOLD, WILLIAM</td><td>$300.00</td></tr>
-        <tr><td>ORR, TUCKER</td><td>$300.00</td></tr>
-        <tr><td>BETITA, ANNA</td><td>$300.00</td></tr>
-        <tr><td>RAMASUBRAMANIAN, KANNAN</td><td>$300.00</td></tr>
-        <tr><td>KUMAR, SANJAY</td><td>$300.00</td></tr>
-        <tr><td>GORDAN, DAVID</td><td>$300.00</td></tr>
-        <tr><td>BERTUCCI, WILLIAM</td><td>$300.00</td></tr>
-        <tr><td>MARKS, STEPHEN</td><td>$300.00</td></tr>
-        <tr><td>KINCH, KAREN</td><td>$300.00</td></tr>
-        <tr><td>KINCH, JIM</td><td>$300.00</td></tr>
-        <tr><td>PETERSON, QUINTON</td><td>$270.00</td></tr>
-        <tr><td>TAYLOR, JARED</td><td>$263.90</td></tr>
-        <tr><td>DAVISON, TODD</td><td>$263.90</td></tr>
-        <tr><td>VAN NESS, ANDREW</td><td>$260.60</td></tr>
-        <tr><td>TEDRICK, EVELYN</td><td>$260.60</td></tr>
-        <tr><td>KHAN, NAZIA</td><td>$260.60</td></tr>
-        <tr><td>ROTH, ROBERT</td><td>$260.60</td></tr>
-        <tr><td>KOPACZ, STANLEY</td><td>$260.60</td></tr>
-        <tr><td>KINION, DEAH</td><td>$260.60</td></tr>
-        <tr><td>COLLIAS, JOHN</td><td>$260.60</td></tr>
-        <tr><td>CATTERSON, AMY</td><td>$260.60</td></tr>
-        <tr><td>BREEDLOVE, STEVEN R</td><td>$254.35</td></tr>
-        <tr><td>DAVIS, CHRISTOPHER</td><td>$253.35</td></tr>
-        <tr><td>WASSER, RAMSEY</td><td>$250.00</td></tr>
-        <tr><td>SIEGEL, THOMAS</td><td>$250.00</td></tr>
-        <tr><td>ROLSTON, ZACHARY</td><td>$250.00</td></tr>
-        <tr><td>ROACH, SONJA</td><td>$250.00</td></tr>
-        <tr><td>HERRING, ALEXANDER</td><td>$250.00</td></tr>
-        <tr><td>GOOD, BRIAN</td><td>$250.00</td></tr>
-        <tr><td>SINGH, MANDEEP</td><td>$250.00</td></tr>
-        <tr><td>WANKHEDE, PRAVIN</td><td>$250.00</td></tr>
-        <tr><td>ROMIG, CANDACE</td><td>$250.00</td></tr>
-        <tr><td>REESE, KYLE</td><td>$250.00</td></tr>
-        <tr><td>NAGARAJAN, V.</td><td>$250.00</td></tr>
-        <tr><td>MEDVECZKY, ZOLTAN</td><td>$250.00</td></tr>
-        <tr><td>LOHAN, LARS</td><td>$250.00</td></tr>
-        <tr><td>LAUGENOUR, LEE</td><td>$250.00</td></tr>
-        <tr><td>BASTIDA, MARCUS</td><td>$250.00</td></tr>
-        <tr><td>SURYATALE, NITIN</td><td>$250.00</td></tr>
-        <tr><td>RODE, LAXMIKANT</td><td>$250.00</td></tr>
-        <tr><td>KOSCHMEDER, ANNE</td><td>$250.00</td></tr>
-        <tr><td>WROLSTAD, JOEL</td><td>$250.00</td></tr>
-        <tr><td>WITHEY, MIKE</td><td>$250.00</td></tr>
-        <tr><td>SYED, JAFFER</td><td>$250.00</td></tr>
-        <tr><td>STANSBURY, BURKE</td><td>$250.00</td></tr>
-        <tr><td>ROACH, CHINDA</td><td>$250.00</td></tr>
-        <tr><td>RAINER, LAUREN</td><td>$250.00</td></tr>
-        <tr><td>POKRASKY, ADAM</td><td>$250.00</td></tr>
-        <tr><td>PADILLA, ADIRA</td><td>$250.00</td></tr>
-        <tr><td>NAKHODA, SHEHZAAD</td><td>$250.00</td></tr>
-        <tr><td>MAKATSARIA, NATELA</td><td>$250.00</td></tr>
-        <tr><td>KELLER, BOB</td><td>$250.00</td></tr>
-        <tr><td>HALE, BETSY</td><td>$250.00</td></tr>
-        <tr><td>HADDAD, JEBRAN</td><td>$250.00</td></tr>
-        <tr><td>CLARKE, ALIX</td><td>$250.00</td></tr>
-        <tr><td>BAO, MICHELLE</td><td>$250.00</td></tr>
-        <tr><td>LOZA, RAFAEL</td><td>$250.00</td></tr>
-        <tr><td>HENDRICKS, STEPHEN</td><td>$250.00</td></tr>
-        <tr><td>HENDRICKS, JENNIFER</td><td>$250.00</td></tr>
-        <tr><td>CARLSON, RICHARD</td><td>$250.00</td></tr>
-        <tr><td>SALIBA, LAILA</td><td>$250.00</td></tr>
-        <tr><td>RYAN, WILLIAM</td><td>$250.00</td></tr>
-        <tr><td>OBLER, GIL</td><td>$240.00</td></tr>
+        <tr><th scope="row">LEAF, JOHN</th><td>$13,500.00</td></tr>
+        <tr><th scope="row">JIMENEZ, MAURICIO</th><td>$6,255.68</td></tr>
+        <tr><th scope="row">THIEL, JASON</th><td>$5,977.29</td></tr>
+        <tr><th scope="row">HART, GWENDOLYN</th><td>$4,600.00</td></tr>
+        <tr><th scope="row">BOLZ, LAURA</th><td>$4,375.00</td></tr>
+        <tr><th scope="row">STEWART, MATTHEW</th><td>$4,245.00</td></tr>
+        <tr><th scope="row">MCCLURE, LUKE</th><td>$3,692.29</td></tr>
+        <tr><th scope="row">CAMPBELL, PETER</th><td>$3,651.48</td></tr>
+        <tr><th scope="row">SCOTT, MICHAEL</th><td>$3,541.44</td></tr>
+        <tr><th scope="row">VITZ-WONG, MICHAEL</th><td>$3,532.24</td></tr>
+        <tr><th scope="row">LEMMER, DAVID</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">REDDY, SHILPA</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">PAULIS, RICARDAS</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">BETITA, ANDRE</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">PONATH, CHRISTOPH</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">KALHAN, AJAY</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">HAMILTON, LAWRENCE</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">CAMPBELL, MARC</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">ANDERSON, DAVID</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">WAGDE, RASHMI</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">SAARAL, PRIYA</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">NICHOLS, ERIN</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">MUFTI, YASSER</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">KAUSHIK, RAGHAV</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">IANNONE, PETER</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">GROSSMAN, EMILY</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">BUTTERFIELD, SEAN</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">FISHER, SUE</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">WAGDE, ANIL HIRAMAN</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">GIBSON, PATRICK</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">ROBERTS, JOHN</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">MAHAN, GABRIEL</th><td>$3,498.00</td></tr>
+        <tr><th scope="row">GARLAND, BLAIR</th><td>$3,475.00</td></tr>
+        <tr><th scope="row">HENDERSON, SHIRLEY</th><td>$3,475.00</td></tr>
+        <tr><th scope="row">NGUYEN, LONG</th><td>$3,464.98</td></tr>
+        <tr><th scope="row">BANAHAN, STACEY</th><td>$3,437.00</td></tr>
+        <tr><th scope="row">SAMADI, AHMAD</th><td>$3,436.65</td></tr>
+        <tr><th scope="row">MALIK, OSMAN</th><td>$3,420.88</td></tr>
+        <tr><th scope="row">RICE, PERRY</th><td>$3,416.61</td></tr>
+        <tr><th scope="row">TURNER, MOSHI</th><td>$3,400.00</td></tr>
+        <tr><th scope="row">ROBALIK, ANTHONY</th><td>$3,400.00</td></tr>
+        <tr><th scope="row">BITO, JOHN</th><td>$3,400.00</td></tr>
+        <tr><th scope="row">RAIKEN, NANCY</th><td>$3,400.00</td></tr>
+        <tr><th scope="row">HUTCHINSON, AMY</th><td>$3,393.32</td></tr>
+        <tr><th scope="row">BARE, JUSTIN</th><td>$3,375.00</td></tr>
+        <tr><th scope="row">BATTLE, JASMINE</th><td>$3,359.24</td></tr>
+        <tr><th scope="row">BENNETT, DAKOTA</th><td>$3,290.00</td></tr>
+        <tr><th scope="row">PONATH, SONJA</th><td>$3,290.00</td></tr>
+        <tr><th scope="row">PATEL, NEAL</th><td>$3,143.46</td></tr>
+        <tr><th scope="row">HADDAD, DANY</th><td>$3,130.60</td></tr>
+        <tr><th scope="row">BAYZE, MARSELA</th><td>$3,129.00</td></tr>
+        <tr><th scope="row">WRIGHT, JOAN</th><td>$3,118.76</td></tr>
+        <tr><th scope="row">MELOY, MATTHEW</th><td>$3,116.94</td></tr>
+        <tr><th scope="row">BEILSTEIN, MIKE</th><td>$3,062.00</td></tr>
+        <tr><th scope="row">BACHUS, ARTHUR</th><td>$3,025.00</td></tr>
+        <tr><th scope="row">SMITH, SUE</th><td>$3,000.00</td></tr>
+        <tr><th scope="row">YASI, KATHERINE</th><td>$3,000.00</td></tr>
+        <tr><th scope="row">HARVEY, AMANDA</th><td>$3,000.00</td></tr>
+        <tr><th scope="row">DIXON, DANIEL</th><td>$2,990.00</td></tr>
+        <tr><th scope="row">CAPEHART, BETT</th><td>$2,800.00</td></tr>
+        <tr><th scope="row">HOTES, PEGGY</th><td>$2,800.00</td></tr>
+        <tr><th scope="row">FOGARTY, KENNETH</th><td>$2,700.00</td></tr>
+        <tr><th scope="row">VEMURI, SRIDHAR</th><td>$2,554.62</td></tr>
+        <tr><th scope="row">SWAN, LOGAN</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">ALI, AMER</th><td>$2,354.36</td></tr>
+        <tr><th scope="row">PARKINSON, BENJAMIN MICHAEL</th><td>$2,300.00</td></tr>
+        <tr><th scope="row">ATTAR, STEPHANIE</th><td>$2,241.44</td></tr>
+        <tr><th scope="row">LEONARD, KENN</th><td>$2,222.11</td></tr>
+        <tr><th scope="row">CATTERSON, LAURA</th><td>$2,150.00</td></tr>
+        <tr><th scope="row">MAHMOOD, SUHAIL</th><td>$2,082.88</td></tr>
+        <tr><th scope="row">AWASARMOL, MILIND</th><td>$2,082.57</td></tr>
+        <tr><th scope="row">STIRLING, NIKO</th><td>$2,041.44</td></tr>
+        <tr><th scope="row">SCHAEFER, RUTH</th><td>$2,020.88</td></tr>
+        <tr><th scope="row">SHAW, STEPHAN</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">RUFFALO, MARK</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">ZALEWSKI, MARCIN</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">UDDIN, JAMAL</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">POWELSON, LAWRENCE H</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">LILE, CHRISTOPHER</th><td>$1,789.00</td></tr>
+        <tr><th scope="row">IRLE, CHRISTOPHER</th><td>$1,789.00</td></tr>
+        <tr><th scope="row">LOEB, SAMUEL</th><td>$1,750.00</td></tr>
+        <tr><th scope="row">WALLACE, DOMINIC</th><td>$1,604.09</td></tr>
+        <tr><th scope="row">RAMNI, SUJATHA</th><td>$1,582.09</td></tr>
+        <tr><th scope="row">ROSENBLUM, JONATHAN</th><td>$1,562.00</td></tr>
+        <tr><th scope="row">BERNHAUT, STEVEN</th><td>$1,500.00</td></tr>
+        <tr><th scope="row">POWELSON, LAWRENCE</th><td>$1,500.00</td></tr>
+        <tr><th scope="row">MARINO, ROBERT</th><td>$1,500.00</td></tr>
+        <tr><th scope="row">SAWYER, MARK</th><td>$1,361.00</td></tr>
+        <tr><th scope="row">KULIGOWSKI, LUKAS</th><td>$1,320.88</td></tr>
+        <tr><th scope="row">CAMBRON, MELANIE</th><td>$1,316.61</td></tr>
+        <tr><th scope="row">CULLEN, JOANNA</th><td>$1,300.00</td></tr>
+        <tr><th scope="row">GREENE, ALEX</th><td>$1,250.00</td></tr>
+        <tr><th scope="row">NICHOLSON, J B</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">KINGSTON, PALU</th><td>$1,054.62</td></tr>
+        <tr><th scope="row">MUHAMMAD, SHAZIA</th><td>$1,041.76</td></tr>
+        <tr><th scope="row">PHOUTHAVONG, SISO</th><td>$1,041.44</td></tr>
+        <tr><th scope="row">JOHNSON, DARYL</th><td>$1,041.44</td></tr>
+        <tr><th scope="row">WITTHUHN, JEFF</th><td>$1,041.44</td></tr>
+        <tr><th scope="row">SUDLOW, MARCI</th><td>$1,041.44</td></tr>
+        <tr><th scope="row">SELLES, DENNIS</th><td>$1,041.44</td></tr>
+        <tr><th scope="row">KUMAR, RAM</th><td>$1,027.47</td></tr>
+        <tr><th scope="row">BROOKBANK, DAVID</th><td>$1,020.88</td></tr>
+        <tr><th scope="row">HAUSER, PATRICIA</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">DANIELS, SAADIQ</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">BROWN, ROB AND APRIL</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">YING, ANGELA</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">HORNSTEIN, NORBERT</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">GRAY, BETHANY</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">SKOVRAN, JACOB</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">HUTSON, ETHAN</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">HERRMANN, WILLIAM</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">SIKANDER, JAVED</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">SHAHNAZ, AHEMED</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">IORIO, DANA</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">DYER, ERIK</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">ANGIOLA, GINA</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">JIT, CHARAN</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">GOLDMAN, STEVEN</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">SCHU, EMILY</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">GUPTA, PRIYATI</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">SHAMBHARKAR, MANO</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">SRINIVASAN, VIBHA</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">HOPKINS, KEVIN</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">PARKINSON, BEN</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">KASHYAP, MANASI</th><td>$850.00</td></tr>
+        <tr><th scope="row">SMITH, JACOB</th><td>$816.61</td></tr>
+        <tr><th scope="row">SAWANT, KSHAMA</th><td>$777.47</td></tr>
+        <tr><th scope="row">DODGE, VINCENT</th><td>$763.90</td></tr>
+        <tr><th scope="row">BOYD, LINDA</th><td>$750.00</td></tr>
+        <tr><th scope="row">MONTEQUIN, DAVID</th><td>$682.64</td></tr>
+        <tr><th scope="row">WIDMER, ALEXANDER G</th><td>$617.00</td></tr>
+        <tr><th scope="row">O&#x27;HALLORAN, JAMES</th><td>$600.05</td></tr>
+        <tr><th scope="row">LEVENSTEIN, SUSAN</th><td>$600.00</td></tr>
+        <tr><th scope="row">CORNEY III, ALFAROH</th><td>$597.75</td></tr>
+        <tr><th scope="row">WILDE, NICK</th><td>$527.47</td></tr>
+        <tr><th scope="row">PERUNOVIC, SENA</th><td>$527.47</td></tr>
+        <tr><th scope="row">LEIKA, ZU</th><td>$527.47</td></tr>
+        <tr><th scope="row">WOJAHN, RIAN</th><td>$527.47</td></tr>
+        <tr><th scope="row">LUCAS, JACK</th><td>$527.47</td></tr>
+        <tr><th scope="row">HATCHERSON, PERCY</th><td>$527.47</td></tr>
+        <tr><th scope="row">CALL, JASON</th><td>$527.47</td></tr>
+        <tr><th scope="row">TABORA, JOSE E</th><td>$527.47</td></tr>
+        <tr><th scope="row">BLACKETT, HILL</th><td>$520.88</td></tr>
+        <tr><th scope="row">MAHEDIA, MONALI</th><td>$520.88</td></tr>
+        <tr><th scope="row">GRAVES, KENNETH</th><td>$520.88</td></tr>
+        <tr><th scope="row">ZELTZER, STEVE</th><td>$520.88</td></tr>
+        <tr><th scope="row">ROBINSON, HALLE</th><td>$520.88</td></tr>
+        <tr><th scope="row">HADDAD, MICHEL G.</th><td>$520.88</td></tr>
+        <tr><th scope="row">GREEN, ANITA</th><td>$520.88</td></tr>
+        <tr><th scope="row">FRAGER, TOBY</th><td>$520.88</td></tr>
+        <tr><th scope="row">DIXON, DON</th><td>$510.00</td></tr>
+        <tr><th scope="row">PRETE, KYLE</th><td>$500.00</td></tr>
+        <tr><th scope="row">MELOY, RILEY</th><td>$500.00</td></tr>
+        <tr><th scope="row">MELOY, ANNABELLE</th><td>$500.00</td></tr>
+        <tr><th scope="row">MCARTHUR, EMILY</th><td>$500.00</td></tr>
+        <tr><th scope="row">JONES, NORRECE</th><td>$500.00</td></tr>
+        <tr><th scope="row">HOBBS, RICHARD</th><td>$500.00</td></tr>
+        <tr><th scope="row">HAMILTON, JAMIE</th><td>$500.00</td></tr>
+        <tr><th scope="row">FOLTZ, LISA</th><td>$500.00</td></tr>
+        <tr><th scope="row">ECKMAN, CLIFFORD G</th><td>$500.00</td></tr>
+        <tr><th scope="row">DEBAKER, STUART</th><td>$500.00</td></tr>
+        <tr><th scope="row">BROWN, ZACHARY</th><td>$500.00</td></tr>
+        <tr><th scope="row">ALONZO, ROSLYN</th><td>$500.00</td></tr>
+        <tr><th scope="row">TROLLSPLINTER, KESTREL</th><td>$500.00</td></tr>
+        <tr><th scope="row">SMITH, DEBORAH</th><td>$500.00</td></tr>
+        <tr><th scope="row">RITZOW, SOLOMON</th><td>$500.00</td></tr>
+        <tr><th scope="row">PHILLIPS, SAMUEL</th><td>$500.00</td></tr>
+        <tr><th scope="row">PAMATIAN, EDWARD</th><td>$500.00</td></tr>
+        <tr><th scope="row">OUSLEY, TYLER</th><td>$500.00</td></tr>
+        <tr><th scope="row">MATTHIS, LESLIE</th><td>$500.00</td></tr>
+        <tr><th scope="row">JEFFREY, ROBERT</th><td>$500.00</td></tr>
+        <tr><th scope="row">DAVID, EMUNA</th><td>$500.00</td></tr>
+        <tr><th scope="row">BOWES, ROBERT</th><td>$500.00</td></tr>
+        <tr><th scope="row">TREVINO, JORDAN</th><td>$500.00</td></tr>
+        <tr><th scope="row">SMITH, NICOLAS</th><td>$500.00</td></tr>
+        <tr><th scope="row">SINGH, HARCHAND</th><td>$500.00</td></tr>
+        <tr><th scope="row">SCHOONMAKER, MARK</th><td>$500.00</td></tr>
+        <tr><th scope="row">JADHAV, RAMESH</th><td>$500.00</td></tr>
+        <tr><th scope="row">GRAHAM, STEPHEN</th><td>$500.00</td></tr>
+        <tr><th scope="row">GILBERT, CATHY</th><td>$500.00</td></tr>
+        <tr><th scope="row">EL-HAGRASSY, MIRRET</th><td>$500.00</td></tr>
+        <tr><th scope="row">EDELMAN, BRYON</th><td>$500.00</td></tr>
+        <tr><th scope="row">CANFIELD, DONALD</th><td>$500.00</td></tr>
+        <tr><th scope="row">AMRA, RAWAN</th><td>$500.00</td></tr>
+        <tr><th scope="row">STONER, KYLE</th><td>$500.00</td></tr>
+        <tr><th scope="row">STONE, JEREMY</th><td>$500.00</td></tr>
+        <tr><th scope="row">SABNIS, GAURAV</th><td>$500.00</td></tr>
+        <tr><th scope="row">O&#x27;KEEFE, MARK</th><td>$500.00</td></tr>
+        <tr><th scope="row">MARTINEZ, HARIETTE</th><td>$500.00</td></tr>
+        <tr><th scope="row">LATHROP, ANDREW</th><td>$500.00</td></tr>
+        <tr><th scope="row">KRAUS, HENRY</th><td>$500.00</td></tr>
+        <tr><th scope="row">KLEINMAN, MICHAEL</th><td>$500.00</td></tr>
+        <tr><th scope="row">JAHSHAN, JIBRAN</th><td>$500.00</td></tr>
+        <tr><th scope="row">HERZMARK, JAY</th><td>$500.00</td></tr>
+        <tr><th scope="row">HARRAST, PORTER</th><td>$500.00</td></tr>
+        <tr><th scope="row">BROWN, JONATHAN</th><td>$500.00</td></tr>
+        <tr><th scope="row">BRIDGES, TIFFANY</th><td>$500.00</td></tr>
+        <tr><th scope="row">BETITA, ANTON</th><td>$500.00</td></tr>
+        <tr><th scope="row">BETITA, AMBER</th><td>$500.00</td></tr>
+        <tr><th scope="row">BENOIT, JOHN</th><td>$500.00</td></tr>
+        <tr><th scope="row">ATKINSON, ARLEIGH</th><td>$500.00</td></tr>
+        <tr><th scope="row">ZONDERVAN, QUINTON</th><td>$500.00</td></tr>
+        <tr><th scope="row">VANDER LINDEN, ABBY</th><td>$500.00</td></tr>
+        <tr><th scope="row">RAUCH, CONNOR</th><td>$500.00</td></tr>
+        <tr><th scope="row">PARKS, JOHN</th><td>$500.00</td></tr>
+        <tr><th scope="row">MOORE, DANIEL</th><td>$500.00</td></tr>
+        <tr><th scope="row">MAGONE, NATHANIEL</th><td>$500.00</td></tr>
+        <tr><th scope="row">JHA, ALEKH</th><td>$500.00</td></tr>
+        <tr><th scope="row">JAMES, SIBYL</th><td>$500.00</td></tr>
+        <tr><th scope="row">FERGUSON, SANDRA A</th><td>$500.00</td></tr>
+        <tr><th scope="row">ELGHANDOUR, RAMI</th><td>$500.00</td></tr>
+        <tr><th scope="row">CHEN-HAYES, STUART</th><td>$500.00</td></tr>
+        <tr><th scope="row">BERGSTEN, CHRIS</th><td>$500.00</td></tr>
+        <tr><th scope="row">AUGUST, BEN</th><td>$500.00</td></tr>
+        <tr><th scope="row">WITTENBREDER, ERNEST</th><td>$500.00</td></tr>
+        <tr><th scope="row">STOCCO, GABRIEL</th><td>$500.00</td></tr>
+        <tr><th scope="row">LUXENBERG, NINA</th><td>$500.00</td></tr>
+        <tr><th scope="row">KAZI, SABIHA</th><td>$500.00</td></tr>
+        <tr><th scope="row">JOHNSON, THOMAS</th><td>$500.00</td></tr>
+        <tr><th scope="row">IBRAHIM, IBRAHIM</th><td>$500.00</td></tr>
+        <tr><th scope="row">HAYNIE, ROSCOE</th><td>$500.00</td></tr>
+        <tr><th scope="row">GRANADA, MICHAEL</th><td>$500.00</td></tr>
+        <tr><th scope="row">DAHLGREN, DAVID</th><td>$500.00</td></tr>
+        <tr><th scope="row">ARNAOUT, RIMA</th><td>$500.00</td></tr>
+        <tr><th scope="row">HALE, CHRISTOPHER</th><td>$500.00</td></tr>
+        <tr><th scope="row">BRKANAC, ZORAN</th><td>$500.00</td></tr>
+        <tr><th scope="row">BROWN, SHEILA</th><td>$500.00</td></tr>
+        <tr><th scope="row">WAGNER, ARTHUR</th><td>$500.00</td></tr>
+        <tr><th scope="row">RING, ADIN</th><td>$500.00</td></tr>
+        <tr><th scope="row">SANDYS, JEFF</th><td>$437.59</td></tr>
+        <tr><th scope="row">TANAKA, PAULINE</th><td>$422.04</td></tr>
+        <tr><th scope="row">WRIGHT, SCOTT</th><td>$400.00</td></tr>
+        <tr><th scope="row">MILLER, JOHN</th><td>$400.00</td></tr>
+        <tr><th scope="row">BOUDEN, CLEMENT</th><td>$361.00</td></tr>
+        <tr><th scope="row">MOXLEY, LESLEY</th><td>$350.14</td></tr>
+        <tr><th scope="row">PAVLOVICZ, RYAN</th><td>$350.00</td></tr>
+        <tr><th scope="row">PITTS, T.J.</th><td>$316.61</td></tr>
+        <tr><th scope="row">URBAN, WILLIAM</th><td>$312.65</td></tr>
+        <tr><th scope="row">DERDER, SABRI</th><td>$312.65</td></tr>
+        <tr><th scope="row">OKUZUMI, MARGARET</th><td>$300.00</td></tr>
+        <tr><th scope="row">WURZ, NINA</th><td>$300.00</td></tr>
+        <tr><th scope="row">FELICIANO, SIGRID</th><td>$300.00</td></tr>
+        <tr><th scope="row">ARNOLD, WILLIAM</th><td>$300.00</td></tr>
+        <tr><th scope="row">ORR, TUCKER</th><td>$300.00</td></tr>
+        <tr><th scope="row">BETITA, ANNA</th><td>$300.00</td></tr>
+        <tr><th scope="row">RAMASUBRAMANIAN, KANNAN</th><td>$300.00</td></tr>
+        <tr><th scope="row">KUMAR, SANJAY</th><td>$300.00</td></tr>
+        <tr><th scope="row">GORDAN, DAVID</th><td>$300.00</td></tr>
+        <tr><th scope="row">BERTUCCI, WILLIAM</th><td>$300.00</td></tr>
+        <tr><th scope="row">MARKS, STEPHEN</th><td>$300.00</td></tr>
+        <tr><th scope="row">KINCH, KAREN</th><td>$300.00</td></tr>
+        <tr><th scope="row">KINCH, JIM</th><td>$300.00</td></tr>
+        <tr><th scope="row">PETERSON, QUINTON</th><td>$270.00</td></tr>
+        <tr><th scope="row">TAYLOR, JARED</th><td>$263.90</td></tr>
+        <tr><th scope="row">DAVISON, TODD</th><td>$263.90</td></tr>
+        <tr><th scope="row">VAN NESS, ANDREW</th><td>$260.60</td></tr>
+        <tr><th scope="row">TEDRICK, EVELYN</th><td>$260.60</td></tr>
+        <tr><th scope="row">KHAN, NAZIA</th><td>$260.60</td></tr>
+        <tr><th scope="row">ROTH, ROBERT</th><td>$260.60</td></tr>
+        <tr><th scope="row">KOPACZ, STANLEY</th><td>$260.60</td></tr>
+        <tr><th scope="row">KINION, DEAH</th><td>$260.60</td></tr>
+        <tr><th scope="row">COLLIAS, JOHN</th><td>$260.60</td></tr>
+        <tr><th scope="row">CATTERSON, AMY</th><td>$260.60</td></tr>
+        <tr><th scope="row">BREEDLOVE, STEVEN R</th><td>$254.35</td></tr>
+        <tr><th scope="row">DAVIS, CHRISTOPHER</th><td>$253.35</td></tr>
+        <tr><th scope="row">WASSER, RAMSEY</th><td>$250.00</td></tr>
+        <tr><th scope="row">SIEGEL, THOMAS</th><td>$250.00</td></tr>
+        <tr><th scope="row">ROLSTON, ZACHARY</th><td>$250.00</td></tr>
+        <tr><th scope="row">ROACH, SONJA</th><td>$250.00</td></tr>
+        <tr><th scope="row">HERRING, ALEXANDER</th><td>$250.00</td></tr>
+        <tr><th scope="row">GOOD, BRIAN</th><td>$250.00</td></tr>
+        <tr><th scope="row">SINGH, MANDEEP</th><td>$250.00</td></tr>
+        <tr><th scope="row">WANKHEDE, PRAVIN</th><td>$250.00</td></tr>
+        <tr><th scope="row">ROMIG, CANDACE</th><td>$250.00</td></tr>
+        <tr><th scope="row">REESE, KYLE</th><td>$250.00</td></tr>
+        <tr><th scope="row">NAGARAJAN, V.</th><td>$250.00</td></tr>
+        <tr><th scope="row">MEDVECZKY, ZOLTAN</th><td>$250.00</td></tr>
+        <tr><th scope="row">LOHAN, LARS</th><td>$250.00</td></tr>
+        <tr><th scope="row">LAUGENOUR, LEE</th><td>$250.00</td></tr>
+        <tr><th scope="row">BASTIDA, MARCUS</th><td>$250.00</td></tr>
+        <tr><th scope="row">SURYATALE, NITIN</th><td>$250.00</td></tr>
+        <tr><th scope="row">RODE, LAXMIKANT</th><td>$250.00</td></tr>
+        <tr><th scope="row">KOSCHMEDER, ANNE</th><td>$250.00</td></tr>
+        <tr><th scope="row">WROLSTAD, JOEL</th><td>$250.00</td></tr>
+        <tr><th scope="row">WITHEY, MIKE</th><td>$250.00</td></tr>
+        <tr><th scope="row">SYED, JAFFER</th><td>$250.00</td></tr>
+        <tr><th scope="row">STANSBURY, BURKE</th><td>$250.00</td></tr>
+        <tr><th scope="row">ROACH, CHINDA</th><td>$250.00</td></tr>
+        <tr><th scope="row">RAINER, LAUREN</th><td>$250.00</td></tr>
+        <tr><th scope="row">POKRASKY, ADAM</th><td>$250.00</td></tr>
+        <tr><th scope="row">PADILLA, ADIRA</th><td>$250.00</td></tr>
+        <tr><th scope="row">NAKHODA, SHEHZAAD</th><td>$250.00</td></tr>
+        <tr><th scope="row">MAKATSARIA, NATELA</th><td>$250.00</td></tr>
+        <tr><th scope="row">KELLER, BOB</th><td>$250.00</td></tr>
+        <tr><th scope="row">HALE, BETSY</th><td>$250.00</td></tr>
+        <tr><th scope="row">HADDAD, JEBRAN</th><td>$250.00</td></tr>
+        <tr><th scope="row">CLARKE, ALIX</th><td>$250.00</td></tr>
+        <tr><th scope="row">BAO, MICHELLE</th><td>$250.00</td></tr>
+        <tr><th scope="row">LOZA, RAFAEL</th><td>$250.00</td></tr>
+        <tr><th scope="row">HENDRICKS, STEPHEN</th><td>$250.00</td></tr>
+        <tr><th scope="row">HENDRICKS, JENNIFER</th><td>$250.00</td></tr>
+        <tr><th scope="row">CARLSON, RICHARD</th><td>$250.00</td></tr>
+        <tr><th scope="row">SALIBA, LAILA</th><td>$250.00</td></tr>
+        <tr><th scope="row">RYAN, WILLIAM</th><td>$250.00</td></tr>
+        <tr><th scope="row">OBLER, GIL</th><td>$240.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
     <p style="margin-bottom:12px; font-style:italic; color:var(--gray-dark);">Largest disbursements reported to the FEC for the current cycle, newest cycle only. This is not a complete ledger and does not sum to total spent.</p>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th><th>Date</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th><th scope="col">Date</th></tr></thead>
       <tbody>
-        <tr><td>INTUIT, INC</td><td>PAYROLL EXPENSES, SEE BELOW</td><td>$51,537.80</td><td>2026-01-29</td></tr>
-        <tr><td>INTUIT, INC</td><td>PAYROLL PROCESSING: SEE BELOW</td><td>$45,853.29</td><td>2025-11-28</td></tr>
-        <tr><td>INTUIT, INC</td><td>PAYROLL PROCESSING: SEE BELOW</td><td>$41,449.21</td><td>2025-10-30</td></tr>
-        <tr><td>INTUIT, INC</td><td>PAYROLL PROCESSING: SEE BELOW</td><td>$40,343.17</td><td>2025-12-29</td></tr>
-        <tr><td>INTUIT, INC</td><td>JULY PAYROLL SEE BELOW</td><td>$35,655.59</td><td>2026-07-31</td></tr>
-        <tr><td>INTUIT, INC</td><td>FEDERAL AND STATE PAYROLL TAXES</td><td>$33,336.82</td><td>2026-03-31</td></tr>
-        <tr><td>INTUIT, INC</td><td>PAYROLL PROCESSING JUNE: SEE BELOW</td><td>$32,810.35</td><td>2026-06-29</td></tr>
-        <tr><td>INTUIT, INC</td><td>PAYROLL SEE BELOW</td><td>$32,810.35</td><td>2026-05-29</td></tr>
-        <tr><td>INTUIT, INC</td><td>APRIL PAYROLL: SEE BELOW</td><td>$32,810.35</td><td>2026-04-29</td></tr>
-        <tr><td>INTUIT, INC</td><td>FEBRUARY PAYROLL DETAILS</td><td>$30,163.05</td><td>2026-02-27</td></tr>
+        <tr><th scope="row">INTUIT, INC</th><td>PAYROLL EXPENSES, SEE BELOW</td><td>$51,537.80</td><td>2026-01-29</td></tr>
+        <tr><th scope="row">INTUIT, INC</th><td>PAYROLL PROCESSING: SEE BELOW</td><td>$45,853.29</td><td>2025-11-28</td></tr>
+        <tr><th scope="row">INTUIT, INC</th><td>PAYROLL PROCESSING: SEE BELOW</td><td>$41,449.21</td><td>2025-10-30</td></tr>
+        <tr><th scope="row">INTUIT, INC</th><td>PAYROLL PROCESSING: SEE BELOW</td><td>$40,343.17</td><td>2025-12-29</td></tr>
+        <tr><th scope="row">INTUIT, INC</th><td>JULY PAYROLL SEE BELOW</td><td>$35,655.59</td><td>2026-07-31</td></tr>
+        <tr><th scope="row">INTUIT, INC</th><td>FEDERAL AND STATE PAYROLL TAXES</td><td>$33,336.82</td><td>2026-03-31</td></tr>
+        <tr><th scope="row">INTUIT, INC</th><td>PAYROLL PROCESSING JUNE: SEE BELOW</td><td>$32,810.35</td><td>2026-06-29</td></tr>
+        <tr><th scope="row">INTUIT, INC</th><td>PAYROLL SEE BELOW</td><td>$32,810.35</td><td>2026-05-29</td></tr>
+        <tr><th scope="row">INTUIT, INC</th><td>APRIL PAYROLL: SEE BELOW</td><td>$32,810.35</td><td>2026-04-29</td></tr>
+        <tr><th scope="row">INTUIT, INC</th><td>FEBRUARY PAYROLL DETAILS</td><td>$30,163.05</td><td>2026-02-27</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -483,7 +486,7 @@
     <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">2 sourced findings. All sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model. No T4 claims included.</p>
 
     <div class="finding moderate">
-      <h4>Finding 7.1: Settled Seattle Ethics Complaint Over Use of Public Resources for Tax Amazon Campaign <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 7.1: Settled Seattle Ethics Complaint Over Use of Public Resources for Tax Amazon Campaign <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>In 2020 Sawant settled a complaint with the Seattle Ethics and Elections Commission over using City Council staff and resources to support the &quot;Tax Amazon&quot; ballot initiative, a political campaign. Under the settlement she paid the city $3,516. Two earlier ethics complaints, in 2015 and 2018, involving city resources used for a town hall and a rally were dismissed.</dd>
@@ -500,7 +503,7 @@
     </div>
 
     <div class="finding moderate">
-      <h4>Finding 7.2: Faced a Certified Voter Recall, Retained Seat by 310 Votes <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 7.2: Faced a Certified Voter Recall, Retained Seat by 310 Votes <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Sawant was the subject of a 2021 recall election after the Washington Supreme Court allowed charges to proceed to the ballot. The certified charges were using city resources to promote the Tax Amazon ballot initiative, admitting a crowd into a closed City Hall during COVID-19 restrictions on June 9, 2020, and leading a June 2020 protest march to Mayor Jenny Durkan&#x27;s residence, whose address was protected under state law. Voters rejected the recall on December 7, 2021, and Sawant kept her seat by 310 votes.</dd>
@@ -531,16 +534,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

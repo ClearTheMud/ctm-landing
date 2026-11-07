@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Mike Sommerfeld</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,14 +60,14 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Michael J. Sommerfeld (appears on ballot and PDC filing as Mike Sommerfeld)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Pierce County, Washington. States he has lived in Pierce County for 28 years, with wife Christa and their two sons.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan (judicial office; Washington judicial races are nonpartisan). Sought 31st District Democrats endorsement.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>Juris Doctor, Willamette University College of Law</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Employment</td><td>Deputy Prosecuting Attorney, Pierce County Prosecuting Attorney&#x27;s Office, since 1995. Prosecuted cases from DUI and domestic violence to serious violent felonies including murder, kidnapping, child abuse, and human trafficking. Argued cases before the Washington State Supreme Court in the appellate division.; Since 2010, serves as legal advisor to Pierce County District Court judges, Juvenile Court, and other county offices on constitutional and civil matters; leads the Government Operations and Litigation team.; Judge Pro Tem, Thurston County District Court, presiding over criminal and civil matters.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Michael J. Sommerfeld (appears on ballot and PDC filing as Mike Sommerfeld)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Pierce County, Washington. States he has lived in Pierce County for 28 years, with wife Christa and their two sons.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan (judicial office; Washington judicial races are nonpartisan). Sought 31st District Democrats endorsement.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>Juris Doctor, Willamette University College of Law</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Deputy Prosecuting Attorney, Pierce County Prosecuting Attorney&#x27;s Office, since 1995. Prosecuted cases from DUI and domestic violence to serious violent felonies including murder, kidnapping, child abuse, and human trafficking. Argued cases before the Washington State Supreme Court in the appellate division.; Since 2010, serves as legal advisor to Pierce County District Court judges, Juvenile Court, and other county offices on constitutional and civil matters; leads the Government Operations and Litigation team.; Judge Pro Tem, Thurston County District Court, presiding over criminal and civil matters.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -103,16 +106,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Michael Simonds</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -69,13 +72,13 @@
 
     <div class="section">
       <h2><span class="section-num">3</span> Election History</h2>
-      <table>
-        <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+      <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+        <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
         <tbody>
-        <tr><td>2025</td><td>City of Bremerton Council District 3 Council District 3 (Primary)</td><td>Lost (2 of 4)</td><td>WA SOS</td></tr>
-        <tr><td>2025</td><td>City of Bremerton Council District 3 Council District 3 (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2025</th><td>City of Bremerton Council District 3 Council District 3 (Primary)</td><td>Lost (2 of 4)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2025</th><td>City of Bremerton Council District 3 Council District 3 (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
         </tbody>
-      </table>
+      </table></div>
       <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
     </div>
     <div class="section">
@@ -89,14 +92,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

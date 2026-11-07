@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -25,6 +26,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">2026 Idaho Senate District 1</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -46,15 +49,15 @@
     <h2><span class="section-num">1</span> Candidate Field</h2>
     <div class="dossier-links">
       <a href="/races/id-sd1-2026/herndon/" class="dossier-link">
-        <h4>Scott Herndon (Republican)</h4>
+        <h3>Scott Herndon (Republican)</h3>
         <p><span class="status-active">GOP NOMINEE (PRESUMPTIVE)</span>, Won May 19 primary 53.55% | Raised: $104.7K | IFF #1 Senator (96.2%) | IFC State Director</p>
       </a>
       <a href="/races/id-sd1-2026/johnson/" class="dossier-link">
-        <h4>Steve Johnson (Independent)</h4>
+        <h3>Steve Johnson (Independent)</h3>
         <p><span class="status-active">GENERAL-ELECTION LONGSHOT</span>, Faces Herndon Nov 3 | No finance filings | Retired educator | Functionally Democratic</p>
       </a>
       <a href="/races/id-sd1-2026/woodward/" class="dossier-link">
-        <h4>Jim Woodward (Republican)</h4>
+        <h3>Jim Woodward (Republican)</h3>
         <p><span class="status-withdrawn">DEFEATED IN PRIMARY</span>, Lost May 19 primary 46.45% | Raised: $135.2K | JFAC Vice Chair | Navy Commander (ret.)</p>
       </a>
     </div>
@@ -84,43 +87,47 @@
 
   <div class="section">
     <h2><span class="section-num">4</span> Factional Alignment</h2>
-    <table>
+    <div class="table-scroll" role="region" aria-label="Factional Alignment, scrollable table" tabindex="0"><table><caption class="sr-only">Factional Alignment</caption>
       <thead>
-        <tr><th>Candidate</th><th>Party</th><th>IFF Score</th><th>ICAP Score</th><th>Faction</th><th>Raised</th></tr>
+        <tr><th scope="col">Candidate</th><th scope="col">Party</th><th scope="col">IFF Score</th><th scope="col">ICAP Score</th><th scope="col">Faction</th><th scope="col">Raised</th></tr>
       </thead>
       <tbody>
-        <tr><td>Scott Herndon</td><td>R</td><td>96.2%</td><td>36%</td><td>IFF / Freedom Caucus</td><td>$104,707.54</td></tr>
-        <tr><td>Jim Woodward</td><td>R</td><td>51.6%</td><td>86%</td><td>Establishment / IACI</td><td>$135,246.37</td></tr>
-        <tr><td>Steve Johnson</td><td>I</td><td>N/A</td><td>N/A</td><td>Democratic-aligned</td><td>$0</td></tr>
+        <tr><th scope="row">Scott Herndon</th><td>R</td><td>96.2%</td><td>36%</td><td>IFF / Freedom Caucus</td><td>$104,707.54</td></tr>
+        <tr><th scope="row">Jim Woodward</th><td>R</td><td>51.6%</td><td>86%</td><td>Establishment / IACI</td><td>$135,246.37</td></tr>
+        <tr><th scope="row">Steve Johnson</th><td>I</td><td>N/A</td><td>N/A</td><td>Democratic-aligned</td><td>$0</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="margin-top:8px; font-size:13px; color:var(--gray-dark);">Source: Idaho Sunshine / ID SOS, as of 2026-06-10. IFF = Idaho Freedom Foundation Freedom Index (lifetime). ICAP = Idaho Children Are Primary.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">5</span> Election History</h2>
-    <table>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
       <thead>
-        <tr><th>Year</th><th>Winner</th><th>Margin</th><th>Context</th></tr>
+        <tr><th scope="col">Year</th><th scope="col">Winner</th><th scope="col">Margin</th><th scope="col">Context</th></tr>
       </thead>
       <tbody>
-        <tr><td>2018</td><td>Woodward (R)</td><td>52%</td><td>Open seat; succeeded Shawn Keough</td></tr>
-        <tr><td>2022</td><td>Herndon (R)</td><td>56&ndash;44%</td><td>Herndon defeated incumbent Woodward</td></tr>
-        <tr><td>2024</td><td>Woodward (R)</td><td>52&ndash;48% (613 votes)</td><td>Woodward recaptured seat</td></tr>
-        <tr><td>2026 primary</td><td>Herndon (R)</td><td>53.55&ndash;46.45% (1,080 votes)</td><td>Fourth matchup; official SOS results, certification pending. General Nov 3: Herndon vs Johnson (I)</td></tr>
+        <tr><th scope="row">2018</th><td>Woodward (R)</td><td>52%</td><td>Open seat; succeeded Shawn Keough</td></tr>
+        <tr><th scope="row">2022</th><td>Herndon (R)</td><td>56&ndash;44%</td><td>Herndon defeated incumbent Woodward</td></tr>
+        <tr><th scope="row">2024</th><td>Woodward (R)</td><td>52&ndash;48% (613 votes)</td><td>Woodward recaptured seat</td></tr>
+        <tr><th scope="row">2026 primary</th><td>Herndon (R)</td><td>53.55&ndash;46.45% (1,080 votes)</td><td>Fourth matchup; official SOS results, certification pending. General Nov 3: Herndon vs Johnson (I)</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Primary results and campaign finance figures refreshed 2026-06-10 from official Idaho SOS and Idaho Sunshine records.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

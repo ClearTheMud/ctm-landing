@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Carolyn Jewett-Platts</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -54,34 +57,34 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$2,017.71 (4 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$2,017.71 (4 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$2,017.71 (4 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$2,017.71 (4 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Carolyn Jewett-Platts</td><td>$1,741.93</td></tr>
-        <tr><td>Carolyn Jewett-Platts</td><td>$200.00</td></tr>
-        <tr><td>Jewett-Platts Justin M, Friday Harbor</td><td>$43.46</td></tr>
-        <tr><td>Carolyn Jewett-Platts</td><td>$32.32</td></tr>
+        <tr><th scope="row">Carolyn Jewett-Platts</th><td>$1,741.93</td></tr>
+        <tr><th scope="row">Carolyn Jewett-Platts</th><td>$200.00</td></tr>
+        <tr><th scope="row">Jewett-Platts Justin M, Friday Harbor</th><td>$43.46</td></tr>
+        <tr><th scope="row">Carolyn Jewett-Platts</th><td>$32.32</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Carolyn Jewett-Platts</td><td>Filing fees</td><td>$1,741.93</td></tr>
-        <tr><td>Carolyn Jewett-Platts</td><td>Town of Friday Harbor 4th of July parade entry fee.</td><td>$200.00</td></tr>
-        <tr><td>Jewett-Platts Justin M</td><td>T-shirt iron-on transfers from Printonyx in Friday Harbor.</td><td>$43.46</td></tr>
-        <tr><td>Carolyn Jewett-Platts</td><td>T-shirt purchase for Friday Harbor 4th of July parade.</td><td>$32.32</td></tr>
+        <tr><th scope="row">Carolyn Jewett-Platts</th><td>Filing fees</td><td>$1,741.93</td></tr>
+        <tr><th scope="row">Carolyn Jewett-Platts</th><td>Town of Friday Harbor 4th of July parade entry fee.</td><td>$200.00</td></tr>
+        <tr><th scope="row">Jewett-Platts Justin M</th><td>T-shirt iron-on transfers from Printonyx in Friday Harbor.</td><td>$43.46</td></tr>
+        <tr><th scope="row">Carolyn Jewett-Platts</th><td>T-shirt purchase for Friday Harbor 4th of July parade.</td><td>$32.32</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -95,14 +98,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

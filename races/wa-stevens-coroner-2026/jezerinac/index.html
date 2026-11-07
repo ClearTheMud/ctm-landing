@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Roseanne Ennis Jezerinac</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -64,46 +67,46 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$6,316.61 (16 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$6,175.38 (17 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$6,316.61 (16 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$6,175.38 (17 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Gregg Tommy, Newman Lake</td><td>$1,000.00</td></tr>
-        <tr><td>Lunt Susanne, Nine Mile Falls</td><td>$1,000.00</td></tr>
-        <tr><td>Roseanne Nicole Ennis - Jezerinac (Roseanne Ennis Jezerinac), Nine Mile Falls</td><td>$1,000.00</td></tr>
-        <tr><td>Jezerinac Shawn, Ellensburg</td><td>$500.00</td></tr>
-        <tr><td>Roseanne Nicole Ennis - Jezerinac (Roseanne Ennis Jezerinac), Nine Mile Falls</td><td>$500.00</td></tr>
-        <tr><td>Ennis Johnny, Nine Mile Falls</td><td>$495.56</td></tr>
-        <tr><td>Dickenson April, Spokane Valley</td><td>$300.00</td></tr>
-        <tr><td>Dickenson April, Spokane Valley</td><td>$300.00</td></tr>
-        <tr><td>Roseanne Ennis Jezerinac</td><td>$243.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$202.05</td></tr>
+        <tr><th scope="row">Gregg Tommy, Newman Lake</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Lunt Susanne, Nine Mile Falls</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Roseanne Nicole Ennis - Jezerinac (Roseanne Ennis Jezerinac), Nine Mile Falls</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Jezerinac Shawn, Ellensburg</th><td>$500.00</td></tr>
+        <tr><th scope="row">Roseanne Nicole Ennis - Jezerinac (Roseanne Ennis Jezerinac), Nine Mile Falls</th><td>$500.00</td></tr>
+        <tr><th scope="row">Ennis Johnny, Nine Mile Falls</th><td>$495.56</td></tr>
+        <tr><th scope="row">Dickenson April, Spokane Valley</th><td>$300.00</td></tr>
+        <tr><th scope="row">Dickenson April, Spokane Valley</th><td>$300.00</td></tr>
+        <tr><th scope="row">Roseanne Ennis Jezerinac</th><td>$243.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$202.05</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Washington State Secretary</td><td>Filing fees</td><td>$949.84</td></tr>
-        <tr><td>Washington State Secretary</td><td>Filing fees</td><td>$949.84</td></tr>
-        <tr><td>We&#x27;ve Got Mail</td><td>Signs, brochures and flyers</td><td>$558.36</td></tr>
-        <tr><td>RoboCent</td><td>Website build</td><td>$500.00</td></tr>
-        <tr><td>Ennis Johnny</td><td>Reimbursement for in kind payment to cover T-shirts and hand sanitizer</td><td>$495.56</td></tr>
-        <tr><td>Ennis Johnny</td><td>T-shirts and hand sanitizer paraphernalia to be reimbursed</td><td>$495.56</td></tr>
-        <tr><td>Signs.com</td><td>6 door magnets for our cars advertising my campaign</td><td>$328.22</td></tr>
-        <tr><td>Signs.com</td><td>6 door magnets for our cars advertising my campaign</td><td>$328.22</td></tr>
-        <tr><td>Dickenson April</td><td>Management and consulting services</td><td>$300.00</td></tr>
-        <tr><td>Dickenson April</td><td>Management and consulting services</td><td>$300.00</td></tr>
+        <tr><th scope="row">Washington State Secretary</th><td>Filing fees</td><td>$949.84</td></tr>
+        <tr><th scope="row">Washington State Secretary</th><td>Filing fees</td><td>$949.84</td></tr>
+        <tr><th scope="row">We&#x27;ve Got Mail</th><td>Signs, brochures and flyers</td><td>$558.36</td></tr>
+        <tr><th scope="row">RoboCent</th><td>Website build</td><td>$500.00</td></tr>
+        <tr><th scope="row">Ennis Johnny</th><td>Reimbursement for in kind payment to cover T-shirts and hand sanitizer</td><td>$495.56</td></tr>
+        <tr><th scope="row">Ennis Johnny</th><td>T-shirts and hand sanitizer paraphernalia to be reimbursed</td><td>$495.56</td></tr>
+        <tr><th scope="row">Signs.com</th><td>6 door magnets for our cars advertising my campaign</td><td>$328.22</td></tr>
+        <tr><th scope="row">Signs.com</th><td>6 door magnets for our cars advertising my campaign</td><td>$328.22</td></tr>
+        <tr><th scope="row">Dickenson April</th><td>Management and consulting services</td><td>$300.00</td></tr>
+        <tr><th scope="row">Dickenson April</th><td>Management and consulting services</td><td>$300.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -117,14 +120,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Monika Balmer</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,12 +60,12 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Monika Balmer</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Not established from public sources. No campaign biography, voters&#x27; pamphlet statement, occupation field, or resume was retrievable as of 2026-06-23.
+        <tr><th scope="row">Full Name</th><td>Monika Balmer</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Not established from public sources. No campaign biography, voters&#x27; pamphlet statement, occupation field, or resume was retrievable as of 2026-06-23.
 </td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
@@ -78,10 +81,10 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>County Auditor</td><td>No stated platform or positions located in any public source as of 2026-06-23. As a second Republican challenging the Republican incumbent, no Balmer-attributable rationale for entering the race has been documented. No platform is imputed.
+        <tr><th scope="row">County Auditor</th><td>No stated platform or positions located in any public source as of 2026-06-23. As a second Republican challenging the Republican incumbent, no Balmer-attributable rationale for entering the race has been documented. No platform is imputed.
 </td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
@@ -89,46 +92,46 @@
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$6,531.66 (36 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$8,844.20 (36 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$6,531.66 (36 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$8,844.20 (36 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Monika Balmer, Shelton</td><td>$1,030.00</td></tr>
-        <tr><td>Mason County Republican Women’s Club, Shelton</td><td>$1,000.00</td></tr>
-        <tr><td>Onisko Eric, Shelton</td><td>$500.00</td></tr>
-        <tr><td>Overton David, Tacoma</td><td>$500.00</td></tr>
-        <tr><td>Monika Balmer</td><td>$419.26</td></tr>
-        <tr><td>Monika Balmer</td><td>$419.26</td></tr>
-        <tr><td>Cronquist Rebecca, Shelton</td><td>$250.00</td></tr>
-        <tr><td>Kennedy Creek Quarry, Shelton</td><td>$250.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$200.00</td></tr>
-        <tr><td>Pooler April, Shelton</td><td>$199.38</td></tr>
+        <tr><th scope="row">Monika Balmer, Shelton</th><td>$1,030.00</td></tr>
+        <tr><th scope="row">Mason County Republican Women’s Club, Shelton</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Onisko Eric, Shelton</th><td>$500.00</td></tr>
+        <tr><th scope="row">Overton David, Tacoma</th><td>$500.00</td></tr>
+        <tr><th scope="row">Monika Balmer</th><td>$419.26</td></tr>
+        <tr><th scope="row">Monika Balmer</th><td>$419.26</td></tr>
+        <tr><th scope="row">Cronquist Rebecca, Shelton</th><td>$250.00</td></tr>
+        <tr><th scope="row">Kennedy Creek Quarry, Shelton</th><td>$250.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$200.00</td></tr>
+        <tr><th scope="row">Pooler April, Shelton</th><td>$199.38</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>State Washington Secretary of State</td><td>Filing fees</td><td>$1,045.01</td></tr>
-        <tr><td>State Washington Secretary of State</td><td>Filing fees</td><td>$1,045.01</td></tr>
-        <tr><td>Monika Balmer</td><td>Loan payment</td><td>$1,030.00</td></tr>
-        <tr><td>Designs by Nigel</td><td>10 4’x6’ signs</td><td>$621.07</td></tr>
-        <tr><td>Designs by Nigel</td><td>10 4’x6’ signs</td><td>$621.07</td></tr>
-        <tr><td>Designs by Nigel</td><td>(4) 4x6 feet and (30) 18x24 campaign signs invoice #4010</td><td>$511.53</td></tr>
-        <tr><td>Designs by Nigel</td><td>(4) 4x6 feet and (30) 18x24 campaign signs invoice #4010</td><td>$511.53</td></tr>
-        <tr><td>Jeff Slakey</td><td>76 KMAS Radio ads 7/13/26-8/4/26</td><td>$500.00</td></tr>
-        <tr><td>Jeff Slakey</td><td>76 KMAS Radio ads 7/13/26-8/4/26</td><td>$500.00</td></tr>
-        <tr><td>Monika Balmer</td><td>Campaign headshots at Cooper Studios, 409 Railroad Ave, Shelton, WA</td><td>$419.26</td></tr>
+        <tr><th scope="row">State Washington Secretary of State</th><td>Filing fees</td><td>$1,045.01</td></tr>
+        <tr><th scope="row">State Washington Secretary of State</th><td>Filing fees</td><td>$1,045.01</td></tr>
+        <tr><th scope="row">Monika Balmer</th><td>Loan payment</td><td>$1,030.00</td></tr>
+        <tr><th scope="row">Designs by Nigel</th><td>10 4’x6’ signs</td><td>$621.07</td></tr>
+        <tr><th scope="row">Designs by Nigel</th><td>10 4’x6’ signs</td><td>$621.07</td></tr>
+        <tr><th scope="row">Designs by Nigel</th><td>(4) 4x6 feet and (30) 18x24 campaign signs invoice #4010</td><td>$511.53</td></tr>
+        <tr><th scope="row">Designs by Nigel</th><td>(4) 4x6 feet and (30) 18x24 campaign signs invoice #4010</td><td>$511.53</td></tr>
+        <tr><th scope="row">Jeff Slakey</th><td>76 KMAS Radio ads 7/13/26-8/4/26</td><td>$500.00</td></tr>
+        <tr><th scope="row">Jeff Slakey</th><td>76 KMAS Radio ads 7/13/26-8/4/26</td><td>$500.00</td></tr>
+        <tr><th scope="row">Monika Balmer</th><td>Campaign headshots at Cooper Studios, 409 Railroad Ave, Shelton, WA</td><td>$419.26</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -143,16 +146,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Cobi Clark</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Cobi Clark</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Libertarian</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Cobi Clark</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Libertarian</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -76,58 +79,58 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2025</td><td>City of Auburn Council Position NO. 6 (Primary)</td><td>Lost (2 of 4)</td><td>WA SOS</td></tr>
-        <tr><td>2025</td><td>City of Auburn Council Position NO. 6 (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2025</th><td>City of Auburn Council Position NO. 6 (Primary)</td><td>Lost (2 of 4)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2025</th><td>City of Auburn Council Position NO. 6 (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$52,609.91 (133 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$46,508.44 (26 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$52,609.91 (133 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$46,508.44 (26 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Libertarian Party of Washington, Silverdale</td><td>$10,000.00</td></tr>
-        <tr><td>Cobi Clark, Auburn</td><td>$5,000.00</td></tr>
-        <tr><td>Cobi Clark, Auburn</td><td>$2,000.00</td></tr>
-        <tr><td>Basler Doug, Kent</td><td>$1,200.00</td></tr>
-        <tr><td>Basler Lori, Kent</td><td>$1,200.00</td></tr>
-        <tr><td>Bennett Jeff, Auburn</td><td>$1,200.00</td></tr>
-        <tr><td>Bennett Laura, Auburn</td><td>$1,200.00</td></tr>
-        <tr><td>Novoselic Darbury, Naselle</td><td>$1,200.00</td></tr>
-        <tr><td>Novoselic Krist, Naselle</td><td>$1,200.00</td></tr>
-        <tr><td>Best Trevor, BATTLE GROUND</td><td>$1,184.50</td></tr>
+        <tr><th scope="row">Libertarian Party of Washington, Silverdale</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">Cobi Clark, Auburn</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">Cobi Clark, Auburn</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">Basler Doug, Kent</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Basler Lori, Kent</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Bennett Jeff, Auburn</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Bennett Laura, Auburn</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Novoselic Darbury, Naselle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Novoselic Krist, Naselle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Best Trevor, BATTLE GROUND</th><td>$1,184.50</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Mail Advertising Bureau, Inc.</td><td>Cost to produce, stamp, and mail 19,935, 6x11 post cards to voters</td><td>$12,352.90</td></tr>
-        <tr><td>Mail Advertising Bureau, Inc.</td><td>Postage costs, mail permits, purchase of stamps, and postcards for 8,640 mailer to high propensity voters.</td><td>$5,657.87</td></tr>
-        <tr><td>Grewal Neet</td><td>Management and consulting services for April and May</td><td>$4,000.00</td></tr>
-        <tr><td>Prologue Digital</td><td>Develop and broadcast a 30 Second TV ad to run on Fox news between 7/17/26 and 8/4/26</td><td>$3,710.53</td></tr>
-        <tr><td>Vista Print</td><td>2000 door hangers and 2000 saddle stitch campaign platform booklets</td><td>$3,078.32</td></tr>
-        <tr><td>Bogeys Public House</td><td>Food and Venue for campaign kickoff event.</td><td>$2,984.86</td></tr>
-        <tr><td>Grewal Neet</td><td>Management and consulting services</td><td>$2,000.00</td></tr>
-        <tr><td>Grewal Neet</td><td>Management and consulting services</td><td>$2,000.00</td></tr>
-        <tr><td>Grewal Neet</td><td>Management and consulting services</td><td>$2,000.00</td></tr>
-        <tr><td>Super Cheap Signs</td><td>300 Yard Signs and 100 H Stakes</td><td>$1,456.37</td></tr>
+        <tr><th scope="row">Mail Advertising Bureau, Inc.</th><td>Cost to produce, stamp, and mail 19,935, 6x11 post cards to voters</td><td>$12,352.90</td></tr>
+        <tr><th scope="row">Mail Advertising Bureau, Inc.</th><td>Postage costs, mail permits, purchase of stamps, and postcards for 8,640 mailer to high propensity voters.</td><td>$5,657.87</td></tr>
+        <tr><th scope="row">Grewal Neet</th><td>Management and consulting services for April and May</td><td>$4,000.00</td></tr>
+        <tr><th scope="row">Prologue Digital</th><td>Develop and broadcast a 30 Second TV ad to run on Fox news between 7/17/26 and 8/4/26</td><td>$3,710.53</td></tr>
+        <tr><th scope="row">Vista Print</th><td>2000 door hangers and 2000 saddle stitch campaign platform booklets</td><td>$3,078.32</td></tr>
+        <tr><th scope="row">Bogeys Public House</th><td>Food and Venue for campaign kickoff event.</td><td>$2,984.86</td></tr>
+        <tr><th scope="row">Grewal Neet</th><td>Management and consulting services</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">Grewal Neet</th><td>Management and consulting services</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">Grewal Neet</th><td>Management and consulting services</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">Super Cheap Signs</th><td>300 Yard Signs and 100 H Stakes</td><td>$1,456.37</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -142,16 +145,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

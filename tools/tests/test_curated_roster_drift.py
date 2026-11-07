@@ -59,7 +59,7 @@ def _norm(name):
 
 def _page_roster(path):
     h = path.read_text(errors="ignore")
-    return {_norm(n) for n in re.findall(r"<h4>([^<(]+)\(", h)}
+    return {_norm(n) for n in re.findall(r"<h[34]>([^<(]+)\(", h)}
 
 
 def _pairs():

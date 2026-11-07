@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Glen Yung</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,15 +60,15 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Glen Yung</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Vancouver, Clark County, WA. Operates a family remodeling business in Vancouver with his spouse. Represents Council District 1.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan office. Clark County Council races carry no party preference on the ballot, and the PDC candidate registration lists no party. He was described as unaffiliated when he first ran in 2022.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Family</td><td>Married; the campaign and county biography reference his spouse and five children.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Education</td><td>Studied at Mt. Hood Community College; Studied at Kaiser-Wilhelm Ratsgymnasium in Hannover, Germany, and is fluent in German</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Owner and operator of a family remodeling business in Vancouver, run with his spouse; Spent about a decade working in the financial industry before starting the remodeling business</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Glen Yung</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Vancouver, Clark County, WA. Operates a family remodeling business in Vancouver with his spouse. Represents Council District 1.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan office. Clark County Council races carry no party preference on the ballot, and the PDC candidate registration lists no party. He was described as unaffiliated when he first ran in 2022.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Family</th><td>Married; the campaign and county biography reference his spouse and five children.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Education</th><td>Studied at Mt. Hood Community College; Studied at Kaiser-Wilhelm Ratsgymnasium in Hannover, Germany, and is fluent in German</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Owner and operator of a family remodeling business in Vancouver, run with his spouse; Spent about a decade working in the financial industry before starting the remodeling business</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -80,73 +83,73 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Clark County Council District 1</td><td>Pending. Incumbent seeking re-election; on the August 4, 2026 primary ballot.</td><td>Research</td></tr>
-        <tr><td>2022</td><td>Clark County Council District 1 (General)</td><td>Won (58.6%, 13,451 votes vs. Hector Hinojosa&#x27;s 41.4%, 9,502 votes). Advanced from the August 2, 2022 primary as the top vote-getter.</td><td>Research</td></tr>
-        <tr><td>2021</td><td>City Of Vancouver Council - Position NO. 3 (Primary)</td><td>Lost (3 of 4)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2026</th><td>Clark County Council District 1</td><td>Pending. Incumbent seeking re-election; on the August 4, 2026 primary ballot.</td><td>Research</td></tr>
+        <tr><th scope="row">2022</th><td>Clark County Council District 1 (General)</td><td>Won (58.6%, 13,451 votes vs. Hector Hinojosa&#x27;s 41.4%, 9,502 votes). Advanced from the August 2, 2022 primary as the top vote-getter.</td><td>Research</td></tr>
+        <tr><th scope="row">2021</th><td>City Of Vancouver Council - Position NO. 3 (Primary)</td><td>Lost (3 of 4)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Housing Affordability</td><td>Supports expanding housing options and protecting existing affordable units, and improving permitting processes to reduce delays and lower construction costs.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Public Safety and Community Health</td><td>Emphasizes strengthening public safety and accountability mechanisms, tied to community health. Cites his service on the Board of Health and Public Safety Sales Tax funding oversight.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Homelessness</td><td>Frames the county&#x27;s homelessness response as cross-jurisdictional collaboration and points to his work with the Council for the Homeless.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Government Accountability</td><td>Campaigns on holding government and special interests accountable and describes coming to public service through practical experience rather than a political background.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Growth and Quality of Life</td><td>Advocates smart growth that he says prevents gentrification and benefits Vancouver-area families rather than outside interests.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Housing Affordability</th><td>Supports expanding housing options and protecting existing affordable units, and improving permitting processes to reduce delays and lower construction costs.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Public Safety and Community Health</th><td>Emphasizes strengthening public safety and accountability mechanisms, tied to community health. Cites his service on the Board of Health and Public Safety Sales Tax funding oversight.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Homelessness</th><td>Frames the county&#x27;s homelessness response as cross-jurisdictional collaboration and points to his work with the Council for the Homeless.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Government Accountability</th><td>Campaigns on holding government and special interests accountable and describes coming to public service through practical experience rather than a political background.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Growth and Quality of Life</th><td>Advocates smart growth that he says prevents gentrification and benefits Vancouver-area families rather than outside interests.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$35,465.00 (84 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$61,854.82 (45 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$35,465.00 (84 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$61,854.82 (45 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>BUILDING INDUSTRY GROUP, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>IAFF LOCAL 452 SEGREGATED FUND, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>LYNCH MICHAEL, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>WASHINGTON ASSOCIATION OF REALTORS POLITICAL AFFAIRS COUNCIL, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>WASHINGTON ASSOCIATION OF REALTORS POLITICAL AFFAIRS COUNCIL, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>Hamlik Kim, Vancouver</td><td>$1,000.00</td></tr>
-        <tr><td>IRVIN WILLIAM D, Vancouver</td><td>$1,000.00</td></tr>
-        <tr><td>KEARNEY CONNIE, Vancouver</td><td>$1,000.00</td></tr>
-        <tr><td>KEARNEY LEE, Vancouver</td><td>$1,000.00</td></tr>
-        <tr><td>Mattos Jason, Vancouver</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">BUILDING INDUSTRY GROUP, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">IAFF LOCAL 452 SEGREGATED FUND, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">LYNCH MICHAEL, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">WASHINGTON ASSOCIATION OF REALTORS POLITICAL AFFAIRS COUNCIL, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">WASHINGTON ASSOCIATION OF REALTORS POLITICAL AFFAIRS COUNCIL, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Hamlik Kim, Vancouver</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">IRVIN WILLIAM D, Vancouver</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">KEARNEY CONNIE, Vancouver</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">KEARNEY LEE, Vancouver</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Mattos Jason, Vancouver</th><td>$1,000.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Lurtsema Communications</td><td>Digital Campaign Distribution</td><td>$10,000.00</td></tr>
-        <tr><td>Lurtsema Communications</td><td>Digital Campaign Distribution</td><td>$10,000.00</td></tr>
-        <tr><td>Morel Ink</td><td>Political Postcard Mailers</td><td>$8,885.70</td></tr>
-        <tr><td>Morel Ink</td><td>Political Postcard Mailers</td><td>$8,885.70</td></tr>
-        <tr><td>Lurtsema Communications</td><td>Election Advertising</td><td>$5,000.00</td></tr>
-        <tr><td>Lurtsema Communications</td><td>Election Advertising</td><td>$5,000.00</td></tr>
-        <tr><td>Gonzalez Alejandro</td><td>Graphic Design &amp; Video Services</td><td>$1,000.00</td></tr>
-        <tr><td>Gonzalez Alejandro</td><td>Graphic Design &amp; Video Services</td><td>$1,000.00</td></tr>
-        <tr><td>Lurtsema Communications</td><td>Voter Data Records</td><td>$920.28</td></tr>
-        <tr><td>Lurtsema Communications</td><td>Voter Data Records</td><td>$920.28</td></tr>
+        <tr><th scope="row">Lurtsema Communications</th><td>Digital Campaign Distribution</td><td>$10,000.00</td></tr>
+        <tr><th scope="row">Lurtsema Communications</th><td>Digital Campaign Distribution</td><td>$10,000.00</td></tr>
+        <tr><th scope="row">Morel Ink</th><td>Political Postcard Mailers</td><td>$8,885.70</td></tr>
+        <tr><th scope="row">Morel Ink</th><td>Political Postcard Mailers</td><td>$8,885.70</td></tr>
+        <tr><th scope="row">Lurtsema Communications</th><td>Election Advertising</td><td>$5,000.00</td></tr>
+        <tr><th scope="row">Lurtsema Communications</th><td>Election Advertising</td><td>$5,000.00</td></tr>
+        <tr><th scope="row">Gonzalez Alejandro</th><td>Graphic Design &amp; Video Services</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">Gonzalez Alejandro</th><td>Graphic Design &amp; Video Services</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">Lurtsema Communications</th><td>Voter Data Records</td><td>$920.28</td></tr>
+        <tr><th scope="row">Lurtsema Communications</th><td>Voter Data Records</td><td>$920.28</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -169,7 +172,7 @@
     <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">1 sourced findings. All sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model. No T4 claims included.</p>
 
     <div class="finding moderate">
-      <h4>Finding 6.1: Investigation found Yung and three colleagues violated the Open Public Meetings Act in removing a councilor from the C-TRAN board <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 6.1: Investigation found Yung and three colleagues violated the Open Public Meetings Act in removing a councilor from the C-TRAN board <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>On March 12, 2025, Yung was one of four Clark County councilors who voted to remove Councilor Michelle Belkot from the county&#x27;s seat on the C-TRAN Board of Directors and replace her with Councilor Wil Fuentes, after Belkot signaled she would vote against C-TRAN funding light rail operations. A Skamania County Sheriff&#x27;s Office investigation, requested because of the conflict of interest, concluded that the council and County Manager Kathleen Otto violated Washington&#x27;s Open Public Meetings Act, and the detective recommended that Council Chair Sue Marshall and councilors Fuentes, Yung, and Matt Little be fined. The Thurston County prosecuting attorney reviewed the report and on April 2, 2026 declined to file criminal charges, saying the facts did not support a charge. Belkot&#x27;s separate civil lawsuit over her removal was dismissed by a judge in March 2026.</dd>
@@ -201,16 +204,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

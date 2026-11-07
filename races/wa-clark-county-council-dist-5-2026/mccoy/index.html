@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Troy McCoy</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,14 +60,14 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Troy McCoy</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Battle Ground, WA (Clark County Council District 5, covering northern Clark County including Battle Ground, La Center, Ridgefield, and Yacolt). Describes himself as a Battle Ground resident since 2001 and a Clark County resident of more than 25 years. His PDC candidate committee lists a Brush Prairie mailing address (PO Box 753, Brush Prairie, WA 98606); a post office box is a mailing address, not proof of residence.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Clark County Council is a nonpartisan office under the county home rule charter; candidates do not appear with a party preference on the ballot. McCoy runs as a cross-partisan candidate and lists endorsements from both Democratic aligned and Republican aligned local officials. He is a sitting Battle Ground City Council member and served as Battle Ground mayor, both nonpartisan municipal roles.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Family</td><td>States on his campaign site that he raised his family in Battle Ground; no family member names are given.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Employment</td><td>State Farm insurance agent operating a small insurance agency in Battle Ground (209 N Parkway Ave) for more than 20 years.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Troy McCoy</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Battle Ground, WA (Clark County Council District 5, covering northern Clark County including Battle Ground, La Center, Ridgefield, and Yacolt). Describes himself as a Battle Ground resident since 2001 and a Clark County resident of more than 25 years. His PDC candidate committee lists a Brush Prairie mailing address (PO Box 753, Brush Prairie, WA 98606); a post office box is a mailing address, not proof of residence.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Clark County Council is a nonpartisan office under the county home rule charter; candidates do not appear with a party preference on the ballot. McCoy runs as a cross-partisan candidate and lists endorsements from both Democratic aligned and Republican aligned local officials. He is a sitting Battle Ground City Council member and served as Battle Ground mayor, both nonpartisan municipal roles.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Family</th><td>States on his campaign site that he raised his family in Battle Ground; no family member names are given.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Employment</th><td>State Farm insurance agent operating a small insurance agency in Battle Ground (209 N Parkway Ave) for more than 20 years.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -79,30 +82,30 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2025</td><td>City Of Battle Ground Council - Position NO. 1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2021</td><td>City Of Battle Ground Council - Position NO. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2017</td><td>Battle Ground School District NO. 119 School Director, District NO. 3 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td></td><td></td><td></td><td>Research</td></tr>
-        <tr><td></td><td></td><td></td><td>Research</td></tr>
-        <tr><td></td><td></td><td></td><td>Research</td></tr>
-        <tr><td></td><td></td><td></td><td>Research</td></tr>
+        <tr><th scope="row">2025</th><td>City Of Battle Ground Council - Position NO. 1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2021</th><td>City Of Battle Ground Council - Position NO. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2017</th><td>Battle Ground School District NO. 119 School Director, District NO. 3 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row"></th><td></td><td></td><td>Research</td></tr>
+        <tr><th scope="row"></th><td></td><td></td><td>Research</td></tr>
+        <tr><th scope="row"></th><td></td><td></td><td>Research</td></tr>
+        <tr><th scope="row"></th><td></td><td></td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Public Safety</td><td>Campaigns on investing in public safety. As a Battle Ground councilmember he voted in November 2025 to approve a 0.1 percent public safety sales tax.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Managed Growth</td><td>Frames his platform around responsible, managed growth and investing in roads, parks, and livability for a fast growing north county area.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Government Accountability and Transparency</td><td>Says he wants a council that listens, responds, and works for everyone by listening to residents, building consensus, and following through.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Parks and Recreation Youth Programs</td><td>Points to restoring middle school sports and investing in parks and recreation as priorities carried from his municipal record.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Public Safety</th><td>Campaigns on investing in public safety. As a Battle Ground councilmember he voted in November 2025 to approve a 0.1 percent public safety sales tax.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Managed Growth</th><td>Frames his platform around responsible, managed growth and investing in roads, parks, and livability for a fast growing north county area.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Government Accountability and Transparency</th><td>Says he wants a council that listens, responds, and works for everyone by listening to residents, building consensus, and following through.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Parks and Recreation Youth Programs</th><td>Points to restoring middle school sports and investing in parks and recreation as priorities carried from his municipal record.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -144,16 +147,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

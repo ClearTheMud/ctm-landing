@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -27,6 +28,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Bob Hagglund</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -55,15 +58,15 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Bob Hagglund</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Granite Falls, Snohomish County, Washington. Describes himself and his wife as near-lifelong Snohomish County residents.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Family</td><td>Married to Aimee for more than 26 years. Two adult children, two grandchildren, and two teenagers living at home in Granite Falls.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Education</td><td>Graduated from Everett High School (1984). Attended the University of Washington but did not graduate.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>Senior Consultant and Data Scientist. States 40-plus years of technology and consulting work, including projects for the Veterans Administration, the Missile Defense Agency, Apple Health, Nike, and UnitedHealth Group. Most recently worked as a data scientist at UnitedHealth Group before resigning to focus on the campaign.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Bob Hagglund</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Granite Falls, Snohomish County, Washington. Describes himself and his wife as near-lifelong Snohomish County residents.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Family</th><td>Married to Aimee for more than 26 years. Two adult children, two grandchildren, and two teenagers living at home in Granite Falls.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Education</th><td>Graduated from Everett High School (1984). Attended the University of Washington but did not graduate.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Senior Consultant and Data Scientist. States 40-plus years of technology and consulting work, including projects for the Veterans Administration, the Missile Defense Agency, Apple Health, Nike, and UnitedHealth Group. Most recently worked as a data scientist at UnitedHealth Group before resigning to focus on the campaign.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -83,69 +86,69 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>U.S. House, WA Congressional District 8 (Primary, Aug 4)</td><td>Running as a Republican challenging incumbent Rep. Kim Schrier (D) in the top-two primary. Other filed candidates include Trinh Ha (R), Spencer Meline (R), and Andres Valleza (R). FEC Statement of Candidacy filed July 2, 2025.</td><td>Research</td></tr>
-        <tr><td>2024</td><td>Washington Lieutenant Governor (Primary, Aug 6)</td><td>Placed third in the top-two primary with 319,071 votes, behind incumbent Denny Heck (D) and Dan Matthews (R). Did not advance.</td><td>Research</td></tr>
-        <tr><td>2023</td><td>Snohomish County Executive (Primary, Aug 1)</td><td>Ran as a Republican; did not advance from the primary.</td><td>Research</td></tr>
-        <tr><td>2022</td><td>Washington Secretary of State (Primary, Aug 2)</td><td>Ran an unsuccessful bid for Secretary of State.</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>U.S. House, WA Congressional District 8 (Primary, Aug 4)</td><td>Running as a Republican challenging incumbent Rep. Kim Schrier (D) in the top-two primary. Other filed candidates include Trinh Ha (R), Spencer Meline (R), and Andres Valleza (R). FEC Statement of Candidacy filed July 2, 2025.</td><td>Research</td></tr>
+        <tr><th scope="row">2024</th><td>Washington Lieutenant Governor (Primary, Aug 6)</td><td>Placed third in the top-two primary with 319,071 votes, behind incumbent Denny Heck (D) and Dan Matthews (R). Did not advance.</td><td>Research</td></tr>
+        <tr><th scope="row">2023</th><td>Snohomish County Executive (Primary, Aug 1)</td><td>Ran as a Republican; did not advance from the primary.</td><td>Research</td></tr>
+        <tr><th scope="row">2022</th><td>Washington Secretary of State (Primary, Aug 2)</td><td>Ran an unsuccessful bid for Secretary of State.</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$27,785.23</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Total Spent</td><td>$26,230.52</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Total Raised</th><td>$27,785.23</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Total Spent</th><td>$26,230.52</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">Source: Federal Election Commission.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>HAGGLUND, BOB</td><td>$22,569.00</td></tr>
-        <tr><td>JARVIS, SCOT</td><td>$1,000.00</td></tr>
-        <tr><td>ABRAMOWITZ, KENNETH</td><td>$500.00</td></tr>
-        <tr><td>KEARNEY, LEE</td><td>$500.00</td></tr>
-        <tr><td>COLE, GORDON</td><td>$500.00</td></tr>
-        <tr><td>BAILEY, ROY</td><td>$500.00</td></tr>
-        <tr><td>CHILTON, CRAIG</td><td>$350.00</td></tr>
-        <tr><td>KHORRAM, HOSSEIN</td><td>$250.00</td></tr>
-        <tr><td>CODAY, ARTHUR</td><td>$250.00</td></tr>
-        <tr><td>ROTH, ARTHUR</td><td>$125.00</td></tr>
-        <tr><td>POWELL, TIM</td><td>$100.00</td></tr>
-        <tr><td>PEPINDONAT, BRYAN</td><td>$100.00</td></tr>
-        <tr><td>BLANCHETTE, KATHLEEN</td><td>$100.00</td></tr>
-        <tr><td>BOYLE, JARROD</td><td>$50.00</td></tr>
-        <tr><td>HAMMERLY, JOHN</td><td>$50.00</td></tr>
-        <tr><td>RUFF, SANDI</td><td>$26.23</td></tr>
-        <tr><td>CAMERON, TODD</td><td>$25.00</td></tr>
-        <tr><td>SEVERNS, ANDREA</td><td>$10.00</td></tr>
-        <tr><td>HUBER, DON</td><td>$10.00</td></tr>
+        <tr><th scope="row">HAGGLUND, BOB</th><td>$22,569.00</td></tr>
+        <tr><th scope="row">JARVIS, SCOT</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">ABRAMOWITZ, KENNETH</th><td>$500.00</td></tr>
+        <tr><th scope="row">KEARNEY, LEE</th><td>$500.00</td></tr>
+        <tr><th scope="row">COLE, GORDON</th><td>$500.00</td></tr>
+        <tr><th scope="row">BAILEY, ROY</th><td>$500.00</td></tr>
+        <tr><th scope="row">CHILTON, CRAIG</th><td>$350.00</td></tr>
+        <tr><th scope="row">KHORRAM, HOSSEIN</th><td>$250.00</td></tr>
+        <tr><th scope="row">CODAY, ARTHUR</th><td>$250.00</td></tr>
+        <tr><th scope="row">ROTH, ARTHUR</th><td>$125.00</td></tr>
+        <tr><th scope="row">POWELL, TIM</th><td>$100.00</td></tr>
+        <tr><th scope="row">PEPINDONAT, BRYAN</th><td>$100.00</td></tr>
+        <tr><th scope="row">BLANCHETTE, KATHLEEN</th><td>$100.00</td></tr>
+        <tr><th scope="row">BOYLE, JARROD</th><td>$50.00</td></tr>
+        <tr><th scope="row">HAMMERLY, JOHN</th><td>$50.00</td></tr>
+        <tr><th scope="row">RUFF, SANDI</th><td>$26.23</td></tr>
+        <tr><th scope="row">CAMERON, TODD</th><td>$25.00</td></tr>
+        <tr><th scope="row">SEVERNS, ANDREA</th><td>$10.00</td></tr>
+        <tr><th scope="row">HUBER, DON</th><td>$10.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
     <p style="margin-bottom:12px; font-style:italic; color:var(--gray-dark);">Largest disbursements reported to the FEC for the current cycle, newest cycle only. This is not a complete ledger and does not sum to total spent.</p>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th><th>Date</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th><th scope="col">Date</th></tr></thead>
       <tbody>
-        <tr><td>HAGGLUND, BOB</td><td>IN-KIND - STRATEGIC MANAGEMENT CONSULTING</td><td>$12,500.00</td><td>2026-06-30</td></tr>
-        <tr><td>DARK HORSE POLITICAL</td><td>CANDIDATE IN-KIND: STRATEGICA MANAGEMENT CONSULTING</td><td>$12,500.00</td><td>2026-06-30</td></tr>
-        <tr><td>M3 STRATEGIES</td><td>CANDIDATE IN-KIND: FUNDRAISING PLANNING AND CONSULTING</td><td>$6,858.00</td><td>2026-06-30</td></tr>
-        <tr><td>HAGGLUND, BOB</td><td>IN-KIND - FUNDRAISING PLANNING &amp; CONSULTING</td><td>$6,858.00</td><td>2026-06-30</td></tr>
-        <tr><td>WASHINGTON SOS ELECTIONS DIVISION</td><td>BALLOT FILING FEE</td><td>$1,740.00</td><td>2026-06-01</td></tr>
-        <tr><td>HAGGLUND, BOB</td><td>REIMBURSEMENT</td><td>$1,740.00</td><td>2026-06-01</td></tr>
-        <tr><td>PARABELLUM</td><td>CANDIDATE IN-KIND: FIELD OPERATIONS</td><td>$1,500.00</td><td>2026-06-30</td></tr>
-        <tr><td>HAGGLUND, BOB</td><td>IN-KIND - FIELD OPERATIONS</td><td>$1,500.00</td><td>2026-06-30</td></tr>
-        <tr><td>LANDAU, EVA</td><td>CANDIDATE IN-KIND: SOCIAL MEDIA MESSAGING</td><td>$1,050.00</td><td>2026-06-30</td></tr>
-        <tr><td>HAGGLUND, BOB</td><td>IN-KIND - SOCIAL MEDIA MESSAGING</td><td>$1,050.00</td><td>2026-06-30</td></tr>
+        <tr><th scope="row">HAGGLUND, BOB</th><td>IN-KIND - STRATEGIC MANAGEMENT CONSULTING</td><td>$12,500.00</td><td>2026-06-30</td></tr>
+        <tr><th scope="row">DARK HORSE POLITICAL</th><td>CANDIDATE IN-KIND: STRATEGICA MANAGEMENT CONSULTING</td><td>$12,500.00</td><td>2026-06-30</td></tr>
+        <tr><th scope="row">M3 STRATEGIES</th><td>CANDIDATE IN-KIND: FUNDRAISING PLANNING AND CONSULTING</td><td>$6,858.00</td><td>2026-06-30</td></tr>
+        <tr><th scope="row">HAGGLUND, BOB</th><td>IN-KIND - FUNDRAISING PLANNING &amp; CONSULTING</td><td>$6,858.00</td><td>2026-06-30</td></tr>
+        <tr><th scope="row">WASHINGTON SOS ELECTIONS DIVISION</th><td>BALLOT FILING FEE</td><td>$1,740.00</td><td>2026-06-01</td></tr>
+        <tr><th scope="row">HAGGLUND, BOB</th><td>REIMBURSEMENT</td><td>$1,740.00</td><td>2026-06-01</td></tr>
+        <tr><th scope="row">PARABELLUM</th><td>CANDIDATE IN-KIND: FIELD OPERATIONS</td><td>$1,500.00</td><td>2026-06-30</td></tr>
+        <tr><th scope="row">HAGGLUND, BOB</th><td>IN-KIND - FIELD OPERATIONS</td><td>$1,500.00</td><td>2026-06-30</td></tr>
+        <tr><th scope="row">LANDAU, EVA</th><td>CANDIDATE IN-KIND: SOCIAL MEDIA MESSAGING</td><td>$1,050.00</td><td>2026-06-30</td></tr>
+        <tr><th scope="row">HAGGLUND, BOB</th><td>IN-KIND - SOCIAL MEDIA MESSAGING</td><td>$1,050.00</td><td>2026-06-30</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -181,16 +184,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

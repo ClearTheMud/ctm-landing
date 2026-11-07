@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Daria Ilgen</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Daria Ilgen</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Daria Ilgen</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -77,46 +80,46 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$116,425.58 (268 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$90,783.34 (103 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$116,425.58 (268 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$90,783.34 (103 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Breiner Erik, Poulsbo</td><td>$2,000.00</td></tr>
-        <tr><td>Armenta Dia, Bainbridge Island</td><td>$1,200.00</td></tr>
-        <tr><td>Bain Lisa, Longmont</td><td>$1,200.00</td></tr>
-        <tr><td>Blase Olya, Bremerton</td><td>$1,200.00</td></tr>
-        <tr><td>Breiner Erik, Poulsbo</td><td>$1,200.00</td></tr>
-        <tr><td>Churchill Jen, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Churchill Jen, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Churchill Mark, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Council of Police Political Support, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>Council of Police Political Support, Olympia</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Breiner Erik, Poulsbo</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">Armenta Dia, Bainbridge Island</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Bain Lisa, Longmont</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Blase Olya, Bremerton</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Breiner Erik, Poulsbo</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Churchill Jen, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Churchill Jen, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Churchill Mark, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Council of Police Political Support, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Council of Police Political Support, Olympia</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>NWP Consulting</td><td>Capitol City Press - Mailer (18.7k)</td><td>$8,869.70</td></tr>
-        <tr><td>NWP Consulting</td><td>Capitol City Press - Mailer (17.5k)</td><td>$8,279.48</td></tr>
-        <tr><td>Publisher&#x27;s Mailing Service</td><td>Postage (16.8k)</td><td>$8,106.80</td></tr>
-        <tr><td>Publisher&#x27;s Mailing Service</td><td>Postage (16.1k)</td><td>$6,203.56</td></tr>
-        <tr><td>NWP Consulting</td><td>Capitol City Press - Mailer (8.1k)</td><td>$3,647.72</td></tr>
-        <tr><td>Publisher&#x27;s Mailing Service</td><td>Postage (7.8k)</td><td>$2,996.41</td></tr>
-        <tr><td>Tissot Solutions LLC</td><td>Fundraising consulting</td><td>$2,000.00</td></tr>
-        <tr><td>Tissot Solutions LLC</td><td>Fundraising consulting</td><td>$2,000.00</td></tr>
-        <tr><td>Capitol City Press</td><td>Yard signs (250)</td><td>$1,612.18</td></tr>
-        <tr><td>Capitol City Press</td><td>Yard signs (250)</td><td>$1,612.18</td></tr>
+        <tr><th scope="row">NWP Consulting</th><td>Capitol City Press - Mailer (18.7k)</td><td>$8,869.70</td></tr>
+        <tr><th scope="row">NWP Consulting</th><td>Capitol City Press - Mailer (17.5k)</td><td>$8,279.48</td></tr>
+        <tr><th scope="row">Publisher&#x27;s Mailing Service</th><td>Postage (16.8k)</td><td>$8,106.80</td></tr>
+        <tr><th scope="row">Publisher&#x27;s Mailing Service</th><td>Postage (16.1k)</td><td>$6,203.56</td></tr>
+        <tr><th scope="row">NWP Consulting</th><td>Capitol City Press - Mailer (8.1k)</td><td>$3,647.72</td></tr>
+        <tr><th scope="row">Publisher&#x27;s Mailing Service</th><td>Postage (7.8k)</td><td>$2,996.41</td></tr>
+        <tr><th scope="row">Tissot Solutions LLC</th><td>Fundraising consulting</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">Tissot Solutions LLC</th><td>Fundraising consulting</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">Capitol City Press</th><td>Yard signs (250)</td><td>$1,612.18</td></tr>
+        <tr><th scope="row">Capitol City Press</th><td>Yard signs (250)</td><td>$1,612.18</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -131,16 +134,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

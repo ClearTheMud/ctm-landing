@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -27,6 +28,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Meng Li Che</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -44,15 +47,15 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Meng Li Che</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Pierce County, Washington (Court of Appeals Division II, District 1, based in Tacoma).</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan (Washington judicial offices are elected on a nonpartisan basis; no party appears on the ballot)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Family</td><td>No verified public-record detail on family collected. Not published.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>Bachelor&#x27;s degree, University of San Diego.; Juris Doctor, Seattle University School of Law.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Public defense practice with the Pierce County Office of Public Defense and the Pierce County Department of Assigned Counsel, representing indigent criminal defendants.; Board of Industrial Insurance Appeals since 2010, serving as an Assistant Chief Industrial Appeals Judge handling workers&#x27; compensation appeals and workplace-safety violation cases.; Judge, Washington State Court of Appeals, Division II (District 1), appointed November 23, 2022, assumed office December 1, 2022, and elected in the November 7, 2023 special general election.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Meng Li Che</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Pierce County, Washington (Court of Appeals Division II, District 1, based in Tacoma).</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan (Washington judicial offices are elected on a nonpartisan basis; no party appears on the ballot)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Family</th><td>No verified public-record detail on family collected. Not published.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>Bachelor&#x27;s degree, University of San Diego.; Juris Doctor, Seattle University School of Law.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Public defense practice with the Pierce County Office of Public Defense and the Pierce County Department of Assigned Counsel, representing indigent criminal defendants.; Board of Industrial Insurance Appeals since 2010, serving as an Assistant Chief Industrial Appeals Judge handling workers&#x27; compensation appeals and workplace-safety violation cases.; Judge, Washington State Court of Appeals, Division II (District 1), appointed November 23, 2022, assumed office December 1, 2022, and elected in the November 7, 2023 special general election.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -67,13 +70,13 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Washington State Court of Appeals, Division II, District 1, Position 2</td><td>Running to retain the seat (current term ends January 11, 2027). Available signals indicate no opponent filed. Final SOS primary-source confirmation of the unopposed status is pending a recapture pass.</td><td>Research</td></tr>
-        <tr><td>2023</td><td>Washington State Court of Appeals, Division II, District 1</td><td>Won the November 7, 2023 special general election after being appointed by Governor Jay Inslee on November 23, 2022 (assumed office December 1, 2022).</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>Washington State Court of Appeals, Division II, District 1, Position 2</td><td>Running to retain the seat (current term ends January 11, 2027). Available signals indicate no opponent filed. Final SOS primary-source confirmation of the unopposed status is pending a recapture pass.</td><td>Research</td></tr>
+        <tr><th scope="row">2023</th><td>Washington State Court of Appeals, Division II, District 1</td><td>Won the November 7, 2023 special general election after being appointed by Governor Jay Inslee on November 23, 2022 (assumed office December 1, 2022).</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -88,16 +91,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

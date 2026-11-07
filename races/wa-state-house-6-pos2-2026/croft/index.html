@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Aaron M. Croft</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Aaron M. Croft</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Independent</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Aaron M. Croft</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Independent</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -76,57 +79,57 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$31,563.52 (126 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$18,681.60 (57 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$31,563.52 (126 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$18,681.60 (57 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Aaron M Croft For Congress, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>Aaron M Croft For Congress, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>Erikson Tyler, Layton</td><td>$1,200.00</td></tr>
-        <tr><td>Washington Education Association Political Action Committee, Federal Way</td><td>$1,200.00</td></tr>
-        <tr><td>Washington Machinists Council, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>West 117 LLC, Newport</td><td>$1,200.00</td></tr>
-        <tr><td>Erikson Tyler, Layton</td><td>$800.00</td></tr>
-        <tr><td>Navratil Kimberly, Riverton</td><td>$697.02</td></tr>
-        <tr><td>SEIU 775 Quality Care Committee, Seattle</td><td>$600.00</td></tr>
-        <tr><td>Alkire Joe, Eagle River</td><td>$500.00</td></tr>
+        <tr><th scope="row">Aaron M Croft For Congress, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Aaron M Croft For Congress, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Erikson Tyler, Layton</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Washington Education Association Political Action Committee, Federal Way</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Washington Machinists Council, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">West 117 LLC, Newport</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Erikson Tyler, Layton</th><td>$800.00</td></tr>
+        <tr><th scope="row">Navratil Kimberly, Riverton</th><td>$697.02</td></tr>
+        <tr><th scope="row">SEIU 775 Quality Care Committee, Seattle</th><td>$600.00</td></tr>
+        <tr><th scope="row">Alkire Joe, Eagle River</th><td>$500.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Wright McGlocklin Kay</td><td>250 Yard Signs $ 1237.50
+        <tr><th scope="row">Wright McGlocklin Kay</th><td>250 Yard Signs $ 1237.50
 250 “H frames $ 250.00
 Sub total $ 1487.50
 Sales Tax $ 132.39
 Total $ 1618.89</td><td>$1,618.89</td></tr>
-        <tr><td>Tissot Solutions LLC</td><td>February retainer for consultant</td><td>$1,250.00</td></tr>
-        <tr><td>Tissot Solutions LLC</td><td>Monthly retainer</td><td>$1,250.00</td></tr>
-        <tr><td>Tissot Solutions LLC</td><td>Monthly retainer for consulting services</td><td>$1,250.00</td></tr>
-        <tr><td>Tissot Solutions LLC</td><td>Monthly retainer for consulting services</td><td>$1,250.00</td></tr>
-        <tr><td>Tissot Solutions LLC</td><td>Management and consulting services - Monthly Retainer, prorated for January</td><td>$1,048.00</td></tr>
-        <tr><td>NWP Consulting</td><td>CONSULTING for the 2026 Campaign Cycle
+        <tr><th scope="row">Tissot Solutions LLC</th><td>February retainer for consultant</td><td>$1,250.00</td></tr>
+        <tr><th scope="row">Tissot Solutions LLC</th><td>Monthly retainer</td><td>$1,250.00</td></tr>
+        <tr><th scope="row">Tissot Solutions LLC</th><td>Monthly retainer for consulting services</td><td>$1,250.00</td></tr>
+        <tr><th scope="row">Tissot Solutions LLC</th><td>Monthly retainer for consulting services</td><td>$1,250.00</td></tr>
+        <tr><th scope="row">Tissot Solutions LLC</th><td>Management and consulting services - Monthly Retainer, prorated for January</td><td>$1,048.00</td></tr>
+        <tr><th scope="row">NWP Consulting</th><td>CONSULTING for the 2026 Campaign Cycle
 For the months of May and June 2026</td><td>$1,000.00</td></tr>
-        <tr><td>Ursa Prints</td><td>Croft4wa.com site creation</td><td>$1,000.00</td></tr>
-        <tr><td>Spokane Pride</td><td>Spokane Pride Parade and Festival 2026
+        <tr><th scope="row">Ursa Prints</th><td>Croft4wa.com site creation</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">Spokane Pride</th><td>Spokane Pride Parade and Festival 2026
 10X10 Booth for Government Departments/Political
 Candidates $500.00
 1/8 Page Advertisement in Pride Guide $150.00
 10 by 10 canopy for vendor booth $100.00
 Table $25.00
 Subtotal $875.00</td><td>$875.00</td></tr>
-        <tr><td>Washington Secretary of State</td><td>Filing fee</td><td>$676.88</td></tr>
+        <tr><th scope="row">Washington Secretary of State</th><td>Filing fee</td><td>$676.88</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -141,16 +144,20 @@ Subtotal $875.00</td><td>$875.00</td></tr>
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

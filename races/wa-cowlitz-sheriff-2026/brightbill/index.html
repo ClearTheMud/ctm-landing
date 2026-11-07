@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Troy Brightbill</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,13 +60,13 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Troy Brightbill</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Kalama, Cowlitz County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Prefers Republican Party</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Cowlitz County Sheriff&#x27;s Office, 27 years of service, holding the roles of Deputy Sheriff, Patrol Sergeant, Detective Sergeant, Chief Criminal Deputy, and Undersheriff. For the last seven years managed operations for the Sheriff&#x27;s Office.; Lower Columbia Major Crimes Team Commander; Assistant Commander, Lower Columbia SWAT</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Troy Brightbill</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Kalama, Cowlitz County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Prefers Republican Party</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Cowlitz County Sheriff&#x27;s Office, 27 years of service, holding the roles of Deputy Sheriff, Patrol Sergeant, Detective Sergeant, Chief Criminal Deputy, and Undersheriff. For the last seven years managed operations for the Sheriff&#x27;s Office.; Lower Columbia Major Crimes Team Commander; Assistant Commander, Lower Columbia SWAT</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -78,68 +81,68 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Cowlitz County Sheriff</td><td>Filed as a candidate; sole filer per PDC records, unopposed.</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>Cowlitz County Sheriff</td><td>Filed as a candidate; sole filer per PDC records, unopposed.</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Professional Law Enforcement Services</td><td>States public safety is the top priority and citizens are best served by providing professional law enforcement services, which requires deputy training, tools, and leadership support.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Staffing and Modernization</td><td>States he has worked to modernize operations and increased staffing to help deputies be efficient and effective.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Leadership Development</td><td>Pledges to advance the Sheriff&#x27;s Office by developing the next generation of law enforcement leaders and providing deputies with training, tools, and support.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Professional Law Enforcement Services</th><td>States public safety is the top priority and citizens are best served by providing professional law enforcement services, which requires deputy training, tools, and leadership support.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Staffing and Modernization</th><td>States he has worked to modernize operations and increased staffing to help deputies be efficient and effective.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Leadership Development</th><td>Pledges to advance the Sheriff&#x27;s Office by developing the next generation of law enforcement leaders and providing deputies with training, tools, and support.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$5,935.37 (26 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$5,444.96 (23 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$5,935.37 (26 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$5,444.96 (23 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Troy Brightbill</td><td>$1,584.75</td></tr>
-        <tr><td>Troy Brightbill</td><td>$1,469.62</td></tr>
-        <tr><td>Brightbill Jay, Cathlamet</td><td>$500.00</td></tr>
-        <tr><td>Waterfall Investments LLC, Kalama</td><td>$500.00</td></tr>
-        <tr><td>Hollandsworth Lance, Kelso</td><td>$250.00</td></tr>
-        <tr><td>Brightbill Todd, La Center</td><td>$200.00</td></tr>
-        <tr><td>Troy Brightbill</td><td>$125.78</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$125.00</td></tr>
-        <tr><td>Bales Carol, Longview</td><td>$100.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$100.00</td></tr>
+        <tr><th scope="row">Troy Brightbill</th><td>$1,584.75</td></tr>
+        <tr><th scope="row">Troy Brightbill</th><td>$1,469.62</td></tr>
+        <tr><th scope="row">Brightbill Jay, Cathlamet</th><td>$500.00</td></tr>
+        <tr><th scope="row">Waterfall Investments LLC, Kalama</th><td>$500.00</td></tr>
+        <tr><th scope="row">Hollandsworth Lance, Kelso</th><td>$250.00</td></tr>
+        <tr><th scope="row">Brightbill Todd, La Center</th><td>$200.00</td></tr>
+        <tr><th scope="row">Troy Brightbill</th><td>$125.78</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$125.00</td></tr>
+        <tr><th scope="row">Bales Carol, Longview</th><td>$100.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$100.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Troy Brightbill</td><td>Campaign Signs, purchased from Copies Today</td><td>$1,584.75</td></tr>
-        <tr><td>Troy Brightbill</td><td>Filing fees</td><td>$1,469.62</td></tr>
-        <tr><td>Copies Today</td><td>Campaign Signs</td><td>$1,389.63</td></tr>
-        <tr><td>Troy Brightbill</td><td>Loan payment</td><td>$1,000.00</td></tr>
-        <tr><td>Troy Brightbill</td><td>Loan payment</td><td>$500.00</td></tr>
-        <tr><td>Ashtown Brewing Company</td><td>Event space rental</td><td>$300.00</td></tr>
-        <tr><td>Troy Brightbill</td><td>Sign materials purchased from Tractor Supply</td><td>$125.78</td></tr>
-        <tr><td>Troy Brightbill</td><td>Sign Materials purchased from Home Depot</td><td>$73.51</td></tr>
-        <tr><td>Troy Brightbill</td><td>Sign brackets, purchased from Amazon</td><td>$71.07</td></tr>
-        <tr><td>Troy Brightbill</td><td>Sign brackets, purchased from Amazon</td><td>$71.07</td></tr>
+        <tr><th scope="row">Troy Brightbill</th><td>Campaign Signs, purchased from Copies Today</td><td>$1,584.75</td></tr>
+        <tr><th scope="row">Troy Brightbill</th><td>Filing fees</td><td>$1,469.62</td></tr>
+        <tr><th scope="row">Copies Today</th><td>Campaign Signs</td><td>$1,389.63</td></tr>
+        <tr><th scope="row">Troy Brightbill</th><td>Loan payment</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">Troy Brightbill</th><td>Loan payment</td><td>$500.00</td></tr>
+        <tr><th scope="row">Ashtown Brewing Company</th><td>Event space rental</td><td>$300.00</td></tr>
+        <tr><th scope="row">Troy Brightbill</th><td>Sign materials purchased from Tractor Supply</td><td>$125.78</td></tr>
+        <tr><th scope="row">Troy Brightbill</th><td>Sign Materials purchased from Home Depot</td><td>$73.51</td></tr>
+        <tr><th scope="row">Troy Brightbill</th><td>Sign brackets, purchased from Amazon</td><td>$71.07</td></tr>
+        <tr><th scope="row">Troy Brightbill</th><td>Sign brackets, purchased from Amazon</td><td>$71.07</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -167,16 +170,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

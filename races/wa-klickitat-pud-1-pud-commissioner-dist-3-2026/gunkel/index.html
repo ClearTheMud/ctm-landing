@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Dan G. Gunkel</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,12 +60,12 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Daniel G. Gunkel</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Goldendale, Klickitat County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Commissioner, Klickitat County Public Utility District No. 1. Elected to the PUD commission in the 2020 general election and serving as an incumbent commissioner.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Daniel G. Gunkel</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Goldendale, Klickitat County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Commissioner, Klickitat County Public Utility District No. 1. Elected to the PUD commission in the 2020 general election and serving as an incumbent commissioner.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -77,15 +80,15 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Klickitat County PUD No. 1 Commissioner, Position 3 (Primary)</td><td>Filed and declared; PDC flags the committee as on the 2026 primary election ballot.</td><td>Research</td></tr>
-        <tr><td>2020</td><td>Klickitat County PUD No. 1 Commissioner (General)</td><td>Won in the general election (PDC committee record, candidacy 25913, general_election_status &quot;Won in general&quot;).</td><td>Research</td></tr>
-        <tr><td>2014</td><td>Public Utility District Commissioner #3 Utility Commissioner #3 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2014</td><td>Public Utility District # 1 Utility Commissioner #3 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2026</th><td>Klickitat County PUD No. 1 Commissioner, Position 3 (Primary)</td><td>Filed and declared; PDC flags the committee as on the 2026 primary election ballot.</td><td>Research</td></tr>
+        <tr><th scope="row">2020</th><td>Klickitat County PUD No. 1 Commissioner (General)</td><td>Won in the general election (PDC committee record, candidacy 25913, general_election_status &quot;Won in general&quot;).</td><td>Research</td></tr>
+        <tr><th scope="row">2014</th><td>Public Utility District Commissioner #3 Utility Commissioner #3 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2014</th><td>Public Utility District # 1 Utility Commissioner #3 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
@@ -106,16 +109,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

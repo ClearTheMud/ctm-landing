@@ -14,10 +14,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -26,6 +27,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Columbia County</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -47,7 +50,7 @@
       <svg xmlns="http://www.w3.org/2000/svg"
      viewBox="197.8 15.0 404.5 570.0"
      aria-label="Columbia County Places Map"
-     role="img">
+     role="group">
     <path class="county-boundary" d="M203.5,77.5L211.8,77.5L211.4,48.0L214.0,50.1L219.4,52.0L222.2,53.2L225.3,57.0L226.2,58.3L228.6,60.8L233.4,67.3L238.3,71.3L239.3,72.4L242.1,77.4L246.0,80.6L250.5,82.2L252.6,82.6L254.8,82.5L259.9,80.6L264.2,79.9L268.9,80.4L274.0,80.8L279.4,80.8L282.2,80.2L284.4,79.3L286.5,77.9L288.1,76.5L289.3,74.2L289.7,71.2L290.7,68.7L292.8,66.1L295.2,64.9L297.6,64.5L301.0,64.4L307.4,64.9L309.8,64.7L317.9,62.6L322.7,60.6L328.3,56.6L330.8,55.4L333.1,54.9L338.4,54.4L345.0,52.9L347.2,52.6L351.9,52.8L352.5,52.5L356.8,52.9L359.3,53.9L361.6,53.8L364.8,53.0L368.4,52.0L371.5,51.6L378.4,49.4L381.2,49.2L386.1,50.7L390.2,51.2L394.5,52.8L400.8,54.1L403.7,54.9L408.6,55.7L413.1,55.6L419.2,55.2L421.8,54.3L423.4,53.0L424.6,51.2L425.4,49.1L426.2,43.9L426.6,38.7L427.6,34.1L430.2,28.1L432.3,25.3L434.9,23.1L437.8,21.4L439.1,21.0L443.9,20.0L443.1,77.7L437.9,77.7L436.8,157.8L462.2,157.4L488.5,157.1L514.6,157.1L514.5,176.9L514.5,183.5L527.3,183.7L527.4,223.2L540.6,223.1L540.7,236.0L553.6,236.0L553.0,276.8L591.9,276.1L591.9,279.5L591.5,470.4L597.2,470.4L597.2,580.0L584.7,579.8L526.6,579.1L366.3,578.4L354.4,578.3L354.6,573.7L355.2,567.5L356.7,561.4L356.5,555.0L356.7,548.8L357.3,544.8L357.3,541.9L356.6,522.9L357.0,515.8L356.8,509.6L357.1,503.3L357.2,464.8L357.7,393.1L325.6,393.0L280.5,392.8L280.4,355.1L280.7,329.1L280.7,327.7L280.7,323.5L280.8,314.6L267.7,314.6L238.4,314.6L203.3,315.0L203.3,282.6L203.3,276.1L203.3,250.2L203.4,211.2L203.3,171.9L203.6,158.8L203.5,152.2L202.8,78.1L203.5,77.5Z" />
   <g id="places">
     <path class="place" id="WA-013-starbuck" data-name="Starbuck" data-slug="starbuck" data-type="city" d="M270.4,109.9L271.1,110.4L272.9,111.7L273.5,112.1L273.7,111.1L274.7,111.6L275.3,112.2L277.0,112.2L277.0,113.4L275.0,112.2L274.3,112.3L274.3,113.3L274.8,114.1L274.9,115.1L275.8,115.1L276.5,115.0L277.7,115.4L278.3,115.4L280.1,115.4L280.1,116.8L280.6,117.5L280.6,119.1L280.0,118.6L279.5,117.5L277.0,117.1L277.1,118.3L276.4,118.3L275.6,118.3L274.9,118.2L274.4,117.6L273.0,116.8L272.8,115.5L272.2,114.2L271.7,113.5L271.2,112.6L270.5,112.4L270.5,110.9L270.4,109.9Z"><title>Starbuck</title></path>
@@ -63,12 +66,12 @@
   <div class="section">
     <h2><span class="section-num">1</span> County Offices</h2>
     <div class="finding">
-      <table>
-        <thead><tr><th>Office</th><th>#</th><th>Candidates</th><th>Status</th></tr></thead>
+      <div class="table-scroll" role="region" aria-label="County Offices, scrollable table" tabindex="0"><table><caption class="sr-only">County Offices</caption>
+        <thead><tr><th scope="col">Office</th><th scope="col">#</th><th scope="col">Candidates</th><th scope="col">Status</th></tr></thead>
         <tbody>
-        <tr><td><a href="/races/wa-columbia-columbia-county-assessor-2026/">Columbia County  Assessor</a></td><td>1</td><td>Tammy Groom Ketterman (R)</td><td>In Primary</td></tr>        <tr><td><a href="/races/wa-columbia-columbia-county-auditor-2026/">Columbia County Auditor</a></td><td>1</td><td>Will Hutchens (NP)</td><td>In Primary</td></tr>        <tr><td><a href="/races/wa-columbia-columbia-county-clerk-2026/">Columbia County Clerk</a></td><td>1</td><td>Kriston Chapman (R)</td><td>In Primary</td></tr>        <tr><td><a href="/races/wa-columbia-columbia-county-prosecutor-2026/">Columbia County Prosecutor</a></td><td>1</td><td>Nickolas J. Ward (NP)</td><td>In Primary</td></tr>        <tr><td><a href="/races/wa-columbia-columbia-county-sheriff-2026/">Columbia County Sheriff</a></td><td>1</td><td>Joe Helm (R)</td><td>In Primary</td></tr>        <tr><td><a href="/races/wa-columbia-columbia-county-treasurer-2026/">Columbia County Treasurer</a></td><td>1</td><td>Carla Rowe (NP)</td><td>In Primary</td></tr>        <tr><td><a href="/races/wa-columbia-commissioner-district-3-2026/">Commissioner District 3</a></td><td>1</td><td>Bill Warren (R)</td><td>In Primary</td></tr>
+        <tr><th scope="row"><a href="/races/wa-columbia-columbia-county-assessor-2026/">Columbia County  Assessor</a></th><td>1</td><td>Tammy Groom Ketterman (R)</td><td>In Primary</td></tr>        <tr><th scope="row"><a href="/races/wa-columbia-columbia-county-auditor-2026/">Columbia County Auditor</a></th><td>1</td><td>Will Hutchens (NP)</td><td>In Primary</td></tr>        <tr><th scope="row"><a href="/races/wa-columbia-columbia-county-clerk-2026/">Columbia County Clerk</a></th><td>1</td><td>Kriston Chapman (R)</td><td>In Primary</td></tr>        <tr><th scope="row"><a href="/races/wa-columbia-columbia-county-prosecutor-2026/">Columbia County Prosecutor</a></th><td>1</td><td>Nickolas J. Ward (NP)</td><td>In Primary</td></tr>        <tr><th scope="row"><a href="/races/wa-columbia-columbia-county-sheriff-2026/">Columbia County Sheriff</a></th><td>1</td><td>Joe Helm (R)</td><td>In Primary</td></tr>        <tr><th scope="row"><a href="/races/wa-columbia-columbia-county-treasurer-2026/">Columbia County Treasurer</a></th><td>1</td><td>Carla Rowe (NP)</td><td>In Primary</td></tr>        <tr><th scope="row"><a href="/races/wa-columbia-commissioner-district-3-2026/">Commissioner District 3</a></th><td>1</td><td>Bill Warren (R)</td><td>In Primary</td></tr>
         </tbody>
-      </table>
+      </table></div>
     </div>
   </div>
 
@@ -79,14 +82,18 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 <script>window.CTM_PLACE_DATA = {};</script>
 <script src="/js/place-map.js"></script>

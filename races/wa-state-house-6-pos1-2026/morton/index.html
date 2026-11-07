@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Jennifer Morton</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Jennifer Morton</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Jennifer Morton</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -87,59 +90,59 @@ Faith-based non-profit (YFC), Spokane County Veteran’s Court/Forum.  </p><br
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2023</td><td>City Of Airway Heights Council Position NO. 7 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2019</td><td>City Of Airway Heights Council Position 7 (Primary)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
-        <tr><td>2019</td><td>City Of Airway Heights Council Position NO. 7 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2023</th><td>City Of Airway Heights Council Position NO. 7 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2019</th><td>City Of Airway Heights Council Position 7 (Primary)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2019</th><td>City Of Airway Heights Council Position NO. 7 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$5,260.54 (14 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$5,599.86 (13 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$5,260.54 (14 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$5,599.86 (13 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Jennifer J. Morton</td><td>$3,285.81</td></tr>
-        <tr><td>Chase Rob, Liberty Lake</td><td>$700.00</td></tr>
-        <tr><td>Nelson Dave, Fairchild</td><td>$500.00</td></tr>
-        <tr><td>Chase Rob, Liberty Lake</td><td>$350.00</td></tr>
-        <tr><td>Bonner Kayloni, Deer Park</td><td>$200.00</td></tr>
-        <tr><td>Ulrick Mike, Spokane</td><td>$200.00</td></tr>
-        <tr><td>Jennifer J. Morton</td><td>$162.24</td></tr>
-        <tr><td>Jennifer J. Morton</td><td>$150.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$150.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$100.00</td></tr>
+        <tr><th scope="row">Jennifer J. Morton</th><td>$3,285.81</td></tr>
+        <tr><th scope="row">Chase Rob, Liberty Lake</th><td>$700.00</td></tr>
+        <tr><th scope="row">Nelson Dave, Fairchild</th><td>$500.00</td></tr>
+        <tr><th scope="row">Chase Rob, Liberty Lake</th><td>$350.00</td></tr>
+        <tr><th scope="row">Bonner Kayloni, Deer Park</th><td>$200.00</td></tr>
+        <tr><th scope="row">Ulrick Mike, Spokane</th><td>$200.00</td></tr>
+        <tr><th scope="row">Jennifer J. Morton</th><td>$162.24</td></tr>
+        <tr><th scope="row">Jennifer J. Morton</th><td>$150.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$150.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$100.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Jennifer J. Morton</td><td>Printing Yard Signs to Presscats</td><td>$3,285.81</td></tr>
-        <tr><td>Chase Rob</td><td>Refund of partial contribution</td><td>$687.51</td></tr>
-        <tr><td>Secretary of State</td><td>Filing fees</td><td>$676.88</td></tr>
-        <tr><td>Spokane CMC</td><td>Management and consulting services</td><td>$393.21</td></tr>
-        <tr><td>Aspenels Printing</td><td>Printing 500 envelopes</td><td>$321.85</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$301.07</td></tr>
-        <tr><td>Costco</td><td>Campaign supplies</td><td>$220.73</td></tr>
-        <tr><td>Jennifer J. Morton</td><td>Costco merchandise for parade - candy etc</td><td>$162.24</td></tr>
-        <tr><td>Jennifer J. Morton</td><td>Photography</td><td>$150.00</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$62.30</td></tr>
+        <tr><th scope="row">Jennifer J. Morton</th><td>Printing Yard Signs to Presscats</td><td>$3,285.81</td></tr>
+        <tr><th scope="row">Chase Rob</th><td>Refund of partial contribution</td><td>$687.51</td></tr>
+        <tr><th scope="row">Secretary of State</th><td>Filing fees</td><td>$676.88</td></tr>
+        <tr><th scope="row">Spokane CMC</th><td>Management and consulting services</td><td>$393.21</td></tr>
+        <tr><th scope="row">Aspenels Printing</th><td>Printing 500 envelopes</td><td>$321.85</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$301.07</td></tr>
+        <tr><th scope="row">Costco</th><td>Campaign supplies</td><td>$220.73</td></tr>
+        <tr><th scope="row">Jennifer J. Morton</th><td>Costco merchandise for parade - candy etc</td><td>$162.24</td></tr>
+        <tr><th scope="row">Jennifer J. Morton</th><td>Photography</td><td>$150.00</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$62.30</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -154,16 +157,20 @@ Faith-based non-profit (YFC), Spokane County Veteran’s Court/Forum.  </p><br
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

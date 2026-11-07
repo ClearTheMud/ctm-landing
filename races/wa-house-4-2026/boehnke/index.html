@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -27,6 +28,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Matt Boehnke</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -55,17 +58,17 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Matt Boehnke</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Date of Birth</td><td>Born June 1968 (age 57-58 in 2026). Raised in Kennewick, Washington; graduated from Kamiakin High School in 1986.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Residence</td><td>Kennewick, Benton County, Washington (Tri-Cities), 8th Legislative District</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Military Service</td><td>Served more than 21 years in the U.S. Army aviation branch (1990-2011), retiring as a lieutenant colonel.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Family</td><td>Married to Dawn Boehnke for more than 35 years. Two sons. Residents of the Tri-Cities.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Education</td><td>B.A. in government, Eastern Washington University (1990); M.S. in aeronautical science (operations and management), Embry-Riddle Aeronautical University (1999)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>Tenured professor in the cybersecurity division at Columbia Basin College (a Washington state community college), where he teaches and has served as director and lead professor of the cybersecurity program. Has also worked as a cybersecurity consultant.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Matt Boehnke</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Date of Birth</th><td>Born June 1968 (age 57-58 in 2026). Raised in Kennewick, Washington; graduated from Kamiakin High School in 1986.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Kennewick, Benton County, Washington (Tri-Cities), 8th Legislative District</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Military Service</th><td>Served more than 21 years in the U.S. Army aviation branch (1990-2011), retiring as a lieutenant colonel.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Family</th><td>Married to Dawn Boehnke for more than 35 years. Two sons. Residents of the Tri-Cities.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Education</th><td>B.A. in government, Eastern Washington University (1990); M.S. in aeronautical science (operations and management), Embry-Riddle Aeronautical University (1999)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Tenured professor in the cybersecurity division at Columbia Basin College (a Washington state community college), where he teaches and has served as director and lead professor of the cybersecurity program. Has also worked as a cybersecurity consultant.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -86,225 +89,225 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>U.S. House WA-4 (Primary, Aug 4)</td><td>Running for the open seat left by retiring Rep. Dan Newhouse rather than seeking Senate re-election. Top-two primary field of roughly 11 candidates, with Republicans Boehnke, Yakima County Commissioner Amanda McKinney, and Jerrod Sessler seen as front-runners; Democrats consolidated behind John Duresky.</td><td>Research</td></tr>
-        <tr><td>2022</td><td>WA Senate LD-8 (General)</td><td>Won (defeated Democrat Ronni Batchelor). Succeeded Sharon Brown.</td><td>Research</td></tr>
-        <tr><td>2020</td><td>WA House LD-8 Pos. 2 (General)</td><td>Won (re-elected)</td><td>Research</td></tr>
-        <tr><td>2018</td><td>WA House LD-8 Pos. 2 (General)</td><td>Won (defeated Democrat Christopher Tracy). Succeeded Larry Haler.</td><td>Research</td></tr>
-        <tr><td>2015</td><td>Kennewick City Council</td><td>Elected</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>U.S. House WA-4 (Primary, Aug 4)</td><td>Running for the open seat left by retiring Rep. Dan Newhouse rather than seeking Senate re-election. Top-two primary field of roughly 11 candidates, with Republicans Boehnke, Yakima County Commissioner Amanda McKinney, and Jerrod Sessler seen as front-runners; Democrats consolidated behind John Duresky.</td><td>Research</td></tr>
+        <tr><th scope="row">2022</th><td>WA Senate LD-8 (General)</td><td>Won (defeated Democrat Ronni Batchelor). Succeeded Sharon Brown.</td><td>Research</td></tr>
+        <tr><th scope="row">2020</th><td>WA House LD-8 Pos. 2 (General)</td><td>Won (re-elected)</td><td>Research</td></tr>
+        <tr><th scope="row">2018</th><td>WA House LD-8 Pos. 2 (General)</td><td>Won (defeated Democrat Christopher Tracy). Succeeded Larry Haler.</td><td>Research</td></tr>
+        <tr><th scope="row">2015</th><td>Kennewick City Council</td><td>Elected</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Energy and Hydroelectric Dams</td><td>Ranking Republican on the Senate Environment, Energy and Technology Committee. Supports the lower Snake River hydroelectric dam system and advanced (small modular) nuclear energy. Names securing the hydroelectric dam system as a top priority in his congressional run.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Technology, AI and Data Centers</td><td>Focuses on artificial intelligence, cybersecurity, and data center policy, including managing data center demand on the regional power grid. Serves on the legislature&#x27;s Artificial Intelligence Task Force and Technology Services Board.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Higher Education and Workforce</td><td>Serves on the Senate Higher Education and Workforce Development Committee. Advocates for workforce development, higher education access, and student safety.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Public Safety</td><td>Names strengthening public safety among his priorities. Former Kennewick City Council member.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Energy and Hydroelectric Dams</th><td>Ranking Republican on the Senate Environment, Energy and Technology Committee. Supports the lower Snake River hydroelectric dam system and advanced (small modular) nuclear energy. Names securing the hydroelectric dam system as a top priority in his congressional run.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Technology, AI and Data Centers</th><td>Focuses on artificial intelligence, cybersecurity, and data center policy, including managing data center demand on the regional power grid. Serves on the legislature&#x27;s Artificial Intelligence Task Force and Technology Services Board.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Higher Education and Workforce</th><td>Serves on the Senate Higher Education and Workforce Development Committee. Advocates for workforce development, higher education access, and student safety.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Public Safety</th><td>Names strengthening public safety among his priorities. Former Kennewick City Council member.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$212,005.92</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Total Spent</td><td>$148,266.58</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Total Raised</th><td>$212,005.92</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Total Spent</th><td>$148,266.58</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">Source: Federal Election Commission.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>BOEHNKE, MATTHEW</td><td>$11,995.87</td></tr>
-        <tr><td>PLUMBERS AND STEAMFITTERS LOCAL 598 POLITICAL ACTION COMMITTEE (PIPE TRADES 598 PAC)</td><td>$10,000.00</td></tr>
-        <tr><td>RATCHFORD, LORRIE</td><td>$7,000.00</td></tr>
-        <tr><td>RATCHFORD, BRUCE</td><td>$7,000.00</td></tr>
-        <tr><td>KERSHAW, MARY ANN</td><td>$7,000.00</td></tr>
-        <tr><td>BOEHNKE, BONNIE</td><td>$6,988.00</td></tr>
-        <tr><td>GOPAC ELECTION FUND</td><td>$5,000.00</td></tr>
-        <tr><td>LANCASTER, KIRSTEN</td><td>$4,824.26</td></tr>
-        <tr><td>STANLEY, GEORGE</td><td>$4,500.00</td></tr>
-        <tr><td>RATCHFORD, RYAN</td><td>$3,643.56</td></tr>
-        <tr><td>SMITH, RANDALL</td><td>$3,643.56</td></tr>
-        <tr><td>BOEHNKE, DAWN</td><td>$3,500.00</td></tr>
-        <tr><td>ROLL ON COLUMBIA POLITICAL ACTION COMMITTEE</td><td>$3,500.00</td></tr>
-        <tr><td>BOUCHEY, KEVIN</td><td>$3,500.00</td></tr>
-        <tr><td>BREHM, PETER</td><td>$3,500.00</td></tr>
-        <tr><td>BRESHEARS, RICH</td><td>$3,400.00</td></tr>
-        <tr><td>PARR, ROBERT</td><td>$3,400.00</td></tr>
-        <tr><td>LANCASTER, CRAIG</td><td>$3,000.00</td></tr>
-        <tr><td>SIMMELINK, JULIE</td><td>$3,000.00</td></tr>
-        <tr><td>PEARSON, ERIC</td><td>$2,602.54</td></tr>
-        <tr><td>TUCCI, GARY</td><td>$2,500.00</td></tr>
-        <tr><td>EERKES, CHRISTOPHER</td><td>$2,500.00</td></tr>
-        <tr><td>HAYS, JARROD</td><td>$2,500.00</td></tr>
-        <tr><td>CONNORS, MICHAEL</td><td>$2,082.03</td></tr>
-        <tr><td>HENDERSON, DESTRY</td><td>$2,041.02</td></tr>
-        <tr><td>DAN NEWHOUSE FOR CONGRESS</td><td>$2,000.00</td></tr>
-        <tr><td>TIPPETT, ROBERT</td><td>$2,000.00</td></tr>
-        <tr><td>HASTINGS, RICHARD</td><td>$2,000.00</td></tr>
-        <tr><td>HABERLING, NICHOLAS</td><td>$2,000.00</td></tr>
-        <tr><td>HOUSTON, KRIS</td><td>$2,000.00</td></tr>
-        <tr><td>HASTINGS, CLAIRE</td><td>$2,000.00</td></tr>
-        <tr><td>GALLANT, DAVID B</td><td>$2,000.00</td></tr>
-        <tr><td>BUSEY, BRADLEY</td><td>$2,000.00</td></tr>
-        <tr><td>BOUCHEY, RENEE</td><td>$2,000.00</td></tr>
-        <tr><td>GIBBONS, BRIAN</td><td>$1,541.02</td></tr>
-        <tr><td>FORCUM, MARK</td><td>$1,500.00</td></tr>
-        <tr><td>ASHBY, STEVEN</td><td>$1,500.00</td></tr>
-        <tr><td>PADEN, LYNN</td><td>$1,176.02</td></tr>
-        <tr><td>TAFT, DONALD</td><td>$1,041.02</td></tr>
-        <tr><td>RIDGE, BRENT</td><td>$1,041.02</td></tr>
-        <tr><td>HESTER, GORDON</td><td>$1,041.02</td></tr>
-        <tr><td>GORDON, VICKI</td><td>$1,041.02</td></tr>
-        <tr><td>PATRICK, BRIAN</td><td>$1,041.02</td></tr>
-        <tr><td>SCHULZ, KIRK</td><td>$1,041.02</td></tr>
-        <tr><td>MORRIS, JOHN</td><td>$1,041.02</td></tr>
-        <tr><td>ROACH, NANCY</td><td>$1,041.02</td></tr>
-        <tr><td>CADWELL, PRISCILLA</td><td>$1,041.02</td></tr>
-        <tr><td>THOMASON, LINDA</td><td>$1,000.00</td></tr>
-        <tr><td>STEUERWALT, MATTHEW</td><td>$1,000.00</td></tr>
-        <tr><td>SCHAAPMAN, LARRY</td><td>$1,000.00</td></tr>
-        <tr><td>JACKSON, KEDRICH</td><td>$1,000.00</td></tr>
-        <tr><td>HUYETTE, WILLIAM</td><td>$1,000.00</td></tr>
-        <tr><td>HUE, RONALD</td><td>$1,000.00</td></tr>
-        <tr><td>HOLLIDAY, KEITH</td><td>$1,000.00</td></tr>
-        <tr><td>DEGROOT, CAROLYN</td><td>$1,000.00</td></tr>
-        <tr><td>LARSEN, PAMELA</td><td>$1,000.00</td></tr>
-        <tr><td>KOSKINEN, SEAN</td><td>$1,000.00</td></tr>
-        <tr><td>HAYS, ARIELLE</td><td>$1,000.00</td></tr>
-        <tr><td>HAGEL, DARLENE</td><td>$1,000.00</td></tr>
-        <tr><td>GOULET, BRIAN</td><td>$1,000.00</td></tr>
-        <tr><td>FIELD, HENRY</td><td>$1,000.00</td></tr>
-        <tr><td>DENSLOW, MICHAEL</td><td>$1,000.00</td></tr>
-        <tr><td>CURBELO, CECILIA</td><td>$1,000.00</td></tr>
-        <tr><td>WALKLEY, NANETTE</td><td>$1,000.00</td></tr>
-        <tr><td>SHIMEK, JAIME</td><td>$1,000.00</td></tr>
-        <tr><td>SCHUETZ, ROBERT</td><td>$1,000.00</td></tr>
-        <tr><td>NELSON, CHARLES</td><td>$1,000.00</td></tr>
-        <tr><td>HEASTON, DALE</td><td>$1,000.00</td></tr>
-        <tr><td>GOEHNER, KEITH</td><td>$1,000.00</td></tr>
-        <tr><td>PADDEN, MICHAEL</td><td>$920.51</td></tr>
-        <tr><td>NAULTY, MARK</td><td>$750.00</td></tr>
-        <tr><td>MOE, AMANDA</td><td>$620.51</td></tr>
-        <tr><td>SMITH, KEVIN</td><td>$600.00</td></tr>
-        <tr><td>SHERETZ, WILLIAM C</td><td>$563.00</td></tr>
-        <tr><td>KING, ART</td><td>$560.51</td></tr>
-        <tr><td>VIRDEN, MARY</td><td>$520.51</td></tr>
-        <tr><td>VELEKE, KEVIN</td><td>$520.51</td></tr>
-        <tr><td>SMART, JEFF</td><td>$520.51</td></tr>
-        <tr><td>SHYMATTA, BRIAN</td><td>$520.51</td></tr>
-        <tr><td>ROACH, EAMONN</td><td>$520.51</td></tr>
-        <tr><td>OVERTURF, JAMES</td><td>$520.51</td></tr>
-        <tr><td>MASSEY, MICHAEL</td><td>$520.51</td></tr>
-        <tr><td>HAUGH, KENNETH</td><td>$520.51</td></tr>
-        <tr><td>FRANCIS, JAN</td><td>$520.51</td></tr>
-        <tr><td>BARKIS, ANDREW</td><td>$520.51</td></tr>
-        <tr><td>NIES, JOELLE</td><td>$520.51</td></tr>
-        <tr><td>ALFORD, BRENDA</td><td>$520.51</td></tr>
-        <tr><td>GRIMM, CHARLES</td><td>$520.51</td></tr>
-        <tr><td>COPELAND, KENT</td><td>$520.51</td></tr>
-        <tr><td>WEST, STACI</td><td>$520.50</td></tr>
-        <tr><td>WEDHAM, SUSAN</td><td>$500.00</td></tr>
-        <tr><td>MICHEL, DOLORES</td><td>$500.00</td></tr>
-        <tr><td>MCGLATHERY, TRACI</td><td>$500.00</td></tr>
-        <tr><td>LAMPSON, WILLIAM</td><td>$500.00</td></tr>
-        <tr><td>GOETTL, MIKE</td><td>$500.00</td></tr>
-        <tr><td>FORTUNATO, ELIZABETH</td><td>$500.00</td></tr>
-        <tr><td>DURFEY, RACHELLE</td><td>$500.00</td></tr>
-        <tr><td>CONNORS, ADELE</td><td>$500.00</td></tr>
-        <tr><td>SANCHEZ, JILL</td><td>$500.00</td></tr>
-        <tr><td>MAZZOLA, NANCY</td><td>$500.00</td></tr>
-        <tr><td>SHERETZ, BILL</td><td>$500.00</td></tr>
-        <tr><td>LINDE, SANDRA</td><td>$500.00</td></tr>
-        <tr><td>KUNTZ, NOEL</td><td>$500.00</td></tr>
-        <tr><td>HUNSAKER, JOHN</td><td>$500.00</td></tr>
-        <tr><td>HOUSTON, RANDY</td><td>$500.00</td></tr>
-        <tr><td>CHRISTENSEN, GARY</td><td>$500.00</td></tr>
-        <tr><td>BEAUCHAMP, BRAD</td><td>$500.00</td></tr>
-        <tr><td>KECK, ROY</td><td>$500.00</td></tr>
-        <tr><td>KIMBALL, TOM</td><td>$353.00</td></tr>
-        <tr><td>WALTERS, DENNIS</td><td>$350.00</td></tr>
-        <tr><td>LINDE, LADON</td><td>$350.00</td></tr>
-        <tr><td>LANCASTER, IVAN</td><td>$350.00</td></tr>
-        <tr><td>WATKINS, KRIS</td><td>$300.00</td></tr>
-        <tr><td>HIMELBAUGH, DANIEL</td><td>$300.00</td></tr>
-        <tr><td>ALLISON, JANET</td><td>$300.00</td></tr>
-        <tr><td>BLACK, ERIC</td><td>$300.00</td></tr>
-        <tr><td>WALLACE, LISA</td><td>$260.25</td></tr>
-        <tr><td>STEVENSON, RHONDA</td><td>$260.25</td></tr>
-        <tr><td>SCHULTZ, JOHN</td><td>$260.25</td></tr>
-        <tr><td>NOVAKOVICH, MICHAEL</td><td>$260.25</td></tr>
-        <tr><td>DROKE, MENDY</td><td>$260.25</td></tr>
-        <tr><td>DREWRY, DEE</td><td>$260.25</td></tr>
-        <tr><td>BRONNER, JENNIFER</td><td>$260.25</td></tr>
-        <tr><td>BALCOM, KELLEE</td><td>$260.25</td></tr>
-        <tr><td>REINHARDT, JAY</td><td>$260.25</td></tr>
-        <tr><td>NELSON, KATIE</td><td>$260.25</td></tr>
-        <tr><td>BLISS, JASON</td><td>$260.25</td></tr>
-        <tr><td>SLADE, ROSCOE</td><td>$260.25</td></tr>
-        <tr><td>CREYDT, JESSE</td><td>$260.25</td></tr>
-        <tr><td>SMITH, LEON</td><td>$250.00</td></tr>
-        <tr><td>SMITH, DOUG</td><td>$250.00</td></tr>
-        <tr><td>SHIBLEY, BILL</td><td>$250.00</td></tr>
-        <tr><td>RICHARDSON, JET</td><td>$250.00</td></tr>
-        <tr><td>MUEGGLER, FORREST</td><td>$250.00</td></tr>
-        <tr><td>MONTEBLANCO, KELLY</td><td>$250.00</td></tr>
-        <tr><td>LAMPSON, KATE</td><td>$250.00</td></tr>
-        <tr><td>HANNA, ANDREW</td><td>$250.00</td></tr>
-        <tr><td>FORRESTER, CHARLES</td><td>$250.00</td></tr>
-        <tr><td>DOZIER, PERRY</td><td>$250.00</td></tr>
-        <tr><td>DALY, JODI</td><td>$250.00</td></tr>
-        <tr><td>BOWMAN, LEON</td><td>$250.00</td></tr>
-        <tr><td>BERGENER, BRAD</td><td>$250.00</td></tr>
-        <tr><td>RANDALL, MONICA</td><td>$250.00</td></tr>
-        <tr><td>MCDANIEL, DOROTHY</td><td>$250.00</td></tr>
-        <tr><td>HYATT, KAREN</td><td>$250.00</td></tr>
-        <tr><td>DOTZAUER, RONALD</td><td>$250.00</td></tr>
-        <tr><td>VAN DE WEGE, KEVIN</td><td>$250.00</td></tr>
-        <tr><td>PADEN, WILLIAM</td><td>$250.00</td></tr>
-        <tr><td>LOW, SAM</td><td>$250.00</td></tr>
-        <tr><td>LANCASTER, MAILE</td><td>$250.00</td></tr>
-        <tr><td>LANCASTER, LILLIAN</td><td>$250.00</td></tr>
-        <tr><td>LANCASTER, ELLE</td><td>$250.00</td></tr>
-        <tr><td>KREIS, SHAWN</td><td>$250.00</td></tr>
-        <tr><td>HOLMES, DAN</td><td>$250.00</td></tr>
-        <tr><td>FREDERICK, CYNTHIA</td><td>$250.00</td></tr>
-        <tr><td>SULLIVAN, THERESA</td><td>$208.20</td></tr>
-        <tr><td>MCGOWAN, JASON</td><td>$208.20</td></tr>
-        <tr><td>BILSKIS, RICHARD</td><td>$208.20</td></tr>
-        <tr><td>NOVAKOVICH, SKIP</td><td>$200.00</td></tr>
-        <tr><td>MARSTON, RANDALL</td><td>$156.15</td></tr>
-        <tr><td>FASTSIGNS</td><td>$80.00</td></tr>
+        <tr><th scope="row">BOEHNKE, MATTHEW</th><td>$11,995.87</td></tr>
+        <tr><th scope="row">PLUMBERS AND STEAMFITTERS LOCAL 598 POLITICAL ACTION COMMITTEE (PIPE TRADES 598 PAC)</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">RATCHFORD, LORRIE</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">RATCHFORD, BRUCE</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">KERSHAW, MARY ANN</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">BOEHNKE, BONNIE</th><td>$6,988.00</td></tr>
+        <tr><th scope="row">GOPAC ELECTION FUND</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">LANCASTER, KIRSTEN</th><td>$4,824.26</td></tr>
+        <tr><th scope="row">STANLEY, GEORGE</th><td>$4,500.00</td></tr>
+        <tr><th scope="row">RATCHFORD, RYAN</th><td>$3,643.56</td></tr>
+        <tr><th scope="row">SMITH, RANDALL</th><td>$3,643.56</td></tr>
+        <tr><th scope="row">BOEHNKE, DAWN</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">ROLL ON COLUMBIA POLITICAL ACTION COMMITTEE</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">BOUCHEY, KEVIN</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">BREHM, PETER</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">BRESHEARS, RICH</th><td>$3,400.00</td></tr>
+        <tr><th scope="row">PARR, ROBERT</th><td>$3,400.00</td></tr>
+        <tr><th scope="row">LANCASTER, CRAIG</th><td>$3,000.00</td></tr>
+        <tr><th scope="row">SIMMELINK, JULIE</th><td>$3,000.00</td></tr>
+        <tr><th scope="row">PEARSON, ERIC</th><td>$2,602.54</td></tr>
+        <tr><th scope="row">TUCCI, GARY</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">EERKES, CHRISTOPHER</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">HAYS, JARROD</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">CONNORS, MICHAEL</th><td>$2,082.03</td></tr>
+        <tr><th scope="row">HENDERSON, DESTRY</th><td>$2,041.02</td></tr>
+        <tr><th scope="row">DAN NEWHOUSE FOR CONGRESS</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">TIPPETT, ROBERT</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">HASTINGS, RICHARD</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">HABERLING, NICHOLAS</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">HOUSTON, KRIS</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">HASTINGS, CLAIRE</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">GALLANT, DAVID B</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">BUSEY, BRADLEY</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">BOUCHEY, RENEE</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">GIBBONS, BRIAN</th><td>$1,541.02</td></tr>
+        <tr><th scope="row">FORCUM, MARK</th><td>$1,500.00</td></tr>
+        <tr><th scope="row">ASHBY, STEVEN</th><td>$1,500.00</td></tr>
+        <tr><th scope="row">PADEN, LYNN</th><td>$1,176.02</td></tr>
+        <tr><th scope="row">TAFT, DONALD</th><td>$1,041.02</td></tr>
+        <tr><th scope="row">RIDGE, BRENT</th><td>$1,041.02</td></tr>
+        <tr><th scope="row">HESTER, GORDON</th><td>$1,041.02</td></tr>
+        <tr><th scope="row">GORDON, VICKI</th><td>$1,041.02</td></tr>
+        <tr><th scope="row">PATRICK, BRIAN</th><td>$1,041.02</td></tr>
+        <tr><th scope="row">SCHULZ, KIRK</th><td>$1,041.02</td></tr>
+        <tr><th scope="row">MORRIS, JOHN</th><td>$1,041.02</td></tr>
+        <tr><th scope="row">ROACH, NANCY</th><td>$1,041.02</td></tr>
+        <tr><th scope="row">CADWELL, PRISCILLA</th><td>$1,041.02</td></tr>
+        <tr><th scope="row">THOMASON, LINDA</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">STEUERWALT, MATTHEW</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">SCHAAPMAN, LARRY</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">JACKSON, KEDRICH</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">HUYETTE, WILLIAM</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">HUE, RONALD</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">HOLLIDAY, KEITH</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">DEGROOT, CAROLYN</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">LARSEN, PAMELA</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">KOSKINEN, SEAN</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">HAYS, ARIELLE</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">HAGEL, DARLENE</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">GOULET, BRIAN</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">FIELD, HENRY</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">DENSLOW, MICHAEL</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">CURBELO, CECILIA</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">WALKLEY, NANETTE</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">SHIMEK, JAIME</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">SCHUETZ, ROBERT</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">NELSON, CHARLES</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">HEASTON, DALE</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">GOEHNER, KEITH</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">PADDEN, MICHAEL</th><td>$920.51</td></tr>
+        <tr><th scope="row">NAULTY, MARK</th><td>$750.00</td></tr>
+        <tr><th scope="row">MOE, AMANDA</th><td>$620.51</td></tr>
+        <tr><th scope="row">SMITH, KEVIN</th><td>$600.00</td></tr>
+        <tr><th scope="row">SHERETZ, WILLIAM C</th><td>$563.00</td></tr>
+        <tr><th scope="row">KING, ART</th><td>$560.51</td></tr>
+        <tr><th scope="row">VIRDEN, MARY</th><td>$520.51</td></tr>
+        <tr><th scope="row">VELEKE, KEVIN</th><td>$520.51</td></tr>
+        <tr><th scope="row">SMART, JEFF</th><td>$520.51</td></tr>
+        <tr><th scope="row">SHYMATTA, BRIAN</th><td>$520.51</td></tr>
+        <tr><th scope="row">ROACH, EAMONN</th><td>$520.51</td></tr>
+        <tr><th scope="row">OVERTURF, JAMES</th><td>$520.51</td></tr>
+        <tr><th scope="row">MASSEY, MICHAEL</th><td>$520.51</td></tr>
+        <tr><th scope="row">HAUGH, KENNETH</th><td>$520.51</td></tr>
+        <tr><th scope="row">FRANCIS, JAN</th><td>$520.51</td></tr>
+        <tr><th scope="row">BARKIS, ANDREW</th><td>$520.51</td></tr>
+        <tr><th scope="row">NIES, JOELLE</th><td>$520.51</td></tr>
+        <tr><th scope="row">ALFORD, BRENDA</th><td>$520.51</td></tr>
+        <tr><th scope="row">GRIMM, CHARLES</th><td>$520.51</td></tr>
+        <tr><th scope="row">COPELAND, KENT</th><td>$520.51</td></tr>
+        <tr><th scope="row">WEST, STACI</th><td>$520.50</td></tr>
+        <tr><th scope="row">WEDHAM, SUSAN</th><td>$500.00</td></tr>
+        <tr><th scope="row">MICHEL, DOLORES</th><td>$500.00</td></tr>
+        <tr><th scope="row">MCGLATHERY, TRACI</th><td>$500.00</td></tr>
+        <tr><th scope="row">LAMPSON, WILLIAM</th><td>$500.00</td></tr>
+        <tr><th scope="row">GOETTL, MIKE</th><td>$500.00</td></tr>
+        <tr><th scope="row">FORTUNATO, ELIZABETH</th><td>$500.00</td></tr>
+        <tr><th scope="row">DURFEY, RACHELLE</th><td>$500.00</td></tr>
+        <tr><th scope="row">CONNORS, ADELE</th><td>$500.00</td></tr>
+        <tr><th scope="row">SANCHEZ, JILL</th><td>$500.00</td></tr>
+        <tr><th scope="row">MAZZOLA, NANCY</th><td>$500.00</td></tr>
+        <tr><th scope="row">SHERETZ, BILL</th><td>$500.00</td></tr>
+        <tr><th scope="row">LINDE, SANDRA</th><td>$500.00</td></tr>
+        <tr><th scope="row">KUNTZ, NOEL</th><td>$500.00</td></tr>
+        <tr><th scope="row">HUNSAKER, JOHN</th><td>$500.00</td></tr>
+        <tr><th scope="row">HOUSTON, RANDY</th><td>$500.00</td></tr>
+        <tr><th scope="row">CHRISTENSEN, GARY</th><td>$500.00</td></tr>
+        <tr><th scope="row">BEAUCHAMP, BRAD</th><td>$500.00</td></tr>
+        <tr><th scope="row">KECK, ROY</th><td>$500.00</td></tr>
+        <tr><th scope="row">KIMBALL, TOM</th><td>$353.00</td></tr>
+        <tr><th scope="row">WALTERS, DENNIS</th><td>$350.00</td></tr>
+        <tr><th scope="row">LINDE, LADON</th><td>$350.00</td></tr>
+        <tr><th scope="row">LANCASTER, IVAN</th><td>$350.00</td></tr>
+        <tr><th scope="row">WATKINS, KRIS</th><td>$300.00</td></tr>
+        <tr><th scope="row">HIMELBAUGH, DANIEL</th><td>$300.00</td></tr>
+        <tr><th scope="row">ALLISON, JANET</th><td>$300.00</td></tr>
+        <tr><th scope="row">BLACK, ERIC</th><td>$300.00</td></tr>
+        <tr><th scope="row">WALLACE, LISA</th><td>$260.25</td></tr>
+        <tr><th scope="row">STEVENSON, RHONDA</th><td>$260.25</td></tr>
+        <tr><th scope="row">SCHULTZ, JOHN</th><td>$260.25</td></tr>
+        <tr><th scope="row">NOVAKOVICH, MICHAEL</th><td>$260.25</td></tr>
+        <tr><th scope="row">DROKE, MENDY</th><td>$260.25</td></tr>
+        <tr><th scope="row">DREWRY, DEE</th><td>$260.25</td></tr>
+        <tr><th scope="row">BRONNER, JENNIFER</th><td>$260.25</td></tr>
+        <tr><th scope="row">BALCOM, KELLEE</th><td>$260.25</td></tr>
+        <tr><th scope="row">REINHARDT, JAY</th><td>$260.25</td></tr>
+        <tr><th scope="row">NELSON, KATIE</th><td>$260.25</td></tr>
+        <tr><th scope="row">BLISS, JASON</th><td>$260.25</td></tr>
+        <tr><th scope="row">SLADE, ROSCOE</th><td>$260.25</td></tr>
+        <tr><th scope="row">CREYDT, JESSE</th><td>$260.25</td></tr>
+        <tr><th scope="row">SMITH, LEON</th><td>$250.00</td></tr>
+        <tr><th scope="row">SMITH, DOUG</th><td>$250.00</td></tr>
+        <tr><th scope="row">SHIBLEY, BILL</th><td>$250.00</td></tr>
+        <tr><th scope="row">RICHARDSON, JET</th><td>$250.00</td></tr>
+        <tr><th scope="row">MUEGGLER, FORREST</th><td>$250.00</td></tr>
+        <tr><th scope="row">MONTEBLANCO, KELLY</th><td>$250.00</td></tr>
+        <tr><th scope="row">LAMPSON, KATE</th><td>$250.00</td></tr>
+        <tr><th scope="row">HANNA, ANDREW</th><td>$250.00</td></tr>
+        <tr><th scope="row">FORRESTER, CHARLES</th><td>$250.00</td></tr>
+        <tr><th scope="row">DOZIER, PERRY</th><td>$250.00</td></tr>
+        <tr><th scope="row">DALY, JODI</th><td>$250.00</td></tr>
+        <tr><th scope="row">BOWMAN, LEON</th><td>$250.00</td></tr>
+        <tr><th scope="row">BERGENER, BRAD</th><td>$250.00</td></tr>
+        <tr><th scope="row">RANDALL, MONICA</th><td>$250.00</td></tr>
+        <tr><th scope="row">MCDANIEL, DOROTHY</th><td>$250.00</td></tr>
+        <tr><th scope="row">HYATT, KAREN</th><td>$250.00</td></tr>
+        <tr><th scope="row">DOTZAUER, RONALD</th><td>$250.00</td></tr>
+        <tr><th scope="row">VAN DE WEGE, KEVIN</th><td>$250.00</td></tr>
+        <tr><th scope="row">PADEN, WILLIAM</th><td>$250.00</td></tr>
+        <tr><th scope="row">LOW, SAM</th><td>$250.00</td></tr>
+        <tr><th scope="row">LANCASTER, MAILE</th><td>$250.00</td></tr>
+        <tr><th scope="row">LANCASTER, LILLIAN</th><td>$250.00</td></tr>
+        <tr><th scope="row">LANCASTER, ELLE</th><td>$250.00</td></tr>
+        <tr><th scope="row">KREIS, SHAWN</th><td>$250.00</td></tr>
+        <tr><th scope="row">HOLMES, DAN</th><td>$250.00</td></tr>
+        <tr><th scope="row">FREDERICK, CYNTHIA</th><td>$250.00</td></tr>
+        <tr><th scope="row">SULLIVAN, THERESA</th><td>$208.20</td></tr>
+        <tr><th scope="row">MCGOWAN, JASON</th><td>$208.20</td></tr>
+        <tr><th scope="row">BILSKIS, RICHARD</th><td>$208.20</td></tr>
+        <tr><th scope="row">NOVAKOVICH, SKIP</th><td>$200.00</td></tr>
+        <tr><th scope="row">MARSTON, RANDALL</th><td>$156.15</td></tr>
+        <tr><th scope="row">FASTSIGNS</th><td>$80.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
     <p style="margin-bottom:12px; font-style:italic; color:var(--gray-dark);">Largest disbursements reported to the FEC for the current cycle, newest cycle only. This is not a complete ledger and does not sum to total spent.</p>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th><th>Date</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th><th scope="col">Date</th></tr></thead>
       <tbody>
-        <tr><td>COLDSPARK</td><td>DIRECT MAIL ADVERTISING</td><td>$19,248.18</td><td>2026-07-09</td></tr>
-        <tr><td>SUMMA INSIGHTS, LLC</td><td>RESEARCH</td><td>$10,000.00</td><td>2026-05-27</td></tr>
-        <tr><td>SUMMA INSIGHTS, LLC</td><td>RESEARCH</td><td>$5,000.00</td><td>2026-05-11</td></tr>
-        <tr><td>SUMMA INSIGHTS, LLC</td><td>RESEARCH</td><td>$5,000.00</td><td>2026-04-20</td></tr>
-        <tr><td>PROMETHEUS DIGITAL</td><td>DIGITAL ADVERTISING</td><td>$5,000.00</td><td>2026-04-08</td></tr>
-        <tr><td>COLDSPARK</td><td>CAMPAIGN CONSULTING</td><td>$5,000.00</td><td>2026-06-17</td></tr>
-        <tr><td>COLDSPARK</td><td>CAMPAIGN CONSULTING</td><td>$5,000.00</td><td>2026-05-04</td></tr>
-        <tr><td>COLDSPARK</td><td>CAMPAIGN CONSULTING</td><td>$5,000.00</td><td>2026-04-01</td></tr>
-        <tr><td>COLDSPARK</td><td>CAMPAIGN CONSULTING</td><td>$5,000.00</td><td>2026-07-07</td></tr>
-        <tr><td>COLDSPARK</td><td>CONSULTING/DIGITAL ADVERTISING/LOGO DESIGN</td><td>$4,500.00</td><td>2026-03-17</td></tr>
+        <tr><th scope="row">COLDSPARK</th><td>DIRECT MAIL ADVERTISING</td><td>$19,248.18</td><td>2026-07-09</td></tr>
+        <tr><th scope="row">SUMMA INSIGHTS, LLC</th><td>RESEARCH</td><td>$10,000.00</td><td>2026-05-27</td></tr>
+        <tr><th scope="row">SUMMA INSIGHTS, LLC</th><td>RESEARCH</td><td>$5,000.00</td><td>2026-05-11</td></tr>
+        <tr><th scope="row">SUMMA INSIGHTS, LLC</th><td>RESEARCH</td><td>$5,000.00</td><td>2026-04-20</td></tr>
+        <tr><th scope="row">PROMETHEUS DIGITAL</th><td>DIGITAL ADVERTISING</td><td>$5,000.00</td><td>2026-04-08</td></tr>
+        <tr><th scope="row">COLDSPARK</th><td>CAMPAIGN CONSULTING</td><td>$5,000.00</td><td>2026-06-17</td></tr>
+        <tr><th scope="row">COLDSPARK</th><td>CAMPAIGN CONSULTING</td><td>$5,000.00</td><td>2026-05-04</td></tr>
+        <tr><th scope="row">COLDSPARK</th><td>CAMPAIGN CONSULTING</td><td>$5,000.00</td><td>2026-04-01</td></tr>
+        <tr><th scope="row">COLDSPARK</th><td>CAMPAIGN CONSULTING</td><td>$5,000.00</td><td>2026-07-07</td></tr>
+        <tr><th scope="row">COLDSPARK</th><td>CONSULTING/DIGITAL ADVERTISING/LOGO DESIGN</td><td>$4,500.00</td><td>2026-03-17</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -323,7 +326,7 @@
     <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">1 sourced findings. All sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model. No T4 claims included.</p>
 
     <div class="finding moderate">
-      <h4>Finding 6.1: State Community College Employee Sitting on Higher Education and Budget Committees <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 6.1: State Community College Employee Sitting on Higher Education and Budget Committees <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Boehnke is a tenured professor in the cybersecurity division at Columbia Basin College, a Washington state community college, while serving as a state senator on the Higher Education and Workforce Development Committee and the Ways and Means Committee. Those committees set policy and funding for the state community and technical college system that employs him. His salary as a legislator and as a public college instructor both derive from the state budget he helps write.</dd>
@@ -355,16 +358,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

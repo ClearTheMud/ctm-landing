@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Michael "Mike" Rio</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -54,46 +57,46 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$5,593.55 (19 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$27,646.22 (26 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$5,593.55 (19 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$27,646.22 (26 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Quantum Legal, PLLC, Kennewick</td><td>$1,000.00</td></tr>
-        <tr><td>Roach Law Firm, Pasco</td><td>$1,000.00</td></tr>
-        <tr><td>Leach William, Richland</td><td>$521.15</td></tr>
-        <tr><td>Rio Christopher, Lincoln</td><td>$500.00</td></tr>
-        <tr><td>Rio Tony, Lincoln</td><td>$500.00</td></tr>
-        <tr><td>Brown Bronson, Kennewick</td><td>$250.00</td></tr>
-        <tr><td>Gregory Bradford, Pasco</td><td>$250.00</td></tr>
-        <tr><td>Lampson William, Kennewick</td><td>$250.00</td></tr>
-        <tr><td>Shupe David, West Richland</td><td>$250.00</td></tr>
-        <tr><td>Campbell Loren, West Richland</td><td>$200.00</td></tr>
+        <tr><th scope="row">Quantum Legal, PLLC, Kennewick</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Roach Law Firm, Pasco</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Leach William, Richland</th><td>$521.15</td></tr>
+        <tr><th scope="row">Rio Christopher, Lincoln</th><td>$500.00</td></tr>
+        <tr><th scope="row">Rio Tony, Lincoln</th><td>$500.00</td></tr>
+        <tr><th scope="row">Brown Bronson, Kennewick</th><td>$250.00</td></tr>
+        <tr><th scope="row">Gregory Bradford, Pasco</th><td>$250.00</td></tr>
+        <tr><th scope="row">Lampson William, Kennewick</th><td>$250.00</td></tr>
+        <tr><th scope="row">Shupe David, West Richland</th><td>$250.00</td></tr>
+        <tr><th scope="row">Campbell Loren, West Richland</th><td>$200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Vistaprint</td><td>300 Yard Signs,--25  2x3 &amp; 275 18&quot;x24&quot;, Rack Cards &amp; Stickers</td><td>$4,089.82</td></tr>
-        <tr><td>Vistaprint</td><td>300 Yard Signs,--25  2x3 &amp; 275 18&quot;x24&quot;, Rack Cards &amp; Stickers</td><td>$4,089.82</td></tr>
-        <tr><td>SP Victory Cos</td><td>50 Signs--50 4x8</td><td>$3,620.22</td></tr>
-        <tr><td>SP Victory Cos</td><td>50 Signs--50 4x8</td><td>$3,620.22</td></tr>
-        <tr><td>Benton County Board of Elections</td><td>Campaign Filing Fee</td><td>$1,901.20</td></tr>
-        <tr><td>Underground Creative LLC</td><td>Website Development</td><td>$1,632.00</td></tr>
-        <tr><td>Underground Creative LLC</td><td>Website Development</td><td>$1,632.00</td></tr>
-        <tr><td>Digital Image Tri-Cities</td><td>Marketing Materials Including Table Runner, Rack Cards, etc.</td><td>$1,184.02</td></tr>
-        <tr><td>Underground Creative LLC</td><td>Website Development &amp; Maintenance</td><td>$1,088.00</td></tr>
-        <tr><td>Atomic Screenprinting &amp; Embroidery</td><td>40 Shirts W/Printed Logo</td><td>$738.77</td></tr>
+        <tr><th scope="row">Vistaprint</th><td>300 Yard Signs,--25  2x3 &amp; 275 18&quot;x24&quot;, Rack Cards &amp; Stickers</td><td>$4,089.82</td></tr>
+        <tr><th scope="row">Vistaprint</th><td>300 Yard Signs,--25  2x3 &amp; 275 18&quot;x24&quot;, Rack Cards &amp; Stickers</td><td>$4,089.82</td></tr>
+        <tr><th scope="row">SP Victory Cos</th><td>50 Signs--50 4x8</td><td>$3,620.22</td></tr>
+        <tr><th scope="row">SP Victory Cos</th><td>50 Signs--50 4x8</td><td>$3,620.22</td></tr>
+        <tr><th scope="row">Benton County Board of Elections</th><td>Campaign Filing Fee</td><td>$1,901.20</td></tr>
+        <tr><th scope="row">Underground Creative LLC</th><td>Website Development</td><td>$1,632.00</td></tr>
+        <tr><th scope="row">Underground Creative LLC</th><td>Website Development</td><td>$1,632.00</td></tr>
+        <tr><th scope="row">Digital Image Tri-Cities</th><td>Marketing Materials Including Table Runner, Rack Cards, etc.</td><td>$1,184.02</td></tr>
+        <tr><th scope="row">Underground Creative LLC</th><td>Website Development &amp; Maintenance</td><td>$1,088.00</td></tr>
+        <tr><th scope="row">Atomic Screenprinting &amp; Embroidery</th><td>40 Shirts W/Printed Logo</td><td>$738.77</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -107,14 +110,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Kristina Soltys</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Kristina Soltys</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Kristina Soltys</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -91,58 +94,58 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2023</td><td>City of Covington Council Position NO. 1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2019</td><td>City of Covington Council Position NO. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2023</th><td>City of Covington Council Position NO. 1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2019</th><td>City of Covington Council Position NO. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$253,873.55 (168 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$145,342.65 (47 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$253,873.55 (168 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$145,342.65 (47 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Washington State Republican Party, Bellevue</td><td>$45,000.00</td></tr>
-        <tr><td>Senate Republican Campaign Committee, Olympia</td><td>$44,000.00</td></tr>
-        <tr><td>Senate Republican Campaign Committee, Olympia</td><td>$44,000.00</td></tr>
-        <tr><td>Washington State Republican Party, Bellevue</td><td>$20,000.00</td></tr>
-        <tr><td>Senate Republican Campaign Committee, Olympia</td><td>$15,000.00</td></tr>
-        <tr><td>Senate Republican Campaign Committee, Olympia</td><td>$10,000.00</td></tr>
-        <tr><td>Washington State Republican Party, Bellevue</td><td>$10,000.00</td></tr>
-        <tr><td>Washington State Republican Party, Bellevue</td><td>$4,900.00</td></tr>
-        <tr><td>Associated General Contractors of Washington&#x27;s BUILD PAC, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Conrads Randal, Kent</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Washington State Republican Party, Bellevue</th><td>$45,000.00</td></tr>
+        <tr><th scope="row">Senate Republican Campaign Committee, Olympia</th><td>$44,000.00</td></tr>
+        <tr><th scope="row">Senate Republican Campaign Committee, Olympia</th><td>$44,000.00</td></tr>
+        <tr><th scope="row">Washington State Republican Party, Bellevue</th><td>$20,000.00</td></tr>
+        <tr><th scope="row">Senate Republican Campaign Committee, Olympia</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">Senate Republican Campaign Committee, Olympia</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">Washington State Republican Party, Bellevue</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">Washington State Republican Party, Bellevue</th><td>$4,900.00</td></tr>
+        <tr><th scope="row">Associated General Contractors of Washington&#x27;s BUILD PAC, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Conrads Randal, Kent</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Frontline Strategies LLC</td><td>Streaming TV advertising: 7/20-27</td><td>$50,000.00</td></tr>
-        <tr><td>Prologue Digital</td><td>Comcast cable TV advertising: 7/22-8/3</td><td>$13,924.82</td></tr>
-        <tr><td>Kerauno Digital</td><td>Text messages (172361)</td><td>$12,065.27</td></tr>
-        <tr><td>Print NW</td><td>Mail piece postage</td><td>$6,785.70</td></tr>
-        <tr><td>Print NW</td><td>Mail piece postage</td><td>$5,923.52</td></tr>
-        <tr><td>Frontline Strategies LLC</td><td>Streaming TV advertising: 7/24-8/4</td><td>$5,000.00</td></tr>
-        <tr><td>Print NW</td><td>Mail piece (18362)</td><td>$4,628.97</td></tr>
-        <tr><td>Print NW</td><td>Mail piece (16719)</td><td>$4,333.91</td></tr>
-        <tr><td>SIG Political</td><td>Campaign management/consulting</td><td>$4,000.00</td></tr>
-        <tr><td>SIG Political</td><td>Consulting</td><td>$4,000.00</td></tr>
+        <tr><th scope="row">Frontline Strategies LLC</th><td>Streaming TV advertising: 7/20-27</td><td>$50,000.00</td></tr>
+        <tr><th scope="row">Prologue Digital</th><td>Comcast cable TV advertising: 7/22-8/3</td><td>$13,924.82</td></tr>
+        <tr><th scope="row">Kerauno Digital</th><td>Text messages (172361)</td><td>$12,065.27</td></tr>
+        <tr><th scope="row">Print NW</th><td>Mail piece postage</td><td>$6,785.70</td></tr>
+        <tr><th scope="row">Print NW</th><td>Mail piece postage</td><td>$5,923.52</td></tr>
+        <tr><th scope="row">Frontline Strategies LLC</th><td>Streaming TV advertising: 7/24-8/4</td><td>$5,000.00</td></tr>
+        <tr><th scope="row">Print NW</th><td>Mail piece (18362)</td><td>$4,628.97</td></tr>
+        <tr><th scope="row">Print NW</th><td>Mail piece (16719)</td><td>$4,333.91</td></tr>
+        <tr><th scope="row">SIG Political</th><td>Campaign management/consulting</td><td>$4,000.00</td></tr>
+        <tr><th scope="row">SIG Political</th><td>Consulting</td><td>$4,000.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -157,16 +160,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Dean A. Berkeley</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,35 +60,35 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Dean A. Berkeley</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Blaine, Whatcom County, Washington</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan office (Port of Bellingham commissioner races are nonpartisan)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Volunteer firefighter, North Whatcom Fire and Rescue (approximately 2009 to April 2012)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Dean A. Berkeley</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Blaine, Whatcom County, Washington</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan office (Port of Bellingham commissioner races are nonpartisan)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Volunteer firefighter, North Whatcom Fire and Rescue (approximately 2009 to April 2012)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">1</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Port of Bellingham Commissioner District 4 (Primary)</td><td>One of six candidates on the August 4, 2026 primary ballot for the new District 4 expansion seat (Tim Chartier, Dean Berkeley, Tor Benson, Jaden McConnell, Paul Burrill, Samantha Cruz-Mendoza)</td><td>Research</td></tr>
-        <tr><td>2023</td><td>Blaine School Board</td><td>Ran unsuccessfully</td><td>Research</td></tr>
-        <tr><td>2013</td><td>North Whatcom Fire and Rescue, Fire Commissioner</td><td>Elected to a commissioner term</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>Port of Bellingham Commissioner District 4 (Primary)</td><td>One of six candidates on the August 4, 2026 primary ballot for the new District 4 expansion seat (Tim Chartier, Dean Berkeley, Tor Benson, Jaden McConnell, Paul Burrill, Samantha Cruz-Mendoza)</td><td>Research</td></tr>
+        <tr><th scope="row">2023</th><td>Blaine School Board</td><td>Ran unsuccessfully</td><td>Research</td></tr>
+        <tr><th scope="row">2013</th><td>North Whatcom Fire and Rescue, Fire Commissioner</td><td>Elected to a commissioner term</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">2</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Port Development and Environment</td><td>States that he wants to guide the development of the port and improve both commerce and the environment. Did not respond to multiple interview requests from local press, so positions beyond his voter guide statement are not documented.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Port Development and Environment</th><td>States that he wants to guide the development of the port and improve both commerce and the environment. Did not respond to multiple interview requests from local press, so positions beyond his voter guide statement are not documented.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -111,7 +114,7 @@
     <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">1 sourced findings. All sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model. No T4 claims included.</p>
 
     <div class="finding moderate">
-      <h4>Finding 5.1: Censured by fellow fire commissioners in 2017 for threatening and disruptive conduct <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 5.1: Censured by fellow fire commissioners in 2017 for threatening and disruptive conduct <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>While serving as an elected commissioner of North Whatcom Fire and Rescue (elected 2013), Berkeley was censured in January 2017 by the other fire commissioners and the district chief for what they described as an outburst of threatening and disruptive behavior at a prior meeting. The censure was a formal action taken by the board on which he served. The conflict also included a small claims lawsuit Berkeley filed against the same district in 2016 seeking roughly $1,000 for personal firefighting gear he said went missing from a station locker after he lost volunteer status in 2012.</dd>
@@ -143,16 +146,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Timothy Reeves</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,13 +60,13 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Timothy Reeves, appears on the ballot and campaigns as Tim Reeves.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Walla Walla, Walla Walla County, WA. PDC committee mailing address PO Box 45, Walla Walla, WA 99362. Union-Bulletin candidate Q&amp;A lists his residence as Walla Walla.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>States Democrat party preference on the Washington SOS candidate filing; PDC records the candidate committee party as Democratic.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>MA in Economics; MBA</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Timothy Reeves, appears on the ballot and campaigns as Tim Reeves.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Walla Walla, Walla Walla County, WA. PDC committee mailing address PO Box 45, Walla Walla, WA 99362. Union-Bulletin candidate Q&amp;A lists his residence as Walla Walla.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>States Democrat party preference on the Washington SOS candidate filing; PDC records the candidate committee party as Democratic.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>MA in Economics; MBA</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -78,59 +81,59 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td></td><td>Pending. Four candidates filed for the open seat: Gregory A. Tompkins (states no party preference), Marjorie Denton Sanborn (states no party preference), Sheryl R. Park (Republican, appointed incumbent), and Tim Reeves (Democrat). PDC records show Tompkins discontinued his campaign 2026-06-30 while remaining on the ballot. Primary August 4, 2026, top two advance to the November 3, 2026 general election. The seat is open for the first time in 27 years following the retirement of former Auditor Karen Martin; Park was appointed by the Board of County Commissioners in early 2026 to serve through the election.</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td></td><td>Pending. Four candidates filed for the open seat: Gregory A. Tompkins (states no party preference), Marjorie Denton Sanborn (states no party preference), Sheryl R. Park (Republican, appointed incumbent), and Tim Reeves (Democrat). PDC records show Tompkins discontinued his campaign 2026-06-30 while remaining on the ballot. Primary August 4, 2026, top two advance to the November 3, 2026 general election. The seat is open for the first time in 27 years following the retirement of former Auditor Karen Martin; Park was appointed by the Board of County Commissioners in early 2026 to serve through the election.</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$29,347.44 (65 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$15,928.14 (32 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$29,347.44 (65 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$15,928.14 (32 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Walla Walla County Democrats, Walla Walla</td><td>$5,000.00</td></tr>
-        <tr><td>Walla Walla County Democrats, Walla Walla</td><td>$5,000.00</td></tr>
-        <tr><td>Brand Norman, San Francisco</td><td>$1,200.00</td></tr>
-        <tr><td>Brand Norman, San Francisco</td><td>$1,200.00</td></tr>
-        <tr><td>Fraley Nora M, College Place</td><td>$1,200.00</td></tr>
-        <tr><td>Spero Nancy, San Francisco</td><td>$1,200.00</td></tr>
-        <tr><td>Spero Nancy, San Francisco</td><td>$1,200.00</td></tr>
-        <tr><td>Carlile Carma, Walla Walla</td><td>$1,000.00</td></tr>
-        <tr><td>Carlile Carma, Walla Walla</td><td>$1,000.00</td></tr>
-        <tr><td>Potts Charles, Walla Walla</td><td>$500.00</td></tr>
+        <tr><th scope="row">Walla Walla County Democrats, Walla Walla</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">Walla Walla County Democrats, Walla Walla</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">Brand Norman, San Francisco</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Brand Norman, San Francisco</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Fraley Nora M, College Place</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Spero Nancy, San Francisco</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Spero Nancy, San Francisco</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Carlile Carma, Walla Walla</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Carlile Carma, Walla Walla</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Potts Charles, Walla Walla</th><td>$500.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Calico Copy</td><td>4000 pc 8.5x11 inch mailpiece print/production (postage not included)</td><td>$2,168.83</td></tr>
-        <tr><td>Fraley Nora M</td><td>Estimated value for Web &amp; Graphic design for campaign website: Vendor, Nora Marie consulting (Walla Walla, WA)</td><td>$1,200.00</td></tr>
-        <tr><td>Secretary of State</td><td>Filing fees for 2026 candidacy</td><td>$1,187.30</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$1,120.88</td></tr>
-        <tr><td>Walla Walla Union Bulletin</td><td>Printed adds w/ run dates
+        <tr><th scope="row">Calico Copy</th><td>4000 pc 8.5x11 inch mailpiece print/production (postage not included)</td><td>$2,168.83</td></tr>
+        <tr><th scope="row">Fraley Nora M</th><td>Estimated value for Web &amp; Graphic design for campaign website: Vendor, Nora Marie consulting (Walla Walla, WA)</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Secretary of State</th><td>Filing fees for 2026 candidacy</td><td>$1,187.30</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$1,120.88</td></tr>
+        <tr><th scope="row">Walla Walla Union Bulletin</th><td>Printed adds w/ run dates
 7/14 (5.25 x 10.50 inch column &amp; Email blast)
 7/16 (5.25 x 10.5 inch column)
 7/18 (5.25 x 10.50 inch column &amp; 10.52 x 3 inch Front page)</td><td>$1,003.12</td></tr>
-        <tr><td>Calico Copy</td><td>Estimated cost for Postage on 4000 pc mailer</td><td>$1,000.00</td></tr>
-        <tr><td>Summit Printing</td><td>100 each 18x24 inch 2 sided Yard Signs + H frames and Shipping</td><td>$803.23</td></tr>
-        <tr><td>Summit Printing</td><td>100 each 18x24 inch double sided Yard signs w/H frames and shipping (order #2)</td><td>$803.23</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$721.99</td></tr>
-        <tr><td>Walla Walla County Fairgrounds</td><td>Booth and insurance for County Fairgrounds registration</td><td>$639.82</td></tr>
+        <tr><th scope="row">Calico Copy</th><td>Estimated cost for Postage on 4000 pc mailer</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">Summit Printing</th><td>100 each 18x24 inch 2 sided Yard Signs + H frames and Shipping</td><td>$803.23</td></tr>
+        <tr><th scope="row">Summit Printing</th><td>100 each 18x24 inch double sided Yard signs w/H frames and shipping (order #2)</td><td>$803.23</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$721.99</td></tr>
+        <tr><th scope="row">Walla Walla County Fairgrounds</th><td>Booth and insurance for County Fairgrounds registration</td><td>$639.82</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -165,16 +168,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

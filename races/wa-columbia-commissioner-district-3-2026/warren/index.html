@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Bill Warren</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -64,37 +67,37 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$3,350.00 (6 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$1,122.59 (4 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$3,350.00 (6 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$1,122.59 (4 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>WARREN WILLIAM (Bill Warren), Dayton</td><td>$2,000.00</td></tr>
-        <tr><td>Beleny Chuck, Dayton</td><td>$300.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$300.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$300.00</td></tr>
-        <tr><td>Wong Yale, Seattle</td><td>$250.00</td></tr>
-        <tr><td>Rust Kevin, Dayton</td><td>$200.00</td></tr>
+        <tr><th scope="row">WARREN WILLIAM (Bill Warren), Dayton</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">Beleny Chuck, Dayton</th><td>$300.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$300.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$300.00</td></tr>
+        <tr><th scope="row">Wong Yale, Seattle</th><td>$250.00</td></tr>
+        <tr><th scope="row">Rust Kevin, Dayton</th><td>$200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>RepublicanSigns.com</td><td>50 yard signs and H supports
+        <tr><th scope="row">RepublicanSigns.com</th><td>50 yard signs and H supports
 12 32X48 field signs</td><td>$486.44</td></tr>
-        <tr><td>signs.com</td><td>20 18x24 double-sided yard signs</td><td>$221.52</td></tr>
-        <tr><td>signs.com</td><td>18x24 yard sign replication expense</td><td>$221.52</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$193.11</td></tr>
+        <tr><th scope="row">signs.com</th><td>20 18x24 double-sided yard signs</td><td>$221.52</td></tr>
+        <tr><th scope="row">signs.com</th><td>18x24 yard sign replication expense</td><td>$221.52</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$193.11</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -108,14 +111,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

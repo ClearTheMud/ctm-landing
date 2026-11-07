@@ -11,14 +11,17 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing with intended recipients</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <span class="nav-current">ME Senate 2026</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -67,18 +70,18 @@
     <p>Seven Democrats have declared. Each has a full dossier below. Finance figures
     are from the FEC, pull date July 14, 2026; the three candidates who filed in
     July 2026 had no financial report on file yet.</p>
-    <table>
-      <thead><tr><th>Candidate</th><th>Background</th><th>Recent race</th><th>FEC (through date)</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="The Declared Democratic Field, scrollable table" tabindex="0"><table><caption class="sr-only">The Declared Democratic Field</caption>
+      <thead><tr><th scope="col">Candidate</th><th scope="col">Background</th><th scope="col">Recent race</th><th scope="col">FEC (through date)</th></tr></thead>
       <tbody>
-        <tr><td><strong><a href="jackson/">Troy Jackson</a></strong></td><td>Former Maine Senate President, Allagash logger</td><td>Lost 2026 governor primary</td><td>No report filed (committee registered July 2026)</td></tr>
-        <tr><td><strong><a href="bellows/">Shenna Bellows</a></strong></td><td>Maine Secretary of State, ex-ACLU Maine</td><td>Fourth, 2026 governor primary</td><td>No report filed (committee registered July 2026)</td></tr>
-        <tr><td><strong><a href="shah/">Nirav Shah</a></strong></td><td>Former Maine CDC director, ex-US CDC deputy</td><td>Second, 2026 governor primary</td><td>No report filed (committee registered July 2026)</td></tr>
-        <tr><td><strong><a href="kleban/">Dan Kleban</a></strong></td><td>Maine Beer Company co-founder</td><td>Suspended 2025 Senate run, re-entered</td><td>$0.46M raised (3/31, suspended run)</td></tr>
-        <tr><td><strong><a href="wood/">Jordan Wood</a></strong></td><td>Ex-End Citizens United VP, ex-Porter chief of staff</td><td>Lost 2026 CD-2 House primary</td><td>$5.71M raised (5/20, spans two runs)</td></tr>
-        <tr><td><strong><a href="costello/">David Costello</a></strong></td><td>Former USAID and Maryland state official</td><td>2024 Senate nominee; third, 2026 primary</td><td>$0.15M raised (6/30)</td></tr>
-        <tr><td><strong><a href="loud/">Paige Loud</a></strong></td><td>Social worker, citizen of the Cherokee Nation</td><td>Fourth, 2026 CD-2 House primary</td><td>$0.05M raised (5/20)</td></tr>
+        <tr><th scope="row"><strong><a href="jackson/">Troy Jackson</a></strong></th><td>Former Maine Senate President, Allagash logger</td><td>Lost 2026 governor primary</td><td>No report filed (committee registered July 2026)</td></tr>
+        <tr><th scope="row"><strong><a href="bellows/">Shenna Bellows</a></strong></th><td>Maine Secretary of State, ex-ACLU Maine</td><td>Fourth, 2026 governor primary</td><td>No report filed (committee registered July 2026)</td></tr>
+        <tr><th scope="row"><strong><a href="shah/">Nirav Shah</a></strong></th><td>Former Maine CDC director, ex-US CDC deputy</td><td>Second, 2026 governor primary</td><td>No report filed (committee registered July 2026)</td></tr>
+        <tr><th scope="row"><strong><a href="kleban/">Dan Kleban</a></strong></th><td>Maine Beer Company co-founder</td><td>Suspended 2025 Senate run, re-entered</td><td>$0.46M raised (3/31, suspended run)</td></tr>
+        <tr><th scope="row"><strong><a href="wood/">Jordan Wood</a></strong></th><td>Ex-End Citizens United VP, ex-Porter chief of staff</td><td>Lost 2026 CD-2 House primary</td><td>$5.71M raised (5/20, spans two runs)</td></tr>
+        <tr><th scope="row"><strong><a href="costello/">David Costello</a></strong></th><td>Former USAID and Maryland state official</td><td>2024 Senate nominee; third, 2026 primary</td><td>$0.15M raised (6/30)</td></tr>
+        <tr><th scope="row"><strong><a href="loud/">Paige Loud</a></strong></th><td>Social worker, citizen of the Cherokee Nation</td><td>Fourth, 2026 CD-2 House primary</td><td>$0.05M raised (5/20)</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p>Others named in reporting but not among the seven principal declared
     candidates include Elizabeth Dickerson (former state representative and Rockland
     mayor) and Valli Geiger (state representative), plus Andrea LaFlamme as a
@@ -91,13 +94,13 @@
       <div class="matchup-card">
         <div class="matchup-card-header rep"><a href="collins/">Susan Collins (R)</a></div>
         <div class="matchup-card-body">
-          <h4>Record</h4>
+          <h3>Record</h3>
           <ul>
             <li>Six-term senator, first elected 1996; chairs the Senate Appropriations Committee.</li>
             <li>Announced re-election February 10, 2026; won the June 9 Republican primary.</li>
             <li>Raised $12.17M with $9.67M cash on hand (FEC, through 5/20), the largest war chest in the race.</li>
           </ul>
-          <h4>Documented Vulnerabilities</h4>
+          <h3>Documented Vulnerabilities</h3>
           <ul>
             <li>The 2018 Kavanaugh "settled law" vote against the 2022 Dobbs reversal.</li>
             <li>STOCK Act late disclosure of a spouse stock purchase.</li>
@@ -129,53 +132,58 @@
     <h2><span class="section-num">&#9654;</span> Read Full Dossiers</h2>
     <div class="dossier-links">
       <a href="collins/" class="dossier-link">
-        <h4>Susan Collins</h4>
+        <h3>Susan Collins</h3>
         <span class="party-tag rep">Republican, Incumbent</span>
         <p>Appropriations chair. Kavanaugh and Dobbs, STOCK Act, and her 2025 to 2026 voting record.</p>
       </a>
       <a href="jackson/" class="dossier-link">
-        <h4>Troy Jackson</h4>
+        <h3>Troy Jackson</h3>
         <span class="party-tag dem">Democratic, Convention Candidate</span>
         <p>Former Senate President and logger. Position reversals on same-sex marriage and abortion.</p>
       </a>
       <a href="bellows/" class="dossier-link">
-        <h4>Shenna Bellows</h4>
+        <h3>Shenna Bellows</h3>
         <span class="party-tag dem">Democratic, Convention Candidate</span>
         <p>Secretary of State. The 2023 Trump ballot removal, overturned 9 to 0, and two statewide losses.</p>
       </a>
       <a href="shah/" class="dossier-link">
-        <h4>Nirav Shah</h4>
+        <h3>Nirav Shah</h3>
         <span class="party-tag dem">Democratic, Convention Candidate</span>
         <p>Former Maine CDC director. The Illinois Legionnaires' record and COVID rollout decisions.</p>
       </a>
       <a href="kleban/" class="dossier-link">
-        <h4>Dan Kleban</h4>
+        <h3>Dan Kleban</h3>
         <span class="party-tag dem">Democratic, Convention Candidate</span>
         <p>Maine Beer Company co-founder. A 41-day 2025 run, self-funding, and a regulated-industry interest.</p>
       </a>
       <a href="wood/" class="dossier-link">
-        <h4>Jordan Wood</h4>
+        <h3>Jordan Wood</h3>
         <span class="party-tag dem">Democratic, Convention Candidate</span>
         <p>Campaign-finance reformer. Ties to his husband's fundraising firm and an out-of-state donor base.</p>
       </a>
       <a href="costello/" class="dossier-link">
-        <h4>David Costello</h4>
+        <h3>David Costello</h3>
         <span class="party-tag dem">Democratic, Convention Candidate</span>
         <p>Former USAID and Maryland official. The 2024 Senate nominee, with two weak statewide showings.</p>
       </a>
       <a href="loud/" class="dossier-link">
-        <h4>Paige Loud</h4>
+        <h3>Paige Loud</h3>
         <span class="party-tag dem">Democratic, Convention Candidate</span>
         <p>Social worker and first-time statewide candidate. A long-shot with a thin electoral record.</p>
       </a>
       <a href="platner/" class="dossier-link">
-        <h4>Graham Platner</h4>
+        <h3>Graham Platner</h3>
         <span class="party-tag dem">Democratic, Withdrew</span>
         <p>Won the June 9 primary, withdrew July 10. Retained as a record of what was published.</p>
       </a>
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Assessment based on T0/T1 (FEC, voting records, official filings) and T2
     (multi-source media reporting), data collected through July 14, 2026. The
@@ -183,8 +191,8 @@
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
+</footer>
 
 </body>
 </html>

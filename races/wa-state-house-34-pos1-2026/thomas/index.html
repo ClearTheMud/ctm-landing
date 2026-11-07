@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Brianna K. Thomas</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Brianna K. Thomas</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Brianna K. Thomas</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -76,59 +79,59 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2025</td><td>Legislative District 34 - State Representative Pos. 1 (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2025</td><td>Legislative District 34 - State Representative Pos. 1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2021</td><td>City of Seattle Council Position NO. 9 (Primary)</td><td>Lost (3 of 8)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2025</th><td>Legislative District 34 - State Representative Pos. 1 (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2025</th><td>Legislative District 34 - State Representative Pos. 1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2021</th><td>City of Seattle Council Position NO. 9 (Primary)</td><td>Lost (3 of 8)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$32,771.13 (59 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$9,222.97 (12 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$32,771.13 (59 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$9,222.97 (12 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>ALASKA AIRLINES, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>BUILDING A STRONGER WASHINGTON, KENT</td><td>$1,200.00</td></tr>
-        <tr><td>DELTA DENTAL OF WA, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>JUSTICE FOR ALL PAC, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>PUGET SOUND ENERGY, BELLEVUE</td><td>$1,200.00</td></tr>
-        <tr><td>PUYALLUP TRIBE OF INDIANS, TACOMA</td><td>$1,200.00</td></tr>
-        <tr><td>SEIU 775 QUALITY CARE COMMITTEE, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>SEIU 775 QUALITY CARE COMMITTEE, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>SNOQUALMIE TRIBE, SNOQUALMIE</td><td>$1,200.00</td></tr>
-        <tr><td>SNOQUALMIE TRIBE, SNOQUALMIE</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">ALASKA AIRLINES, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">BUILDING A STRONGER WASHINGTON, KENT</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">DELTA DENTAL OF WA, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">JUSTICE FOR ALL PAC, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">PUGET SOUND ENERGY, BELLEVUE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">PUYALLUP TRIBE OF INDIANS, TACOMA</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">SEIU 775 QUALITY CARE COMMITTEE, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">SEIU 775 QUALITY CARE COMMITTEE, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">SNOQUALMIE TRIBE, SNOQUALMIE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">SNOQUALMIE TRIBE, SNOQUALMIE</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>HOUSE DEMOCRATIC CAMPAIGN COMMITTEE</td><td>DONATION OF PRIMARY SURPLUS FUNDS</td><td>$3,400.00</td></tr>
-        <tr><td>TIM&#x27;S TAVERN</td><td>CATERING FOR JOINT EVENT</td><td>$2,344.09</td></tr>
-        <tr><td>WINPOWER STRATEGIES INC.</td><td>CAPITOL CITY PRESS (TUMWATER) - 100 YARD SIGNS</td><td>$829.08</td></tr>
-        <tr><td>ABBOT TAYLOR</td><td>TREASURY SERVICES</td><td>$750.00</td></tr>
-        <tr><td>Brianna Thomas</td><td>SECRETARY OF STATE (OLYMPIA) - FILING FEE</td><td>$676.88</td></tr>
-        <tr><td>ABBOT TAYLOR</td><td>MAY TREASURY SERVICES</td><td>$250.00</td></tr>
-        <tr><td>ABBOT TAYLOR</td><td>JUNE TREASURY SERVICES</td><td>$250.00</td></tr>
-        <tr><td>ABBOT TAYLOR</td><td>JULY TREASURY SERVICES</td><td>$250.00</td></tr>
-        <tr><td>ABBOT TAYLOR</td><td>DEC TREASURY SERVICES</td><td>$200.00</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$173.02</td></tr>
+        <tr><th scope="row">HOUSE DEMOCRATIC CAMPAIGN COMMITTEE</th><td>DONATION OF PRIMARY SURPLUS FUNDS</td><td>$3,400.00</td></tr>
+        <tr><th scope="row">TIM&#x27;S TAVERN</th><td>CATERING FOR JOINT EVENT</td><td>$2,344.09</td></tr>
+        <tr><th scope="row">WINPOWER STRATEGIES INC.</th><td>CAPITOL CITY PRESS (TUMWATER) - 100 YARD SIGNS</td><td>$829.08</td></tr>
+        <tr><th scope="row">ABBOT TAYLOR</th><td>TREASURY SERVICES</td><td>$750.00</td></tr>
+        <tr><th scope="row">Brianna Thomas</th><td>SECRETARY OF STATE (OLYMPIA) - FILING FEE</td><td>$676.88</td></tr>
+        <tr><th scope="row">ABBOT TAYLOR</th><td>MAY TREASURY SERVICES</td><td>$250.00</td></tr>
+        <tr><th scope="row">ABBOT TAYLOR</th><td>JUNE TREASURY SERVICES</td><td>$250.00</td></tr>
+        <tr><th scope="row">ABBOT TAYLOR</th><td>JULY TREASURY SERVICES</td><td>$250.00</td></tr>
+        <tr><th scope="row">ABBOT TAYLOR</th><td>DEC TREASURY SERVICES</td><td>$200.00</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$173.02</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -143,16 +146,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

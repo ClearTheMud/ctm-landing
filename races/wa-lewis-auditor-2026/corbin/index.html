@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Frank L. Corbin</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,13 +60,13 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Frank Lewis Corbin</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>PO BOX 76, Napavine, WA 98565</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Military Service</td><td>U.S. Navy veteran</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Frank Lewis Corbin</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>PO BOX 76, Napavine, WA 98565</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Military Service</th><td>U.S. Navy veteran</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -78,57 +81,57 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td></td><td>Pending, filed May 2026, primary August 4, 2026</td><td>Research</td></tr>
-        <tr><td>2025</td><td></td><td>Not selected; Dave Muller appointed</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td></td><td>Pending, filed May 2026, primary August 4, 2026</td><td>Research</td></tr>
+        <tr><th scope="row">2025</th><td></td><td>Not selected; Dave Muller appointed</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$5,697.08 (52 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$5,697.08 (56 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$5,697.08 (52 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$5,697.08 (56 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Frank L Corbin</td><td>$1,080.44</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$600.00</td></tr>
-        <tr><td>Frank Lewis Corbin (Frank L Corbin), Napavine</td><td>$500.00</td></tr>
-        <tr><td>Frank Lewis Corbin (Frank L Corbin), Napavine</td><td>$500.00</td></tr>
-        <tr><td>Miller Olga, Napavine</td><td>$500.00</td></tr>
-        <tr><td>Remund Rene, Chehalis</td><td>$500.00</td></tr>
-        <tr><td>Remund Susan, Chehalis</td><td>$500.00</td></tr>
-        <tr><td>Sacoy Clare H, Chino Hills</td><td>$500.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$450.00</td></tr>
-        <tr><td>Carpenter Nathan, Chehalis</td><td>$316.18</td></tr>
+        <tr><th scope="row">Frank L Corbin</th><td>$1,080.44</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$600.00</td></tr>
+        <tr><th scope="row">Frank Lewis Corbin (Frank L Corbin), Napavine</th><td>$500.00</td></tr>
+        <tr><th scope="row">Frank Lewis Corbin (Frank L Corbin), Napavine</th><td>$500.00</td></tr>
+        <tr><th scope="row">Miller Olga, Napavine</th><td>$500.00</td></tr>
+        <tr><th scope="row">Remund Rene, Chehalis</th><td>$500.00</td></tr>
+        <tr><th scope="row">Remund Susan, Chehalis</th><td>$500.00</td></tr>
+        <tr><th scope="row">Sacoy Clare H, Chino Hills</th><td>$500.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$450.00</td></tr>
+        <tr><th scope="row">Carpenter Nathan, Chehalis</th><td>$316.18</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Minuteman Press</td><td>INVOICE #3324 DATED: 04/03/2026 5 - 4x8 campaign signs ($572.88), 50 18x24 campaign signs with 50 H-stakes ($561.20).</td><td>$1,134.08</td></tr>
-        <tr><td>Minuteman Press</td><td>100 18&quot;x24&quot; Campaign Yard Signs with H-Stakes = $1,000 + Sales Tax of $84 = $1,084.00</td><td>$1,084.00</td></tr>
-        <tr><td>Frank L Corbin</td><td>Filing Fee for Lewis County Auditor - Filing Date of 5/4/2026. Filing Fee Charge Posted to Candidate&#x27;s Personal Credit Card on 5/6/2026.</td><td>$1,080.44</td></tr>
-        <tr><td>Sacoy Clare H</td><td>REFUND: Not advanced to General. Refund last donors to zero out campaign account per PDC guidelines.</td><td>$500.00</td></tr>
-        <tr><td>CT Publishing - The Chronicle</td><td>One 3&quot;x8.25&quot; Ad #635725 - Retail/Corporate/Business Printed in one edition dated: 04/14/2026. Invoice date 04/13/2026 #309603 due on receipt. Contact Austin Beltjens-DeBolt Austin@chronline.com 360-736-3311 Ext 118</td><td>$410.00</td></tr>
-        <tr><td>Carpenter Nathan</td><td>CorbinforAuditor.com and Corbin4Auditor.com Websites through WIXCOM #1253809041 Period of April 17, 2026 through August 31, 2026. Expense paid by donor for these webservices as a donation to the campaign. Reported to the campaign on 7/31/2026.</td><td>$316.18</td></tr>
-        <tr><td>Strang Rachel</td><td>REFUND: Not advanced to General. Refund last donors to zero out campaign account per PDC guidelines.</td><td>$300.00</td></tr>
-        <tr><td>Minuteman Press</td><td>Two 4&#x27;x8&#x27; 4mm Coro Campaign Signs @ $114.945 each + $19.31 Sales Tax = $249.20 PD via Debit Card INV #4046</td><td>$249.20</td></tr>
-        <tr><td>Flannery Publications - Lewis County News</td><td>One 12 Column square inch (3&quot;x4&quot;) full-color ad. Printed in one edition dated: 4/15/2026. Invoice #66147 Due: 05/20/2026 Contact: Scott Donworth E: scottd@flannerypubs.com C: 503-915-7754</td><td>$240.00</td></tr>
-        <tr><td>Minuteman Press</td><td>INVOICE #3327 250 double-sided campaign business cards ($81.38), 250 double-sided campaign remit envelopes ($90.37).</td><td>$171.75</td></tr>
+        <tr><th scope="row">Minuteman Press</th><td>INVOICE #3324 DATED: 04/03/2026 5 - 4x8 campaign signs ($572.88), 50 18x24 campaign signs with 50 H-stakes ($561.20).</td><td>$1,134.08</td></tr>
+        <tr><th scope="row">Minuteman Press</th><td>100 18&quot;x24&quot; Campaign Yard Signs with H-Stakes = $1,000 + Sales Tax of $84 = $1,084.00</td><td>$1,084.00</td></tr>
+        <tr><th scope="row">Frank L Corbin</th><td>Filing Fee for Lewis County Auditor - Filing Date of 5/4/2026. Filing Fee Charge Posted to Candidate&#x27;s Personal Credit Card on 5/6/2026.</td><td>$1,080.44</td></tr>
+        <tr><th scope="row">Sacoy Clare H</th><td>REFUND: Not advanced to General. Refund last donors to zero out campaign account per PDC guidelines.</td><td>$500.00</td></tr>
+        <tr><th scope="row">CT Publishing - The Chronicle</th><td>One 3&quot;x8.25&quot; Ad #635725 - Retail/Corporate/Business Printed in one edition dated: 04/14/2026. Invoice date 04/13/2026 #309603 due on receipt. Contact Austin Beltjens-DeBolt Austin@chronline.com 360-736-3311 Ext 118</td><td>$410.00</td></tr>
+        <tr><th scope="row">Carpenter Nathan</th><td>CorbinforAuditor.com and Corbin4Auditor.com Websites through WIXCOM #1253809041 Period of April 17, 2026 through August 31, 2026. Expense paid by donor for these webservices as a donation to the campaign. Reported to the campaign on 7/31/2026.</td><td>$316.18</td></tr>
+        <tr><th scope="row">Strang Rachel</th><td>REFUND: Not advanced to General. Refund last donors to zero out campaign account per PDC guidelines.</td><td>$300.00</td></tr>
+        <tr><th scope="row">Minuteman Press</th><td>Two 4&#x27;x8&#x27; 4mm Coro Campaign Signs @ $114.945 each + $19.31 Sales Tax = $249.20 PD via Debit Card INV #4046</td><td>$249.20</td></tr>
+        <tr><th scope="row">Flannery Publications - Lewis County News</th><td>One 12 Column square inch (3&quot;x4&quot;) full-color ad. Printed in one edition dated: 4/15/2026. Invoice #66147 Due: 05/20/2026 Contact: Scott Donworth E: scottd@flannerypubs.com C: 503-915-7754</td><td>$240.00</td></tr>
+        <tr><th scope="row">Minuteman Press</th><td>INVOICE #3327 250 double-sided campaign business cards ($81.38), 250 double-sided campaign remit envelopes ($90.37).</td><td>$171.75</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -155,7 +158,7 @@
     <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">4 sourced findings. All sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model. No T4 claims included.</p>
 
     <div class="finding moderate">
-      <h4>Finding 5.1: Chaired the county GOP Election Integrity Committee <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 5.1: Chaired the county GOP Election Integrity Committee <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Corbin was appointed chair of the Lewis County Republicans&#x27; Election Integrity Committee formed after the 2020 election. Corbin publicly stated that investigations did not convince him voter fraud happened on a large enough scale to impact the 2020 results. He later stepped down from the role to focus on his pastoral duties. The committee concluded its work without finding evidence of large-scale fraud affecting the 2020 results.</dd>
@@ -172,7 +175,7 @@
     </div>
 
     <div class="finding moderate">
-      <h4>Finding 5.2: No Direct Auditing or Elections Administration Experience <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 5.2: No Direct Auditing or Elections Administration Experience <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>While Corbin has extensive community board service (Planning Commission, Veterans Advisory Board, Broadband Action Team), his professional background as a retired VA program analyst, banker, and ordained minister does not include direct experience in government auditing, elections administration, or public records management, the core functions of the county auditor office. His opponents include a CPA (Merrill) with directly relevant accounting credentials.</dd>
@@ -189,7 +192,7 @@
     </div>
 
     <div class="finding low">
-      <h4>Finding 5.3: Campaign funded largely by self and a small donor circle <span class="impact-badge impact-low">LOW</span></h4>
+      <h3>Finding 5.3: Campaign funded largely by self and a small donor circle <span class="impact-badge impact-low">LOW</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Of Corbin&#x27;s $6,241.62 in total contributions, $1,635.20 (26%) comes from self-funding (cash and in-kind). Olga Miller of Napavine contributed $747.42 across multiple donations. Two out-of-state donors (Rachel Strang, Frisco TX / Intuit; Clare Sacoy, Chino Hills CA / Emanuel Health Center) contributed $800 combined. The donor base is relatively narrow and partially reliant on non-local support.</dd>
@@ -206,7 +209,7 @@
     </div>
 
     <div class="finding low">
-      <h4>Finding 5.4: Sought a PUD commission seat in 2025 but was not selected <span class="impact-badge impact-low">LOW</span></h4>
+      <h3>Finding 5.4: Sought a PUD commission seat in 2025 but was not selected <span class="impact-badge impact-low">LOW</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>In April-May 2025, Corbin sought a vacant Lewis County PUD Commission seat. Despite receiving 8 nominations (the most of any candidate) and being a finalist, the board selected former PUD General Manager Dave Muller instead. He subsequently filed for Lewis County Auditor in 2026.</dd>
@@ -236,16 +239,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

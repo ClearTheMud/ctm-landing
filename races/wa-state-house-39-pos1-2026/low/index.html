@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Sam Low</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Sam Low</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Sam Low</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -76,71 +79,71 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2025</td><td>County Council District 5 Council District 5 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2025</td><td>County Council District 5 Council District 5 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2024</td><td>Legislative District 39 - State Representative Pos. 1 (Primary)</td><td>Won (1 of 5)</td><td>WA SOS</td></tr>
-        <tr><td>2024</td><td>Legislative District 39 - State Representative Pos. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Legislative District 39 - State Representative Pos. 1 (Primary)</td><td>Lost (2 of 5)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Legislative District 39 - State Representative Pos. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2021</td><td>County Council District 5 Council District 5 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2021</td><td>County Council District 5 Council District 5 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2017</td><td>County Council District 5 Council District 5 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2017</td><td>County Council District 5 Council District #5 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2016</td><td>County Council Council District 5 (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2016</td><td>County Council District 5 Council District 5 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2025</th><td>County Council District 5 Council District 5 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2025</th><td>County Council District 5 Council District 5 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Legislative District 39 - State Representative Pos. 1 (Primary)</td><td>Won (1 of 5)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Legislative District 39 - State Representative Pos. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Legislative District 39 - State Representative Pos. 1 (Primary)</td><td>Lost (2 of 5)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Legislative District 39 - State Representative Pos. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2021</th><td>County Council District 5 Council District 5 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2021</th><td>County Council District 5 Council District 5 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2017</th><td>County Council District 5 Council District 5 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2017</th><td>County Council District 5 Council District #5 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2016</th><td>County Council Council District 5 (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2016</th><td>County Council District 5 Council District 5 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$176,985.30 (227 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$123,699.84 (65 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$176,985.30 (227 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$123,699.84 (65 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>AFSCME, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>AMR HoldCO INC, greenwood village</td><td>$1,200.00</td></tr>
-        <tr><td>Alaska Airlines, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Amazon.com, seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Aristole International INC Amazon.com, Washington DC</td><td>$1,200.00</td></tr>
-        <tr><td>Avista Corp, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>BNSF Railway Company, Forth Worth</td><td>$1,200.00</td></tr>
-        <tr><td>BOMA PAC of WASHINGTON STATE, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>Build East Pac, spokane</td><td>$1,200.00</td></tr>
-        <tr><td>Chevron, San Ramon</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">AFSCME, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">AMR HoldCO INC, greenwood village</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Alaska Airlines, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Amazon.com, seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Aristole International INC Amazon.com, Washington DC</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Avista Corp, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">BNSF Railway Company, Forth Worth</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">BOMA PAC of WASHINGTON STATE, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Build East Pac, spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Chevron, San Ramon</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Friends For Sam Low State Surplus account</td><td>Transfer to surplus funds account</td><td>$60,000.00</td></tr>
-        <tr><td>Northwest Publishing</td><td>printing expenses for 7/11 mailer to 43,306 homes in LD 39</td><td>$8,700.00</td></tr>
-        <tr><td>Northwest Publishing</td><td>Postage costs, mail permits, deposit for 7/11 newspaper mailer to 43.306 homes</td><td>$7,500.00</td></tr>
-        <tr><td>Northwest Publishing</td><td>additional 8 page mailer to 13,000 homes in District 39 for 7/17</td><td>$6,942.00</td></tr>
-        <tr><td>AB Hays LLc</td><td>Reimburse for 1/2 of Joint Mailer 6&quot; x 11&quot; with Ewing Campaign to 11,417 homes on 7/28/2026. includes postage; print northwest; consulting; creative fee</td><td>$5,867.91</td></tr>
-        <tr><td>Northwest Publishing</td><td>premailer costs for 7/11 newspaper mailer to 43306 homes</td><td>$5,000.00</td></tr>
-        <tr><td>Northwest Publishing</td><td>final payment for 7/11newspaper mailer to 43,306 homes paid by credit card.</td><td>$4,448.90</td></tr>
-        <tr><td>Snow &amp; Valentine Printing Co.</td><td>10 4x8 signs and 250 yard signs.</td><td>$3,702.54</td></tr>
-        <tr><td>Northwest Publishing</td><td>Deposit for design and preliminary work on July Campaign Mailer (s)</td><td>$2,500.00</td></tr>
-        <tr><td>lynnwood times</td><td>banner advertising on Lynnwood times digital from 5/4-8/7/2026
+        <tr><th scope="row">Friends For Sam Low State Surplus account</th><td>Transfer to surplus funds account</td><td>$60,000.00</td></tr>
+        <tr><th scope="row">Northwest Publishing</th><td>printing expenses for 7/11 mailer to 43,306 homes in LD 39</td><td>$8,700.00</td></tr>
+        <tr><th scope="row">Northwest Publishing</th><td>Postage costs, mail permits, deposit for 7/11 newspaper mailer to 43.306 homes</td><td>$7,500.00</td></tr>
+        <tr><th scope="row">Northwest Publishing</th><td>additional 8 page mailer to 13,000 homes in District 39 for 7/17</td><td>$6,942.00</td></tr>
+        <tr><th scope="row">AB Hays LLc</th><td>Reimburse for 1/2 of Joint Mailer 6&quot; x 11&quot; with Ewing Campaign to 11,417 homes on 7/28/2026. includes postage; print northwest; consulting; creative fee</td><td>$5,867.91</td></tr>
+        <tr><th scope="row">Northwest Publishing</th><td>premailer costs for 7/11 newspaper mailer to 43306 homes</td><td>$5,000.00</td></tr>
+        <tr><th scope="row">Northwest Publishing</th><td>final payment for 7/11newspaper mailer to 43,306 homes paid by credit card.</td><td>$4,448.90</td></tr>
+        <tr><th scope="row">Snow &amp; Valentine Printing Co.</th><td>10 4x8 signs and 250 yard signs.</td><td>$3,702.54</td></tr>
+        <tr><th scope="row">Northwest Publishing</th><td>Deposit for design and preliminary work on July Campaign Mailer (s)</td><td>$2,500.00</td></tr>
+        <tr><th scope="row">lynnwood times</th><td>banner advertising on Lynnwood times digital from 5/4-8/7/2026
 5 social media advertising posts from 5/4-8/7
 digital newsletter advertising each Sunday until 8/7
 4 - online columns in the Lynnwood times until 8/7</td><td>$2,500.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -155,16 +158,20 @@ digital newsletter advertising each Sunday until 8/7
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

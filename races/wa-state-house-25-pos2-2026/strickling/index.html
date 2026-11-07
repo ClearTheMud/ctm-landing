@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Jenn Marie Strickling</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Jenn Marie Strickling</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Jenn Marie Strickling</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -76,80 +79,80 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2025</td><td>County Council District NO. 5 Charter Review Dist. 5 Pos. 3 (Primary)</td><td>Won (1 of 5)</td><td>WA SOS</td></tr>
-        <tr><td>2025</td><td>County Council District NO. 5 Charter Review Dist. 5 Pos. 3 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2025</th><td>County Council District NO. 5 Charter Review Dist. 5 Pos. 3 (Primary)</td><td>Won (1 of 5)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2025</th><td>County Council District NO. 5 Charter Review Dist. 5 Pos. 3 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$84,174.70 (153 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$75,625.67 (48 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$84,174.70 (153 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$75,625.67 (48 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Jenn Marie Strickling</td><td>$10,898.46</td></tr>
-        <tr><td>Jenn Marie Strickling</td><td>$6,000.00</td></tr>
-        <tr><td>Jenn Marie Strickling</td><td>$5,365.39</td></tr>
-        <tr><td>Jenn Marie Strickling</td><td>$5,000.00</td></tr>
-        <tr><td>Jenn Marie Strickling</td><td>$5,000.00</td></tr>
-        <tr><td>Jenn Marie Strickling</td><td>$3,062.27</td></tr>
-        <tr><td>Jenn Marie Strickling</td><td>$2,000.00</td></tr>
-        <tr><td>Jenn Marie Strickling</td><td>$1,900.00</td></tr>
-        <tr><td>25TH LEGISLATIVE DISTRICT DEMOCRATS, PUYALLUP</td><td>$1,500.00</td></tr>
-        <tr><td>Jenn Marie Strickling</td><td>$1,209.33</td></tr>
+        <tr><th scope="row">Jenn Marie Strickling</th><td>$10,898.46</td></tr>
+        <tr><th scope="row">Jenn Marie Strickling</th><td>$6,000.00</td></tr>
+        <tr><th scope="row">Jenn Marie Strickling</th><td>$5,365.39</td></tr>
+        <tr><th scope="row">Jenn Marie Strickling</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">Jenn Marie Strickling</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">Jenn Marie Strickling</th><td>$3,062.27</td></tr>
+        <tr><th scope="row">Jenn Marie Strickling</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">Jenn Marie Strickling</th><td>$1,900.00</td></tr>
+        <tr><th scope="row">25TH LEGISLATIVE DISTRICT DEMOCRATS, PUYALLUP</th><td>$1,500.00</td></tr>
+        <tr><th scope="row">Jenn Marie Strickling</th><td>$1,209.33</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Jenn Marie Strickling</td><td>DIGITAL ADVERTISING PAYMENT FOR 6704.73 IN REPORTED DEBT
+        <tr><th scope="row">Jenn Marie Strickling</th><td>DIGITAL ADVERTISING PAYMENT FOR 6704.73 IN REPORTED DEBT
 PAYMENT OF 4193.73 NEW SPEND IN DIGITAL ADVERTISING.
 TOTAL IMPRESSIONS 114277 ON CTV 7/16/2026-8/4/2026
 DSPolitical, LLC
 1133 15th St. NW STE 800
 Washington, DC 20005</td><td>$10,898.46</td></tr>
-        <tr><td>DSPOLITICAL</td><td>DIGITAL ADVERTISING 76,192 IMPRESSIONS</td><td>$6,704.73</td></tr>
-        <tr><td>Jenn Marie Strickling</td><td>Management and consulting services
+        <tr><th scope="row">DSPOLITICAL</th><td>DIGITAL ADVERTISING 76,192 IMPRESSIONS</td><td>$6,704.73</td></tr>
+        <tr><th scope="row">Jenn Marie Strickling</th><td>Management and consulting services
 LONGVIEW IMPACT INC.
 808 LONE OAK RD, LONGVIEW WA 98632</td><td>$6,000.00</td></tr>
-        <tr><td>Jenn Marie Strickling</td><td>Postage costs, mail permits, purchase of stamps X14956
+        <tr><th scope="row">Jenn Marie Strickling</th><td>Postage costs, mail permits, purchase of stamps X14956
 Capitol City Press
 2975 37th ave SW 
 Tumwater WA 98512
 360-943-3556</td><td>$5,365.39</td></tr>
-        <tr><td>Jenn Marie Strickling</td><td>Management and consulting services: FIELD MANAGER
+        <tr><th scope="row">Jenn Marie Strickling</th><td>Management and consulting services: FIELD MANAGER
 MANOUSOS JACOBSON
 2325 s cushman ave Tacoma wa 98405</td><td>$5,000.00</td></tr>
-        <tr><td>Jenn Marie Strickling</td><td>Management and consulting services FIELD MANAGER
+        <tr><th scope="row">Jenn Marie Strickling</th><td>Management and consulting services FIELD MANAGER
 MANOUSOS JACOBSON
 2325 s cushman ave Tacoma wa 98405</td><td>$5,000.00</td></tr>
-        <tr><td>CAPITOL CITY PRESS</td><td>8100 MAILERS11 X 8.5 AND 8100 ENVELOPE 3.67X8.5</td><td>$3,782.76</td></tr>
-        <tr><td>Jenn Marie Strickling</td><td>14955 Postcard Size Mail
+        <tr><th scope="row">CAPITOL CITY PRESS</th><td>8100 MAILERS11 X 8.5 AND 8100 ENVELOPE 3.67X8.5</td><td>$3,782.76</td></tr>
+        <tr><th scope="row">Jenn Marie Strickling</th><td>14955 Postcard Size Mail
 Capitol City Press
 2975 37th ave SW 
 Tumwater WA 98512
 360-943-3556</td><td>$3,062.27</td></tr>
-        <tr><td>CAPITOL CITY PRESS</td><td>POSTAGE FOR MAILER 8100 ITEMS</td><td>$2,978.68</td></tr>
-        <tr><td>Jenn Marie Strickling</td><td>Videography and editing
+        <tr><th scope="row">CAPITOL CITY PRESS</th><td>POSTAGE FOR MAILER 8100 ITEMS</td><td>$2,978.68</td></tr>
+        <tr><th scope="row">Jenn Marie Strickling</th><td>Videography and editing
 Scoops ~ Eric Showacy
 2106 S Meridan N101
 Puyallup WA 98371</td><td>$2,000.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -164,16 +167,20 @@ Puyallup WA 98371</td><td>$2,000.00</td></tr>
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

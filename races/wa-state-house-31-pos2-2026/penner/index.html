@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Joshua Penner</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Joshua Penner</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Joshua Penner</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -77,63 +80,63 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2024</td><td>Legislative District 31 - State Representative Pos. 2 (Primary)</td><td>Won (1 of 5)</td><td>WA SOS</td></tr>
-        <tr><td>2024</td><td>Legislative District 31 - State Representative Pos. 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2017</td><td>City Of Orting Mayor (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2017</td><td>City Of Orting Mayor (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2015</td><td>County Council District NO. 1 Charter Review Commissioner - District 1, Position 3 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2015</td><td>County Council District NO. 1 Charter Review Commissioner - District 1, Position 3 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2015</td><td>City Of Orting Council Pos. 6 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Legislative District 31 - State Representative Pos. 2 (Primary)</td><td>Won (1 of 5)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Legislative District 31 - State Representative Pos. 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2017</th><td>City Of Orting Mayor (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2017</th><td>City Of Orting Mayor (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2015</th><td>County Council District NO. 1 Charter Review Commissioner - District 1, Position 3 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2015</th><td>County Council District NO. 1 Charter Review Commissioner - District 1, Position 3 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2015</th><td>City Of Orting Council Pos. 6 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$62,624.77 (95 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$39,243.35 (35 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$62,624.77 (95 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$39,243.35 (35 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Amazon.com Services LLC, Washington</td><td>$1,200.00</td></tr>
-        <tr><td>Amazon.com Services LLC, Washington</td><td>$1,200.00</td></tr>
-        <tr><td>Avista Corp., Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>Avista Corp., Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>Chevron U.S.A., Inc., San Ramon</td><td>$1,200.00</td></tr>
-        <tr><td>Council 28 AFSCME WFSE, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>Credit Union Legislative Action Fund, Seatac</td><td>$1,200.00</td></tr>
-        <tr><td>DaVita, Federal Way</td><td>$1,200.00</td></tr>
-        <tr><td>Delta Dental of Washington, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Delta Dental of Washington, Seattle</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Amazon.com Services LLC, Washington</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Amazon.com Services LLC, Washington</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Avista Corp., Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Avista Corp., Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Chevron U.S.A., Inc., San Ramon</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Council 28 AFSCME WFSE, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Credit Union Legislative Action Fund, Seatac</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">DaVita, Federal Way</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Delta Dental of Washington, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Delta Dental of Washington, Seattle</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Joshua Penner Surplus Account</td><td>Transfer Primary Funds to Surplus Funds Account</td><td>$16,700.00</td></tr>
-        <tr><td>Gallucci&#x27;s Catering</td><td>Catering for Campaign Kick-off Event</td><td>$3,520.36</td></tr>
-        <tr><td>AB Hays LLC</td><td>Consulting Services</td><td>$3,000.00</td></tr>
-        <tr><td>Kelley Farm</td><td>Venue Rental for Campaign Event</td><td>$2,300.00</td></tr>
-        <tr><td>Solvd Inc</td><td>Programmatic Display Ads (200,000 impressions)</td><td>$2,184.00</td></tr>
-        <tr><td>The Chronicle, Thurston Chronicle, Nisqually Valley News, Sign Pro</td><td>4&#x27;x2&#x27; Campaign Signs (100 ct)</td><td>$1,524.39</td></tr>
-        <tr><td>The Chronicle, Thurston Chronicle, Nisqually Valley News, Sign Pro</td><td>4&#x27;x2&#x27; Campaign Signs (100 ct)</td><td>$1,524.39</td></tr>
-        <tr><td>Elect Northwest</td><td>Treasury services retainer - 12 months</td><td>$1,300.00</td></tr>
-        <tr><td>Elect Northwest</td><td>Treasury services</td><td>$1,275.00</td></tr>
-        <tr><td>Print NW</td><td>Remits</td><td>$964.48</td></tr>
+        <tr><th scope="row">Joshua Penner Surplus Account</th><td>Transfer Primary Funds to Surplus Funds Account</td><td>$16,700.00</td></tr>
+        <tr><th scope="row">Gallucci&#x27;s Catering</th><td>Catering for Campaign Kick-off Event</td><td>$3,520.36</td></tr>
+        <tr><th scope="row">AB Hays LLC</th><td>Consulting Services</td><td>$3,000.00</td></tr>
+        <tr><th scope="row">Kelley Farm</th><td>Venue Rental for Campaign Event</td><td>$2,300.00</td></tr>
+        <tr><th scope="row">Solvd Inc</th><td>Programmatic Display Ads (200,000 impressions)</td><td>$2,184.00</td></tr>
+        <tr><th scope="row">The Chronicle, Thurston Chronicle, Nisqually Valley News, Sign Pro</th><td>4&#x27;x2&#x27; Campaign Signs (100 ct)</td><td>$1,524.39</td></tr>
+        <tr><th scope="row">The Chronicle, Thurston Chronicle, Nisqually Valley News, Sign Pro</th><td>4&#x27;x2&#x27; Campaign Signs (100 ct)</td><td>$1,524.39</td></tr>
+        <tr><th scope="row">Elect Northwest</th><td>Treasury services retainer - 12 months</td><td>$1,300.00</td></tr>
+        <tr><th scope="row">Elect Northwest</th><td>Treasury services</td><td>$1,275.00</td></tr>
+        <tr><th scope="row">Print NW</th><td>Remits</td><td>$964.48</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -148,16 +151,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

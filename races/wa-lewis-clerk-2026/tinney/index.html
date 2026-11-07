@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Scott A. Tinney</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,14 +60,14 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Scott A. Tinney</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>123 Valley Meadows Dr, Chehalis, WA 98532. Lifelong Washingtonian who has lived in Lewis County for approximately 30 years. His wife Donna has lived in Lewis County her entire life.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Family</td><td>Married to Donna Tinney, a lifelong Lewis County resident.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>Court Appointed Special Advocate (CASA), Clark County Juvenile Court (1990-1991); Employee, Clark County District Court (1991-1992); Paralegal, Calbom, Pond, Falkenstein and Marshall law firm (1992-1993); Deputy Clerk, Thurston County Clerk&#x27;s Office (1993-2016). Approximately 24 years in multiple roles including docket clerk, courtroom clerk, front desk, and accounting department.; Lewis County Clerk, appointed by Lewis County Board of Commissioners in November 2016 to complete the term of retired Clerk Kathy Brack. Won special election in 2017, re-elected 2022. Currently serving, seeking re-election 2026.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Scott A. Tinney</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>123 Valley Meadows Dr, Chehalis, WA 98532. Lifelong Washingtonian who has lived in Lewis County for approximately 30 years. His wife Donna has lived in Lewis County her entire life.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Family</th><td>Married to Donna Tinney, a lifelong Lewis County resident.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Court Appointed Special Advocate (CASA), Clark County Juvenile Court (1990-1991); Employee, Clark County District Court (1991-1992); Paralegal, Calbom, Pond, Falkenstein and Marshall law firm (1992-1993); Deputy Clerk, Thurston County Clerk&#x27;s Office (1993-2016). Approximately 24 years in multiple roles including docket clerk, courtroom clerk, front desk, and accounting department.; Lewis County Clerk, appointed by Lewis County Board of Commissioners in November 2016 to complete the term of retired Clerk Kathy Brack. Won special election in 2017, re-elected 2022. Currently serving, seeking re-election 2026.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -79,25 +82,25 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2022</td><td>Lewis County Clerk (Primary)</td><td>Won primary, 11,317 votes (55.33%) vs Linda Williams (R) 8,815 (43.10%)</td><td>Research</td></tr>
-        <tr><td>2022</td><td>Lewis County Clerk (General)</td><td>Won general, 17,781 votes (57.29%) vs Linda Williams (R) 12,873 (41.47%)</td><td>Research</td></tr>
-        <tr><td>2017</td><td>Lewis County Clerk (Special Election)</td><td>Won general, 7,319 votes (50.08%) vs Carla Shannon (R) 7,280 (49.92%). Margin of 39 votes. Confirmed by machine recount.</td><td>Research</td></tr>
-        <tr><td>2016</td><td>Lewis County Clerk (Appointment)</td><td>Appointed by Lewis County Board of Commissioners to fill vacancy left by retired Clerk Kathy Brack. Was the third-ranked candidate by the local Republican Party (behind Carla Shannon and Tiffini Walker), but commissioners selected him based on his broad experience across all areas of clerk operations.</td><td>Research</td></tr>
+        <tr><th scope="row">2022</th><td>Lewis County Clerk (Primary)</td><td>Won primary, 11,317 votes (55.33%) vs Linda Williams (R) 8,815 (43.10%)</td><td>Research</td></tr>
+        <tr><th scope="row">2022</th><td>Lewis County Clerk (General)</td><td>Won general, 17,781 votes (57.29%) vs Linda Williams (R) 12,873 (41.47%)</td><td>Research</td></tr>
+        <tr><th scope="row">2017</th><td>Lewis County Clerk (Special Election)</td><td>Won general, 7,319 votes (50.08%) vs Carla Shannon (R) 7,280 (49.92%). Margin of 39 votes. Confirmed by machine recount.</td><td>Research</td></tr>
+        <tr><th scope="row">2016</th><td>Lewis County Clerk (Appointment)</td><td>Appointed by Lewis County Board of Commissioners to fill vacancy left by retired Clerk Kathy Brack. Was the third-ranked candidate by the local Republican Party (behind Carla Shannon and Tiffini Walker), but commissioners selected him based on his broad experience across all areas of clerk operations.</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Court Modernization &amp; Electronic Filing</td><td>Implemented electronic document filing system for Lewis County Superior Court. No fee for e-filing service (standard filing fees and ecommerce transaction fees still apply). Worked with other county offices for several years to bring electronic filing to fruition.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Protection Order Modernization</td><td>Modernized the civil protection order process to allow petitioners to submit paperwork remotely for cases involving domestic violence, sexual assault, stalking, harassment, vulnerable adults, and extreme risk. Installed application kiosk outside the clerk&#x27;s office. Developing electronic notification system to update residents on petition status.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Customer Service &amp; Access</td><td>Emphasized broad-based experience across all areas of clerk operations. Committed to professional, accessible court administration. Prioritizes reducing barriers for residents interacting with the court system.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Court Modernization &amp; Electronic Filing</th><td>Implemented electronic document filing system for Lewis County Superior Court. No fee for e-filing service (standard filing fees and ecommerce transaction fees still apply). Worked with other county offices for several years to bring electronic filing to fruition.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Protection Order Modernization</th><td>Modernized the civil protection order process to allow petitioners to submit paperwork remotely for cases involving domestic violence, sexual assault, stalking, harassment, vulnerable adults, and extreme risk. Installed application kiosk outside the clerk&#x27;s office. Developing electronic notification system to update residents on petition status.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Customer Service &amp; Access</th><td>Emphasized broad-based experience across all areas of clerk operations. Committed to professional, accessible court administration. Prioritizes reducing barriers for residents interacting with the court system.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -130,7 +133,7 @@
     <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">3 sourced findings. All sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model. No T4 claims included.</p>
 
     <div class="finding low">
-      <h4>Finding 7.1: Appointed clerk in 2016 as the local GOP&#x27;s third-ranked choice <span class="impact-badge impact-low">LOW</span></h4>
+      <h3>Finding 7.1: Appointed clerk in 2016 as the local GOP&#x27;s third-ranked choice <span class="impact-badge impact-low">LOW</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>When Tinney was appointed Lewis County Clerk in November 2016, the local Republican Party had ranked three candidates for the position. Tinney was their third choice, behind Carla Shannon (first) and Tiffini Walker (second). The Lewis County Board of Commissioners selected Tinney over the party&#x27;s preferred candidates, with Commissioner Gary Stamper stating that Tinney &#x27;had a real broad base and experience in every area&#x27; addressed in interviews. This created friction with the local party and with Shannon, who then challenged Tinney in the 2017 special election, which Tinney won by only 39 votes, requiring a recount.</dd>
@@ -148,7 +151,7 @@
     </div>
 
     <div class="finding low">
-      <h4>Finding 7.2: Won the 2017 election by 39 votes after a recount <span class="impact-badge impact-low">LOW</span></h4>
+      <h3>Finding 7.2: Won the 2017 election by 39 votes after a recount <span class="impact-badge impact-low">LOW</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Tinney&#x27;s first election in 2017 was among the closest county races in Lewis County history. He initially trailed challenger Carla Shannon, then took the lead by 23 votes, then 32 votes, before the final certified margin settled at 39 votes out of approximately 14,600 cast (50.08% to 49.92%). The race required a machine recount conducted by the Lewis County Auditor&#x27;s Office. The recount confirmed Tinney&#x27;s victory.</dd>
@@ -166,7 +169,7 @@
     </div>
 
     <div class="finding low">
-      <h4>Finding 7.3: Spent 24 years working in Thurston County before his 2016 appointment <span class="impact-badge impact-low">LOW</span></h4>
+      <h3>Finding 7.3: Spent 24 years working in Thurston County before his 2016 appointment <span class="impact-badge impact-low">LOW</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Prior to his 2016 appointment, Tinney spent the majority of his professional career outside Lewis County. He worked at Clark County District Court (1991-1992), at a private law firm in Thurston County (1992-1993), and then 24 years as a deputy clerk at the Thurston County Clerk&#x27;s Office (1993-2016). He has lived in Lewis County for approximately 30 years, and his professional experience was in neighboring counties.</dd>
@@ -197,16 +200,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

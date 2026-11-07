@@ -57,6 +57,37 @@
      5.63:1. The dark override below reuses --amber-results, which already
      clears 7.89:1 against the dark panel. */
   --amber-results-text: #a1520a;
+  /* ADO #3006: green as TEXT or icon on --results-panel (.big.green, the
+     .phead check). #27ae60 measured 2.51:1 on the light phead tint and
+     fails 4.5:1 on white; #1a7a43 is the badge green, 5.4:1 on white. */
+  --green-results-text: #1a7a43;
+  /* ADO #3007: focus ring colour inside results components. Light: the link
+     blue. Dark: the panel ink (13:1 on the dark panel); light --accent was
+     2.39:1 there. */
+  --results-focus: var(--accent);
+  /* ADO #3013 (F10): generated legend swatches use var(--dem) / var(--rep),
+     which were never defined, so the Democratic and Republican swatches
+     rendered blank. Defined here to the results tokens. */
+  --dem: var(--dem-blue-results);
+  --rep: var(--rep-red-results);
+  /* ADO #3013 (F02): gold as TEXT on a light surface. #c9a84c on #f4f6f8 was
+     2.11:1. #7a5c00 is 5.8:1 on --gray-light and 6.2:1 on #fff8e1. */
+  --gold-text: #7a5c00;
+  /* ADO #3013 (F12): 3:1 edge for the vote-bar track. The track fill alone
+     was 1.07:1 against its surround. */
+  --results-track-edge: #7b8794;
+  /* ADO #3013 (F14/F15): map shape colours. Active shapes keep the gold fill
+     but get a navy separator (7:1 on gold). Inactive shapes were #3d5570 and
+     #4a5e73 on the navy map panel (2.05:1 and 2.36:1); #5f7a96 is 3.5:1. */
+  --map-inactive: #5f7a96;
+  --map-inactive-hover: #7390ad;
+  --map-edge: #1a2332;
+  /* Focus on a map shape: the shape turns white with a 3px navy border and a
+     navy box 3px outside it. The old ring (#1a5f99, 2px) was 1.3:1 to 2.4:1.
+     White fill vs navy map panel is 15:1, navy border vs gold or slate
+     neighbours is 7:1 and 2.7:1 or better (>= 3:1 on the shape edges). A single
+     ring colour cannot reach 3:1 on both gold and navy, hence fill plus border. */
+  --map-focus: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -81,16 +112,31 @@
     --amber-results: #f0a835;
     --amber-soft-results: #241c0c;
     --amber-results-text: var(--amber-results);
+    --green-results-text: #3ccf7a;
+    --results-focus: var(--results-ink);
+    --results-track-edge: #6d7b8b;
   }
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
+/* ADO #3013 (F25/F21): classes the generators and map scripts emit for landmarks.
+   .sr-only is text for assistive technology only (map keyboard help, table
+   captions). .skip-link is the first Tab stop on every page: off screen until
+   focused, then a high-contrast box (navy on white, 3px gold ring). */
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0; }
+.skip-link { position: absolute; left: -999px; top: 0; z-index: 100; background: #fff; color: var(--navy); font-weight: 700; padding: 10px 16px; border: 2px solid var(--navy); border-radius: 0 0 6px 0; }
+.skip-link:focus { left: 0; outline: 3px solid var(--gold); outline-offset: 2px; }
+main:focus { outline: none; }
 body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; font-size: 15px; }
 .page { max-width: 960px; margin: 0 auto; padding: 0 24px; }
 a { color: var(--accent); }
 p { margin-bottom: 12px; }
 ul, ol { margin: 8px 0 16px 20px; }
 li { margin-bottom: 6px; }
+/* ADO #3007: long source URLs in list items forced 467px of width at 320px.
+   break-word, not anywhere: it only splits a token that cannot fit and does not
+   change min-content sizing, so ordinary words never break mid-word. */
+li, dd { overflow-wrap: break-word; }
 
 /* Classification bar. White-on-var(--green) measured 2.87:1, below the WCAG
    2.1 AA 1.4.3 floor of 4.5:1 for this 12px bold text (not large-text size).
@@ -103,7 +149,9 @@ li { margin-bottom: 6px; }
 .dossier-nav { background: var(--navy); padding: 8px 24px; font-size: 13px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
 .dossier-nav a { color: var(--gold); text-decoration: none; }
 .dossier-nav a:hover { text-decoration: underline; }
-.nav-sep { color: rgba(255,255,255,0.4); }
+/* ADO #3007: rgba .4 white on the navy bar measured 3.71:1. .65 clears 4.5:1
+   (about 7:1) and stays visibly quieter than the links. */
+.nav-sep { color: rgba(255,255,255,0.65); }
 .nav-current { color: rgba(255,255,255,0.8); }
 
 /* Header — party-specific gradients */
@@ -113,8 +161,13 @@ li { margin-bottom: 6px; }
 .header.party-neutral { background: linear-gradient(135deg, var(--navy) 0%, #3a3a5c 100%); }
 .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.5px; }
 .header h2 { font-size: 18px; font-weight: 400; opacity: 0.9; margin-bottom: 16px; }
-.header-meta { display: flex; flex-wrap: wrap; gap: 20px; font-size: 13px; opacity: 0.85; }
-.header-meta span { white-space: nowrap; }
+/* ADO #3007: opacity .85 on the container made axe composite the TLP badge
+   differently from the rendered pixels (axe 4.01:1, pixels 5.02:1). A
+   translucent text colour dims the same way without grouping the badge, so
+   axe and the pixels agree (badge is white on #1a7a43, 5.38:1). Items wrap
+   at narrow widths instead of forcing page-level horizontal scroll. */
+.header-meta { display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 13px; color: rgba(255,255,255,0.88); }
+.header-meta span { white-space: normal; overflow-wrap: break-word; }
 /* Same white-on-green contrast fix as .classification-bar above: measured
    2.87:1 with --green, now 5.38:1 with --green-badge-results. */
 .tlp-badge { display: inline-block; background: var(--green-badge-results); color: #fff; font-weight: 700; font-size: 12px; padding: 3px 10px; border-radius: 3px; letter-spacing: 0.5px; text-transform: uppercase; }
@@ -132,7 +185,12 @@ tbody tr:nth-child(even) { background: #fafbfc; }
 td:first-child { font-weight: 600; white-space: nowrap; width: 220px; }
 caption { caption-side: top; text-align: left; font-size: 13px; font-weight: 600; color: var(--gray-dark); padding-bottom: 8px; }
 /* Wide tables scroll inside their own box so the page body never scrolls sideways. */
-.table-scroll { overflow-x: auto; }
+.table-scroll { overflow-x: auto; margin: 16px 0 24px; }
+.table-scroll > table { margin: 0; }
+/* The page body stays light in both schemes, so the accent ring is 6.7:1 on it. */
+.table-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* ADO #3013: first column is a row header (th scope=row) since pass B; same look as td:first-child. */
+tbody th[scope="row"] { padding: 9px 12px; border-bottom: 1px solid var(--gray-mid); vertical-align: top; text-align: left; font-weight: 600; font-size: inherit; white-space: nowrap; width: 220px; }
 
 /* Sourced context on an endorsement. Endorser identity lives in the name; any
    claim about them lives here with its own sourcing (ADO #1962, gate 8). */
@@ -151,7 +209,10 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .finding.severe { border-left-color: var(--orange); }
 .finding.high { border-left-color: var(--gold); }
 .finding.moderate { border-left-color: var(--accent); }
-.finding h4 { font-size: 15px; font-weight: 700; margin-bottom: 10px; }
+/* ADO #3013 (F26): finding and card titles are h4 under h2 today (a skipped
+   level). The h3 selectors let the generators emit the correct level without
+   restyling. */
+.finding h4, .finding h3 { font-size: 15px; font-weight: 700; margin: 0 0 10px; color: inherit; }
 .finding dl { display: grid; grid-template-columns: 140px 1fr; gap: 6px 12px; font-size: 14px; }
 .finding dt { font-weight: 600; color: var(--gray-dark); }
 .finding dd { margin: 0; }
@@ -171,7 +232,7 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 
 /* Journalist leads */
 .leads { background: #fff8e1; border: 1px solid #ffe082; border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
-.leads h3 { color: var(--gold); margin-top: 0; }
+.leads h3 { color: var(--gold-text); margin-top: 0; }
 .leads ol { padding-left: 20px; }
 .leads li { margin-bottom: 8px; font-size: 14px; }
 
@@ -179,11 +240,11 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .callout { background: #d4edda; border: 1px solid #c3e6cb; border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
 .callout h3 { color: #155724; margin-top: 0; }
 .note-box { background: #fff8e1; border: 1px solid #ffe082; border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
-.note-box strong { color: var(--gold); }
+.note-box strong { color: var(--gold-text); }
 
 /* BLUF (race dynamics pages) */
 .bluf { background: var(--gray-light); border-left: 5px solid var(--gold); padding: 24px 28px; margin: 32px 0; font-size: 16px; line-height: 1.7; }
-.bluf-label { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.bluf-label { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold-text); margin-bottom: 8px; }
 
 /* Matchup cards (race dynamics) */
 .matchup { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 24px 0; }
@@ -194,8 +255,8 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .matchup-card-header.dem { background: var(--dem-blue); }
 .matchup-card-header.rep { background: var(--rep-red); }
 .matchup-card-body { padding: 16px; }
-.matchup-card-body h4 { font-size: 14px; font-weight: 700; margin: 12px 0 6px; color: var(--navy); }
-.matchup-card-body h4:first-child { margin-top: 0; }
+.matchup-card-body h4, .matchup-card-body h3 { font-size: 14px; font-weight: 700; margin: 12px 0 6px; color: var(--navy); }
+.matchup-card-body h4:first-child, .matchup-card-body h3:first-child { margin-top: 0; }
 .matchup-card-body ul { margin: 4px 0 8px 16px; font-size: 13px; }
 .matchup-card-body li { margin-bottom: 4px; }
 
@@ -204,11 +265,15 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .assessment h3 { color: var(--blue); margin-top: 0; }
 
 /* Status badges for field table */
-.status-active { display: inline-block; background: var(--green); color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 3px; }
+.status-active { display: inline-block; background: var(--green-badge-results); color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 3px; }
 .status-incumbent { display: inline-block; background: var(--gold); color: #1a2332; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 3px; }
 /* Withdrawn from the race. Grey, not green: this candidate is not on the ballot. */
 .status-withdrawn { display: inline-block; background: var(--gray-dark); color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 3px; }
-.dossier-link.withdrawn { opacity: 0.72; }
+/* ADO #3013 (F01): was opacity .72 on the whole card, which dropped the card
+   text to 3.10:1 and the badge to 2.38:1. State is now carried by the badge
+   word, a dashed border and a solid muted surface, none of which dim text. */
+.dossier-link.withdrawn { background: var(--gray-light); border-style: dashed; border-color: var(--gray-dark); }
+.dossier-link.withdrawn h4, .dossier-link.withdrawn h3 { color: var(--gray-dark); }
 .withdrawn-notice { background: #f4f4f5; border-left: 4px solid var(--gray-dark); padding: 12px 16px; margin: 0 0 20px; font-size: 14px; }
 /* Scopes a withdrawn candidate's reported totals to the period before they left
    the race, so a finance refresh cannot read as current (ADO #2014). */
@@ -217,9 +282,10 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
    withdrawing is a choice made before ballots, elimination is an outcome after
    them. Both are muted, and both carry a word as well as a colour, so the
    status never depends on seeing the difference between two greys. */
-.status-advanced { display: inline-block; background: var(--green); color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 3px; }
+.status-advanced { display: inline-block; background: var(--green-badge-results); color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 3px; }
 .status-eliminated { display: inline-block; background: #6b7280; color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 3px; }
-.dossier-link.eliminated { opacity: 0.62; }
+.dossier-link.eliminated { background: var(--gray-light); border-style: dashed; border-color: var(--gray-dark); }
+.dossier-link.eliminated h4, .dossier-link.eliminated h3 { color: var(--gray-dark); }
 .eliminated-header { margin: 24px 0 4px; font-size: 16px; color: var(--gray-dark); }
 .eliminated-note { margin: 0 0 12px; font-size: 13px; color: var(--gray-dark); }
 /* Provisional until county certification. Washington counts mail ballots for
@@ -227,13 +293,13 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .partial-count { background: #fffbeb; border-left: 4px solid #d97706; padding: 10px 14px; margin: 0 0 16px; font-size: 13px; }
 .conduit-tag { display: inline-block; background: #fef3c7; color: #92400e; font-size: 10px; font-weight: 600; padding: 1px 6px; border-radius: 3px; margin-left: 4px; vertical-align: middle; }
 .status-withdrawn { display: inline-block; background: var(--gray-dark); color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 3px; }
-.status-suspended { display: inline-block; background: var(--orange); color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 3px; }
+.status-suspended { display: inline-block; background: var(--amber-badge-results); color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 3px; }
 
 /* Dossier link cards */
 .dossier-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 24px 0; }
 .dossier-link { display: block; text-decoration: none; color: var(--text); border: 1px solid var(--gray-mid); border-radius: 8px; padding: 20px; transition: box-shadow 0.15s, transform 0.15s; }
 .dossier-link:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); transform: translateY(-2px); }
-.dossier-link h4 { font-size: 16px; color: var(--navy); margin-bottom: 4px; }
+.dossier-link h4, .dossier-link h3 { font-size: 16px; color: var(--navy); margin: 0 0 4px; }
 .dossier-link .party-tag { font-size: 12px; font-weight: 700; }
 .dossier-link .party-tag.dem { color: var(--dem-blue); }
 .dossier-link .party-tag.rep { color: var(--rep-red); }
@@ -264,70 +330,70 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .map-intro { text-align: center; font-size: 15px; color: var(--gray-dark); margin: 32px 0 0; }
 .map-container { margin: 12px 0 32px; position: relative; background: var(--navy); border-radius: 12px; padding: 24px; }
 .map-container svg { width: 100%; height: auto; max-height: 480px; }
-.map-container .state { fill: #4a5e73; stroke: #5a7a94; stroke-width: 1.5; transition: fill 0.2s, stroke 0.2s; }
-.map-container .state--active { fill: #d4a83a; stroke: #b8922e; cursor: pointer; animation: state-glow 2.5s ease-in-out infinite; }
-.map-container .state--active:hover, .map-container .state--active:focus { fill: #e8c45a; stroke: #d4a83a; outline: none; animation: none; }
+.map-container .state { fill: var(--map-inactive); stroke: var(--map-edge); stroke-width: 1.5; transition: fill 0.2s, stroke 0.2s; }
+.map-container .state--active { fill: #d4a83a; stroke: var(--map-edge); cursor: pointer; animation: state-glow 2.5s ease-in-out infinite; }
+.map-container .state--active:hover, .map-container .state--active:focus { fill: #e8c45a; stroke: var(--map-edge); outline: none; animation: none; }
 @keyframes state-glow { 0%, 100% { fill: #d4a83a; } 50% { fill: #e0bc5a; } }
-.map-container .state--active:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.map-container .state--senate { fill: #5a9a7a; stroke: #4a8a6a; cursor: pointer; animation: senate-glow 2.5s ease-in-out infinite; }
-.map-container .state--senate:hover, .map-container .state--senate:focus { fill: #6aaa8a; stroke: #5a9a7a; outline: none; animation: none; }
+.map-container .state--active:focus-visible { fill: var(--map-focus); stroke: var(--map-edge); stroke-width: 4; vector-effect: non-scaling-stroke; outline: 3px solid var(--map-edge); outline-offset: 3px; }
+.map-container .state--senate { fill: #5a9a7a; stroke: var(--map-edge); cursor: pointer; animation: senate-glow 2.5s ease-in-out infinite; }
+.map-container .state--senate:hover, .map-container .state--senate:focus { fill: #6aaa8a; stroke: var(--map-edge); outline: none; animation: none; }
 @keyframes senate-glow { 0%, 100% { fill: #5a9a7a; } 50% { fill: #6aaa8a; } }
-.map-container .state--senate:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.map-container .state--inactive { fill: #3d5570; stroke: #5a7a94; cursor: default; }
-.map-container .state--inactive:hover { fill: #4e6a85; }
+.map-container .state--senate:focus-visible { fill: var(--map-focus); stroke: var(--map-edge); stroke-width: 4; vector-effect: non-scaling-stroke; outline: 3px solid var(--map-edge); outline-offset: 3px; }
+.map-container .state--inactive { fill: var(--map-inactive); stroke: var(--map-edge); cursor: default; }
+.map-container .state--inactive:hover { fill: var(--map-inactive-hover); }
 .map-legend { display: flex; gap: 24px; justify-content: center; margin-top: 16px; font-size: 13px; color: rgba(255,255,255,0.7); flex-wrap: wrap; }
 .map-legend-item { display: flex; align-items: center; gap: 6px; }
 .map-legend-swatch { width: 16px; height: 16px; border-radius: 3px; border: 1px solid rgba(255,255,255,0.2); }
 .map-legend-swatch--active { background: #d4a83a; border-color: #d4a83a; }
 .map-legend-swatch--senate { background: #5a9a7a; border-color: #5a9a7a; }
-.map-legend-swatch--inactive { background: #3d5570; }
+.map-legend-swatch--inactive { background: var(--map-inactive); }
 .map-fallback-link { text-align: center; margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6); }
 .map-fallback-link a { color: var(--accent); }
 
 /* District Map */
 .district-map-container { margin: 12px 0 24px; position: relative; background: var(--navy); border-radius: 12px; padding: 24px; }
 .district-map-container svg { width: 100%; height: auto; max-height: 480px; }
-.district-map-container .district { fill: #4a5e73; stroke: #5a7a94; stroke-width: 1.5; transition: fill 0.2s, stroke 0.2s; }
-.district-map-container .district--active { fill: #d4a83a; stroke: #b8922e; cursor: pointer; animation: district-glow 2.5s ease-in-out infinite; }
-.district-map-container .district--active:hover, .district-map-container .district--active:focus { fill: #e8c45a; stroke: #d4a83a; outline: none; animation: none; }
+.district-map-container .district { fill: var(--map-inactive); stroke: var(--map-edge); stroke-width: 1.5; transition: fill 0.2s, stroke 0.2s; }
+.district-map-container .district--active { fill: #d4a83a; stroke: var(--map-edge); cursor: pointer; animation: district-glow 2.5s ease-in-out infinite; }
+.district-map-container .district--active:hover, .district-map-container .district--active:focus { fill: #e8c45a; stroke: var(--map-edge); outline: none; animation: none; }
 @keyframes district-glow { 0%, 100% { fill: #d4a83a; } 50% { fill: #e0bc5a; } }
-.district-map-container .district--active:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.district-map-container .district--inactive { fill: #3d5570; stroke: #5a7a94; cursor: default; }
-.district-map-container .district--inactive:hover { fill: #4e6a85; }
+.district-map-container .district--active:focus-visible { fill: var(--map-focus); stroke: var(--map-edge); stroke-width: 4; vector-effect: non-scaling-stroke; outline: 3px solid var(--map-edge); outline-offset: 3px; }
+.district-map-container .district--inactive { fill: var(--map-inactive); stroke: var(--map-edge); cursor: default; }
+.district-map-container .district--inactive:hover { fill: var(--map-inactive-hover); }
 
 /* County Map */
 .county-map-container { margin: 12px 0 24px; position: relative; background: var(--navy); border-radius: 12px; padding: 24px; }
 .county-map-container svg { width: 100%; height: auto; max-height: 480px; }
-.county-map-container .county { fill: #4a5e73; stroke: #5a7a94; stroke-width: 1.5; transition: fill 0.2s, stroke 0.2s; }
-.county-map-container .county--active { fill: #d4a83a; stroke: #b8922e; cursor: pointer; animation: county-glow 2.5s ease-in-out infinite; }
-.county-map-container .county--active:hover, .county-map-container .county--active:focus { fill: #e8c45a; stroke: #d4a83a; outline: none; animation: none; }
+.county-map-container .county { fill: var(--map-inactive); stroke: var(--map-edge); stroke-width: 1.5; transition: fill 0.2s, stroke 0.2s; }
+.county-map-container .county--active { fill: #d4a83a; stroke: var(--map-edge); cursor: pointer; animation: county-glow 2.5s ease-in-out infinite; }
+.county-map-container .county--active:hover, .county-map-container .county--active:focus { fill: #e8c45a; stroke: var(--map-edge); outline: none; animation: none; }
 @keyframes county-glow { 0%, 100% { fill: #d4a83a; } 50% { fill: #e0bc5a; } }
-.county-map-container .county--active:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.county-map-container .county--inactive { fill: #3d5570; stroke: #5a7a94; cursor: default; }
-.county-map-container .county--inactive:hover { fill: #4e6a85; }
+.county-map-container .county--active:focus-visible { fill: var(--map-focus); stroke: var(--map-edge); stroke-width: 4; vector-effect: non-scaling-stroke; outline: 3px solid var(--map-edge); outline-offset: 3px; }
+.county-map-container .county--inactive { fill: var(--map-inactive); stroke: var(--map-edge); cursor: default; }
+.county-map-container .county--inactive:hover { fill: var(--map-inactive-hover); }
 
 /* Place Map */
 .place-map-container { margin: 12px 0 24px; position: relative; background: var(--navy); border-radius: 12px; padding: 24px; }
 .place-map-container svg { width: 100%; height: auto; max-height: 480px; }
 .place-map-container .county-boundary { fill: none; stroke: #5a7a94; stroke-width: 2; stroke-dasharray: 6,3; }
-.place-map-container .place { fill: #4a5e73; stroke: #5a7a94; stroke-width: 1; transition: fill 0.2s, stroke 0.2s; }
-.place-map-container .place--active { fill: #d4a83a; stroke: #b8922e; cursor: pointer; animation: place-glow 2.5s ease-in-out infinite; }
-.place-map-container .place--active:hover, .place-map-container .place--active:focus { fill: #e8c45a; stroke: #d4a83a; outline: none; animation: none; }
+.place-map-container .place { fill: var(--map-inactive); stroke: var(--map-edge); stroke-width: 1; transition: fill 0.2s, stroke 0.2s; }
+.place-map-container .place--active { fill: #d4a83a; stroke: var(--map-edge); cursor: pointer; animation: place-glow 2.5s ease-in-out infinite; }
+.place-map-container .place--active:hover, .place-map-container .place--active:focus { fill: #e8c45a; stroke: var(--map-edge); outline: none; animation: none; }
 @keyframes place-glow { 0%, 100% { fill: #d4a83a; } 50% { fill: #e0bc5a; } }
-.place-map-container .place--active:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.place-map-container .place--inactive { fill: #3d5570; stroke: #5a7a94; cursor: default; }
-.place-map-container .place--inactive:hover { fill: #4e6a85; }
+.place-map-container .place--active:focus-visible { fill: var(--map-focus); stroke: var(--map-edge); stroke-width: 4; vector-effect: non-scaling-stroke; outline: 3px solid var(--map-edge); outline-offset: 3px; }
+.place-map-container .place--inactive { fill: var(--map-inactive); stroke: var(--map-edge); cursor: default; }
+.place-map-container .place--inactive:hover { fill: var(--map-inactive-hover); }
 
 /* Legislative District Map */
 .legislative-map-container { margin: 12px 0 24px; position: relative; background: var(--navy); border-radius: 12px; padding: 24px; }
 .legislative-map-container svg { width: 100%; height: auto; max-height: 520px; }
-.legislative-map-container .leg-district { fill: #4a5e73; stroke: #5a7a94; stroke-width: 1; transition: fill 0.2s, stroke 0.2s; }
-.legislative-map-container .leg-district--active { fill: #d4a83a; stroke: #b8922e; cursor: pointer; animation: leg-glow 2.5s ease-in-out infinite; }
-.legislative-map-container .leg-district--active:hover, .legislative-map-container .leg-district--active:focus { fill: #e8c45a; stroke: #d4a83a; outline: none; animation: none; }
+.legislative-map-container .leg-district { fill: var(--map-inactive); stroke: var(--map-edge); stroke-width: 1; transition: fill 0.2s, stroke 0.2s; }
+.legislative-map-container .leg-district--active { fill: #d4a83a; stroke: var(--map-edge); cursor: pointer; animation: leg-glow 2.5s ease-in-out infinite; }
+.legislative-map-container .leg-district--active:hover, .legislative-map-container .leg-district--active:focus { fill: #e8c45a; stroke: var(--map-edge); outline: none; animation: none; }
 @keyframes leg-glow { 0%, 100% { fill: #d4a83a; } 50% { fill: #e0bc5a; } }
-.legislative-map-container .leg-district--active:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.legislative-map-container .leg-district--inactive { fill: #3d5570; stroke: #5a7a94; cursor: default; }
-.legislative-map-container .leg-district--inactive:hover { fill: #4e6a85; }
+.legislative-map-container .leg-district--active:focus-visible { fill: var(--map-focus); stroke: var(--map-edge); stroke-width: 4; vector-effect: non-scaling-stroke; outline: 3px solid var(--map-edge); outline-offset: 3px; }
+.legislative-map-container .leg-district--inactive { fill: var(--map-inactive); stroke: var(--map-edge); cursor: default; }
+.legislative-map-container .leg-district--inactive:hover { fill: var(--map-inactive-hover); }
 .legislative-map-container .leg-district-label { font-size: 8px; fill: #fff; text-anchor: middle; pointer-events: none; opacity: 0.8; }
 
 /* Responsive */
@@ -344,7 +410,29 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 
 @media (max-width: 900px) { .state-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 700px) { .matchup { grid-template-columns: 1fr; } }
-@media (max-width: 600px) { .finding dl { grid-template-columns: 1fr; } td:first-child { white-space: normal; } }
+/* ADO #3007 (1.4.10 Reflow): data tables on candidate pages were 364 to 467px
+   wide at a 320px viewport because cells kept their longest-word minimum width.
+   Cells may break inside a word and tighten their padding at narrow widths, so
+   the table fits the column and the page never scrolls sideways. */
+@media (max-width: 600px) { .finding dl { grid-template-columns: 1fr; } }
+/* ADO #3013 (F23/F24): the table rules below were gated at 600px, so a viewport of
+   640 CSS px (200% zoom at 1280) kept the desktop layout and a 635px finance
+   table overflowed. Gate raised to 720px. Cells still break only an oversized
+   token (break-word), never ordinary words. One unbreakable token, for example
+   "CrossScreen/OTT/Streaming", sets a table's minimum width, so the table's
+   parent block scrolls sideways inside itself when that happens and the page
+   never does (1.4.10 exempts two-dimensional data tables). Anywhere-wrapping and
+   fixed table layout were both tried and broke ordinary words mid-word. */
+@media (max-width: 720px) {
+  td:first-child { white-space: normal; width: auto; }
+  tbody th[scope="row"] { white-space: normal; width: auto; overflow-wrap: break-word; padding-left: 4px; padding-right: 4px; }
+  th, td { overflow-wrap: break-word; }
+  td a { overflow-wrap: anywhere; }
+  thead th, tbody td { padding-left: 4px; padding-right: 4px; }
+  table { font-size: 12.5px; }
+  thead th { font-size: 12px; }
+  div:has(> table) { overflow-x: auto; }
+}
 @media (max-width: 500px) { .state-grid { grid-template-columns: repeat(2, 1fr); } }
 @media print { .page { max-width: 100%; } .finding, .matchup-card, .state-card { break-inside: avoid; } body { font-size: 12px; } .dossier-nav { display: none; } .state-grid { grid-template-columns: repeat(5, 1fr); } }
 
@@ -369,9 +457,9 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .primary-results .banner { display: flex; gap: 10px; align-items: flex-start; padding: 11px 14px; border-radius: 4px; font-size: 13px; margin-bottom: 8px; border-left: 4px solid; color: var(--results-ink); }
 .primary-results .banner b { color: var(--results-ink); }
 .primary-results .banner.provisional { background: var(--amber-soft-results); border-color: var(--amber-results); }
-.primary-results .banner.provisional .ico { color: var(--amber-results); font-weight: 800; }
+.primary-results .banner.provisional .ico { color: var(--amber-results-text); font-weight: 800; }
 .primary-results .banner.certified { background: color-mix(in srgb, var(--green) 12%, var(--results-panel)); border-color: var(--green); }
-.primary-results .banner.certified .ico { color: var(--green); font-weight: 800; }
+.primary-results .banner.certified .ico { color: var(--green-results-text); font-weight: 800; }
 
 .primary-results .collected { display: flex; align-items: center; gap: 7px; font-size: 12.5px; color: var(--results-muted); margin: 0 0 18px; font-variant-numeric: tabular-nums; }
 .primary-results .collected .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--amber-results); box-shadow: 0 0 0 0 color-mix(in srgb, var(--amber-results) 70%, transparent); animation: primary-results-pulse 2s infinite; }
@@ -394,22 +482,22 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .primary-results .rank { font-variant-numeric: tabular-nums; font-weight: 800; color: var(--results-muted); font-size: 15px; text-align: center; }
 .primary-results .cand .name { font-weight: 700; font-size: 15px; }
 .primary-results .cand .name a { color: var(--results-ink); text-decoration: none; border-bottom: 1px solid transparent; }
-.primary-results .cand .name a:hover, .primary-results .cand .name a:focus-visible { border-bottom-color: var(--results-rail); outline: 2px solid var(--accent); outline-offset: 2px; }
+.primary-results .cand .name a:hover, .primary-results .cand .name a:focus-visible { border-bottom-color: var(--results-rail); outline: 2px solid var(--results-focus); outline-offset: 2px; }
 .primary-results .cand .meta { font-size: 12.5px; color: var(--results-muted); display: flex; gap: 8px; margin-top: 2px; }
 .primary-results .party { font-weight: 700; }
 .primary-results .party.dem { color: var(--dem-blue-results); }
 .primary-results .party.rep { color: var(--rep-red-results); }
 .primary-results .party.ind { color: var(--ind-purple-results); }
-.primary-results .bar { grid-column: 2 / 3; height: 6px; background: var(--results-track); border-radius: 3px; overflow: hidden; margin-top: 8px; }
+.primary-results .bar { grid-column: 2 / 3; height: 8px; background: var(--results-track); border-radius: 3px; overflow: hidden; margin-top: 8px; border: 1px solid var(--results-track-edge); } /* ADO #3013 F12: 3:1 edge, track alone was 1.07:1 */
 .primary-results .bar > i { display: block; height: 100%; border-radius: 3px; }
 .primary-results .bar > i.dem { background: var(--dem-blue-results); }
 .primary-results .bar > i.rep { background: var(--rep-red-results); }
 .primary-results .bar > i.ind { background: var(--ind-purple-results); }
 /* Provisional bars: hatched, so the count reads as not-final even without
    colour or text (the text label is still present alongside it). */
-.primary-results .bar.prov > i.dem { background: repeating-linear-gradient(45deg, var(--dem-blue-results), var(--dem-blue-results) 5px, color-mix(in srgb, var(--dem-blue-results) 60%, transparent) 5px, color-mix(in srgb, var(--dem-blue-results) 60%, transparent) 10px); }
-.primary-results .bar.prov > i.rep { background: repeating-linear-gradient(45deg, var(--rep-red-results), var(--rep-red-results) 5px, color-mix(in srgb, var(--rep-red-results) 60%, transparent) 5px, color-mix(in srgb, var(--rep-red-results) 60%, transparent) 10px); }
-.primary-results .bar.prov > i.ind { background: repeating-linear-gradient(45deg, var(--ind-purple-results), var(--ind-purple-results) 5px, color-mix(in srgb, var(--ind-purple-results) 60%, transparent) 5px, color-mix(in srgb, var(--ind-purple-results) 60%, transparent) 10px); }
+.primary-results .bar.prov > i.dem { background: repeating-linear-gradient(45deg, var(--dem-blue-results), var(--dem-blue-results) 5px, color-mix(in srgb, var(--dem-blue-results) 75%, transparent) 5px, color-mix(in srgb, var(--dem-blue-results) 75%, transparent) 10px); }
+.primary-results .bar.prov > i.rep { background: repeating-linear-gradient(45deg, var(--rep-red-results), var(--rep-red-results) 5px, color-mix(in srgb, var(--rep-red-results) 75%, transparent) 5px, color-mix(in srgb, var(--rep-red-results) 75%, transparent) 10px); }
+.primary-results .bar.prov > i.ind { background: repeating-linear-gradient(45deg, var(--ind-purple-results), var(--ind-purple-results) 5px, color-mix(in srgb, var(--ind-purple-results) 75%, transparent) 5px, color-mix(in srgb, var(--ind-purple-results) 75%, transparent) 10px); }
 .primary-results .tally { text-align: right; font-variant-numeric: tabular-nums; }
 /* Fixes ADO #2180 item 1: this had no explicit color, so it inherited body's
    --text (#2c3e50), which has no dark override. Against the dark --results-panel
@@ -422,15 +510,24 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .primary-results .badge.leading { background: var(--amber-badge-results); }
 .primary-results .elim-head { margin: 22px 0 4px; font-size: 13px; font-weight: 700; color: var(--results-muted); text-transform: uppercase; letter-spacing: .05em; }
 .primary-results .elim-note { font-size: 12.5px; color: var(--results-muted); margin: 0 0 12px; }
-.primary-results .row.eliminated { opacity: .82; }
+/* ADO #3013 (F03): was opacity .82, which stacked on already-muted text and
+   measured 2.39:1 to 4.02:1. The row keeps solid text colours and is marked
+   by a dashed border, the "Did not advance" badge and the section heading. */
+.primary-results .row.eliminated { border-style: dashed; }
 
 .primary-results .legend { display: flex; flex-wrap: wrap; gap: 16px; margin: 12px 0 0; font-size: 12.5px; color: var(--results-muted); }
 .primary-results .legend span { display: inline-flex; align-items: center; gap: 6px; }
-.primary-results .sw { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
-.primary-results .sw.hatch { background: repeating-linear-gradient(45deg, var(--results-muted), var(--results-muted) 3px, transparent 3px, transparent 6px); }
+/* ADO #3013 (F10): the legend sits on the bare page (white in both schemes), so
+   its swatches use the light-surface party colours and the badge green. The
+   generated markup writes var(--dem), var(--rep) and var(--green) inline; they
+   are redefined here for the legend only, so --green keeps its other uses.
+   Each swatch also has a 1px edge so it reads on its own (3:1). */
+.primary-results .legend { --dem: var(--dem-blue); --rep: var(--rep-red); --green: var(--green-badge-results); }
+.primary-results .sw { width: 14px; height: 14px; border-radius: 3px; display: inline-block; border: 1px solid var(--gray-dark); }
+.primary-results .sw.hatch { background: repeating-linear-gradient(45deg, var(--gray-dark), var(--gray-dark) 3px, transparent 3px, transparent 6px); }
 
 /* Candidate page: the 3-stat Primary Result panel. */
-.result-panel { border: 1px solid color-mix(in srgb, var(--green) 45%, var(--results-line)); border-radius: 10px; overflow: hidden; margin: 16px 0; }
+.result-panel { border: 1px solid color-mix(in srgb, var(--green) 45%, var(--results-line)); border-radius: 10px; overflow: hidden; margin: 16px 0; background: var(--results-panel); }
 .result-panel.prov { border-color: color-mix(in srgb, var(--amber-results) 45%, var(--results-line)); }
 .result-panel .phead { padding: 10px 16px; font-weight: 700; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; color: var(--results-ink); border-bottom: 1px solid var(--results-line); display: flex; align-items: center; gap: 8px; background: color-mix(in srgb, var(--green) 14%, var(--results-panel)); }
 .result-panel.prov .phead { background: var(--amber-soft-results); }
@@ -440,13 +537,17 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .result-panel .stat .big { font-size: 28px; font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; color: var(--results-ink); }
 .result-panel .stat .big.small { font-size: 19px; }
 .result-panel .stat .lab { font-size: 11.5px; color: var(--results-muted); text-transform: uppercase; letter-spacing: .06em; margin-top: 2px; }
-.result-panel .stat .big.green { color: var(--green); }
-.result-panel .stat .big.amber { color: var(--amber-results); }
+.result-panel .stat .big.green { color: var(--green-results-text); }
+.result-panel .stat .big.amber { color: var(--amber-results-text); }
 .result-panel .stat .big.gray { color: var(--results-muted); }
 .result-panel .pfoot { padding: 11px 16px; font-size: 12px; color: var(--results-muted); border-top: 1px solid var(--results-line); font-variant-numeric: tabular-nums; }
 .result-panel .pfoot .stamp { color: var(--amber-results-text); font-weight: 700; }
 .result-panel .pfoot a { color: inherit; text-decoration: underline; }
-.result-panel .pfoot a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* Certified and eliminated panels only: overrides the inline style on the published
+   check icon. The provisional panel keeps its own amber hourglass. */
+.result-panel:not(.prov) .phead > span[aria-hidden="true"] { color: var(--green-results-text) !important; }
+.result-panel.prov .phead > span[aria-hidden="true"] { color: var(--amber-results-text) !important; } /* hourglass: inline var(--amber) was 3.07:1 on the amber tint */
+.result-panel .pfoot a:focus-visible { outline: 2px solid var(--results-focus); outline-offset: 2px; }
 
 @media (max-width: 600px) {
   .result-panel .stat-row { grid-template-columns: 1fr; }
@@ -486,4 +587,46 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
   .result-panel {
     background: var(--results-panel);
   }
+}
+
+/* ADO #3013 (F11): in forced-colors mode the browser replaces every background
+   colour with Canvas, so the vote-bar fills and legend swatches vanished (white
+   on white). Bars use the Highlight system colour (provisional bars keep their
+   hatch as Highlight and Canvas stripes). Swatches keep their authored fill with
+   forced-color-adjust off, and the CanvasText outline above stays visible. */
+@media (forced-colors: active) {
+  .primary-results .bar > i,
+  .primary-results .bar > i.dem,
+  .primary-results .bar > i.rep,
+  .primary-results .bar > i.ind { forced-color-adjust: none; background: Highlight; }
+  .primary-results .bar.prov > i.dem,
+  .primary-results .bar.prov > i.rep,
+  .primary-results .bar.prov > i.ind { background: repeating-linear-gradient(45deg, Highlight, Highlight 5px, Canvas 5px, Canvas 10px); }
+  .primary-results .bar { border-color: CanvasText; }
+  .primary-results .sw { forced-color-adjust: none; border-color: CanvasText; }
+  .map-legend-swatch { forced-color-adjust: none; border-color: CanvasText; }
+  .primary-results .sw.hatch { background: repeating-linear-gradient(45deg, CanvasText, CanvasText 3px, Canvas 3px, Canvas 6px); }
+  .dossier-link.withdrawn, .dossier-link.eliminated { border-style: dashed; }
+}
+
+/* ADO #3013 (F29): every map shape glow is an infinite animation. Reduced motion
+   turns all of them off, not only the results pulse. */
+@media (prefers-reduced-motion: reduce) {
+  .map-container .state--active, .map-container .state--senate,
+  .district-map-container .district--active,
+  .county-map-container .county--active,
+  .place-map-container .place--active,
+  .legislative-map-container .leg-district--active { animation: none; }
+  .map-container .state, .district-map-container .district, .county-map-container .county,
+  .place-map-container .place, .legislative-map-container .leg-district { transition: none; }
+  .dossier-link, .state-card, .hero .cta { transition: none; }
+  .dossier-link:hover, .state-card:hover { transform: none; }
+}
+
+/* ADO #3013 (F17): in forced colours the fill and stroke above are ignored, so the
+   ring is drawn with the Highlight system colour. */
+@media (forced-colors: active) {
+  .map-container [class*="--"]:focus-visible, .district-map-container [class*="--"]:focus-visible,
+  .county-map-container [class*="--"]:focus-visible, .place-map-container [class*="--"]:focus-visible,
+  .legislative-map-container [class*="--"]:focus-visible { outline: 3px solid Highlight; outline-offset: 3px; stroke: Highlight; stroke-width: 3; }
 }

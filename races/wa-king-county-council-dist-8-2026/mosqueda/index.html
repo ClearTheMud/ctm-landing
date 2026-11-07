@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Teresa Mosqueda</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,14 +60,14 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Teresa C. Mosqueda. PDC filer name TERESA C MOSQUEDA.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>North Delridge neighborhood of West Seattle, within King County Council District 8. Purchased a townhouse there in early 2019.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan office. King County Council races carry no party on the ballot. Mosqueda is a Democrat and has run as a labor-endorsed progressive.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Education</td><td>Bachelor&#x27;s degree from the University of Washington and a Master of Public Administration from The Evergreen State College.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>Health and labor policy career before elected office, including roles at Sea Mar, the Children&#x27;s Alliance, the Washington State Department of Health, and Community Health Plan of Washington, and service as campaign and political director for the Washington State Labor Council, AFL-CIO. Appointed to the state Health Benefit Exchange Board in 2013.; Seattle City Council, At-large Position 8, 2017 to January 2, 2024, serving as budget chair. Resigned upon election to the King County Council.; Metropolitan King County Council, District 8, since January 9, 2024. Chairs the Health and Human Services Committee and the Regional Transit Committee.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Teresa C. Mosqueda. PDC filer name TERESA C MOSQUEDA.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>North Delridge neighborhood of West Seattle, within King County Council District 8. Purchased a townhouse there in early 2019.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan office. King County Council races carry no party on the ballot. Mosqueda is a Democrat and has run as a labor-endorsed progressive.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Education</th><td>Bachelor&#x27;s degree from the University of Washington and a Master of Public Administration from The Evergreen State College.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Health and labor policy career before elected office, including roles at Sea Mar, the Children&#x27;s Alliance, the Washington State Department of Health, and Community Health Plan of Washington, and service as campaign and political director for the Washington State Labor Council, AFL-CIO. Appointed to the state Health Benefit Exchange Board in 2013.; Seattle City Council, At-large Position 8, 2017 to January 2, 2024, serving as budget chair. Resigned upon election to the King County Council.; Metropolitan King County Council, District 8, since January 9, 2024. Chairs the Health and Human Services Committee and the Regional Transit Committee.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -89,71 +92,71 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2023</td><td>Metropolitan King County Council, District 8</td><td>Won (primary 57.57 percent; general 55 percent to 44 percent vs Sofia Aragon)</td><td>Research</td></tr>
-        <tr><td>2021</td><td>Seattle City Council, At-large Position 8</td><td>Won (general 59 percent to 40 percent vs Kenneth Wilson)</td><td>Research</td></tr>
-        <tr><td>2017</td><td>Seattle City Council, At-large Position 8</td><td>Won (general 60 percent to 40 percent vs Jon Grant)</td><td>Research</td></tr>
+        <tr><th scope="row">2023</th><td>Metropolitan King County Council, District 8</td><td>Won (primary 57.57 percent; general 55 percent to 44 percent vs Sofia Aragon)</td><td>Research</td></tr>
+        <tr><th scope="row">2021</th><td>Seattle City Council, At-large Position 8</td><td>Won (general 59 percent to 40 percent vs Kenneth Wilson)</td><td>Research</td></tr>
+        <tr><th scope="row">2017</th><td>Seattle City Council, At-large Position 8</td><td>Won (general 60 percent to 40 percent vs Jon Grant)</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Affordable Housing and Progressive Revenue</td><td>Prime sponsor of Seattle&#x27;s JumpStart payroll tax, a tax on large employers that funds affordable housing and Green New Deal programs. Campaigns on strengthening housing stability and expanding affordable housing investments.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Behavioral Health and Crisis Care</td><td>Helped craft the King County Crisis Care Centers Levy, a voter-approved measure providing more than one billion dollars over nine years to build and operate five walk-in behavioral-health crisis centers. Chairs the committee overseeing its implementation.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Transit</td><td>Worked to preserve the planned Graham Street light rail station and chairs the Regional Transit Committee.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Public Safety and Police Budget</td><td>As Seattle budget chair she supported reducing the police budget, including a call for a 50 percent cut during the 2020 protests and a 2023-24 budget proposal that eliminated 80 vacant Seattle Police Department positions.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Affordable Housing and Progressive Revenue</th><td>Prime sponsor of Seattle&#x27;s JumpStart payroll tax, a tax on large employers that funds affordable housing and Green New Deal programs. Campaigns on strengthening housing stability and expanding affordable housing investments.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Behavioral Health and Crisis Care</th><td>Helped craft the King County Crisis Care Centers Levy, a voter-approved measure providing more than one billion dollars over nine years to build and operate five walk-in behavioral-health crisis centers. Chairs the committee overseeing its implementation.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Transit</th><td>Worked to preserve the planned Graham Street light rail station and chairs the Regional Transit Committee.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Public Safety and Police Budget</th><td>As Seattle budget chair she supported reducing the police budget, including a call for a 50 percent cut during the 2020 protests and a 2023-24 budget proposal that eliminated 80 vacant Seattle Police Department positions.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$140,598.29 (406 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$111,140.86 (186 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$140,598.29 (406 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$111,140.86 (186 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$4,722.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$1,650.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$1,475.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$1,380.00</td></tr>
-        <tr><td>ATU COPE Voluntary Account, Silver Spring</td><td>$1,200.00</td></tr>
-        <tr><td>Aaron Garcia, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Abigail Mondau, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>Abigail Mondau, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>Building a Stronger Washington Sponsored by Western States Regional Council of Carpenters, Kent</td><td>$1,200.00</td></tr>
-        <tr><td>Clayton Lewis, Seattle</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$4,722.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$1,650.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$1,475.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$1,380.00</td></tr>
+        <tr><th scope="row">ATU COPE Voluntary Account, Silver Spring</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Aaron Garcia, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Abigail Mondau, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Abigail Mondau, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Building a Stronger Washington Sponsored by Western States Regional Council of Carpenters, Kent</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Clayton Lewis, Seattle</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>La Chingona</td><td>Catering for Event</td><td>$8,217.31</td></tr>
-        <tr><td>NWP Consulting</td><td>Campaign Consulting</td><td>$6,000.00</td></tr>
-        <tr><td>Boards by Erica</td><td>Event Catering</td><td>$3,210.96</td></tr>
-        <tr><td>NGP Van</td><td>Campaign Database</td><td>$2,703.00</td></tr>
-        <tr><td>NGP Van</td><td>Campaign Database</td><td>$2,550.00</td></tr>
-        <tr><td>Katherine Bobman Consulting LLC</td><td>Dec Fundraising</td><td>$2,500.00</td></tr>
-        <tr><td>Katherine Bobman Consulting LLC</td><td>Jan Fundraising</td><td>$2,500.00</td></tr>
-        <tr><td>Katherine Bobman Consulting LLC</td><td>Feb Fundraising</td><td>$2,500.00</td></tr>
-        <tr><td>Katherine Bobman Consulting LLC</td><td>Mar Fundraising</td><td>$2,500.00</td></tr>
-        <tr><td>Katherine Bobman Consulting LLC</td><td>Apr Fundraising</td><td>$2,500.00</td></tr>
+        <tr><th scope="row">La Chingona</th><td>Catering for Event</td><td>$8,217.31</td></tr>
+        <tr><th scope="row">NWP Consulting</th><td>Campaign Consulting</td><td>$6,000.00</td></tr>
+        <tr><th scope="row">Boards by Erica</th><td>Event Catering</td><td>$3,210.96</td></tr>
+        <tr><th scope="row">NGP Van</th><td>Campaign Database</td><td>$2,703.00</td></tr>
+        <tr><th scope="row">NGP Van</th><td>Campaign Database</td><td>$2,550.00</td></tr>
+        <tr><th scope="row">Katherine Bobman Consulting LLC</th><td>Dec Fundraising</td><td>$2,500.00</td></tr>
+        <tr><th scope="row">Katherine Bobman Consulting LLC</th><td>Jan Fundraising</td><td>$2,500.00</td></tr>
+        <tr><th scope="row">Katherine Bobman Consulting LLC</th><td>Feb Fundraising</td><td>$2,500.00</td></tr>
+        <tr><th scope="row">Katherine Bobman Consulting LLC</th><td>Mar Fundraising</td><td>$2,500.00</td></tr>
+        <tr><th scope="row">Katherine Bobman Consulting LLC</th><td>Apr Fundraising</td><td>$2,500.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -184,16 +187,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

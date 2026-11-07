@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Miguel Gutierrez</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,13 +60,13 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Miguel Gutierrez</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Shelton, WA (Mason County). Campaign committee address 1229 W. Cota St, Shelton, WA 98584.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Labor Democrat (party preference as stated on the 2026 candidate filing). The WA PDC candidate registration and prior filings record his party as Democratic.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Family</td><td>Describes himself as the son of an immigrant father, stating his father survived the burning of Manila and the Japanese occupation during World War II.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Miguel Gutierrez</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Shelton, WA (Mason County). Campaign committee address 1229 W. Cota St, Shelton, WA 98584.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Labor Democrat (party preference as stated on the 2026 candidate filing). The WA PDC candidate registration and prior filings record his party as Democratic.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Family</th><td>Describes himself as the son of an immigrant father, stating his father survived the burning of Manila and the Japanese occupation during World War II.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -92,74 +95,74 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2025</td><td>City Of Shelton Council Member NO. 7 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>County Commissioner Dist 3 County Commissioner District NO. 3 (Primary)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Mason County Commissioner District NO. 3 (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2021</td><td>City of Shelton Council Member NO. 7 (Primary)</td><td>Lost (2 of 4)</td><td>WA SOS</td></tr>
-        <tr><td>2021</td><td>City of Shelton Council Member NO. 7 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2025</th><td>City Of Shelton Council Member NO. 7 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>County Commissioner Dist 3 County Commissioner District NO. 3 (Primary)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Mason County Commissioner District NO. 3 (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2021</th><td>City of Shelton Council Member NO. 7 (Primary)</td><td>Lost (2 of 4)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2021</th><td>City of Shelton Council Member NO. 7 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Campaign message and governing approach</td><td>Campaign is themed around &quot;making Mason a SUNRISE county&quot; and &quot;WE are the change,&quot; emphasizing community-focused, forward-looking local governance. The campaign homepage does not enumerate specific issue positions.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Campaign message and governing approach</th><td>Campaign is themed around &quot;making Mason a SUNRISE county&quot; and &quot;WE are the change,&quot; emphasizing community-focused, forward-looking local governance. The campaign homepage does not enumerate specific issue positions.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$31,184.62 (102 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$20,848.47 (180 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$31,184.62 (102 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$20,848.47 (180 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>GOLDWARG JORDAN, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Lipscomb Ruth, Bellevue</td><td>$1,200.00</td></tr>
-        <tr><td>McVeety Sam, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>SILVERTON LAURA, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>SILVERTON LAURA, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Thurston Lewis Mason Central Labor Council, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>Thurston Lewis Mason Central Labor Council, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>WFSE ECOLOGY Local 872, lympia</td><td>$1,200.00</td></tr>
-        <tr><td>WFSE local 443, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>Washington State Council of County and City Employees, AFSCME, Council 2, Everett</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">GOLDWARG JORDAN, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Lipscomb Ruth, Bellevue</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">McVeety Sam, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">SILVERTON LAURA, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">SILVERTON LAURA, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Thurston Lewis Mason Central Labor Council, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Thurston Lewis Mason Central Labor Council, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">WFSE ECOLOGY Local 872, lympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">WFSE local 443, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Washington State Council of County and City Employees, AFSCME, Council 2, Everett</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Costco</td><td>Food for Doom Scrollers Anonymous Dolly Day 9/25 and October LCFs</td><td>$1,437.73</td></tr>
-        <tr><td>Costco</td><td>Food for Doom Scrollers Anonymous Dolly Day 9/25 and October LCFs</td><td>$1,437.73</td></tr>
-        <tr><td>The Shopper</td><td>vinyl banners (10) 4&#x27;x8&#x27;</td><td>$1,193.00</td></tr>
-        <tr><td>MASON COUNTY AUDITOR</td><td>Filing fees</td><td>$1,045.01</td></tr>
-        <tr><td>The Shopper</td><td>Vote For Miguel TSHIRTS and stickers 1 of 2 payments</td><td>$812.82</td></tr>
-        <tr><td>Costco</td><td>Food for Fundraising events
+        <tr><th scope="row">Costco</th><td>Food for Doom Scrollers Anonymous Dolly Day 9/25 and October LCFs</td><td>$1,437.73</td></tr>
+        <tr><th scope="row">Costco</th><td>Food for Doom Scrollers Anonymous Dolly Day 9/25 and October LCFs</td><td>$1,437.73</td></tr>
+        <tr><th scope="row">The Shopper</th><td>vinyl banners (10) 4&#x27;x8&#x27;</td><td>$1,193.00</td></tr>
+        <tr><th scope="row">MASON COUNTY AUDITOR</th><td>Filing fees</td><td>$1,045.01</td></tr>
+        <tr><th scope="row">The Shopper</th><td>Vote For Miguel TSHIRTS and stickers 1 of 2 payments</td><td>$812.82</td></tr>
+        <tr><th scope="row">Costco</th><td>Food for Fundraising events
 and volunteers</td><td>$782.92</td></tr>
-        <tr><td>The Shopper</td><td>partial payment for 40 2&#x27;x4&#x27; signs</td><td>$700.00</td></tr>
-        <tr><td>The Shopper</td><td>partial payment for 40 2&#x27;x4&#x27; signs</td><td>$700.00</td></tr>
-        <tr><td>WALMART</td><td>Mac computer 256</td><td>$652.31</td></tr>
-        <tr><td>Miguel Gutierrez</td><td>Mileage - Jan/FEB/MAR/April
+        <tr><th scope="row">The Shopper</th><td>partial payment for 40 2&#x27;x4&#x27; signs</td><td>$700.00</td></tr>
+        <tr><th scope="row">The Shopper</th><td>partial payment for 40 2&#x27;x4&#x27; signs</td><td>$700.00</td></tr>
+        <tr><th scope="row">WALMART</th><td>Mac computer 256</td><td>$652.31</td></tr>
+        <tr><th scope="row">Miguel Gutierrez</th><td>Mileage - Jan/FEB/MAR/April
 
 worksheets</td><td>$641.78</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -174,16 +177,20 @@ worksheets</td><td>$641.78</td></tr>
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

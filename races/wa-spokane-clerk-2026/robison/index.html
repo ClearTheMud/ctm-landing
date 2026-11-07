@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Elliot Robison</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -64,46 +67,46 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$28,822.09 (147 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$18,558.38 (39 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$28,822.09 (147 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$18,558.38 (39 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Washington State Democratic Central Committee, Seattle</td><td>$4,000.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$1,236.00</td></tr>
-        <tr><td>Robison Douglas, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>Robison Jeanne, Spokane</td><td>$1,075.00</td></tr>
-        <tr><td>Brown Darlene, Medical Lake</td><td>$1,000.00</td></tr>
-        <tr><td>Elliot William Robison (Elliot Robison), Spokane</td><td>$1,000.00</td></tr>
-        <tr><td>Stark Richard, Indianapolis</td><td>$1,000.00</td></tr>
-        <tr><td>Pixels to the People, Spokane</td><td>$697.50</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$580.00</td></tr>
-        <tr><td>Fifty Plus One PAC, Spokane</td><td>$500.00</td></tr>
+        <tr><th scope="row">Washington State Democratic Central Committee, Seattle</th><td>$4,000.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$1,236.00</td></tr>
+        <tr><th scope="row">Robison Douglas, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Robison Jeanne, Spokane</th><td>$1,075.00</td></tr>
+        <tr><th scope="row">Brown Darlene, Medical Lake</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Elliot William Robison (Elliot Robison), Spokane</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Stark Richard, Indianapolis</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Pixels to the People, Spokane</th><td>$697.50</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$580.00</td></tr>
+        <tr><th scope="row">Fifty Plus One PAC, Spokane</th><td>$500.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Washington State Democratic Central Committee</td><td>Vote builder in-kind</td><td>$4,000.00</td></tr>
-        <tr><td>USPS</td><td>Postage for 6x9 mailers</td><td>$1,895.28</td></tr>
-        <tr><td>WA Secretary of State</td><td>Candidate filing fees</td><td>$1,340.57</td></tr>
-        <tr><td>Lawton Printing</td><td>5091 6x9 postcards</td><td>$1,268.01</td></tr>
-        <tr><td>Washington State Democratic Central Committee</td><td>Vote Builder database access</td><td>$1,000.00</td></tr>
-        <tr><td>CorpoRat</td><td>59 T-Shirts and printing fees</td><td>$809.36</td></tr>
-        <tr><td>Kay McGlocklin</td><td>100 yard signs and 100 H frames</td><td>$751.41</td></tr>
-        <tr><td>Pixels to the People</td><td>Brand guide creation, website application, button production (80)</td><td>$697.50</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$488.15</td></tr>
-        <tr><td>Lawton Printing</td><td>1400 bookmarks</td><td>$486.59</td></tr>
+        <tr><th scope="row">Washington State Democratic Central Committee</th><td>Vote builder in-kind</td><td>$4,000.00</td></tr>
+        <tr><th scope="row">USPS</th><td>Postage for 6x9 mailers</td><td>$1,895.28</td></tr>
+        <tr><th scope="row">WA Secretary of State</th><td>Candidate filing fees</td><td>$1,340.57</td></tr>
+        <tr><th scope="row">Lawton Printing</th><td>5091 6x9 postcards</td><td>$1,268.01</td></tr>
+        <tr><th scope="row">Washington State Democratic Central Committee</th><td>Vote Builder database access</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">CorpoRat</th><td>59 T-Shirts and printing fees</td><td>$809.36</td></tr>
+        <tr><th scope="row">Kay McGlocklin</th><td>100 yard signs and 100 H frames</td><td>$751.41</td></tr>
+        <tr><th scope="row">Pixels to the People</th><td>Brand guide creation, website application, button production (80)</td><td>$697.50</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$488.15</td></tr>
+        <tr><th scope="row">Lawton Printing</th><td>1400 bookmarks</td><td>$486.59</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -117,14 +120,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

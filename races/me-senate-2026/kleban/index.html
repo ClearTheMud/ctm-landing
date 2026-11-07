@@ -11,16 +11,19 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing with intended recipients</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/races/me-senate-2026/">ME Senate 2026</a>
   <span class="nav-sep">/</span>
   <span class="nav-current">Kleban (D)</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -38,17 +41,17 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Daniel Kleban</td></tr>
-        <tr><td>Party</td><td>Democratic</td></tr>
-        <tr><td>Age</td><td>48</td></tr>
-        <tr><td>Residence</td><td>Cumberland, Cumberland County, ME</td></tr>
-        <tr><td>Occupation</td><td>Co-founder and co-owner, Maine Beer Company</td></tr>
-        <tr><td>Prior Office</td><td>None (first-time candidate)</td></tr>
-        <tr><td>Convention</td><td>July 25, 2026 (Democratic nominating convention)</td></tr>
-        <tr><td>FEC ID</td><td>S6ME00381</td></tr>
+        <tr><th scope="row">Full Name</th><td>Daniel Kleban</td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td></tr>
+        <tr><th scope="row">Age</th><td>48</td></tr>
+        <tr><th scope="row">Residence</th><td>Cumberland, Cumberland County, ME</td></tr>
+        <tr><th scope="row">Occupation</th><td>Co-founder and co-owner, Maine Beer Company</td></tr>
+        <tr><th scope="row">Prior Office</th><td>None (first-time candidate)</td></tr>
+        <tr><th scope="row">Convention</th><td>July 25, 2026 (Democratic nominating convention)</td></tr>
+        <tr><th scope="row">FEC ID</th><td>S6ME00381</td></tr>
       </tbody>
     </table>
   </div>
@@ -67,7 +70,7 @@
     <h2><span class="section-num">2</span> Commitment Record</h2>
 
     <div class="finding moderate">
-      <h4>Finding 2.1: Suspended His Own Campaign After 41 Days, Then Re-entered the Same Race <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 2.1: Suspended His Own Campaign After 41 Days, Then Re-entered the Same Race <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Kleban launched his Democratic US Senate campaign on September 3, 2025, with an affordability message ("the cost of living is too damn high"). He suspended it on October 14, 2025, after 41 days, and endorsed Gov. Janet Mills, who entered the primary the same day, saying "While our message was right, the timing isn't." After Graham Platner exited the race on July 8, 2026, Kleban re-entered the same day via a Substack post, saying he is "in to replace" Platner and calling for an open, transparent process to select a nominee over the following two weeks.</dd>
@@ -92,7 +95,7 @@
     <h2><span class="section-num">3</span> Positioning: From Endorsing Mills to New-Generation Alternative</h2>
 
     <div class="finding moderate">
-      <h4>Finding 3.1: Endorsed the Establishment Candidate, Now Runs as the Fresh Alternative <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 3.1: Endorsed the Establishment Candidate, Now Runs as the Fresh Alternative <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>In October 2025 Kleban endorsed sitting Gov. Janet Mills as "the right leader for this moment." His July 2026 re-entry pitch emphasizes a new generation of leadership and an open nominating process. Both statements are on the public record. Mills later suspended her own campaign, and Platner became the presumptive nominee before exiting in July 2026.</dd>
@@ -117,7 +120,7 @@
     <p style="margin-bottom:16px; color:var(--gray-dark);">FEC candidate <strong>S6ME00381</strong>; principal committee DAN KLEBAN FOR US SENATE, <strong>C00918300</strong>. Figures below reflect the suspended 2025 campaign through 2026-03-31. No new 2026 re-entry financial report was confirmed in FEC data as of the 2026-07-14 pull. Source: <a href="https://www.fec.gov/data/candidate/S6ME00381/">FEC candidate S6ME00381</a>.</p>
 
     <div class="finding moderate">
-      <h4>Finding 4.1: Heavily Self-funded the Prior Campaign <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 4.1: Heavily Self-funded the Prior Campaign <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Kleban contributed or loaned $214,666.84 of his own money to his committee, roughly 47 percent of the $458,786.42 raised through 2026-03-31. The committee spent nearly all it took in, $458,366.92, ending with $419.50 cash on hand. ActBlue conduit receipts totaled $194,725.</dd>
@@ -132,7 +135,7 @@
     </div>
 
     <div class="finding moderate">
-      <h4>Finding 4.2: Business-Owner Interest in the Regulated Alcohol Industry <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 4.2: Business-Owner Interest in the Regulated Alcohol Industry <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Kleban co-owns Maine Beer Company, a federally and state-regulated alcohol producer. His prior campaign drew contributions from fellow brewery owners, including Sam Calagione of Dogfish Head, Gary Fish of Deschutes, and Charlie Papazian. A US Senator votes on alcohol excise taxes, Alcohol and Tobacco Tax and Trade Bureau (TTB) regulation, and interstate shipping rules that directly affect the candidate's business and donor base.</dd>
@@ -148,31 +151,35 @@
     </div>
 
     <h3>Financial Snapshot (FEC T1 Data, 2025 Suspended Campaign, Through 2026-03-31)</h3>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Financial Snapshot (FEC T1 Data, 2025 Suspended Campaign, Through 2026-03-31)</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$458,786.42</td></tr>
-        <tr><td>Total Spent</td><td>$458,366.92</td></tr>
-        <tr><td>Cash on Hand</td><td>$419.50</td></tr>
-        <tr><td>Candidate Self-funding</td><td>$214,666.84 (about 47% of receipts)</td></tr>
-        <tr><td>ActBlue Conduit Receipts</td><td>$194,725</td></tr>
-        <tr><td>FEC Candidate ID</td><td>S6ME00381</td></tr>
-        <tr><td>Principal Committee</td><td>DAN KLEBAN FOR US SENATE (C00918300)</td></tr>
-        <tr><td>2026 Re-entry Report</td><td>None confirmed as of 2026-07-14</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$458,786.42</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$458,366.92</td></tr>
+        <tr><th scope="row">Cash on Hand</th><td>$419.50</td></tr>
+        <tr><th scope="row">Candidate Self-funding</th><td>$214,666.84 (about 47% of receipts)</td></tr>
+        <tr><th scope="row">ActBlue Conduit Receipts</th><td>$194,725</td></tr>
+        <tr><th scope="row">FEC Candidate ID</th><td>S6ME00381</td></tr>
+        <tr><th scope="row">Principal Committee</th><td>DAN KLEBAN FOR US SENATE (C00918300)</td></tr>
+        <tr><th scope="row">2026 Re-entry Report</th><td>None confirmed as of 2026-07-14</td></tr>
       </tbody>
     </table>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media), or T3 (Candidate Statement / Official Campaign Page) per clearthemud provenance model.<br>
     T3 content reflects the candidate&rsquo;s own public claims and has not been independently verified. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing with intended recipients</div>
+</footer>
 
 </body>
 </html>

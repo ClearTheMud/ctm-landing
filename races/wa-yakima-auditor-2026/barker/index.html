@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Matt Barker</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -64,54 +67,54 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$14,927.98 (63 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$14,950.33 (51 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$14,927.98 (63 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$14,950.33 (51 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Sheard Mathew, Enumclaw</td><td>$1,200.00</td></tr>
-        <tr><td>Steadfast Church LLC, Yakima</td><td>$1,200.00</td></tr>
-        <tr><td>Stewart Paula, Yakima</td><td>$1,200.00</td></tr>
-        <tr><td>Fenich Susan, Yakima</td><td>$1,000.00</td></tr>
-        <tr><td>Fenich Randall, Yakima</td><td>$959.70</td></tr>
-        <tr><td>Gilmore Linda, Yakima</td><td>$500.00</td></tr>
-        <tr><td>Hildebrand Dottie, Yakima</td><td>$500.00</td></tr>
-        <tr><td>MacKenzie Farms, Yakima</td><td>$500.00</td></tr>
-        <tr><td>Steadman Matt, SELAH</td><td>$500.00</td></tr>
-        <tr><td>Kane Molly, Yakima</td><td>$338.85</td></tr>
+        <tr><th scope="row">Sheard Mathew, Enumclaw</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Steadfast Church LLC, Yakima</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Stewart Paula, Yakima</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Fenich Susan, Yakima</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Fenich Randall, Yakima</th><td>$959.70</td></tr>
+        <tr><th scope="row">Gilmore Linda, Yakima</th><td>$500.00</td></tr>
+        <tr><th scope="row">Hildebrand Dottie, Yakima</th><td>$500.00</td></tr>
+        <tr><th scope="row">MacKenzie Farms, Yakima</th><td>$500.00</td></tr>
+        <tr><th scope="row">Steadman Matt, SELAH</th><td>$500.00</td></tr>
+        <tr><th scope="row">Kane Molly, Yakima</th><td>$338.85</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>WAGOP</td><td>Postage costs, mail permits, purchase of stamps</td><td>$1,677.50</td></tr>
-        <tr><td>Matthew Barker</td><td>Reimburse candidate for
+        <tr><th scope="row">WAGOP</th><td>Postage costs, mail permits, purchase of stamps</td><td>$1,677.50</td></tr>
+        <tr><th scope="row">Matthew Barker</th><td>Reimburse candidate for
  filing fee: $1403.04
  stamps/envelopes: $96.30
 info cards to hand out: $43.32   ( all less than 21 days)</td><td>$1,542.66</td></tr>
-        <tr><td>Steadfast Church LLC</td><td>Photography/editing; design; video by
+        <tr><th scope="row">Steadfast Church LLC</th><td>Photography/editing; design; video by
  Caffery Photo &amp; Media
 340 Sgt. Pendleton Way
 Yakima, Wa. 98902</td><td>$1,200.00</td></tr>
-        <tr><td>vistaprint</td><td>yard signs</td><td>$1,114.80</td></tr>
-        <tr><td>vistaprint</td><td>Rack cards</td><td>$828.39</td></tr>
-        <tr><td>Great American Sign Co.</td><td>4x4 banners</td><td>$649.20</td></tr>
-        <tr><td>Yakima Printing Company</td><td>letter, envelopes, business cards</td><td>$646.93</td></tr>
-        <tr><td>Townsquare Media</td><td>KIT, 7/20-8/4/2026</td><td>$646.84</td></tr>
-        <tr><td>Central Wa. State Fair</td><td>booth at the fair</td><td>$617.50</td></tr>
-        <tr><td>Matthew Barker</td><td>reimburse candidate for payment of radio ads: Townsquare Media
+        <tr><th scope="row">vistaprint</th><td>yard signs</td><td>$1,114.80</td></tr>
+        <tr><th scope="row">vistaprint</th><td>Rack cards</td><td>$828.39</td></tr>
+        <tr><th scope="row">Great American Sign Co.</th><td>4x4 banners</td><td>$649.20</td></tr>
+        <tr><th scope="row">Yakima Printing Company</th><td>letter, envelopes, business cards</td><td>$646.93</td></tr>
+        <tr><th scope="row">Townsquare Media</th><td>KIT, 7/20-8/4/2026</td><td>$646.84</td></tr>
+        <tr><th scope="row">Central Wa. State Fair</th><td>booth at the fair</td><td>$617.50</td></tr>
+        <tr><th scope="row">Matthew Barker</th><td>reimburse candidate for payment of radio ads: Townsquare Media
 1 Manhattanville Rd. ste 202
 Purchase NY. 10577</td><td>$535.60</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -125,14 +128,18 @@ Purchase NY. 10577</td><td>$535.60</td></tr>
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

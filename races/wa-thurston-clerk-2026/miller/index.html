@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Nicole Miller</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,14 +60,14 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Nicole Miller</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Lewis County, Washington (per Community Foundation of South Puget Sound board bio)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Party</td><td>Democrat</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>Associate of Arts, Centralia College; Bachelor of Science, City University of Seattle</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>Racial Equity Program Manager, Thurston County (August 2021 - January 2023); Program Manager, Construct A Career, Washington Building Trades (subsequent role); Operations Director, Lewis County Autism Coalition; Previously held position at Lewis County Department of Emergency Management; Business Owner, Free Bird Projects</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Nicole Miller</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Lewis County, Washington (per Community Foundation of South Puget Sound board bio)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democrat</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>Associate of Arts, Centralia College; Bachelor of Science, City University of Seattle</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Racial Equity Program Manager, Thurston County (August 2021 - January 2023); Program Manager, Construct A Career, Washington Building Trades (subsequent role); Operations Director, Lewis County Autism Coalition; Previously held position at Lewis County Department of Emergency Management; Business Owner, Free Bird Projects</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -79,69 +82,69 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Thurston County Clerk</td><td>Pending</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>Thurston County Clerk</td><td>Pending</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Restoring In-Person Access</td><td>Committed to restoring in-person access at the Clerk&#x27;s Office, which was closed due to budget cuts in January 2026</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Customer Service and Transparency</td><td>Committed to strengthening customer service and ensuring the office operates with transparency, efficiency, and respect for every person</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Accountability in the Clerk&#x27;s Office</td><td>Thurston County deserves a Clerk who will open the doors, listen to the public, and lead with accountability</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Restoring In-Person Access</th><td>Committed to restoring in-person access at the Clerk&#x27;s Office, which was closed due to budget cuts in January 2026</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Customer Service and Transparency</th><td>Committed to strengthening customer service and ensuring the office operates with transparency, efficiency, and respect for every person</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Accountability in the Clerk&#x27;s Office</th><td>Thurston County deserves a Clerk who will open the doors, listen to the public, and lead with accountability</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$17,857.00 (113 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$5,414.63 (18 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$17,857.00 (113 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$5,414.63 (18 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Thurston County Democratic Women&#x27;s Club, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>Thurston County Democratic Women&#x27;s Club, Olympia</td><td>$1,000.00</td></tr>
-        <tr><td>Thurston County Democrats, Olympia</td><td>$1,000.00</td></tr>
-        <tr><td>Henrie Dan, Olympia</td><td>$777.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$600.00</td></tr>
-        <tr><td>Buxton Tiffany, Lamar</td><td>$500.00</td></tr>
-        <tr><td>Cygan Dennis, Lacey</td><td>$500.00</td></tr>
-        <tr><td>Cygan Dennis, Lacey</td><td>$500.00</td></tr>
-        <tr><td>Jacques Bonnie, Olympia</td><td>$500.00</td></tr>
-        <tr><td>Kellner Edith, Chaska</td><td>$500.00</td></tr>
+        <tr><th scope="row">Thurston County Democratic Women&#x27;s Club, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Thurston County Democratic Women&#x27;s Club, Olympia</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Thurston County Democrats, Olympia</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Henrie Dan, Olympia</th><td>$777.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$600.00</td></tr>
+        <tr><th scope="row">Buxton Tiffany, Lamar</th><td>$500.00</td></tr>
+        <tr><th scope="row">Cygan Dennis, Lacey</th><td>$500.00</td></tr>
+        <tr><th scope="row">Cygan Dennis, Lacey</th><td>$500.00</td></tr>
+        <tr><th scope="row">Jacques Bonnie, Olympia</th><td>$500.00</td></tr>
+        <tr><th scope="row">Kellner Edith, Chaska</th><td>$500.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Thurston County Auditor&#x27;s Office</td><td>Filing fees</td><td>$1,479.36</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$807.03</td></tr>
-        <tr><td>Xpress Sign</td><td>24&quot; x 9&quot; Yard Signs (Qty. 100)
+        <tr><th scope="row">Thurston County Auditor&#x27;s Office</th><td>Filing fees</td><td>$1,479.36</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$807.03</td></tr>
+        <tr><th scope="row">Xpress Sign</th><td>24&quot; x 9&quot; Yard Signs (Qty. 100)
 Wire H Stakes (Qty. 100)</td><td>$633.08</td></tr>
-        <tr><td>Westbrook Danielle</td><td>Management and consulting services - March 2026</td><td>$500.00</td></tr>
-        <tr><td>Westbrook Danielle</td><td>Management and consulting services - June 2026</td><td>$500.00</td></tr>
-        <tr><td>The Mailbox</td><td>Postage costs: 5-way Mailer (Qty. 3,098)</td><td>$283.87</td></tr>
-        <tr><td>Westbrook Danielle</td><td>Management and consulting services - July 2026</td><td>$253.27</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$194.86</td></tr>
-        <tr><td>Capitol City Press</td><td>Printing business cards (Qty. 500)</td><td>$148.46</td></tr>
-        <tr><td>Anedot</td><td>Bank and payment processing charges: 7/28/26 - 8/31/26</td><td>$131.28</td></tr>
+        <tr><th scope="row">Westbrook Danielle</th><td>Management and consulting services - March 2026</td><td>$500.00</td></tr>
+        <tr><th scope="row">Westbrook Danielle</th><td>Management and consulting services - June 2026</td><td>$500.00</td></tr>
+        <tr><th scope="row">The Mailbox</th><td>Postage costs: 5-way Mailer (Qty. 3,098)</td><td>$283.87</td></tr>
+        <tr><th scope="row">Westbrook Danielle</th><td>Management and consulting services - July 2026</td><td>$253.27</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$194.86</td></tr>
+        <tr><th scope="row">Capitol City Press</th><td>Printing business cards (Qty. 500)</td><td>$148.46</td></tr>
+        <tr><th scope="row">Anedot</th><td>Bank and payment processing charges: 7/28/26 - 8/31/26</td><td>$131.28</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -168,7 +171,7 @@ Wire H Stakes (Qty. 100)</td><td>$633.08</td></tr>
     <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">1 sourced findings. All sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model. No T4 claims included.</p>
 
     <div class="finding moderate">
-      <h4>Finding 6.1: Terminated from Thurston County Racial Equity Program Manager Role <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 6.1: Terminated from Thurston County Racial Equity Program Manager Role <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Miller was fired from her position as Thurston County&#x27;s first-ever Racial Equity Program Manager in January 2023 by County Manager Ramiro Chavez. Miller publicly alleged the termination was unfair. Chavez declined to explain the reasons for her departure. The firing was covered by The Daily Chronicle and KING 5 News, and drew criticism from community leaders on the county&#x27;s Racial Equity and Inclusion Council. The specific cause of termination remains publicly undisclosed.
@@ -201,16 +204,20 @@ Wire H Stakes (Qty. 100)</td><td>$633.08</td></tr>
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

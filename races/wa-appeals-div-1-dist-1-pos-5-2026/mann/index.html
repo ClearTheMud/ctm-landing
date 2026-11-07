@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -27,6 +28,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">David S. Mann</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -44,15 +47,15 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>David S. Mann (David Scott Mann)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Seattle (Ravenna neighborhood), King County, Washington.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan (Washington judicial offices are elected on a nonpartisan basis; no party appears on the ballot)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Family</td><td>Married to Everett Municipal Court Judge Remy Leonard.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>B.S. in geology and geophysics, University of California, Santa Barbara (1982), with additional coursework toward a master&#x27;s in groundwater hydrology.; Juris Doctor with honors and an Environmental Law certificate, Lewis and Clark Law School, Portland, Oregon (1991).</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Professional geophysicist for approximately six years before entering law, working in oil exploration in the United States and in frontier regions of Africa.; Trial and appellate attorney for about 26 years, focused on environmental, land-use, real property, water, and administrative law. Partner at Gendler and Mann, LLP in Seattle, with earlier practice at Bricklin and Gendler.; Judge, Washington State Court of Appeals, Division I, appointed August 2016, retained unopposed in 2017, and elected in November 2020. Chief Judge 2020 to 2022.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>David S. Mann (David Scott Mann)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Seattle (Ravenna neighborhood), King County, Washington.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan (Washington judicial offices are elected on a nonpartisan basis; no party appears on the ballot)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Family</th><td>Married to Everett Municipal Court Judge Remy Leonard.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>B.S. in geology and geophysics, University of California, Santa Barbara (1982), with additional coursework toward a master&#x27;s in groundwater hydrology.; Juris Doctor with honors and an Environmental Law certificate, Lewis and Clark Law School, Portland, Oregon (1991).</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Professional geophysicist for approximately six years before entering law, working in oil exploration in the United States and in frontier regions of Africa.; Trial and appellate attorney for about 26 years, focused on environmental, land-use, real property, water, and administrative law. Partner at Gendler and Mann, LLP in Seattle, with earlier practice at Bricklin and Gendler.; Judge, Washington State Court of Appeals, Division I, appointed August 2016, retained unopposed in 2017, and elected in November 2020. Chief Judge 2020 to 2022.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -67,15 +70,15 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Washington State Court of Appeals, Division I, District 1, Position 5</td><td>Incumbent seeking re-election. Filed for the 2026 cycle and appears unopposed. Nonpartisan office; general election November 3, 2026.</td><td>Research</td></tr>
-        <tr><td>2020</td><td>Washington State Court of Appeals, Division I, District 1, Position 5</td><td>Won the November 3, 2020 election.</td><td>Research</td></tr>
-        <tr><td>2017</td><td>Washington State Court of Appeals, Division I, District 1</td><td>Ran unopposed to retain the seat in the November 2017 election.</td><td>Research</td></tr>
-        <tr><td>2016</td><td>Washington State Court of Appeals, Division I, District 1</td><td>Appointed by Governor Jay Inslee in August 2016 to fill a vacancy.</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>Washington State Court of Appeals, Division I, District 1, Position 5</td><td>Incumbent seeking re-election. Filed for the 2026 cycle and appears unopposed. Nonpartisan office; general election November 3, 2026.</td><td>Research</td></tr>
+        <tr><th scope="row">2020</th><td>Washington State Court of Appeals, Division I, District 1, Position 5</td><td>Won the November 3, 2020 election.</td><td>Research</td></tr>
+        <tr><th scope="row">2017</th><td>Washington State Court of Appeals, Division I, District 1</td><td>Ran unopposed to retain the seat in the November 2017 election.</td><td>Research</td></tr>
+        <tr><th scope="row">2016</th><td>Washington State Court of Appeals, Division I, District 1</td><td>Appointed by Governor Jay Inslee in August 2016 to fill a vacancy.</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -90,16 +93,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

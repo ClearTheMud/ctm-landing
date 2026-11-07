@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Shoona Riggs</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -46,13 +49,13 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Shoona Riggs</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Port Angeles, Clallam County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>County Auditor is a nonpartisan office in Clallam County; PDC lists the committee as Non Partisan.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Clallam County Auditor (elected 2014, in office since January 2015)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Shoona Riggs</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Port Angeles, Clallam County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>County Auditor is a nonpartisan office in Clallam County; PDC lists the committee as Non Partisan.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Clallam County Auditor (elected 2014, in office since January 2015)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -73,54 +76,54 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2022</td><td>Clallam Auditor (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>Clallam County Auditor</td><td>Unopposed in the general election per PDC committee record.</td><td>Research</td></tr>
-        <tr><td>2014</td><td>Clallam County Auditor (General)</td><td>Won with 58.79 percent, defeating Kim Yacklin.</td><td>Research</td></tr>
+        <tr><th scope="row">2022</th><td>Clallam Auditor (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>Clallam County Auditor</td><td>Unopposed in the general election per PDC committee record.</td><td>Research</td></tr>
+        <tr><th scope="row">2014</th><td>Clallam County Auditor (General)</td><td>Won with 58.79 percent, defeating Kim Yacklin.</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Election Security</td><td>As auditor, Riggs has publicly emphasized election security and voter confidence, telling local media that Clallam County elections are safe and secure.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Election Security</th><td>As auditor, Riggs has publicly emphasized election security and voter confidence, telling local media that Clallam County elections are safe and secure.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$1,212.30 (2 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$1,212.30 (2 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$1,212.30 (2 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$1,212.30 (2 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Shoona Riggs</td><td>$1,187.30</td></tr>
-        <tr><td>Shoona Riggs</td><td>$25.00</td></tr>
+        <tr><th scope="row">Shoona Riggs</th><td>$1,187.30</td></tr>
+        <tr><th scope="row">Shoona Riggs</th><td>$25.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Shoona Riggs</td><td>Filing fees</td><td>$1,187.30</td></tr>
-        <tr><td>Shoona Riggs</td><td>Parade Entrance Fee to Port Angeles Chamber of Commerce
+        <tr><th scope="row">Shoona Riggs</th><td>Filing fees</td><td>$1,187.30</td></tr>
+        <tr><th scope="row">Shoona Riggs</th><td>Parade Entrance Fee to Port Angeles Chamber of Commerce
 121 E Railroad Ave, Port Angeles, WA 98362</td><td>$25.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <!-- VULNERABILITY FINDINGS -->
@@ -130,7 +133,7 @@
     <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">1 sourced findings. All sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model. No T4 claims included.</p>
 
     <div class="finding moderate">
-      <h4>Finding 5.1: 125 ballots from the 2016 general election went uncounted <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 5.1: 125 ballots from the 2016 general election went uncounted <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>On January 25, 2017, the Clallam County elections office found 125 unopened ballots from the November 8, 2016 general election in a courthouse parking lot drop box while preparing for a February special election. The ballots could not be counted because the election had already been certified. The county elections supervisor resigned the next day, and Riggs said she would hire a replacement. Riggs also said her office had not been following state law, in that election and in past elections, by not recording the time ballots were removed from drop boxes. She asked the Washington Secretary of State&#x27;s Office to evaluate the elections office&#x27;s procedures and practices. Election administration is the core duty of the auditor&#x27;s office.</dd>
@@ -161,16 +164,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

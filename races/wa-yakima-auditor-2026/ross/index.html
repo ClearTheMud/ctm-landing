@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Charles Ross</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -64,60 +67,60 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$22,582.66 (29 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$18,962.16 (14 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$22,582.66 (29 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$18,962.16 (14 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Charles &amp; CarriAnn Ross, Naches</td><td>$1,403.04</td></tr>
-        <tr><td>Avail Home Health, Yakima</td><td>$1,200.00</td></tr>
-        <tr><td>Cox Bill E, Yakima</td><td>$1,200.00</td></tr>
-        <tr><td>Cox Bill E, Yakima</td><td>$1,200.00</td></tr>
-        <tr><td>Hahn Stephen C, Yakima</td><td>$1,200.00</td></tr>
-        <tr><td>Hyatt Karen S, Yakima</td><td>$1,200.00</td></tr>
-        <tr><td>Martin Kerry, Yakima</td><td>$1,200.00</td></tr>
-        <tr><td>Noel Rodger, Yakima</td><td>$1,200.00</td></tr>
-        <tr><td>Noel Teresa, Yakima</td><td>$1,200.00</td></tr>
-        <tr><td>Plath Bea, Yakima</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Charles &amp; CarriAnn Ross, Naches</th><td>$1,403.04</td></tr>
+        <tr><th scope="row">Avail Home Health, Yakima</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Cox Bill E, Yakima</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Cox Bill E, Yakima</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Hahn Stephen C, Yakima</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Hyatt Karen S, Yakima</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Martin Kerry, Yakima</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Noel Rodger, Yakima</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Noel Teresa, Yakima</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Plath Bea, Yakima</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>SPD&amp;G Advertising and Public Relations</td><td>Mailer design, layout, production, postage, 10,860</td><td>$9,132.21</td></tr>
-        <tr><td>First Tuesday Consulting</td><td>Sign Maintenance</td><td>$2,355.40</td></tr>
-        <tr><td>Charles &amp; CarriAnn Ross</td><td>Filing fees</td><td>$1,403.04</td></tr>
-        <tr><td>Yakima Valley Publishing</td><td>1/2 page color ad, June 2026 issue</td><td>$1,175.00</td></tr>
-        <tr><td>Yakima Valley Publishing</td><td>1/2 page, color ad, Yakima Valley Business Times, July 2026</td><td>$1,175.00</td></tr>
-        <tr><td>SPD&amp;G Advertising and Public Relations</td><td>design/layout, stickers</td><td>$1,127.36</td></tr>
-        <tr><td>Charles &amp; CarriAnn Ross</td><td>250 sign legs</td><td>$772.04</td></tr>
-        <tr><td>Review Independent News Adam Smith dba Selah Journal, Toppenish Review</td><td>3 Ads Selah Journal, August, September, October; 
+        <tr><th scope="row">SPD&amp;G Advertising and Public Relations</th><td>Mailer design, layout, production, postage, 10,860</td><td>$9,132.21</td></tr>
+        <tr><th scope="row">First Tuesday Consulting</th><td>Sign Maintenance</td><td>$2,355.40</td></tr>
+        <tr><th scope="row">Charles &amp; CarriAnn Ross</th><td>Filing fees</td><td>$1,403.04</td></tr>
+        <tr><th scope="row">Yakima Valley Publishing</th><td>1/2 page color ad, June 2026 issue</td><td>$1,175.00</td></tr>
+        <tr><th scope="row">Yakima Valley Publishing</th><td>1/2 page, color ad, Yakima Valley Business Times, July 2026</td><td>$1,175.00</td></tr>
+        <tr><th scope="row">SPD&amp;G Advertising and Public Relations</th><td>design/layout, stickers</td><td>$1,127.36</td></tr>
+        <tr><th scope="row">Charles &amp; CarriAnn Ross</th><td>250 sign legs</td><td>$772.04</td></tr>
+        <tr><th scope="row">Review Independent News Adam Smith dba Selah Journal, Toppenish Review</th><td>3 Ads Selah Journal, August, September, October; 
 3 Ads Toppenish Independent Review, August, September, October</td><td>$540.00</td></tr>
-        <tr><td>Review Independent News Adam Smith dba Selah Journal, Toppenish Review</td><td>Quarter page ad in the Selah Journal and the Toppenish Review newspapers, July 2026</td><td>$360.00</td></tr>
-        <tr><td>SPD&amp;G Advertising and Public Relations</td><td>KIT AM 07/31-08/03</td><td>$352.96</td></tr>
+        <tr><th scope="row">Review Independent News Adam Smith dba Selah Journal, Toppenish Review</th><td>Quarter page ad in the Selah Journal and the Toppenish Review newspapers, July 2026</td><td>$360.00</td></tr>
+        <tr><th scope="row">SPD&amp;G Advertising and Public Relations</th><td>KIT AM 07/31-08/03</td><td>$352.96</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
       <h2><span class="section-num">3</span> Election History</h2>
-      <table>
-        <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+      <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+        <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
         <tbody>
-        <tr><td>2022</td><td>Auditor (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Yakima Auditor (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>Countywide Auditor (Primary)</td><td>Won (unopposed)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>Countywide Auditor (General)</td><td>Won (unopposed)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Auditor (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Yakima Auditor (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>Countywide Auditor (Primary)</td><td>Won (unopposed)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>Countywide Auditor (General)</td><td>Won (unopposed)</td><td>WA SOS</td></tr>
         </tbody>
-      </table>
+      </table></div>
       <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
     </div>
     <div class="section">
@@ -131,14 +134,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

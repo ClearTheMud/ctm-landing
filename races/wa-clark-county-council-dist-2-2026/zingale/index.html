@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">John Zingale</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,15 +60,15 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>John Zingale</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Vancouver, WA, within Clark County Council District 2, an area north of the city of Vancouver that includes Hazel Dell, Felida, and Orchards. PDC committee address 10013 NE Hazel Dell Ave Ste. 123, Vancouver, WA 98685.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Clark County Council is a nonpartisan office under the county Home Rule Charter. Zingale is a Democrat who ran as the Democratic candidate for the Washington House of Representatives in the 18th Legislative District in 2022 and 2024 and has been endorsed by the Progressive Voters Guide.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Family</td><td>Vancouver resident and father. Age 44 as of 2025 reporting.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Education</td><td>Bachelor&#x27;s degree from Northern Illinois University (2003); Graduate degree from the University of Portland (2013)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>Middle school social studies and history teacher in Vancouver Public Schools, teaching at iTech Preparatory in Vancouver, with 13 years in education; Earlier career in the retail grocery industry before entering teaching</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>John Zingale</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Vancouver, WA, within Clark County Council District 2, an area north of the city of Vancouver that includes Hazel Dell, Felida, and Orchards. PDC committee address 10013 NE Hazel Dell Ave Ste. 123, Vancouver, WA 98685.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Clark County Council is a nonpartisan office under the county Home Rule Charter. Zingale is a Democrat who ran as the Democratic candidate for the Washington House of Representatives in the 18th Legislative District in 2022 and 2024 and has been endorsed by the Progressive Voters Guide.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Family</th><td>Vancouver resident and father. Age 44 as of 2025 reporting.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Education</th><td>Bachelor&#x27;s degree from Northern Illinois University (2003); Graduate degree from the University of Portland (2013)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Middle school social studies and history teacher in Vancouver Public Schools, teaching at iTech Preparatory in Vancouver, with 13 years in education; Earlier career in the retail grocery industry before entering teaching</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -80,72 +83,72 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td></td><td>Running as a challenger. Faces incumbent Michelle Belkot and Martin Pittioni in the August 4, 2026 primary.</td><td>Research</td></tr>
-        <tr><td>2025</td><td></td><td>Lost in general to Brad Benton on November 4, 2025, 13,646 votes (49.06 percent) to Benton&#x27;s 14,171 votes (50.94 percent).</td><td>Research</td></tr>
-        <tr><td>2024</td><td></td><td>Lost in general to John Ley (Republican) on November 5, 2024.</td><td>Research</td></tr>
-        <tr><td>2022</td><td></td><td>Lost in general to Stephanie McClintock (Republican). Advanced from the August 2, 2022 primary with 47.13 percent to McClintock&#x27;s 52.66 percent.</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td></td><td>Running as a challenger. Faces incumbent Michelle Belkot and Martin Pittioni in the August 4, 2026 primary.</td><td>Research</td></tr>
+        <tr><th scope="row">2025</th><td></td><td>Lost in general to Brad Benton on November 4, 2025, 13,646 votes (49.06 percent) to Benton&#x27;s 14,171 votes (50.94 percent).</td><td>Research</td></tr>
+        <tr><th scope="row">2024</th><td></td><td>Lost in general to John Ley (Republican) on November 5, 2024.</td><td>Research</td></tr>
+        <tr><th scope="row">2022</th><td></td><td>Lost in general to Stephanie McClintock (Republican). Advanced from the August 2, 2022 primary with 47.13 percent to McClintock&#x27;s 52.66 percent.</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Infrastructure and Economy</td><td>Supports safe, maintained, and modernized roads and infrastructure to support economic growth in Clark County.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Housing and Affordability</td><td>Wants to make housing accessible and affordable so residents can stay in their homes and keep Clark County affordable to live and raise a family.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Quality of Life</td><td>Supports enhancing recreational and public spaces and ensuring essential services are available to all residents.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Effective Government</td><td>Says county government should be responsive and hardworking, as hardworking as the people it serves.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Infrastructure and Economy</th><td>Supports safe, maintained, and modernized roads and infrastructure to support economic growth in Clark County.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Housing and Affordability</th><td>Wants to make housing accessible and affordable so residents can stay in their homes and keep Clark County affordable to live and raise a family.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Quality of Life</th><td>Supports enhancing recreational and public spaces and ensuring essential services are available to all residents.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Effective Government</th><td>Says county government should be responsive and hardworking, as hardworking as the people it serves.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$34,607.93 (87 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$15,479.45 (47 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$34,607.93 (87 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$15,479.45 (47 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Washington State Democratic Central Committee, Seattle</td><td>$1,750.00</td></tr>
-        <tr><td>1910 PAC, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Civil Leadership PAC, vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>Isensee Philip, VANCOUVER</td><td>$1,200.00</td></tr>
-        <tr><td>Justice For All PAC, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Maier Martha, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>PAC 48 of Washington, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>PAC 48 of Washington, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>Promise of Progress PAC, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>Speer Paul, Vancouver</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Washington State Democratic Central Committee, Seattle</th><td>$1,750.00</td></tr>
+        <tr><th scope="row">1910 PAC, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Civil Leadership PAC, vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Isensee Philip, VANCOUVER</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Justice For All PAC, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Maier Martha, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">PAC 48 of Washington, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">PAC 48 of Washington, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Promise of Progress PAC, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Speer Paul, Vancouver</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Okra Limited</td><td>Management and consulting services for the primary</td><td>$2,500.00</td></tr>
-        <tr><td>Washington State Democratic Central Committee</td><td>VoteBuilder</td><td>$1,750.00</td></tr>
-        <tr><td>Minuteman Press</td><td>5 4&#x27;x8&#x27; signs, 100 yard signs, 50 H stands</td><td>$1,602.65</td></tr>
-        <tr><td>John Zingale</td><td>Minuteman Press - 3,000 Walkpeice 6x9 (doorbellers)</td><td>$1,019.32</td></tr>
-        <tr><td>John Zingale</td><td>Loan payment</td><td>$1,019.32</td></tr>
-        <tr><td>John Zingale</td><td>Minuteman Press - 100 double sided yard signs</td><td>$1,012.18</td></tr>
-        <tr><td>John Zingale</td><td>Loan payment</td><td>$1,012.18</td></tr>
-        <tr><td>John Zingale</td><td>Minuteman Press - 100 2-sided yard signs and H stands</td><td>$957.83</td></tr>
-        <tr><td>John Zingale</td><td>Loan payment</td><td>$957.83</td></tr>
-        <tr><td>John Zingale</td><td>Minuteman Press - 8 2&#x27;x4&#x27; double sided signs. 5 4&#x27;x8&#x27; double sided signs.</td><td>$927.41</td></tr>
+        <tr><th scope="row">Okra Limited</th><td>Management and consulting services for the primary</td><td>$2,500.00</td></tr>
+        <tr><th scope="row">Washington State Democratic Central Committee</th><td>VoteBuilder</td><td>$1,750.00</td></tr>
+        <tr><th scope="row">Minuteman Press</th><td>5 4&#x27;x8&#x27; signs, 100 yard signs, 50 H stands</td><td>$1,602.65</td></tr>
+        <tr><th scope="row">John Zingale</th><td>Minuteman Press - 3,000 Walkpeice 6x9 (doorbellers)</td><td>$1,019.32</td></tr>
+        <tr><th scope="row">John Zingale</th><td>Loan payment</td><td>$1,019.32</td></tr>
+        <tr><th scope="row">John Zingale</th><td>Minuteman Press - 100 double sided yard signs</td><td>$1,012.18</td></tr>
+        <tr><th scope="row">John Zingale</th><td>Loan payment</td><td>$1,012.18</td></tr>
+        <tr><th scope="row">John Zingale</th><td>Minuteman Press - 100 2-sided yard signs and H stands</td><td>$957.83</td></tr>
+        <tr><th scope="row">John Zingale</th><td>Loan payment</td><td>$957.83</td></tr>
+        <tr><th scope="row">John Zingale</th><td>Minuteman Press - 8 2&#x27;x4&#x27; double sided signs. 5 4&#x27;x8&#x27; double sided signs.</td><td>$927.41</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -177,16 +180,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Adam Bernbaum</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,16 +60,16 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Adam Bernbaum</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Date of Birth</td><td>Born circa 1993 (reported age 32 in 2025)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Residence</td><td>Port Angeles, Clallam County, Washington (LD-24)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Family</td><td>Grew up in a union household; father worked as a high school counselor</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Education</td><td>B.A. Political Science, University of Washington; Ph.D. Political Science, Schar School of Policy and Government, George Mason University</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>Legislative assistant to State Senator Kevin Van De Wege (D, 24th District); Field organizer for U.S. Rep. Derek Kilmer, 2022 campaign; Policy analyst, Council for Court Excellence (behavioral health and criminal justice nonprofit)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Adam Bernbaum</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Date of Birth</th><td>Born circa 1993 (reported age 32 in 2025)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Port Angeles, Clallam County, Washington (LD-24)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Family</th><td>Grew up in a union household; father worked as a high school counselor</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Education</th><td>B.A. Political Science, University of Washington; Ph.D. Political Science, Schar School of Policy and Government, George Mason University</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Legislative assistant to State Senator Kevin Van De Wege (D, 24th District); Field organizer for U.S. Rep. Derek Kilmer, 2022 campaign; Policy analyst, Council for Court Excellence (behavioral health and criminal justice nonprofit)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -85,73 +88,73 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>WA House LD-24 Pos. 1 (Incumbent, seeking re-election)</td><td>Filed; on primary ballot</td><td>Research</td></tr>
-        <tr><td>2024</td><td>WA House LD-24 Pos. 1 (Primary)</td><td>Advanced (27.6%, top of a five-candidate field)</td><td>Research</td></tr>
-        <tr><td>2024</td><td>WA House LD-24 Pos. 1 (General)</td><td>Won (55.9%, 42,388 votes) over Republican Matthew Roberson (44.0%)</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>WA House LD-24 Pos. 1 (Incumbent, seeking re-election)</td><td>Filed; on primary ballot</td><td>Research</td></tr>
+        <tr><th scope="row">2024</th><td>WA House LD-24 Pos. 1 (Primary)</td><td>Advanced (27.6%, top of a five-candidate field)</td><td>Research</td></tr>
+        <tr><th scope="row">2024</th><td>WA House LD-24 Pos. 1 (General)</td><td>Won (55.9%, 42,388 votes) over Republican Matthew Roberson (44.0%)</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Housing</td><td>Prime sponsor of HB 2269, allowing rural counties under the Growth Management Act to permit duplexes, triplexes, and townhomes (up to four units per lot) in Local Areas of More Intense Rural Development. Supports increased housing density and rural housing supply.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Taxes</td><td>Supports the capital gains tax. Opposed Initiative 2109 (repeal of capital gains tax) and Initiative 2124 (opt-out of long-term care program).</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Environment / Climate</td><td>Supports the Climate Commitment Act. Opposed Initiative 2117 (repeal of the Climate Commitment Act).</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Healthcare</td><td>Prioritizes rural healthcare stability and behavioral health resources for the Olympic Peninsula. Supports reproductive healthcare access.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Education</td><td>Supports expanded education funding.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Transportation</td><td>Vice Chair of the House Transportation Committee, representing the transportation-dependent rural Olympic Peninsula.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Housing</th><td>Prime sponsor of HB 2269, allowing rural counties under the Growth Management Act to permit duplexes, triplexes, and townhomes (up to four units per lot) in Local Areas of More Intense Rural Development. Supports increased housing density and rural housing supply.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Taxes</th><td>Supports the capital gains tax. Opposed Initiative 2109 (repeal of capital gains tax) and Initiative 2124 (opt-out of long-term care program).</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Environment / Climate</th><td>Supports the Climate Commitment Act. Opposed Initiative 2117 (repeal of the Climate Commitment Act).</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Healthcare</th><td>Prioritizes rural healthcare stability and behavioral health resources for the Olympic Peninsula. Supports reproductive healthcare access.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Education</th><td>Supports expanded education funding.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Transportation</th><td>Vice Chair of the House Transportation Committee, representing the transportation-dependent rural Olympic Peninsula.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$153,705.34 (233 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$42,547.67 (31 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$153,705.34 (233 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$42,547.67 (31 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Affordable Reliable Energy Future PAC, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>Affordable Reliable Energy Future PAC, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>Amazon.com services LLC, Washington</td><td>$1,200.00</td></tr>
-        <tr><td>Amazon.com services LLC, Washington</td><td>$1,200.00</td></tr>
-        <tr><td>American Chemistry Council, Washington</td><td>$1,200.00</td></tr>
-        <tr><td>Avista Corp, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>BNSF Railway Company, Fort Worth</td><td>$1,200.00</td></tr>
-        <tr><td>BNSF Railway Company, Fort Worth</td><td>$1,200.00</td></tr>
-        <tr><td>Bernbaum Lawrence C., Liberty Lake</td><td>$1,200.00</td></tr>
-        <tr><td>Chevron, San Ramon</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Affordable Reliable Energy Future PAC, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Affordable Reliable Energy Future PAC, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Amazon.com services LLC, Washington</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Amazon.com services LLC, Washington</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">American Chemistry Council, Washington</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Avista Corp, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">BNSF Railway Company, Fort Worth</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">BNSF Railway Company, Fort Worth</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Bernbaum Lawrence C., Liberty Lake</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Chevron, San Ramon</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Elect Adam Bernbaum Surplus</td><td>Funds transferred to Candidate&#x27;s Surplus account</td><td>$25,000.00</td></tr>
-        <tr><td>Waylon Roberts Zachary</td><td>Net wages for hours/services provided in Primary</td><td>$4,637.96</td></tr>
-        <tr><td>Elect Adam Bernbaum Surplus</td><td>Primary Campaign funds transferred to candidates Surplus funds account</td><td>$2,500.00</td></tr>
-        <tr><td>Gusto</td><td>Payroll taxes for business &amp; Zachary Waylon Robert covering Primary services provided</td><td>$1,562.40</td></tr>
-        <tr><td>Getzin Julianna</td><td>Payroll + Payroll taxes for May hours worked - Part time</td><td>$1,102.94</td></tr>
-        <tr><td>Getzin Julianna</td><td>Payroll + payroll taxes for June services</td><td>$1,102.94</td></tr>
-        <tr><td>Washington State Democratic Central Committee</td><td>Vote builder software for duration of 2026 campaign.</td><td>$1,000.00</td></tr>
-        <tr><td>Getzin Julianna</td><td>Net Payroll for July</td><td>$904.16</td></tr>
-        <tr><td>Adam Bernbaum</td><td>Filing fees for 2026 campaign. Vendor: Secretary of State | PO Box 40234, Olympia, WA 98504-0234</td><td>$676.88</td></tr>
-        <tr><td>Elect Adam Bernbaum Surplus</td><td>Transfer to surplus funds account</td><td>$500.00</td></tr>
+        <tr><th scope="row">Elect Adam Bernbaum Surplus</th><td>Funds transferred to Candidate&#x27;s Surplus account</td><td>$25,000.00</td></tr>
+        <tr><th scope="row">Waylon Roberts Zachary</th><td>Net wages for hours/services provided in Primary</td><td>$4,637.96</td></tr>
+        <tr><th scope="row">Elect Adam Bernbaum Surplus</th><td>Primary Campaign funds transferred to candidates Surplus funds account</td><td>$2,500.00</td></tr>
+        <tr><th scope="row">Gusto</th><td>Payroll taxes for business &amp; Zachary Waylon Robert covering Primary services provided</td><td>$1,562.40</td></tr>
+        <tr><th scope="row">Getzin Julianna</th><td>Payroll + Payroll taxes for May hours worked - Part time</td><td>$1,102.94</td></tr>
+        <tr><th scope="row">Getzin Julianna</th><td>Payroll + payroll taxes for June services</td><td>$1,102.94</td></tr>
+        <tr><th scope="row">Washington State Democratic Central Committee</th><td>Vote builder software for duration of 2026 campaign.</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">Getzin Julianna</th><td>Net Payroll for July</td><td>$904.16</td></tr>
+        <tr><th scope="row">Adam Bernbaum</th><td>Filing fees for 2026 campaign. Vendor: Secretary of State | PO Box 40234, Olympia, WA 98504-0234</td><td>$676.88</td></tr>
+        <tr><th scope="row">Elect Adam Bernbaum Surplus</th><td>Transfer to surplus funds account</td><td>$500.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -175,16 +178,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

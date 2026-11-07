@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Deanna Kathleen Crull</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -54,46 +57,46 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$15,607.90 (33 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$18,242.07 (38 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$15,607.90 (33 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$18,242.07 (38 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Deanna K Crull (Deanna Kathleen Crull), Spokane</td><td>$4,000.00</td></tr>
-        <tr><td>Deanna Crull</td><td>$2,260.96</td></tr>
-        <tr><td>Deanna Crull</td><td>$1,500.00</td></tr>
-        <tr><td>Hinken Patrick, Spokane</td><td>$1,060.83</td></tr>
-        <tr><td>Deanna K Crull (Deanna Kathleen Crull), Spokane</td><td>$1,000.00</td></tr>
-        <tr><td>graham stephen, Spokane</td><td>$600.00</td></tr>
-        <tr><td>graham stephen, Spokane</td><td>$600.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$340.00</td></tr>
-        <tr><td>Deanna Crull</td><td>$332.83</td></tr>
-        <tr><td>Amazon, Seattle</td><td>$311.50</td></tr>
+        <tr><th scope="row">Deanna K Crull (Deanna Kathleen Crull), Spokane</th><td>$4,000.00</td></tr>
+        <tr><th scope="row">Deanna Crull</th><td>$2,260.96</td></tr>
+        <tr><th scope="row">Deanna Crull</th><td>$1,500.00</td></tr>
+        <tr><th scope="row">Hinken Patrick, Spokane</th><td>$1,060.83</td></tr>
+        <tr><th scope="row">Deanna K Crull (Deanna Kathleen Crull), Spokane</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">graham stephen, Spokane</th><td>$600.00</td></tr>
+        <tr><th scope="row">graham stephen, Spokane</th><td>$600.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$340.00</td></tr>
+        <tr><th scope="row">Deanna Crull</th><td>$332.83</td></tr>
+        <tr><th scope="row">Amazon, Seattle</th><td>$311.50</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>PressCats Inc</td><td>Large signs (100)</td><td>$2,544.12</td></tr>
-        <tr><td>PressCats Inc</td><td>Yard signs</td><td>$2,356.88</td></tr>
-        <tr><td>Deanna Crull</td><td>State of WA - Candidate filing fee</td><td>$2,260.96</td></tr>
-        <tr><td>PressCats Inc</td><td>Yard signs (250), stakes (50)</td><td>$1,857.22</td></tr>
-        <tr><td>Deanna Crull</td><td>Crimson Consulting - Political consulting</td><td>$1,500.00</td></tr>
-        <tr><td>Hinken Patrick</td><td>Home Depot - Wood for signs</td><td>$1,060.83</td></tr>
-        <tr><td>Cross Malia</td><td>Social media manager</td><td>$600.00</td></tr>
-        <tr><td>Traveling Taps LLC</td><td>Event bar service</td><td>$463.67</td></tr>
-        <tr><td>Costco Wholesale</td><td>Event refreshments</td><td>$457.78</td></tr>
-        <tr><td>Wildrose Graphics</td><td>T-shirts (45)</td><td>$426.74</td></tr>
+        <tr><th scope="row">PressCats Inc</th><td>Large signs (100)</td><td>$2,544.12</td></tr>
+        <tr><th scope="row">PressCats Inc</th><td>Yard signs</td><td>$2,356.88</td></tr>
+        <tr><th scope="row">Deanna Crull</th><td>State of WA - Candidate filing fee</td><td>$2,260.96</td></tr>
+        <tr><th scope="row">PressCats Inc</th><td>Yard signs (250), stakes (50)</td><td>$1,857.22</td></tr>
+        <tr><th scope="row">Deanna Crull</th><td>Crimson Consulting - Political consulting</td><td>$1,500.00</td></tr>
+        <tr><th scope="row">Hinken Patrick</th><td>Home Depot - Wood for signs</td><td>$1,060.83</td></tr>
+        <tr><th scope="row">Cross Malia</th><td>Social media manager</td><td>$600.00</td></tr>
+        <tr><th scope="row">Traveling Taps LLC</th><td>Event bar service</td><td>$463.67</td></tr>
+        <tr><th scope="row">Costco Wholesale</th><td>Event refreshments</td><td>$457.78</td></tr>
+        <tr><th scope="row">Wildrose Graphics</th><td>T-shirts (45)</td><td>$426.74</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -107,14 +110,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

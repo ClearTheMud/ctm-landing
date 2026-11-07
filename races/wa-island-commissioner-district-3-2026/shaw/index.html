@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Grant Shaw</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -64,46 +67,46 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$19,904.24 (78 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$22,837.87 (31 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$19,904.24 (78 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$22,837.87 (31 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>WA State Democratic Central Committee, Seattle</td><td>$1,750.00</td></tr>
-        <tr><td>Grant Shaw, Camano Island</td><td>$1,276.09</td></tr>
-        <tr><td>Grant Shaw, Camano Island</td><td>$866.10</td></tr>
-        <tr><td>Cheryl L. Aasness, Camano Island</td><td>$600.00</td></tr>
-        <tr><td>Lance C. Aasness, Camano Island</td><td>$600.00</td></tr>
-        <tr><td>Alene Fisher, Camano</td><td>$521.15</td></tr>
-        <tr><td>Dean L. Kayler, Friday Harbor</td><td>$500.00</td></tr>
-        <tr><td>Janet St Clair, Camano Island</td><td>$500.00</td></tr>
-        <tr><td>John Amell, Camano Island</td><td>$500.00</td></tr>
-        <tr><td>Leslie A. Kayler, Friday Harbor</td><td>$500.00</td></tr>
+        <tr><th scope="row">WA State Democratic Central Committee, Seattle</th><td>$1,750.00</td></tr>
+        <tr><th scope="row">Grant Shaw, Camano Island</th><td>$1,276.09</td></tr>
+        <tr><th scope="row">Grant Shaw, Camano Island</th><td>$866.10</td></tr>
+        <tr><th scope="row">Cheryl L. Aasness, Camano Island</th><td>$600.00</td></tr>
+        <tr><th scope="row">Lance C. Aasness, Camano Island</th><td>$600.00</td></tr>
+        <tr><th scope="row">Alene Fisher, Camano</th><td>$521.15</td></tr>
+        <tr><th scope="row">Dean L. Kayler, Friday Harbor</th><td>$500.00</td></tr>
+        <tr><th scope="row">Janet St Clair, Camano Island</th><td>$500.00</td></tr>
+        <tr><th scope="row">John Amell, Camano Island</th><td>$500.00</td></tr>
+        <tr><th scope="row">Leslie A. Kayler, Friday Harbor</th><td>$500.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Cerillion N4 Partners / CN4</td><td>Trade Printery: 250 yard signs / 100 stakes</td><td>$2,111.34</td></tr>
-        <tr><td>Cerillion N4 Partners / CN4</td><td>Subvendor: Cornersstone Printing-printing of 5000 mailers</td><td>$2,037.88</td></tr>
-        <tr><td>Cerillion N4 Partners / CN4</td><td>Subvendor: Cerillion N4 Partners / CN4-design, targeting and production services fee</td><td>$2,000.00</td></tr>
-        <tr><td>WA State Democratic Central Committee</td><td>inkind voterfile access (subvendor: NGPVan Inc)</td><td>$1,750.00</td></tr>
-        <tr><td>Cerillion N4 Partners / CN4</td><td>Subvendor: USPS-postage for 5000 mailers</td><td>$1,548.32</td></tr>
-        <tr><td>Cerillion N4 Partners / CN4</td><td>Trade Printery: printing 2500 walk pieces</td><td>$1,294.72</td></tr>
-        <tr><td>Grant Shaw</td><td>In-Kind Loan- Camano Chamber - $22.50; GoDaddy - $89.75; Rob Kramer - $300.00; Office Depot - $16.34; RUN! - $600.00; Stanwood Threads - $150.00; USPS - $97.50</td><td>$1,276.09</td></tr>
-        <tr><td>WA Secretary of State</td><td>filing fee</td><td>$1,216.03</td></tr>
-        <tr><td>Freedom Park Association</td><td>Pride parade entry fee</td><td>$1,000.00</td></tr>
-        <tr><td>Cerillion N4 Partners / CN4</td><td>Trade Printery: 25 road signs</td><td>$952.00</td></tr>
+        <tr><th scope="row">Cerillion N4 Partners / CN4</th><td>Trade Printery: 250 yard signs / 100 stakes</td><td>$2,111.34</td></tr>
+        <tr><th scope="row">Cerillion N4 Partners / CN4</th><td>Subvendor: Cornersstone Printing-printing of 5000 mailers</td><td>$2,037.88</td></tr>
+        <tr><th scope="row">Cerillion N4 Partners / CN4</th><td>Subvendor: Cerillion N4 Partners / CN4-design, targeting and production services fee</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">WA State Democratic Central Committee</th><td>inkind voterfile access (subvendor: NGPVan Inc)</td><td>$1,750.00</td></tr>
+        <tr><th scope="row">Cerillion N4 Partners / CN4</th><td>Subvendor: USPS-postage for 5000 mailers</td><td>$1,548.32</td></tr>
+        <tr><th scope="row">Cerillion N4 Partners / CN4</th><td>Trade Printery: printing 2500 walk pieces</td><td>$1,294.72</td></tr>
+        <tr><th scope="row">Grant Shaw</th><td>In-Kind Loan- Camano Chamber - $22.50; GoDaddy - $89.75; Rob Kramer - $300.00; Office Depot - $16.34; RUN! - $600.00; Stanwood Threads - $150.00; USPS - $97.50</td><td>$1,276.09</td></tr>
+        <tr><th scope="row">WA Secretary of State</th><td>filing fee</td><td>$1,216.03</td></tr>
+        <tr><th scope="row">Freedom Park Association</th><td>Pride parade entry fee</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">Cerillion N4 Partners / CN4</th><td>Trade Printery: 25 road signs</td><td>$952.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -117,14 +120,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

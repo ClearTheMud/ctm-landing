@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -27,6 +28,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Steve Johnson</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -45,16 +48,16 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Steve Johnson</td></tr>
-        <tr><td>Party</td><td>Independent (Democratic-aligned)</td></tr>
-        <tr><td>Prior Office</td><td>None (two prior losses)</td></tr>
-        <tr><td>2026 General Election</td><td>Faces Scott Herndon (R) on November 3, 2026, after Herndon defeated incumbent Jim Woodward in the May 19 GOP primary 53.55%&ndash;46.45% (official Idaho SOS results as of 2026-06-09; final certification pending). No Democrat filed.</td></tr>
-        <tr><td>Total Raised (2026)</td><td>No 2026 contributions on record (Idaho Sunshine filer record, committee &ldquo;Steve Johnson,&rdquo; status Active, $0.00 balance; confirmed 2026-06-10)</td></tr>
-        <tr><td>Background</td><td>42-year career in public education; elementary teacher and principal (10 years as principal, Southside Elementary). BS Education, University of Idaho (1972)</td></tr>
-        <tr><td>Residence</td><td>Sagle, Idaho. Family farm since 1957. Married to Marguerite (high school sweetheart); four children, three adopted from foster care.</td></tr>
+        <tr><th scope="row">Full Name</th><td>Steve Johnson</td></tr>
+        <tr><th scope="row">Party</th><td>Independent (Democratic-aligned)</td></tr>
+        <tr><th scope="row">Prior Office</th><td>None (two prior losses)</td></tr>
+        <tr><th scope="row">2026 General Election</th><td>Faces Scott Herndon (R) on November 3, 2026, after Herndon defeated incumbent Jim Woodward in the May 19 GOP primary 53.55%&ndash;46.45% (official Idaho SOS results as of 2026-06-09; final certification pending). No Democrat filed.</td></tr>
+        <tr><th scope="row">Total Raised (2026)</th><td>No 2026 contributions on record (Idaho Sunshine filer record, committee &ldquo;Steve Johnson,&rdquo; status Active, $0.00 balance; confirmed 2026-06-10)</td></tr>
+        <tr><th scope="row">Background</th><td>42-year career in public education; elementary teacher and principal (10 years as principal, Southside Elementary). BS Education, University of Idaho (1972)</td></tr>
+        <tr><th scope="row">Residence</th><td>Sagle, Idaho. Family farm since 1957. Married to Marguerite (high school sweetheart); four children, three adopted from foster care.</td></tr>
       </tbody>
     </table>
   </div>
@@ -64,7 +67,7 @@
     <h2><span class="section-num">1</span> Electoral Viability</h2>
 
     <div class="finding critical">
-      <h4>Finding 1.1: Serial Electoral Losses, No Viable Path in R+40 District <span class="impact-badge impact-critical">CRITICAL</span></h4>
+      <h3>Finding 1.1: Serial Electoral Losses, No Viable Path in R+40 District <span class="impact-badge impact-critical">CRITICAL</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Johnson has lost multiple races as a Democrat and Independent in a district that votes 74&ndash;77% Republican in general elections. His 2022 write-in Senate bid achieved 40.9% (his ceiling), while his 2024 County Commissioner race dropped to 29.5%, a declining trajectory. He still has zero 2026 campaign finance activity on file (Idaho Sunshine, confirmed 2026-06-10) and his campaign website domain has lapsed.</dd>
@@ -89,7 +92,7 @@
     <h2><span class="section-num">2</span> Party Identity &amp; Positioning</h2>
 
     <div class="finding moderate">
-      <h4>Finding 2.1: Functionally Democratic Candidate Running as Independent <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 2.1: Functionally Democratic Candidate Running as Independent <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Johnson is registered as Independent but serves as a member of the Bonner County Democratic Central Committee. All previous races were run as a Democrat. The Independent label may be viewed as misleading by voters in a heavily Republican district, though it also reflects a genuine attempt to escape partisan toxicity in a community where &ldquo;Democrat&rdquo; is a disqualifying label.</dd>
@@ -112,7 +115,7 @@
     <h2><span class="section-num">3</span> Qualifications &amp; Platform</h2>
 
     <div class="finding moderate">
-      <h4>Finding 3.1: Education Career Provides Authentic Voice but No Political Infrastructure <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 3.1: Education Career Provides Authentic Voice but No Political Infrastructure <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Johnson&rsquo;s 42-year education career (teacher, principal) gives him authentic credibility on school funding issues, the single area where Woodward and Herndon most visibly diverge. His positions (pro-public education, anti-voucher, pro-housing assistance, church-state separation) align with a Democratic platform. However, he has no campaign infrastructure, no fundraising, and a lapsed website domain.</dd>
@@ -130,21 +133,26 @@
   <!-- FINANCIAL SNAPSHOT -->
   <div class="section">
     <h2><span class="section-num">$</span> Financial Snapshot (Idaho Sunshine, confirmed 2026-06-10)</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Financial Snapshot (Idaho Sunshine, confirmed 2026-06-10)</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised (2026)</td><td>No contributions on record ($0.00 balance, filer status Active)</td></tr>
-        <tr><td>Total Spent (2026)</td><td>No expenditure filings on record</td></tr>
-        <tr><td>Campaign Website</td><td>Domain lapsed</td></tr>
-        <tr><td>Party Affiliation</td><td>Independent (Bonner County Democratic Central Committee member)</td></tr>
-        <tr><td>2022 Result</td><td>Write-in Senate: 40.9% (loss)</td></tr>
-        <tr><td>2024 Result</td><td>County Commissioner (D): 29.5% (loss)</td></tr>
-        <tr><td>2026 Matchup</td><td>vs Scott Herndon (R), November 3, 2026 general; no Democrat filed</td></tr>
-        <tr><td>Viability Assessment</td><td>No realistic path to victory in R+40 district</td></tr>
+        <tr><th scope="row">Total Raised (2026)</th><td>No contributions on record ($0.00 balance, filer status Active)</td></tr>
+        <tr><th scope="row">Total Spent (2026)</th><td>No expenditure filings on record</td></tr>
+        <tr><th scope="row">Campaign Website</th><td>Domain lapsed</td></tr>
+        <tr><th scope="row">Party Affiliation</th><td>Independent (Bonner County Democratic Central Committee member)</td></tr>
+        <tr><th scope="row">2022 Result</th><td>Write-in Senate: 40.9% (loss)</td></tr>
+        <tr><th scope="row">2024 Result</th><td>County Commissioner (D): 29.5% (loss)</td></tr>
+        <tr><th scope="row">2026 Matchup</th><td>vs Scott Herndon (R), November 3, 2026 general; no Democrat filed</td></tr>
+        <tr><th scope="row">Viability Assessment</th><td>No realistic path to victory in R+40 district</td></tr>
       </tbody>
     </table>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media), or T3 (Candidate Statement / Official Campaign Page) per clearthemud provenance model.<br>
     T3 content reflects the candidate&rsquo;s own public claims and has not been independently verified. No editorial conclusions, readers assess implications independently.<br>
@@ -152,10 +160,9 @@
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

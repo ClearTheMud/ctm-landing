@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Lovejoy Schaefer</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,12 +60,12 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Lovejoy Schaefer</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Shelton area, Mason County, WA. Campaign committee registered in Shelton (mailing address 301 E Wallace Kneeland Blvd, Suite 224-192, Shelton, WA 98584). PDC self-contribution records list the candidate&#x27;s city as Shelton.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Independent</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Lovejoy Schaefer</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Shelton area, Mason County, WA. Campaign committee registered in Shelton (mailing address 301 E Wallace Kneeland Blvd, Suite 224-192, Shelton, WA 98584). PDC self-contribution records list the candidate&#x27;s city as Shelton.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Independent</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -77,42 +80,42 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$3,201.06 (8 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$2,156.05 (7 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$3,201.06 (8 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$2,156.05 (7 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Lovejoy Schaefer, Shelton</td><td>$1,045.01</td></tr>
-        <tr><td>Lovejoy Schaefer, Shelton</td><td>$1,045.01</td></tr>
-        <tr><td>Lovejoy Schaefer, Shelton</td><td>$745.18</td></tr>
-        <tr><td>Cole Eloise, San Diego</td><td>$300.00</td></tr>
-        <tr><td>Lovejoy Schaefer, Shelton</td><td>$86.23</td></tr>
-        <tr><td>Lovejoy Schaefer, Shelton</td><td>$5.00</td></tr>
-        <tr><td>Lovejoy Schaefer, Shelton</td><td>$4.36</td></tr>
-        <tr><td>Cole Eloise, San Diego</td><td>$-29.73</td></tr>
+        <tr><th scope="row">Lovejoy Schaefer, Shelton</th><td>$1,045.01</td></tr>
+        <tr><th scope="row">Lovejoy Schaefer, Shelton</th><td>$1,045.01</td></tr>
+        <tr><th scope="row">Lovejoy Schaefer, Shelton</th><td>$745.18</td></tr>
+        <tr><th scope="row">Cole Eloise, San Diego</th><td>$300.00</td></tr>
+        <tr><th scope="row">Lovejoy Schaefer, Shelton</th><td>$86.23</td></tr>
+        <tr><th scope="row">Lovejoy Schaefer, Shelton</th><td>$5.00</td></tr>
+        <tr><th scope="row">Lovejoy Schaefer, Shelton</th><td>$4.36</td></tr>
+        <tr><th scope="row">Cole Eloise, San Diego</th><td>$-29.73</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Mason County Auditor</td><td>Filing fees</td><td>$1,045.01</td></tr>
-        <tr><td>Black Star</td><td>3 - 2x3 signs
+        <tr><th scope="row">Mason County Auditor</th><td>Filing fees</td><td>$1,045.01</td></tr>
+        <tr><th scope="row">Black Star</th><td>3 - 2x3 signs
 100- 18x24 signs</td><td>$636.40</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$205.27</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$174.37</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$95.00</td></tr>
-        <tr><td>Cole Eloise</td><td>Refund of $29.73 not used out of the $300. contribution</td><td>$29.73</td></tr>
-        <tr><td>Cole Eloise</td><td>Refund of $29.73 not used out of the $300. contribution</td><td>$-29.73</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$205.27</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$174.37</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$95.00</td></tr>
+        <tr><th scope="row">Cole Eloise</th><td>Refund of $29.73 not used out of the $300. contribution</td><td>$29.73</td></tr>
+        <tr><th scope="row">Cole Eloise</th><td>Refund of $29.73 not used out of the $300. contribution</td><td>$-29.73</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -127,16 +130,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

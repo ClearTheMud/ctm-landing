@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Kathy Richardson</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,12 +60,12 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Kathy Richardson</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>LD-28 area, Pierce County, Washington (University Place / Lakewood / Steilacoom)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Kathy Richardson</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>LD-28 area, Pierce County, Washington (University Place / Lakewood / Steilacoom)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -92,46 +95,46 @@ and the communities it serves, not partisan politics or political theater.</span
 
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$23,401.14 (52 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$8,374.84 (19 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$23,401.14 (52 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$8,374.84 (19 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>House Republican Organizational Committee, Olympia</td><td>$5,000.00</td></tr>
-        <tr><td>28th District Legislative Republican Committee, Lakewood</td><td>$1,200.00</td></tr>
-        <tr><td>Healy Jennifer, UNIVERSITY PLACE</td><td>$1,200.00</td></tr>
-        <tr><td>Gordon Steve, Lake Tapps</td><td>$1,000.00</td></tr>
-        <tr><td>Kathleen Jeannette Richardson (Kathy Richardson), University Place</td><td>$1,000.00</td></tr>
-        <tr><td>Lecoq Paul, Amboy</td><td>$1,000.00</td></tr>
-        <tr><td>Richardson Robert, University Place</td><td>$1,000.00</td></tr>
-        <tr><td>Statton Carol H, Steilacoom</td><td>$1,000.00</td></tr>
-        <tr><td>Kathy Richardson</td><td>$676.88</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$625.00</td></tr>
+        <tr><th scope="row">House Republican Organizational Committee, Olympia</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">28th District Legislative Republican Committee, Lakewood</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Healy Jennifer, UNIVERSITY PLACE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Gordon Steve, Lake Tapps</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Kathleen Jeannette Richardson (Kathy Richardson), University Place</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Lecoq Paul, Amboy</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Richardson Robert, University Place</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Statton Carol H, Steilacoom</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Kathy Richardson</th><td>$676.88</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$625.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Pinnacle Printing</td><td>Campaign Signs (100), Stakes (100), 5x7 Cards (2000)</td><td>$1,211.00</td></tr>
-        <tr><td>CG Edwards PLLC</td><td>Accounting, legal, regulatory compliance, etc.</td><td>$1,050.00</td></tr>
-        <tr><td>Pinnacle Printing</td><td>Signs (200), Stakes (150)</td><td>$1,019.35</td></tr>
-        <tr><td>Pinnacle Printing</td><td>Car Magnets (4), 5x7 Custom Print, Yard Signs (50)</td><td>$811.99</td></tr>
-        <tr><td>Pinnacle Printing</td><td>Custom Print (1), Campaign Signs (50), Metal Stakes (50)</td><td>$756.94</td></tr>
-        <tr><td>Kathy Richardson</td><td>Filing fees (WA Secretary of State - 416 Sid Snyder Ave SW Olympia, WA 98501)</td><td>$676.88</td></tr>
-        <tr><td>Kathy Richardson</td><td>100 Yard Signs (SignOnTheCheap)</td><td>$601.50</td></tr>
-        <tr><td>Healy Jennifer</td><td>Parade Items</td><td>$386.69</td></tr>
-        <tr><td>Vistaprint</td><td>T-Shirts (17)</td><td>$348.77</td></tr>
-        <tr><td>Healy Jennifer</td><td>Food Items for Meet &amp; Greets (Costco &amp; Fred Meyer)</td><td>$291.34</td></tr>
+        <tr><th scope="row">Pinnacle Printing</th><td>Campaign Signs (100), Stakes (100), 5x7 Cards (2000)</td><td>$1,211.00</td></tr>
+        <tr><th scope="row">CG Edwards PLLC</th><td>Accounting, legal, regulatory compliance, etc.</td><td>$1,050.00</td></tr>
+        <tr><th scope="row">Pinnacle Printing</th><td>Signs (200), Stakes (150)</td><td>$1,019.35</td></tr>
+        <tr><th scope="row">Pinnacle Printing</th><td>Car Magnets (4), 5x7 Custom Print, Yard Signs (50)</td><td>$811.99</td></tr>
+        <tr><th scope="row">Pinnacle Printing</th><td>Custom Print (1), Campaign Signs (50), Metal Stakes (50)</td><td>$756.94</td></tr>
+        <tr><th scope="row">Kathy Richardson</th><td>Filing fees (WA Secretary of State - 416 Sid Snyder Ave SW Olympia, WA 98501)</td><td>$676.88</td></tr>
+        <tr><th scope="row">Kathy Richardson</th><td>100 Yard Signs (SignOnTheCheap)</td><td>$601.50</td></tr>
+        <tr><th scope="row">Healy Jennifer</th><td>Parade Items</td><td>$386.69</td></tr>
+        <tr><th scope="row">Vistaprint</th><td>T-Shirts (17)</td><td>$348.77</td></tr>
+        <tr><th scope="row">Healy Jennifer</th><td>Food Items for Meet &amp; Greets (Costco &amp; Fred Meyer)</td><td>$291.34</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -159,16 +162,20 @@ and the communities it serves, not partisan politics or political theater.</span
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

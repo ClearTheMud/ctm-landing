@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Sarah Mittelman</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Sarah Mittelman</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Sarah Mittelman</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -93,50 +96,50 @@ independent voice delivering real solutions for Southwest Washington.</span></p>
 
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$27,279.88 (55 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$8,966.44 (17 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$27,279.88 (55 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$8,966.44 (17 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Sarah Amy Mittelman (Sarah Mittelman), VANCOUVER</td><td>$2,200.00</td></tr>
-        <tr><td>Gordon Steve, Lake Tapps</td><td>$1,200.00</td></tr>
-        <tr><td>Jones Katy, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>Lung Bob, Battleground</td><td>$1,200.00</td></tr>
-        <tr><td>Lung Bob, Battleground</td><td>$1,200.00</td></tr>
-        <tr><td>Lung Diane, Battle Ground</td><td>$1,200.00</td></tr>
-        <tr><td>Lung Diane, Battle Ground</td><td>$1,200.00</td></tr>
-        <tr><td>Moore Kathy, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>Moore Roy, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>PEG Management, McMinville</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Sarah Amy Mittelman (Sarah Mittelman), VANCOUVER</th><td>$2,200.00</td></tr>
+        <tr><th scope="row">Gordon Steve, Lake Tapps</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Jones Katy, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Lung Bob, Battleground</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Lung Bob, Battleground</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Lung Diane, Battle Ground</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Lung Diane, Battle Ground</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Moore Kathy, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Moore Roy, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">PEG Management, McMinville</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Rock Chalk Strategies</td><td>Management and consulting services</td><td>$3,000.00</td></tr>
-        <tr><td>Cemal Richards</td><td>Management and consulting services
+        <tr><th scope="row">Rock Chalk Strategies</th><td>Management and consulting services</td><td>$3,000.00</td></tr>
+        <tr><th scope="row">Cemal Richards</th><td>Management and consulting services
 Consulting doorbelling and yard signs</td><td>$1,227.22</td></tr>
-        <tr><td>Cascade PAC</td><td>Management and consulting services
+        <tr><th scope="row">Cascade PAC</th><td>Management and consulting services
 Creation of a video for candidate</td><td>$750.00</td></tr>
-        <tr><td>Cemal Richards</td><td>Print 5 large 4x8 signs and 100 yard signs</td><td>$745.00</td></tr>
-        <tr><td>SARAH MITTELMAN</td><td>Filing fees</td><td>$676.88</td></tr>
-        <tr><td>Cemal Richards</td><td>Management and consulting services</td><td>$674.00</td></tr>
-        <tr><td>Silver Cloud Seattle</td><td>Lodging travel</td><td>$358.72</td></tr>
-        <tr><td>Rock Chalk Strategies</td><td>Management and consulting services
+        <tr><th scope="row">Cemal Richards</th><td>Print 5 large 4x8 signs and 100 yard signs</td><td>$745.00</td></tr>
+        <tr><th scope="row">SARAH MITTELMAN</th><td>Filing fees</td><td>$676.88</td></tr>
+        <tr><th scope="row">Cemal Richards</th><td>Management and consulting services</td><td>$674.00</td></tr>
+        <tr><th scope="row">Silver Cloud Seattle</th><td>Lodging travel</td><td>$358.72</td></tr>
+        <tr><th scope="row">Rock Chalk Strategies</th><td>Management and consulting services
 Voter Data</td><td>$350.06</td></tr>
-        <tr><td>Cemal Richards</td><td>Sign building supplies</td><td>$270.00</td></tr>
-        <tr><td>Cemal Richards</td><td>Management and consulting services
+        <tr><th scope="row">Cemal Richards</th><td>Sign building supplies</td><td>$270.00</td></tr>
+        <tr><th scope="row">Cemal Richards</th><td>Management and consulting services
 Sign building assistance</td><td>$250.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -151,16 +154,20 @@ Sign building assistance</td><td>$250.00</td></tr>
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

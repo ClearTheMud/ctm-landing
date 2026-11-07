@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Zach Hall</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Zach Hall</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Zach Hall</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -76,58 +79,58 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2023</td><td>City of Issaquah Council Position NO. 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2019</td><td>City of Issaquah Council Position NO. 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2023</th><td>City of Issaquah Council Position NO. 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2019</th><td>City of Issaquah Council Position NO. 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$130,914.26 (155 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$61,958.53 (34 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$130,914.26 (155 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$61,958.53 (34 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>House Democratic Campaign Committee, Seattle</td><td>$40,000.00</td></tr>
-        <tr><td>AMR HOLDCO, INC, Greenwood Village</td><td>$1,200.00</td></tr>
-        <tr><td>Amazon services LLC, Washington</td><td>$1,200.00</td></tr>
-        <tr><td>Avista Corp, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>COUNCIL 28 AFSCME WASHINGTON FEDERATION OF STATE EMPLOYEES WFSE, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>COUNCIL 28 AFSCME WASHINGTON FEDERATION OF STATE EMPLOYEES WFSE, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>DELTA DENTAL OF WASHINGTON, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>DELTA DENTAL OF WASHINGTON, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>Harry Truman Fund, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>INVENERGY LLC, Chicago</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">House Democratic Campaign Committee, Seattle</th><td>$40,000.00</td></tr>
+        <tr><th scope="row">AMR HOLDCO, INC, Greenwood Village</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Amazon services LLC, Washington</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Avista Corp, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">COUNCIL 28 AFSCME WASHINGTON FEDERATION OF STATE EMPLOYEES WFSE, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">COUNCIL 28 AFSCME WASHINGTON FEDERATION OF STATE EMPLOYEES WFSE, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">DELTA DENTAL OF WASHINGTON, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">DELTA DENTAL OF WASHINGTON, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Harry Truman Fund, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">INVENERGY LLC, Chicago</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Capitol City Press</td><td>* ESTIMATED cost of 22,746 each 6x21 inch pieces. Includes printing, production, mail house services, and design</td><td>$10,000.00</td></tr>
-        <tr><td>Capitol City Press</td><td>*Estimated cost* Primary Mailer #2 6x11 inch. Print, production, mail house services, graphic design, copy writing, vendor management</td><td>$10,000.00</td></tr>
-        <tr><td>Capitol City Press</td><td>Postage prepayment for 22,746 pc 6x21 inch mail pieces</td><td>$7,872.84</td></tr>
-        <tr><td>Capitol City Press</td><td>Postage costs for Primary Mailer #2 (22,746 pc 6x11 inch)</td><td>$7,872.84</td></tr>
-        <tr><td>Thomsen Bryce</td><td>Net pay for August hours worked</td><td>$3,719.64</td></tr>
-        <tr><td>Thomsen Bryce</td><td>Payroll + payroll taxes for June hours worked</td><td>$3,073.60</td></tr>
-        <tr><td>Thomsen Bryce</td><td>Payroll + payroll taxes for hours worked in JULY</td><td>$3,073.60</td></tr>
-        <tr><td>Telnyx</td><td>40,407 texts over 2 rounds: Segments, Carrier fees, TargetingVendor Management, Processing fees, Verification, Branding, Campaign registration, and Phone number.</td><td>$2,828.53</td></tr>
-        <tr><td>Overnight Printing Seattle</td><td>5000 pc 6x9 inch doorbellers</td><td>$1,886.06</td></tr>
-        <tr><td>Winpower Strategies</td><td>General Consulting services - May</td><td>$1,250.00</td></tr>
+        <tr><th scope="row">Capitol City Press</th><td>* ESTIMATED cost of 22,746 each 6x21 inch pieces. Includes printing, production, mail house services, and design</td><td>$10,000.00</td></tr>
+        <tr><th scope="row">Capitol City Press</th><td>*Estimated cost* Primary Mailer #2 6x11 inch. Print, production, mail house services, graphic design, copy writing, vendor management</td><td>$10,000.00</td></tr>
+        <tr><th scope="row">Capitol City Press</th><td>Postage prepayment for 22,746 pc 6x21 inch mail pieces</td><td>$7,872.84</td></tr>
+        <tr><th scope="row">Capitol City Press</th><td>Postage costs for Primary Mailer #2 (22,746 pc 6x11 inch)</td><td>$7,872.84</td></tr>
+        <tr><th scope="row">Thomsen Bryce</th><td>Net pay for August hours worked</td><td>$3,719.64</td></tr>
+        <tr><th scope="row">Thomsen Bryce</th><td>Payroll + payroll taxes for June hours worked</td><td>$3,073.60</td></tr>
+        <tr><th scope="row">Thomsen Bryce</th><td>Payroll + payroll taxes for hours worked in JULY</td><td>$3,073.60</td></tr>
+        <tr><th scope="row">Telnyx</th><td>40,407 texts over 2 rounds: Segments, Carrier fees, TargetingVendor Management, Processing fees, Verification, Branding, Campaign registration, and Phone number.</td><td>$2,828.53</td></tr>
+        <tr><th scope="row">Overnight Printing Seattle</th><td>5000 pc 6x9 inch doorbellers</td><td>$1,886.06</td></tr>
+        <tr><th scope="row">Winpower Strategies</th><td>General Consulting services - May</td><td>$1,250.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -142,16 +145,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

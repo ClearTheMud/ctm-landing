@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Michael Brittain</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -46,13 +49,13 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Michael Brittain</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Port Hadlock, Jefferson County, Washington (PUD District 2)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan (Public Utility District commissioner races are nonpartisan)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Background in engineering and technology, per his own description to the press. Specific employers not stated in sources consulted.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Michael Brittain</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Port Hadlock, Jefferson County, Washington (PUD District 2)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan (Public Utility District commissioner races are nonpartisan)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Background in engineering and technology, per his own description to the press. Specific employers not stated in sources consulted.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -67,12 +70,12 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Financial Stewardship</td><td>States that a priority if elected is responsible financial stewardship of the utility district.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Broadband</td><td>Supports continuing the PUD&#x27;s broadband project. The PUD is still seeking funding for its largest planned service area, Southeast Jefferson County (Chimacum, Port Ludlow, Coyle), projected at $19.6 million.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Utility Services</td><td>States he wants utilities that operate for all members of the community and supports responsible community growth.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Financial Stewardship</th><td>States that a priority if elected is responsible financial stewardship of the utility district.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Broadband</th><td>Supports continuing the PUD&#x27;s broadband project. The PUD is still seeking funding for its largest planned service area, Southeast Jefferson County (Chimacum, Port Ludlow, Coyle), projected at $19.6 million.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Utility Services</th><td>States he wants utilities that operate for all members of the community and supports responsible community growth.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -94,16 +97,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

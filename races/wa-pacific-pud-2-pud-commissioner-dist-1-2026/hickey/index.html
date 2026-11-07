@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Pam Hickey</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -46,13 +49,13 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Pamela &quot;Pam&quot; Hickey</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Ilwaco, Pacific County, Washington (resident since 1999)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>Studied Accounting and Biochemistry at Saint Mary-of-the-Woods (Indiana) and Louisiana State University (New Orleans, Louisiana)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>25 years with Fortune 500 companies in San Francisco, California, including Merchandiser/Product Manager at Levi Strauss and Co. and Information Systems Project Manager at Williams-Sonoma; Owner of Foxglove Enterprises, a business and computer consulting company serving non-profits; Commissioner, Pacific County PUD No. 2, District 1 (elected 2020, serving as Vice President of the Board). District 1 represents Ilwaco, Chinook, Naselle, Bay Center, and much of South Bend.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Pamela &quot;Pam&quot; Hickey</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Ilwaco, Pacific County, Washington (resident since 1999)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>Studied Accounting and Biochemistry at Saint Mary-of-the-Woods (Indiana) and Louisiana State University (New Orleans, Louisiana)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>25 years with Fortune 500 companies in San Francisco, California, including Merchandiser/Product Manager at Levi Strauss and Co. and Information Systems Project Manager at Williams-Sonoma; Owner of Foxglove Enterprises, a business and computer consulting company serving non-profits; Commissioner, Pacific County PUD No. 2, District 1 (elected 2020, serving as Vice President of the Board). District 1 represents Ilwaco, Chinook, Naselle, Bay Center, and much of South Bend.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -67,13 +70,13 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Pacific County PUD No. 2 Commissioner, District 1</td><td>Incumbent seeking re-election. Sole filer per PDC registration; placed directly on the November 2026 general election ballot (not on the primary ballot).</td><td>Research</td></tr>
-        <tr><td>2020</td><td>Pacific County PUD No. 2 Commissioner, District 1</td><td>Elected to the board</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>Pacific County PUD No. 2 Commissioner, District 1</td><td>Incumbent seeking re-election. Sole filer per PDC registration; placed directly on the November 2026 general election ballot (not on the primary ballot).</td><td>Research</td></tr>
+        <tr><th scope="row">2020</th><td>Pacific County PUD No. 2 Commissioner, District 1</td><td>Elected to the board</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -93,16 +96,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

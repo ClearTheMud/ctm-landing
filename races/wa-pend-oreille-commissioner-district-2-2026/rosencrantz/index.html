@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Robert Rosencrantz</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -64,58 +67,58 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$10,662.61 (9 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$10,110.78 (32 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$10,662.61 (9 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$10,110.78 (32 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Robert Rosencrantz, Newport</td><td>$5,000.00</td></tr>
-        <tr><td>Robert Rosencrantz, Newport</td><td>$3,000.00</td></tr>
-        <tr><td>Pend Oreille County Republican Central Committee, Ione</td><td>$1,000.00</td></tr>
-        <tr><td>Robert Rosencrantz, Newport</td><td>$842.61</td></tr>
-        <tr><td>Bevans Richard, Usk</td><td>$500.00</td></tr>
-        <tr><td>Wells Gloria, Newport</td><td>$200.00</td></tr>
-        <tr><td>Napier-Janz Katharine, Newport</td><td>$100.00</td></tr>
-        <tr><td>Robert Rosencrantz, Newport</td><td>$10.00</td></tr>
-        <tr><td>Robert Rosencrantz, Newport</td><td>$10.00</td></tr>
+        <tr><th scope="row">Robert Rosencrantz, Newport</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">Robert Rosencrantz, Newport</th><td>$3,000.00</td></tr>
+        <tr><th scope="row">Pend Oreille County Republican Central Committee, Ione</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Robert Rosencrantz, Newport</th><td>$842.61</td></tr>
+        <tr><th scope="row">Bevans Richard, Usk</th><td>$500.00</td></tr>
+        <tr><th scope="row">Wells Gloria, Newport</th><td>$200.00</td></tr>
+        <tr><th scope="row">Napier-Janz Katharine, Newport</th><td>$100.00</td></tr>
+        <tr><th scope="row">Robert Rosencrantz, Newport</th><td>$10.00</td></tr>
+        <tr><th scope="row">Robert Rosencrantz, Newport</th><td>$10.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>River Marketing</td><td>Graphic design</td><td>$1,978.99</td></tr>
-        <tr><td>Petroglyph Printing &amp; Signs</td><td>Yard signs (100)</td><td>$990.84</td></tr>
-        <tr><td>Walt&#x27;s Mailing Service</td><td>Mail piece (1042)</td><td>$916.97</td></tr>
-        <tr><td>Robert Rosencrantz</td><td>Pend Oreille County Auditor: PO Box 5025, Newport WA 99156: Filing fee</td><td>$842.61</td></tr>
-        <tr><td>Petroglyph Printing &amp; Signs</td><td>4x6 signs (10)</td><td>$807.75</td></tr>
-        <tr><td>Petroglyph Printing &amp; Signs</td><td>4x6 signs (8)</td><td>$775.44</td></tr>
-        <tr><td>Walt&#x27;s Mailing Service</td><td>Mail piece postage</td><td>$384.19</td></tr>
-        <tr><td>Walt&#x27;s Mailing Service</td><td>Mail piece postage</td><td>$384.15</td></tr>
-        <tr><td>Petroglyph Printing &amp; Signs</td><td>3x6 Banners (3)</td><td>$348.95</td></tr>
-        <tr><td>Walt&#x27;s Mailing Service</td><td>Mail piece (1042)</td><td>$295.13</td></tr>
+        <tr><th scope="row">River Marketing</th><td>Graphic design</td><td>$1,978.99</td></tr>
+        <tr><th scope="row">Petroglyph Printing &amp; Signs</th><td>Yard signs (100)</td><td>$990.84</td></tr>
+        <tr><th scope="row">Walt&#x27;s Mailing Service</th><td>Mail piece (1042)</td><td>$916.97</td></tr>
+        <tr><th scope="row">Robert Rosencrantz</th><td>Pend Oreille County Auditor: PO Box 5025, Newport WA 99156: Filing fee</td><td>$842.61</td></tr>
+        <tr><th scope="row">Petroglyph Printing &amp; Signs</th><td>4x6 signs (10)</td><td>$807.75</td></tr>
+        <tr><th scope="row">Petroglyph Printing &amp; Signs</th><td>4x6 signs (8)</td><td>$775.44</td></tr>
+        <tr><th scope="row">Walt&#x27;s Mailing Service</th><td>Mail piece postage</td><td>$384.19</td></tr>
+        <tr><th scope="row">Walt&#x27;s Mailing Service</th><td>Mail piece postage</td><td>$384.15</td></tr>
+        <tr><th scope="row">Petroglyph Printing &amp; Signs</th><td>3x6 Banners (3)</td><td>$348.95</td></tr>
+        <tr><th scope="row">Walt&#x27;s Mailing Service</th><td>Mail piece (1042)</td><td>$295.13</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
       <h2><span class="section-num">3</span> Election History</h2>
-      <table>
-        <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+      <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+        <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
         <tbody>
-        <tr><td>2022</td><td>Commissioner - 02 County Commissioner 2 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Pend Oreille County Commissioner 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2019</td><td>Hospital District - 01 Hospital Commissioner Position 5 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2019</td><td>Hospital District - 01 Hospital Commissioner #5 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Commissioner - 02 County Commissioner 2 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Pend Oreille County Commissioner 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2019</th><td>Hospital District - 01 Hospital Commissioner Position 5 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2019</th><td>Hospital District - 01 Hospital Commissioner #5 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
         </tbody>
-      </table>
+      </table></div>
       <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
     </div>
     <div class="section">
@@ -129,14 +132,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Darrin E. Wallace</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,15 +60,15 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Darrin E. Wallace</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Grays Harbor County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>States No Party Preference</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Military Service</td><td>20 years active duty U.S. Coast Guard, retired as Chief Warrant Officer. 5 years at National Motor Lifeboat School in Ilwaco, WA as Senior Surfman Instructor, trained approximately 150 students, logged over 1,000 hours in surf with zero injuries. 3 years as Executive Petty Officer (2nd in command) of USCG Station Golden Gate, Sausalito, CA, supervised 50 personnel. 3 years as Commanding Officer of USCG Station Grays Harbor in Westport, supervised 55 personnel. Awarded 5 Commendation Medals, 7 Achievement Medals, 3 Commandant&#x27;s Letters of Commendation.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Education</td><td>U.S. Coast Guard training and command qualifications</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>Commanding Officer, U.S. Coast Guard Station Grays Harbor, Westport, WA (3 years); Deputy Sheriff, Grays Harbor County Sheriff&#x27;s Office (joined after Coast Guard retirement); Sergeant, Grays Harbor County Sheriff&#x27;s Office, supervised patrol operations; Detective Sergeant, Grays Harbor County Sheriff&#x27;s Office, supervised Investigations Division. Supervisor for Region III Critical Incident Investigation Team for 2 years. Assisted, led, or supervised 15 homicide investigations.; Chief Civil Deputy, Grays Harbor County Sheriff&#x27;s Office (promoted December 2019). Second-in-command under Sheriff Rick Scott.; Sheriff, Grays Harbor County (sworn in January 2023, replacing retiring 45-year veteran Sheriff Rick Scott)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Darrin E. Wallace</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Grays Harbor County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>States No Party Preference</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Military Service</th><td>20 years active duty U.S. Coast Guard, retired as Chief Warrant Officer. 5 years at National Motor Lifeboat School in Ilwaco, WA as Senior Surfman Instructor, trained approximately 150 students, logged over 1,000 hours in surf with zero injuries. 3 years as Executive Petty Officer (2nd in command) of USCG Station Golden Gate, Sausalito, CA, supervised 50 personnel. 3 years as Commanding Officer of USCG Station Grays Harbor in Westport, supervised 55 personnel. Awarded 5 Commendation Medals, 7 Achievement Medals, 3 Commandant&#x27;s Letters of Commendation.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Education</th><td>U.S. Coast Guard training and command qualifications</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Commanding Officer, U.S. Coast Guard Station Grays Harbor, Westport, WA (3 years); Deputy Sheriff, Grays Harbor County Sheriff&#x27;s Office (joined after Coast Guard retirement); Sergeant, Grays Harbor County Sheriff&#x27;s Office, supervised patrol operations; Detective Sergeant, Grays Harbor County Sheriff&#x27;s Office, supervised Investigations Division. Supervisor for Region III Critical Incident Investigation Team for 2 years. Assisted, led, or supervised 15 homicide investigations.; Chief Civil Deputy, Grays Harbor County Sheriff&#x27;s Office (promoted December 2019). Second-in-command under Sheriff Rick Scott.; Sheriff, Grays Harbor County (sworn in January 2023, replacing retiring 45-year veteran Sheriff Rick Scott)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -108,71 +111,71 @@ and those rights shall not be infringed upon.</p><br/><br/>
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2022</td><td>Grays Harbor County Sheriff (Primary)</td><td>Won with over 71% of the vote</td><td>Research</td></tr>
-        <tr><td>2022</td><td>Grays Harbor County Sheriff (General)</td><td>Won with 73.41% of the vote (~8,000-vote margin), defeating Michael Catlett (former Brier Police Chief). Replaced retiring 45-year veteran Sheriff Rick Scott.</td><td>Research</td></tr>
+        <tr><th scope="row">2022</th><td>Grays Harbor County Sheriff (Primary)</td><td>Won with over 71% of the vote</td><td>Research</td></tr>
+        <tr><th scope="row">2022</th><td>Grays Harbor County Sheriff (General)</td><td>Won with 73.41% of the vote (~8,000-vote margin), defeating Michael Catlett (former Brier Police Chief). Replaced retiring 45-year veteran Sheriff Rick Scott.</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Jail Replacement</td><td>Top priority is a new jail facility. Current 45-year-old facility requires constant repairs and is vertical in design, which is cumbersome. Wants to model new facility after Skagit County&#x27;s linear design. Estimated cost $80 million. Goal is securing approvals during his term.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Transparency / Body Cameras</td><td>Invested $900,000 in body cameras for deputies and patrol cars, plus interview room cameras. Prioritizes transparency and positive community communication.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Staffing</td><td>Faces staffing shortages including one patrol deputy, four to five corrections deputies, and four support specialists. Acknowledges recruiting challenges.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Crime Priorities</td><td>Major crime issues are stolen vehicles, catalytic converter thefts, and drug-related crimes.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Budget</td><td>Sheriff&#x27;s department faces significant budget cuts. In 2024, warned that the department would have to cut 7 deputies if budget cuts proceeded.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Jail Replacement</th><td>Top priority is a new jail facility. Current 45-year-old facility requires constant repairs and is vertical in design, which is cumbersome. Wants to model new facility after Skagit County&#x27;s linear design. Estimated cost $80 million. Goal is securing approvals during his term.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Transparency / Body Cameras</th><td>Invested $900,000 in body cameras for deputies and patrol cars, plus interview room cameras. Prioritizes transparency and positive community communication.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Staffing</th><td>Faces staffing shortages including one patrol deputy, four to five corrections deputies, and four support specialists. Acknowledges recruiting challenges.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Crime Priorities</th><td>Major crime issues are stolen vehicles, catalytic converter thefts, and drug-related crimes.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Budget</th><td>Sheriff&#x27;s department faces significant budget cuts. In 2024, warned that the department would have to cut 7 deputies if budget cuts proceeded.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$19,971.48 (42 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$14,911.48 (29 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$19,971.48 (42 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$14,911.48 (29 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Darrin Wallace</td><td>$3,584.58</td></tr>
-        <tr><td>Darrin Wallace</td><td>$2,874.96</td></tr>
-        <tr><td>Darrin Wallace</td><td>$2,653.15</td></tr>
-        <tr><td>Darrin Wallace</td><td>$1,957.00</td></tr>
-        <tr><td>Zylstra Karen, Lynnwood</td><td>$1,200.00</td></tr>
-        <tr><td>Zylstra Karen, Lynnwood</td><td>$1,200.00</td></tr>
-        <tr><td>Darrin Wallace</td><td>$609.66</td></tr>
-        <tr><td>Darrin Wallace</td><td>$566.28</td></tr>
-        <tr><td>SCHRADER KEVIN, Montesano</td><td>$500.00</td></tr>
-        <tr><td>TETZLAFF ERIC, Hoquiam</td><td>$500.00</td></tr>
+        <tr><th scope="row">Darrin Wallace</th><td>$3,584.58</td></tr>
+        <tr><th scope="row">Darrin Wallace</th><td>$2,874.96</td></tr>
+        <tr><th scope="row">Darrin Wallace</th><td>$2,653.15</td></tr>
+        <tr><th scope="row">Darrin Wallace</th><td>$1,957.00</td></tr>
+        <tr><th scope="row">Zylstra Karen, Lynnwood</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Zylstra Karen, Lynnwood</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Darrin Wallace</th><td>$609.66</td></tr>
+        <tr><th scope="row">Darrin Wallace</th><td>$566.28</td></tr>
+        <tr><th scope="row">SCHRADER KEVIN, Montesano</th><td>$500.00</td></tr>
+        <tr><th scope="row">TETZLAFF ERIC, Hoquiam</th><td>$500.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Darrin Wallace</td><td>D4 Sports - 500 double sided yard signs with stakes and 50 extra stakes</td><td>$3,584.58</td></tr>
-        <tr><td>Darrin Wallace</td><td>20 large sign and 2 banners from previous election used in current election</td><td>$2,874.96</td></tr>
-        <tr><td>Darrin Wallace</td><td>16 4x4 signs and 15 4x8 signs and 50 stickers from D4 Sports 121 Pioneer Ave west, Montesano, WA 98563</td><td>$2,653.15</td></tr>
-        <tr><td>Darrin Wallace</td><td>Filing fees</td><td>$1,957.00</td></tr>
-        <tr><td>Darrin Wallace</td><td>30 T-Shirts</td><td>$609.66</td></tr>
-        <tr><td>Darrin Wallace</td><td>Silicone wristbands from wristband bros</td><td>$566.28</td></tr>
-        <tr><td>Darrin Wallace</td><td>Candy for parades</td><td>$256.89</td></tr>
-        <tr><td>Darrin Wallace</td><td>Food Items from Costco for Meet and Greet Event on June 11</td><td>$249.96</td></tr>
-        <tr><td>Darrin Wallace</td><td>10 bags of Candy for parades from Costco.com</td><td>$249.90</td></tr>
-        <tr><td>Darrin Wallace</td><td>Sheriff badges from Stickershiplaw.com</td><td>$225.50</td></tr>
+        <tr><th scope="row">Darrin Wallace</th><td>D4 Sports - 500 double sided yard signs with stakes and 50 extra stakes</td><td>$3,584.58</td></tr>
+        <tr><th scope="row">Darrin Wallace</th><td>20 large sign and 2 banners from previous election used in current election</td><td>$2,874.96</td></tr>
+        <tr><th scope="row">Darrin Wallace</th><td>16 4x4 signs and 15 4x8 signs and 50 stickers from D4 Sports 121 Pioneer Ave west, Montesano, WA 98563</td><td>$2,653.15</td></tr>
+        <tr><th scope="row">Darrin Wallace</th><td>Filing fees</td><td>$1,957.00</td></tr>
+        <tr><th scope="row">Darrin Wallace</th><td>30 T-Shirts</td><td>$609.66</td></tr>
+        <tr><th scope="row">Darrin Wallace</th><td>Silicone wristbands from wristband bros</td><td>$566.28</td></tr>
+        <tr><th scope="row">Darrin Wallace</th><td>Candy for parades</td><td>$256.89</td></tr>
+        <tr><th scope="row">Darrin Wallace</th><td>Food Items from Costco for Meet and Greet Event on June 11</td><td>$249.96</td></tr>
+        <tr><th scope="row">Darrin Wallace</th><td>10 bags of Candy for parades from Costco.com</td><td>$249.90</td></tr>
+        <tr><th scope="row">Darrin Wallace</th><td>Sheriff badges from Stickershiplaw.com</td><td>$225.50</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -195,7 +198,7 @@ and those rights shall not be infringed upon.</p><br/><br/>
     <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">1 sourced findings. All sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model. No T4 claims included.</p>
 
     <div class="finding moderate">
-      <h4>Finding 6.1: Top priority is an estimated $80 million jail replacement <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 6.1: Top priority is an estimated $80 million jail replacement <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Wallace&#x27;s stated top priority is replacing the 45-year-old county jail at an estimated cost of $80 million. The county has a median household income of $63,539 and a 15 percent poverty rate, and no funding plan for a project of that size has been made public.</dd>
@@ -225,16 +228,20 @@ and those rights shall not be infringed upon.</p><br/><br/>
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

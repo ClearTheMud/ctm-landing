@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Dave Paul</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Dave Paul</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Dave Paul</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -80,64 +83,64 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2024</td><td>Legislative District 10 - State Representative Pos. 2 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2024</td><td>Legislative District 10 - State Representative Pos. 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Legislative District 10 - State Representative Pos. 2 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Legislative District 10 - State Representative Pos. 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2020</td><td>Legislative District 10 - State Representative Pos. 2 (Primary)</td><td>Lost (2 of 4)</td><td>WA SOS</td></tr>
-        <tr><td>2020</td><td>Legislative District 10 - State Representative Pos. 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>Legislative District 10 - State Representative Pos. 2 (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>Legislative District 10 - State Representative Pos. 2 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Legislative District 10 - State Representative Pos. 2 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Legislative District 10 - State Representative Pos. 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Legislative District 10 - State Representative Pos. 2 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Legislative District 10 - State Representative Pos. 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2020</th><td>Legislative District 10 - State Representative Pos. 2 (Primary)</td><td>Lost (2 of 4)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2020</th><td>Legislative District 10 - State Representative Pos. 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>Legislative District 10 - State Representative Pos. 2 (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>Legislative District 10 - State Representative Pos. 2 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$137,263.19 (344 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$93,387.33 (77 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$137,263.19 (344 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$93,387.33 (77 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>House Democratic Campaign Committee, Seattle</td><td>$10,000.00</td></tr>
-        <tr><td>AFSCME Council 28 WFSE, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>Amazon.com Services LLC, Washington</td><td>$1,200.00</td></tr>
-        <tr><td>Amazon.com Services LLC, Washington</td><td>$1,200.00</td></tr>
-        <tr><td>Amy C. Gulick, Clinton</td><td>$1,200.00</td></tr>
-        <tr><td>Associated Builders and Contractors of Western WA PAC, Bellevue</td><td>$1,200.00</td></tr>
-        <tr><td>BNSF Railway Company, Fort Worth</td><td>$1,200.00</td></tr>
-        <tr><td>Building a Stronger Washington, Dallas</td><td>$1,200.00</td></tr>
-        <tr><td>Christopher W. Gulick, Clinton</td><td>$1,200.00</td></tr>
-        <tr><td>Credit Union Legislative Action Fund, Seatac</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">House Democratic Campaign Committee, Seattle</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">AFSCME Council 28 WFSE, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Amazon.com Services LLC, Washington</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Amazon.com Services LLC, Washington</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Amy C. Gulick, Clinton</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Associated Builders and Contractors of Western WA PAC, Bellevue</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">BNSF Railway Company, Fort Worth</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Building a Stronger Washington, Dallas</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Christopher W. Gulick, Clinton</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Credit Union Legislative Action Fund, Seatac</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Dave Paul Surplus Funds Account</td><td>surplus funds transfer</td><td>$10,000.00</td></tr>
-        <tr><td>Cerillion N4 Partners / CN4</td><td>digital ads, run dates 7/24 thru 8/4, estimated impressions 285,000</td><td>$8,844.00</td></tr>
-        <tr><td>Cerillion N4 Partners / CN4</td><td>USPS: postage for 21,500 mailers</td><td>$7,783.41</td></tr>
-        <tr><td>Cerillion N4 Partners / CN4</td><td>USPS: postage for 21,500 mailers</td><td>$7,783.41</td></tr>
-        <tr><td>Cerillion N4 Partners / CN4</td><td>Cerillion N4 Partners / CN4: targeting and production services of 21,500 mailers</td><td>$5,929.41</td></tr>
-        <tr><td>Cerillion N4 Partners / CN4</td><td>Cerillion N4 Partners / CN4: targeting and production services of 20267 mailers</td><td>$5,929.41</td></tr>
-        <tr><td>Cerillion N4 Partners / CN4</td><td>Cornerstone Printing: printing 21500 mailers</td><td>$3,876.65</td></tr>
-        <tr><td>Cerillion N4 Partners / CN4</td><td>Cornerstone Printing: printing 21500 mailers</td><td>$3,876.65</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$1,975.60</td></tr>
-        <tr><td>Gusto</td><td>Subvendor: Sheridan Robbins-payroll</td><td>$1,684.34</td></tr>
+        <tr><th scope="row">Dave Paul Surplus Funds Account</th><td>surplus funds transfer</td><td>$10,000.00</td></tr>
+        <tr><th scope="row">Cerillion N4 Partners / CN4</th><td>digital ads, run dates 7/24 thru 8/4, estimated impressions 285,000</td><td>$8,844.00</td></tr>
+        <tr><th scope="row">Cerillion N4 Partners / CN4</th><td>USPS: postage for 21,500 mailers</td><td>$7,783.41</td></tr>
+        <tr><th scope="row">Cerillion N4 Partners / CN4</th><td>USPS: postage for 21,500 mailers</td><td>$7,783.41</td></tr>
+        <tr><th scope="row">Cerillion N4 Partners / CN4</th><td>Cerillion N4 Partners / CN4: targeting and production services of 21,500 mailers</td><td>$5,929.41</td></tr>
+        <tr><th scope="row">Cerillion N4 Partners / CN4</th><td>Cerillion N4 Partners / CN4: targeting and production services of 20267 mailers</td><td>$5,929.41</td></tr>
+        <tr><th scope="row">Cerillion N4 Partners / CN4</th><td>Cornerstone Printing: printing 21500 mailers</td><td>$3,876.65</td></tr>
+        <tr><th scope="row">Cerillion N4 Partners / CN4</th><td>Cornerstone Printing: printing 21500 mailers</td><td>$3,876.65</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$1,975.60</td></tr>
+        <tr><th scope="row">Gusto</th><td>Subvendor: Sheridan Robbins-payroll</td><td>$1,684.34</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -152,16 +155,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

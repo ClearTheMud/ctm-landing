@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Keith L. Wagoner</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -64,63 +67,63 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$31,480.49 (54 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$19,670.32 (17 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$31,480.49 (54 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$19,670.32 (17 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Skagit County Republican Party, Mount Vernon</td><td>$3,000.00</td></tr>
-        <tr><td>Skagit County Republican Party, Mount Vernon</td><td>$2,000.00</td></tr>
-        <tr><td>Skagit County Republican Party, Mount Vernon</td><td>$2,000.00</td></tr>
-        <tr><td>Keith L. Wagoner</td><td>$1,543.49</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$1,290.00</td></tr>
-        <tr><td>Halverson Leonard, Sedro-Woolley</td><td>$1,200.00</td></tr>
-        <tr><td>I - 200 PAC, Bellevue</td><td>$1,200.00</td></tr>
-        <tr><td>I - 200 PAC, Bellevue</td><td>$1,200.00</td></tr>
-        <tr><td>Marathon, Anacortes</td><td>$1,200.00</td></tr>
-        <tr><td>Washington Realtors PAC, Olympia</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Skagit County Republican Party, Mount Vernon</th><td>$3,000.00</td></tr>
+        <tr><th scope="row">Skagit County Republican Party, Mount Vernon</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">Skagit County Republican Party, Mount Vernon</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">Keith L. Wagoner</th><td>$1,543.49</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$1,290.00</td></tr>
+        <tr><th scope="row">Halverson Leonard, Sedro-Woolley</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">I - 200 PAC, Bellevue</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">I - 200 PAC, Bellevue</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Marathon, Anacortes</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Washington Realtors PAC, Olympia</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Strong Impressions</td><td>Design fees and website</td><td>$4,070.70</td></tr>
-        <tr><td>Strong Impressions</td><td>Design and printing for 9077 postcard mailers</td><td>$3,207.40</td></tr>
-        <tr><td>Skagit Publishing</td><td>Ads for Camano News, Anacortes American and Skagit Valley Herald</td><td>$2,600.00</td></tr>
-        <tr><td>Concrete Herald</td><td>1/2 page ads for 3 months starting August</td><td>$2,385.00</td></tr>
-        <tr><td>Keith L. Wagoner</td><td>160  yard signs to Republican Signs</td><td>$1,800.00</td></tr>
-        <tr><td>WA GOP</td><td>Postage costs, mail permits, purchase of stamps
+        <tr><th scope="row">Strong Impressions</th><td>Design fees and website</td><td>$4,070.70</td></tr>
+        <tr><th scope="row">Strong Impressions</th><td>Design and printing for 9077 postcard mailers</td><td>$3,207.40</td></tr>
+        <tr><th scope="row">Skagit Publishing</th><td>Ads for Camano News, Anacortes American and Skagit Valley Herald</td><td>$2,600.00</td></tr>
+        <tr><th scope="row">Concrete Herald</th><td>1/2 page ads for 3 months starting August</td><td>$2,385.00</td></tr>
+        <tr><th scope="row">Keith L. Wagoner</th><td>160  yard signs to Republican Signs</td><td>$1,800.00</td></tr>
+        <tr><th scope="row">WA GOP</th><td>Postage costs, mail permits, purchase of stamps
 Mailer for 9077 pieces</td><td>$1,553.99</td></tr>
-        <tr><td>Keith L. Wagoner</td><td>Filing fees</td><td>$1,543.49</td></tr>
-        <tr><td>Logger Rodeo</td><td>Event fee for parade and events</td><td>$531.68</td></tr>
-        <tr><td>Keith L. Wagoner</td><td>Reimbursement for event items at gunbroker.com</td><td>$509.09</td></tr>
-        <tr><td>RMC Services</td><td>Accounting, legal, regulatory compliance, etc.</td><td>$500.00</td></tr>
+        <tr><th scope="row">Keith L. Wagoner</th><td>Filing fees</td><td>$1,543.49</td></tr>
+        <tr><th scope="row">Logger Rodeo</th><td>Event fee for parade and events</td><td>$531.68</td></tr>
+        <tr><th scope="row">Keith L. Wagoner</th><td>Reimbursement for event items at gunbroker.com</td><td>$509.09</td></tr>
+        <tr><th scope="row">RMC Services</th><td>Accounting, legal, regulatory compliance, etc.</td><td>$500.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
       <h2><span class="section-num">3</span> Election History</h2>
-      <table>
-        <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+      <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+        <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
         <tbody>
-        <tr><td>2024</td><td>Legislative District 39 - State Senator (Primary)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
-        <tr><td>2024</td><td>Legislative District 39 - State Senator (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Secretary of State (Primary)</td><td>Lost (3 of 9)</td><td>WA SOS</td></tr>
-        <tr><td>2020</td><td>Legislative District 39 - State Senator (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2020</td><td>Legislative District 39 - State Senator (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>Legislative District 39 - State Senator (Primary)</td><td>Lost (2 of 4)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>Legislative District 39 - State Senator (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Legislative District 39 - State Senator (Primary)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Legislative District 39 - State Senator (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Secretary of State (Primary)</td><td>Lost (3 of 9)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2020</th><td>Legislative District 39 - State Senator (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2020</th><td>Legislative District 39 - State Senator (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>Legislative District 39 - State Senator (Primary)</td><td>Lost (2 of 4)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>Legislative District 39 - State Senator (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
         </tbody>
-      </table>
+      </table></div>
       <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
     </div>
     <div class="section">
@@ -134,14 +137,18 @@ Mailer for 9077 pieces</td><td>$1,553.99</td></tr>
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

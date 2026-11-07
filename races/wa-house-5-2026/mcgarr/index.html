@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -27,6 +28,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Michael McGarr</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -55,17 +58,17 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Michael McGarr</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Date of Birth</td><td>Age 70 in 2026.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Residence</td><td>Spokane, Spokane County, Washington.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Military Service</td><td>U.S. Air Force. Worked as a B-52 bomber and navigational systems repairman. Honorably discharged as a sergeant.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Family</td><td>Married to Liz McGarr.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Education</td><td>Bella Vista High School, Sacramento, California (1973).; Associate degree in letters, arts and science, Antelope Valley College (1994).; Bachelor&#x27;s degree in political science, California State University (1996).</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>Air traffic controller at Van Nuys and Burbank airports (1982 to 1992).; Copy editor at the Los Angeles Daily News (1993 to 2005).; Copy editor at The Spokesman-Review (2005 to 2021). Now retired.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Michael McGarr</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Date of Birth</th><td>Age 70 in 2026.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Spokane, Spokane County, Washington.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Military Service</th><td>U.S. Air Force. Worked as a B-52 bomber and navigational systems repairman. Honorably discharged as a sergeant.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Family</th><td>Married to Liz McGarr.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Education</th><td>Bella Vista High School, Sacramento, California (1973).; Associate degree in letters, arts and science, Antelope Valley College (1994).; Bachelor&#x27;s degree in political science, California State University (1996).</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Air traffic controller at Van Nuys and Burbank airports (1982 to 1992).; Copy editor at the Los Angeles Daily News (1993 to 2005).; Copy editor at The Spokesman-Review (2005 to 2021). Now retired.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -86,25 +89,25 @@ I make one promise to everyone who reads this: I will represent you as I would w
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>U.S. House, WA Congressional District 5 (Primary, Aug 4)</td><td>Running as a Democrat. Challenging incumbent Rep. Michael Baumgartner (R) in the top-two primary. Baumgartner drew 12 challengers from across Eastern Washington.</td><td>Research</td></tr>
-        <tr><td>1996</td><td>California State Assembly</td><td>Ran as a Republican. Lost in the primary.</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>U.S. House, WA Congressional District 5 (Primary, Aug 4)</td><td>Running as a Democrat. Challenging incumbent Rep. Michael Baumgartner (R) in the top-two primary. Baumgartner drew 12 challengers from across Eastern Washington.</td><td>Research</td></tr>
+        <tr><th scope="row">1996</th><td>California State Assembly</td><td>Ran as a Republican. Lost in the primary.</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Taxes</td><td>Proposes a flat federal income tax that exempts the first $50,000 to $70,000 of income.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Infrastructure</td><td>Supports large-scale federal infrastructure projects comparable to the Interstate Highway System.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Immigration / Border Security</td><td>Supports border security and border wall construction within environmental limits.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Bipartisanship / Governing Approach</td><td>Campaigns on a bipartisan, work-across-the-aisle approach. States that Congress should pass bills the whole country can support and that sharp moves left or right anger half the country.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>LGBTQ+ / Social Issues</td><td>Opposes transgender athletes competing in women&#x27;s sports but rejects bathroom bans. Says sexuality issues should not be federal matters.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Taxes</th><td>Proposes a flat federal income tax that exempts the first $50,000 to $70,000 of income.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Infrastructure</th><td>Supports large-scale federal infrastructure projects comparable to the Interstate Highway System.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Immigration / Border Security</th><td>Supports border security and border wall construction within environmental limits.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Bipartisanship / Governing Approach</th><td>Campaigns on a bipartisan, work-across-the-aisle approach. States that Congress should pass bills the whole country can support and that sharp moves left or right anger half the country.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">LGBTQ+ / Social Issues</th><td>Opposes transgender athletes competing in women&#x27;s sports but rejects bathroom bans. Says sexuality issues should not be federal matters.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -145,16 +148,20 @@ I make one promise to everyone who reads this: I will represent you as I would w
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

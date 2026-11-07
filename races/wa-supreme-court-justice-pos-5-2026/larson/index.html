@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -27,6 +28,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">David A. Larson</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -55,14 +58,14 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>David A. Larson (appears on the ballot as Dave Larson)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Federal Way, Washington. Raised in Federal Way and attended Federal Way public schools.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan (Washington judicial offices are elected on a nonpartisan basis; no party appears on the ballot)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>Bachelor of Arts, University of Puget Sound (1980); Juris Doctor, Seattle University School of Law (1984)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Civil trial lawyer in state and federal courts for 23 years before taking the bench. Owned his own law firm from 1991 to 2001 and a mediation company with contract mediators from 1998 to 2001.; Judge, Federal Way Municipal Court, since March 2008, serving as Presiding Judge.; Rated AV Preeminent by Martindale-Hubbell, the directory&#x27;s highest peer rating for attorneys.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>David A. Larson (appears on the ballot as Dave Larson)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Federal Way, Washington. Raised in Federal Way and attended Federal Way public schools.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan (Washington judicial offices are elected on a nonpartisan basis; no party appears on the ballot)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>Bachelor of Arts, University of Puget Sound (1980); Juris Doctor, Seattle University School of Law (1984)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Civil trial lawyer in state and federal courts for 23 years before taking the bench. Owned his own law firm from 1991 to 2001 and a mediation company with contract mediators from 1998 to 2001.; Judge, Federal Way Municipal Court, since March 2008, serving as Presiding Judge.; Rated AV Preeminent by Martindale-Hubbell, the directory&#x27;s highest peer rating for attorneys.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -77,72 +80,72 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Washington State Supreme Court, Justice Position 5</td><td>Running for the open Position 5 seat. Justice Barbara Madsen retired effective April 3, 2026, and Governor Bob Ferguson appointed Theo Angelis, who is running to retain the seat. This is a special election for a two-year term (next regular election 2028). Filed 5/4/2026. Primary August 4, 2026; general November 3, 2026. Other candidates include Angelis, Thurston County Superior Court Judge Sharonda Amamilo, and appellate attorney Greg Miller.</td><td>Research</td></tr>
-        <tr><td>2024</td><td>Washington State Supreme Court, Justice Position 2</td><td>Lost the general election to Sal Mungia, receiving more than 1.6 million votes and finishing about 0.61 percent behind.</td><td>Research</td></tr>
-        <tr><td>2020</td><td>Washington State Supreme Court (candidate)</td><td>Ran for a Supreme Court seat; did not win.</td><td>Research</td></tr>
-        <tr><td>2016</td><td>Washington State Supreme Court (candidate)</td><td>Ran for a Supreme Court seat; did not win.</td><td>Research</td></tr>
-        <tr><td>2000</td><td>Washington State Supreme Court (candidate)</td><td>Ran for a Supreme Court seat; did not win.</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>Washington State Supreme Court, Justice Position 5</td><td>Running for the open Position 5 seat. Justice Barbara Madsen retired effective April 3, 2026, and Governor Bob Ferguson appointed Theo Angelis, who is running to retain the seat. This is a special election for a two-year term (next regular election 2028). Filed 5/4/2026. Primary August 4, 2026; general November 3, 2026. Other candidates include Angelis, Thurston County Superior Court Judge Sharonda Amamilo, and appellate attorney Greg Miller.</td><td>Research</td></tr>
+        <tr><th scope="row">2024</th><td>Washington State Supreme Court, Justice Position 2</td><td>Lost the general election to Sal Mungia, receiving more than 1.6 million votes and finishing about 0.61 percent behind.</td><td>Research</td></tr>
+        <tr><th scope="row">2020</th><td>Washington State Supreme Court (candidate)</td><td>Ran for a Supreme Court seat; did not win.</td><td>Research</td></tr>
+        <tr><th scope="row">2016</th><td>Washington State Supreme Court (candidate)</td><td>Ran for a Supreme Court seat; did not win.</td><td>Research</td></tr>
+        <tr><th scope="row">2000</th><td>Washington State Supreme Court (candidate)</td><td>Ran for a Supreme Court seat; did not win.</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Criminal Justice Reform</td><td>Campaigns on being &quot;smarter on crime&quot; through evidence-based approaches and states he wants to help communities implement proven strategies.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Judicial Elections and Court Reform</td><td>Advocates changing how judges are elected to make the process more understandable and meaningful for voters, and emphasizes the Supreme Court&#x27;s rulemaking authority over bail rules, public defense standards and caseloads, and attorney licensing.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Public Trust and Judicial Independence</td><td>Says he wants to make the court system more responsive to the public and to restore trust in the judiciary. Long involved in judicial independence work through the DMCJA.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Criminal Justice Reform</th><td>Campaigns on being &quot;smarter on crime&quot; through evidence-based approaches and states he wants to help communities implement proven strategies.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Judicial Elections and Court Reform</th><td>Advocates changing how judges are elected to make the process more understandable and meaningful for voters, and emphasizes the Supreme Court&#x27;s rulemaking authority over bail rules, public defense standards and caseloads, and attorney licensing.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Public Trust and Judicial Independence</th><td>Says he wants to make the court system more responsive to the public and to restore trust in the judiciary. Long involved in judicial independence work through the DMCJA.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$424,948.67 (875 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$263,228.09 (252 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$424,948.67 (875 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$263,228.09 (252 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Abbott Alida, Tumwater</td><td>$2,400.00</td></tr>
-        <tr><td>Associated General Contractors of Washingtons BUILD PAC, Seattle</td><td>$2,400.00</td></tr>
-        <tr><td>BUILD East PAC, Spokane</td><td>$2,400.00</td></tr>
-        <tr><td>Balter Keith, Kent</td><td>$2,400.00</td></tr>
-        <tr><td>Barber David, Edmonds</td><td>$2,400.00</td></tr>
-        <tr><td>Barber Jean, Edmonds</td><td>$2,400.00</td></tr>
-        <tr><td>Basler Doug, Kent</td><td>$2,400.00</td></tr>
-        <tr><td>Basler Lori, Kent</td><td>$2,400.00</td></tr>
-        <tr><td>Bentley Kathy, Key Colony Beach</td><td>$2,400.00</td></tr>
-        <tr><td>Bentley Ted, Key Colony Beach</td><td>$2,400.00</td></tr>
+        <tr><th scope="row">Abbott Alida, Tumwater</th><td>$2,400.00</td></tr>
+        <tr><th scope="row">Associated General Contractors of Washingtons BUILD PAC, Seattle</th><td>$2,400.00</td></tr>
+        <tr><th scope="row">BUILD East PAC, Spokane</th><td>$2,400.00</td></tr>
+        <tr><th scope="row">Balter Keith, Kent</th><td>$2,400.00</td></tr>
+        <tr><th scope="row">Barber David, Edmonds</th><td>$2,400.00</td></tr>
+        <tr><th scope="row">Barber Jean, Edmonds</th><td>$2,400.00</td></tr>
+        <tr><th scope="row">Basler Doug, Kent</th><td>$2,400.00</td></tr>
+        <tr><th scope="row">Basler Lori, Kent</th><td>$2,400.00</td></tr>
+        <tr><th scope="row">Bentley Kathy, Key Colony Beach</th><td>$2,400.00</td></tr>
+        <tr><th scope="row">Bentley Ted, Key Colony Beach</th><td>$2,400.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Print Northwest</td><td>Mailer postage (82,062 ct)</td><td>$36,452.84</td></tr>
-        <tr><td>Frontline Strategies LLC</td><td>CTV &amp; OLV Ads (Casual Placement) || Flight dates: 7/14 - 7/27</td><td>$30,025.00</td></tr>
-        <tr><td>Prologue Digital</td><td>Video Commercial Production for Broadcast (8 videos)</td><td>$23,200.00</td></tr>
-        <tr><td>Print Northwest</td><td>Postcard printing (82,062 ct)</td><td>$13,263.29</td></tr>
-        <tr><td>Evergreen Data Strategies</td><td>P2P Advocacy Messages (173,585 ct)</td><td>$12,150.95</td></tr>
-        <tr><td>Frontline Strategies LLC</td><td>CTV Ads - Flight: 7/31 - 8/4</td><td>$7,500.00</td></tr>
-        <tr><td>Peak Fundraising Partners</td><td>June Fundraising Commission</td><td>$7,364.50</td></tr>
-        <tr><td>Peak Fundraising Partners</td><td>Fundraising Commission - April</td><td>$7,081.50</td></tr>
-        <tr><td>Peak Fundraising Partners</td><td>Fundraising consulting services</td><td>$5,513.25</td></tr>
-        <tr><td>Peak Fundraising Partners</td><td>June Fundraising Commission</td><td>$5,363.36</td></tr>
+        <tr><th scope="row">Print Northwest</th><td>Mailer postage (82,062 ct)</td><td>$36,452.84</td></tr>
+        <tr><th scope="row">Frontline Strategies LLC</th><td>CTV &amp; OLV Ads (Casual Placement) || Flight dates: 7/14 - 7/27</td><td>$30,025.00</td></tr>
+        <tr><th scope="row">Prologue Digital</th><td>Video Commercial Production for Broadcast (8 videos)</td><td>$23,200.00</td></tr>
+        <tr><th scope="row">Print Northwest</th><td>Postcard printing (82,062 ct)</td><td>$13,263.29</td></tr>
+        <tr><th scope="row">Evergreen Data Strategies</th><td>P2P Advocacy Messages (173,585 ct)</td><td>$12,150.95</td></tr>
+        <tr><th scope="row">Frontline Strategies LLC</th><td>CTV Ads - Flight: 7/31 - 8/4</td><td>$7,500.00</td></tr>
+        <tr><th scope="row">Peak Fundraising Partners</th><td>June Fundraising Commission</td><td>$7,364.50</td></tr>
+        <tr><th scope="row">Peak Fundraising Partners</th><td>Fundraising Commission - April</td><td>$7,081.50</td></tr>
+        <tr><th scope="row">Peak Fundraising Partners</th><td>Fundraising consulting services</td><td>$5,513.25</td></tr>
+        <tr><th scope="row">Peak Fundraising Partners</th><td>June Fundraising Commission</td><td>$5,363.36</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -173,16 +176,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

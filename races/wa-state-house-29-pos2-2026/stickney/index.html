@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Patrick Stickney</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,13 +60,13 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Patrick Stickney</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Tacoma, Pierce County, Washington (Legislative District 29). Committee address PO Box 7437, Tacoma, WA 98417.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Senior Policy and Legislative Affairs Advisor, Washington State Office of Equity (current); Staff member, Northwest Progressive Institute (NPI), 2009-2015</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Patrick Stickney</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Tacoma, Pierce County, Washington (Legislative District 29). Committee address PO Box 7437, Tacoma, WA 98417.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Senior Policy and Legislative Affairs Advisor, Washington State Office of Equity (current); Staff member, Northwest Progressive Institute (NPI), 2009-2015</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -79,46 +82,46 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$58,689.65 (227 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$27,257.28 (41 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$58,689.65 (227 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$27,257.28 (41 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Eileen Stauss, Federal Way</td><td>$1,250.31</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$1,238.15</td></tr>
-        <tr><td>Cameron Severns, University place</td><td>$1,200.00</td></tr>
-        <tr><td>David Cornfield, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Justice for All PAC, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Justice for All PAC, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Linda Cornfield, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>SEIU 775 Quality Care Committee, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Samuel McVeety, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Vanessa Oslund, Seattle</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Eileen Stauss, Federal Way</th><td>$1,250.31</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$1,238.15</td></tr>
+        <tr><th scope="row">Cameron Severns, University place</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">David Cornfield, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Justice for All PAC, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Justice for All PAC, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Linda Cornfield, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">SEIU 775 Quality Care Committee, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Samuel McVeety, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Vanessa Oslund, Seattle</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Tissot Solutions</td><td>fundraising consulting fee</td><td>$2,000.00</td></tr>
-        <tr><td>Tissot Solutions</td><td>fundraising consulting fee</td><td>$2,000.00</td></tr>
-        <tr><td>Tissot Solutions</td><td>fundraising consulting fee - June</td><td>$2,000.00</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$1,647.11</td></tr>
-        <tr><td>Tissot Solutions</td><td>fundraising consulting fee - July</td><td>$1,500.00</td></tr>
-        <tr><td>Tissot Solutions</td><td>fundraising consulting fee - Aug</td><td>$1,500.00</td></tr>
-        <tr><td>Lisa Monet Photography</td><td>photography</td><td>$1,047.85</td></tr>
-        <tr><td>Argo Strategies</td><td>Capitol City Press: printing 2500 doorbellers</td><td>$1,044.90</td></tr>
-        <tr><td>WA State Democratic Central Committee</td><td>voter file access (subvendor: NGPVan Inc)</td><td>$1,030.18</td></tr>
-        <tr><td>Tissot Solutions</td><td>fundraising consulting fee</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">Tissot Solutions</th><td>fundraising consulting fee</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">Tissot Solutions</th><td>fundraising consulting fee</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">Tissot Solutions</th><td>fundraising consulting fee - June</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$1,647.11</td></tr>
+        <tr><th scope="row">Tissot Solutions</th><td>fundraising consulting fee - July</td><td>$1,500.00</td></tr>
+        <tr><th scope="row">Tissot Solutions</th><td>fundraising consulting fee - Aug</td><td>$1,500.00</td></tr>
+        <tr><th scope="row">Lisa Monet Photography</th><td>photography</td><td>$1,047.85</td></tr>
+        <tr><th scope="row">Argo Strategies</th><td>Capitol City Press: printing 2500 doorbellers</td><td>$1,044.90</td></tr>
+        <tr><th scope="row">WA State Democratic Central Committee</th><td>voter file access (subvendor: NGPVan Inc)</td><td>$1,030.18</td></tr>
+        <tr><th scope="row">Tissot Solutions</th><td>fundraising consulting fee</td><td>$1,000.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -169,16 +172,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

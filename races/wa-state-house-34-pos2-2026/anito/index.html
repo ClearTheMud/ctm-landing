@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Mary Anito</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Mary Anito</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Mary Anito</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -82,37 +85,37 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$10,865.32 (33 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$6,990.67 (27 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$10,865.32 (33 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$6,990.67 (27 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Lozano David, Castle Hills</td><td>$1,200.00</td></tr>
-        <tr><td>Lozano David, Castle Hills</td><td>$1,200.00</td></tr>
-        <tr><td>Mary Anito</td><td>$746.00</td></tr>
-        <tr><td>Mary Anito</td><td>$684.66</td></tr>
-        <tr><td>Anito Lawrence, Chatham</td><td>$600.00</td></tr>
-        <tr><td>Mary Anito</td><td>$594.45</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$528.00</td></tr>
-        <tr><td>Fink Leonora, Colfax</td><td>$500.00</td></tr>
-        <tr><td>Holladay Jenny, seattle</td><td>$500.00</td></tr>
-        <tr><td>Hughes Amanda, Stillwater</td><td>$500.00</td></tr>
+        <tr><th scope="row">Lozano David, Castle Hills</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Lozano David, Castle Hills</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Mary Anito</th><td>$746.00</td></tr>
+        <tr><th scope="row">Mary Anito</th><td>$684.66</td></tr>
+        <tr><th scope="row">Anito Lawrence, Chatham</th><td>$600.00</td></tr>
+        <tr><th scope="row">Mary Anito</th><td>$594.45</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$528.00</td></tr>
+        <tr><th scope="row">Fink Leonora, Colfax</th><td>$500.00</td></tr>
+        <tr><th scope="row">Holladay Jenny, seattle</th><td>$500.00</td></tr>
+        <tr><th scope="row">Hughes Amanda, Stillwater</th><td>$500.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Mary Anito</td><td>Van file access</td><td>$1,030.18</td></tr>
-        <tr><td>Mary Anito</td><td>250 Yard Signs.  Total cost for signs was 1526.69 but deducted in kind loan for 594.45 for temp loan while deposits come through.</td><td>$932.24</td></tr>
-        <tr><td>Mary Anito</td><td>Play Place Kids
+        <tr><th scope="row">Mary Anito</th><td>Van file access</td><td>$1,030.18</td></tr>
+        <tr><th scope="row">Mary Anito</th><td>250 Yard Signs.  Total cost for signs was 1526.69 but deducted in kind loan for 594.45 for temp loan while deposits come through.</td><td>$932.24</td></tr>
+        <tr><th scope="row">Mary Anito</th><td>Play Place Kids
 3218 38th Ave SW
 Seattle, WA 98126
 Childcare May 26-29 endorsement meetings, campaign meetings, meeting preparation
@@ -120,15 +123,15 @@ Childcare May 19/20 - campaign meetings, endorsement completion
 Childcare May 11 &amp; 14 - Ferguson meeting, election support meetings, endorsement work
 Childcare May 7/8 to finish website and filing requirements, bank account setup
 Childcare May 4/5 to build website</td><td>$746.00</td></tr>
-        <tr><td>Mary Anito</td><td>Washington Secretary of State, PO Box 40229, Olympia, WA 98504-0229 Filing fees w/ WA SOS</td><td>$684.66</td></tr>
-        <tr><td>Mary Anito</td><td>Vistaprint 275 Wyman St, Waltham, MA, 02451. Portion of yard sign cost not covered w/ current cash on hand while awaiting deposits. Part of the purchase from Vistaprint for 250 signs.</td><td>$594.45</td></tr>
-        <tr><td>Mary Anito</td><td>34th District Democrats, 6523 California Avenue SW Box 183 Seattle, wa 98136 34th Dems annual Fundraiser Sponsorship</td><td>$500.00</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$443.16</td></tr>
-        <tr><td>Mary Anito</td><td>2000 Postcards</td><td>$403.08</td></tr>
-        <tr><td>Mary Anito</td><td>Chi K Photography - 8314 46th Ave SW, Seattle, WA 98136; Professional photos</td><td>$275.00</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$250.44</td></tr>
+        <tr><th scope="row">Mary Anito</th><td>Washington Secretary of State, PO Box 40229, Olympia, WA 98504-0229 Filing fees w/ WA SOS</td><td>$684.66</td></tr>
+        <tr><th scope="row">Mary Anito</th><td>Vistaprint 275 Wyman St, Waltham, MA, 02451. Portion of yard sign cost not covered w/ current cash on hand while awaiting deposits. Part of the purchase from Vistaprint for 250 signs.</td><td>$594.45</td></tr>
+        <tr><th scope="row">Mary Anito</th><td>34th District Democrats, 6523 California Avenue SW Box 183 Seattle, wa 98136 34th Dems annual Fundraiser Sponsorship</td><td>$500.00</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$443.16</td></tr>
+        <tr><th scope="row">Mary Anito</th><td>2000 Postcards</td><td>$403.08</td></tr>
+        <tr><th scope="row">Mary Anito</th><td>Chi K Photography - 8314 46th Ave SW, Seattle, WA 98136; Professional photos</td><td>$275.00</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$250.44</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -143,16 +146,20 @@ Childcare May 4/5 to build website</td><td>$746.00</td></tr>
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Steve Ewing</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Steve Ewing</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Steve Ewing</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -76,60 +79,60 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2025</td><td>County Council District 5 Charter Review Commissioner District 5 (General)</td><td>Lost (4 of 11)</td><td>WA SOS</td></tr>
-        <tr><td>2025</td><td>City Of Lake Stevens Council Position 6 (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2021</td><td>City Of Lake Stevens Council Position 6 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2019</td><td>City Of Lake Stevens Council Position 3 (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2025</th><td>County Council District 5 Charter Review Commissioner District 5 (General)</td><td>Lost (4 of 11)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2025</th><td>City Of Lake Stevens Council Position 6 (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2021</th><td>City Of Lake Stevens Council Position 6 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2019</th><td>City Of Lake Stevens Council Position 3 (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$126,932.78 (179 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$62,637.48 (76 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$126,932.78 (179 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$62,637.48 (76 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>SKAGIT COUNTY GOP, MOUNT VERNON</td><td>$7,000.00</td></tr>
-        <tr><td>House Republican Organizational Committee, Snohomish</td><td>$5,000.00</td></tr>
-        <tr><td>SKAGIT COUNTY GOP, MOUNT VERNON</td><td>$3,500.00</td></tr>
-        <tr><td>SKAGIT COUNTY GOP, MOUNT VERNON</td><td>$3,500.00</td></tr>
-        <tr><td>SKAGIT COUNTY GOP, MOUNT VERNON</td><td>$3,000.00</td></tr>
-        <tr><td>ASSOCIATED GENERAL CONTRACTORS OF WA BUILD PAC, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>Affordable Housing Council, Tumwater</td><td>$1,200.00</td></tr>
-        <tr><td>Affordable Housing Council, Tumwater</td><td>$1,200.00</td></tr>
-        <tr><td>Afscme Council 28, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>Afscme Council 28, Olympia</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">SKAGIT COUNTY GOP, MOUNT VERNON</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">House Republican Organizational Committee, Snohomish</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">SKAGIT COUNTY GOP, MOUNT VERNON</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">SKAGIT COUNTY GOP, MOUNT VERNON</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">SKAGIT COUNTY GOP, MOUNT VERNON</th><td>$3,000.00</td></tr>
+        <tr><th scope="row">ASSOCIATED GENERAL CONTRACTORS OF WA BUILD PAC, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Affordable Housing Council, Tumwater</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Affordable Housing Council, Tumwater</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Afscme Council 28, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Afscme Council 28, Olympia</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>SOLVD Inc</td><td>Programmatic Display Ads</td><td>$5,999.18</td></tr>
-        <tr><td>Print NW</td><td>14448 Qty 6x11 Mailers Printing</td><td>$3,814.28</td></tr>
-        <tr><td>SOLVD Inc</td><td>37255 QTY. text Ads 8/3-8/4</td><td>$3,254.60</td></tr>
-        <tr><td>USPS.COM</td><td>14448 Qty 6x11 Mailers Postage</td><td>$3,034.08</td></tr>
-        <tr><td>AB HAYS</td><td>Consulting services</td><td>$3,000.00</td></tr>
-        <tr><td>AB HAYS</td><td>Consulting Services</td><td>$3,000.00</td></tr>
-        <tr><td>AB HAYS</td><td>Consulting services</td><td>$2,838.16</td></tr>
-        <tr><td>AB HAYS</td><td>Creative Fee</td><td>$2,275.49</td></tr>
-        <tr><td>Print NW</td><td>Postage costs, mail permits, purchase of stamps</td><td>$2,155.10</td></tr>
-        <tr><td>Print NW</td><td>Printing 7500 Qty. Rack Cards</td><td>$1,891.29</td></tr>
+        <tr><th scope="row">SOLVD Inc</th><td>Programmatic Display Ads</td><td>$5,999.18</td></tr>
+        <tr><th scope="row">Print NW</th><td>14448 Qty 6x11 Mailers Printing</td><td>$3,814.28</td></tr>
+        <tr><th scope="row">SOLVD Inc</th><td>37255 QTY. text Ads 8/3-8/4</td><td>$3,254.60</td></tr>
+        <tr><th scope="row">USPS.COM</th><td>14448 Qty 6x11 Mailers Postage</td><td>$3,034.08</td></tr>
+        <tr><th scope="row">AB HAYS</th><td>Consulting services</td><td>$3,000.00</td></tr>
+        <tr><th scope="row">AB HAYS</th><td>Consulting Services</td><td>$3,000.00</td></tr>
+        <tr><th scope="row">AB HAYS</th><td>Consulting services</td><td>$2,838.16</td></tr>
+        <tr><th scope="row">AB HAYS</th><td>Creative Fee</td><td>$2,275.49</td></tr>
+        <tr><th scope="row">Print NW</th><td>Postage costs, mail permits, purchase of stamps</td><td>$2,155.10</td></tr>
+        <tr><th scope="row">Print NW</th><td>Printing 7500 Qty. Rack Cards</td><td>$1,891.29</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -144,16 +147,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

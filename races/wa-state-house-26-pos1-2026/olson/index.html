@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">David Olson</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>David Olson</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>David Olson</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -76,65 +79,65 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2025</td><td>Peninsula School District NO. 401 Director - District NO. 5 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2024</td><td>Superintendent of Public Instruction (Primary)</td><td>Lost (2 of 5)</td><td>WA SOS</td></tr>
-        <tr><td>2024</td><td>Superintendent of Public Instruction (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2021</td><td>Peninsula School District NO. 401 Director Dist. 5 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>County Council District NO. 7 County Council NO. 7 (Primary)</td><td>Lost (2 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>County Council District NO. 7 County Council NO. 7 (General)</td><td>Lost (2 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2017</td><td>Peninsula School District NO. 401 Director Dist. 5 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2015</td><td>County Council District NO. 7 Charter Review Commissioner - District 7, Position 2 (Primary)</td><td>Lost (2 of 8)</td><td>WA SOS</td></tr>
-        <tr><td>2015</td><td>County Council District NO. 7 Charter Review Commissioner - District 7, Position 2 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2025</th><td>Peninsula School District NO. 401 Director - District NO. 5 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Superintendent of Public Instruction (Primary)</td><td>Lost (2 of 5)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Superintendent of Public Instruction (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2021</th><td>Peninsula School District NO. 401 Director Dist. 5 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>County Council District NO. 7 County Council NO. 7 (Primary)</td><td>Lost (2 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>County Council District NO. 7 County Council NO. 7 (General)</td><td>Lost (2 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2017</th><td>Peninsula School District NO. 401 Director Dist. 5 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2015</th><td>County Council District NO. 7 Charter Review Commissioner - District 7, Position 2 (Primary)</td><td>Lost (2 of 8)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2015</th><td>County Council District NO. 7 Charter Review Commissioner - District 7, Position 2 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$202,059.47 (747 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$104,024.05 (233 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$202,059.47 (747 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$104,024.05 (233 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>House Republican Organizational Committee, Snohomish</td><td>$50,000.00</td></tr>
-        <tr><td>House Republican Organizational Committee, Olympia</td><td>$40,000.00</td></tr>
-        <tr><td>House Republican Organizational Committee, Olympia</td><td>$5,000.00</td></tr>
-        <tr><td>Pierce County GOP, Lakewood</td><td>$5,000.00</td></tr>
-        <tr><td>Barr Thomas, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Basler Doug, Kent</td><td>$1,200.00</td></tr>
-        <tr><td>Basler Lori, Kent</td><td>$1,200.00</td></tr>
-        <tr><td>CONNELLY ANGELA, Tacoma</td><td>$1,200.00</td></tr>
-        <tr><td>CONNELLY ANGELA, Tacoma</td><td>$1,200.00</td></tr>
-        <tr><td>CONNELLY JOHN, Tacoma</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">House Republican Organizational Committee, Snohomish</th><td>$50,000.00</td></tr>
+        <tr><th scope="row">House Republican Organizational Committee, Olympia</th><td>$40,000.00</td></tr>
+        <tr><th scope="row">House Republican Organizational Committee, Olympia</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">Pierce County GOP, Lakewood</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">Barr Thomas, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Basler Doug, Kent</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Basler Lori, Kent</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">CONNELLY ANGELA, Tacoma</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">CONNELLY ANGELA, Tacoma</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">CONNELLY JOHN, Tacoma</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Prologue Digital</td><td>Video production</td><td>$4,072.75</td></tr>
-        <tr><td>Outfront Media</td><td>Billboard Ad - S/L Hwy 16, .5 MI E/O Hwy 3 JCT W F/W (Display period: 6/29/26 - 7/26/26)</td><td>$3,800.00</td></tr>
-        <tr><td>Prologue Digital</td><td>Video production</td><td>$3,572.75</td></tr>
-        <tr><td>Prologue Digital</td><td>Digital/OTT Ads || Regions: 98337, 98314, 98312, 98366 || M - F 5am - 12 am || Airdates: 5/15 - 6/14 || Total Spots: 4</td><td>$3,400.00</td></tr>
-        <tr><td>Axiom</td><td>Postage for Mailer (10,148 ct)</td><td>$3,349.00</td></tr>
-        <tr><td>USPS</td><td>Postage Costs for Mailer (10,148 ct)</td><td>$3,349.00</td></tr>
-        <tr><td>Axiom</td><td>Mailer (10,148 ct)</td><td>$2,660.00</td></tr>
-        <tr><td>Print NW</td><td>Mailer (10,148 ct)</td><td>$2,660.00</td></tr>
-        <tr><td>Club @ The Boatyard</td><td>Catering for Campaign Kick-off on 2/26</td><td>$2,500.00</td></tr>
-        <tr><td>Prologue Digital</td><td>FLX/OTT Digital Ads (Airdates: 7/24 - 8/3)</td><td>$2,500.00</td></tr>
+        <tr><th scope="row">Prologue Digital</th><td>Video production</td><td>$4,072.75</td></tr>
+        <tr><th scope="row">Outfront Media</th><td>Billboard Ad - S/L Hwy 16, .5 MI E/O Hwy 3 JCT W F/W (Display period: 6/29/26 - 7/26/26)</td><td>$3,800.00</td></tr>
+        <tr><th scope="row">Prologue Digital</th><td>Video production</td><td>$3,572.75</td></tr>
+        <tr><th scope="row">Prologue Digital</th><td>Digital/OTT Ads || Regions: 98337, 98314, 98312, 98366 || M - F 5am - 12 am || Airdates: 5/15 - 6/14 || Total Spots: 4</td><td>$3,400.00</td></tr>
+        <tr><th scope="row">Axiom</th><td>Postage for Mailer (10,148 ct)</td><td>$3,349.00</td></tr>
+        <tr><th scope="row">USPS</th><td>Postage Costs for Mailer (10,148 ct)</td><td>$3,349.00</td></tr>
+        <tr><th scope="row">Axiom</th><td>Mailer (10,148 ct)</td><td>$2,660.00</td></tr>
+        <tr><th scope="row">Print NW</th><td>Mailer (10,148 ct)</td><td>$2,660.00</td></tr>
+        <tr><th scope="row">Club @ The Boatyard</th><td>Catering for Campaign Kick-off on 2/26</td><td>$2,500.00</td></tr>
+        <tr><th scope="row">Prologue Digital</th><td>FLX/OTT Digital Ads (Airdates: 7/24 - 8/3)</td><td>$2,500.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -149,16 +152,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Charles A. West Jr.</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,13 +60,13 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Charles A. West Jr. (known as Chuck West)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Key Peninsula, Pierce County, WA.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Party</td><td>Running as an independent in 2026. Ran for the same District 7 seat as a Republican in 2022.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>Retired Key Peninsula Fire Department battalion chief. Started as a volunteer in 1982, hired as a firefighter in 1986, and retired after nearly 40 years of service.; Small business owner.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Charles A. West Jr. (known as Chuck West)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Key Peninsula, Pierce County, WA.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Party</th><td>Running as an independent in 2026. Ran for the same District 7 seat as a Republican in 2022.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Retired Key Peninsula Fire Department battalion chief. Started as a volunteer in 1982, hired as a firefighter in 1986, and retired after nearly 40 years of service.; Small business owner.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -102,23 +105,23 @@ the year. </span></p><br/><br/>
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2022</td><td>Pierce County Council, District 7</td><td>Placed fifth in a five-candidate primary with about 8 percent of the vote</td><td>Research</td></tr>
+        <tr><th scope="row">2022</th><td>Pierce County Council, District 7</td><td>Placed fifth in a five-candidate primary with about 8 percent of the vote</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Taxes and Spending</td><td>Opposes raising taxes without a public vote. Frames the county&#x27;s issue as a spending problem rather than a revenue problem.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Fox Island Bridge Funding</td><td>Supports multi-source bridge funding through state and federal grants and county funds, while avoiding tolls.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Growth Management</td><td>Wants to protect rural character while accommodating growth. Advocates decentralizing county permitting offices into rural communities.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Homelessness</td><td>Emphasizes accountability for homeless services and improving public works access.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Taxes and Spending</th><td>Opposes raising taxes without a public vote. Frames the county&#x27;s issue as a spending problem rather than a revenue problem.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Fox Island Bridge Funding</th><td>Supports multi-source bridge funding through state and federal grants and county funds, while avoiding tolls.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Growth Management</th><td>Wants to protect rural character while accommodating growth. Advocates decentralizing county permitting offices into rural communities.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Homelessness</th><td>Emphasizes accountability for homeless services and improving public works access.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -149,16 +152,20 @@ the year. </span></p><br/><br/>
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

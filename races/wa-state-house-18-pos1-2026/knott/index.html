@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Randi L. Knott</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Randi L. Knott</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Randi L. Knott</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -77,57 +80,57 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2025</td><td>County Councilor District NO. 5 Charter Review Commissioner, District 5, Pos. 3 (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2025</th><td>County Councilor District NO. 5 Charter Review Commissioner, District 5, Pos. 3 (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$172,722.30 (173 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$45,571.02 (58 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$172,722.30 (173 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$45,571.02 (58 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>House Democratic Campaign Committee, Seattle</td><td>$50,000.00</td></tr>
-        <tr><td>House Democratic Campaign Committee, Seattle</td><td>$50,000.00</td></tr>
-        <tr><td>Washington Dems, Seattle</td><td>$5,000.00</td></tr>
-        <tr><td>18th LD Democratic Organization, Vancouver</td><td>$3,000.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$2,195.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$2,123.00</td></tr>
-        <tr><td>Clark County Democratic Central Committee, Vancouver</td><td>$2,000.00</td></tr>
-        <tr><td>Action Fund Naya, Portland</td><td>$1,200.00</td></tr>
-        <tr><td>Grey-Hatton Gretchen, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>Harry Truman Fund, Seattle</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">House Democratic Campaign Committee, Seattle</th><td>$50,000.00</td></tr>
+        <tr><th scope="row">House Democratic Campaign Committee, Seattle</th><td>$50,000.00</td></tr>
+        <tr><th scope="row">Washington Dems, Seattle</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">18th LD Democratic Organization, Vancouver</th><td>$3,000.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$2,195.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$2,123.00</td></tr>
+        <tr><th scope="row">Clark County Democratic Central Committee, Vancouver</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">Action Fund Naya, Portland</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Grey-Hatton Gretchen, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Harry Truman Fund, Seattle</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>CN4 Partners</td><td>Projected Digital banner ads for Primary Election (not yet placed as of 7/28)</td><td>$5,000.00</td></tr>
-        <tr><td>Estrada Daniel</td><td>Salaried pay for May services</td><td>$3,500.00</td></tr>
-        <tr><td>Estrada Daniel</td><td>Pay/salary for June campaign management</td><td>$3,500.00</td></tr>
-        <tr><td>CN4 Partners</td><td>General consulting services - June &amp; July</td><td>$3,025.00</td></tr>
-        <tr><td>Columbia Campaign Services</td><td>Fundraising services monthly- March services</td><td>$2,500.00</td></tr>
-        <tr><td>Estrada Daniel</td><td>Management and consulting services</td><td>$2,000.00</td></tr>
-        <tr><td>Pierucci-Gonzales Holly</td><td>Campaign manager pay Primary election help</td><td>$2,000.00</td></tr>
-        <tr><td>Estrada Daniel</td><td>MARCH - Management and consulting services</td><td>$1,500.00</td></tr>
-        <tr><td>Estrada Daniel</td><td>Management and consulting services</td><td>$1,500.00</td></tr>
-        <tr><td>WIX</td><td>Website domain buy &amp; build including campaign email</td><td>$1,282.80</td></tr>
+        <tr><th scope="row">CN4 Partners</th><td>Projected Digital banner ads for Primary Election (not yet placed as of 7/28)</td><td>$5,000.00</td></tr>
+        <tr><th scope="row">Estrada Daniel</th><td>Salaried pay for May services</td><td>$3,500.00</td></tr>
+        <tr><th scope="row">Estrada Daniel</th><td>Pay/salary for June campaign management</td><td>$3,500.00</td></tr>
+        <tr><th scope="row">CN4 Partners</th><td>General consulting services - June &amp; July</td><td>$3,025.00</td></tr>
+        <tr><th scope="row">Columbia Campaign Services</th><td>Fundraising services monthly- March services</td><td>$2,500.00</td></tr>
+        <tr><th scope="row">Estrada Daniel</th><td>Management and consulting services</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">Pierucci-Gonzales Holly</th><td>Campaign manager pay Primary election help</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">Estrada Daniel</th><td>MARCH - Management and consulting services</td><td>$1,500.00</td></tr>
+        <tr><th scope="row">Estrada Daniel</th><td>Management and consulting services</td><td>$1,500.00</td></tr>
+        <tr><th scope="row">WIX</th><td>Website domain buy &amp; build including campaign email</td><td>$1,282.80</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -142,16 +145,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

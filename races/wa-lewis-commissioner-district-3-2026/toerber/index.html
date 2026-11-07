@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Tim Toerber</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,15 +60,15 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Tim Toerber</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>108 Snowshoe Lane, Packwood, WA 98361</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Military Service</td><td>Served in the U.S. Army following his education at University of North Dakota</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Education</td><td>Studied aeronautics and technology at the University of North Dakota</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>U.S. Army service (post-education, duration unknown); Over 20 years of experience in the aviation industry; Port of Seattle, worked on ApronAI technology deployment at Seattle-Tacoma International Airport (2019-2021); Amazon Air, Senior Program Manager for Airport Affairs and Operations Strategy; Assaia, Vice President of Business Development, Americas (joined September 2023); Assaia, President, Americas (promoted January 28, 2025). Drives company growth strategy across the Americas, building partnerships with airlines, airports, and ground-handling teams.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Tim Toerber</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>108 Snowshoe Lane, Packwood, WA 98361</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Military Service</th><td>Served in the U.S. Army following his education at University of North Dakota</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Education</th><td>Studied aeronautics and technology at the University of North Dakota</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>U.S. Army service (post-education, duration unknown); Over 20 years of experience in the aviation industry; Port of Seattle, worked on ApronAI technology deployment at Seattle-Tacoma International Airport (2019-2021); Amazon Air, Senior Program Manager for Airport Affairs and Operations Strategy; Assaia, Vice President of Business Development, Americas (joined September 2023); Assaia, President, Americas (promoted January 28, 2025). Drives company growth strategy across the Americas, building partnerships with airlines, airports, and ground-handling teams.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -90,7 +93,7 @@
     <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">1 sourced findings. All sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model. No T4 claims included.</p>
 
     <div class="finding low">
-      <h4>Finding 3.1: Lives in Packwood, the most remote community in the district <span class="impact-badge impact-low">LOW</span></h4>
+      <h3>Finding 3.1: Lives in Packwood, the most remote community in the district <span class="impact-badge impact-low">LOW</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Toerber is the only candidate who lives in the far eastern portion of District 3 (Packwood). While Hadaller lives in the Morton area (also east county), Packwood is the most remote community in the district.</dd>
@@ -118,16 +121,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

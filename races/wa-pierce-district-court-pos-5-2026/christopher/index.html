@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Dwayne L. Christopher</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -46,14 +49,14 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Dwayne L. Christopher (campaigns as Dwayne Christopher)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Pierce County, Washington. Professional address of record is Pierce County District Court, 930 Tacoma Ave S, Tacoma, WA 98402.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan (judicial race)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>Juris Doctor, Seattle University School of Law. Bachelor of Arts, Morehouse College.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Employment</td><td>Judge, Pierce County District Court, Position 5 (sitting judge; WSBA license status Judicial with Pierce County District Court as employer of record).; Assumed the Pierce County District Court Position 5 seat around 2022. Exact appointment date and appointing authority not independently reconfirmed to a primary source.; Judicial Assistant, Pierce County Superior Court, approximately nine years, serving under Judge Brian Tollefson.; Attorney in private practice representing plaintiffs in personal injury and employment litigation; owner of a law office. Stated more than 17 years of legal experience as of 2016.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Dwayne L. Christopher (campaigns as Dwayne Christopher)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Pierce County, Washington. Professional address of record is Pierce County District Court, 930 Tacoma Ave S, Tacoma, WA 98402.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan (judicial race)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>Juris Doctor, Seattle University School of Law. Bachelor of Arts, Morehouse College.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Judge, Pierce County District Court, Position 5 (sitting judge; WSBA license status Judicial with Pierce County District Court as employer of record).; Assumed the Pierce County District Court Position 5 seat around 2022. Exact appointment date and appointing authority not independently reconfirmed to a primary source.; Judicial Assistant, Pierce County Superior Court, approximately nine years, serving under Judge Brian Tollefson.; Attorney in private practice representing plaintiffs in personal injury and employment litigation; owner of a law office. Stated more than 17 years of legal experience as of 2016.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -68,15 +71,15 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Pierce County District Court Judge Position 5</td><td>Pending (incumbent; no PDC committee located as of 2026-07-20)</td><td>Research</td></tr>
-        <tr><td>2022</td><td>District Court District Court NO. 5 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>City Of Tacoma Tacoma Municipal Court Pos. 3 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2016</td><td>Pierce County Superior Court Judge</td><td>Ran (unsuccessful) to succeed retiring Judge Brian Tollefson.</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>Pierce County District Court Judge Position 5</td><td>Pending (incumbent; no PDC committee located as of 2026-07-20)</td><td>Research</td></tr>
+        <tr><th scope="row">2022</th><td>District Court District Court NO. 5 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>City Of Tacoma Tacoma Municipal Court Pos. 3 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2016</th><td>Pierce County Superior Court Judge</td><td>Ran (unsuccessful) to succeed retiring Judge Brian Tollefson.</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
@@ -106,16 +109,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Roman Kilinkaridis</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -64,46 +67,46 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$17,098.56 (34 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$14,208.10 (23 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$17,098.56 (34 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$14,208.10 (23 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Roman Kilinkaridis</td><td>$1,993.56</td></tr>
-        <tr><td>Harris Brian, selah</td><td>$1,200.00</td></tr>
-        <tr><td>Mann Darla, Moses Lake</td><td>$1,200.00</td></tr>
-        <tr><td>Roman Kilinkaridis, Yakima</td><td>$1,200.00</td></tr>
-        <tr><td>Taha Mohammad, Yakima</td><td>$1,200.00</td></tr>
-        <tr><td>Eid Mahmoud, Yakima</td><td>$1,000.00</td></tr>
-        <tr><td>Italstone WA, Inc, Yakima</td><td>$1,000.00</td></tr>
-        <tr><td>Temple Brig, Yakima</td><td>$1,000.00</td></tr>
-        <tr><td>Valicoff Rob, Wapato</td><td>$1,000.00</td></tr>
-        <tr><td>saed magd, Yakima</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">Roman Kilinkaridis</th><td>$1,993.56</td></tr>
+        <tr><th scope="row">Harris Brian, selah</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Mann Darla, Moses Lake</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Roman Kilinkaridis, Yakima</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Taha Mohammad, Yakima</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Eid Mahmoud, Yakima</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Italstone WA, Inc, Yakima</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Temple Brig, Yakima</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Valicoff Rob, Wapato</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">saed magd, Yakima</th><td>$1,000.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Roman Kilinkaridis</td><td>Filing fees</td><td>$1,993.56</td></tr>
-        <tr><td>Roman Kilinkaridis</td><td>Reimbursement of voter app</td><td>$1,500.00</td></tr>
-        <tr><td>Sign Works</td><td>200  yard signs</td><td>$1,337.95</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$1,127.52</td></tr>
-        <tr><td>Presscats</td><td>100 Yard signs</td><td>$909.20</td></tr>
-        <tr><td>Great American Sign</td><td>16 banners</td><td>$784.45</td></tr>
-        <tr><td>Sign Works</td><td>100 Yard signs and stakes</td><td>$732.38</td></tr>
-        <tr><td>Sign Works</td><td>100 signs and stakes</td><td>$732.28</td></tr>
-        <tr><td>Make it Personal by Jeanie</td><td>Campaign items</td><td>$697.48</td></tr>
-        <tr><td>State Fair Park &amp; Event Center</td><td>Booth expense for the fair</td><td>$617.50</td></tr>
+        <tr><th scope="row">Roman Kilinkaridis</th><td>Filing fees</td><td>$1,993.56</td></tr>
+        <tr><th scope="row">Roman Kilinkaridis</th><td>Reimbursement of voter app</td><td>$1,500.00</td></tr>
+        <tr><th scope="row">Sign Works</th><td>200  yard signs</td><td>$1,337.95</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$1,127.52</td></tr>
+        <tr><th scope="row">Presscats</th><td>100 Yard signs</td><td>$909.20</td></tr>
+        <tr><th scope="row">Great American Sign</th><td>16 banners</td><td>$784.45</td></tr>
+        <tr><th scope="row">Sign Works</th><td>100 Yard signs and stakes</td><td>$732.38</td></tr>
+        <tr><th scope="row">Sign Works</th><td>100 signs and stakes</td><td>$732.28</td></tr>
+        <tr><th scope="row">Make it Personal by Jeanie</th><td>Campaign items</td><td>$697.48</td></tr>
+        <tr><th scope="row">State Fair Park &amp; Event Center</th><td>Booth expense for the fair</td><td>$617.50</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -117,14 +120,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

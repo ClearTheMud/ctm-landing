@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Chris Baldwin</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -64,46 +67,46 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$30,431.79 (58 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$16,786.50 (20 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$30,431.79 (58 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$16,786.50 (20 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>26 Promotions LLC, Liberty Lake</td><td>$1,200.00</td></tr>
-        <tr><td>Bertelsen Winery, Mount Vernon</td><td>$1,200.00</td></tr>
-        <tr><td>Hager Jon, Burlington</td><td>$1,200.00</td></tr>
-        <tr><td>Hager Realty Services, Monroe</td><td>$1,200.00</td></tr>
-        <tr><td>Lewis Tim, Bow</td><td>$1,200.00</td></tr>
-        <tr><td>Luvera Lita, Gig Harbor</td><td>$1,200.00</td></tr>
-        <tr><td>Luvera Paul, Gig Harbor</td><td>$1,200.00</td></tr>
-        <tr><td>Rudeen Development LLC, Liberty Lake</td><td>$1,200.00</td></tr>
-        <tr><td>Rudeen Kevin, Burlington</td><td>$1,200.00</td></tr>
-        <tr><td>Rudeen Management Inc., Liberty Lake</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">26 Promotions LLC, Liberty Lake</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Bertelsen Winery, Mount Vernon</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Hager Jon, Burlington</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Hager Realty Services, Monroe</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Lewis Tim, Bow</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Luvera Lita, Gig Harbor</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Luvera Paul, Gig Harbor</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Rudeen Development LLC, Liberty Lake</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Rudeen Kevin, Burlington</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Rudeen Management Inc., Liberty Lake</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Skagit County Auditor</td><td>Filing fees</td><td>$2,018.41</td></tr>
-        <tr><td>Chicken Foot T-Shirt Co</td><td>T-Shirt Printing and Garment Embroidery: 5 youth xsm, 5 youth xl, 4 adult small, 8 adult medium, 20 adult large, 30 adult xl, 30 adult xxl, 10 adult xxxl, 1 adult 6xl, 5 embroidered polos, 3 embroidered 1/4 zip, digitizing expense, sales tax</td><td>$1,550.65</td></tr>
-        <tr><td>Lithtex NW</td><td>10,000 Rack Cards, printing, shipping, tax</td><td>$1,265.56</td></tr>
-        <tr><td>Bertelsen Winery</td><td>Event Space Rental for Kickoff</td><td>$1,200.00</td></tr>
-        <tr><td>Hager Jon</td><td>Purchased from JY Industries 3783 Upper Samish Rd Sedro Woolley WA 98284: 148 24x18 signs with stakes, sales tax</td><td>$1,200.00</td></tr>
-        <tr><td>Rudeen Kevin</td><td>Purchased from JY Industries 3783 Upper Samish Rd. Sedro Woolley WA 98284: 148 18x24 signs with stakes, sales tax</td><td>$1,200.00</td></tr>
-        <tr><td>Hager Jon</td><td>Purchased from JY Industries 3783 Upper Samish Rd. Sedro Woolley WA 98284: 27 24x18 signs with stakes, 10 96x48 signs, sales tax</td><td>$1,177.81</td></tr>
-        <tr><td>Bertelsen Winery</td><td>Event Space Rental for Kickoff</td><td>$1,100.00</td></tr>
-        <tr><td>Rudeen Kevin</td><td>Purchased from JY Industries 3783 Upper Samish Rd. Sedro Woolley WA 98284: 132 18x24 signs with stakes, sales tax</td><td>$1,082.70</td></tr>
-        <tr><td>Hager Realty Services</td><td>Skagit Speedway Welcome Center Advertising Sign Placement</td><td>$800.00</td></tr>
+        <tr><th scope="row">Skagit County Auditor</th><td>Filing fees</td><td>$2,018.41</td></tr>
+        <tr><th scope="row">Chicken Foot T-Shirt Co</th><td>T-Shirt Printing and Garment Embroidery: 5 youth xsm, 5 youth xl, 4 adult small, 8 adult medium, 20 adult large, 30 adult xl, 30 adult xxl, 10 adult xxxl, 1 adult 6xl, 5 embroidered polos, 3 embroidered 1/4 zip, digitizing expense, sales tax</td><td>$1,550.65</td></tr>
+        <tr><th scope="row">Lithtex NW</th><td>10,000 Rack Cards, printing, shipping, tax</td><td>$1,265.56</td></tr>
+        <tr><th scope="row">Bertelsen Winery</th><td>Event Space Rental for Kickoff</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Hager Jon</th><td>Purchased from JY Industries 3783 Upper Samish Rd Sedro Woolley WA 98284: 148 24x18 signs with stakes, sales tax</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Rudeen Kevin</th><td>Purchased from JY Industries 3783 Upper Samish Rd. Sedro Woolley WA 98284: 148 18x24 signs with stakes, sales tax</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Hager Jon</th><td>Purchased from JY Industries 3783 Upper Samish Rd. Sedro Woolley WA 98284: 27 24x18 signs with stakes, 10 96x48 signs, sales tax</td><td>$1,177.81</td></tr>
+        <tr><th scope="row">Bertelsen Winery</th><td>Event Space Rental for Kickoff</td><td>$1,100.00</td></tr>
+        <tr><th scope="row">Rudeen Kevin</th><td>Purchased from JY Industries 3783 Upper Samish Rd. Sedro Woolley WA 98284: 132 18x24 signs with stakes, sales tax</td><td>$1,082.70</td></tr>
+        <tr><th scope="row">Hager Realty Services</th><td>Skagit Speedway Welcome Center Advertising Sign Placement</td><td>$800.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -117,14 +120,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

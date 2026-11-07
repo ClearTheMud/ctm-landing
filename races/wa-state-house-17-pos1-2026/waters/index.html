@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Kevin Waters</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Kevin Waters</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Kevin Waters</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -76,62 +79,62 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2024</td><td>Legislative District 17 - State Representative Pos. 1 (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2024</td><td>Legislative District 17 - State Representative Pos. 1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Legislative District 17 - State Representative Pos. 1 (Primary)</td><td>Lost (2 of 5)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Legislative District 17 - State Representative Pos. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2017</td><td>Port District (overall) Commissioner #1 (General)</td><td>Won (unopposed)</td><td>WA SOS</td></tr>
-        <tr><td>2015</td><td>Port District (overall) Commissioner #1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Legislative District 17 - State Representative Pos. 1 (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Legislative District 17 - State Representative Pos. 1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Legislative District 17 - State Representative Pos. 1 (Primary)</td><td>Lost (2 of 5)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Legislative District 17 - State Representative Pos. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2017</th><td>Port District (overall) Commissioner #1 (General)</td><td>Won (unopposed)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2015</th><td>Port District (overall) Commissioner #1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$398,697.87 (220 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$113,256.81 (91 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$398,697.87 (220 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$113,256.81 (91 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Senate Republican Campaign Committee, Olympia</td><td>$70,000.00</td></tr>
-        <tr><td>House Republican Organization Committee, Snohomish</td><td>$65,000.00</td></tr>
-        <tr><td>House Republican Organization Committee, Snohomish</td><td>$40,000.00</td></tr>
-        <tr><td>Senate Republican Campaign Committee, Olympia</td><td>$30,000.00</td></tr>
-        <tr><td>House Republican Organization Committee, Snohomish</td><td>$20,000.00</td></tr>
-        <tr><td>Evergreen Leadership Fund, Snohomish</td><td>$10,000.00</td></tr>
-        <tr><td>ABC WA PAC, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>ABC WA PAC, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>ALTRIA CLIENT SERVICES LLC, Richmond</td><td>$1,200.00</td></tr>
-        <tr><td>ASSOCIATED GENERAL CONTRACTORS OF WASHINGTON, Seattle</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Senate Republican Campaign Committee, Olympia</th><td>$70,000.00</td></tr>
+        <tr><th scope="row">House Republican Organization Committee, Snohomish</th><td>$65,000.00</td></tr>
+        <tr><th scope="row">House Republican Organization Committee, Snohomish</th><td>$40,000.00</td></tr>
+        <tr><th scope="row">Senate Republican Campaign Committee, Olympia</th><td>$30,000.00</td></tr>
+        <tr><th scope="row">House Republican Organization Committee, Snohomish</th><td>$20,000.00</td></tr>
+        <tr><th scope="row">Evergreen Leadership Fund, Snohomish</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">ABC WA PAC, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">ABC WA PAC, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">ALTRIA CLIENT SERVICES LLC, Richmond</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">ASSOCIATED GENERAL CONTRACTORS OF WASHINGTON, Seattle</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>H2H Strategies</td><td>Mailers and postage</td><td>$22,706.61</td></tr>
-        <tr><td>WATERS KEVIN R</td><td>Remaining Primary funds transferred to Surplus account</td><td>$19,977.31</td></tr>
-        <tr><td>DUCK UP PRODUCTIONS</td><td>Video production</td><td>$6,000.00</td></tr>
-        <tr><td>DUCK UP PRODUCTIONS</td><td>Ads</td><td>$6,000.00</td></tr>
-        <tr><td>OPTIMIST PRINTERS</td><td>Printing</td><td>$4,325.36</td></tr>
-        <tr><td>TUCKER JASON</td><td>Management and consulting services</td><td>$3,000.00</td></tr>
-        <tr><td>WATERS KEVIN R</td><td>Rent</td><td>$2,975.00</td></tr>
-        <tr><td>WATERS KEVIN R</td><td>Rent</td><td>$2,950.00</td></tr>
-        <tr><td>WATERS KEVIN R</td><td>Maintenance</td><td>$2,899.98</td></tr>
-        <tr><td>Bradley Cindy</td><td>Computer</td><td>$2,500.00</td></tr>
+        <tr><th scope="row">H2H Strategies</th><td>Mailers and postage</td><td>$22,706.61</td></tr>
+        <tr><th scope="row">WATERS KEVIN R</th><td>Remaining Primary funds transferred to Surplus account</td><td>$19,977.31</td></tr>
+        <tr><th scope="row">DUCK UP PRODUCTIONS</th><td>Video production</td><td>$6,000.00</td></tr>
+        <tr><th scope="row">DUCK UP PRODUCTIONS</th><td>Ads</td><td>$6,000.00</td></tr>
+        <tr><th scope="row">OPTIMIST PRINTERS</th><td>Printing</td><td>$4,325.36</td></tr>
+        <tr><th scope="row">TUCKER JASON</th><td>Management and consulting services</td><td>$3,000.00</td></tr>
+        <tr><th scope="row">WATERS KEVIN R</th><td>Rent</td><td>$2,975.00</td></tr>
+        <tr><th scope="row">WATERS KEVIN R</th><td>Rent</td><td>$2,950.00</td></tr>
+        <tr><th scope="row">WATERS KEVIN R</th><td>Maintenance</td><td>$2,899.98</td></tr>
+        <tr><th scope="row">Bradley Cindy</th><td>Computer</td><td>$2,500.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -146,16 +149,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

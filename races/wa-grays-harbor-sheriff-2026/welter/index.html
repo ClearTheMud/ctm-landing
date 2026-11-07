@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Edward Welter</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,16 +60,16 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Edward C. Welter</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Westport, Washington (PO BOX 2216, WESTPORT, WA 98595)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>States No Party Preference</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Military Service</td><td>Joined the U.S. Coast Guard in 2010. Requested and received assignment to Westport station in 2013.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Family</td><td>Born in Tacoma, Washington to Chuck and Joan Welter. Family has lived in Puget Sound and Washington coastal areas for several generations. Uncle introduced him to Westport at age 16 and taught him to surf.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Education</td><td>Bachelor of Economics, Pacific Lutheran University. While completing degree, spent three months in Namibia researching effects of land repatriation policies. Presented research at the 2006 Western Economics Association International Conference.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>U.S. Coast Guard, enlisted (2010-approximately 2016). Stationed at Westport from 2013.; Washington Fish and Wildlife Officer, assigned to Westport permanently (after Coast Guard enlistment); Deputy Sheriff / Resident Deputy, Grays Harbor County Sheriff&#x27;s Office, South Beach area (lateralled in 2018). Duties include Narcotics K9 Handler, Critical Response Unit member, Fire Investigator, and Defensive Tactics Instructor.; Detective, Grays Harbor County Sheriff&#x27;s Office (current rank); Mayor of Westport, Washington (elected 2023, term expires December 31, 2027); Board Member, Public Hospital District #2 (appointed October 28, 2025 to fill vacancy from Michael Bruce&#x27;s death)</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Edward C. Welter</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Westport, Washington (PO BOX 2216, WESTPORT, WA 98595)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>States No Party Preference</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Military Service</th><td>Joined the U.S. Coast Guard in 2010. Requested and received assignment to Westport station in 2013.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Family</th><td>Born in Tacoma, Washington to Chuck and Joan Welter. Family has lived in Puget Sound and Washington coastal areas for several generations. Uncle introduced him to Westport at age 16 and taught him to surf.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Education</th><td>Bachelor of Economics, Pacific Lutheran University. While completing degree, spent three months in Namibia researching effects of land repatriation policies. Presented research at the 2006 Western Economics Association International Conference.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>U.S. Coast Guard, enlisted (2010-approximately 2016). Stationed at Westport from 2013.; Washington Fish and Wildlife Officer, assigned to Westport permanently (after Coast Guard enlistment); Deputy Sheriff / Resident Deputy, Grays Harbor County Sheriff&#x27;s Office, South Beach area (lateralled in 2018). Duties include Narcotics K9 Handler, Critical Response Unit member, Fire Investigator, and Defensive Tactics Instructor.; Detective, Grays Harbor County Sheriff&#x27;s Office (current rank); Mayor of Westport, Washington (elected 2023, term expires December 31, 2027); Board Member, Public Hospital District #2 (appointed October 28, 2025 to fill vacancy from Michael Bruce&#x27;s death)</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -85,67 +88,67 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2025</td><td>Public Hospital District #2, Position 2</td><td>Lost narrowly, Kyle Pauley 50.67% (5,507) vs Welter 48.68% (5,290). Had been appointed to fill vacancy from Michael Bruce&#x27;s death.</td><td>Research</td></tr>
-        <tr><td>2023</td><td>Mayor of Westport</td><td>Won election</td><td>Research</td></tr>
+        <tr><th scope="row">2025</th><td>Public Hospital District #2, Position 2</td><td>Lost narrowly, Kyle Pauley 50.67% (5,507) vs Welter 48.68% (5,290). Had been appointed to fill vacancy from Michael Bruce&#x27;s death.</td><td>Research</td></tr>
+        <tr><th scope="row">2023</th><td>Mayor of Westport</td><td>Won election</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Law Enforcement Reform</td><td>Running against his current boss, incumbent Sheriff Wallace. Positions not yet detailed in public media coverage.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Law Enforcement Reform</th><td>Running against his current boss, incumbent Sheriff Wallace. Positions not yet detailed in public media coverage.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$40,182.39 (88 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$22,931.49 (33 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$40,182.39 (88 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$22,931.49 (33 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Edward Welter</td><td>$3,788.49</td></tr>
-        <tr><td>Edward Welter</td><td>$1,957.00</td></tr>
-        <tr><td>Bale Ben, Aberdeen</td><td>$1,200.00</td></tr>
-        <tr><td>Marks William, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Marks William, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Ocean Gold Seafoods, Westport</td><td>$1,200.00</td></tr>
-        <tr><td>Quigg Kathleen, Aberdeen</td><td>$1,200.00</td></tr>
-        <tr><td>Quigg Patrick, Aberdeen</td><td>$1,200.00</td></tr>
-        <tr><td>Quigg Timothy, Tacoma</td><td>$1,200.00</td></tr>
-        <tr><td>Rydman Mark, Olympia</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Edward Welter</th><td>$3,788.49</td></tr>
+        <tr><th scope="row">Edward Welter</th><td>$1,957.00</td></tr>
+        <tr><th scope="row">Bale Ben, Aberdeen</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Marks William, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Marks William, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Ocean Gold Seafoods, Westport</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Quigg Kathleen, Aberdeen</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Quigg Patrick, Aberdeen</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Quigg Timothy, Tacoma</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Rydman Mark, Olympia</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Edward Welter</td><td>Jacknut - Signs (150 yard signs, 6 banners, 20 4x8 signs)</td><td>$3,788.49</td></tr>
-        <tr><td>Jacknut</td><td>150 Yard Signs, 20 4x8 Signs, 3 3x6 Banners</td><td>$3,410.02</td></tr>
-        <tr><td>Jacknut</td><td>300 Yard Signs</td><td>$2,467.21</td></tr>
-        <tr><td>Edward Welter</td><td>Filing fees</td><td>$1,957.00</td></tr>
-        <tr><td>Connoisseur Media</td><td>Radio Ads 4x/Day on KXRO, KIX95.3, 104.7KDUX, July 22 - Aug 4 2026</td><td>$1,806.00</td></tr>
-        <tr><td>Pacific Northwest Printworks</td><td>100 T-Shirts</td><td>$1,439.86</td></tr>
-        <tr><td>Jacknut</td><td>Signs (10 4x8 signs)</td><td>$1,042.15</td></tr>
-        <tr><td>PromoDirect</td><td>300 Bags &amp; 300 Pens - Customized</td><td>$745.95</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$676.91</td></tr>
-        <tr><td>Jacknut</td><td>25 T-Shirts</td><td>$537.29</td></tr>
+        <tr><th scope="row">Edward Welter</th><td>Jacknut - Signs (150 yard signs, 6 banners, 20 4x8 signs)</td><td>$3,788.49</td></tr>
+        <tr><th scope="row">Jacknut</th><td>150 Yard Signs, 20 4x8 Signs, 3 3x6 Banners</td><td>$3,410.02</td></tr>
+        <tr><th scope="row">Jacknut</th><td>300 Yard Signs</td><td>$2,467.21</td></tr>
+        <tr><th scope="row">Edward Welter</th><td>Filing fees</td><td>$1,957.00</td></tr>
+        <tr><th scope="row">Connoisseur Media</th><td>Radio Ads 4x/Day on KXRO, KIX95.3, 104.7KDUX, July 22 - Aug 4 2026</td><td>$1,806.00</td></tr>
+        <tr><th scope="row">Pacific Northwest Printworks</th><td>100 T-Shirts</td><td>$1,439.86</td></tr>
+        <tr><th scope="row">Jacknut</th><td>Signs (10 4x8 signs)</td><td>$1,042.15</td></tr>
+        <tr><th scope="row">PromoDirect</th><td>300 Bags &amp; 300 Pens - Customized</td><td>$745.95</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$676.91</td></tr>
+        <tr><th scope="row">Jacknut</th><td>25 T-Shirts</td><td>$537.29</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <!-- VULNERABILITY FINDINGS -->
@@ -155,7 +158,7 @@
     <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">2 sourced findings. All sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model. No T4 claims included.</p>
 
     <div class="finding low">
-      <h4>Finding 5.1: Runs against his current supervisor, the incumbent sheriff <span class="impact-badge impact-low">LOW</span></h4>
+      <h3>Finding 5.1: Runs against his current supervisor, the incumbent sheriff <span class="impact-badge impact-low">LOW</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Welter is a GHCSO detective running against incumbent Sheriff Wallace, who is in his chain of command. There is no public evidence of union endorsement or organized internal support for his candidacy.</dd>
@@ -172,7 +175,7 @@
     </div>
 
     <div class="finding moderate">
-      <h4>Finding 5.2: No command rank in about eight years at the sheriff&#x27;s office <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 5.2: No command rank in about eight years at the sheriff&#x27;s office <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Welter joined GHCSO in 2018 as a resident deputy for the South Beach area and currently serves as a detective. He has about eight years of county law enforcement experience and no documented supervisory or command rank within the sheriff&#x27;s office. His earlier law enforcement work was as a Fish and Wildlife officer.</dd>
@@ -202,16 +205,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

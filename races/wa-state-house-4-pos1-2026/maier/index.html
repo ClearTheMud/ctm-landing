@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Trent Maier</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Trent Maier</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Trent Maier</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -76,46 +79,46 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$36,185.30 (70 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$22,234.11 (37 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$36,185.30 (70 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$22,234.11 (37 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Avista Corp., Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>Avista Corp., Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>BUILD East PAC, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>BUILD East PAC, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>Brooks Randy, San Angelo</td><td>$1,200.00</td></tr>
-        <tr><td>Delta Dental, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Hester Gordon, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>Inland Power and Light Company, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>Kaiser Aluminum, Franklin</td><td>$1,200.00</td></tr>
-        <tr><td>Kuney Mary, Spokane</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Avista Corp., Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Avista Corp., Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">BUILD East PAC, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">BUILD East PAC, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Brooks Randy, San Angelo</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Delta Dental, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Hester Gordon, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Inland Power and Light Company, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Kaiser Aluminum, Franklin</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Kuney Mary, Spokane</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Echo Canyon Consulting, LLC</td><td>Mailer Postage (16,831 ct)</td><td>$6,227.47</td></tr>
-        <tr><td>Echo Canyon Consulting, LLC</td><td>Mailer (16,831 ct)</td><td>$4,335.67</td></tr>
-        <tr><td>PressCats, Inc.</td><td>18&quot;x24&quot; Campaign Signs (250 ct)</td><td>$1,342.50</td></tr>
-        <tr><td>PressCats, Inc.</td><td>48&quot;x48&quot; Campaign Signs (25 ct)</td><td>$1,334.43</td></tr>
-        <tr><td>Whiskey Barrel Cider Company LLC (DBA Trailbreaker Cider)</td><td>Event Catering</td><td>$1,200.00</td></tr>
-        <tr><td>Echo Canyon Consulting, LLC</td><td>Mailer design services</td><td>$1,000.00</td></tr>
-        <tr><td>Politifast</td><td>Voter Text Messages (17,704 ct)</td><td>$931.23</td></tr>
-        <tr><td>Politifast</td><td>Voter Text Messages (16,791 ct)</td><td>$755.60</td></tr>
-        <tr><td>Echo Canyon Consulting, LLC</td><td>Shipping fee</td><td>$750.00</td></tr>
-        <tr><td>Trent Maier</td><td>Washington State Secretary of State (Olympia, WA): Filing fee</td><td>$676.88</td></tr>
+        <tr><th scope="row">Echo Canyon Consulting, LLC</th><td>Mailer Postage (16,831 ct)</td><td>$6,227.47</td></tr>
+        <tr><th scope="row">Echo Canyon Consulting, LLC</th><td>Mailer (16,831 ct)</td><td>$4,335.67</td></tr>
+        <tr><th scope="row">PressCats, Inc.</th><td>18&quot;x24&quot; Campaign Signs (250 ct)</td><td>$1,342.50</td></tr>
+        <tr><th scope="row">PressCats, Inc.</th><td>48&quot;x48&quot; Campaign Signs (25 ct)</td><td>$1,334.43</td></tr>
+        <tr><th scope="row">Whiskey Barrel Cider Company LLC (DBA Trailbreaker Cider)</th><td>Event Catering</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Echo Canyon Consulting, LLC</th><td>Mailer design services</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">Politifast</th><td>Voter Text Messages (17,704 ct)</td><td>$931.23</td></tr>
+        <tr><th scope="row">Politifast</th><td>Voter Text Messages (16,791 ct)</td><td>$755.60</td></tr>
+        <tr><th scope="row">Echo Canyon Consulting, LLC</th><td>Shipping fee</td><td>$750.00</td></tr>
+        <tr><th scope="row">Trent Maier</th><td>Washington State Secretary of State (Olympia, WA): Filing fee</td><td>$676.88</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -130,16 +133,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

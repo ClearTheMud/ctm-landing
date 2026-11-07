@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Bettina ShoQwa Gese</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,14 +60,14 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Bettina ShoQwa Gese, listed with the PDC as Bettina ShoQwa Gese (Bettina Gese).</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Tacoma area, Pierce County. Campaign describes raising a family in Pierce County.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan office. Pierce County Council races carry no party on the ballot. Gese registered a Republican party preference with the PDC.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>No formal educational credentials are stated on her campaign website.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Employment</td><td>Licensed real estate agent working in the Tacoma area. Listed as a Realtor affiliated with real estate brokerages including HomeSmart Real Estate Associates in Washington.; Campaign describes her as having built businesses and worked tough jobs.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Bettina ShoQwa Gese, listed with the PDC as Bettina ShoQwa Gese (Bettina Gese).</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Tacoma area, Pierce County. Campaign describes raising a family in Pierce County.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan office. Pierce County Council races carry no party on the ballot. Gese registered a Republican party preference with the PDC.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>No formal educational credentials are stated on her campaign website.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Licensed real estate agent working in the Tacoma area. Listed as a Realtor affiliated with real estate brokerages including HomeSmart Real Estate Associates in Washington.; Campaign describes her as having built businesses and worked tough jobs.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -79,14 +82,14 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Taxes and Affordability</td><td>Says she would push back on unnecessary tax increases, protect working families from rising costs, and ensure county government lives within its means.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Public Safety</td><td>Supports law enforcement and first responders, with a stated focus on accountability and safe neighborhoods.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Small Business and Regulation</td><td>Wants to cut red tape and reduce regulations so local businesses can grow.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Housing</td><td>Supports increasing housing supply and streamlining permitting.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Infrastructure</td><td>Prioritizes completing the Canyon Road Project, the War Memorial Bridge, and Milroy Bridge repairs to reduce congestion, improve roadway safety, and support freight access between the Port of Tacoma and Interstate 5.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Taxes and Affordability</th><td>Says she would push back on unnecessary tax increases, protect working families from rising costs, and ensure county government lives within its means.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Public Safety</th><td>Supports law enforcement and first responders, with a stated focus on accountability and safe neighborhoods.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Small Business and Regulation</th><td>Wants to cut red tape and reduce regulations so local businesses can grow.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Housing</th><td>Supports increasing housing supply and streamlining permitting.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Infrastructure</th><td>Prioritizes completing the Canyon Road Project, the War Memorial Bridge, and Milroy Bridge repairs to reduce congestion, improve roadway safety, and support freight access between the Port of Tacoma and Interstate 5.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -128,16 +131,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

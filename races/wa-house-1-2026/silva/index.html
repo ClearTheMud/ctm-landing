@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -27,6 +28,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Mary Silva</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -55,14 +58,14 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Mary Silva</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Mill Creek, Snohomish County, Washington (98082). Filing lists 15833 Mill Creek Boulevard, P.O. Box 13181.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>Bachelor&#x27;s degree, Western Washington University (2003); graduate degree, Washington State University (2006); degree from Salus University (2009).</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>Career experience as an audiologist.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Mary Silva</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Mill Creek, Snohomish County, Washington (98082). Filing lists 15833 Mill Creek Boulevard, P.O. Box 13181.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>Bachelor&#x27;s degree, Western Washington University (2003); graduate degree, Washington State University (2006); degree from Salus University (2009).</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Career experience as an audiologist.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -77,50 +80,50 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>U.S. House, WA Congressional District 1 (Primary, Aug 4)</td><td>Filed as the Republican candidate. Challenging incumbent Rep. Suzan DelBene (D) in the top-two primary. Other filed candidates include Benjamin Kincaid (D), Bryce Nickel (D), Catherine Hildebrand (D), Hunter Gordon (D), and James Etzkorn (I).</td><td>Research</td></tr>
-        <tr><td>2024</td><td>U.S. House, WA Congressional District 1 (Primary, Aug 6)</td><td>Ran as a Republican in the top-two primary. Did not advance. Incumbent Suzan DelBene (D) and Jeb Brewer (R) advanced to the general. Silva drew roughly 6 to 7 percent across the district (for example 7,885 votes, 7.42 percent, in Snohomish County and 3,454 votes, 5.14 percent, in King County).</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>U.S. House, WA Congressional District 1 (Primary, Aug 4)</td><td>Filed as the Republican candidate. Challenging incumbent Rep. Suzan DelBene (D) in the top-two primary. Other filed candidates include Benjamin Kincaid (D), Bryce Nickel (D), Catherine Hildebrand (D), Hunter Gordon (D), and James Etzkorn (I).</td><td>Research</td></tr>
+        <tr><th scope="row">2024</th><td>U.S. House, WA Congressional District 1 (Primary, Aug 6)</td><td>Ran as a Republican in the top-two primary. Did not advance. Incumbent Suzan DelBene (D) and Jeb Brewer (R) advanced to the general. Silva drew roughly 6 to 7 percent across the district (for example 7,885 votes, 7.42 percent, in Snohomish County and 3,454 votes, 5.14 percent, in King County).</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$8,433.70</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Total Spent</td><td>$7,435.97</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Total Raised</th><td>$8,433.70</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Total Spent</th><td>$7,435.97</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">Source: Federal Election Commission.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>SILVA, MARY</td><td>$13,143.23</td></tr>
-        <tr><td>BRENNAN, KATHERINE</td><td>$1,000.00</td></tr>
-        <tr><td>GELDENHUYS, ALLAN</td><td>$250.00</td></tr>
-        <tr><td>QUANTRILLE, BILL</td><td>$250.00</td></tr>
-        <tr><td>LUND, SUSAN READE</td><td>$250.00</td></tr>
+        <tr><th scope="row">SILVA, MARY</th><td>$13,143.23</td></tr>
+        <tr><th scope="row">BRENNAN, KATHERINE</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">GELDENHUYS, ALLAN</th><td>$250.00</td></tr>
+        <tr><th scope="row">QUANTRILLE, BILL</th><td>$250.00</td></tr>
+        <tr><th scope="row">LUND, SUSAN READE</th><td>$250.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
     <p style="margin-bottom:12px; font-style:italic; color:var(--gray-dark);">Largest disbursements reported to the FEC for the current cycle, newest cycle only. This is not a complete ledger and does not sum to total spent.</p>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th><th>Date</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th><th scope="col">Date</th></tr></thead>
       <tbody>
-        <tr><td>PINNACLE PRINTING</td><td>SIGNS</td><td>$3,140.70</td><td>2026-09-20</td></tr>
-        <tr><td>MARY SILVA FOR CONGRESS</td><td>FILING FEE TO WA SECRETARY OF STATE ELECTIONS OFFICE</td><td>$1,740.00</td><td>2026-05-08</td></tr>
-        <tr><td>EVERGREEN PRINTING &amp; GRAPHICS</td><td></td><td>$1,411.12</td><td>2026-09-25</td></tr>
-        <tr><td>MARY SILVA FOR CONGRESS</td><td>CAMPAIGN MATERIALS</td><td>$428.61</td><td>2026-06-23</td></tr>
-        <tr><td>MARY SILVA FOR CONGRESS</td><td>X.COM</td><td>$40.00</td><td>2026-06-19</td></tr>
-        <tr><td>MARY SILVA FOR CONGRESS</td><td>DISRUPTIVE STRATEGIES WEBSITE</td><td>$36.90</td><td>2026-06-16</td></tr>
-        <tr><td>MARY SILVA FOR CONGRESS</td><td>DISRUPTIVE STRATEGIES</td><td>$36.90</td><td>2026-06-16</td></tr>
+        <tr><th scope="row">PINNACLE PRINTING</th><td>SIGNS</td><td>$3,140.70</td><td>2026-09-20</td></tr>
+        <tr><th scope="row">MARY SILVA FOR CONGRESS</th><td>FILING FEE TO WA SECRETARY OF STATE ELECTIONS OFFICE</td><td>$1,740.00</td><td>2026-05-08</td></tr>
+        <tr><th scope="row">EVERGREEN PRINTING &amp; GRAPHICS</th><td></td><td>$1,411.12</td><td>2026-09-25</td></tr>
+        <tr><th scope="row">MARY SILVA FOR CONGRESS</th><td>CAMPAIGN MATERIALS</td><td>$428.61</td><td>2026-06-23</td></tr>
+        <tr><th scope="row">MARY SILVA FOR CONGRESS</th><td>X.COM</td><td>$40.00</td><td>2026-06-19</td></tr>
+        <tr><th scope="row">MARY SILVA FOR CONGRESS</th><td>DISRUPTIVE STRATEGIES WEBSITE</td><td>$36.90</td><td>2026-06-16</td></tr>
+        <tr><th scope="row">MARY SILVA FOR CONGRESS</th><td>DISRUPTIVE STRATEGIES</td><td>$36.90</td><td>2026-06-16</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -148,16 +151,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

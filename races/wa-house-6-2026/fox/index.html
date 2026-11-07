@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -27,6 +28,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Teresa Fox</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -55,13 +58,13 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Teresa Fox</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Bremerton, Kitsap County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Occupational safety professional and emergency manager. Career in worker protection and safety across shipyards, naval facilities, and offshore operations.; Prior positions associated with the Washington State Department of Labor and Industries and Olympic College.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Teresa Fox</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Bremerton, Kitsap County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Occupational safety professional and emergency manager. Career in worker protection and safety across shipyards, naval facilities, and offshore operations.; Prior positions associated with the Washington State Department of Labor and Industries and Olympic College.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -76,85 +79,85 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>U.S. House, WA Congressional District 6 (Primary, Aug 4)</td><td>Running as a Republican in the top-two primary against incumbent Rep. Emily Randall (D) and Leon Lawson (R). General election Nov 3, 2026.</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>U.S. House, WA Congressional District 6 (Primary, Aug 4)</td><td>Running as a Republican in the top-two primary against incumbent Rep. Emily Randall (D) and Leon Lawson (R). General election Nov 3, 2026.</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Affordability and Economy</td><td>Campaigns on affordability and economic development, opposing federal spending and inflation and promoting economic stability for families.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Public Safety</td><td>Supports restoring law and order with proper staffing and resources for law enforcement, particularly in rural areas of the district.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Fiscal Responsibility and Naval Readiness</td><td>Emphasizes fiscal restraint and naval readiness, tied to the district&#x27;s military and shipyard communities.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Maritime, Timber, and Military Jobs</td><td>Runs on stronger representation for the district&#x27;s maritime jobs, timber industry, military communities, and small businesses across the Olympic and Kitsap Peninsulas and South Sound.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Affordability and Economy</th><td>Campaigns on affordability and economic development, opposing federal spending and inflation and promoting economic stability for families.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Public Safety</th><td>Supports restoring law and order with proper staffing and resources for law enforcement, particularly in rural areas of the district.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Fiscal Responsibility and Naval Readiness</th><td>Emphasizes fiscal restraint and naval readiness, tied to the district&#x27;s military and shipyard communities.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Maritime, Timber, and Military Jobs</th><td>Runs on stronger representation for the district&#x27;s maritime jobs, timber industry, military communities, and small businesses across the Olympic and Kitsap Peninsulas and South Sound.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$27,615.02</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Total Spent</td><td>$24,778.90</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Total Raised</th><td>$27,615.02</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Total Spent</th><td>$24,778.90</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">Source: Federal Election Commission.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>FOX, TERESA</td><td>$7,530.00</td></tr>
-        <tr><td>WALSH, DAVID</td><td>$2,000.00</td></tr>
-        <tr><td>RANDALL, IRENE</td><td>$1,461.00</td></tr>
-        <tr><td>JEFFERSON COUNTY REPUBLICAN PARTY</td><td>$1,000.00</td></tr>
-        <tr><td>SKAGEN, ROY</td><td>$500.00</td></tr>
-        <tr><td>CARLIN, SONJA</td><td>$500.00</td></tr>
-        <tr><td>JENSEN, MARLYN</td><td>$500.00</td></tr>
-        <tr><td>MILEY, LINDA</td><td>$500.00</td></tr>
-        <tr><td>MACKEY, JAMES</td><td>$500.00</td></tr>
-        <tr><td>BLACK, DIANE</td><td>$500.00</td></tr>
-        <tr><td>MORRIS, DAVID</td><td>$500.00</td></tr>
-        <tr><td>VAUGHN, JAMES</td><td>$500.00</td></tr>
-        <tr><td>GRAY, BETHANY</td><td>$310.73</td></tr>
-        <tr><td>ISKRA, EDWARD</td><td>$300.00</td></tr>
-        <tr><td>SWANK, NINA</td><td>$260.73</td></tr>
-        <tr><td>FOLDEN, RICH</td><td>$250.00</td></tr>
-        <tr><td>POPE, MIKE</td><td>$250.00</td></tr>
-        <tr><td>MASON COUNTY REPUBLICAN WOMENS CLUB</td><td>$250.00</td></tr>
-        <tr><td>CAMPION, ELLEN</td><td>$250.00</td></tr>
-        <tr><td>MORAN, NORMAN</td><td>$250.00</td></tr>
-        <tr><td>KELBON, MARCIA</td><td>$250.00</td></tr>
-        <tr><td>NULL, TERRY</td><td>$250.00</td></tr>
-        <tr><td>SIMPSON, KAREN</td><td>$208.65</td></tr>
-        <tr><td>TONKINS, FORREST</td><td>$208.65</td></tr>
-        <tr><td>WARNE, JILL</td><td>$104.48</td></tr>
+        <tr><th scope="row">FOX, TERESA</th><td>$7,530.00</td></tr>
+        <tr><th scope="row">WALSH, DAVID</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">RANDALL, IRENE</th><td>$1,461.00</td></tr>
+        <tr><th scope="row">JEFFERSON COUNTY REPUBLICAN PARTY</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">SKAGEN, ROY</th><td>$500.00</td></tr>
+        <tr><th scope="row">CARLIN, SONJA</th><td>$500.00</td></tr>
+        <tr><th scope="row">JENSEN, MARLYN</th><td>$500.00</td></tr>
+        <tr><th scope="row">MILEY, LINDA</th><td>$500.00</td></tr>
+        <tr><th scope="row">MACKEY, JAMES</th><td>$500.00</td></tr>
+        <tr><th scope="row">BLACK, DIANE</th><td>$500.00</td></tr>
+        <tr><th scope="row">MORRIS, DAVID</th><td>$500.00</td></tr>
+        <tr><th scope="row">VAUGHN, JAMES</th><td>$500.00</td></tr>
+        <tr><th scope="row">GRAY, BETHANY</th><td>$310.73</td></tr>
+        <tr><th scope="row">ISKRA, EDWARD</th><td>$300.00</td></tr>
+        <tr><th scope="row">SWANK, NINA</th><td>$260.73</td></tr>
+        <tr><th scope="row">FOLDEN, RICH</th><td>$250.00</td></tr>
+        <tr><th scope="row">POPE, MIKE</th><td>$250.00</td></tr>
+        <tr><th scope="row">MASON COUNTY REPUBLICAN WOMENS CLUB</th><td>$250.00</td></tr>
+        <tr><th scope="row">CAMPION, ELLEN</th><td>$250.00</td></tr>
+        <tr><th scope="row">MORAN, NORMAN</th><td>$250.00</td></tr>
+        <tr><th scope="row">KELBON, MARCIA</th><td>$250.00</td></tr>
+        <tr><th scope="row">NULL, TERRY</th><td>$250.00</td></tr>
+        <tr><th scope="row">SIMPSON, KAREN</th><td>$208.65</td></tr>
+        <tr><th scope="row">TONKINS, FORREST</th><td>$208.65</td></tr>
+        <tr><th scope="row">WARNE, JILL</th><td>$104.48</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
     <p style="margin-bottom:12px; font-style:italic; color:var(--gray-dark);">Largest disbursements reported to the FEC for the current cycle, newest cycle only. This is not a complete ledger and does not sum to total spent.</p>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th><th>Date</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th><th scope="col">Date</th></tr></thead>
       <tbody>
-        <tr><td>KITSAP GOLF &amp; COUNTRY CLUB</td><td>EVENT CATERING</td><td>$5,000.00</td><td>2026-05-28</td></tr>
-        <tr><td>WASHINGTON SECRETARY OF STATE</td><td>FILING FEE</td><td>$1,740.00</td><td>2026-05-07</td></tr>
-        <tr><td>POSITIVE INTENTIONS MEDIA</td><td>EVENT PROGRAM/INVITATIONS</td><td>$1,702.43</td><td>2026-05-18</td></tr>
-        <tr><td>WAKES DIGITAL</td><td>WEBSITE DESIGN/HOSTING</td><td>$1,303.78</td><td>2026-04-28</td></tr>
-        <tr><td>POSITIVE INTENTIONS MEDIA</td><td>WEBSITE DESIGN/DEVELOPMENT</td><td>$1,092.00</td><td>2026-05-01</td></tr>
-        <tr><td>KITSAP GOLF &amp; COUNTRY CLUB</td><td>EVENT CATERING</td><td>$1,000.00</td><td>2026-07-07</td></tr>
-        <tr><td>KITSAP GOLF &amp; COUNTRY CLUB</td><td>EVENT CATERING</td><td>$1,000.00</td><td>2026-06-22</td></tr>
-        <tr><td>KITSAP GOLF &amp; COUNTRY CLUB</td><td>EVENT CATERING</td><td>$750.00</td><td>2026-03-18</td></tr>
-        <tr><td>ACE SIGN COMPANY, INC.</td><td>BANNERS</td><td>$584.22</td><td>2026-04-11</td></tr>
-        <tr><td>GLEN DAVIS &amp; ASSOCIATES PHOTOGRAPHY</td><td>PHOTOGRAPHY SERVICES</td><td>$542.03</td><td>2026-04-02</td></tr>
+        <tr><th scope="row">KITSAP GOLF &amp; COUNTRY CLUB</th><td>EVENT CATERING</td><td>$5,000.00</td><td>2026-05-28</td></tr>
+        <tr><th scope="row">WASHINGTON SECRETARY OF STATE</th><td>FILING FEE</td><td>$1,740.00</td><td>2026-05-07</td></tr>
+        <tr><th scope="row">POSITIVE INTENTIONS MEDIA</th><td>EVENT PROGRAM/INVITATIONS</td><td>$1,702.43</td><td>2026-05-18</td></tr>
+        <tr><th scope="row">WAKES DIGITAL</th><td>WEBSITE DESIGN/HOSTING</td><td>$1,303.78</td><td>2026-04-28</td></tr>
+        <tr><th scope="row">POSITIVE INTENTIONS MEDIA</th><td>WEBSITE DESIGN/DEVELOPMENT</td><td>$1,092.00</td><td>2026-05-01</td></tr>
+        <tr><th scope="row">KITSAP GOLF &amp; COUNTRY CLUB</th><td>EVENT CATERING</td><td>$1,000.00</td><td>2026-07-07</td></tr>
+        <tr><th scope="row">KITSAP GOLF &amp; COUNTRY CLUB</th><td>EVENT CATERING</td><td>$1,000.00</td><td>2026-06-22</td></tr>
+        <tr><th scope="row">KITSAP GOLF &amp; COUNTRY CLUB</th><td>EVENT CATERING</td><td>$750.00</td><td>2026-03-18</td></tr>
+        <tr><th scope="row">ACE SIGN COMPANY, INC.</th><td>BANNERS</td><td>$584.22</td><td>2026-04-11</td></tr>
+        <tr><th scope="row">GLEN DAVIS &amp; ASSOCIATES PHOTOGRAPHY</th><td>PHOTOGRAPHY SERVICES</td><td>$542.03</td><td>2026-04-02</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -189,16 +192,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

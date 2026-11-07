@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -27,6 +28,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Emily Randall</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -55,16 +58,16 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Emily Randall</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Date of Birth</td><td>Born October 30, 1985, in Port Orchard, Kitsap County, Washington (age 40 in 2026)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Residence</td><td>Washington&#x27;s 6th Congressional District (Kitsap and Olympic Peninsula region)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Family</td><td>Daughter of a shipyard worker at Puget Sound Naval Shipyard (Chicano heritage) and a paraeducator. Younger sister Olivia has microcephaly and severe developmental disabilities, which Randall cites as shaping her healthcare advocacy. Long-term partner Alison Leahey.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Education</td><td>Graduate of South Kitsap High School (2004); B.A. in Spanish and Women&#x27;s Studies, Wellesley College (2008). First in her family to graduate college.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>Development and advocacy professional before elected office, with roles tied to Wellesley College, the San Francisco AIDS Foundation, Planned Parenthood Federation of America, and Legal Voice. Background described as healthcare and reproductive rights advocacy.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Emily Randall</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Date of Birth</th><td>Born October 30, 1985, in Port Orchard, Kitsap County, Washington (age 40 in 2026)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Washington&#x27;s 6th Congressional District (Kitsap and Olympic Peninsula region)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Family</th><td>Daughter of a shipyard worker at Puget Sound Naval Shipyard (Chicano heritage) and a paraeducator. Younger sister Olivia has microcephaly and severe developmental disabilities, which Randall cites as shaping her healthcare advocacy. Long-term partner Alison Leahey.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Education</th><td>Graduate of South Kitsap High School (2004); B.A. in Spanish and Women&#x27;s Studies, Wellesley College (2008). First in her family to graduate college.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Development and advocacy professional before elected office, with roles tied to Wellesley College, the San Francisco AIDS Foundation, Planned Parenthood Federation of America, and Legal Voice. Background described as healthcare and reproductive rights advocacy.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -86,323 +89,323 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>WA-6 U.S. House (Primary, Aug 4)</td><td>Running for re-election as the Democratic incumbent. Reported challengers include Teresa Fox (Republican) and Brian P. O&#x27;Gorman (Independent).</td><td>Research</td></tr>
-        <tr><td>2024</td><td>WA-6 U.S. House (General)</td><td>Won open seat (Derek Kilmer retired) with about 56.8 percent over Republican Drew MacEwen</td><td>Research</td></tr>
-        <tr><td>2022</td><td>WA State Senate, 26th LD (General)</td><td>Won re-election with about 51 percent</td><td>Research</td></tr>
-        <tr><td>2018</td><td>WA State Senate, 26th LD (General)</td><td>Won by 104 votes over Republican Marty McClendon</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>WA-6 U.S. House (Primary, Aug 4)</td><td>Running for re-election as the Democratic incumbent. Reported challengers include Teresa Fox (Republican) and Brian P. O&#x27;Gorman (Independent).</td><td>Research</td></tr>
+        <tr><th scope="row">2024</th><td>WA-6 U.S. House (General)</td><td>Won open seat (Derek Kilmer retired) with about 56.8 percent over Republican Drew MacEwen</td><td>Research</td></tr>
+        <tr><th scope="row">2022</th><td>WA State Senate, 26th LD (General)</td><td>Won re-election with about 51 percent</td><td>Research</td></tr>
+        <tr><th scope="row">2018</th><td>WA State Senate, 26th LD (General)</td><td>Won by 104 votes over Republican Marty McClendon</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Reproductive Rights</td><td>Longtime supporter of abortion and reproductive rights. As a state senator she sponsored the Reproductive Health Care for All bill (2019) expanding access. Co-chairs the Congressional Equality Caucus and is a member of the Congressional Progressive Caucus.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Public Lands and Tribal Affairs</td><td>Serves on the House Committee on Natural Resources (Subcommittees on Federal Lands and on Indian and Insular Affairs), representing a district that includes national park and forest lands and 29 federally recognized Washington tribes.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Government Oversight and Healthcare</td><td>Serves on the House Committee on Oversight and Government Reform (Subcommittees on Government Operations and on Health Care and Financial Services). Has centered Medicaid access in her oversight messaging.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Military and Veterans Families</td><td>Represents a district anchored by Puget Sound Naval Shipyard and Joint Base Lewis-McChord workers. Co-authored the bipartisan ANCHOR for Military Families Act to ease relocation and school transitions for military families.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Immigration</td><td>Voted against the Laken Riley Act, citing due-process and civil-liberties concerns with mandatory immigration detention provisions.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Reproductive Rights</th><td>Longtime supporter of abortion and reproductive rights. As a state senator she sponsored the Reproductive Health Care for All bill (2019) expanding access. Co-chairs the Congressional Equality Caucus and is a member of the Congressional Progressive Caucus.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Public Lands and Tribal Affairs</th><td>Serves on the House Committee on Natural Resources (Subcommittees on Federal Lands and on Indian and Insular Affairs), representing a district that includes national park and forest lands and 29 federally recognized Washington tribes.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Government Oversight and Healthcare</th><td>Serves on the House Committee on Oversight and Government Reform (Subcommittees on Government Operations and on Health Care and Financial Services). Has centered Medicaid access in her oversight messaging.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Military and Veterans Families</th><td>Represents a district anchored by Puget Sound Naval Shipyard and Joint Base Lewis-McChord workers. Co-authored the bipartisan ANCHOR for Military Families Act to ease relocation and school transitions for military families.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Immigration</th><td>Voted against the Laken Riley Act, citing due-process and civil-liberties concerns with mandatory immigration detention provisions.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$1,195,246.70</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Total Spent</td><td>$981,487.55</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Total Raised</th><td>$1,195,246.70</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Total Spent</th><td>$981,487.55</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">Source: Federal Election Commission.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>CHC BOLD PAC</td><td>$20,000.00</td></tr>
-        <tr><td>EQUALITY PAC</td><td>$20,000.00</td></tr>
-        <tr><td>AMERICAN FEDERATION OF STATE COUNTY &amp; MUNICIPAL EMPLOYEES  P E O P L E</td><td>$17,500.00</td></tr>
-        <tr><td>M-PAC</td><td>$15,000.00</td></tr>
-        <tr><td>UNITED FOOD AND COMMERCIAL WORKERS INTERNATIONAL UNION ACTIVE BALLOT CLUB</td><td>$15,000.00</td></tr>
-        <tr><td>JAMESTOWN S&#x27;KLALLAM TRIBE</td><td>$13,600.00</td></tr>
-        <tr><td>EQUALITY PROJECT PAC</td><td>$13,500.00</td></tr>
-        <tr><td>SEIU COPE (SERVICE EMPLOYEES INT&#x27;L UNION CMTE ON POLITICAL EDUCATION)</td><td>$12,500.00</td></tr>
-        <tr><td>INLAND EMPIRE STRIKES PAC; THE</td><td>$12,500.00</td></tr>
-        <tr><td>AMERICAN ASSOCIATION FOR JUSTICE POLITICAL ACTION COMMITTEE (AAJ PAC)</td><td>$12,500.00</td></tr>
-        <tr><td>HUMAN RIGHTS CAMPAIGN PAC</td><td>$12,000.00</td></tr>
-        <tr><td>ZAPOLSKY, DAVID A</td><td>$10,300.00</td></tr>
-        <tr><td>NIEMCZYK, CAROLINE</td><td>$10,300.00</td></tr>
-        <tr><td>ORR, ROSANNA L.</td><td>$10,300.00</td></tr>
-        <tr><td>ORR, JAMES</td><td>$10,300.00</td></tr>
-        <tr><td>THE COUNCIL OF INSURANCE AGENTS &amp; BROKERS POLITICAL ACTION COMMITTEE</td><td>$10,000.00</td></tr>
-        <tr><td>NATIONAL AUTOMOBILE DEALERS ASSOCIATION POLITICAL ACTION COMMITTEE</td><td>$10,000.00</td></tr>
-        <tr><td>PODER PAC</td><td>$10,000.00</td></tr>
-        <tr><td>MACHINISTS NON PARTISAN POLITICAL LEAGUE OF THE INTERNATIONAL ASSOCIATION OF MACHINISTS &amp; AEROSPACE WORKERS</td><td>$10,000.00</td></tr>
-        <tr><td>L PAC</td><td>$10,000.00</td></tr>
-        <tr><td>CARPENTERS LEGISLATIVE IMPROVEMENT COMMITTEE UNITED BROTHERHOOD OF CARPENTERS AND JOINERS</td><td>$10,000.00</td></tr>
-        <tr><td>INTERNATIONAL ASSOCIATION OF SHEET METAL, AIR, RAIL AND TRANSPORTATION WORKERS POLITICAL ACTION LEAGUE</td><td>$10,000.00</td></tr>
-        <tr><td>RESISTANCE PAC</td><td>$10,000.00</td></tr>
-        <tr><td>LA BAMBA PAC</td><td>$10,000.00</td></tr>
-        <tr><td>NO VOTE LEFT BEHIND</td><td>$10,000.00</td></tr>
-        <tr><td>JOBS, EDUCATION, &amp; FAMILIES FIRST  JEFF PAC</td><td>$10,000.00</td></tr>
-        <tr><td>NEA FUND FOR CHILDREN AND PUBLIC EDUCATION</td><td>$9,000.00</td></tr>
-        <tr><td>AMERICAN FEDERATION OF TEACHERS, AFL-CIO COMMITTEE ON POLITICAL EDUCATION</td><td>$7,500.00</td></tr>
-        <tr><td>AMERICA&#x27;S CREDIT UNIONS PAC OF CREDIT UNION NATIONAL ASSOCIATION, INC.</td><td>$7,500.00</td></tr>
-        <tr><td>ENGINEERS POLITICAL EDUCATION COMMITTEE (EPEC)/INTERNATIONAL UNION OF OPERATING ENGINEERS</td><td>$7,500.00</td></tr>
-        <tr><td>LGBTQ VICTORY FUND FEDERAL PAC</td><td>$7,500.00</td></tr>
-        <tr><td>EDWARD JONES PAC</td><td>$7,500.00</td></tr>
-        <tr><td>NATIONAL ASSOCIATION OF REALTORS POLITICAL ACTION COMMITTEE</td><td>$7,000.00</td></tr>
-        <tr><td>NEW DEMOCRAT COALITION ACTION FUND</td><td>$7,000.00</td></tr>
-        <tr><td>OTOE-MISSOURIA TRIBE</td><td>$7,000.00</td></tr>
-        <tr><td>HABEMATOLEL POMO OF UPPER LAKE</td><td>$7,000.00</td></tr>
-        <tr><td>CONROY, ROBERTA</td><td>$7,000.00</td></tr>
-        <tr><td>BALLMER, CONNIE</td><td>$7,000.00</td></tr>
-        <tr><td>PUYALLUP TRIBE OF INDIANS</td><td>$7,000.00</td></tr>
-        <tr><td>LARA, LUANA LOPES</td><td>$7,000.00</td></tr>
-        <tr><td>CORNFIELD, LINDA L</td><td>$7,000.00</td></tr>
-        <tr><td>CORNFIELD, DAVID</td><td>$7,000.00</td></tr>
-        <tr><td>PRYZBYLSKI, TIMOTHY</td><td>$7,000.00</td></tr>
-        <tr><td>MASTERS, JERRY</td><td>$7,000.00</td></tr>
-        <tr><td>HUBBARD, ELIZABETH LYNN</td><td>$7,000.00</td></tr>
-        <tr><td>QUACKENBUSH, MICHELLE J</td><td>$7,000.00</td></tr>
-        <tr><td>QUACKENBUSH, KARL</td><td>$7,000.00</td></tr>
-        <tr><td>MUCKLESHOOT INDIAN TRIBE</td><td>$6,800.00</td></tr>
-        <tr><td>BRIDGE, BOBBE J</td><td>$6,800.00</td></tr>
-        <tr><td>THE TULALIP TRIBES OF WASHINGTON</td><td>$6,800.00</td></tr>
-        <tr><td>WEBSTER, JAMES H</td><td>$6,600.00</td></tr>
-        <tr><td>WEISS, CRAIG</td><td>$6,600.00</td></tr>
-        <tr><td>WERNER, KATHRYN</td><td>$6,600.00</td></tr>
-        <tr><td>RAIKES, PATRICIA M</td><td>$6,600.00</td></tr>
-        <tr><td>SPIKE PAC</td><td>$6,600.00</td></tr>
-        <tr><td>PIGOTT, MARY</td><td>$6,600.00</td></tr>
-        <tr><td>PIGGOT, GAYE T</td><td>$6,600.00</td></tr>
-        <tr><td>ANAND, VANDANA</td><td>$6,600.00</td></tr>
-        <tr><td>STEINGLASS, DAVID</td><td>$6,600.00</td></tr>
-        <tr><td>DUDA, JENNIFER</td><td>$6,600.00</td></tr>
-        <tr><td>WALKER, ROBIN</td><td>$6,600.00</td></tr>
-        <tr><td>ERZINGER, ERIC</td><td>$6,600.00</td></tr>
-        <tr><td>ANAND, SHELLY</td><td>$6,600.00</td></tr>
-        <tr><td>BEHNKE, SHARI</td><td>$6,300.00</td></tr>
-        <tr><td>ALSOP, JOSEPH</td><td>$6,300.00</td></tr>
-        <tr><td>ANAND, RAJESH</td><td>$5,800.00</td></tr>
-        <tr><td>FERGUSON, ELLEN L</td><td>$5,600.00</td></tr>
-        <tr><td>GATES, DEBORAH</td><td>$5,500.00</td></tr>
-        <tr><td>HORNOR, JOHN</td><td>$5,300.00</td></tr>
-        <tr><td>HANAUER, NICOLAS J</td><td>$5,300.00</td></tr>
-        <tr><td>WASHINGTON WOMEN FOR CHOICE</td><td>$5,000.00</td></tr>
-        <tr><td>INTERNATIONAL ASSOCIATION OF FIREFIGHTERS INTERESTED IN REGISTRATION AND EDUCATION PAC</td><td>$5,000.00</td></tr>
-        <tr><td>D.R.I.V.E. - DEMOCRAT, REPUBLICAN, INDEPENDENT VOTER EDUCATION (THE PAC OF THE INTERNATIONAL BROTHERHOOD OF TEAMSTERS)</td><td>$5,000.00</td></tr>
-        <tr><td>PROGRESSIVE TURNOUT PROJECT</td><td>$5,000.00</td></tr>
-        <tr><td>LABORERS&#x27; INTERNATIONAL UNION OF NORTH AMERICA (LIUNA) PAC</td><td>$5,000.00</td></tr>
-        <tr><td>EMILYS LIST</td><td>$5,000.00</td></tr>
-        <tr><td>CA LUV PAC (CALIFORNIA LEADERSHIP UNITED FOR VICTORY PAC)</td><td>$5,000.00</td></tr>
-        <tr><td>AMERICA NEEDS NEW INNOVATION AND ENERGY PAC</td><td>$5,000.00</td></tr>
-        <tr><td>MAINSTREAM PAC</td><td>$5,000.00</td></tr>
-        <tr><td>AMALGAMATED TRANSIT UNION - COPE</td><td>$5,000.00</td></tr>
-        <tr><td>UAW V CAP</td><td>$5,000.00</td></tr>
-        <tr><td>MEDICARE FOR ALL PAC</td><td>$5,000.00</td></tr>
-        <tr><td>MACHINISTS NON-PARTISAN POLITICAL LEAGUE OF THE IAMAW</td><td>$5,000.00</td></tr>
-        <tr><td>INT&#x27;L BROTHERHOOD OF ELECTRICAL WORKERS PAC (IBEW PAC VOLUNTARY FUND)</td><td>$5,000.00</td></tr>
-        <tr><td>AMERICAN CRYSTAL SUGAR COMPANY POLITICAL ACTION COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>PAC TO THE FUTURE</td><td>$5,000.00</td></tr>
-        <tr><td>INTERNATIONAL BROTHERHOOD OF ELECTRICAL WORKERS POLITICAL ACTION COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>FAIR SHOT PAC</td><td>$5,000.00</td></tr>
-        <tr><td>SALANT, RENEE</td><td>$5,000.00</td></tr>
-        <tr><td>DEFEND THE VOTE</td><td>$5,000.00</td></tr>
-        <tr><td>TRUTH TO POWER</td><td>$5,000.00</td></tr>
-        <tr><td>AMERICAN BANKERS ASSOCIATION PAC (BANKPAC)</td><td>$5,000.00</td></tr>
-        <tr><td>NATIONAL RURAL LETTER CARRIERS&#x27; ASSOCIATION POLITICAL ACTION COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>WEYERHAEUSER COMPANY POLITICAL ACTION COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>LEAGUE OF CONSERVATION VOTERS ACTION FUND</td><td>$4,900.00</td></tr>
-        <tr><td>AMERICAN POSTAL WORKERS UNION COMMITTEE ON POLITICAL ACTION</td><td>$4,500.00</td></tr>
-        <tr><td>MICHEL, CHARLES</td><td>$4,500.00</td></tr>
-        <tr><td>VPP</td><td>$4,500.00</td></tr>
-        <tr><td>GEIGER, KEVIN</td><td>$4,500.00</td></tr>
-        <tr><td>EMILY RANDALL VICTORY FUND</td><td>$4,000.00</td></tr>
-        <tr><td>ELECT DEMOCRATIC WOMEN</td><td>$4,000.00</td></tr>
-        <tr><td>LOFGREN FOR CONGRESS</td><td>$4,000.00</td></tr>
-        <tr><td>BECCA BALINT FOR VERMONT</td><td>$4,000.00</td></tr>
-        <tr><td>YOCHA DEHE WINTUN NATION</td><td>$3,500.00</td></tr>
-        <tr><td>TURTLE MOUNTAIN BAND OF CHIPPEWA</td><td>$3,500.00</td></tr>
-        <tr><td>STRATEGIC LINK CONSULTING LP</td><td>$3,500.00</td></tr>
-        <tr><td>PECHANGA BAND OF INDIANS</td><td>$3,500.00</td></tr>
-        <tr><td>CAMPION, THOMAS D.</td><td>$3,500.00</td></tr>
-        <tr><td>CRAMER, THEILINE W</td><td>$3,500.00</td></tr>
-        <tr><td>AK-CHIN INDIAN COMMUNITY</td><td>$3,500.00</td></tr>
-        <tr><td>SUQUAMISH INDIAN TRIBE</td><td>$3,500.00</td></tr>
-        <tr><td>REPP, SUSAN</td><td>$3,500.00</td></tr>
-        <tr><td>GULLICK, NANCY</td><td>$3,500.00</td></tr>
-        <tr><td>JSTREETPAC</td><td>$3,500.00</td></tr>
-        <tr><td>GOTTESMAN, SALLY</td><td>$3,500.00</td></tr>
-        <tr><td>THE CONFEDERATED TRIBES OF THE COLVILLE RESERVATION</td><td>$3,500.00</td></tr>
-        <tr><td>MEYER, RICHARD</td><td>$3,500.00</td></tr>
-        <tr><td>LA BADIE, ANDREW</td><td>$3,500.00</td></tr>
-        <tr><td>HOFMANN, PAUL</td><td>$3,500.00</td></tr>
-        <tr><td>FIGHT FOR FAIR LINES PAC</td><td>$3,331.07</td></tr>
-        <tr><td>ELECT DEMS NOW PAC</td><td>$3,300.00</td></tr>
-        <tr><td>DE COLORES PAC</td><td>$3,300.00</td></tr>
-        <tr><td>SNOQUALMIE TRIBE</td><td>$3,300.00</td></tr>
-        <tr><td>LEDORZE, PHILIPPE</td><td>$3,300.00</td></tr>
-        <tr><td>LEDORZE, JULIET S</td><td>$3,300.00</td></tr>
-        <tr><td>HORWITZ, BRADLEY</td><td>$3,300.00</td></tr>
-        <tr><td>DELANEY, QUINN</td><td>$3,300.00</td></tr>
-        <tr><td>AMERICAN ISRAEL PUBLIC AFFAIRS COMMITTEE PAC (AIPAC PAC)</td><td>$3,300.00</td></tr>
-        <tr><td>SCHOCKEN, JOSEPH L</td><td>$3,300.00</td></tr>
-        <tr><td>RUDELL, RICHARD</td><td>$3,300.00</td></tr>
-        <tr><td>BECHERER, ANDREW</td><td>$3,300.00</td></tr>
-        <tr><td>TISCH, LIZZIE</td><td>$3,300.00</td></tr>
-        <tr><td>TISCH, JONATHAN</td><td>$3,300.00</td></tr>
-        <tr><td>SANDBERG, SHERYL</td><td>$3,300.00</td></tr>
-        <tr><td>RAIKES, PATRICIA</td><td>$3,300.00</td></tr>
-        <tr><td>RAIKES, JEFF S</td><td>$3,300.00</td></tr>
-        <tr><td>PACHULSKI, RICHARD</td><td>$3,300.00</td></tr>
-        <tr><td>MOGA, GREGORY M</td><td>$3,300.00</td></tr>
-        <tr><td>LUMBARD, LYNN</td><td>$3,300.00</td></tr>
-        <tr><td>LOSCHEN, MATT</td><td>$3,300.00</td></tr>
-        <tr><td>LERT, RANDALL PETER</td><td>$3,300.00</td></tr>
-        <tr><td>KEHOE, MELISSA</td><td>$3,300.00</td></tr>
-        <tr><td>JURVETSON, KARLA</td><td>$3,300.00</td></tr>
-        <tr><td>HOEHLER, KRISTEN</td><td>$3,300.00</td></tr>
-        <tr><td>HIGGINS, LESLIE MAGID</td><td>$3,300.00</td></tr>
-        <tr><td>HIGGINS, FRANK M</td><td>$3,300.00</td></tr>
-        <tr><td>HARRIS, WILLIAM H</td><td>$3,300.00</td></tr>
-        <tr><td>CURTIS, SPENCER</td><td>$3,300.00</td></tr>
-        <tr><td>CAMPION, SONYA LYNN</td><td>$3,300.00</td></tr>
-        <tr><td>BERNTHAL, THOMAS</td><td>$3,300.00</td></tr>
-        <tr><td>ROSEN, DAVID</td><td>$3,300.00</td></tr>
-        <tr><td>PLATT, JULIE</td><td>$3,300.00</td></tr>
-        <tr><td>RESOLUTE COURAGE PAC</td><td>$3,300.00</td></tr>
-        <tr><td>PROLIANCE SURGEONS POLITICAL ACTION COMMITTE</td><td>$3,300.00</td></tr>
-        <tr><td>CENTRAL COAST VALUES PAC</td><td>$3,300.00</td></tr>
-        <tr><td>WINKLEVOSS, TYLER</td><td>$3,300.00</td></tr>
-        <tr><td>WINKLEVOSS, CAMERON</td><td>$3,300.00</td></tr>
-        <tr><td>LUCAS, CLAIRE</td><td>$3,300.00</td></tr>
-        <tr><td>FERARI, KYLE</td><td>$3,300.00</td></tr>
-        <tr><td>CORCORAN, STEPHANIE</td><td>$3,300.00</td></tr>
-        <tr><td>ZAPOLSKY, DAVID</td><td>$3,300.00</td></tr>
-        <tr><td>GONZALEZ, JOHN MICHAEL</td><td>$3,300.00</td></tr>
-        <tr><td>CLAUSE, JOSH</td><td>$3,300.00</td></tr>
-        <tr><td>CHAMBERS, MERLE</td><td>$3,300.00</td></tr>
-        <tr><td>STANTON, MARY BETH</td><td>$3,300.00</td></tr>
-        <tr><td>PLANK-SHEPARD, CARRIE</td><td>$3,300.00</td></tr>
-        <tr><td>PHILLIPS, MATTHEW</td><td>$3,300.00</td></tr>
-        <tr><td>JENKS, ROBERT</td><td>$3,300.00</td></tr>
-        <tr><td>JENKS, NEELOOFAR</td><td>$3,300.00</td></tr>
-        <tr><td>HARMON, SUSAN</td><td>$3,300.00</td></tr>
-        <tr><td>BERG, JEREMIE</td><td>$3,300.00</td></tr>
-        <tr><td>JACOBS, IRWIN</td><td>$3,300.00</td></tr>
-        <tr><td>BRIDGE, JON</td><td>$3,234.28</td></tr>
-        <tr><td>MCVEETY, SAM</td><td>$3,200.00</td></tr>
-        <tr><td>PUGET PAC</td><td>$3,000.00</td></tr>
-        <tr><td>WALMART INC. PAC FOR RESPONSIBLE GOVERNMENT</td><td>$3,000.00</td></tr>
-        <tr><td>BOWEN, GEORGE</td><td>$3,000.00</td></tr>
-        <tr><td>AMERICAN SUGAR CANE LEAGUE OF USA, INC PAC</td><td>$3,000.00</td></tr>
-        <tr><td>SERVE AMERICA PAC</td><td>$3,000.00</td></tr>
-        <tr><td>WALKINSHAW, BRADY</td><td>$3,000.00</td></tr>
-        <tr><td>SEARS, CYNTHIA L.</td><td>$3,000.00</td></tr>
-        <tr><td>LASPA, EILEEN</td><td>$3,000.00</td></tr>
-        <tr><td>GOLDMAN, PETER R</td><td>$3,000.00</td></tr>
-        <tr><td>COURT HOUSE SQUARE</td><td>$2,556.60</td></tr>
-        <tr><td>NATIONAL ASSOCIATION OF LETTER CARRIERS OF U.S.A. POLITICAL FUND (LETTER CARRIER POLITICAL</td><td>$2,500.00</td></tr>
-        <tr><td>NATIONAL ACTIVE AND RETIRED FEDERAL EMPLOYEES ASSOCIATION POLITICAL ACTION COM (NARFE-PAC)</td><td>$2,500.00</td></tr>
-        <tr><td>TAKE BACK THE HOUSE PAC</td><td>$2,500.00</td></tr>
-        <tr><td>MORE PERFECT UNION PAC</td><td>$2,500.00</td></tr>
-        <tr><td>SALINAS, NORBERTO</td><td>$2,500.00</td></tr>
-        <tr><td>CHEROKEE NATION</td><td>$2,500.00</td></tr>
-        <tr><td>RIPPLE OF HOPE PAC</td><td>$2,500.00</td></tr>
-        <tr><td>PLANNED PARENTHOOD ACTION FUND INC PAC, DBA PLANNED PARENTHOOD FEDERAL PAC</td><td>$2,500.00</td></tr>
-        <tr><td>ATU COPE VOUNTARY ACCOUNT</td><td>$2,500.00</td></tr>
-        <tr><td>FELSON, JOE</td><td>$2,500.00</td></tr>
-        <tr><td>ALASKA BERING SEA CRABBERS FEDERAL POLITICAL ACTION COMMITTEE (CRABBERS PAC)</td><td>$2,500.00</td></tr>
-        <tr><td>OFFICE AND PROFESSIONAL EMPLOYEES INTERNATIONAL UNION</td><td>$2,500.00</td></tr>
-        <tr><td>LATINO VICTORY FUND</td><td>$2,500.00</td></tr>
-        <tr><td>AMERICAN ASSOCIATION OF NURSE ANESTHETISTS SEPARATE SEGREGATED FUND (CRNA-PAC)</td><td>$2,500.00</td></tr>
-        <tr><td>OVERTON, DAVID E</td><td>$2,500.00</td></tr>
-        <tr><td>NORDHOFF, GRACE ANN</td><td>$2,500.00</td></tr>
-        <tr><td>MCCAW, NELL</td><td>$2,500.00</td></tr>
-        <tr><td>SUPPORTING HOUSE PROBLEM SOLVERS - SHP PAC</td><td>$2,500.00</td></tr>
-        <tr><td>NIKE INC FEDERAL POLITICAL ACTION COMMITTEE (NIKE FEDERAL PAC)</td><td>$2,500.00</td></tr>
-        <tr><td>AMALGAMATED SUGAR COMPANY POLITICAL ACTION COMMITTEE</td><td>$2,500.00</td></tr>
-        <tr><td>LUMMI INDIAN BUSINESS COUNCIL</td><td>$2,500.00</td></tr>
-        <tr><td>UNITED PARCEL SERVICE, INC. PAC (UPSPAC)</td><td>$2,500.00</td></tr>
-        <tr><td>TRUEDEM LEADERSHIP FUND</td><td>$2,500.00</td></tr>
-        <tr><td>THE HOME DEPOT INC. POLITICAL ACTION COMMITTEE</td><td>$2,500.00</td></tr>
-        <tr><td>DON&#x27;T MESS WITH TEXAS PAC</td><td>$2,500.00</td></tr>
-        <tr><td>DOING RIGHT - RESULTS ACTION UNITY LEADERSHIP PAC</td><td>$2,500.00</td></tr>
-        <tr><td>JENCUNAS, BRIAN</td><td>$2,300.00</td></tr>
-        <tr><td>DEGEL, JAMES A.</td><td>$2,300.00</td></tr>
-        <tr><td>BERWICK, JEANNIE A</td><td>$2,300.00</td></tr>
-        <tr><td>DELANEY, M. QUINN</td><td>$2,300.00</td></tr>
-        <tr><td>ALLEN, WILLIAM R</td><td>$2,300.00</td></tr>
-        <tr><td>JEFFRIES, AMY</td><td>$2,300.00</td></tr>
-        <tr><td>BUYING TIME LLC</td><td>$2,247.30</td></tr>
-        <tr><td>GILL, DOUG</td><td>$2,100.00</td></tr>
-        <tr><td>WOODALL, W. PRESTON JR</td><td>$2,000.02</td></tr>
-        <tr><td>TRANSPORTATION TRADES DEPARTMENT AFL-CIO POLITICAL ACTION COMMITTEE (TTD/PAC)</td><td>$2,000.00</td></tr>
-        <tr><td>TED LIEU FOR CONGRESS</td><td>$2,000.00</td></tr>
-        <tr><td>SCHNEIDER FOR CONGRESS</td><td>$2,000.00</td></tr>
-        <tr><td>MARCH ON PAC</td><td>$2,000.00</td></tr>
-        <tr><td>END CITIZENS UNITED</td><td>$2,000.00</td></tr>
-        <tr><td>POND, WENDIE</td><td>$2,000.00</td></tr>
-        <tr><td>POARCH BAND OF CREEK INDIANS</td><td>$2,000.00</td></tr>
-        <tr><td>FORT BELKNAP INDIAN COMMUNITY</td><td>$2,000.00</td></tr>
-        <tr><td>WOOLDRIDGE, BRYAN</td><td>$2,000.00</td></tr>
-        <tr><td>THOMPSON, TIM</td><td>$2,000.00</td></tr>
-        <tr><td>BERGMAN, MATTHEW</td><td>$2,000.00</td></tr>
-        <tr><td>ANDERSON, TRYGVE</td><td>$2,000.00</td></tr>
-        <tr><td>PETE AGUILAR FOR CONGRESS</td><td>$2,000.00</td></tr>
-        <tr><td>PEOPLE FOR DEREK KILMER</td><td>$2,000.00</td></tr>
-        <tr><td>CITIZENS TO ELECT RICK LARSEN</td><td>$2,000.00</td></tr>
-        <tr><td>BETTER FUTURE MI FUND</td><td>$2,000.00</td></tr>
-        <tr><td>AMERICAN FEDERATION OF GOVT. EMPL. POLITICAL ACTION COMMITTEE</td><td>$2,000.00</td></tr>
-        <tr><td>WERNER, ALBERT</td><td>$2,000.00</td></tr>
-        <tr><td>LABADIE, ANDREW</td><td>$2,000.00</td></tr>
-        <tr><td>GOLDMAN, AMIR</td><td>$2,000.00</td></tr>
-        <tr><td>GINDI, ALAN</td><td>$2,000.00</td></tr>
-        <tr><td>DEWITT, JODI</td><td>$2,000.00</td></tr>
-        <tr><td>CASTELLANETA, DAN</td><td>$2,000.00</td></tr>
-        <tr><td>BRELSFORD, DAN</td><td>$2,000.00</td></tr>
-        <tr><td>BAGLEY, N.H</td><td>$2,000.00</td></tr>
-        <tr><td>ARCHULETA, DEANNA</td><td>$2,000.00</td></tr>
-        <tr><td>ALBISO, JOHN</td><td>$2,000.00</td></tr>
-        <tr><td>TIVEN, RACHEL</td><td>$2,000.00</td></tr>
-        <tr><td>MUSICANT, MYRA</td><td>$2,000.00</td></tr>
-        <tr><td>LOWE&#x27;S COMPANIES, INC. POLITICAL ACTION COMMITTEE</td><td>$2,000.00</td></tr>
-        <tr><td>HONEYWELL INTERNATIONAL POLITICAL ACTION COMMITTEE</td><td>$2,000.00</td></tr>
-        <tr><td>KISTLER, WILLIAM</td><td>$2,000.00</td></tr>
-        <tr><td>INGELS, GWEN</td><td>$2,000.00</td></tr>
-        <tr><td>BATES, REX</td><td>$2,000.00</td></tr>
-        <tr><td>DEMOCRATS RESHAPING AMERICA (DREAMPAC)</td><td>$2,000.00</td></tr>
-        <tr><td>ROCKERS, JESSICA STAR</td><td>$2,000.00</td></tr>
-        <tr><td>PRYZBYLSKI, BRIAN BRIAN</td><td>$2,000.00</td></tr>
-        <tr><td>LARIVEE, JEFF</td><td>$2,000.00</td></tr>
-        <tr><td>GARDNER, GRANT</td><td>$2,000.00</td></tr>
-        <tr><td>BYERS, MARGARET R.</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">CHC BOLD PAC</th><td>$20,000.00</td></tr>
+        <tr><th scope="row">EQUALITY PAC</th><td>$20,000.00</td></tr>
+        <tr><th scope="row">AMERICAN FEDERATION OF STATE COUNTY &amp; MUNICIPAL EMPLOYEES  P E O P L E</th><td>$17,500.00</td></tr>
+        <tr><th scope="row">M-PAC</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">UNITED FOOD AND COMMERCIAL WORKERS INTERNATIONAL UNION ACTIVE BALLOT CLUB</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">JAMESTOWN S&#x27;KLALLAM TRIBE</th><td>$13,600.00</td></tr>
+        <tr><th scope="row">EQUALITY PROJECT PAC</th><td>$13,500.00</td></tr>
+        <tr><th scope="row">SEIU COPE (SERVICE EMPLOYEES INT&#x27;L UNION CMTE ON POLITICAL EDUCATION)</th><td>$12,500.00</td></tr>
+        <tr><th scope="row">INLAND EMPIRE STRIKES PAC; THE</th><td>$12,500.00</td></tr>
+        <tr><th scope="row">AMERICAN ASSOCIATION FOR JUSTICE POLITICAL ACTION COMMITTEE (AAJ PAC)</th><td>$12,500.00</td></tr>
+        <tr><th scope="row">HUMAN RIGHTS CAMPAIGN PAC</th><td>$12,000.00</td></tr>
+        <tr><th scope="row">ZAPOLSKY, DAVID A</th><td>$10,300.00</td></tr>
+        <tr><th scope="row">NIEMCZYK, CAROLINE</th><td>$10,300.00</td></tr>
+        <tr><th scope="row">ORR, ROSANNA L.</th><td>$10,300.00</td></tr>
+        <tr><th scope="row">ORR, JAMES</th><td>$10,300.00</td></tr>
+        <tr><th scope="row">THE COUNCIL OF INSURANCE AGENTS &amp; BROKERS POLITICAL ACTION COMMITTEE</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">NATIONAL AUTOMOBILE DEALERS ASSOCIATION POLITICAL ACTION COMMITTEE</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">PODER PAC</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">MACHINISTS NON PARTISAN POLITICAL LEAGUE OF THE INTERNATIONAL ASSOCIATION OF MACHINISTS &amp; AEROSPACE WORKERS</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">L PAC</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">CARPENTERS LEGISLATIVE IMPROVEMENT COMMITTEE UNITED BROTHERHOOD OF CARPENTERS AND JOINERS</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">INTERNATIONAL ASSOCIATION OF SHEET METAL, AIR, RAIL AND TRANSPORTATION WORKERS POLITICAL ACTION LEAGUE</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">RESISTANCE PAC</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">LA BAMBA PAC</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">NO VOTE LEFT BEHIND</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">JOBS, EDUCATION, &amp; FAMILIES FIRST  JEFF PAC</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">NEA FUND FOR CHILDREN AND PUBLIC EDUCATION</th><td>$9,000.00</td></tr>
+        <tr><th scope="row">AMERICAN FEDERATION OF TEACHERS, AFL-CIO COMMITTEE ON POLITICAL EDUCATION</th><td>$7,500.00</td></tr>
+        <tr><th scope="row">AMERICA&#x27;S CREDIT UNIONS PAC OF CREDIT UNION NATIONAL ASSOCIATION, INC.</th><td>$7,500.00</td></tr>
+        <tr><th scope="row">ENGINEERS POLITICAL EDUCATION COMMITTEE (EPEC)/INTERNATIONAL UNION OF OPERATING ENGINEERS</th><td>$7,500.00</td></tr>
+        <tr><th scope="row">LGBTQ VICTORY FUND FEDERAL PAC</th><td>$7,500.00</td></tr>
+        <tr><th scope="row">EDWARD JONES PAC</th><td>$7,500.00</td></tr>
+        <tr><th scope="row">NATIONAL ASSOCIATION OF REALTORS POLITICAL ACTION COMMITTEE</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">NEW DEMOCRAT COALITION ACTION FUND</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">OTOE-MISSOURIA TRIBE</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">HABEMATOLEL POMO OF UPPER LAKE</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">CONROY, ROBERTA</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">BALLMER, CONNIE</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">PUYALLUP TRIBE OF INDIANS</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">LARA, LUANA LOPES</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">CORNFIELD, LINDA L</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">CORNFIELD, DAVID</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">PRYZBYLSKI, TIMOTHY</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">MASTERS, JERRY</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">HUBBARD, ELIZABETH LYNN</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">QUACKENBUSH, MICHELLE J</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">QUACKENBUSH, KARL</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">MUCKLESHOOT INDIAN TRIBE</th><td>$6,800.00</td></tr>
+        <tr><th scope="row">BRIDGE, BOBBE J</th><td>$6,800.00</td></tr>
+        <tr><th scope="row">THE TULALIP TRIBES OF WASHINGTON</th><td>$6,800.00</td></tr>
+        <tr><th scope="row">WEBSTER, JAMES H</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">WEISS, CRAIG</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">WERNER, KATHRYN</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">RAIKES, PATRICIA M</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">SPIKE PAC</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">PIGOTT, MARY</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">PIGGOT, GAYE T</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">ANAND, VANDANA</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">STEINGLASS, DAVID</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">DUDA, JENNIFER</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">WALKER, ROBIN</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">ERZINGER, ERIC</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">ANAND, SHELLY</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">BEHNKE, SHARI</th><td>$6,300.00</td></tr>
+        <tr><th scope="row">ALSOP, JOSEPH</th><td>$6,300.00</td></tr>
+        <tr><th scope="row">ANAND, RAJESH</th><td>$5,800.00</td></tr>
+        <tr><th scope="row">FERGUSON, ELLEN L</th><td>$5,600.00</td></tr>
+        <tr><th scope="row">GATES, DEBORAH</th><td>$5,500.00</td></tr>
+        <tr><th scope="row">HORNOR, JOHN</th><td>$5,300.00</td></tr>
+        <tr><th scope="row">HANAUER, NICOLAS J</th><td>$5,300.00</td></tr>
+        <tr><th scope="row">WASHINGTON WOMEN FOR CHOICE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">INTERNATIONAL ASSOCIATION OF FIREFIGHTERS INTERESTED IN REGISTRATION AND EDUCATION PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">D.R.I.V.E. - DEMOCRAT, REPUBLICAN, INDEPENDENT VOTER EDUCATION (THE PAC OF THE INTERNATIONAL BROTHERHOOD OF TEAMSTERS)</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">PROGRESSIVE TURNOUT PROJECT</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">LABORERS&#x27; INTERNATIONAL UNION OF NORTH AMERICA (LIUNA) PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">EMILYS LIST</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">CA LUV PAC (CALIFORNIA LEADERSHIP UNITED FOR VICTORY PAC)</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">AMERICA NEEDS NEW INNOVATION AND ENERGY PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">MAINSTREAM PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">AMALGAMATED TRANSIT UNION - COPE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">UAW V CAP</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">MEDICARE FOR ALL PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">MACHINISTS NON-PARTISAN POLITICAL LEAGUE OF THE IAMAW</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">INT&#x27;L BROTHERHOOD OF ELECTRICAL WORKERS PAC (IBEW PAC VOLUNTARY FUND)</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">AMERICAN CRYSTAL SUGAR COMPANY POLITICAL ACTION COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">PAC TO THE FUTURE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">INTERNATIONAL BROTHERHOOD OF ELECTRICAL WORKERS POLITICAL ACTION COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">FAIR SHOT PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">SALANT, RENEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">DEFEND THE VOTE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">TRUTH TO POWER</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">AMERICAN BANKERS ASSOCIATION PAC (BANKPAC)</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">NATIONAL RURAL LETTER CARRIERS&#x27; ASSOCIATION POLITICAL ACTION COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">WEYERHAEUSER COMPANY POLITICAL ACTION COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">LEAGUE OF CONSERVATION VOTERS ACTION FUND</th><td>$4,900.00</td></tr>
+        <tr><th scope="row">AMERICAN POSTAL WORKERS UNION COMMITTEE ON POLITICAL ACTION</th><td>$4,500.00</td></tr>
+        <tr><th scope="row">MICHEL, CHARLES</th><td>$4,500.00</td></tr>
+        <tr><th scope="row">VPP</th><td>$4,500.00</td></tr>
+        <tr><th scope="row">GEIGER, KEVIN</th><td>$4,500.00</td></tr>
+        <tr><th scope="row">EMILY RANDALL VICTORY FUND</th><td>$4,000.00</td></tr>
+        <tr><th scope="row">ELECT DEMOCRATIC WOMEN</th><td>$4,000.00</td></tr>
+        <tr><th scope="row">LOFGREN FOR CONGRESS</th><td>$4,000.00</td></tr>
+        <tr><th scope="row">BECCA BALINT FOR VERMONT</th><td>$4,000.00</td></tr>
+        <tr><th scope="row">YOCHA DEHE WINTUN NATION</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">TURTLE MOUNTAIN BAND OF CHIPPEWA</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">STRATEGIC LINK CONSULTING LP</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">PECHANGA BAND OF INDIANS</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">CAMPION, THOMAS D.</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">CRAMER, THEILINE W</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">AK-CHIN INDIAN COMMUNITY</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">SUQUAMISH INDIAN TRIBE</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">REPP, SUSAN</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">GULLICK, NANCY</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">JSTREETPAC</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">GOTTESMAN, SALLY</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">THE CONFEDERATED TRIBES OF THE COLVILLE RESERVATION</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">MEYER, RICHARD</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">LA BADIE, ANDREW</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">HOFMANN, PAUL</th><td>$3,500.00</td></tr>
+        <tr><th scope="row">FIGHT FOR FAIR LINES PAC</th><td>$3,331.07</td></tr>
+        <tr><th scope="row">ELECT DEMS NOW PAC</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">DE COLORES PAC</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">SNOQUALMIE TRIBE</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">LEDORZE, PHILIPPE</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">LEDORZE, JULIET S</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">HORWITZ, BRADLEY</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">DELANEY, QUINN</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">AMERICAN ISRAEL PUBLIC AFFAIRS COMMITTEE PAC (AIPAC PAC)</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">SCHOCKEN, JOSEPH L</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">RUDELL, RICHARD</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">BECHERER, ANDREW</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">TISCH, LIZZIE</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">TISCH, JONATHAN</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">SANDBERG, SHERYL</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">RAIKES, PATRICIA</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">RAIKES, JEFF S</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">PACHULSKI, RICHARD</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">MOGA, GREGORY M</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">LUMBARD, LYNN</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">LOSCHEN, MATT</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">LERT, RANDALL PETER</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">KEHOE, MELISSA</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">JURVETSON, KARLA</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">HOEHLER, KRISTEN</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">HIGGINS, LESLIE MAGID</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">HIGGINS, FRANK M</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">HARRIS, WILLIAM H</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">CURTIS, SPENCER</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">CAMPION, SONYA LYNN</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">BERNTHAL, THOMAS</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">ROSEN, DAVID</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">PLATT, JULIE</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">RESOLUTE COURAGE PAC</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">PROLIANCE SURGEONS POLITICAL ACTION COMMITTE</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">CENTRAL COAST VALUES PAC</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">WINKLEVOSS, TYLER</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">WINKLEVOSS, CAMERON</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">LUCAS, CLAIRE</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">FERARI, KYLE</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">CORCORAN, STEPHANIE</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">ZAPOLSKY, DAVID</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">GONZALEZ, JOHN MICHAEL</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">CLAUSE, JOSH</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">CHAMBERS, MERLE</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">STANTON, MARY BETH</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">PLANK-SHEPARD, CARRIE</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">PHILLIPS, MATTHEW</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">JENKS, ROBERT</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">JENKS, NEELOOFAR</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">HARMON, SUSAN</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">BERG, JEREMIE</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">JACOBS, IRWIN</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">BRIDGE, JON</th><td>$3,234.28</td></tr>
+        <tr><th scope="row">MCVEETY, SAM</th><td>$3,200.00</td></tr>
+        <tr><th scope="row">PUGET PAC</th><td>$3,000.00</td></tr>
+        <tr><th scope="row">WALMART INC. PAC FOR RESPONSIBLE GOVERNMENT</th><td>$3,000.00</td></tr>
+        <tr><th scope="row">BOWEN, GEORGE</th><td>$3,000.00</td></tr>
+        <tr><th scope="row">AMERICAN SUGAR CANE LEAGUE OF USA, INC PAC</th><td>$3,000.00</td></tr>
+        <tr><th scope="row">SERVE AMERICA PAC</th><td>$3,000.00</td></tr>
+        <tr><th scope="row">WALKINSHAW, BRADY</th><td>$3,000.00</td></tr>
+        <tr><th scope="row">SEARS, CYNTHIA L.</th><td>$3,000.00</td></tr>
+        <tr><th scope="row">LASPA, EILEEN</th><td>$3,000.00</td></tr>
+        <tr><th scope="row">GOLDMAN, PETER R</th><td>$3,000.00</td></tr>
+        <tr><th scope="row">COURT HOUSE SQUARE</th><td>$2,556.60</td></tr>
+        <tr><th scope="row">NATIONAL ASSOCIATION OF LETTER CARRIERS OF U.S.A. POLITICAL FUND (LETTER CARRIER POLITICAL</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">NATIONAL ACTIVE AND RETIRED FEDERAL EMPLOYEES ASSOCIATION POLITICAL ACTION COM (NARFE-PAC)</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">TAKE BACK THE HOUSE PAC</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">MORE PERFECT UNION PAC</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">SALINAS, NORBERTO</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">CHEROKEE NATION</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">RIPPLE OF HOPE PAC</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">PLANNED PARENTHOOD ACTION FUND INC PAC, DBA PLANNED PARENTHOOD FEDERAL PAC</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">ATU COPE VOUNTARY ACCOUNT</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">FELSON, JOE</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">ALASKA BERING SEA CRABBERS FEDERAL POLITICAL ACTION COMMITTEE (CRABBERS PAC)</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">OFFICE AND PROFESSIONAL EMPLOYEES INTERNATIONAL UNION</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">LATINO VICTORY FUND</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">AMERICAN ASSOCIATION OF NURSE ANESTHETISTS SEPARATE SEGREGATED FUND (CRNA-PAC)</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">OVERTON, DAVID E</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">NORDHOFF, GRACE ANN</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">MCCAW, NELL</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">SUPPORTING HOUSE PROBLEM SOLVERS - SHP PAC</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">NIKE INC FEDERAL POLITICAL ACTION COMMITTEE (NIKE FEDERAL PAC)</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">AMALGAMATED SUGAR COMPANY POLITICAL ACTION COMMITTEE</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">LUMMI INDIAN BUSINESS COUNCIL</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">UNITED PARCEL SERVICE, INC. PAC (UPSPAC)</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">TRUEDEM LEADERSHIP FUND</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">THE HOME DEPOT INC. POLITICAL ACTION COMMITTEE</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">DON&#x27;T MESS WITH TEXAS PAC</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">DOING RIGHT - RESULTS ACTION UNITY LEADERSHIP PAC</th><td>$2,500.00</td></tr>
+        <tr><th scope="row">JENCUNAS, BRIAN</th><td>$2,300.00</td></tr>
+        <tr><th scope="row">DEGEL, JAMES A.</th><td>$2,300.00</td></tr>
+        <tr><th scope="row">BERWICK, JEANNIE A</th><td>$2,300.00</td></tr>
+        <tr><th scope="row">DELANEY, M. QUINN</th><td>$2,300.00</td></tr>
+        <tr><th scope="row">ALLEN, WILLIAM R</th><td>$2,300.00</td></tr>
+        <tr><th scope="row">JEFFRIES, AMY</th><td>$2,300.00</td></tr>
+        <tr><th scope="row">BUYING TIME LLC</th><td>$2,247.30</td></tr>
+        <tr><th scope="row">GILL, DOUG</th><td>$2,100.00</td></tr>
+        <tr><th scope="row">WOODALL, W. PRESTON JR</th><td>$2,000.02</td></tr>
+        <tr><th scope="row">TRANSPORTATION TRADES DEPARTMENT AFL-CIO POLITICAL ACTION COMMITTEE (TTD/PAC)</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">TED LIEU FOR CONGRESS</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">SCHNEIDER FOR CONGRESS</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">MARCH ON PAC</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">END CITIZENS UNITED</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">POND, WENDIE</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">POARCH BAND OF CREEK INDIANS</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">FORT BELKNAP INDIAN COMMUNITY</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">WOOLDRIDGE, BRYAN</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">THOMPSON, TIM</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">BERGMAN, MATTHEW</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">ANDERSON, TRYGVE</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">PETE AGUILAR FOR CONGRESS</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">PEOPLE FOR DEREK KILMER</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">CITIZENS TO ELECT RICK LARSEN</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">BETTER FUTURE MI FUND</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">AMERICAN FEDERATION OF GOVT. EMPL. POLITICAL ACTION COMMITTEE</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">WERNER, ALBERT</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">LABADIE, ANDREW</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">GOLDMAN, AMIR</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">GINDI, ALAN</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">DEWITT, JODI</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">CASTELLANETA, DAN</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">BRELSFORD, DAN</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">BAGLEY, N.H</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">ARCHULETA, DEANNA</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">ALBISO, JOHN</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">TIVEN, RACHEL</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">MUSICANT, MYRA</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">LOWE&#x27;S COMPANIES, INC. POLITICAL ACTION COMMITTEE</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">HONEYWELL INTERNATIONAL POLITICAL ACTION COMMITTEE</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">KISTLER, WILLIAM</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">INGELS, GWEN</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">BATES, REX</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">DEMOCRATS RESHAPING AMERICA (DREAMPAC)</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">ROCKERS, JESSICA STAR</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">PRYZBYLSKI, BRIAN BRIAN</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">LARIVEE, JEFF</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">GARDNER, GRANT</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">BYERS, MARGARET R.</th><td>$2,000.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
     <p style="margin-bottom:12px; font-style:italic; color:var(--gray-dark);">Largest disbursements reported to the FEC for the current cycle, newest cycle only. This is not a complete ledger and does not sum to total spent.</p>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th><th>Date</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th><th scope="col">Date</th></tr></thead>
       <tbody>
-        <tr><td>DCCC</td><td>TRANSFER TO FEDERAL PARTY COMMITTEE</td><td>$32,500.00</td><td>2025-12-22</td></tr>
-        <tr><td>ROLLA GROUP LLC</td><td>FUNDRAISING CONSULTING</td><td>$31,000.00</td><td>2025-04-07</td></tr>
-        <tr><td>DCCC</td><td>TRANSFER TO FEDERAL PARTY COMMITTEE</td><td>$25,000.00</td><td>2025-07-22</td></tr>
-        <tr><td>DCCC</td><td>TRANSFER TO FEDERAL PARTY COMMITTEE</td><td>$25,000.00</td><td>2025-06-24</td></tr>
-        <tr><td>DCCC</td><td>TRANSFER TO FEDERAL PARTY COMMITTEE</td><td>$25,000.00</td><td>2026-03-25</td></tr>
-        <tr><td>ROLLA GROUP LLC</td><td>FUNDRAISING CONSULTING</td><td>$24,000.00</td><td>2025-04-07</td></tr>
-        <tr><td>DCCC</td><td>TRANSFER TO FEDERAL PARTY COMMITTEE</td><td>$20,000.00</td><td>2026-06-05</td></tr>
-        <tr><td>ROLLA GROUP LLC</td><td>FUNDRAISING CONSULTING</td><td>$18,000.00</td><td>2026-02-25</td></tr>
-        <tr><td>GRASSROOTS ANALYTICS LLC</td><td>DIRECT MAIL SERVICES</td><td>$17,500.00</td><td>2026-05-20</td></tr>
-        <tr><td>DCCC</td><td>TRANSFER TO FEDERAL PARTY COMMITTEE</td><td>$15,000.00</td><td>2026-06-30</td></tr>
+        <tr><th scope="row">DCCC</th><td>TRANSFER TO FEDERAL PARTY COMMITTEE</td><td>$32,500.00</td><td>2025-12-22</td></tr>
+        <tr><th scope="row">ROLLA GROUP LLC</th><td>FUNDRAISING CONSULTING</td><td>$31,000.00</td><td>2025-04-07</td></tr>
+        <tr><th scope="row">DCCC</th><td>TRANSFER TO FEDERAL PARTY COMMITTEE</td><td>$25,000.00</td><td>2025-07-22</td></tr>
+        <tr><th scope="row">DCCC</th><td>TRANSFER TO FEDERAL PARTY COMMITTEE</td><td>$25,000.00</td><td>2025-06-24</td></tr>
+        <tr><th scope="row">DCCC</th><td>TRANSFER TO FEDERAL PARTY COMMITTEE</td><td>$25,000.00</td><td>2026-03-25</td></tr>
+        <tr><th scope="row">ROLLA GROUP LLC</th><td>FUNDRAISING CONSULTING</td><td>$24,000.00</td><td>2025-04-07</td></tr>
+        <tr><th scope="row">DCCC</th><td>TRANSFER TO FEDERAL PARTY COMMITTEE</td><td>$20,000.00</td><td>2026-06-05</td></tr>
+        <tr><th scope="row">ROLLA GROUP LLC</th><td>FUNDRAISING CONSULTING</td><td>$18,000.00</td><td>2026-02-25</td></tr>
+        <tr><th scope="row">GRASSROOTS ANALYTICS LLC</th><td>DIRECT MAIL SERVICES</td><td>$17,500.00</td><td>2026-05-20</td></tr>
+        <tr><th scope="row">DCCC</th><td>TRANSFER TO FEDERAL PARTY COMMITTEE</td><td>$15,000.00</td><td>2026-06-30</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -426,16 +429,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

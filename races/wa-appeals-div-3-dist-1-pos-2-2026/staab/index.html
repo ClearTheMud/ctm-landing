@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -27,6 +28,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Tracy Arlene Staab</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -44,15 +47,15 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Tracy Arlene Staab</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Spokane County, Washington (Medical Lake area per her PDC filing). Her judicial and campaign records are based in the Spokane area.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan (Washington judicial offices are elected on a nonpartisan basis; no party appears on the ballot)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Family</td><td>Married to her husband Scott. Their daughter graduated from Washington State University.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>Bachelor&#x27;s degree, Western Washington University; Juris Doctor, cum laude, Seattle University School of Law (then University of Puget Sound School of Law), 1993</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>Judicial law clerk to Judge Stephen Brown, Washington State Court of Appeals, Division III.; Public defender with the City of Spokane, then Federal Defender, where her practice concentrated on appellate work primarily before the Ninth Circuit Court of Appeals. Also worked in private practice and served as a city prosecutor.; Judge, Spokane Municipal Court, 2009 to 2021, as one of the court&#x27;s first three judges; helped design an evidence-based therapeutic court recognized locally, regionally, and nationally.; Judge, Washington State Court of Appeals, Division III, since January 2021; currently Acting Chief Judge.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Tracy Arlene Staab</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Spokane County, Washington (Medical Lake area per her PDC filing). Her judicial and campaign records are based in the Spokane area.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan (Washington judicial offices are elected on a nonpartisan basis; no party appears on the ballot)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Family</th><td>Married to her husband Scott. Their daughter graduated from Washington State University.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>Bachelor&#x27;s degree, Western Washington University; Juris Doctor, cum laude, Seattle University School of Law (then University of Puget Sound School of Law), 1993</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Judicial law clerk to Judge Stephen Brown, Washington State Court of Appeals, Division III.; Public defender with the City of Spokane, then Federal Defender, where her practice concentrated on appellate work primarily before the Ninth Circuit Court of Appeals. Also worked in private practice and served as a city prosecutor.; Judge, Spokane Municipal Court, 2009 to 2021, as one of the court&#x27;s first three judges; helped design an evidence-based therapeutic court recognized locally, regionally, and nationally.; Judge, Washington State Court of Appeals, Division III, since January 2021; currently Acting Chief Judge.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -67,14 +70,14 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Washington State Court of Appeals, Division III, District 1, Position 2</td><td>Running unopposed for re-election. Declared 5/4/2026. No August primary (only one candidate filed); advances directly to the November 3, 2026 general election.</td><td>Research</td></tr>
-        <tr><td>2020</td><td>Washington State Court of Appeals, Division III, District 1, Position 2</td><td>Won the November 3, 2020 general election, defeating Marshall Casey. Took office January 11, 2021, succeeding Judge Kevin Korsmo.</td><td>Research</td></tr>
-        <tr><td>2017</td><td>City Of Spokane Municipal Court Judge #1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2026</th><td>Washington State Court of Appeals, Division III, District 1, Position 2</td><td>Running unopposed for re-election. Declared 5/4/2026. No August primary (only one candidate filed); advances directly to the November 3, 2026 general election.</td><td>Research</td></tr>
+        <tr><th scope="row">2020</th><td>Washington State Court of Appeals, Division III, District 1, Position 2</td><td>Won the November 3, 2020 general election, defeating Marshall Casey. Took office January 11, 2021, succeeding Judge Kevin Korsmo.</td><td>Research</td></tr>
+        <tr><th scope="row">2017</th><td>City Of Spokane Municipal Court Judge #1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
@@ -97,16 +100,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

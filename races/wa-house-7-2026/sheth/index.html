@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -27,6 +28,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Nirav Sheth</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -55,13 +58,13 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Nirav Sheth</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Normandy Park, King County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Small business owner. Owned Bistro Baffi, a restaurant in Normandy Park, which closed in 2024 with the owner citing crime and lack of community support. Also identified as CEO of Sheth Group LLC.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Nirav Sheth</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Normandy Park, King County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Small business owner. Owned Bistro Baffi, a restaurant in Normandy Park, which closed in 2024 with the owner citing crime and lack of community support. Also identified as CEO of Sheth Group LLC.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -80,55 +83,55 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>U.S. House, WA Congressional District 7 (Primary, Aug 4)</td><td>Running as a Republican, challenging incumbent Rep. Pramila Jayapal (D) in the top-two primary. Other filed candidates include Gwen Kirkland (D) and David W. Blomstrom (Fifth Republic Party). CD-7 is a safe Democratic seat covering Seattle and parts of King County.</td><td>Research</td></tr>
-        <tr><td>2024</td><td>U.S. House, WA Congressional District 10 (Aug 6 top-two primary)</td><td>Ran as a Republican and did not advance, finishing third behind incumbent Rep. Marilyn Strickland (D) and Republican Don Hewett.</td><td>Research</td></tr>
-        <tr><td>2021</td><td>Port Of Tacoma Commissioner Pos. 4 (Primary)</td><td>Lost (6 of 10)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2026</th><td>U.S. House, WA Congressional District 7 (Primary, Aug 4)</td><td>Running as a Republican, challenging incumbent Rep. Pramila Jayapal (D) in the top-two primary. Other filed candidates include Gwen Kirkland (D) and David W. Blomstrom (Fifth Republic Party). CD-7 is a safe Democratic seat covering Seattle and parts of King County.</td><td>Research</td></tr>
+        <tr><th scope="row">2024</th><td>U.S. House, WA Congressional District 10 (Aug 6 top-two primary)</td><td>Ran as a Republican and did not advance, finishing third behind incumbent Rep. Marilyn Strickland (D) and Republican Don Hewett.</td><td>Research</td></tr>
+        <tr><th scope="row">2021</th><td>Port Of Tacoma Commissioner Pos. 4 (Primary)</td><td>Lost (6 of 10)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$11,810.81</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Total Spent</td><td>$10,525.00</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Total Raised</th><td>$11,810.81</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Total Spent</th><td>$10,525.00</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">Source: Federal Election Commission.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>SHETH, NIRAV</td><td>$38,206.72</td></tr>
-        <tr><td>105 CONSULTING</td><td>$10,000.00</td></tr>
-        <tr><td>BASLER, DOUG</td><td>$5,000.00</td></tr>
-        <tr><td>MILEWSKI, BRENDA</td><td>$3,350.00</td></tr>
-        <tr><td>KHUMAN SHETH, TANIYA</td><td>$1,000.00</td></tr>
-        <tr><td>DUNN, MICHAEL</td><td>$500.00</td></tr>
-        <tr><td>MASON, VIRGINIA</td><td>$250.00</td></tr>
-        <tr><td>EMBERSON-NASH, WALLY</td><td>$250.00</td></tr>
-        <tr><td>JARVIS, SCOT</td><td>$250.00</td></tr>
-        <tr><td>IWICKI, CATHERINE</td><td>$250.00</td></tr>
-        <tr><td>BEHAR, HELENE</td><td>$250.00</td></tr>
+        <tr><th scope="row">SHETH, NIRAV</th><td>$38,206.72</td></tr>
+        <tr><th scope="row">105 CONSULTING</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">BASLER, DOUG</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">MILEWSKI, BRENDA</th><td>$3,350.00</td></tr>
+        <tr><th scope="row">KHUMAN SHETH, TANIYA</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">DUNN, MICHAEL</th><td>$500.00</td></tr>
+        <tr><th scope="row">MASON, VIRGINIA</th><td>$250.00</td></tr>
+        <tr><th scope="row">EMBERSON-NASH, WALLY</th><td>$250.00</td></tr>
+        <tr><th scope="row">JARVIS, SCOT</th><td>$250.00</td></tr>
+        <tr><th scope="row">IWICKI, CATHERINE</th><td>$250.00</td></tr>
+        <tr><th scope="row">BEHAR, HELENE</th><td>$250.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
     <p style="margin-bottom:12px; font-style:italic; color:var(--gray-dark);">Largest disbursements reported to the FEC for the current cycle, newest cycle only. This is not a complete ledger and does not sum to total spent.</p>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th><th>Date</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th><th scope="col">Date</th></tr></thead>
       <tbody>
-        <tr><td>BASLER, DOUG</td><td>IN-KIND - POLITICAL CONSULT</td><td>$5,000.00</td><td>2026-07-03</td></tr>
-        <tr><td>GREWAL, NEET</td><td>CAMPAIGN CONSULTING FEE/ MANAGING</td><td>$4,000.00</td><td>2026-05-12</td></tr>
-        <tr><td>FACEBOOK, ADS</td><td>FACEBOOK ADS</td><td>$1,150.00</td><td>2026-06-30</td></tr>
-        <tr><td>OFFICE, DEPOT</td><td>CANDIDATE PAMPHLET</td><td>$375.00</td><td>2026-05-29</td></tr>
+        <tr><th scope="row">BASLER, DOUG</th><td>IN-KIND - POLITICAL CONSULT</td><td>$5,000.00</td><td>2026-07-03</td></tr>
+        <tr><th scope="row">GREWAL, NEET</th><td>CAMPAIGN CONSULTING FEE/ MANAGING</td><td>$4,000.00</td><td>2026-05-12</td></tr>
+        <tr><th scope="row">FACEBOOK, ADS</th><td>FACEBOOK ADS</td><td>$1,150.00</td><td>2026-06-30</td></tr>
+        <tr><th scope="row">OFFICE, DEPOT</th><td>CANDIDATE PAMPHLET</td><td>$375.00</td><td>2026-05-29</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -163,16 +166,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

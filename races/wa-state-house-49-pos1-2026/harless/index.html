@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Kim D. Harless</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Kim D. Harless</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Kim D. Harless</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -78,61 +81,61 @@ As a mother and multi-racial, Indigenous, and Mexican American raised in Vancouv
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2025</td><td>City Of Vancouver Council - Position NO. 1 (Primary)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
-        <tr><td>2025</td><td>City Of Vancouver Council - Position NO. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2021</td><td>City Of Vancouver Council - Position NO. 1 (Primary)</td><td>Won (1 of 5)</td><td>WA SOS</td></tr>
-        <tr><td>2021</td><td>City Of Vancouver Council - Position NO. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2020</td><td>County Councilor District NO. 1 Charter Review Commissioner, District 1, Pos. 2 (General)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2025</th><td>City Of Vancouver Council - Position NO. 1 (Primary)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2025</th><td>City Of Vancouver Council - Position NO. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2021</th><td>City Of Vancouver Council - Position NO. 1 (Primary)</td><td>Won (1 of 5)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2021</th><td>City Of Vancouver Council - Position NO. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2020</th><td>County Councilor District NO. 1 Charter Review Commissioner, District 1, Pos. 2 (General)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$66,211.04 (221 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$35,810.31 (108 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$66,211.04 (221 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$35,810.31 (108 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Cowlitz Indian Tribe, Longview</td><td>$1,200.00</td></tr>
-        <tr><td>Eric Hale, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>Eric Hale, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>Heather Carpenter, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>Heather Carpenter, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>International Association of Firefighters Local 452, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>John Park, Vancouver</td><td>$1,200.00</td></tr>
-        <tr><td>Justice for All PAC, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Laura Silverton, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>NAYA Action Fund, Portland</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Cowlitz Indian Tribe, Longview</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Eric Hale, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Eric Hale, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Heather Carpenter, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Heather Carpenter, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">International Association of Firefighters Local 452, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">John Park, Vancouver</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Justice for All PAC, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Laura Silverton, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">NAYA Action Fund, Portland</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Blue Wave Political Partners LLC</td><td>Fundraising Consulting</td><td>$3,750.00</td></tr>
-        <tr><td>Blue Wave Political Partners LLC</td><td>Fundraising Consulting</td><td>$3,750.00</td></tr>
-        <tr><td>Blue Wave Political Partners LLC</td><td>Fundraising Consulting</td><td>$3,750.00</td></tr>
-        <tr><td>Blue Wave Political Partners LLC</td><td>Fundraising Consulting</td><td>$3,750.00</td></tr>
-        <tr><td>Okra Limited</td><td>Insync Printing (3653 NW 12th Ave, Camas, WA 98607): Handouts (10000)</td><td>$1,611.72</td></tr>
-        <tr><td>Mark Lopez</td><td>Crave Catering (1324 SE 8th Ave, Portland, OR): Catering</td><td>$1,000.00</td></tr>
-        <tr><td>Washington State Democratic Central Committee</td><td>Votebuilder List Rental (98291 records)</td><td>$1,000.00</td></tr>
-        <tr><td>Okra Limited</td><td>Brian Dalbalcon (8281 Grizzly Way, Evergreen, CO): Photography</td><td>$950.00</td></tr>
-        <tr><td>Clark County Democratic Central Committee</td><td>Ogden Dinner Tickets (7)</td><td>$910.00</td></tr>
-        <tr><td>Washington State Democratic Central Committee</td><td>Votebuilder List Rental (98291 Records)</td><td>$800.00</td></tr>
+        <tr><th scope="row">Blue Wave Political Partners LLC</th><td>Fundraising Consulting</td><td>$3,750.00</td></tr>
+        <tr><th scope="row">Blue Wave Political Partners LLC</th><td>Fundraising Consulting</td><td>$3,750.00</td></tr>
+        <tr><th scope="row">Blue Wave Political Partners LLC</th><td>Fundraising Consulting</td><td>$3,750.00</td></tr>
+        <tr><th scope="row">Blue Wave Political Partners LLC</th><td>Fundraising Consulting</td><td>$3,750.00</td></tr>
+        <tr><th scope="row">Okra Limited</th><td>Insync Printing (3653 NW 12th Ave, Camas, WA 98607): Handouts (10000)</td><td>$1,611.72</td></tr>
+        <tr><th scope="row">Mark Lopez</th><td>Crave Catering (1324 SE 8th Ave, Portland, OR): Catering</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">Washington State Democratic Central Committee</th><td>Votebuilder List Rental (98291 records)</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">Okra Limited</th><td>Brian Dalbalcon (8281 Grizzly Way, Evergreen, CO): Photography</td><td>$950.00</td></tr>
+        <tr><th scope="row">Clark County Democratic Central Committee</th><td>Ogden Dinner Tickets (7)</td><td>$910.00</td></tr>
+        <tr><th scope="row">Washington State Democratic Central Committee</th><td>Votebuilder List Rental (98291 Records)</td><td>$800.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -147,16 +150,20 @@ As a mother and multi-racial, Indigenous, and Mexican American raised in Vancouv
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

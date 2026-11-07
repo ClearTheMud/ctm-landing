@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Julie Long</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -64,46 +67,46 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$37,765.44 (78 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$25,802.40 (32 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$37,765.44 (78 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$25,802.40 (32 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Julie E. Long</td><td>$5,300.64</td></tr>
-        <tr><td>Julie E. Long</td><td>$2,374.60</td></tr>
-        <tr><td>Julie E. Long</td><td>$1,632.00</td></tr>
-        <tr><td>Connors Adele, Kennewick</td><td>$1,200.00</td></tr>
-        <tr><td>Connors Adele, Kennewick</td><td>$1,200.00</td></tr>
-        <tr><td>Frost Sue, Kennewick</td><td>$1,200.00</td></tr>
-        <tr><td>GIDEONS&#x27;S ASSOCIATES PLLC, Kennewick</td><td>$1,200.00</td></tr>
-        <tr><td>Holt Kevin L, Kennewick</td><td>$1,200.00</td></tr>
-        <tr><td>Julie E. Long</td><td>$1,050.00</td></tr>
-        <tr><td>Moody April, Richland</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">Julie E. Long</th><td>$5,300.64</td></tr>
+        <tr><th scope="row">Julie E. Long</th><td>$2,374.60</td></tr>
+        <tr><th scope="row">Julie E. Long</th><td>$1,632.00</td></tr>
+        <tr><th scope="row">Connors Adele, Kennewick</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Connors Adele, Kennewick</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Frost Sue, Kennewick</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">GIDEONS&#x27;S ASSOCIATES PLLC, Kennewick</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Holt Kevin L, Kennewick</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Julie E. Long</th><td>$1,050.00</td></tr>
+        <tr><th scope="row">Moody April, Richland</th><td>$1,000.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Underground Creative LLC</td><td>Design/Production ($2500), Digital Marketing ($3000), Taxes ($258)</td><td>$5,758.00</td></tr>
-        <tr><td>Julie E. Long</td><td>Yard Signs (520) + Yard Stakes (500)</td><td>$5,300.64</td></tr>
-        <tr><td>Julie E. Long</td><td>Filing Fee (Benton County)</td><td>$2,374.60</td></tr>
-        <tr><td>Townsquare Media</td><td>Radio Advertising 7/17 to 8/4</td><td>$1,826.19</td></tr>
-        <tr><td>Julie E. Long</td><td>PR Firm Deposit (Underground Creative LLC)</td><td>$1,632.00</td></tr>
-        <tr><td>Spectrum Studios</td><td>Website &amp; Logo Design</td><td>$1,632.00</td></tr>
-        <tr><td>Julie E. Long</td><td>Payment to CG Edwards PLLC for Treasury</td><td>$1,050.00</td></tr>
-        <tr><td>Spectrum Studios</td><td>Rack Cards (1500), Signs (8)</td><td>$1,035.79</td></tr>
-        <tr><td>Spectrum Studios</td><td>Rack Cards (300), Signs (5)</td><td>$689.79</td></tr>
-        <tr><td>Spectrum Studios</td><td>T-Shirts (61)</td><td>$604.37</td></tr>
+        <tr><th scope="row">Underground Creative LLC</th><td>Design/Production ($2500), Digital Marketing ($3000), Taxes ($258)</td><td>$5,758.00</td></tr>
+        <tr><th scope="row">Julie E. Long</th><td>Yard Signs (520) + Yard Stakes (500)</td><td>$5,300.64</td></tr>
+        <tr><th scope="row">Julie E. Long</th><td>Filing Fee (Benton County)</td><td>$2,374.60</td></tr>
+        <tr><th scope="row">Townsquare Media</th><td>Radio Advertising 7/17 to 8/4</td><td>$1,826.19</td></tr>
+        <tr><th scope="row">Julie E. Long</th><td>PR Firm Deposit (Underground Creative LLC)</td><td>$1,632.00</td></tr>
+        <tr><th scope="row">Spectrum Studios</th><td>Website &amp; Logo Design</td><td>$1,632.00</td></tr>
+        <tr><th scope="row">Julie E. Long</th><td>Payment to CG Edwards PLLC for Treasury</td><td>$1,050.00</td></tr>
+        <tr><th scope="row">Spectrum Studios</th><td>Rack Cards (1500), Signs (8)</td><td>$1,035.79</td></tr>
+        <tr><th scope="row">Spectrum Studios</th><td>Rack Cards (300), Signs (5)</td><td>$689.79</td></tr>
+        <tr><th scope="row">Spectrum Studios</th><td>T-Shirts (61)</td><td>$604.37</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -117,14 +120,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

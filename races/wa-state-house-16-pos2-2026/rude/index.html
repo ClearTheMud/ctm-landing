@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Skyler Rude</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Skyler Rude</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Skyler Rude</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -76,65 +79,65 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2024</td><td>Legislative District 16 - State Representative Pos. 2 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2024</td><td>Legislative District 16 - State Representative Pos. 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Legislative District 16 - State Representative Pos. 2 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Legislative District 16 - State Representative Pos. 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2020</td><td>Legislative District 16 - State Representative Pos. 2 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2020</td><td>Legislative District 16 - State Representative Pos. 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>Legislative District 16 - State Representative Pos. 2 (Primary)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>Legislative District 16 - State Representative Pos. 2 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2016</td><td>Legislative District 16 - State Representative Pos. 1 (Primary)</td><td>Lost (3 of 5)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Legislative District 16 - State Representative Pos. 2 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Legislative District 16 - State Representative Pos. 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Legislative District 16 - State Representative Pos. 2 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Legislative District 16 - State Representative Pos. 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2020</th><td>Legislative District 16 - State Representative Pos. 2 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2020</th><td>Legislative District 16 - State Representative Pos. 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>Legislative District 16 - State Representative Pos. 2 (Primary)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>Legislative District 16 - State Representative Pos. 2 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2016</th><td>Legislative District 16 - State Representative Pos. 1 (Primary)</td><td>Lost (3 of 5)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$71,165.41 (95 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$17,192.99 (59 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$71,165.41 (95 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$17,192.99 (59 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>AMAZON.COM, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>AMAZON.COM, Washington</td><td>$1,200.00</td></tr>
-        <tr><td>BUILD EAST PAC, SPOKANE</td><td>$1,200.00</td></tr>
-        <tr><td>CHEVRON POLICY GOV &amp; PUBLIC AFFAIRS, SAN RAMON</td><td>$1,200.00</td></tr>
-        <tr><td>CONFEDERATED TRIBES OF UMATILLA INDIAN RESERVATION, PENDLETON</td><td>$1,200.00</td></tr>
-        <tr><td>CREDIT UNION LEGISLATIVE ACTION FUND, SEATAC</td><td>$1,200.00</td></tr>
-        <tr><td>DELTA DENTAL OF WASHINGTON, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>DELTA DENTAL OF WASHINGTON, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>JUSTICE FOR ALL PAC, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>MACPAC, Olympia</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">AMAZON.COM, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">AMAZON.COM, Washington</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">BUILD EAST PAC, SPOKANE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">CHEVRON POLICY GOV &amp; PUBLIC AFFAIRS, SAN RAMON</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">CONFEDERATED TRIBES OF UMATILLA INDIAN RESERVATION, PENDLETON</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">CREDIT UNION LEGISLATIVE ACTION FUND, SEATAC</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">DELTA DENTAL OF WASHINGTON, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">DELTA DENTAL OF WASHINGTON, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">JUSTICE FOR ALL PAC, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">MACPAC, Olympia</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>INTEGRITY DESIGN &amp; COPYWORKS, LLC</td><td>20 4&#x27;X8&#x27; signs, 250 standard yard signs with H wires.</td><td>$8,719.82</td></tr>
-        <tr><td>CMBell Company</td><td>Website Design and Building</td><td>$2,618.13</td></tr>
-        <tr><td>WA SECRETARY OF STATE</td><td>Filing Fee</td><td>$676.88</td></tr>
-        <tr><td>Skyler Rude</td><td>to candidate</td><td>$552.45</td></tr>
-        <tr><td>Airbnb</td><td>Cascade Conference Accomodations</td><td>$494.64</td></tr>
-        <tr><td>Beth Swanson PR &amp; Consulting, LLC</td><td>Campaign Manager Services &amp; Sign Delivery</td><td>$430.00</td></tr>
-        <tr><td>WAL-MART SUPER</td><td>Pasco Parade Candy</td><td>$257.80</td></tr>
-        <tr><td>SQSP Squarespace Services</td><td>Website</td><td>$242.20</td></tr>
-        <tr><td>SQSP Squarespace Services</td><td>Website Platform</td><td>$240.90</td></tr>
-        <tr><td>Swiftwater  Cellars</td><td>Campaign Planning meeting</td><td>$228.98</td></tr>
+        <tr><th scope="row">INTEGRITY DESIGN &amp; COPYWORKS, LLC</th><td>20 4&#x27;X8&#x27; signs, 250 standard yard signs with H wires.</td><td>$8,719.82</td></tr>
+        <tr><th scope="row">CMBell Company</th><td>Website Design and Building</td><td>$2,618.13</td></tr>
+        <tr><th scope="row">WA SECRETARY OF STATE</th><td>Filing Fee</td><td>$676.88</td></tr>
+        <tr><th scope="row">Skyler Rude</th><td>to candidate</td><td>$552.45</td></tr>
+        <tr><th scope="row">Airbnb</th><td>Cascade Conference Accomodations</td><td>$494.64</td></tr>
+        <tr><th scope="row">Beth Swanson PR &amp; Consulting, LLC</th><td>Campaign Manager Services &amp; Sign Delivery</td><td>$430.00</td></tr>
+        <tr><th scope="row">WAL-MART SUPER</th><td>Pasco Parade Candy</td><td>$257.80</td></tr>
+        <tr><th scope="row">SQSP Squarespace Services</th><td>Website</td><td>$242.20</td></tr>
+        <tr><th scope="row">SQSP Squarespace Services</th><td>Website Platform</td><td>$240.90</td></tr>
+        <tr><th scope="row">Swiftwater  Cellars</th><td>Campaign Planning meeting</td><td>$228.98</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -149,16 +152,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

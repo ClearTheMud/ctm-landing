@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -25,6 +26,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">2026 Georgia US Senate</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -46,19 +49,19 @@
     <h2><span class="section-num">1</span> Candidate Field</h2>
     <div class="dossier-links">
       <a href="/races/ga-senate-2026/ossoff/" class="dossier-link">
-        <h4>Jon Ossoff (Democratic)</h4>
+        <h3>Jon Ossoff (Democratic)</h3>
         <p><span class="status-active">DEMOCRATIC NOMINEE</span>, Nominated unopposed | Raised: $60.4M | COH: $32.5M</p>
       </a>
       <a href="/races/ga-senate-2026/collins/" class="dossier-link">
-        <h4>Mike Collins (Republican)</h4>
+        <h3>Mike Collins (Republican)</h3>
         <p><span class="status-active">ADVANCED TO RUNOFF</span>, 40.5% in primary | Raised: $4.9M</p>
       </a>
       <a href="/races/ga-senate-2026/dooley/" class="dossier-link">
-        <h4>Derek Dooley (Republican)</h4>
+        <h3>Derek Dooley (Republican)</h3>
         <p><span class="status-active">ADVANCED TO RUNOFF</span>, 30.2% in primary | Kemp-backed | Raised: $4.2M</p>
       </a>
       <a href="/races/ga-senate-2026/carter/" class="dossier-link">
-        <h4>Buddy Carter (Republican)</h4>
+        <h3>Buddy Carter (Republican)</h3>
         <p><span class="status-withdrawn">ELIMINATED IN PRIMARY</span>, 25.2%, third place | $8.1M spent</p>
       </a>
     </div>
@@ -74,19 +77,19 @@
 
   <div class="section">
     <h2><span class="section-num">3</span> Primary Results, May 19, 2026</h2>
-    <table>
+    <div class="table-scroll" role="region" aria-label="Primary Results, May 19, 2026, scrollable table" tabindex="0"><table><caption class="sr-only">Primary Results, May 19, 2026</caption>
       <thead>
-        <tr><th>Candidate</th><th>Party</th><th>Votes</th><th>%</th><th>Result</th></tr>
+        <tr><th scope="col">Candidate</th><th scope="col">Party</th><th scope="col">Votes</th><th scope="col">%</th><th scope="col">Result</th></tr>
       </thead>
       <tbody>
-        <tr><td>Jon Ossoff</td><td>D</td><td>1,042,331</td><td>100%</td><td>Nominated unopposed</td></tr>
-        <tr><td>Mike Collins</td><td>R</td><td>365,392</td><td>40.5%</td><td>Advanced to runoff</td></tr>
-        <tr><td>Derek Dooley</td><td>R</td><td>272,416</td><td>30.2%</td><td>Advanced to runoff</td></tr>
-        <tr><td>Buddy Carter</td><td>R</td><td>227,343</td><td>25.2%</td><td>Eliminated</td></tr>
-        <tr><td>Jonathan McColumn</td><td>R</td><td>28,105</td><td>3.1%</td><td>Eliminated</td></tr>
-        <tr><td>John Coyne</td><td>R</td><td>9,720</td><td>1.1%</td><td>Eliminated</td></tr>
+        <tr><th scope="row">Jon Ossoff</th><td>D</td><td>1,042,331</td><td>100%</td><td>Nominated unopposed</td></tr>
+        <tr><th scope="row">Mike Collins</th><td>R</td><td>365,392</td><td>40.5%</td><td>Advanced to runoff</td></tr>
+        <tr><th scope="row">Derek Dooley</th><td>R</td><td>272,416</td><td>30.2%</td><td>Advanced to runoff</td></tr>
+        <tr><th scope="row">Buddy Carter</th><td>R</td><td>227,343</td><td>25.2%</td><td>Eliminated</td></tr>
+        <tr><th scope="row">Jonathan McColumn</th><td>R</td><td>28,105</td><td>3.1%</td><td>Eliminated</td></tr>
+        <tr><th scope="row">John Coyne</th><td>R</td><td>9,720</td><td>1.1%</td><td>Eliminated</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="margin-top:8px; font-size:13px; color:var(--gray-dark);">No Republican reached 50%; Collins and Dooley advance to the June 16, 2026 runoff. Republican primary total: 902,976 votes. Totals are uncertified, as compiled by Ballotpedia from GA SOS results (accessed 2026-06-10).</p>
   </div>
 
@@ -105,17 +108,17 @@
 
   <div class="section">
     <h2><span class="section-num">5</span> Financial State of Play</h2>
-    <table>
+    <div class="table-scroll" role="region" aria-label="Financial State of Play, scrollable table" tabindex="0"><table><caption class="sr-only">Financial State of Play</caption>
       <thead>
-        <tr><th>Candidate</th><th>Party</th><th>Total Raised</th><th>Total Spent</th><th>COH</th><th>Burn Rate</th></tr>
+        <tr><th scope="col">Candidate</th><th scope="col">Party</th><th scope="col">Total Raised</th><th scope="col">Total Spent</th><th scope="col">COH</th><th scope="col">Burn Rate</th></tr>
       </thead>
       <tbody>
-        <tr><td>Jon Ossoff</td><td>D</td><td>$60.4M</td><td>$32.9M</td><td>$32.5M</td><td>54.5%</td></tr>
-        <tr><td>Buddy Carter</td><td>R</td><td>$6.8M</td><td>$8.1M</td><td>$1.7M</td><td>119.1%</td></tr>
-        <tr><td>Mike Collins</td><td>R</td><td>$4.9M</td><td>$4.3M</td><td>$1.2M</td><td>88.3%</td></tr>
-        <tr><td>Derek Dooley</td><td>R</td><td>$4.2M</td><td>$2.5M</td><td>$1.7M</td><td>60.0%</td></tr>
+        <tr><th scope="row">Jon Ossoff</th><td>D</td><td>$60.4M</td><td>$32.9M</td><td>$32.5M</td><td>54.5%</td></tr>
+        <tr><th scope="row">Buddy Carter</th><td>R</td><td>$6.8M</td><td>$8.1M</td><td>$1.7M</td><td>119.1%</td></tr>
+        <tr><th scope="row">Mike Collins</th><td>R</td><td>$4.9M</td><td>$4.3M</td><td>$1.2M</td><td>88.3%</td></tr>
+        <tr><th scope="row">Derek Dooley</th><td>R</td><td>$4.2M</td><td>$2.5M</td><td>$1.7M</td><td>60.0%</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="margin-top:8px; font-size:13px; color:var(--gray-dark);">Source: FEC/OpenFEC API (T1). Collins &amp; Dooley: pre-runoff reports through 2026-05-27. Ossoff &amp; Carter: pre-primary reports through 2026-04-29. Accessed 2026-06-10. Dooley leads the runoff field in cash on hand ($1,668,910 vs. Collins&rsquo; $1,168,787).</p>
   </div>
 
@@ -133,14 +136,18 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

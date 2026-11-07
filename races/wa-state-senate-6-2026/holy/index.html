@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Jeff Holy</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Jeff Holy</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Jeff Holy</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -79,64 +82,64 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2022</td><td>Legislative District 6 - State Senator (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Legislative District 6 - State Senator (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>Legislative District 6 - State Senator (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>Legislative District 6 - State Senator (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2016</td><td>Legislative District 6 - State Representative Pos. 2 (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2016</td><td>Legislative District 6 - State Representative Pos. 2 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2014</td><td>Legislative District 6 - State Representative Pos. 2 (Primary)</td><td>Won (unopposed)</td><td>WA SOS</td></tr>
-        <tr><td>2014</td><td>Legislative District 6 - State Representative Pos. 2 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Legislative District 6 - State Senator (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Legislative District 6 - State Senator (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>Legislative District 6 - State Senator (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>Legislative District 6 - State Senator (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2016</th><td>Legislative District 6 - State Representative Pos. 2 (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2016</th><td>Legislative District 6 - State Representative Pos. 2 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2014</th><td>Legislative District 6 - State Representative Pos. 2 (Primary)</td><td>Won (unopposed)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2014</th><td>Legislative District 6 - State Representative Pos. 2 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$113,900.00 (134 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$64,274.24 (53 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$113,900.00 (134 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$64,274.24 (53 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>ALTRIA CLIENT SVCES, Richmond</td><td>$1,200.00</td></tr>
-        <tr><td>AMAZON.COM, Washington</td><td>$1,200.00</td></tr>
-        <tr><td>AMAZON.COM, Washington</td><td>$1,200.00</td></tr>
-        <tr><td>AVISTA CORP, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>BOMA PAC OF WA STATE, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>CHEVRON, San Ramon</td><td>$1,200.00</td></tr>
-        <tr><td>COUNCIL OF P0LICE POLITICAL SUPPORT, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>COUNCIL OF P0LICE POLITICAL SUPPORT, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>CREDIT UNION LEGISLATIVE ACTION FUND, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>DAVITA, Federal Way</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">ALTRIA CLIENT SVCES, Richmond</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">AMAZON.COM, Washington</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">AMAZON.COM, Washington</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">AVISTA CORP, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">BOMA PAC OF WA STATE, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">CHEVRON, San Ramon</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">COUNCIL OF P0LICE POLITICAL SUPPORT, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">COUNCIL OF P0LICE POLITICAL SUPPORT, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">CREDIT UNION LEGISLATIVE ACTION FUND, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">DAVITA, Federal Way</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>JEFF HOLY SURPLUS FUNDS</td><td>Transfer of Funds</td><td>$50,000.00</td></tr>
-        <tr><td>BENJAMIN CHARLOTTE</td><td>2026 Acct&#x27;ng, Filing &amp; Closing</td><td>$3,000.00</td></tr>
-        <tr><td>BENJAMIN CHARLOTTE</td><td>CY 2023 Acct&#x27;ng &amp; Filing</td><td>$1,500.00</td></tr>
-        <tr><td>BENJAMIN CHARLOTTE</td><td>Acct&#x27;ng &amp; Filing for 2024</td><td>$1,500.00</td></tr>
-        <tr><td>BENJAMIN CHARLOTTE</td><td>Jan-Dec 2025 Acct&#x27;ng &amp; Filing</td><td>$1,500.00</td></tr>
-        <tr><td>PRESSCATS LLC</td><td>25 4x4 Signs</td><td>$937.58</td></tr>
-        <tr><td>RIVER MARKETING LLC</td><td>Voter Guide Submission &amp; Website Update</td><td>$709.15</td></tr>
-        <tr><td>WA SECRETARY OF STATE</td><td>Campaign Filing Fee</td><td>$676.88</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$466.43</td></tr>
-        <tr><td>WIX.COM</td><td>Website Hosting</td><td>$343.09</td></tr>
+        <tr><th scope="row">JEFF HOLY SURPLUS FUNDS</th><td>Transfer of Funds</td><td>$50,000.00</td></tr>
+        <tr><th scope="row">BENJAMIN CHARLOTTE</th><td>2026 Acct&#x27;ng, Filing &amp; Closing</td><td>$3,000.00</td></tr>
+        <tr><th scope="row">BENJAMIN CHARLOTTE</th><td>CY 2023 Acct&#x27;ng &amp; Filing</td><td>$1,500.00</td></tr>
+        <tr><th scope="row">BENJAMIN CHARLOTTE</th><td>Acct&#x27;ng &amp; Filing for 2024</td><td>$1,500.00</td></tr>
+        <tr><th scope="row">BENJAMIN CHARLOTTE</th><td>Jan-Dec 2025 Acct&#x27;ng &amp; Filing</td><td>$1,500.00</td></tr>
+        <tr><th scope="row">PRESSCATS LLC</th><td>25 4x4 Signs</td><td>$937.58</td></tr>
+        <tr><th scope="row">RIVER MARKETING LLC</th><td>Voter Guide Submission &amp; Website Update</td><td>$709.15</td></tr>
+        <tr><th scope="row">WA SECRETARY OF STATE</th><td>Campaign Filing Fee</td><td>$676.88</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$466.43</td></tr>
+        <tr><th scope="row">WIX.COM</th><td>Website Hosting</td><td>$343.09</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -151,16 +154,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

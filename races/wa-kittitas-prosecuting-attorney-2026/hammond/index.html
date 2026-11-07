@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Jodi Hammond</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -64,46 +67,46 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$17,440.00 (48 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$10,614.78 (19 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$17,440.00 (48 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$10,614.78 (19 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Kittitas County Republican Party, Ellensburg</td><td>$2,000.00</td></tr>
-        <tr><td>Stickney Brian, Ellensburg</td><td>$1,200.00</td></tr>
-        <tr><td>Stickney Brian, Ellensburg</td><td>$1,200.00</td></tr>
-        <tr><td>Stickney Emily, Elllensburg</td><td>$1,200.00</td></tr>
-        <tr><td>Stickney Emily, Elllensburg</td><td>$1,200.00</td></tr>
-        <tr><td>Fiske Corina, Ellensburg</td><td>$1,150.00</td></tr>
-        <tr><td>Fiske Corina, Ellensburg</td><td>$850.00</td></tr>
-        <tr><td>Houston Jan, Ellensburg</td><td>$520.00</td></tr>
-        <tr><td>Hartung Stephanie, Ellensburg</td><td>$500.00</td></tr>
-        <tr><td>Houston Jan, Ellensburg</td><td>$500.00</td></tr>
+        <tr><th scope="row">Kittitas County Republican Party, Ellensburg</th><td>$2,000.00</td></tr>
+        <tr><th scope="row">Stickney Brian, Ellensburg</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Stickney Brian, Ellensburg</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Stickney Emily, Elllensburg</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Stickney Emily, Elllensburg</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Fiske Corina, Ellensburg</th><td>$1,150.00</td></tr>
+        <tr><th scope="row">Fiske Corina, Ellensburg</th><td>$850.00</td></tr>
+        <tr><th scope="row">Houston Jan, Ellensburg</th><td>$520.00</td></tr>
+        <tr><th scope="row">Hartung Stephanie, Ellensburg</th><td>$500.00</td></tr>
+        <tr><th scope="row">Houston Jan, Ellensburg</th><td>$500.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Kittitas County</td><td>Campaign Registration</td><td>$2,374.60</td></tr>
-        <tr><td>Julsrud Curt</td><td>Campaign Signs</td><td>$1,399.80</td></tr>
-        <tr><td>Julsrud Curt</td><td>Campaign signs</td><td>$1,316.25</td></tr>
-        <tr><td>Vista Print</td><td>Mailing</td><td>$1,109.96</td></tr>
-        <tr><td>First Impressions</td><td>Campaign Shirts</td><td>$743.91</td></tr>
-        <tr><td>Costco</td><td>Parade Candy</td><td>$698.35</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$562.93</td></tr>
-        <tr><td>The Ridge Restaurant</td><td>Campaign Kick Off</td><td>$543.00</td></tr>
-        <tr><td>Murphy Therese</td><td>Flyers and Mailers</td><td>$500.00</td></tr>
-        <tr><td>Vista Print</td><td>Door Hangers</td><td>$320.14</td></tr>
+        <tr><th scope="row">Kittitas County</th><td>Campaign Registration</td><td>$2,374.60</td></tr>
+        <tr><th scope="row">Julsrud Curt</th><td>Campaign Signs</td><td>$1,399.80</td></tr>
+        <tr><th scope="row">Julsrud Curt</th><td>Campaign signs</td><td>$1,316.25</td></tr>
+        <tr><th scope="row">Vista Print</th><td>Mailing</td><td>$1,109.96</td></tr>
+        <tr><th scope="row">First Impressions</th><td>Campaign Shirts</td><td>$743.91</td></tr>
+        <tr><th scope="row">Costco</th><td>Parade Candy</td><td>$698.35</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$562.93</td></tr>
+        <tr><th scope="row">The Ridge Restaurant</th><td>Campaign Kick Off</td><td>$543.00</td></tr>
+        <tr><th scope="row">Murphy Therese</th><td>Flyers and Mailers</td><td>$500.00</td></tr>
+        <tr><th scope="row">Vista Print</th><td>Door Hangers</td><td>$320.14</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -117,14 +120,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

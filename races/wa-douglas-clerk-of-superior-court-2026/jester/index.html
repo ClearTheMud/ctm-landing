@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Andrea Jester</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -64,46 +67,46 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$4,688.53 (14 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$3,970.49 (13 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$4,688.53 (14 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$3,970.49 (13 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>AFSME Local Union, Everett</td><td>$1,000.00</td></tr>
-        <tr><td>Andrea C Jester (Andrea Jester), Waterville</td><td>$700.00</td></tr>
-        <tr><td>Brandt Farms Joint Ventures, Waterville</td><td>$600.00</td></tr>
-        <tr><td>Jester Angie, Wenatchee</td><td>$480.00</td></tr>
-        <tr><td>Martin Randy, Waterville</td><td>$476.47</td></tr>
-        <tr><td>Martin Randy, Waterville</td><td>$380.11</td></tr>
-        <tr><td>4J Farms LLC, Waterville</td><td>$229.20</td></tr>
-        <tr><td>Martin Randy, Waterville</td><td>$217.50</td></tr>
-        <tr><td>Clements Farms, Waterville</td><td>$200.00</td></tr>
-        <tr><td>Small Contribution</td><td>$200.00</td></tr>
+        <tr><th scope="row">AFSME Local Union, Everett</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Andrea C Jester (Andrea Jester), Waterville</th><td>$700.00</td></tr>
+        <tr><th scope="row">Brandt Farms Joint Ventures, Waterville</th><td>$600.00</td></tr>
+        <tr><th scope="row">Jester Angie, Wenatchee</th><td>$480.00</td></tr>
+        <tr><th scope="row">Martin Randy, Waterville</th><td>$476.47</td></tr>
+        <tr><th scope="row">Martin Randy, Waterville</th><td>$380.11</td></tr>
+        <tr><th scope="row">4J Farms LLC, Waterville</th><td>$229.20</td></tr>
+        <tr><th scope="row">Martin Randy, Waterville</th><td>$217.50</td></tr>
+        <tr><th scope="row">Clements Farms, Waterville</th><td>$200.00</td></tr>
+        <tr><th scope="row">Small Contribution</th><td>$200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>UPrinting</td><td>large signs</td><td>$763.57</td></tr>
-        <tr><td>NCW Fair</td><td>Advertising</td><td>$600.00</td></tr>
-        <tr><td>UPrinting</td><td>signs - large</td><td>$545.45</td></tr>
-        <tr><td>Yard Sign Plus</td><td>Yard signs - 100</td><td>$421.60</td></tr>
-        <tr><td>lowes</td><td>Wood for signs</td><td>$300.76</td></tr>
-        <tr><td>canva</td><td>Brochures</td><td>$233.07</td></tr>
-        <tr><td>4J Farms LLC</td><td>50 yard signs</td><td>$229.20</td></tr>
-        <tr><td>Martin Randy</td><td>Community Booth - events 2 day</td><td>$217.50</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$215.17</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$210.00</td></tr>
+        <tr><th scope="row">UPrinting</th><td>large signs</td><td>$763.57</td></tr>
+        <tr><th scope="row">NCW Fair</th><td>Advertising</td><td>$600.00</td></tr>
+        <tr><th scope="row">UPrinting</th><td>signs - large</td><td>$545.45</td></tr>
+        <tr><th scope="row">Yard Sign Plus</th><td>Yard signs - 100</td><td>$421.60</td></tr>
+        <tr><th scope="row">lowes</th><td>Wood for signs</td><td>$300.76</td></tr>
+        <tr><th scope="row">canva</th><td>Brochures</td><td>$233.07</td></tr>
+        <tr><th scope="row">4J Farms LLC</th><td>50 yard signs</td><td>$229.20</td></tr>
+        <tr><th scope="row">Martin Randy</th><td>Community Booth - events 2 day</td><td>$217.50</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$215.17</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$210.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -117,14 +120,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

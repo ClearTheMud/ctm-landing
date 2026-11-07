@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Alex Tsimerman</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Alex Tsimerman</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Standup-America</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Alex Tsimerman</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Standup-America</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -78,21 +81,21 @@ cow, now! Vote Alex Tsimerman.</p><br/><br/>
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2025</td><td>City of Bellevue Council Position NO. 6 (Primary)</td><td>Lost (4 of 5)</td><td>WA SOS</td></tr>
-        <tr><td>2024</td><td>Governor (Primary)</td><td>Lost (23 of 29)</td><td>WA SOS</td></tr>
-        <tr><td>2023</td><td>City of Bellevue Council Position NO. 3 (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Legislative District 46 - State Senator (Primary)</td><td>Lost (3 of 4)</td><td>WA SOS</td></tr>
-        <tr><td>2021</td><td>City of Seattle Council Position NO. 8 (Primary)</td><td>Lost (11 of 12)</td><td>WA SOS</td></tr>
-        <tr><td>2020</td><td>Governor (Primary)</td><td>Lost (29 of 37)</td><td>WA SOS</td></tr>
-        <tr><td>2019</td><td>Seattle City Council District 5 Council District NO. 5 (Primary)</td><td>Lost (6 of 7)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>U.S. Senator (Primary)</td><td>Lost (29 of 29)</td><td>WA SOS</td></tr>
-        <tr><td>2017</td><td>City Of Seattle Mayor (Primary)</td><td>Lost (18 of 21)</td><td>WA SOS</td></tr>
-        <tr><td>2016</td><td>U.S. Senator (Primary)</td><td>Lost (17 of 17)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2025</th><td>City of Bellevue Council Position NO. 6 (Primary)</td><td>Lost (4 of 5)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Governor (Primary)</td><td>Lost (23 of 29)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2023</th><td>City of Bellevue Council Position NO. 3 (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Legislative District 46 - State Senator (Primary)</td><td>Lost (3 of 4)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2021</th><td>City of Seattle Council Position NO. 8 (Primary)</td><td>Lost (11 of 12)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2020</th><td>Governor (Primary)</td><td>Lost (29 of 37)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2019</th><td>Seattle City Council District 5 Council District NO. 5 (Primary)</td><td>Lost (6 of 7)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>U.S. Senator (Primary)</td><td>Lost (29 of 29)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2017</th><td>City Of Seattle Mayor (Primary)</td><td>Lost (18 of 21)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2016</th><td>U.S. Senator (Primary)</td><td>Lost (17 of 17)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
@@ -113,16 +116,20 @@ cow, now! Vote Alex Tsimerman.</p><br/><br/>
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

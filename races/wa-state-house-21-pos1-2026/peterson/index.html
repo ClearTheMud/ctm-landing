@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Strom Peterson</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Strom Peterson</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Strom Peterson</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -78,68 +81,68 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2024</td><td>Legislative District 21 - State Representative Pos. 1 (Primary)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
-        <tr><td>2024</td><td>Legislative District 21 - State Representative Pos. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2023</td><td>County Council District 3 Council District 3 (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2023</td><td>County Council District 3 Council District 3 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Legislative District 21 - State Representative Pos. 1 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Legislative District 21 - State Representative Pos. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>Legislative District 21 - State Representative Pos. 1 (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>Legislative District 21 - State Representative Pos. 1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2016</td><td>Legislative District 21 - State Representative Pos. 1 (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2016</td><td>Legislative District 21 - State Representative Pos. 1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2014</td><td>Legislative District 21 - State Representative Pos. 1 (Primary)</td><td>Lost (2 of 5)</td><td>WA SOS</td></tr>
-        <tr><td>2014</td><td>Legislative District 21 - State Representative Pos. 1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Legislative District 21 - State Representative Pos. 1 (Primary)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Legislative District 21 - State Representative Pos. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2023</th><td>County Council District 3 Council District 3 (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2023</th><td>County Council District 3 Council District 3 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Legislative District 21 - State Representative Pos. 1 (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Legislative District 21 - State Representative Pos. 1 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>Legislative District 21 - State Representative Pos. 1 (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>Legislative District 21 - State Representative Pos. 1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2016</th><td>Legislative District 21 - State Representative Pos. 1 (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2016</th><td>Legislative District 21 - State Representative Pos. 1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2014</th><td>Legislative District 21 - State Representative Pos. 1 (Primary)</td><td>Lost (2 of 5)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2014</th><td>Legislative District 21 - State Representative Pos. 1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$116,764.49 (196 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$48,742.40 (89 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$116,764.49 (196 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$48,742.40 (89 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>MISCELLANEOUS RECEIPTS, Seattle</td><td>$12,000.00</td></tr>
-        <tr><td>Snohomish County Democrats, Everett</td><td>$1,500.00</td></tr>
-        <tr><td>Airbnb, Inc., San Francisco</td><td>$1,200.00</td></tr>
-        <tr><td>Alaska Airlines, Seatac</td><td>$1,200.00</td></tr>
-        <tr><td>Amazon.com Services LLC, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Ashley O&#x27;Connor McCready, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Campaign for Tribal Self-Reliance by WA Indian Gaming Assn, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>Cowlitz Indian Tribe, Longview</td><td>$1,200.00</td></tr>
-        <tr><td>Deborah VanDerhei, Edmonds</td><td>$1,200.00</td></tr>
-        <tr><td>Delta Dental of Washington, Seattle</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">MISCELLANEOUS RECEIPTS, Seattle</th><td>$12,000.00</td></tr>
+        <tr><th scope="row">Snohomish County Democrats, Everett</th><td>$1,500.00</td></tr>
+        <tr><th scope="row">Airbnb, Inc., San Francisco</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Alaska Airlines, Seatac</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Amazon.com Services LLC, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Ashley O&#x27;Connor McCready, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Campaign for Tribal Self-Reliance by WA Indian Gaming Assn, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Cowlitz Indian Tribe, Longview</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Deborah VanDerhei, Edmonds</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Delta Dental of Washington, Seattle</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>NWP Consulting</td><td>Capitol City Press (Tumwater) - Production of 23,248 Joint Mailers</td><td>$3,860.33</td></tr>
-        <tr><td>Publisher&#x27;s Mailing Service</td><td>USPS (Seattle) - Postage for Joint Mailer</td><td>$2,957.82</td></tr>
-        <tr><td>NWP Consulting</td><td>Capitol City Press (Tumwater) - Production of 11,994 Joint Mailers</td><td>$2,213.34</td></tr>
-        <tr><td>Meghan Young</td><td>Apr-May Social Media Management</td><td>$2,000.00</td></tr>
-        <tr><td>Meghan Young</td><td>May-June Social Media Management</td><td>$2,000.00</td></tr>
-        <tr><td>Meghan Young</td><td>June-July Social Media Management</td><td>$2,000.00</td></tr>
-        <tr><td>Meghan Young</td><td>Jul-Aug Social Media Management</td><td>$2,000.00</td></tr>
-        <tr><td>Publisher&#x27;s Mailing Service</td><td>USPS (Seattle) - Postage for Joint Mailer</td><td>$1,860.06</td></tr>
-        <tr><td>NGP VAN, Inc.</td><td>Campaign Database</td><td>$1,658.25</td></tr>
-        <tr><td>NGP VAN, Inc.</td><td>Campaign Database</td><td>$1,658.25</td></tr>
+        <tr><th scope="row">NWP Consulting</th><td>Capitol City Press (Tumwater) - Production of 23,248 Joint Mailers</td><td>$3,860.33</td></tr>
+        <tr><th scope="row">Publisher&#x27;s Mailing Service</th><td>USPS (Seattle) - Postage for Joint Mailer</td><td>$2,957.82</td></tr>
+        <tr><th scope="row">NWP Consulting</th><td>Capitol City Press (Tumwater) - Production of 11,994 Joint Mailers</td><td>$2,213.34</td></tr>
+        <tr><th scope="row">Meghan Young</th><td>Apr-May Social Media Management</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">Meghan Young</th><td>May-June Social Media Management</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">Meghan Young</th><td>June-July Social Media Management</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">Meghan Young</th><td>Jul-Aug Social Media Management</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">Publisher&#x27;s Mailing Service</th><td>USPS (Seattle) - Postage for Joint Mailer</td><td>$1,860.06</td></tr>
+        <tr><th scope="row">NGP VAN, Inc.</th><td>Campaign Database</td><td>$1,658.25</td></tr>
+        <tr><th scope="row">NGP VAN, Inc.</th><td>Campaign Database</td><td>$1,658.25</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -154,16 +157,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

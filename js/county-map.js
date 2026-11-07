@@ -13,6 +13,8 @@
     for (var i = 0; i < counties.length; i++) {
       setupCounty(counties[i]);
     }
+    setupRoving(counties);
+    setupMapGroup(counties);
 
     document.addEventListener('click', function (e) {
       if (!e.target.closest('.county') && !e.target.closest('#county-tooltip')) {
@@ -21,10 +23,63 @@
     });
   }
 
+  // One tab stop per map (WCAG 2.4.3, 2.4.1): the shapes are a single widget.
+  // Exactly one clickable shape has tabindex 0; arrow keys, Home and End move
+  // between the clickable shapes, so every destination stays reachable
+  // without ~100 Tab presses. Shapes that go nowhere are not focusable.
+  function setupRoving(shapes) {
+    var stops = [];
+    for (var i = 0; i < shapes.length; i++) {
+      if (shapes[i].getAttribute('tabindex') === '0') stops.push(shapes[i]);
+    }
+    if (!stops.length) return;
+    var current = stops[0];
+    function setCurrent(next) {
+      current.setAttribute('tabindex', '-1');
+      current = next;
+      current.setAttribute('tabindex', '0');
+    }
+    stops.forEach(function (el, index) {
+      if (index > 0) el.setAttribute('tabindex', '-1');
+      el.addEventListener('focus', function () {
+        if (current !== el) setCurrent(el);
+      });
+      el.addEventListener('keydown', function (e) {
+        var at = stops.indexOf(el);
+        var next = null;
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = stops[(at + 1) % stops.length];
+        else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') next = stops[(at - 1 + stops.length) % stops.length];
+        else if (e.key === 'Home') next = stops[0];
+        else if (e.key === 'End') next = stops[stops.length - 1];
+        if (next) {
+          e.preventDefault();
+          setCurrent(next);
+          next.focus();
+        }
+      });
+    });
+  }
+
+  // role="img" makes its descendants presentational, which breaks the
+  // focusable shapes inside it. A group keeps the name and the children.
+  function setupMapGroup(shapes) {
+    var svg = shapes.length ? shapes[0].ownerSVGElement : null;
+    if (!svg) return;
+    if (svg.getAttribute('role') === 'img') svg.setAttribute('role', 'group');
+    var helpId = tooltip.id + '-keys';
+    if (document.getElementById(helpId)) return;
+    var help = document.createElement('p');
+    help.id = helpId;
+    help.className = 'sr-only';
+    help.textContent = 'Use the arrow keys to move between areas on this map, and Enter to open one.';
+    svg.parentNode.insertBefore(help, svg);
+    svg.setAttribute('aria-describedby', helpId);
+  }
+
   function createTooltip() {
     var el = document.createElement('div');
     el.id = 'county-tooltip';
-    el.setAttribute('role', 'tooltip');
+    el.setAttribute('aria-hidden', 'true');
     el.style.cssText =
       'position:fixed;padding:6px 12px;background:#1a2332;color:#fff;border-radius:4px;' +
       'font-size:14px;pointer-events:none;opacity:0;transition:opacity .15s;z-index:1000;' +
@@ -51,7 +106,7 @@
     el.classList.add(isActive ? 'county--active' : 'county--inactive');
     el.setAttribute('aria-label', getTooltipText(name, slug, isActive));
     el.setAttribute('tabindex', isActive ? '0' : '-1');
-    el.setAttribute('role', 'link');
+    el.setAttribute('role', el.getAttribute('tabindex') === '0' ? 'link' : 'img');
 
     var tipText = getTooltipText(name, slug, isActive);
 

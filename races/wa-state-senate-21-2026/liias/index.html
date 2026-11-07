@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Marko Liias</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Marko Liias</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Marko Liias</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -81,66 +84,66 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2022</td><td>Legislative District 21 - State Senator (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Legislative District 21 - State Senator (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2020</td><td>Lt. Governor (Primary)</td><td>Lost (2 of 12)</td><td>WA SOS</td></tr>
-        <tr><td>2020</td><td>Statewide - Lt. Governor (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>Legislative District 21 - State Senator (Primary)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>Legislative District 21 - State Senator (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2016</td><td>State Treasurer (Primary)</td><td>Lost (3 of 5)</td><td>WA SOS</td></tr>
-        <tr><td>2015</td><td>Charter Review Commissioner Dist 3 County Charter Review Commissioner Dist 3 (General)</td><td>Lost (3 of 16)</td><td>WA SOS</td></tr>
-        <tr><td>2014</td><td>Legislative District 21 - State Senator (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2014</td><td>Legislative District 21 - State Senator (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Legislative District 21 - State Senator (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Legislative District 21 - State Senator (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2020</th><td>Lt. Governor (Primary)</td><td>Lost (2 of 12)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2020</th><td>Statewide - Lt. Governor (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>Legislative District 21 - State Senator (Primary)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>Legislative District 21 - State Senator (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2016</th><td>State Treasurer (Primary)</td><td>Lost (3 of 5)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2015</th><td>Charter Review Commissioner Dist 3 County Charter Review Commissioner Dist 3 (General)</td><td>Lost (3 of 16)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2014</th><td>Legislative District 21 - State Senator (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2014</th><td>Legislative District 21 - State Senator (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$410,613.92 (950 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$277,980.95 (387 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$410,613.92 (950 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$277,980.95 (387 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>AGC OF WA BUILD PAC, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>AGC OF WA BUILD PAC, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>ALASKA AIRLINES, Seatac</td><td>$1,200.00</td></tr>
-        <tr><td>AT&amp;T, Lynnwood</td><td>$1,200.00</td></tr>
-        <tr><td>AVISTA CORP, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>Airbnb Inc, San Francisco</td><td>$1,200.00</td></tr>
-        <tr><td>Amazon.com Services LLC, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Amazon.com Services LLC, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Anheuser Busch Companies LLC, Van Nuys</td><td>$1,200.00</td></tr>
-        <tr><td>Anheuser Busch Companies LLC, Van Nuys</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">AGC OF WA BUILD PAC, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">AGC OF WA BUILD PAC, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">ALASKA AIRLINES, Seatac</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">AT&amp;T, Lynnwood</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">AVISTA CORP, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Airbnb Inc, San Francisco</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Amazon.com Services LLC, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Amazon.com Services LLC, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Anheuser Busch Companies LLC, Van Nuys</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Anheuser Busch Companies LLC, Van Nuys</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Marko Liias Surplus Funds</td><td>Surplus Funds Transfer</td><td>$95,000.00</td></tr>
-        <tr><td>BLUE WAVE POLITICAL PARTNERS</td><td>Digital Consulting</td><td>$4,800.00</td></tr>
-        <tr><td>Blue Wave Political Partners, LLC</td><td>Fundraising Consulting</td><td>$4,500.00</td></tr>
-        <tr><td>Blue Wave Political Partners, LLC</td><td>Fundraising Consulting</td><td>$4,500.00</td></tr>
-        <tr><td>Blue Wave Political Partners, LLC</td><td>Fundraising Consulting</td><td>$4,500.00</td></tr>
-        <tr><td>Blue Wave Political Partners, LLC</td><td>Fundraising Consulting</td><td>$4,500.00</td></tr>
-        <tr><td>Blue Wave Political Partners, LLC</td><td>Fundraising Consulting</td><td>$4,500.00</td></tr>
-        <tr><td>Blue Wave Political Partners, LLC</td><td>Fundraising Consulting</td><td>$4,500.00</td></tr>
-        <tr><td>Blue Wave Political Partners, LLC</td><td>Fundraising Consulting</td><td>$4,500.00</td></tr>
-        <tr><td>Blue Wave Political Partners, LLC</td><td>Fundraising Consulting</td><td>$4,500.00</td></tr>
+        <tr><th scope="row">Marko Liias Surplus Funds</th><td>Surplus Funds Transfer</td><td>$95,000.00</td></tr>
+        <tr><th scope="row">BLUE WAVE POLITICAL PARTNERS</th><td>Digital Consulting</td><td>$4,800.00</td></tr>
+        <tr><th scope="row">Blue Wave Political Partners, LLC</th><td>Fundraising Consulting</td><td>$4,500.00</td></tr>
+        <tr><th scope="row">Blue Wave Political Partners, LLC</th><td>Fundraising Consulting</td><td>$4,500.00</td></tr>
+        <tr><th scope="row">Blue Wave Political Partners, LLC</th><td>Fundraising Consulting</td><td>$4,500.00</td></tr>
+        <tr><th scope="row">Blue Wave Political Partners, LLC</th><td>Fundraising Consulting</td><td>$4,500.00</td></tr>
+        <tr><th scope="row">Blue Wave Political Partners, LLC</th><td>Fundraising Consulting</td><td>$4,500.00</td></tr>
+        <tr><th scope="row">Blue Wave Political Partners, LLC</th><td>Fundraising Consulting</td><td>$4,500.00</td></tr>
+        <tr><th scope="row">Blue Wave Political Partners, LLC</th><td>Fundraising Consulting</td><td>$4,500.00</td></tr>
+        <tr><th scope="row">Blue Wave Political Partners, LLC</th><td>Fundraising Consulting</td><td>$4,500.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -155,16 +158,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

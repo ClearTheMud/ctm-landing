@@ -14,16 +14,19 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
   <span class="nav-sep">/</span>
   <span class="nav-current">Idaho</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -62,10 +65,10 @@
     <h3>State Legislature</h3>
     <div class="finding">
       <p>1 races tracked, 3 candidates filed</p>
-      <table>
-        <thead><tr><th>District</th><th>Races</th></tr></thead>
+      <table><caption class="sr-only">State Legislature</caption>
+        <thead><tr><th scope="col">District</th><th scope="col">Races</th></tr></thead>
         <tbody>
-      <tr id="ld-1"><td>LD-1</td><td><a href="/races/id-sd1-2026/">Senate</a> (3)</td></tr>
+      <tr id="ld-1"><th scope="row">LD-1</th><td><a href="/races/id-sd1-2026/">Senate</a> (3)</td></tr>
         </tbody>
       </table>
     </div>
@@ -80,15 +83,18 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
-
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Joe Lombardi</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -64,46 +67,46 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$55,287.13 (81 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$43,575.35 (25 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$55,287.13 (81 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$43,575.35 (25 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Joseph Lombardi (Joe Lombardi), Port Orchard</td><td>$9,700.00</td></tr>
-        <tr><td>Joseph Lombardi (Joe Lombardi), Port Orchard</td><td>$4,500.00</td></tr>
-        <tr><td>WA State Democratic Central Committee, Seattle</td><td>$4,000.00</td></tr>
-        <tr><td>Joe Lombardi, Port Orchard</td><td>$2,374.60</td></tr>
-        <tr><td>Jamie Pedroza, Bremerton</td><td>$1,200.00</td></tr>
-        <tr><td>Julia Martin-Lombardi, Gig Harbor</td><td>$1,200.00</td></tr>
-        <tr><td>Julia Martin-Lombardi, Gig Harbor</td><td>$1,200.00</td></tr>
-        <tr><td>Kenneth Lombardi, Gig Harbor</td><td>$1,200.00</td></tr>
-        <tr><td>Kenneth Lombardi, Gig Harbor</td><td>$1,200.00</td></tr>
-        <tr><td>Kylin Beeson, Port Orchard</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Joseph Lombardi (Joe Lombardi), Port Orchard</th><td>$9,700.00</td></tr>
+        <tr><th scope="row">Joseph Lombardi (Joe Lombardi), Port Orchard</th><td>$4,500.00</td></tr>
+        <tr><th scope="row">WA State Democratic Central Committee, Seattle</th><td>$4,000.00</td></tr>
+        <tr><th scope="row">Joe Lombardi, Port Orchard</th><td>$2,374.60</td></tr>
+        <tr><th scope="row">Jamie Pedroza, Bremerton</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Julia Martin-Lombardi, Gig Harbor</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Julia Martin-Lombardi, Gig Harbor</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Kenneth Lombardi, Gig Harbor</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Kenneth Lombardi, Gig Harbor</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Kylin Beeson, Port Orchard</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Bottled Lightning Collective</td><td>Subvendor: Sun Print Solutions-printing 29753 mailers</td><td>$16,364.15</td></tr>
-        <tr><td>Bottled Lightning Collective</td><td>Subvendor: USPS-postage for 29753 mailers</td><td>$10,741.36</td></tr>
-        <tr><td>WA State Democratic Central Committee</td><td>inkind voterfile access (subvendor: NGPVan Inc)</td><td>$4,000.00</td></tr>
-        <tr><td>Joe Lombardi</td><td>inkind filing fee (subvendor: WA State Secretary of State)</td><td>$2,374.60</td></tr>
-        <tr><td>Bottled Lightning Collective</td><td>Subvendor: WA Department of Revenue-sales tax</td><td>$1,521.87</td></tr>
-        <tr><td>Kellie Pendras</td><td>Whiskey Gulch Coffeepub: reimburse catering/food for event</td><td>$1,326.62</td></tr>
-        <tr><td>WA State Democratic Central Committee</td><td>voterfile access (subvendor: NGPVan Inc)</td><td>$1,030.18</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$971.26</td></tr>
-        <tr><td>Bottled Lightning Collective</td><td>Subvendor: Out the Door Printing-150 signs</td><td>$964.71</td></tr>
-        <tr><td>Bottled Lightning Collective</td><td>logo design</td><td>$750.00</td></tr>
+        <tr><th scope="row">Bottled Lightning Collective</th><td>Subvendor: Sun Print Solutions-printing 29753 mailers</td><td>$16,364.15</td></tr>
+        <tr><th scope="row">Bottled Lightning Collective</th><td>Subvendor: USPS-postage for 29753 mailers</td><td>$10,741.36</td></tr>
+        <tr><th scope="row">WA State Democratic Central Committee</th><td>inkind voterfile access (subvendor: NGPVan Inc)</td><td>$4,000.00</td></tr>
+        <tr><th scope="row">Joe Lombardi</th><td>inkind filing fee (subvendor: WA State Secretary of State)</td><td>$2,374.60</td></tr>
+        <tr><th scope="row">Bottled Lightning Collective</th><td>Subvendor: WA Department of Revenue-sales tax</td><td>$1,521.87</td></tr>
+        <tr><th scope="row">Kellie Pendras</th><td>Whiskey Gulch Coffeepub: reimburse catering/food for event</td><td>$1,326.62</td></tr>
+        <tr><th scope="row">WA State Democratic Central Committee</th><td>voterfile access (subvendor: NGPVan Inc)</td><td>$1,030.18</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$971.26</td></tr>
+        <tr><th scope="row">Bottled Lightning Collective</th><td>Subvendor: Out the Door Printing-150 signs</td><td>$964.71</td></tr>
+        <tr><th scope="row">Bottled Lightning Collective</th><td>logo design</td><td>$750.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -117,14 +120,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

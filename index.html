@@ -17,6 +17,11 @@
     --accent: #3a8fd4;
     --gold: #c9a84c;
     --green: #27ae60;
+    /* Solid fill for white text on a green badge: 5.38:1 (the --green fill was 2.87:1). */
+    --green-badge: #1a7a43;
+    /* End of the hero gradient. Gold "Mud" and the white tagline sit over this
+       at narrow widths and at 200% zoom: gold on it is 3.7:1, white 8:1. */
+    --hero-end: #24507a;
     --gray-light: #f4f6f8;
     --gray-mid: #dce1e6;
     --gray-dark: #5a6a7a;
@@ -35,9 +40,15 @@
 
   .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
 
+  /* Skip link: first Tab stop, visible on focus. */
+  .skip-link { position: absolute; left: -999px; top: 0; z-index: 10; background: #fff; color: var(--navy); font-weight: 700; padding: 10px 16px; border: 2px solid var(--navy); border-radius: 0 0 6px 0; }
+  .skip-link:focus { left: 0; outline: 3px solid var(--gold); outline-offset: 2px; }
+  main:focus { outline: none; }
+  nav.cta-row { display: block; }
+
   /* Hero */
   .hero {
-    background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 60%, var(--accent) 100%);
+    background: linear-gradient(135deg, var(--navy) 0%, var(--hero-end) 100%);
     color: #fff;
     padding: 80px 0 64px;
     text-align: center;
@@ -51,8 +62,7 @@
   .hero h1 span { color: var(--gold); }
   .hero .tagline {
     font-size: 22px;
-    font-weight: 300;
-    opacity: 0.9;
+    font-weight: 400;
     margin-bottom: 32px;
     max-width: 640px;
     margin-left: auto;
@@ -218,12 +228,12 @@
     font-weight: 700;
     font-size: 13px;
   }
-  .tier .label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8; }
+  .tier .label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
   .tier .name { font-size: 15px; margin-top: 4px; }
   .tier-0 { background: #1a5276; color: #fff; }
-  .tier-1 { background: #1e8449; color: #fff; }
+  .tier-1 { background: #17683a; color: #fff; }
   .tier-2 { background: #2c5f8a; color: #fff; }
-  .tier-3 { background: #b7950b; color: #fff; }
+  .tier-3 { background: #c9a84c; color: #1a2332; }
   .tier-4 { background: #922b21; color: #fff; }
 
   /* Recently Added Profiles */
@@ -295,7 +305,7 @@
   }
   .race-status .badge {
     display: inline-block;
-    background: var(--green);
+    background: var(--green-badge);
     color: #fff;
     font-weight: 700;
     font-size: 11px;
@@ -374,13 +384,16 @@
   /* Footer */
   .footer {
     background: var(--navy);
-    color: rgba(255,255,255,0.7);
+    color: #c3cad3;
     padding: 40px 0;
     text-align: center;
     font-size: 14px;
   }
-  .footer a { color: var(--gold); text-decoration: none; }
-  .footer a:hover { text-decoration: underline; }
+  /* Links in the footer text are underlined at rest so they do not depend on
+     colour alone (1.4.1); the link/text colour difference is below 3:1. */
+  .footer a { color: var(--gold); text-decoration: underline; text-underline-offset: 2px; }
+  .footer a:hover { text-decoration-thickness: 2px; }
+  .footer .fine { margin-top: 16px; font-size: 12px; }
   .footer .brand {
     font-size: 18px;
     font-weight: 700;
@@ -399,14 +412,20 @@
 </head>
 <body>
 
-<div class="hero">
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="hero">
   <div class="container">
     <h1>Clear the <span>Mud</span></h1>
     <p class="tagline">Verified candidate intelligence from public records. Shared with journalists and voters before the October surprises.</p>
-    <a href="#recently-added" class="cta">Recently Added Profiles</a>
-    <a href="/states/" class="cta cta-secondary">Browse by State</a>
+    <nav class="cta-row" aria-label="Main">
+      <a href="#recently-added" class="cta">Recently Added Profiles</a>
+      <a href="/states/" class="cta cta-secondary">Browse by State</a>
+    </nav>
   </div>
-</div>
+</header>
+
+<main id="main" tabindex="-1">
 
 <div class="mission">
   <div class="container">
@@ -2321,14 +2340,16 @@
   </div>
 </div>
 
-<div class="footer">
+</main>
+
+<footer class="footer">
   <div class="container">
     <div class="brand">clearthemud.org</div>
     <p>Open-source civic transparency project</p>
-    <p style="margin-top:12px"><a href="/states/">Browse by State</a> &nbsp;&bull;&nbsp; <a href="/methodology/">Methodology</a> &nbsp;&bull;&nbsp; <a href="https://github.com/ClearTheMud">GitHub</a> &nbsp;&bull;&nbsp; <a href="mailto:contact@clearthemud.org">Contact</a></p>
-    <p style="margin-top:16px; font-size:12px; opacity:0.6;">Data sourced from FEC, state election offices, and Senate LDA filings. All findings are public record. See our <a href="/methodology/">methodology</a> for what we publish, what we leave out, and how to send us a correction or something we missed.</p>
+    <nav aria-label="Footer" style="margin-top:12px"><a href="/states/">Browse by State</a> &nbsp;&bull;&nbsp; <a href="/methodology/">Methodology</a> &nbsp;&bull;&nbsp; <a href="https://github.com/ClearTheMud">GitHub</a> &nbsp;&bull;&nbsp; <a href="mailto:contact@clearthemud.org">Contact</a></nav>
+    <p class="fine">Data sourced from FEC, state election offices, and Senate LDA filings. All findings are public record. See our <a href="/methodology/">methodology</a> for what we publish, what we leave out, and how to send us a correction or something we missed.</p>
   </div>
-</div>
+</footer>
 
 </body>
 </html>

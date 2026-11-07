@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Julia Grant Reed</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Julia Grant Reed</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Julia Grant Reed</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -76,58 +79,58 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2024</td><td>Legislative District 36 - State Representative Pos. 1 (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2024</td><td>Legislative District 36 - State Representative Pos. 1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Legislative District 36 - State Representative Pos. 1 (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Legislative District 36 - State Representative Pos. 1 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$62,046.00 (127 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$23,165.20 (47 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$62,046.00 (127 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$23,165.20 (47 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>At-Sea Processors Association, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>BNSF Railway Company, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>BNSF Railway Company, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Davita, Federal Way</td><td>$1,200.00</td></tr>
-        <tr><td>Delta Dental, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Electrical Workers 46 PAC, Kent</td><td>$1,200.00</td></tr>
-        <tr><td>Electrical Workers 46 PAC, Kent</td><td>$1,200.00</td></tr>
-        <tr><td>Holloway Samantha, Fort Worth</td><td>$1,200.00</td></tr>
-        <tr><td>Justice for All, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Muckleshoot Indian Tribe, Auburn</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">At-Sea Processors Association, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">BNSF Railway Company, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">BNSF Railway Company, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Davita, Federal Way</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Delta Dental, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Electrical Workers 46 PAC, Kent</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Electrical Workers 46 PAC, Kent</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Holloway Samantha, Fort Worth</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Justice for All, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Muckleshoot Indian Tribe, Auburn</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Big Max Burger Co</td><td>Catering</td><td>$1,964.02</td></tr>
-        <tr><td>BLUE WAVE POLITICAL PARTNERS, LLC</td><td>Fundraising Consulting</td><td>$1,750.00</td></tr>
-        <tr><td>BLUE WAVE POLITICAL PARTNERS, LLC</td><td>Fundraising Consulting</td><td>$1,750.00</td></tr>
-        <tr><td>BLUE WAVE POLITICAL PARTNERS, LLC</td><td>Fundraising Consulting</td><td>$1,750.00</td></tr>
-        <tr><td>BLUE WAVE POLITICAL PARTNERS, LLC</td><td>Fundraising Consulting</td><td>$1,750.00</td></tr>
-        <tr><td>BLUE WAVE POLITICAL PARTNERS, LLC</td><td>Fundraising Consulting</td><td>$1,750.00</td></tr>
-        <tr><td>BLUE WAVE POLITICAL PARTNERS, LLC</td><td>Fundraising Consulting</td><td>$1,750.00</td></tr>
-        <tr><td>BLUE WAVE POLITICAL PARTNERS, LLC</td><td>Compliance Consulting</td><td>$1,500.00</td></tr>
-        <tr><td>WA Secretary of State</td><td>Candidacy Filing Fee</td><td>$676.88</td></tr>
-        <tr><td>BLUE WAVE POLITICAL PARTNERS, LLC</td><td>Compliance Consulting</td><td>$600.00</td></tr>
+        <tr><th scope="row">Big Max Burger Co</th><td>Catering</td><td>$1,964.02</td></tr>
+        <tr><th scope="row">BLUE WAVE POLITICAL PARTNERS, LLC</th><td>Fundraising Consulting</td><td>$1,750.00</td></tr>
+        <tr><th scope="row">BLUE WAVE POLITICAL PARTNERS, LLC</th><td>Fundraising Consulting</td><td>$1,750.00</td></tr>
+        <tr><th scope="row">BLUE WAVE POLITICAL PARTNERS, LLC</th><td>Fundraising Consulting</td><td>$1,750.00</td></tr>
+        <tr><th scope="row">BLUE WAVE POLITICAL PARTNERS, LLC</th><td>Fundraising Consulting</td><td>$1,750.00</td></tr>
+        <tr><th scope="row">BLUE WAVE POLITICAL PARTNERS, LLC</th><td>Fundraising Consulting</td><td>$1,750.00</td></tr>
+        <tr><th scope="row">BLUE WAVE POLITICAL PARTNERS, LLC</th><td>Fundraising Consulting</td><td>$1,750.00</td></tr>
+        <tr><th scope="row">BLUE WAVE POLITICAL PARTNERS, LLC</th><td>Compliance Consulting</td><td>$1,500.00</td></tr>
+        <tr><th scope="row">WA Secretary of State</th><td>Candidacy Filing Fee</td><td>$676.88</td></tr>
+        <tr><th scope="row">BLUE WAVE POLITICAL PARTNERS, LLC</th><td>Compliance Consulting</td><td>$600.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -142,16 +145,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Tenaya Scheinman</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -46,26 +49,26 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Tenaya Scheinman</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Seattle, King County, Washington. Chambers at King County Superior Court, 516 Third Avenue, Seattle, WA 98104.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan (judicial office).</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>Bachelor of Arts, Swarthmore College.; Juris Doctor, University of Virginia School of Law, 2005.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Associate at Wilson Sonsini Goodrich and Rosati, where she litigated complex securities fraud cases.; King County public defender for 16 years, representing hundreds of clients in criminal proceedings, trying more than 35 jury cases and dozens of bench trials. Named a Senior Attorney in 2017.; Attorney for the King County Inquest Program since 2024, presenting evidence to juries investigating the facts and circumstances of deaths involving law enforcement.; Judge pro tempore in King County District Court, Snohomish County District Court, and Edmonds Municipal Court.; Appointed by Governor Bob Ferguson to King County Superior Court, Department 45, effective May 1, 2026, filling the vacancy created by the retirement of Judge Jim Rogers. Sworn in in May 2026.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Tenaya Scheinman</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Seattle, King County, Washington. Chambers at King County Superior Court, 516 Third Avenue, Seattle, WA 98104.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan (judicial office).</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>Bachelor of Arts, Swarthmore College.; Juris Doctor, University of Virginia School of Law, 2005.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Associate at Wilson Sonsini Goodrich and Rosati, where she litigated complex securities fraud cases.; King County public defender for 16 years, representing hundreds of clients in criminal proceedings, trying more than 35 jury cases and dozens of bench trials. Named a Senior Attorney in 2017.; Attorney for the King County Inquest Program since 2024, presenting evidence to juries investigating the facts and circumstances of deaths involving law enforcement.; Judge pro tempore in King County District Court, Snohomish County District Court, and Edmonds Municipal Court.; Appointed by Governor Bob Ferguson to King County Superior Court, Department 45, effective May 1, 2026, filling the vacancy created by the retirement of Judge Jim Rogers. Sworn in in May 2026.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">1</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>King County Superior Court, Judge Position 45 (2-year unexpired term, nonpartisan)</td><td>Appointed incumbent and sole filer. Unopposed. As an uncontested race it does not appear on the August 4 primary ballot and advances to the November 3 general election.</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>King County Superior Court, Judge Position 45 (2-year unexpired term, nonpartisan)</td><td>Appointed incumbent and sole filer. Unopposed. As an uncontested race it does not appear on the August 4 primary ballot and advances to the November 3 general election.</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -101,16 +104,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Dan Griffey</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,14 +60,14 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Dan Griffey</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Allyn, Mason County, Washington. Lifelong resident of the 35th District.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Family</td><td>Married to Dinah Griffey. Three daughters and six grandchildren.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Retired firefighter (lieutenant), Central Mason Fire &amp; EMS. Began as a volunteer firefighter at 16, hired professionally in 1992, retired June 2022 after 30 years of service.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Dan Griffey</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Allyn, Mason County, Washington. Lifelong resident of the 35th District.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Family</th><td>Married to Dinah Griffey. Three daughters and six grandchildren.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Retired firefighter (lieutenant), Central Mason Fire &amp; EMS. Began as a volunteer firefighter at 16, hired professionally in 1992, retired June 2022 after 30 years of service.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -94,75 +97,75 @@ and get results. Your input matters to me. I would be honored to have your vote.
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2024</td><td>WA House LD-35 Pos. 1 (General)</td><td>Won (94.75%, unopposed, write-ins only)</td><td>Research</td></tr>
-        <tr><td>2022</td><td>WA House LD-35 Pos. 1 (General)</td><td>Won (58.98%) vs James DeHart (D)</td><td>Research</td></tr>
-        <tr><td>2020</td><td>WA House LD-35 Pos. 1 (General)</td><td>Won (58.33%) vs Colton Myers (D)</td><td>Research</td></tr>
-        <tr><td>2018</td><td>WA House LD-35 Pos. 1 (General)</td><td>Won (57.73%) vs James Thomas (D)</td><td>Research</td></tr>
-        <tr><td>2016</td><td>WA House LD-35 Pos. 1 (General)</td><td>Won (54.99%) vs Irene Bowling (D)</td><td>Research</td></tr>
-        <tr><td>2014</td><td>WA House LD-35 Pos. 1 (General)</td><td>Won (50.53%, unseated incumbent Kathy Haigh by 504 votes)</td><td>Research</td></tr>
+        <tr><th scope="row">2024</th><td>WA House LD-35 Pos. 1 (General)</td><td>Won (94.75%, unopposed, write-ins only)</td><td>Research</td></tr>
+        <tr><th scope="row">2022</th><td>WA House LD-35 Pos. 1 (General)</td><td>Won (58.98%) vs James DeHart (D)</td><td>Research</td></tr>
+        <tr><th scope="row">2020</th><td>WA House LD-35 Pos. 1 (General)</td><td>Won (58.33%) vs Colton Myers (D)</td><td>Research</td></tr>
+        <tr><th scope="row">2018</th><td>WA House LD-35 Pos. 1 (General)</td><td>Won (57.73%) vs James Thomas (D)</td><td>Research</td></tr>
+        <tr><th scope="row">2016</th><td>WA House LD-35 Pos. 1 (General)</td><td>Won (54.99%) vs Irene Bowling (D)</td><td>Research</td></tr>
+        <tr><th scope="row">2014</th><td>WA House LD-35 Pos. 1 (General)</td><td>Won (50.53%, unseated incumbent Kathy Haigh by 504 votes)</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Public Safety / Sex Offender Accountability</td><td>Signature issue. Prime-sponsored HB 1457 (2025), requiring tamper-proof GPS monitoring of sexually violent predators released from McNeil Island into community housing, signed into law April 11, 2025. Co-sponsored with Rep. Travis Couture.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Statute of Limitations for Sex Crimes</td><td>Multi-year effort since 2015 to eliminate or extend the statute of limitations for felony sex crimes including rape and child molestation. His 2018 House bill passed the House 90-8 but died in the Senate; a companion measure modeled on his HB 1231 was later enacted.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Domestic Violence</td><td>Public advocate for domestic violence supervision and GPS monitoring legislation. Testified in 2023 about his own family experience, saying &#x27;a little movement on domestic violence is better than no movement on domestic violence.&#x27;</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Behavioral Health / Drug Policy</td><td>Supports expanding the Involuntary Treatment Act and adding secure detox bed capacity to address the drug crisis.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Taxes</td><td>Opposed the majority party capital gains and income tax proposals. Offered floor amendments to redirect revenue toward K-12 education and health care.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Public Safety / Sex Offender Accountability</th><td>Signature issue. Prime-sponsored HB 1457 (2025), requiring tamper-proof GPS monitoring of sexually violent predators released from McNeil Island into community housing, signed into law April 11, 2025. Co-sponsored with Rep. Travis Couture.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Statute of Limitations for Sex Crimes</th><td>Multi-year effort since 2015 to eliminate or extend the statute of limitations for felony sex crimes including rape and child molestation. His 2018 House bill passed the House 90-8 but died in the Senate; a companion measure modeled on his HB 1231 was later enacted.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Domestic Violence</th><td>Public advocate for domestic violence supervision and GPS monitoring legislation. Testified in 2023 about his own family experience, saying &#x27;a little movement on domestic violence is better than no movement on domestic violence.&#x27;</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Behavioral Health / Drug Policy</th><td>Supports expanding the Involuntary Treatment Act and adding secure detox bed capacity to address the drug crisis.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Taxes</th><td>Opposed the majority party capital gains and income tax proposals. Offered floor amendments to redirect revenue toward K-12 education and health care.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$94,579.69 (145 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$32,563.05 (38 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$94,579.69 (145 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$32,563.05 (38 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>AMAZON .COM SERVICES, INC, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>AMAZON .COM SERVICES, INC, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>ASSOCIATED GENERAL CONTRACTORS OF WA BUILD PAC, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>AVISTA CORP, SPOKANE</td><td>$1,200.00</td></tr>
-        <tr><td>AVISTA CORP, SPOKANE</td><td>$1,200.00</td></tr>
-        <tr><td>Association of Washington Business, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>CHEVRON, SAN RAMON</td><td>$1,200.00</td></tr>
-        <tr><td>DAVITA, TACOMA</td><td>$1,200.00</td></tr>
-        <tr><td>DELTA DENTAL OF WASHINGTON, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>DELTA DENTAL OF WASHINGTON, Seattle</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">AMAZON .COM SERVICES, INC, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">AMAZON .COM SERVICES, INC, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">ASSOCIATED GENERAL CONTRACTORS OF WA BUILD PAC, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">AVISTA CORP, SPOKANE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">AVISTA CORP, SPOKANE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Association of Washington Business, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">CHEVRON, SAN RAMON</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">DAVITA, TACOMA</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">DELTA DENTAL OF WASHINGTON, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">DELTA DENTAL OF WASHINGTON, Seattle</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>COMCAST</td><td>TV ads</td><td>$8,225.45</td></tr>
-        <tr><td>KITSAP SUN</td><td>newspaper ads</td><td>$2,923.20</td></tr>
-        <tr><td>KGY RADIO</td><td>Radio ad buy - July, August and September</td><td>$2,896.00</td></tr>
-        <tr><td>BERMAN FILMS LLC</td><td>TV ad production</td><td>$2,750.00</td></tr>
-        <tr><td>KITSAP SUN</td><td>online marketing - Kitsap Sun/USA Today</td><td>$2,260.00</td></tr>
-        <tr><td>KMAS</td><td>radio advertising</td><td>$2,026.00</td></tr>
-        <tr><td>Prometheus Digital</td><td>LD 35 voter research</td><td>$2,000.00</td></tr>
-        <tr><td>SOLVD INC</td><td>texting campaign service</td><td>$1,321.32</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$689.86</td></tr>
-        <tr><td>WA SECRETARY OF STATE</td><td>Filing fees</td><td>$676.88</td></tr>
+        <tr><th scope="row">COMCAST</th><td>TV ads</td><td>$8,225.45</td></tr>
+        <tr><th scope="row">KITSAP SUN</th><td>newspaper ads</td><td>$2,923.20</td></tr>
+        <tr><th scope="row">KGY RADIO</th><td>Radio ad buy - July, August and September</td><td>$2,896.00</td></tr>
+        <tr><th scope="row">BERMAN FILMS LLC</th><td>TV ad production</td><td>$2,750.00</td></tr>
+        <tr><th scope="row">KITSAP SUN</th><td>online marketing - Kitsap Sun/USA Today</td><td>$2,260.00</td></tr>
+        <tr><th scope="row">KMAS</th><td>radio advertising</td><td>$2,026.00</td></tr>
+        <tr><th scope="row">Prometheus Digital</th><td>LD 35 voter research</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">SOLVD INC</th><td>texting campaign service</td><td>$1,321.32</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$689.86</td></tr>
+        <tr><th scope="row">WA SECRETARY OF STATE</th><td>Filing fees</td><td>$676.88</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -205,16 +208,20 @@ and get results. Your input matters to me. I would be honored to have your vote.
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

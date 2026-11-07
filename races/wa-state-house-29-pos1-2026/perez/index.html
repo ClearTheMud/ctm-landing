@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Krista Perez</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,13 +60,13 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Krista Perez</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Tacoma, Pierce County, Washington (LD-29). Committee address PO Box 7437, Tacoma, WA 98417.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Founder and president, Tacoma Women of Color Collective (nonprofit).</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Krista Perez</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Tacoma, Pierce County, Washington (LD-29). Committee address PO Box 7437, Tacoma, WA 98417.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Founder and president, Tacoma Women of Color Collective (nonprofit).</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -82,56 +85,56 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2025</td><td>Tacoma City Council At-large Position 6 (Primary)</td><td>Did not advance (3rd of 6, 19.51%, 6,550 votes)</td><td>Research</td></tr>
+        <tr><th scope="row">2025</th><td>Tacoma City Council At-large Position 6 (Primary)</td><td>Did not advance (3rd of 6, 19.51%, 6,550 votes)</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$67,649.85 (183 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$35,322.32 (36 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$67,649.85 (183 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$35,322.32 (36 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Jordan Goldwarg, Seattle</td><td>$1,250.31</td></tr>
-        <tr><td>Laura Silverton, Seattle</td><td>$1,250.31</td></tr>
-        <tr><td>Ross Swanes, Tacoma</td><td>$1,250.31</td></tr>
-        <tr><td>Samuel McVeety, Seattle</td><td>$1,250.31</td></tr>
-        <tr><td>1910 PAC, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>Active in Democracy (AID), Tacoma</td><td>$1,200.00</td></tr>
-        <tr><td>Active in Democracy (AID), Tacoma</td><td>$1,200.00</td></tr>
-        <tr><td>Asif R. Khan, Lakewood</td><td>$1,200.00</td></tr>
-        <tr><td>Cultivating Leadership PAC, Seattle</td><td>$1,200.00</td></tr>
-        <tr><td>James Fowler, Seattle</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Jordan Goldwarg, Seattle</th><td>$1,250.31</td></tr>
+        <tr><th scope="row">Laura Silverton, Seattle</th><td>$1,250.31</td></tr>
+        <tr><th scope="row">Ross Swanes, Tacoma</th><td>$1,250.31</td></tr>
+        <tr><th scope="row">Samuel McVeety, Seattle</th><td>$1,250.31</td></tr>
+        <tr><th scope="row">1910 PAC, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Active in Democracy (AID), Tacoma</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Active in Democracy (AID), Tacoma</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Asif R. Khan, Lakewood</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Cultivating Leadership PAC, Seattle</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">James Fowler, Seattle</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Argo Strategies</td><td>Capitol City Press: Printing/postage of Mailer #1, 6 x 11 card, 8,028 pieces. (Subvendor: Capitol City Press, 2975 37th Ave SW, Tumwater, WA 98512)</td><td>$9,473.04</td></tr>
-        <tr><td>Tissot Solutions LLC</td><td>fundraising consulting fee</td><td>$2,000.00</td></tr>
-        <tr><td>Tissot Solutions LLC</td><td>fundraising consulting fee - June</td><td>$2,000.00</td></tr>
-        <tr><td>Argo Strategies</td><td>Capitol City Press: printing 5000 doorbell cards (Subvendor: Capitol City Press, 2975 37th Ave SW, Tumwater, WA 98512)</td><td>$1,994.24</td></tr>
-        <tr><td>Lisa Monet Photography</td><td>photopgraphy</td><td>$1,545.60</td></tr>
-        <tr><td>Tissot Solutions LLC</td><td>fundraising consulting fee - July</td><td>$1,500.00</td></tr>
-        <tr><td>Tissot Solutions LLC</td><td>fundraising consulting fee - Aug</td><td>$1,500.00</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$1,173.83</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$1,145.97</td></tr>
-        <tr><td>WA State Democratic Campaign Committee</td><td>voterfile access (Subvendor: NGPVan)</td><td>$1,030.18</td></tr>
+        <tr><th scope="row">Argo Strategies</th><td>Capitol City Press: Printing/postage of Mailer #1, 6 x 11 card, 8,028 pieces. (Subvendor: Capitol City Press, 2975 37th Ave SW, Tumwater, WA 98512)</td><td>$9,473.04</td></tr>
+        <tr><th scope="row">Tissot Solutions LLC</th><td>fundraising consulting fee</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">Tissot Solutions LLC</th><td>fundraising consulting fee - June</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">Argo Strategies</th><td>Capitol City Press: printing 5000 doorbell cards (Subvendor: Capitol City Press, 2975 37th Ave SW, Tumwater, WA 98512)</td><td>$1,994.24</td></tr>
+        <tr><th scope="row">Lisa Monet Photography</th><td>photopgraphy</td><td>$1,545.60</td></tr>
+        <tr><th scope="row">Tissot Solutions LLC</th><td>fundraising consulting fee - July</td><td>$1,500.00</td></tr>
+        <tr><th scope="row">Tissot Solutions LLC</th><td>fundraising consulting fee - Aug</td><td>$1,500.00</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$1,173.83</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$1,145.97</td></tr>
+        <tr><th scope="row">WA State Democratic Campaign Committee</th><td>voterfile access (Subvendor: NGPVan)</td><td>$1,030.18</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -177,7 +180,7 @@
     <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">1 sourced findings. All sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model. No T4 claims included.</p>
 
     <div class="finding moderate">
-      <h4>Finding 6.1: Charged with DUI in Tacoma Municipal Court; pleaded not guilty; case pending <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 6.1: Charged with DUI in Tacoma Municipal Court; pleaded not guilty; case pending <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>The Washington Courts case search lists Krista Rose Perez as a defendant in Tacoma Municipal Court case No. 26CR118849, filed August 13, 2026. The court index did not show the status of the case, and no charging document or docket was reviewed for this profile. KNKX, in a story also carried by OPB, and the Washington State Standard reported that the Tacoma City Attorney charged her with driving under the influence. The Washington State Standard reported that the charge carries an enhancement for refusing a breath test, that she pleaded not guilty at her arraignment on September 18, 2026, and that a pre-trial hearing was set for October 30, 2026. The case is pending. She has not been convicted. A charge is an allegation, not a finding of guilt.
@@ -212,16 +215,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

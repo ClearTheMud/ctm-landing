@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Mark Nichols</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -46,13 +49,13 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Mark Burns Nichols</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Port Angeles, Clallam County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan office; PDC party code NONE</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Clallam County Prosecuting Attorney, Port Angeles, WA (elected official). The Clallam County Prosecuting Attorney also serves as county coroner ex officio.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Mark Burns Nichols</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Port Angeles, Clallam County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan office; PDC party code NONE</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Clallam County Prosecuting Attorney, Port Angeles, WA (elected official). The Clallam County Prosecuting Attorney also serves as county coroner ex officio.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -87,24 +90,24 @@ recognizing that we are stronger and far more effective when we work together.</
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Clallam County Prosecuting Attorney</td><td>Filed and on the general election ballot; per PDC the sole registered filer (incumbent, unopposed as of 2026-07-18)</td><td>Research</td></tr>
-        <tr><td>2022</td><td>Clallam County Prosecuting Attorney (General)</td><td>Won in general election</td><td>Research</td></tr>
-        <tr><td>2018</td><td>Clallam County Prosecuting Attorney (General)</td><td>Won in general election</td><td>Research</td></tr>
-        <tr><td>2014</td><td>Clallam County Prosecuting Attorney (General)</td><td>Won in general election</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>Clallam County Prosecuting Attorney</td><td>Filed and on the general election ballot; per PDC the sole registered filer (incumbent, unopposed as of 2026-07-18)</td><td>Research</td></tr>
+        <tr><th scope="row">2022</th><td>Clallam County Prosecuting Attorney (General)</td><td>Won in general election</td><td>Research</td></tr>
+        <tr><th scope="row">2018</th><td>Clallam County Prosecuting Attorney (General)</td><td>Won in general election</td><td>Research</td></tr>
+        <tr><th scope="row">2014</th><td>Clallam County Prosecuting Attorney (General)</td><td>Won in general election</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Public Safety and Mental Health Court</td><td>In his 2022 re-election campaign Nichols named public safety and the county&#x27;s mental health court among his stated priorities.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Violent Crime Caseload</td><td>In 2020 Nichols reported the office was on track to double its felony violent crime cases, and in 2019 requested funding for two additional positions after homicide cases strained the office.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Public Safety and Mental Health Court</th><td>In his 2022 re-election campaign Nichols named public safety and the county&#x27;s mental health court among his stated priorities.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Violent Crime Caseload</th><td>In 2020 Nichols reported the office was on track to double its felony violent crime cases, and in 2019 requested funding for two additional positions after homicide cases strained the office.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -121,7 +124,7 @@ recognizing that we are stronger and far more effective when we work together.</
     <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">1 sourced findings. All sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model. No T4 claims included.</p>
 
     <div class="finding high">
-      <h4>Finding 5.1: Federal sexual harassment lawsuit against Nichols settled for $350,000 in 2018 <span class="impact-badge impact-high">HIGH</span></h4>
+      <h3>Finding 5.1: Federal sexual harassment lawsuit against Nichols settled for $350,000 in 2018 <span class="impact-badge impact-high">HIGH</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Tina Hendrickson, the office manager of the Clallam County Prosecuting Attorney&#x27;s Office, sued Mark Nichols in federal court on June 1, 2017, alleging he subjected her to sexual harassment between April 2015 and April 2017 in violation of the Equal Protection Clause and 42 U.S.C. section 1983 (Hendrickson v. Nichols, No. 3:17-cv-05418-BHS, U.S. District Court for the Western District of Washington at Tacoma). Nichols was named in his individual capacity and was the only defendant; Clallam County was not a party. These are allegations in a pleading that was never tried. Nichols denied the allegations. He moved for summary judgment in September 2018 and Judge Benjamin Settle denied the motion, allowing the case to proceed toward a jury trial. A denial of summary judgment is a procedural ruling and decides nothing on the merits. The case never reached a verdict. The parties settled, a stipulation was filed December 24, 2018, and the court terminated the case December 26, 2018. The settlement agreement was never filed on the docket, so its terms do not appear in the court record. The Peninsula Daily News, in reporting published December 13, 2018, said its reporter reviewed the signed agreement and that the settlement paid Hendrickson $350,000, with the payment coming from the statewide insurance risk pool the county belongs to rather than from Nichols personally. That dollar figure rests on that reporting, not on the court record. The Peninsula Daily News quoted the agreement as stating that it &quot;shall not constitute, in any manner, an admission by Nichols that he has violated any law or failed to fulfill any duty to Hendrickson or anyone else.&quot;</dd>
@@ -154,16 +157,20 @@ recognizing that we are stronger and far more effective when we work together.</
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

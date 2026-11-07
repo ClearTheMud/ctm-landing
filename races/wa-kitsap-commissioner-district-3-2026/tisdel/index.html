@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Kevin Tisdel</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -54,46 +57,46 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$3,919.52 (17 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$3,068.03 (15 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$3,919.52 (17 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$3,068.03 (15 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Kevin J Tisdel</td><td>$1,676.96</td></tr>
-        <tr><td>23rd Legislative District Republicans, Bremerton</td><td>$750.00</td></tr>
-        <tr><td>Kevin J Tisdel</td><td>$327.90</td></tr>
-        <tr><td>Kevin J Tisdel</td><td>$196.00</td></tr>
-        <tr><td>Murphy Cerina, Port Orchard</td><td>$180.00</td></tr>
-        <tr><td>Kevin J Tisdel</td><td>$162.59</td></tr>
-        <tr><td>Kevin J Tisdel</td><td>$158.49</td></tr>
-        <tr><td>Randall Irene, Bremerton</td><td>$100.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$100.00</td></tr>
-        <tr><td>Kevin J Tisdel</td><td>$60.00</td></tr>
+        <tr><th scope="row">Kevin J Tisdel</th><td>$1,676.96</td></tr>
+        <tr><th scope="row">23rd Legislative District Republicans, Bremerton</th><td>$750.00</td></tr>
+        <tr><th scope="row">Kevin J Tisdel</th><td>$327.90</td></tr>
+        <tr><th scope="row">Kevin J Tisdel</th><td>$196.00</td></tr>
+        <tr><th scope="row">Murphy Cerina, Port Orchard</th><td>$180.00</td></tr>
+        <tr><th scope="row">Kevin J Tisdel</th><td>$162.59</td></tr>
+        <tr><th scope="row">Kevin J Tisdel</th><td>$158.49</td></tr>
+        <tr><th scope="row">Randall Irene, Bremerton</th><td>$100.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$100.00</td></tr>
+        <tr><th scope="row">Kevin J Tisdel</th><td>$60.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Kevin J Tisdel</td><td>Filing fees - Office of Sec State</td><td>$1,676.96</td></tr>
-        <tr><td>Kevin J Tisdel</td><td>Signs</td><td>$327.90</td></tr>
-        <tr><td>Kevin J Tisdel</td><td>Post office box rental</td><td>$196.00</td></tr>
-        <tr><td>Murphy Cerina</td><td>Accounting, legal, regulatory compliance, etc. - August</td><td>$180.00</td></tr>
-        <tr><td>Kevin J Tisdel</td><td>Nail files for Kitsap Fair</td><td>$162.59</td></tr>
-        <tr><td>Kevin J Tisdel</td><td>Printing Service - Rack Cards</td><td>$158.49</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$98.51</td></tr>
-        <tr><td>Kevin J Tisdel</td><td>Accounting, legal, regulatory compliance, etc. - payment to treasurer</td><td>$60.00</td></tr>
-        <tr><td>Murphy Cerina</td><td>Treasurer</td><td>$60.00</td></tr>
-        <tr><td>Kevin J Tisdel</td><td>web host for website</td><td>$35.00</td></tr>
+        <tr><th scope="row">Kevin J Tisdel</th><td>Filing fees - Office of Sec State</td><td>$1,676.96</td></tr>
+        <tr><th scope="row">Kevin J Tisdel</th><td>Signs</td><td>$327.90</td></tr>
+        <tr><th scope="row">Kevin J Tisdel</th><td>Post office box rental</td><td>$196.00</td></tr>
+        <tr><th scope="row">Murphy Cerina</th><td>Accounting, legal, regulatory compliance, etc. - August</td><td>$180.00</td></tr>
+        <tr><th scope="row">Kevin J Tisdel</th><td>Nail files for Kitsap Fair</td><td>$162.59</td></tr>
+        <tr><th scope="row">Kevin J Tisdel</th><td>Printing Service - Rack Cards</td><td>$158.49</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$98.51</td></tr>
+        <tr><th scope="row">Kevin J Tisdel</th><td>Accounting, legal, regulatory compliance, etc. - payment to treasurer</td><td>$60.00</td></tr>
+        <tr><th scope="row">Murphy Cerina</th><td>Treasurer</td><td>$60.00</td></tr>
+        <tr><th scope="row">Kevin J Tisdel</th><td>web host for website</td><td>$35.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -107,14 +110,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

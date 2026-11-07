@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -27,6 +28,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Jim Woodward</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -45,16 +48,16 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Jim Woodward</td></tr>
-        <tr><td>Party</td><td>Republican</td></tr>
-        <tr><td>Current Office</td><td>Idaho State Senator, District 1 (2018&ndash;2022, 2024&ndash;present; term runs until the new Legislature is seated)</td></tr>
-        <tr><td>2026 Primary</td><td>Lost May 19 GOP primary 46.45%&ndash;53.55% to Scott Herndon (official Idaho SOS results as of 2026-06-09; final certification pending). Eliminated from the 2026 race.</td></tr>
-        <tr><td>Total Raised (2026)</td><td>$135,246.37 (Idaho Sunshine, as of 2026-06-10)</td></tr>
-        <tr><td>Military Service</td><td>U.S. Navy Commander (retired), 21 years active duty, nuclear submarine officer</td></tr>
-        <tr><td>Background</td><td>BS Mechanical Engineering, University of Idaho; Owner, Apex Construction Services</td></tr>
+        <tr><th scope="row">Full Name</th><td>Jim Woodward</td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td></tr>
+        <tr><th scope="row">Current Office</th><td>Idaho State Senator, District 1 (2018&ndash;2022, 2024&ndash;present; term runs until the new Legislature is seated)</td></tr>
+        <tr><th scope="row">2026 Primary</th><td>Lost May 19 GOP primary 46.45%&ndash;53.55% to Scott Herndon (official Idaho SOS results as of 2026-06-09; final certification pending). Eliminated from the 2026 race.</td></tr>
+        <tr><th scope="row">Total Raised (2026)</th><td>$135,246.37 (Idaho Sunshine, as of 2026-06-10)</td></tr>
+        <tr><th scope="row">Military Service</th><td>U.S. Navy Commander (retired), 21 years active duty, nuclear submarine officer</td></tr>
+        <tr><th scope="row">Background</th><td>BS Mechanical Engineering, University of Idaho; Owner, Apex Construction Services</td></tr>
       </tbody>
     </table>
   </div>
@@ -62,12 +65,12 @@
   <!-- 2026 PRIMARY RESULT -->
   <div class="section">
     <h2><span class="section-num">&#9733;</span> May 19, 2026 Republican Primary Result</h2>
-    <table>
-      <thead><tr><th>Candidate</th><th>Votes</th><th>Pct</th></tr></thead>
+    <table><caption class="sr-only">May 19, 2026 Republican Primary Result</caption>
+      <thead><tr><th scope="col">Candidate</th><th scope="col">Votes</th><th scope="col">Pct</th></tr></thead>
       <tbody>
-        <tr><td>Scott Herndon (R)</td><td>8,155</td><td>53.55%</td></tr>
-        <tr><td>Jim Woodward (R, incumbent)</td><td>7,075</td><td>46.45%</td></tr>
-        <tr><td><strong>Total</strong></td><td><strong>15,230</strong></td><td>, </td></tr>
+        <tr><th scope="row">Scott Herndon (R)</th><td>8,155</td><td>53.55%</td></tr>
+        <tr><th scope="row">Jim Woodward (R, incumbent)</th><td>7,075</td><td>46.45%</td></tr>
+        <tr><th scope="row"><strong>Total</strong></th><td><strong>15,230</strong></td><td>, </td></tr>
       </tbody>
     </table>
     <p style="margin-top:8px; font-size:13px; color:var(--gray-dark);">Official Idaho SOS results (results.voteidaho.gov) as of 2026-06-09, last updated 2026-06-05; final certification pending. Margin 1,080 votes, reversing Woodward&rsquo;s 613-vote 2024 win. Woodward is eliminated from the 2026 race; the November 3 general election is Herndon (R) vs Steve Johnson (I). Woodward was one of two moderate District 1 incumbents to lose on May 19: Rep. Mark Sauter (1A) also lost his primary.</p>
@@ -86,7 +89,7 @@
     <h2><span class="section-num">1</span> Establishment Positioning &amp; Military Credentials</h2>
 
     <div class="finding high">
-      <h4>Finding 1.1: JFAC Vice Chair, Budget Authority Position <span class="impact-badge impact-high">HIGH</span></h4>
+      <h3>Finding 1.1: JFAC Vice Chair, Budget Authority Position <span class="impact-badge impact-high">HIGH</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Woodward holds the Vice Chair position on JFAC (Joint Finance-Appropriations Committee), Idaho&rsquo;s most powerful budget committee. This gives him direct influence over state spending and positions him as the &ldquo;responsible governance&rdquo; candidate against Herndon&rsquo;s IFF faction.</dd>
@@ -102,7 +105,7 @@
     </div>
 
     <div class="finding high">
-      <h4>Finding 1.2: Navy Commander Record Provides Credibility Shield <span class="impact-badge impact-high">HIGH</span></h4>
+      <h3>Finding 1.2: Navy Commander Record Provides Credibility Shield <span class="impact-badge impact-high">HIGH</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Woodward served 21 years active duty as a Navy Commander and nuclear submarine officer before retiring to Idaho. This military record provides an authenticity shield against &ldquo;RINO&rdquo; attacks, voters struggle to label a 21-year military veteran as insufficiently conservative or patriotic.</dd>
@@ -119,7 +122,7 @@
     <h2><span class="section-num">2</span> Voting Record Vulnerabilities</h2>
 
     <div class="finding high">
-      <h4>Finding 2.1: Opposed $253M Tax Cut Package <span class="impact-badge impact-high">HIGH</span></h4>
+      <h3>Finding 2.1: Opposed $253M Tax Cut Package <span class="impact-badge impact-high">HIGH</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Woodward voted against the $253M tax cut package in March 2025, drawing sharp criticism from the Idaho Freedom Foundation and his conservative base. IFF has used this vote as the centerpiece of their opposition campaign, calling it evidence that Woodward is a &ldquo;tax-and-spend Republican.&rdquo;</dd>
@@ -137,7 +140,7 @@
     </div>
 
     <div class="finding high">
-      <h4>Finding 2.2: Opposed School Voucher Legislation <span class="impact-badge impact-high">HIGH</span></h4>
+      <h3>Finding 2.2: Opposed School Voucher Legislation <span class="impact-badge impact-high">HIGH</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Woodward voted against school voucher/education savings account legislation, opposing a top priority of both the Idaho Freedom Caucus and the national conservative movement. His 86% Idaho Children Are Primary score (vs. Herndon&rsquo;s 36%) signals strong public school advocacy.</dd>
@@ -160,7 +163,7 @@
     <h2><span class="section-num">3</span> IFF Targeting &amp; Party Dynamics</h2>
 
     <div class="finding moderate">
-      <h4>Finding 3.1: IFF &ldquo;RINO&rdquo; Targeting and Bonner County GOP Censure Attempt <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 3.1: IFF &ldquo;RINO&rdquo; Targeting and Bonner County GOP Censure Attempt <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>The Idaho Freedom Foundation has consistently targeted Woodward as insufficiently conservative. The Bonner County Republican Central Committee (chaired by opponent Herndon) attempted to censure Woodward in 2021. His IFF lifetime Freedom Index of 51.6% places him as a moderate by party standards.</dd>
@@ -178,7 +181,7 @@
     </div>
 
     <div class="finding moderate">
-      <h4>Finding 3.2: Razor-Thin 2024 Margin Signals Vulnerability <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 3.2: Razor-Thin 2024 Margin Signals Vulnerability <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Woodward&rsquo;s 2024 primary victory was by just 613 votes (52&ndash;48%). In 2022 he lost outright (44&ndash;56%). The trendline shows a competitive race within the margin of turnout variation, either candidate could win based on which faction mobilizes more effectively.</dd>
@@ -199,7 +202,7 @@
     <h2><span class="section-num">4</span> Key Legislative Votes</h2>
 
     <div class="finding moderate">
-      <h4>Finding 4.1: Mixed Record on Social Issues <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 4.1: Mixed Record on Social Issues <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>Woodward&rsquo;s voting record shows selective engagement on social issues: he voted for HB 752 (bathroom bill) but against HB 822 (pronoun notification bill). He co-sponsored SB 1184 adding medical emergency exceptions to Idaho&rsquo;s abortion ban. This selectivity allows both sides to cherry-pick votes for attack ads.</dd>
@@ -219,23 +222,28 @@
   <!-- FINANCIAL SNAPSHOT -->
   <div class="section">
     <h2><span class="section-num">$</span> Financial Snapshot (Idaho Sunshine T0 Data, as of 2026-06-10)</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Financial Snapshot (Idaho Sunshine T0 Data, as of 2026-06-10)</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised (2026 cycle)</td><td>$135,246.37 (398 transactions, 2025-07-01 through 2026-05-21)</td></tr>
-        <tr><td>Total Spent (2025&ndash;26)</td><td>$89,385.11</td></tr>
-        <tr><td>Cash on Hand</td><td>$54,047.83 (no loans or debts on file)</td></tr>
-        <tr><td>Post-Primary Receipts</td><td>32 contributions totaling $14,660 received since 2026-05-09, including $4,735 across 8 contributions dated 2026-05-21, two days after his primary loss, of which ~$4,200 was corporate/PAC money: Idaho Power Company $1,000, International Association of Fire Fighters PAC $1,000, Grocery Retail PAC $700, Republic Services $500, Johnson &amp; Johnson Corporate Political Fund $500, Idaho Soft Drink PAC $500; plus individuals Judith C. Meyer $500 and Nancy L. Bucher $35.</td></tr>
-        <tr><td>IFF Freedom Index</td><td>51.6% (lifetime)</td></tr>
-        <tr><td>ICAP Score</td><td>86%</td></tr>
-        <tr><td>Key Endorsement</td><td>IACI (Idaho Association of Commerce &amp; Industry)</td></tr>
-        <tr><td>Committee Chair</td><td>JFAC Vice Chair</td></tr>
-        <tr><td>Election History</td><td>2018 W (52%), 2022 L (44%), 2024 W (52%), 2026 primary L (46.45%; certification pending)</td></tr>
+        <tr><th scope="row">Total Raised (2026 cycle)</th><td>$135,246.37 (398 transactions, 2025-07-01 through 2026-05-21)</td></tr>
+        <tr><th scope="row">Total Spent (2025&ndash;26)</th><td>$89,385.11</td></tr>
+        <tr><th scope="row">Cash on Hand</th><td>$54,047.83 (no loans or debts on file)</td></tr>
+        <tr><th scope="row">Post-Primary Receipts</th><td>32 contributions totaling $14,660 received since 2026-05-09, including $4,735 across 8 contributions dated 2026-05-21, two days after his primary loss, of which ~$4,200 was corporate/PAC money: Idaho Power Company $1,000, International Association of Fire Fighters PAC $1,000, Grocery Retail PAC $700, Republic Services $500, Johnson &amp; Johnson Corporate Political Fund $500, Idaho Soft Drink PAC $500; plus individuals Judith C. Meyer $500 and Nancy L. Bucher $35.</td></tr>
+        <tr><th scope="row">IFF Freedom Index</th><td>51.6% (lifetime)</td></tr>
+        <tr><th scope="row">ICAP Score</th><td>86%</td></tr>
+        <tr><th scope="row">Key Endorsement</th><td>IACI (Idaho Association of Commerce &amp; Industry)</td></tr>
+        <tr><th scope="row">Committee Chair</th><td>JFAC Vice Chair</td></tr>
+        <tr><th scope="row">Election History</th><td>2018 W (52%), 2022 L (44%), 2024 W (52%), 2026 primary L (46.45%; certification pending)</td></tr>
       </tbody>
     </table>
     <p style="margin-top:8px; font-size:13px; color:var(--gray-dark);">Spokane Public Radio (2026-05-13) reported Woodward and Herndon brought in the most contributions of any Idaho Senate candidates; the Bonner County Daily Bee (2026-05-21, citing the Idaho Capital Sun) called SD-1 &ldquo;the most expensive primary battle in the state.&rdquo;</p>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media), or T3 (Candidate Statement / Official Campaign Page) per clearthemud provenance model.<br>
     T3 content reflects the candidate&rsquo;s own public claims and has not been independently verified. No editorial conclusions, readers assess implications independently.<br>
@@ -243,10 +251,9 @@
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

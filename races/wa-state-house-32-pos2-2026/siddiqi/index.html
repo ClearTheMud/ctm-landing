@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Imraan Siddiqi</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Imraan Siddiqi</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Imraan Siddiqi</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -76,57 +79,57 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2024</td><td>Congressional District 8 - U.S. Representative (Primary)</td><td>Lost (3 of 5)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Congressional District 8 - U.S. Representative (Primary)</td><td>Lost (3 of 5)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$76,922.59 (182 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$69,656.52 (77 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$76,922.59 (182 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$69,656.52 (77 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>425 ACTION, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>AARBI SHAHARYAR, WOODINVILLE</td><td>$1,200.00</td></tr>
-        <tr><td>BLACK CECELIA, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>GOLDWARG JORDAN, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>HARVEY JANE, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>ILIKHAN OZCAN, SAMMAMISH</td><td>$1,200.00</td></tr>
-        <tr><td>KARIM SARAH, MERCER ISLAND</td><td>$1,200.00</td></tr>
-        <tr><td>KATIRCIOGLU MERYEM, REDMOND</td><td>$1,200.00</td></tr>
-        <tr><td>MALIK KHALIL, PARKER</td><td>$1,200.00</td></tr>
-        <tr><td>RENSCHLER KATIE, SEATTLE</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">425 ACTION, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">AARBI SHAHARYAR, WOODINVILLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">BLACK CECELIA, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">GOLDWARG JORDAN, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">HARVEY JANE, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">ILIKHAN OZCAN, SAMMAMISH</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">KARIM SARAH, MERCER ISLAND</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">KATIRCIOGLU MERYEM, REDMOND</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">MALIK KHALIL, PARKER</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">RENSCHLER KATIE, SEATTLE</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>UPPER LEFT STRATEGIES</td><td>CAPITOL CITY PRESS (TUMWATER) - PRODUCTION OF 27,390 MAILERS</td><td>$14,379.75</td></tr>
-        <tr><td>UPPER LEFT STRATEGIES</td><td>CAPITOL CITY PRESS (TUMWATER) - POSTAGE FOR MAILERS</td><td>$10,139.00</td></tr>
-        <tr><td>UPPER LEFT STRATEGIES</td><td>CAPITOL CITY PRESS (TUMWATER) - PRODUCTION OF 16,312 MAILERS</td><td>$7,484.44</td></tr>
-        <tr><td>UPPER LEFT STRATEGIES</td><td>CAPITOL CITY PRESS (TUMWATER) - POSTAGE FOR MAILER</td><td>$5,681.47</td></tr>
-        <tr><td>UPPER LEFT STRATEGIES</td><td>LUKE PRESTON (WOODINVILLE) - CAMPAIGN MANAGEMENT</td><td>$2,875.00</td></tr>
-        <tr><td>UPPER LEFT STRATEGIES</td><td>CAMPAIGN MANAGEMENT (EST.)</td><td>$2,500.00</td></tr>
-        <tr><td>UPPER LEFT STRATEGIES</td><td>DOWNBALLOT.WIN (SEATTLE) - 8/1 TEXTING (15,000)</td><td>$1,500.00</td></tr>
-        <tr><td>UPPER LEFT STRATEGIES</td><td>LUKE PRESTON (WOODINVILLE) - JULY CAMPAIGN MANAGEMENT</td><td>$1,037.50</td></tr>
-        <tr><td>UPPER LEFT STRATEGIES</td><td>BORUCK PRINTING (SEATTLE) - 2,000 WALK PIECES</td><td>$1,036.34</td></tr>
-        <tr><td>UPPER LEFT STRATEGIES</td><td>CONSULTING</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">UPPER LEFT STRATEGIES</th><td>CAPITOL CITY PRESS (TUMWATER) - PRODUCTION OF 27,390 MAILERS</td><td>$14,379.75</td></tr>
+        <tr><th scope="row">UPPER LEFT STRATEGIES</th><td>CAPITOL CITY PRESS (TUMWATER) - POSTAGE FOR MAILERS</td><td>$10,139.00</td></tr>
+        <tr><th scope="row">UPPER LEFT STRATEGIES</th><td>CAPITOL CITY PRESS (TUMWATER) - PRODUCTION OF 16,312 MAILERS</td><td>$7,484.44</td></tr>
+        <tr><th scope="row">UPPER LEFT STRATEGIES</th><td>CAPITOL CITY PRESS (TUMWATER) - POSTAGE FOR MAILER</td><td>$5,681.47</td></tr>
+        <tr><th scope="row">UPPER LEFT STRATEGIES</th><td>LUKE PRESTON (WOODINVILLE) - CAMPAIGN MANAGEMENT</td><td>$2,875.00</td></tr>
+        <tr><th scope="row">UPPER LEFT STRATEGIES</th><td>CAMPAIGN MANAGEMENT (EST.)</td><td>$2,500.00</td></tr>
+        <tr><th scope="row">UPPER LEFT STRATEGIES</th><td>DOWNBALLOT.WIN (SEATTLE) - 8/1 TEXTING (15,000)</td><td>$1,500.00</td></tr>
+        <tr><th scope="row">UPPER LEFT STRATEGIES</th><td>LUKE PRESTON (WOODINVILLE) - JULY CAMPAIGN MANAGEMENT</td><td>$1,037.50</td></tr>
+        <tr><th scope="row">UPPER LEFT STRATEGIES</th><td>BORUCK PRINTING (SEATTLE) - 2,000 WALK PIECES</td><td>$1,036.34</td></tr>
+        <tr><th scope="row">UPPER LEFT STRATEGIES</th><td>CONSULTING</td><td>$1,000.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -141,16 +144,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -27,6 +28,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Adam Smith</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -55,15 +58,15 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Adam Smith</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Date of Birth</td><td>Born June 15, 1965, in Washington, D.C. (age 61 in 2026)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Residence</td><td>Bellevue, King County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>B.A. in political science, Fordham University (1987); J.D., University of Washington School of Law (1990)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Attorney in private practice and prosecutor for the city of Seattle before entering elected office</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Adam Smith</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Date of Birth</th><td>Born June 15, 1965, in Washington, D.C. (age 61 in 2026)</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Bellevue, King County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>B.A. in political science, Fordham University (1987); J.D., University of Washington School of Law (1990)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Attorney in private practice and prosecutor for the city of Seattle before entering elected office</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -78,289 +81,289 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>WA-9 U.S. House (Primary, Aug 4)</td><td>Running for re-election. Democratic field includes Melissa Chaudhry, Janis Clark, C. Mark Greene, and former Seattle City Council member and socialist Kshama Sawant, who is mounting a left challenge. General election November 3, 2026.</td><td>Research</td></tr>
-        <tr><td>2025</td><td>City Of Spokane Valley Council Position NO. 1 (Primary)</td><td>Lost (4 of 5)</td><td>WA SOS</td></tr>
-        <tr><td>2024</td><td>WA-9 U.S. House (General)</td><td>Won re-election</td><td>Research</td></tr>
-        <tr><td>2023</td><td>City Of Spokane Valley Council Position NO. 2 (Primary)</td><td>Lost (3 of 4)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>WA-9 U.S. House (General)</td><td>Won re-election</td><td>Research</td></tr>
-        <tr><td>2021</td><td>City Of Spokane Valley Council Position NO. 7 (Primary)</td><td>Lost (3 of 5)</td><td>WA SOS</td></tr>
-        <tr><td>2020</td><td>WA-9 U.S. House (General)</td><td>Won re-election</td><td>Research</td></tr>
-        <tr><td>2018</td><td>Congressional District 9 - U.S. Representative (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>Congressional District 9 - U.S. Representative (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2016</td><td>Congressional District 9 - U.S. Representative (Primary)</td><td>Won (1 of 5)</td><td>WA SOS</td></tr>
-        <tr><td>2016</td><td>Congressional District 9 - U.S. Representative (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2014</td><td>Congressional District 9 - U.S. Representative (Primary)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
-        <tr><td>2014</td><td>Congressional District 9 - U.S. Representative (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2026</th><td>WA-9 U.S. House (Primary, Aug 4)</td><td>Running for re-election. Democratic field includes Melissa Chaudhry, Janis Clark, C. Mark Greene, and former Seattle City Council member and socialist Kshama Sawant, who is mounting a left challenge. General election November 3, 2026.</td><td>Research</td></tr>
+        <tr><th scope="row">2025</th><td>City Of Spokane Valley Council Position NO. 1 (Primary)</td><td>Lost (4 of 5)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>WA-9 U.S. House (General)</td><td>Won re-election</td><td>Research</td></tr>
+        <tr><th scope="row">2023</th><td>City Of Spokane Valley Council Position NO. 2 (Primary)</td><td>Lost (3 of 4)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>WA-9 U.S. House (General)</td><td>Won re-election</td><td>Research</td></tr>
+        <tr><th scope="row">2021</th><td>City Of Spokane Valley Council Position NO. 7 (Primary)</td><td>Lost (3 of 5)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2020</th><td>WA-9 U.S. House (General)</td><td>Won re-election</td><td>Research</td></tr>
+        <tr><th scope="row">2018</th><td>Congressional District 9 - U.S. Representative (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>Congressional District 9 - U.S. Representative (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2016</th><td>Congressional District 9 - U.S. Representative (Primary)</td><td>Won (1 of 5)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2016</th><td>Congressional District 9 - U.S. Representative (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2014</th><td>Congressional District 9 - U.S. Representative (Primary)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2014</th><td>Congressional District 9 - U.S. Representative (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>National Defense / Military</td><td>Ranking Member of the House Armed Services Committee, the panel&#x27;s senior Democrat with jurisdiction over the annual National Defense Authorization Act. Advocates reining in Pentagon spending, cutting aging legacy systems and reinvesting in more efficient programs. Opposed preemptive military strikes on Iran, warning against a war of choice with no strategic endgame.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Israel and Gaza</td><td>Supports Israel&#x27;s right to exist while calling since 2025 for an immediate humanitarian ceasefire in Gaza, stating the complete destruction of Hamas is not a feasible goal. In August 2025 urged the administration to consider leveraging or halting certain offensive arms sales to Israel to press for a ceasefire and expanded humanitarian aid.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Healthcare</td><td>Supports moving toward a universal health care system and lowering drug costs. Campaign material cites work against pharmaceutical price gouging on medications such as insulin and co-sponsorship of measures to block cuts to Medicaid and SNAP.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Workforce and Apprenticeships</td><td>Introduced a package of bills in 2025 to expand access to apprenticeships and workforce training, including the Pre-Apprenticeship Wraparound Support Services Fund Act and the Empowering Individuals to Succeed Through Education and Workforce Training Act.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">National Defense / Military</th><td>Ranking Member of the House Armed Services Committee, the panel&#x27;s senior Democrat with jurisdiction over the annual National Defense Authorization Act. Advocates reining in Pentagon spending, cutting aging legacy systems and reinvesting in more efficient programs. Opposed preemptive military strikes on Iran, warning against a war of choice with no strategic endgame.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Israel and Gaza</th><td>Supports Israel&#x27;s right to exist while calling since 2025 for an immediate humanitarian ceasefire in Gaza, stating the complete destruction of Hamas is not a feasible goal. In August 2025 urged the administration to consider leveraging or halting certain offensive arms sales to Israel to press for a ceasefire and expanded humanitarian aid.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Healthcare</th><td>Supports moving toward a universal health care system and lowering drug costs. Campaign material cites work against pharmaceutical price gouging on medications such as insulin and co-sponsorship of measures to block cuts to Medicaid and SNAP.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Workforce and Apprenticeships</th><td>Introduced a package of bills in 2025 to expand access to apprenticeships and workforce training, including the Pre-Apprenticeship Wraparound Support Services Fund Act and the Empowering Individuals to Succeed Through Education and Workforce Training Act.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$1,882,001.47</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Total Spent</td><td>$1,583,205.56</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Total Raised</th><td>$1,882,001.47</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Total Spent</th><td>$1,583,205.56</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">Source: Federal Election Commission.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>AMERICAN ISRAEL PUBLIC AFFAIRS COMMITTEE POLITICAL ACTION COMMITTEE</td><td>$140,000.00</td></tr>
-        <tr><td>LABORERS&#x27; POLITICAL LEAGUE-LABORERS&#x27; INTERNATIONAL</td><td>$45,000.00</td></tr>
-        <tr><td>BAKER DONELSON BEARMAN CALDWELL &amp; BERKOWITZ PC PAC</td><td>$45,000.00</td></tr>
-        <tr><td>MACHINISTS NON PARTISAN POL LEAGUE OF THE INT&#x27;L AS</td><td>$40,000.00</td></tr>
-        <tr><td>SEIU C.O.P.E.</td><td>$40,000.00</td></tr>
-        <tr><td>T-MOBILE PAC</td><td>$40,000.00</td></tr>
-        <tr><td>EMPLOYEES OF NORTHROP GRUMMAN CORPORATION PAC</td><td>$40,000.00</td></tr>
-        <tr><td>SPACE EXPLORATION TECHNOLOGIES CORP. PAC</td><td>$35,000.00</td></tr>
-        <tr><td>MOTOROLA SOLUTIONS, INC. POLITICAL ACTION COMMITTEE</td><td>$35,000.00</td></tr>
-        <tr><td>NDC PAC</td><td>$35,000.00</td></tr>
-        <tr><td>CARPENTERS LEGISLATIVE IMPROVEMENT COMMITTEE UNITED BROTHERHOOD OF CARPENTERS AND JOINERS</td><td>$30,000.00</td></tr>
-        <tr><td>VIGOR PAC</td><td>$30,000.00</td></tr>
-        <tr><td>PARSONS CORPORATION POLITICAL ACTION COMMITTEE</td><td>$30,000.00</td></tr>
-        <tr><td>DELOITTE POLITICAL ACTION COMMITTEE</td><td>$30,000.00</td></tr>
-        <tr><td>BAE SYSTEMS INC. POLITICAL ACTION COMMITTEE</td><td>$30,000.00</td></tr>
-        <tr><td>INTERNATIONAL BROTHERHOOD OF ELECTRICAL WORKERS POLITICAL ACTION COMMITTEE</td><td>$25,000.00</td></tr>
-        <tr><td>HONEYWELL INTERNATIONAL PAC</td><td>$25,000.00</td></tr>
-        <tr><td>HUNTINGTON INGALLS INDUSTRIES POLITICAL ACTION COMMITTE (SHIPPAC)</td><td>$25,000.00</td></tr>
-        <tr><td>TEXTRON INC. POLITICAL ACTION COMMITTEE</td><td>$25,000.00</td></tr>
-        <tr><td>MICROSOFT CORPORATION POLITICAL ACTION COMMITTEE</td><td>$25,000.00</td></tr>
-        <tr><td>L3HARRIS TECHNOLOGIES, INC. PAC</td><td>$25,000.00</td></tr>
-        <tr><td>GENERAL ATOMICS POLITICAL ACTION COMMITTEE</td><td>$25,000.00</td></tr>
-        <tr><td>TRANSDIGM GROUP INC. EMPLOYEE POLITICAL ACTION COMMITTEE</td><td>$20,000.00</td></tr>
-        <tr><td>NEW DEMOCRAT COALITION PAC</td><td>$20,000.00</td></tr>
-        <tr><td>UNITED SERVICES AUTOMOBILE ASSOCIATION EMPLOYEE PAC - USAA EMPLOYEE PAC</td><td>$20,000.00</td></tr>
-        <tr><td>NATIONAL AUTOMOBILE DEALERS ASSOCIATION POLITICAL ACTION COMMITTEE</td><td>$20,000.00</td></tr>
-        <tr><td>BECHTEL PAC</td><td>$20,000.00</td></tr>
-        <tr><td>UA UNION PLUMBERS &amp; PIPEFITTERS VOTE! PAC (UNITED ASSOCIATION OF JOURNEYMEN AND APPRENTICE</td><td>$20,000.00</td></tr>
-        <tr><td>INTERNATIONAL UNION OF PAINTERS AND ALLIED TRADES POLITICAL ACTION TOGETHER POLITICAL COMM</td><td>$20,000.00</td></tr>
-        <tr><td>USAA EMPLOYEE PAC</td><td>$20,000.00</td></tr>
-        <tr><td>LOCKHEED MARTIN EMPLOYEES PAC</td><td>$20,000.00</td></tr>
-        <tr><td>BLUE ORIGIN LLC POLITICAL ACTION COMMITTEE</td><td>$20,000.00</td></tr>
-        <tr><td>UNITED PARCEL SERVICE INC. PAC</td><td>$15,000.00</td></tr>
-        <tr><td>OSHKOSH CORPORATION EMPLOYEES PAC</td><td>$15,000.00</td></tr>
-        <tr><td>PRICEWATERHOUSECOOPERS POLITICAL ACTION COMMITTEE</td><td>$15,000.00</td></tr>
-        <tr><td>UNITED FOOD AND COMMERCIAL WORKERS INTERNATIONAL UNION ACTIVE BALLOT CLUB</td><td>$15,000.00</td></tr>
-        <tr><td>UNITED PARCEL SERVICE OF AMERICA INC PAC</td><td>$15,000.00</td></tr>
-        <tr><td>HUMANA INC PAC</td><td>$15,000.00</td></tr>
-        <tr><td>NATIONAL BEER WHOLESALER&#x27;S PAC</td><td>$15,000.00</td></tr>
-        <tr><td>MATSON, INC. FEDERAL ELECTION COMMITTEE</td><td>$15,000.00</td></tr>
-        <tr><td>MACHINISTS NON PARTISAN POLITICAL LEAGUE OF THE INTERNATIONAL ASSOCIATION OF MACHINISTS &amp; AEROSPACE WORKERS</td><td>$15,000.00</td></tr>
-        <tr><td>HDR, INC. POLITICAL ACTION COMMITTEE (HDR PAC)</td><td>$15,000.00</td></tr>
-        <tr><td>IBEW COPE</td><td>$15,000.00</td></tr>
-        <tr><td>INTERNATIONAL UNION OF OPERATING ENGINEERS</td><td>$15,000.00</td></tr>
-        <tr><td>BAE SYSTEMS INC. POLITICAL ACTION COMMITTEE (BAE SYSTEMS USA PAC)</td><td>$15,000.00</td></tr>
-        <tr><td>ENGINEERS POLITICAL EDUCATION COMMITTEE (EPEC)/INTERNATIONAL UNION OF OPERATING ENGINEERS</td><td>$15,000.00</td></tr>
-        <tr><td>HARRIS CORPORATION POLITICAL ACTION COMMITTEE</td><td>$15,000.00</td></tr>
-        <tr><td>SHEET METAL WORKER&#x27;S INTERNATIONAL ASSOCIATION POL</td><td>$15,000.00</td></tr>
-        <tr><td>MACHINISTS NON-PARTISAN POLITICAL LEAGUE</td><td>$15,000.00</td></tr>
-        <tr><td>SSA MARINE GOOD GOVERNMENT FUND</td><td>$15,000.00</td></tr>
-        <tr><td>KRATOS DEFENSE &amp; SECURITY SOLUTIONS, INC. POLITICAL ACTION COMMITTEE</td><td>$15,000.00</td></tr>
-        <tr><td>DELOITTE AND TOUCHE LLP FEDERAL PAC</td><td>$15,000.00</td></tr>
-        <tr><td>PERATON CORP. POLITICAL ACTION COMMITTEE</td><td>$15,000.00</td></tr>
-        <tr><td>AMAZON CORPORATE LLC SEPARATE SEGREGATED FUND</td><td>$15,000.00</td></tr>
-        <tr><td>LEIDOS INC. POLITICAL ACTION COMMITTEE</td><td>$15,000.00</td></tr>
-        <tr><td>AMENTUM SERVICES, INC. PAC</td><td>$15,000.00</td></tr>
-        <tr><td>ALLHASSANI, MEHDI</td><td>$14,000.00</td></tr>
-        <tr><td>PACHULSKI, RICHARD</td><td>$13,600.00</td></tr>
-        <tr><td>BLUE, J. NEAL</td><td>$13,600.00</td></tr>
-        <tr><td>BJORNSTAD, JEFF</td><td>$13,600.00</td></tr>
-        <tr><td>JAIN, AKASH</td><td>$13,600.00</td></tr>
-        <tr><td>HACKMAN, MICHAEL</td><td>$13,600.00</td></tr>
-        <tr><td>ALHASSANI, MEHDI</td><td>$13,600.00</td></tr>
-        <tr><td>KARP, ALEXANDER C.</td><td>$13,600.00</td></tr>
-        <tr><td>ARIZONA WASHINGTON VICTORY FUND</td><td>$13,249.73</td></tr>
-        <tr><td>STANTON, JOHN</td><td>$11,600.00</td></tr>
-        <tr><td>WESTROCK POLITICAL ACTION COMMITTEE</td><td>$10,000.00</td></tr>
-        <tr><td>CULAC THE PAC OF CREDIT UNION NATIONAL ASSOCIATION</td><td>$10,000.00</td></tr>
-        <tr><td>ENGINEERS POLITICAL EDUCATION COMMITTEE</td><td>$10,000.00</td></tr>
-        <tr><td>DEMOCRATIC REPUBLICAN INDEPENDENT VOTER EDUCATION</td><td>$10,000.00</td></tr>
-        <tr><td>ROLLS-ROYCE NORTH AMERICA HOLDINGS INC. PAC</td><td>$10,000.00</td></tr>
-        <tr><td>AMAZON.COM SERVICES LLC SEPARATE SEGREGATED FUND</td><td>$10,000.00</td></tr>
-        <tr><td>OSHKOSH CORPORATION EMPLOYEES PAC (OCEPAC)</td><td>$10,000.00</td></tr>
-        <tr><td>DELTA AIR LINES POLITICAL ACTION COMMITTEE</td><td>$10,000.00</td></tr>
-        <tr><td>INTERNATIONAL ASSOCIATION OF FIREFIGHTERS INTERESTED IN REGISTRATION AND EDUCATION PAC</td><td>$10,000.00</td></tr>
-        <tr><td>NATIONAL ASSOCIATION OF REALTORS POLITICAL ACTION COMMITTEE</td><td>$10,000.00</td></tr>
-        <tr><td>GENERAL DYNAMICS CORPORATION POLITICAL ACTION COMMITTEE</td><td>$10,000.00</td></tr>
-        <tr><td>AMERICA&#x27;S CREDIT UNIONS PAC OF CREDIT UNION NATIONAL ASSOCIATION, INC.</td><td>$10,000.00</td></tr>
-        <tr><td>RAYTHEON PAC</td><td>$10,000.00</td></tr>
-        <tr><td>REALTORS POLITICAL ACTION COMMITTEE</td><td>$10,000.00</td></tr>
-        <tr><td>RUSSELL INVESTMENT GROUP FEDERAL PAC</td><td>$10,000.00</td></tr>
-        <tr><td>SAIC VOLUNTARY PAC</td><td>$10,000.00</td></tr>
-        <tr><td>LEIDOS INC POLITICAL ACTION COMMITTEE</td><td>$10,000.00</td></tr>
-        <tr><td>NATIONAL APARTMENT ASSOCIATION POLITICAL ACTION COMMITTEE</td><td>$10,000.00</td></tr>
-        <tr><td>MCKESSON CORPORATION EMPLOYEE POLITICAL FUND</td><td>$10,000.00</td></tr>
-        <tr><td>GENERAL ATOMICS PAC</td><td>$10,000.00</td></tr>
-        <tr><td>L3 TECHNOLOGIES, INC. PAC</td><td>$10,000.00</td></tr>
-        <tr><td>ORBITAL ATK INC. POLITICAL ACTION COMMITTEE</td><td>$10,000.00</td></tr>
-        <tr><td>M-PAC</td><td>$10,000.00</td></tr>
-        <tr><td>THE CIGNA GROUP EMPLOYEE POLITICAL ACTION COMMITTEE</td><td>$10,000.00</td></tr>
-        <tr><td>HUNTINGTON INGALLS INDUSTRIES, INC. EMPLOYEES PAC</td><td>$10,000.00</td></tr>
-        <tr><td>KRATOS DEFENSE &amp; SECURITY SOLUTIONS, INC. PAC</td><td>$10,000.00</td></tr>
-        <tr><td>POLITICAL ACTION COMMITTEE OF THE AMERICAN ASSOCIATION OF ORTHOPAEDIC SURGEONS</td><td>$10,000.00</td></tr>
-        <tr><td>BOEING COMPANY POLITICAL ACTION COMMITTEE</td><td>$10,000.00</td></tr>
-        <tr><td>EMPLOYEES OF PALANTIR TECHNOLOGIES INC. PAC</td><td>$10,000.00</td></tr>
-        <tr><td>SCIENCE APPLICATIONS INTERNATIONAL CORPORATION VOLUNTARY POLITICAL ACTION COMMITTEE</td><td>$10,000.00</td></tr>
-        <tr><td>HUMANA INC. POLITICAL ACTION COMMITTEE</td><td>$10,000.00</td></tr>
-        <tr><td>AT&amp;T INC. FEDERAL POLITICAL ACTION COMMITTEE</td><td>$10,000.00</td></tr>
-        <tr><td>MCINTYRE, DAVID J.</td><td>$7,000.00</td></tr>
-        <tr><td>ZIEGLER, DANIEL</td><td>$7,000.00</td></tr>
-        <tr><td>SHIRLEY, JON</td><td>$7,000.00</td></tr>
-        <tr><td>MAVROOKAS, KOSTADINO</td><td>$7,000.00</td></tr>
-        <tr><td>MARKOV, TODOR</td><td>$7,000.00</td></tr>
-        <tr><td>HUNT, WOODY</td><td>$7,000.00</td></tr>
-        <tr><td>MILLER, SKIP</td><td>$7,000.00</td></tr>
-        <tr><td>JAGER, EDWIN</td><td>$7,000.00</td></tr>
-        <tr><td>ROWLEY, GEORGE W</td><td>$7,000.00</td></tr>
-        <tr><td>QUACKENBUSH, MICHELLE</td><td>$7,000.00</td></tr>
-        <tr><td>QUACKENBUSH, KARL J</td><td>$7,000.00</td></tr>
-        <tr><td>LISMAN, MICHAEL</td><td>$7,000.00</td></tr>
-        <tr><td>HIRSCHTICK, JON</td><td>$6,600.00</td></tr>
-        <tr><td>SCHWARTZBERG, ANDREW</td><td>$6,600.00</td></tr>
-        <tr><td>WEBSTER, JAMES H</td><td>$6,600.00</td></tr>
-        <tr><td>ZALIK, HELEN</td><td>$6,600.00</td></tr>
-        <tr><td>ZALIK, DAVID</td><td>$6,600.00</td></tr>
-        <tr><td>SCHIMPF, BRIAN</td><td>$6,600.00</td></tr>
-        <tr><td>PESKIN, CRAIG</td><td>$6,600.00</td></tr>
-        <tr><td>PESKIN, BIANCA</td><td>$6,600.00</td></tr>
-        <tr><td>ZEEV, OREN</td><td>$6,600.00</td></tr>
-        <tr><td>WEINBERG, DEBRA</td><td>$6,600.00</td></tr>
-        <tr><td>RODAN, AMNON</td><td>$6,600.00</td></tr>
-        <tr><td>MARGOLIS, LARRY</td><td>$6,600.00</td></tr>
-        <tr><td>KRAFT, DANIEL</td><td>$6,600.00</td></tr>
-        <tr><td>KAPLOW, LOUIS</td><td>$6,600.00</td></tr>
-        <tr><td>FORCHHEIMER, JODY</td><td>$6,600.00</td></tr>
-        <tr><td>COMMUNICATIONS WORKERS OF AMERICA-COPE POLITICAL CONTRIBUTIONS COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>GENERAL DYNAMICS VOLUNTARY POLITICAL CONTRIBUTION</td><td>$5,000.00</td></tr>
-        <tr><td>ANHEUSER-BUSCH PAC</td><td>$5,000.00</td></tr>
-        <tr><td>AMERICAN FEDERATION OF TEACHERS COMMITTEE ON POLITICAL EDUCATION</td><td>$5,000.00</td></tr>
-        <tr><td>C3.AI, INC. PAC</td><td>$5,000.00</td></tr>
-        <tr><td>ALLISON TRANSMISSION INC. POLITICAL ACTION COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>CIGNA CORPORATION POLITICAL ACTION COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>AMERICAN COUNCIL OF ENGINEERING COMPANIES PAC</td><td>$5,000.00</td></tr>
-        <tr><td>NATIONAL ELECTRICAL CONTRACTORS ASSOCIATION POLITICAL ACTION COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>VERIZON COMMUNICATIONS, INC. POLITICAL ACTION COMMITTEE (VERIZON PAC)</td><td>$5,000.00</td></tr>
-        <tr><td>TTM TECHNOLOGIES INC. POLITICAL ACTION COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>SEIU COPE (SERVICE EMPLOYEES INTERNATIONAL UNION COMMITTEE ON POLITICAL EDUCATION)</td><td>$5,000.00</td></tr>
-        <tr><td>NATIONAL MULTIFAMILY HOUSING COUNCIL POLITICAL ACTION COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>JSTREETPAC</td><td>$5,000.00</td></tr>
-        <tr><td>WEIL, PETER</td><td>$5,000.00</td></tr>
-        <tr><td>SCHALL, BRIAN</td><td>$5,000.00</td></tr>
-        <tr><td>SYNERGY PAC</td><td>$5,000.00</td></tr>
-        <tr><td>BUILDING RELATIONSHIPS IN DIVERSE GEOGRAPHIC ENVIRONMENTS PAC (BRIDGE PAC)</td><td>$5,000.00</td></tr>
-        <tr><td>AECOM PAC</td><td>$5,000.00</td></tr>
-        <tr><td>AMO VOLUNTARY POLITICAL ACTION FUND</td><td>$5,000.00</td></tr>
-        <tr><td>SHEET METAL WORKER&#x27;S INTERNATIONAL ASSOCIATION POLITICAL ACTION LEAGUE PAL</td><td>$5,000.00</td></tr>
-        <tr><td>NATIONAL ACTIVE AND RETIRED FEDERAL EMPLOYEES ASSOCIATION POLITICAL ACTION COM (NARFE-PAC)</td><td>$5,000.00</td></tr>
-        <tr><td>D.R.I.V.E. - DEMOCRAT, REPUBLICAN, INDEPENDENT VOTER EDUCATION (THE PAC OF THE INTERNATION</td><td>$5,000.00</td></tr>
-        <tr><td>SEAFARERS POLITICAL ACTIVITY DONATION - SEAFARERS INTERNATIONAL UNION OF NA-AGLIW</td><td>$5,000.00</td></tr>
-        <tr><td>PAC TO THE FUTURE</td><td>$5,000.00</td></tr>
-        <tr><td>JOBS, OPPORTUNITIES AND EDUCATION PAC (JOE-PAC)</td><td>$5,000.00</td></tr>
-        <tr><td>GIFFORDS PAC</td><td>$5,000.00</td></tr>
-        <tr><td>DEFENSE, ECONOMIC RENEWAL, EDUCATION AND KNOWLEDGE PAC</td><td>$5,000.00</td></tr>
-        <tr><td>AMERIPAC: THE FUND FOR A GREATER AMERICA</td><td>$5,000.00</td></tr>
-        <tr><td>JACOBS GOOD GOVERNMENT FUND OF JACOBS ENGINEERING GROUP INC.</td><td>$5,000.00</td></tr>
-        <tr><td>EMPLOYEES OF RAYTHEON TECHNOLOGIES CORPORATION PAC</td><td>$5,000.00</td></tr>
-        <tr><td>UNITEDHEALTH GROUP INCORPORATED PAC (UNITED FOR HEALTH)</td><td>$5,000.00</td></tr>
-        <tr><td>ROLLS-ROYCE NORTH AMERICA PAC</td><td>$5,000.00</td></tr>
-        <tr><td>AIR LINE PILOTS ASSOCIATION POLITICAL ACTION COMMITEE</td><td>$5,000.00</td></tr>
-        <tr><td>NEW DEMOCRAT COALITION ACTION FUND</td><td>$5,000.00</td></tr>
-        <tr><td>THE HOME DEPOT INC. BETTER GOVERNMENT COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>CERNER CORPORATION PAC</td><td>$5,000.00</td></tr>
-        <tr><td>AMERICAN MOVING AND STORAGE ASSOCIATION INC POLITICAL ACTION COMMITTEE (AMPAC)</td><td>$5,000.00</td></tr>
-        <tr><td>NAA PAC</td><td>$5,000.00</td></tr>
-        <tr><td>AMERICAN DENTAL POLITICAL ACTION COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>WEYERHAEUSER POLITICAL ACTION COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>VAN SCOYOC ASSOCIATES</td><td>$5,000.00</td></tr>
-        <tr><td>SIEBEL PAC</td><td>$5,000.00</td></tr>
-        <tr><td>NORPAC</td><td>$5,000.00</td></tr>
-        <tr><td>ERNST &amp; YOUNG POLITICAL ACTION COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>BOWEN, DILLON</td><td>$5,000.00</td></tr>
-        <tr><td>IUOE #302 VOLUNTARY POLITICAL FUND</td><td>$5,000.00</td></tr>
-        <tr><td>D.R.I.V.E. - DEMOCRAT, REPUBLICAN, INDEPENDENT VOTER EDUCATION (THE PAC OF THE INTERNATIONAL BROTHERHOOD OF TEAMSTERS)</td><td>$5,000.00</td></tr>
-        <tr><td>SAP AMERICA INC PAC</td><td>$5,000.00</td></tr>
-        <tr><td>NATIONAL ELECTRICAL CONTRACTORS ASSOCIATION POLITICAL ACTION COMMITTEE (NECAPAC)</td><td>$5,000.00</td></tr>
-        <tr><td>BOOZ ALLEN HAMILTON INC. PAC</td><td>$5,000.00</td></tr>
-        <tr><td>AMERICAN COUNCIL OF ENGINEERING COMPANIES (ACEC/PAC)</td><td>$5,000.00</td></tr>
-        <tr><td>MOTOROLA CIVIC ACTION CAMPAIGN FUND</td><td>$5,000.00</td></tr>
-        <tr><td>AMAZON CORPORATE LLC SEPARATE SEGREGATED FUND (AMA</td><td>$5,000.00</td></tr>
-        <tr><td>LABORERS&#x27; INT&#x27;L UNION OF NORTH AMERICA PAC (LABORE</td><td>$5,000.00</td></tr>
-        <tr><td>INTERDIGITAL, INC., PAC</td><td>$5,000.00</td></tr>
-        <tr><td>DELL TECHNOLOGIES, INC. POLITICAL ACTION COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>BERGMAN, MATTHEW P</td><td>$5,000.00</td></tr>
-        <tr><td>MICROSOFT CORPORATION STAKEHOLDERS VOLUNTARY PAC - MSVPAC</td><td>$5,000.00</td></tr>
-        <tr><td>ALASKA AIR GROUP INC. POLITICAL ACTION COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>ZHANG, BEN</td><td>$5,000.00</td></tr>
-        <tr><td>HUTCHESON, STEWART</td><td>$5,000.00</td></tr>
-        <tr><td>SIKH PAC</td><td>$5,000.00</td></tr>
-        <tr><td>SCIENCE APPLICATIONS INTERNATIONAL CORPORATION VOL</td><td>$5,000.00</td></tr>
-        <tr><td>AIR LINE PILOTS ASSOCIATION PAC</td><td>$5,000.00</td></tr>
-        <tr><td>ABBOTT EMPLOYEE PAC (AEPAC)</td><td>$5,000.00</td></tr>
-        <tr><td>BLUE DOG PAC</td><td>$5,000.00</td></tr>
-        <tr><td>EXPRESS SCRIPTS INC PAC</td><td>$5,000.00</td></tr>
-        <tr><td>LEONARDO DRS PAC</td><td>$5,000.00</td></tr>
-        <tr><td>GENERAL ELECTRIC COMPANY AEROSPACE EMPLOYEE POLITICAL ACTION COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>AMENTUM HOLDINGS, INC. PAC (AMENTUM PAC)</td><td>$5,000.00</td></tr>
-        <tr><td>AIRBUS AMERICAS, INC. POLITICAL ACTION COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>WALLACE, ROBERT C.</td><td>$5,000.00</td></tr>
-        <tr><td>TAYLOR, RYAN</td><td>$5,000.00</td></tr>
-        <tr><td>LIMP, DAVID</td><td>$5,000.00</td></tr>
-        <tr><td>FLUOR CORP. PUBLIC AFFAIRS COMM.</td><td>$5,000.00</td></tr>
-        <tr><td>DRIVE - DEMOCRAT REPUBLICAN INDEPENDENT VOTER EDUC</td><td>$5,000.00</td></tr>
-        <tr><td>TEAMSTERS</td><td>$5,000.00</td></tr>
-        <tr><td>GLAXOSMITHKLINE</td><td>$5,000.00</td></tr>
-        <tr><td>SALTCHUK RESOURCES INC PAC</td><td>$5,000.00</td></tr>
-        <tr><td>INTERNATIONAL UNION PAINTERS &amp; ALLIED TRADES</td><td>$5,000.00</td></tr>
-        <tr><td>PROGRESSIVE TURNOUT PROJECT</td><td>$5,000.00</td></tr>
-        <tr><td>CIGNA CORPORATION EMPLOYEE POLITICAL ACTION COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>BLUE ORIGIN LLC POLITICAL ACTION COMMITTEE (BLUE ORIGIN PAC)</td><td>$5,000.00</td></tr>
-        <tr><td>UBS AMERICAS INC. POLITICAL ACTION COMMITTEE (UBS PAC)</td><td>$5,000.00</td></tr>
-        <tr><td>AIRBUS GROUP, INC. PAC</td><td>$5,000.00</td></tr>
-        <tr><td>KRATOS DEFENSE &amp; SECURITY SOLUTIONS, INC. POLITICAL ACTION COMMITTEE (KRATOS PAC)</td><td>$5,000.00</td></tr>
-        <tr><td>BALL CORPORATION POLITICAL ACTION COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>EMPLOYEES OF RTX CORPORATION POLITICAL ACTION COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>COMMUNICATIONS WORKERS OF AMERICA - COPE POLITICAL CONTRIBUTIONS COMMITTEE</td><td>$5,000.00</td></tr>
-        <tr><td>GENERAL DYNAMICS CORPORATION POLITICAL ACTION COMMITTEE (GDC PAC)</td><td>$5,000.00</td></tr>
+        <tr><th scope="row">AMERICAN ISRAEL PUBLIC AFFAIRS COMMITTEE POLITICAL ACTION COMMITTEE</th><td>$140,000.00</td></tr>
+        <tr><th scope="row">LABORERS&#x27; POLITICAL LEAGUE-LABORERS&#x27; INTERNATIONAL</th><td>$45,000.00</td></tr>
+        <tr><th scope="row">BAKER DONELSON BEARMAN CALDWELL &amp; BERKOWITZ PC PAC</th><td>$45,000.00</td></tr>
+        <tr><th scope="row">MACHINISTS NON PARTISAN POL LEAGUE OF THE INT&#x27;L AS</th><td>$40,000.00</td></tr>
+        <tr><th scope="row">SEIU C.O.P.E.</th><td>$40,000.00</td></tr>
+        <tr><th scope="row">T-MOBILE PAC</th><td>$40,000.00</td></tr>
+        <tr><th scope="row">EMPLOYEES OF NORTHROP GRUMMAN CORPORATION PAC</th><td>$40,000.00</td></tr>
+        <tr><th scope="row">SPACE EXPLORATION TECHNOLOGIES CORP. PAC</th><td>$35,000.00</td></tr>
+        <tr><th scope="row">MOTOROLA SOLUTIONS, INC. POLITICAL ACTION COMMITTEE</th><td>$35,000.00</td></tr>
+        <tr><th scope="row">NDC PAC</th><td>$35,000.00</td></tr>
+        <tr><th scope="row">CARPENTERS LEGISLATIVE IMPROVEMENT COMMITTEE UNITED BROTHERHOOD OF CARPENTERS AND JOINERS</th><td>$30,000.00</td></tr>
+        <tr><th scope="row">VIGOR PAC</th><td>$30,000.00</td></tr>
+        <tr><th scope="row">PARSONS CORPORATION POLITICAL ACTION COMMITTEE</th><td>$30,000.00</td></tr>
+        <tr><th scope="row">DELOITTE POLITICAL ACTION COMMITTEE</th><td>$30,000.00</td></tr>
+        <tr><th scope="row">BAE SYSTEMS INC. POLITICAL ACTION COMMITTEE</th><td>$30,000.00</td></tr>
+        <tr><th scope="row">INTERNATIONAL BROTHERHOOD OF ELECTRICAL WORKERS POLITICAL ACTION COMMITTEE</th><td>$25,000.00</td></tr>
+        <tr><th scope="row">HONEYWELL INTERNATIONAL PAC</th><td>$25,000.00</td></tr>
+        <tr><th scope="row">HUNTINGTON INGALLS INDUSTRIES POLITICAL ACTION COMMITTE (SHIPPAC)</th><td>$25,000.00</td></tr>
+        <tr><th scope="row">TEXTRON INC. POLITICAL ACTION COMMITTEE</th><td>$25,000.00</td></tr>
+        <tr><th scope="row">MICROSOFT CORPORATION POLITICAL ACTION COMMITTEE</th><td>$25,000.00</td></tr>
+        <tr><th scope="row">L3HARRIS TECHNOLOGIES, INC. PAC</th><td>$25,000.00</td></tr>
+        <tr><th scope="row">GENERAL ATOMICS POLITICAL ACTION COMMITTEE</th><td>$25,000.00</td></tr>
+        <tr><th scope="row">TRANSDIGM GROUP INC. EMPLOYEE POLITICAL ACTION COMMITTEE</th><td>$20,000.00</td></tr>
+        <tr><th scope="row">NEW DEMOCRAT COALITION PAC</th><td>$20,000.00</td></tr>
+        <tr><th scope="row">UNITED SERVICES AUTOMOBILE ASSOCIATION EMPLOYEE PAC - USAA EMPLOYEE PAC</th><td>$20,000.00</td></tr>
+        <tr><th scope="row">NATIONAL AUTOMOBILE DEALERS ASSOCIATION POLITICAL ACTION COMMITTEE</th><td>$20,000.00</td></tr>
+        <tr><th scope="row">BECHTEL PAC</th><td>$20,000.00</td></tr>
+        <tr><th scope="row">UA UNION PLUMBERS &amp; PIPEFITTERS VOTE! PAC (UNITED ASSOCIATION OF JOURNEYMEN AND APPRENTICE</th><td>$20,000.00</td></tr>
+        <tr><th scope="row">INTERNATIONAL UNION OF PAINTERS AND ALLIED TRADES POLITICAL ACTION TOGETHER POLITICAL COMM</th><td>$20,000.00</td></tr>
+        <tr><th scope="row">USAA EMPLOYEE PAC</th><td>$20,000.00</td></tr>
+        <tr><th scope="row">LOCKHEED MARTIN EMPLOYEES PAC</th><td>$20,000.00</td></tr>
+        <tr><th scope="row">BLUE ORIGIN LLC POLITICAL ACTION COMMITTEE</th><td>$20,000.00</td></tr>
+        <tr><th scope="row">UNITED PARCEL SERVICE INC. PAC</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">OSHKOSH CORPORATION EMPLOYEES PAC</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">PRICEWATERHOUSECOOPERS POLITICAL ACTION COMMITTEE</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">UNITED FOOD AND COMMERCIAL WORKERS INTERNATIONAL UNION ACTIVE BALLOT CLUB</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">UNITED PARCEL SERVICE OF AMERICA INC PAC</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">HUMANA INC PAC</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">NATIONAL BEER WHOLESALER&#x27;S PAC</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">MATSON, INC. FEDERAL ELECTION COMMITTEE</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">MACHINISTS NON PARTISAN POLITICAL LEAGUE OF THE INTERNATIONAL ASSOCIATION OF MACHINISTS &amp; AEROSPACE WORKERS</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">HDR, INC. POLITICAL ACTION COMMITTEE (HDR PAC)</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">IBEW COPE</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">INTERNATIONAL UNION OF OPERATING ENGINEERS</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">BAE SYSTEMS INC. POLITICAL ACTION COMMITTEE (BAE SYSTEMS USA PAC)</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">ENGINEERS POLITICAL EDUCATION COMMITTEE (EPEC)/INTERNATIONAL UNION OF OPERATING ENGINEERS</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">HARRIS CORPORATION POLITICAL ACTION COMMITTEE</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">SHEET METAL WORKER&#x27;S INTERNATIONAL ASSOCIATION POL</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">MACHINISTS NON-PARTISAN POLITICAL LEAGUE</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">SSA MARINE GOOD GOVERNMENT FUND</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">KRATOS DEFENSE &amp; SECURITY SOLUTIONS, INC. POLITICAL ACTION COMMITTEE</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">DELOITTE AND TOUCHE LLP FEDERAL PAC</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">PERATON CORP. POLITICAL ACTION COMMITTEE</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">AMAZON CORPORATE LLC SEPARATE SEGREGATED FUND</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">LEIDOS INC. POLITICAL ACTION COMMITTEE</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">AMENTUM SERVICES, INC. PAC</th><td>$15,000.00</td></tr>
+        <tr><th scope="row">ALLHASSANI, MEHDI</th><td>$14,000.00</td></tr>
+        <tr><th scope="row">PACHULSKI, RICHARD</th><td>$13,600.00</td></tr>
+        <tr><th scope="row">BLUE, J. NEAL</th><td>$13,600.00</td></tr>
+        <tr><th scope="row">BJORNSTAD, JEFF</th><td>$13,600.00</td></tr>
+        <tr><th scope="row">JAIN, AKASH</th><td>$13,600.00</td></tr>
+        <tr><th scope="row">HACKMAN, MICHAEL</th><td>$13,600.00</td></tr>
+        <tr><th scope="row">ALHASSANI, MEHDI</th><td>$13,600.00</td></tr>
+        <tr><th scope="row">KARP, ALEXANDER C.</th><td>$13,600.00</td></tr>
+        <tr><th scope="row">ARIZONA WASHINGTON VICTORY FUND</th><td>$13,249.73</td></tr>
+        <tr><th scope="row">STANTON, JOHN</th><td>$11,600.00</td></tr>
+        <tr><th scope="row">WESTROCK POLITICAL ACTION COMMITTEE</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">CULAC THE PAC OF CREDIT UNION NATIONAL ASSOCIATION</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">ENGINEERS POLITICAL EDUCATION COMMITTEE</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">DEMOCRATIC REPUBLICAN INDEPENDENT VOTER EDUCATION</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">ROLLS-ROYCE NORTH AMERICA HOLDINGS INC. PAC</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">AMAZON.COM SERVICES LLC SEPARATE SEGREGATED FUND</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">OSHKOSH CORPORATION EMPLOYEES PAC (OCEPAC)</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">DELTA AIR LINES POLITICAL ACTION COMMITTEE</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">INTERNATIONAL ASSOCIATION OF FIREFIGHTERS INTERESTED IN REGISTRATION AND EDUCATION PAC</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">NATIONAL ASSOCIATION OF REALTORS POLITICAL ACTION COMMITTEE</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">GENERAL DYNAMICS CORPORATION POLITICAL ACTION COMMITTEE</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">AMERICA&#x27;S CREDIT UNIONS PAC OF CREDIT UNION NATIONAL ASSOCIATION, INC.</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">RAYTHEON PAC</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">REALTORS POLITICAL ACTION COMMITTEE</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">RUSSELL INVESTMENT GROUP FEDERAL PAC</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">SAIC VOLUNTARY PAC</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">LEIDOS INC POLITICAL ACTION COMMITTEE</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">NATIONAL APARTMENT ASSOCIATION POLITICAL ACTION COMMITTEE</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">MCKESSON CORPORATION EMPLOYEE POLITICAL FUND</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">GENERAL ATOMICS PAC</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">L3 TECHNOLOGIES, INC. PAC</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">ORBITAL ATK INC. POLITICAL ACTION COMMITTEE</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">M-PAC</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">THE CIGNA GROUP EMPLOYEE POLITICAL ACTION COMMITTEE</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">HUNTINGTON INGALLS INDUSTRIES, INC. EMPLOYEES PAC</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">KRATOS DEFENSE &amp; SECURITY SOLUTIONS, INC. PAC</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">POLITICAL ACTION COMMITTEE OF THE AMERICAN ASSOCIATION OF ORTHOPAEDIC SURGEONS</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">BOEING COMPANY POLITICAL ACTION COMMITTEE</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">EMPLOYEES OF PALANTIR TECHNOLOGIES INC. PAC</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">SCIENCE APPLICATIONS INTERNATIONAL CORPORATION VOLUNTARY POLITICAL ACTION COMMITTEE</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">HUMANA INC. POLITICAL ACTION COMMITTEE</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">AT&amp;T INC. FEDERAL POLITICAL ACTION COMMITTEE</th><td>$10,000.00</td></tr>
+        <tr><th scope="row">MCINTYRE, DAVID J.</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">ZIEGLER, DANIEL</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">SHIRLEY, JON</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">MAVROOKAS, KOSTADINO</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">MARKOV, TODOR</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">HUNT, WOODY</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">MILLER, SKIP</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">JAGER, EDWIN</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">ROWLEY, GEORGE W</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">QUACKENBUSH, MICHELLE</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">QUACKENBUSH, KARL J</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">LISMAN, MICHAEL</th><td>$7,000.00</td></tr>
+        <tr><th scope="row">HIRSCHTICK, JON</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">SCHWARTZBERG, ANDREW</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">WEBSTER, JAMES H</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">ZALIK, HELEN</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">ZALIK, DAVID</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">SCHIMPF, BRIAN</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">PESKIN, CRAIG</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">PESKIN, BIANCA</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">ZEEV, OREN</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">WEINBERG, DEBRA</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">RODAN, AMNON</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">MARGOLIS, LARRY</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">KRAFT, DANIEL</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">KAPLOW, LOUIS</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">FORCHHEIMER, JODY</th><td>$6,600.00</td></tr>
+        <tr><th scope="row">COMMUNICATIONS WORKERS OF AMERICA-COPE POLITICAL CONTRIBUTIONS COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">GENERAL DYNAMICS VOLUNTARY POLITICAL CONTRIBUTION</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">ANHEUSER-BUSCH PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">AMERICAN FEDERATION OF TEACHERS COMMITTEE ON POLITICAL EDUCATION</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">C3.AI, INC. PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">ALLISON TRANSMISSION INC. POLITICAL ACTION COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">CIGNA CORPORATION POLITICAL ACTION COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">AMERICAN COUNCIL OF ENGINEERING COMPANIES PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">NATIONAL ELECTRICAL CONTRACTORS ASSOCIATION POLITICAL ACTION COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">VERIZON COMMUNICATIONS, INC. POLITICAL ACTION COMMITTEE (VERIZON PAC)</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">TTM TECHNOLOGIES INC. POLITICAL ACTION COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">SEIU COPE (SERVICE EMPLOYEES INTERNATIONAL UNION COMMITTEE ON POLITICAL EDUCATION)</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">NATIONAL MULTIFAMILY HOUSING COUNCIL POLITICAL ACTION COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">JSTREETPAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">WEIL, PETER</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">SCHALL, BRIAN</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">SYNERGY PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">BUILDING RELATIONSHIPS IN DIVERSE GEOGRAPHIC ENVIRONMENTS PAC (BRIDGE PAC)</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">AECOM PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">AMO VOLUNTARY POLITICAL ACTION FUND</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">SHEET METAL WORKER&#x27;S INTERNATIONAL ASSOCIATION POLITICAL ACTION LEAGUE PAL</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">NATIONAL ACTIVE AND RETIRED FEDERAL EMPLOYEES ASSOCIATION POLITICAL ACTION COM (NARFE-PAC)</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">D.R.I.V.E. - DEMOCRAT, REPUBLICAN, INDEPENDENT VOTER EDUCATION (THE PAC OF THE INTERNATION</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">SEAFARERS POLITICAL ACTIVITY DONATION - SEAFARERS INTERNATIONAL UNION OF NA-AGLIW</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">PAC TO THE FUTURE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">JOBS, OPPORTUNITIES AND EDUCATION PAC (JOE-PAC)</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">GIFFORDS PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">DEFENSE, ECONOMIC RENEWAL, EDUCATION AND KNOWLEDGE PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">AMERIPAC: THE FUND FOR A GREATER AMERICA</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">JACOBS GOOD GOVERNMENT FUND OF JACOBS ENGINEERING GROUP INC.</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">EMPLOYEES OF RAYTHEON TECHNOLOGIES CORPORATION PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">UNITEDHEALTH GROUP INCORPORATED PAC (UNITED FOR HEALTH)</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">ROLLS-ROYCE NORTH AMERICA PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">AIR LINE PILOTS ASSOCIATION POLITICAL ACTION COMMITEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">NEW DEMOCRAT COALITION ACTION FUND</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">THE HOME DEPOT INC. BETTER GOVERNMENT COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">CERNER CORPORATION PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">AMERICAN MOVING AND STORAGE ASSOCIATION INC POLITICAL ACTION COMMITTEE (AMPAC)</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">NAA PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">AMERICAN DENTAL POLITICAL ACTION COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">WEYERHAEUSER POLITICAL ACTION COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">VAN SCOYOC ASSOCIATES</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">SIEBEL PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">NORPAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">ERNST &amp; YOUNG POLITICAL ACTION COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">BOWEN, DILLON</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">IUOE #302 VOLUNTARY POLITICAL FUND</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">D.R.I.V.E. - DEMOCRAT, REPUBLICAN, INDEPENDENT VOTER EDUCATION (THE PAC OF THE INTERNATIONAL BROTHERHOOD OF TEAMSTERS)</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">SAP AMERICA INC PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">NATIONAL ELECTRICAL CONTRACTORS ASSOCIATION POLITICAL ACTION COMMITTEE (NECAPAC)</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">BOOZ ALLEN HAMILTON INC. PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">AMERICAN COUNCIL OF ENGINEERING COMPANIES (ACEC/PAC)</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">MOTOROLA CIVIC ACTION CAMPAIGN FUND</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">AMAZON CORPORATE LLC SEPARATE SEGREGATED FUND (AMA</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">LABORERS&#x27; INT&#x27;L UNION OF NORTH AMERICA PAC (LABORE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">INTERDIGITAL, INC., PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">DELL TECHNOLOGIES, INC. POLITICAL ACTION COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">BERGMAN, MATTHEW P</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">MICROSOFT CORPORATION STAKEHOLDERS VOLUNTARY PAC - MSVPAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">ALASKA AIR GROUP INC. POLITICAL ACTION COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">ZHANG, BEN</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">HUTCHESON, STEWART</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">SIKH PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">SCIENCE APPLICATIONS INTERNATIONAL CORPORATION VOL</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">AIR LINE PILOTS ASSOCIATION PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">ABBOTT EMPLOYEE PAC (AEPAC)</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">BLUE DOG PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">EXPRESS SCRIPTS INC PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">LEONARDO DRS PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">GENERAL ELECTRIC COMPANY AEROSPACE EMPLOYEE POLITICAL ACTION COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">AMENTUM HOLDINGS, INC. PAC (AMENTUM PAC)</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">AIRBUS AMERICAS, INC. POLITICAL ACTION COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">WALLACE, ROBERT C.</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">TAYLOR, RYAN</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">LIMP, DAVID</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">FLUOR CORP. PUBLIC AFFAIRS COMM.</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">DRIVE - DEMOCRAT REPUBLICAN INDEPENDENT VOTER EDUC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">TEAMSTERS</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">GLAXOSMITHKLINE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">SALTCHUK RESOURCES INC PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">INTERNATIONAL UNION PAINTERS &amp; ALLIED TRADES</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">PROGRESSIVE TURNOUT PROJECT</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">CIGNA CORPORATION EMPLOYEE POLITICAL ACTION COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">BLUE ORIGIN LLC POLITICAL ACTION COMMITTEE (BLUE ORIGIN PAC)</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">UBS AMERICAS INC. POLITICAL ACTION COMMITTEE (UBS PAC)</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">AIRBUS GROUP, INC. PAC</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">KRATOS DEFENSE &amp; SECURITY SOLUTIONS, INC. POLITICAL ACTION COMMITTEE (KRATOS PAC)</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">BALL CORPORATION POLITICAL ACTION COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">EMPLOYEES OF RTX CORPORATION POLITICAL ACTION COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">COMMUNICATIONS WORKERS OF AMERICA - COPE POLITICAL CONTRIBUTIONS COMMITTEE</th><td>$5,000.00</td></tr>
+        <tr><th scope="row">GENERAL DYNAMICS CORPORATION POLITICAL ACTION COMMITTEE (GDC PAC)</th><td>$5,000.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
     <p style="margin-bottom:12px; font-style:italic; color:var(--gray-dark);">Largest disbursements reported to the FEC for the current cycle, newest cycle only. This is not a complete ledger and does not sum to total spent.</p>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th><th>Date</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th><th scope="col">Date</th></tr></thead>
       <tbody>
-        <tr><td>ADVOX MARKETING</td><td>ADVERTISING - DIGITAL</td><td>$109,389.50</td><td>2026-07-10</td></tr>
-        <tr><td>DEMOCRATIC CONGRESSIONAL CAMPAIGN COMMITTEE</td><td>UNLIMITED TRANSFER</td><td>$100,000.00</td><td>2025-06-04</td></tr>
-        <tr><td>WASHINGTON STATE DEMOCRATIC CENTRAL COMMITTEE</td><td>UNLIMITED TRANSFER</td><td>$75,000.00</td><td>2026-07-13</td></tr>
-        <tr><td>EXPEDITION STRATEGIES</td><td>POLLING</td><td>$53,790.13</td><td>2026-07-06</td></tr>
-        <tr><td>LC MEDIA LLC</td><td>ADVERTISING - TV</td><td>$53,350.00</td><td>2026-07-09</td></tr>
-        <tr><td>LC MEDIA LLC</td><td>TV ADS</td><td>$53,350.00</td><td>2026-06-22</td></tr>
-        <tr><td>WASHINGTON STATE DEMOCRATIC CENTRAL COMMITTEE</td><td>UNLIMITED TRANSFER</td><td>$50,000.00</td><td>2026-04-03</td></tr>
-        <tr><td>DEMOCRATIC CONGRESSIONAL CAMPAIGN COMMITTEE</td><td>UNLIMITED TRANSFER</td><td>$50,000.00</td><td>2026-04-16</td></tr>
-        <tr><td>DEMOCRATIC CONGRESSIONAL CAMPAIGN COMMITTEE</td><td>UNLIMITED TRANSFER</td><td>$50,000.00</td><td>2026-03-05</td></tr>
-        <tr><td>DEMOCRATIC CONGRESSIONAL CAMPAIGN COMMITTEE</td><td>UNLIMITED TRANSFER</td><td>$44,300.00</td><td>2025-08-06</td></tr>
+        <tr><th scope="row">ADVOX MARKETING</th><td>ADVERTISING - DIGITAL</td><td>$109,389.50</td><td>2026-07-10</td></tr>
+        <tr><th scope="row">DEMOCRATIC CONGRESSIONAL CAMPAIGN COMMITTEE</th><td>UNLIMITED TRANSFER</td><td>$100,000.00</td><td>2025-06-04</td></tr>
+        <tr><th scope="row">WASHINGTON STATE DEMOCRATIC CENTRAL COMMITTEE</th><td>UNLIMITED TRANSFER</td><td>$75,000.00</td><td>2026-07-13</td></tr>
+        <tr><th scope="row">EXPEDITION STRATEGIES</th><td>POLLING</td><td>$53,790.13</td><td>2026-07-06</td></tr>
+        <tr><th scope="row">LC MEDIA LLC</th><td>ADVERTISING - TV</td><td>$53,350.00</td><td>2026-07-09</td></tr>
+        <tr><th scope="row">LC MEDIA LLC</th><td>TV ADS</td><td>$53,350.00</td><td>2026-06-22</td></tr>
+        <tr><th scope="row">WASHINGTON STATE DEMOCRATIC CENTRAL COMMITTEE</th><td>UNLIMITED TRANSFER</td><td>$50,000.00</td><td>2026-04-03</td></tr>
+        <tr><th scope="row">DEMOCRATIC CONGRESSIONAL CAMPAIGN COMMITTEE</th><td>UNLIMITED TRANSFER</td><td>$50,000.00</td><td>2026-04-16</td></tr>
+        <tr><th scope="row">DEMOCRATIC CONGRESSIONAL CAMPAIGN COMMITTEE</th><td>UNLIMITED TRANSFER</td><td>$50,000.00</td><td>2026-03-05</td></tr>
+        <tr><th scope="row">DEMOCRATIC CONGRESSIONAL CAMPAIGN COMMITTEE</th><td>UNLIMITED TRANSFER</td><td>$44,300.00</td><td>2025-08-06</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -379,7 +382,7 @@
     <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">1 sourced findings. All sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model. No T4 claims included.</p>
 
     <div class="finding moderate">
-      <h4>Finding 6.1: Defense Industry Dominates Campaign and Leadership PAC Fundraising <span class="impact-badge impact-moderate">MODERATE</span></h4>
+      <h3>Finding 6.1: Defense Industry Dominates Campaign and Leadership PAC Fundraising <span class="impact-badge impact-moderate">MODERATE</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>The Seattle Times reported that Rep. Smith&#x27;s campaign leans heavily on political action committee money, with more than a quarter of his PAC receipts coming from defense-related interests, Boeing chief among them. His leadership PAC, the American Defense and Military (ADAM) PAC, drew nearly all of its funds from defense contractors and their lobbyists. The paper framed this as a shift away from the labor support that drove his earlier wins in a blue-collar district. Smith is the Ranking Member of the House Armed Services Committee, the panel with direct jurisdiction over Pentagon procurement and the annual defense authorization bill that funds those same contractors.</dd>
@@ -409,16 +412,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

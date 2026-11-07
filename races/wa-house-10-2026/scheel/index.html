@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -27,6 +28,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Alex Scheel</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -55,16 +58,16 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Alex Scheel</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Date of Birth</td><td>Born 1987 in San Diego, California (age 38 in 2026). Raised in northern Michigan.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Residence</td><td>East Fairbanks Street, Tacoma, Pierce County, Washington (98404)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Military Service</td><td>U.S. Army combat veteran. Enlisted 2007. Served as an interrogator in Iraq (2007-2011) and did intelligence work in Afghanistan (2012). Left the military in 2014. Member of About Face, Veterans Against the War.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Education</td><td>Attended The Evergreen State College after relocating to Washington.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>Community organizer in Tacoma for nearly a decade, focused on anti-war and housing justice work. Held Democratic Socialists of America local branch roles, housing justice chair, secretary-treasurer, membership coordinator, and campaign coordinator.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Alex Scheel</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Date of Birth</th><td>Born 1987 in San Diego, California (age 38 in 2026). Raised in northern Michigan.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Residence</th><td>East Fairbanks Street, Tacoma, Pierce County, Washington (98404)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Military Service</th><td>U.S. Army combat veteran. Enlisted 2007. Served as an interrogator in Iraq (2007-2011) and did intelligence work in Afghanistan (2012). Left the military in 2014. Member of About Face, Veterans Against the War.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Education</th><td>Attended The Evergreen State College after relocating to Washington.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Community organizer in Tacoma for nearly a decade, focused on anti-war and housing justice work. Held Democratic Socialists of America local branch roles, housing justice chair, secretary-treasurer, membership coordinator, and campaign coordinator.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -88,22 +91,22 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>U.S. House, WA Congressional District 10 (Primary, Aug 4)</td><td>Running as a Democrat. Filed May 7, 2026. Challenging incumbent Rep. Marilyn Strickland (D) in the top-two primary. Other filed candidates include Adam Arafat (D), Kurtis Engle (Union), Derek Maynes (No Party Preference), and Chris D. Chung (R).</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>U.S. House, WA Congressional District 10 (Primary, Aug 4)</td><td>Running as a Democrat. Filed May 7, 2026. Challenging incumbent Rep. Marilyn Strickland (D) in the top-two primary. Other filed candidates include Adam Arafat (D), Kurtis Engle (Union), Derek Maynes (No Party Preference), and Chris D. Chung (R).</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Healthcare</td><td>Supports Medicare for All, a single-payer national health program.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Housing</td><td>Supports Housing for All. Campaigns on housing justice and opposing displacement, citing his work on the Tiki Apartments tenants fight in Tacoma.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Foreign Policy / Military Aid</td><td>Anti-war candidate. Opposes U.S. military aid to Israel and characterizes the conduct of that war as genocide. Frames his campaign around ending funding for overseas military action.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Healthcare</th><td>Supports Medicare for All, a single-payer national health program.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Housing</th><td>Supports Housing for All. Campaigns on housing justice and opposing displacement, citing his work on the Tiki Apartments tenants fight in Tacoma.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Foreign Policy / Military Aid</th><td>Anti-war candidate. Opposes U.S. military aid to Israel and characterizes the conduct of that war as genocide. Frames his campaign around ending funding for overseas military action.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -141,16 +144,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

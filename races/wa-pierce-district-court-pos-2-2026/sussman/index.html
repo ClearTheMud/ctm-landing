@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Claire Sussman</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -46,14 +49,14 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Claire Rebecca Sussman</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Pierce County, Washington.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan (Washington judicial races are nonpartisan)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>Bachelor of Arts in business administration, University of Washington, 1989.; Juris Doctor, University of Puget Sound School of Law, 1992.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>Judge, Pierce County District Court, Position 2. Elected in 2010 and retained in subsequent elections.; Deputy prosecuting attorney, Pierce County, about six years.; Private practice attorney, Birnbaum Law Offices, about five years.; Pro tem judge in Pierce County District Court and Puyallup Municipal Court prior to election.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Claire Rebecca Sussman</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Pierce County, Washington.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan (Washington judicial races are nonpartisan)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>Bachelor of Arts in business administration, University of Washington, 1989.; Juris Doctor, University of Puget Sound School of Law, 1992.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Judge, Pierce County District Court, Position 2. Elected in 2010 and retained in subsequent elections.; Deputy prosecuting attorney, Pierce County, about six years.; Private practice attorney, Birnbaum Law Offices, about five years.; Pro tem judge in Pierce County District Court and Puyallup Municipal Court prior to election.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -68,15 +71,15 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Pierce County District Court Judge, Position 2</td><td>Filed, uncontested (sole candidate)</td><td>Research</td></tr>
-        <tr><td>2022</td><td>District Court District Court NO. 2 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>District Court District Court NO. 2 (General)</td><td>Won (unopposed)</td><td>WA SOS</td></tr>
-        <tr><td>2010</td><td>Pierce County District Court Judge, Position 2</td><td>Won</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>Pierce County District Court Judge, Position 2</td><td>Filed, uncontested (sole candidate)</td><td>Research</td></tr>
+        <tr><th scope="row">2022</th><td>District Court District Court NO. 2 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>District Court District Court NO. 2 (General)</td><td>Won (unopposed)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2010</th><td>Pierce County District Court Judge, Position 2</td><td>Won</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
@@ -97,16 +100,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Ryan Spurling</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,15 +60,15 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Ryan Spurling</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Long-time Mason County resident, active in the community through coaching, teaching martial arts, community groups, and church.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Military Service</td><td>US Marine Corps 1984 to 1988, and US Army Reserves 1988 to 2005, including active duty during Operation Iraqi Freedom.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>Bachelor of Science in Business Management/Criminal Justice, Liberty University.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Sheriff of Mason County, the Forty-First elected sheriff in the office&#x27;s history (the office dates to 1854). Directly responsible to the citizens of Mason County.; Joined the Mason County Sheriff&#x27;s Office in 2013 as Chief Criminal Deputy of the North Precinct, following a 25-year career with the Washington State Patrol. As Chief Criminal Deputy of Patrol he commanded the Police Operations Division for the North and South Precincts (patrol, Special Operations Group, SWAT, School Resource Officers, K9, Traffic, Marine Operations, Search and Rescue) and was third in command of the office.; In October 2018, while Chief Criminal Deputy, served as the Sheriff&#x27;s Office spokesperson responding to a candidate&#x27;s questions about a deputy&#x27;s domestic violence allegations, stating the office never received a complaint from the woman involved.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Ryan Spurling</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Long-time Mason County resident, active in the community through coaching, teaching martial arts, community groups, and church.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Military Service</th><td>US Marine Corps 1984 to 1988, and US Army Reserves 1988 to 2005, including active duty during Operation Iraqi Freedom.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>Bachelor of Science in Business Management/Criminal Justice, Liberty University.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Sheriff of Mason County, the Forty-First elected sheriff in the office&#x27;s history (the office dates to 1854). Directly responsible to the citizens of Mason County.; Joined the Mason County Sheriff&#x27;s Office in 2013 as Chief Criminal Deputy of the North Precinct, following a 25-year career with the Washington State Patrol. As Chief Criminal Deputy of Patrol he commanded the Police Operations Division for the North and South Precincts (patrol, Special Operations Group, SWAT, School Resource Officers, K9, Traffic, Marine Operations, Search and Rescue) and was third in command of the office.; In October 2018, while Chief Criminal Deputy, served as the Sheriff&#x27;s Office spokesperson responding to a candidate&#x27;s questions about a deputy&#x27;s domestic violence allegations, stating the office never received a complaint from the woman involved.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -80,42 +83,42 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2022</td><td>Sheriff (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Mason Sheriff (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Sheriff (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Mason Sheriff (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$1,692.32 (2 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$1,847.32 (2 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$1,692.32 (2 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$1,847.32 (2 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Ryan Spurling</td><td>$1,642.32</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$50.00</td></tr>
+        <tr><th scope="row">Ryan Spurling</th><td>$1,642.32</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$50.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Ryan Spurling</td><td>Filing fees</td><td>$1,642.32</td></tr>
-        <tr><td>Mason County Chamber of Commerce</td><td>chamber dues</td><td>$205.00</td></tr>
+        <tr><th scope="row">Ryan Spurling</th><td>Filing fees</td><td>$1,642.32</td></tr>
+        <tr><th scope="row">Mason County Chamber of Commerce</th><td>chamber dues</td><td>$205.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -130,16 +133,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

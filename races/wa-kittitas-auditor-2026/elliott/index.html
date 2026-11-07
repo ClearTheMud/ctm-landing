@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Bryan Elliott</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -64,57 +67,57 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$9,155.98 (28 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$6,962.95 (22 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$9,155.98 (28 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$6,962.95 (22 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>ROOHANI POOYA, Ellensburg</td><td>$900.00</td></tr>
-        <tr><td>HATLESTAD ANDREW, Ellensburg</td><td>$600.00</td></tr>
-        <tr><td>WHITAKER JANE, Ellensburg</td><td>$600.00</td></tr>
-        <tr><td>Bryan Elliott, Ellensburg</td><td>$500.00</td></tr>
-        <tr><td>Bryan Elliott</td><td>$500.00</td></tr>
-        <tr><td>HALSTED JACKIE, ELLENSBURG</td><td>$500.00</td></tr>
-        <tr><td>Leichleiter Ann, Kittitas</td><td>$500.00</td></tr>
-        <tr><td>Leichleiter Jeff, Kittitas</td><td>$500.00</td></tr>
-        <tr><td>McKinney Amanda, Yakima</td><td>$500.00</td></tr>
-        <tr><td>Puri Pankaj, Ellensburg</td><td>$500.00</td></tr>
+        <tr><th scope="row">ROOHANI POOYA, Ellensburg</th><td>$900.00</td></tr>
+        <tr><th scope="row">HATLESTAD ANDREW, Ellensburg</th><td>$600.00</td></tr>
+        <tr><th scope="row">WHITAKER JANE, Ellensburg</th><td>$600.00</td></tr>
+        <tr><th scope="row">Bryan Elliott, Ellensburg</th><td>$500.00</td></tr>
+        <tr><th scope="row">Bryan Elliott</th><td>$500.00</td></tr>
+        <tr><th scope="row">HALSTED JACKIE, ELLENSBURG</th><td>$500.00</td></tr>
+        <tr><th scope="row">Leichleiter Ann, Kittitas</th><td>$500.00</td></tr>
+        <tr><th scope="row">Leichleiter Jeff, Kittitas</th><td>$500.00</td></tr>
+        <tr><th scope="row">McKinney Amanda, Yakima</th><td>$500.00</td></tr>
+        <tr><th scope="row">Puri Pankaj, Ellensburg</th><td>$500.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Bryan Elliott</td><td>Loan payment</td><td>$2,000.00</td></tr>
-        <tr><td>KITTITAS COUNTY REPUBLICAN PARTY</td><td>Event sponsor</td><td>$1,265.48</td></tr>
-        <tr><td>Washington Secretary of State</td><td>Filing fees</td><td>$1,184.71</td></tr>
-        <tr><td>ROOHANI POOYA</td><td>W.C. RoadHouse Grill (Ellensburg, WA): Event food (est)</td><td>$900.00</td></tr>
-        <tr><td>Bryan Elliott</td><td>Roanoke Conference (1752 NW Market St #4537, Seattle, WA 98107): Conference sponsor</td><td>$500.00</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$436.22</td></tr>
-        <tr><td>ELECT NORTHWEST</td><td>Treasury services</td><td>$400.00</td></tr>
-        <tr><td>Amazon.com</td><td>Event supplies</td><td>$323.42</td></tr>
-        <tr><td>ELECT NORTHWEST</td><td>Treasury services</td><td>$300.00</td></tr>
-        <tr><td>ROOHANI POOYA</td><td>Event space</td><td>$300.00</td></tr>
+        <tr><th scope="row">Bryan Elliott</th><td>Loan payment</td><td>$2,000.00</td></tr>
+        <tr><th scope="row">KITTITAS COUNTY REPUBLICAN PARTY</th><td>Event sponsor</td><td>$1,265.48</td></tr>
+        <tr><th scope="row">Washington Secretary of State</th><td>Filing fees</td><td>$1,184.71</td></tr>
+        <tr><th scope="row">ROOHANI POOYA</th><td>W.C. RoadHouse Grill (Ellensburg, WA): Event food (est)</td><td>$900.00</td></tr>
+        <tr><th scope="row">Bryan Elliott</th><td>Roanoke Conference (1752 NW Market St #4537, Seattle, WA 98107): Conference sponsor</td><td>$500.00</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$436.22</td></tr>
+        <tr><th scope="row">ELECT NORTHWEST</th><td>Treasury services</td><td>$400.00</td></tr>
+        <tr><th scope="row">Amazon.com</th><td>Event supplies</td><td>$323.42</td></tr>
+        <tr><th scope="row">ELECT NORTHWEST</th><td>Treasury services</td><td>$300.00</td></tr>
+        <tr><th scope="row">ROOHANI POOYA</th><td>Event space</td><td>$300.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
       <h2><span class="section-num">3</span> Election History</h2>
-      <table>
-        <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+      <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+        <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
         <tbody>
-        <tr><td>2022</td><td>Auditor (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Kittitas Auditor (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Auditor (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Kittitas Auditor (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
         </tbody>
-      </table>
+      </table></div>
       <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
     </div>
     <div class="section">
@@ -128,14 +131,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

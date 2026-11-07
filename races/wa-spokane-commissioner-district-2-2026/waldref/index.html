@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Amber Waldref</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -64,57 +67,57 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$22,778.41 (104 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$12,153.49 (30 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$22,778.41 (104 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$12,153.49 (30 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Amber Waldref</td><td>$1,558.70</td></tr>
-        <tr><td>Amber Waldref</td><td>$1,232.98</td></tr>
-        <tr><td>UA Local #44 Segregated Fund, Spokane</td><td>$1,200.00</td></tr>
-        <tr><td>OSTERSMITH MARK, Chattaroy</td><td>$750.00</td></tr>
-        <tr><td>BROWN LISA, Spokane</td><td>$515.00</td></tr>
-        <tr><td>DOUGLAS BARBARA, Spokane</td><td>$515.00</td></tr>
-        <tr><td>MALLAHAN JONATHAN, Liberty Lake</td><td>$515.00</td></tr>
-        <tr><td>THORPE SIMA, Spokane</td><td>$515.00</td></tr>
-        <tr><td>WALDREF RITA, Spokane</td><td>$515.00</td></tr>
-        <tr><td>Waldref Vanessa, Spokane</td><td>$515.00</td></tr>
+        <tr><th scope="row">Amber Waldref</th><td>$1,558.70</td></tr>
+        <tr><th scope="row">Amber Waldref</th><td>$1,232.98</td></tr>
+        <tr><th scope="row">UA Local #44 Segregated Fund, Spokane</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">OSTERSMITH MARK, Chattaroy</th><td>$750.00</td></tr>
+        <tr><th scope="row">BROWN LISA, Spokane</th><td>$515.00</td></tr>
+        <tr><th scope="row">DOUGLAS BARBARA, Spokane</th><td>$515.00</td></tr>
+        <tr><th scope="row">MALLAHAN JONATHAN, Liberty Lake</th><td>$515.00</td></tr>
+        <tr><th scope="row">THORPE SIMA, Spokane</th><td>$515.00</td></tr>
+        <tr><th scope="row">WALDREF RITA, Spokane</th><td>$515.00</td></tr>
+        <tr><th scope="row">Waldref Vanessa, Spokane</th><td>$515.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Amber Waldref</td><td>44 32X48 2 sided Yard Signs - Carry Forward from 2022 Campaign</td><td>$1,558.70</td></tr>
-        <tr><td>WA Secretary of State</td><td>Candidate filing fee</td><td>$1,367.92</td></tr>
-        <tr><td>Amber Waldref</td><td>230 18X24 Yard Signs and 250 Frames - Carry Forward from 2022 Campaign</td><td>$1,232.98</td></tr>
-        <tr><td>SONNENBERG&#x27;S</td><td>Catering order for kickoff event</td><td>$690.82</td></tr>
-        <tr><td>WATKINS KANDACE</td><td>Fundraising consulting services</td><td>$600.00</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$468.51</td></tr>
-        <tr><td>Bracken Consulting LLC</td><td>Compliance reporting</td><td>$450.00</td></tr>
-        <tr><td>Bracken Consulting LLC</td><td>Compliance Reporting</td><td>$450.00</td></tr>
-        <tr><td>Bracken Consulting LLC</td><td>June Reporting</td><td>$450.00</td></tr>
-        <tr><td>Bracken Consulting LLC</td><td>July compliance reporting</td><td>$450.00</td></tr>
+        <tr><th scope="row">Amber Waldref</th><td>44 32X48 2 sided Yard Signs - Carry Forward from 2022 Campaign</td><td>$1,558.70</td></tr>
+        <tr><th scope="row">WA Secretary of State</th><td>Candidate filing fee</td><td>$1,367.92</td></tr>
+        <tr><th scope="row">Amber Waldref</th><td>230 18X24 Yard Signs and 250 Frames - Carry Forward from 2022 Campaign</td><td>$1,232.98</td></tr>
+        <tr><th scope="row">SONNENBERG&#x27;S</th><td>Catering order for kickoff event</td><td>$690.82</td></tr>
+        <tr><th scope="row">WATKINS KANDACE</th><td>Fundraising consulting services</td><td>$600.00</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$468.51</td></tr>
+        <tr><th scope="row">Bracken Consulting LLC</th><td>Compliance reporting</td><td>$450.00</td></tr>
+        <tr><th scope="row">Bracken Consulting LLC</th><td>Compliance Reporting</td><td>$450.00</td></tr>
+        <tr><th scope="row">Bracken Consulting LLC</th><td>June Reporting</td><td>$450.00</td></tr>
+        <tr><th scope="row">Bracken Consulting LLC</th><td>July compliance reporting</td><td>$450.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
       <h2><span class="section-num">3</span> Election History</h2>
-      <table>
-        <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+      <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+        <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
         <tbody>
-        <tr><td>2022</td><td>County Commissioner District NO. 2 Commissioner District 2 (Primary)</td><td>Won (1 of 5)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>County Commissioner District NO. 2 Commissioner District 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>County Commissioner District NO. 2 Commissioner District 2 (Primary)</td><td>Won (1 of 5)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>County Commissioner District NO. 2 Commissioner District 2 (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
         </tbody>
-      </table>
+      </table></div>
       <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
     </div>
     <div class="section">
@@ -128,14 +131,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

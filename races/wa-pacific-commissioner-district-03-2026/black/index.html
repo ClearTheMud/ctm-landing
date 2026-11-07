@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Ron Black</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,14 +60,14 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Ron Black</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Raymond, Pacific County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Independent (states no obligation to the Democrat or Republican Party)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Military Service</td><td>Served in the U.S. Marine Corps and the Washington Army National Guard.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Employment</td><td>South Bend Police Department (law enforcement background).; Superintendent of corrections, Pacific County Sheriff&#x27;s Office. Worked for Pacific County for 11 years and supervised the operation of both the Pacific County Jail and the Sheriff&#x27;s Dispatch 911 Center at the same time.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Ron Black</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Raymond, Pacific County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Independent (states no obligation to the Democrat or Republican Party)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Military Service</th><td>Served in the U.S. Marine Corps and the Washington Army National Guard.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Employment</th><td>South Bend Police Department (law enforcement background).; Superintendent of corrections, Pacific County Sheriff&#x27;s Office. Worked for Pacific County for 11 years and supervised the operation of both the Pacific County Jail and the Sheriff&#x27;s Dispatch 911 Center at the same time.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -79,14 +82,14 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>County Governance and Litigation</td><td>Says county government has been entangled in tort claims, litigation, and employee grievances, which he considers unacceptable, and that a change is needed now.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Unfunded State Mandates</td><td>Identifies unfunded state mandates as a critical issue, saying the Legislature passes laws requiring counties to provide or expand services without funding them. Would lobby the state to fund mandates rather than shift the cost to counties.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Budget and Timber Revenue</td><td>Says commissioners must balance declining timber revenue against essential services and make difficult budget decisions.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Housing</td><td>Supports updating zoning to encourage duplexes, triplexes, and multi-family construction, and improving the building permit process.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Economic Development</td><td>Wants to attract commercial and small businesses and pursue state and federal projects.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">County Governance and Litigation</th><td>Says county government has been entangled in tort claims, litigation, and employee grievances, which he considers unacceptable, and that a change is needed now.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Unfunded State Mandates</th><td>Identifies unfunded state mandates as a critical issue, saying the Legislature passes laws requiring counties to provide or expand services without funding them. Would lobby the state to fund mandates rather than shift the cost to counties.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Budget and Timber Revenue</th><td>Says commissioners must balance declining timber revenue against essential services and make difficult budget decisions.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Housing</th><td>Supports updating zoning to encourage duplexes, triplexes, and multi-family construction, and improving the building permit process.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Economic Development</th><td>Wants to attract commercial and small businesses and pursue state and federal projects.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -117,16 +120,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Jamie Keenan-deVargas</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -57,12 +60,12 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Jamie Keenan-deVargas</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Olympia, Thurston County, Washington (Legislative District 22). Renter.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Jamie Keenan-deVargas</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Olympia, Thurston County, Washington (Legislative District 22). Renter.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Democratic</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -77,67 +80,67 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$5,312.22 (32 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$3,157.69 (16 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$5,312.22 (32 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$3,157.69 (16 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Jamie Keenan-deVargas</td><td>$686.00</td></tr>
-        <tr><td>Jamie Keenan-deVargas</td><td>$676.88</td></tr>
-        <tr><td>DeVargas Amy S, Olympia</td><td>$500.00</td></tr>
-        <tr><td>San Nicolas Rayah, Olympia</td><td>$500.00</td></tr>
-        <tr><td>Jamie Keenan-deVargas</td><td>$359.33</td></tr>
-        <tr><td>Jamie Keenan-deVargas</td><td>$353.06</td></tr>
-        <tr><td>Elliott Alicia, Olympia</td><td>$200.00</td></tr>
-        <tr><td>Michael Wilson Gavyn J, Lacey</td><td>$200.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$200.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$200.00</td></tr>
+        <tr><th scope="row">Jamie Keenan-deVargas</th><td>$686.00</td></tr>
+        <tr><th scope="row">Jamie Keenan-deVargas</th><td>$676.88</td></tr>
+        <tr><th scope="row">DeVargas Amy S, Olympia</th><td>$500.00</td></tr>
+        <tr><th scope="row">San Nicolas Rayah, Olympia</th><td>$500.00</td></tr>
+        <tr><th scope="row">Jamie Keenan-deVargas</th><td>$359.33</td></tr>
+        <tr><th scope="row">Jamie Keenan-deVargas</th><td>$353.06</td></tr>
+        <tr><th scope="row">Elliott Alicia, Olympia</th><td>$200.00</td></tr>
+        <tr><th scope="row">Michael Wilson Gavyn J, Lacey</th><td>$200.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$200.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Jamie Keenan-deVargas</td><td>100 Yard Signs purchased from Good Guys Signs:
+        <tr><th scope="row">Jamie Keenan-deVargas</th><td>100 Yard Signs purchased from Good Guys Signs:
 Good Guys Signs
 5002 N Howard Ave
 Tampa, FL 33603, US</td><td>$686.00</td></tr>
-        <tr><td>Jamie Keenan-deVargas</td><td>Filing fee for candidacy:
+        <tr><th scope="row">Jamie Keenan-deVargas</th><td>Filing fee for candidacy:
 Washington Secretary of State
 416 Sid Snyder Ave SW
 Olympia, WA 98504, US</td><td>$676.88</td></tr>
-        <tr><td>Jamie Keenan-deVargas</td><td>Filming equipment (1 DJI Mic 3 1TX+1RX, 1 Hohem iSteady M6):
+        <tr><th scope="row">Jamie Keenan-deVargas</th><td>Filming equipment (1 DJI Mic 3 1TX+1RX, 1 Hohem iSteady M6):
 Amazon.com, Inc.
 410 Terry Avenue North
 Seattle, WA 98109, US</td><td>$359.33</td></tr>
-        <tr><td>Jamie Keenan-deVargas</td><td>Solidarity Tech CRM Enterprise-tier subscription: 
+        <tr><th scope="row">Jamie Keenan-deVargas</th><td>Solidarity Tech CRM Enterprise-tier subscription: 
 Solidarity Tech 
 440 N Barranca Ave Suite 
 5346 Covina, CA 91723, US</td><td>$353.06</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$184.60</td></tr>
-        <tr><td>Jamie Keenan-deVargas</td><td>9-month campaign mailbox rental:
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$184.60</td></tr>
+        <tr><th scope="row">Jamie Keenan-deVargas</th><td>9-month campaign mailbox rental:
 Mailbox of Olympia
 120 State Ave NE
 Olympia, WA 98501, US</td><td>$136.00</td></tr>
-        <tr><td>Jamie Keenan-deVargas</td><td>Proton Unlimited suite plan (1-year subscription, single user):
+        <tr><th scope="row">Jamie Keenan-deVargas</th><td>Proton Unlimited suite plan (1-year subscription, single user):
 Proton AG
 Route de la Galaise 32
 1228 Plan-les-Ouates, Geneva, Switzerland.</td><td>$119.88</td></tr>
-        <tr><td>Jamie Keenan-deVargas</td><td>Solidarity Tech CRM (upgrade to &quot;Professional&quot;-tier subscription, 1 month):
+        <tr><th scope="row">Jamie Keenan-deVargas</th><td>Solidarity Tech CRM (upgrade to &quot;Professional&quot;-tier subscription, 1 month):
 Solidarity Tech
 440 N Barranca Ave Suite 5346
 Covina, CA 91723, US</td><td>$104.00</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$103.60</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$97.27</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$103.60</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$97.27</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -165,16 +168,20 @@ Covina, CA 91723, US</td><td>$104.00</td></tr>
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

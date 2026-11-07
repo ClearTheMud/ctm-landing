@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Jeremy Harrison-Smith</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-dem">
   <div class="page">
@@ -64,56 +67,56 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$47,124.13 (181 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$35,357.32 (35 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$47,124.13 (181 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$35,357.32 (35 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Skagit County Democrats, Mount Vernon</td><td>$7,500.00</td></tr>
-        <tr><td>Skagit County Democrats, Mount Vernon</td><td>$2,250.00</td></tr>
-        <tr><td>Salinas General Contractor LLC, Eastsound</td><td>$1,800.00</td></tr>
-        <tr><td>WA State Democratic Central Committee, Seattle</td><td>$1,750.00</td></tr>
-        <tr><td>Cheryl Harrison, Clearlake</td><td>$1,200.00</td></tr>
-        <tr><td>John Smith, Clearlake</td><td>$1,200.00</td></tr>
-        <tr><td>Salinas General Contractor LLC, Eastsound</td><td>$1,200.00</td></tr>
-        <tr><td>Cheryl P. Harrison, Clearlake</td><td>$1,149.69</td></tr>
-        <tr><td>John M. Smith, Clearlake</td><td>$1,110.53</td></tr>
-        <tr><td>Retired Public Employees Council of WA / RPEC PAC, Olympia</td><td>$750.00</td></tr>
+        <tr><th scope="row">Skagit County Democrats, Mount Vernon</th><td>$7,500.00</td></tr>
+        <tr><th scope="row">Skagit County Democrats, Mount Vernon</th><td>$2,250.00</td></tr>
+        <tr><th scope="row">Salinas General Contractor LLC, Eastsound</th><td>$1,800.00</td></tr>
+        <tr><th scope="row">WA State Democratic Central Committee, Seattle</th><td>$1,750.00</td></tr>
+        <tr><th scope="row">Cheryl Harrison, Clearlake</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">John Smith, Clearlake</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Salinas General Contractor LLC, Eastsound</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Cheryl P. Harrison, Clearlake</th><td>$1,149.69</td></tr>
+        <tr><th scope="row">John M. Smith, Clearlake</th><td>$1,110.53</td></tr>
+        <tr><th scope="row">Retired Public Employees Council of WA / RPEC PAC, Olympia</th><td>$750.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>CN4 Partners</td><td>USPS: postage for 20267 mailers</td><td>$7,724.06</td></tr>
-        <tr><td>CN4 Partners</td><td>CN4 Partners: targeting and production services of 20267 mailers</td><td>$4,284.87</td></tr>
-        <tr><td>CN4 Partners</td><td>Cornerstone: prtining and mailing services for 20267 mailers</td><td>$3,533.64</td></tr>
-        <tr><td>CN4 Partners</td><td>Run!: website software/hosting fee</td><td>$2,500.00</td></tr>
-        <tr><td>CN4 Partners</td><td>Trade Printery: 10 large signs</td><td>$1,829.85</td></tr>
-        <tr><td>WA State Democratic Central Committee</td><td>inkind voter file access (subvendor: NGPVan Inc)</td><td>$1,750.00</td></tr>
-        <tr><td>CN4 Partners</td><td>Trade Printery: 200 signs</td><td>$1,606.69</td></tr>
-        <tr><td>WA Secretary of State</td><td>filing fees</td><td>$1,543.49</td></tr>
-        <tr><td>CN4 Partners</td><td>Trade Printery: printing 5000 walk pieces</td><td>$1,122.98</td></tr>
-        <tr><td>CN4 Partners</td><td>Trade Printery: printing 1000 walk pieces</td><td>$1,075.21</td></tr>
+        <tr><th scope="row">CN4 Partners</th><td>USPS: postage for 20267 mailers</td><td>$7,724.06</td></tr>
+        <tr><th scope="row">CN4 Partners</th><td>CN4 Partners: targeting and production services of 20267 mailers</td><td>$4,284.87</td></tr>
+        <tr><th scope="row">CN4 Partners</th><td>Cornerstone: prtining and mailing services for 20267 mailers</td><td>$3,533.64</td></tr>
+        <tr><th scope="row">CN4 Partners</th><td>Run!: website software/hosting fee</td><td>$2,500.00</td></tr>
+        <tr><th scope="row">CN4 Partners</th><td>Trade Printery: 10 large signs</td><td>$1,829.85</td></tr>
+        <tr><th scope="row">WA State Democratic Central Committee</th><td>inkind voter file access (subvendor: NGPVan Inc)</td><td>$1,750.00</td></tr>
+        <tr><th scope="row">CN4 Partners</th><td>Trade Printery: 200 signs</td><td>$1,606.69</td></tr>
+        <tr><th scope="row">WA Secretary of State</th><td>filing fees</td><td>$1,543.49</td></tr>
+        <tr><th scope="row">CN4 Partners</th><td>Trade Printery: printing 5000 walk pieces</td><td>$1,122.98</td></tr>
+        <tr><th scope="row">CN4 Partners</th><td>Trade Printery: printing 1000 walk pieces</td><td>$1,075.21</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
       <h2><span class="section-num">3</span> Election History</h2>
-      <table>
-        <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+      <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+        <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
         <tbody>
-        <tr><td>2018</td><td>Freeholder District 3 Freeholder District 3 Position 3 (General)</td><td>Lost (3 of 5)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>Freeholder District 3 Freeholder District 3 Position 3 (General)</td><td>Lost (3 of 5)</td><td>WA SOS</td></tr>
         </tbody>
-      </table>
+      </table></div>
       <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
     </div>
     <div class="section">
@@ -127,14 +130,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

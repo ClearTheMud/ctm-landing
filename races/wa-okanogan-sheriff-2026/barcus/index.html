@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Jodie Barcus</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -54,46 +57,46 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$12,818.99 (35 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$14,888.53 (19 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$12,818.99 (35 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$14,888.53 (19 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Jodie Barcus, Okanogan</td><td>$1,293.42</td></tr>
-        <tr><td>Industrial Ironworks, Okanogan</td><td>$1,200.00</td></tr>
-        <tr><td>Mokry Ann, Ravensdale</td><td>$1,200.00</td></tr>
-        <tr><td>Morgan A.C., Okanogan</td><td>$1,200.00</td></tr>
-        <tr><td>Morgan Aaron, Okanogan</td><td>$1,200.00</td></tr>
-        <tr><td>Morgan Laurie, Okanogan</td><td>$1,200.00</td></tr>
-        <tr><td>Carman Jon, Coulee Dam</td><td>$500.00</td></tr>
-        <tr><td>Thomason Alex, Pateros</td><td>$500.00</td></tr>
-        <tr><td>Thomason Katy, Pateros</td><td>$500.00</td></tr>
-        <tr><td>Worden Brenda, Omak</td><td>$500.00</td></tr>
+        <tr><th scope="row">Jodie Barcus, Okanogan</th><td>$1,293.42</td></tr>
+        <tr><th scope="row">Industrial Ironworks, Okanogan</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Mokry Ann, Ravensdale</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Morgan A.C., Okanogan</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Morgan Aaron, Okanogan</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Morgan Laurie, Okanogan</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Carman Jon, Coulee Dam</th><td>$500.00</td></tr>
+        <tr><th scope="row">Thomason Alex, Pateros</th><td>$500.00</td></tr>
+        <tr><th scope="row">Thomason Katy, Pateros</th><td>$500.00</td></tr>
+        <tr><th scope="row">Worden Brenda, Omak</th><td>$500.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Dark Horse Political LLC</td><td>Website design/development</td><td>$3,500.00</td></tr>
-        <tr><td>Liberty Vinyl</td><td>Yard signs (45)</td><td>$2,966.25</td></tr>
-        <tr><td>Liberty Vinyl</td><td>Yard signs (100), 4x8 signs (20)</td><td>$2,503.56</td></tr>
-        <tr><td>Jodie Barcus</td><td>Okanogan County Auditor: PO Box 1010, Okanogan WA 98840: Filing fee</td><td>$1,293.42</td></tr>
-        <tr><td>Source One LLC</td><td>Online advertising (148000 impressions)</td><td>$1,283.56</td></tr>
-        <tr><td>Liberty Vinyl</td><td>Yard signs (150)</td><td>$1,091.73</td></tr>
-        <tr><td>Mursick Welding</td><td>Banners (8)</td><td>$480.00</td></tr>
-        <tr><td>Mursick Welding</td><td>T-shirts (22)</td><td>$428.00</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$269.35</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$263.56</td></tr>
+        <tr><th scope="row">Dark Horse Political LLC</th><td>Website design/development</td><td>$3,500.00</td></tr>
+        <tr><th scope="row">Liberty Vinyl</th><td>Yard signs (45)</td><td>$2,966.25</td></tr>
+        <tr><th scope="row">Liberty Vinyl</th><td>Yard signs (100), 4x8 signs (20)</td><td>$2,503.56</td></tr>
+        <tr><th scope="row">Jodie Barcus</th><td>Okanogan County Auditor: PO Box 1010, Okanogan WA 98840: Filing fee</td><td>$1,293.42</td></tr>
+        <tr><th scope="row">Source One LLC</th><td>Online advertising (148000 impressions)</td><td>$1,283.56</td></tr>
+        <tr><th scope="row">Liberty Vinyl</th><td>Yard signs (150)</td><td>$1,091.73</td></tr>
+        <tr><th scope="row">Mursick Welding</th><td>Banners (8)</td><td>$480.00</td></tr>
+        <tr><th scope="row">Mursick Welding</th><td>T-shirts (22)</td><td>$428.00</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$269.35</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$263.56</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -107,14 +110,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

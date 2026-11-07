@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Johnathan Waldrop</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -64,37 +67,37 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$6,549.84 (6 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$2,199.88 (4 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$6,549.84 (6 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$2,199.88 (4 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Johnathan Hart Waldrop (Johnathan Waldrop), Addy</td><td>$3,300.00</td></tr>
-        <tr><td>Stevens County Republican Central Committee, Chewelah</td><td>$1,000.00</td></tr>
-        <tr><td>Johnathan Hart Waldrop</td><td>$949.84</td></tr>
-        <tr><td>Johnathan Hart Waldrop (Johnathan Waldrop), Addy</td><td>$500.00</td></tr>
-        <tr><td>Johnathan Hart Waldrop (Johnathan Waldrop), Addy</td><td>$500.00</td></tr>
-        <tr><td>Johnathan Hart Waldrop (Johnathan Waldrop), Addy</td><td>$300.00</td></tr>
+        <tr><th scope="row">Johnathan Hart Waldrop (Johnathan Waldrop), Addy</th><td>$3,300.00</td></tr>
+        <tr><th scope="row">Stevens County Republican Central Committee, Chewelah</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Johnathan Hart Waldrop</th><td>$949.84</td></tr>
+        <tr><th scope="row">Johnathan Hart Waldrop (Johnathan Waldrop), Addy</th><td>$500.00</td></tr>
+        <tr><th scope="row">Johnathan Hart Waldrop (Johnathan Waldrop), Addy</th><td>$500.00</td></tr>
+        <tr><th scope="row">Johnathan Hart Waldrop (Johnathan Waldrop), Addy</th><td>$300.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Johnathan Hart Waldrop</td><td>Filing fees</td><td>$949.84</td></tr>
-        <tr><td>4overinternationalall</td><td>12- 24X48 signs
+        <tr><th scope="row">Johnathan Hart Waldrop</th><td>Filing fees</td><td>$949.84</td></tr>
+        <tr><th scope="row">4overinternationalall</th><td>12- 24X48 signs
 51- 18X24 signs</td><td>$535.35</td></tr>
-        <tr><td>Presscats</td><td>4- 48&#x27;&#x27;x96&#x27;&#x27; signs</td><td>$509.76</td></tr>
-        <tr><td>4overinternationalall</td><td>15- 24&quot;x32&quot; signs</td><td>$204.93</td></tr>
+        <tr><th scope="row">Presscats</th><td>4- 48&#x27;&#x27;x96&#x27;&#x27; signs</td><td>$509.76</td></tr>
+        <tr><th scope="row">4overinternationalall</th><td>15- 24&quot;x32&quot; signs</td><td>$204.93</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -108,14 +111,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

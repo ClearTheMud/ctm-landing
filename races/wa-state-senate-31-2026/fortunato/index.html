@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Phil Fortunato</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -57,11 +60,11 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Phil Fortunato</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Phil Fortunato</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Republican</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -76,69 +79,69 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2024</td><td>Insurance Commissioner (Primary)</td><td>Lost (2 of 9)</td><td>WA SOS</td></tr>
-        <tr><td>2024</td><td>Insurance Commissioner (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Legislative District 31 - State Senator (Primary)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
-        <tr><td>2022</td><td>Legislative District 31 - State Senator (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2020</td><td>Governor (Primary)</td><td>Lost (6 of 37)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>Legislative District 31 - State Senator (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
-        <tr><td>2018</td><td>Legislative District 31 - State Senator (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2017</td><td>Legislative District 31 - State Senator (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2017</td><td>Legislative District 31 - State Senator (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2016</td><td>Legislative District 31 - State Representative Pos. 2 (Primary)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
-        <tr><td>2016</td><td>Legislative District 31 - State Representative Pos. 2 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2014</td><td>Legislative District 31 - State Representative Pos. 2 (Primary)</td><td>Lost (2 of 2)</td><td>WA SOS</td></tr>
-        <tr><td>2014</td><td>Legislative District 31 - State Representative Pos. 2 (General)</td><td>Lost (2 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Insurance Commissioner (Primary)</td><td>Lost (2 of 9)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2024</th><td>Insurance Commissioner (General)</td><td>Lost (2 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Legislative District 31 - State Senator (Primary)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2022</th><td>Legislative District 31 - State Senator (General)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2020</th><td>Governor (Primary)</td><td>Lost (6 of 37)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>Legislative District 31 - State Senator (Primary)</td><td>Won (1 of 3)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2018</th><td>Legislative District 31 - State Senator (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2017</th><td>Legislative District 31 - State Senator (Primary)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2017</th><td>Legislative District 31 - State Senator (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2016</th><td>Legislative District 31 - State Representative Pos. 2 (Primary)</td><td>Won (1 of 4)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2016</th><td>Legislative District 31 - State Representative Pos. 2 (General)</td><td>Won (1 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2014</th><td>Legislative District 31 - State Representative Pos. 2 (Primary)</td><td>Lost (2 of 2)</td><td>WA SOS</td></tr>
+        <tr><th scope="row">2014</th><td>Legislative District 31 - State Representative Pos. 2 (General)</td><td>Lost (2 of 2)</td><td>WA SOS</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="font-size:13px; color:var(--gray-dark);">Rows marked WA SOS come from official Washington Secretary of State election results and are <strong>matched by name</strong>, not by a verified identity. A candidate who shares a name with another person may show results that are not theirs. <a href="mailto:contact@clearthemud.org">Tell us</a> if you spot one.</p>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$79,523.48 (204 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$47,914.31 (39 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$79,523.48 (204 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$47,914.31 (39 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>ALTRIA CLIENT SERVICES, RICHMOND</td><td>$1,200.00</td></tr>
-        <tr><td>ALTRIA CLIENT SERVICES, RICHMOND</td><td>$1,200.00</td></tr>
-        <tr><td>CONNELLY JOHN, Tacoma</td><td>$1,200.00</td></tr>
-        <tr><td>CONNELLY JOHN, Tacoma</td><td>$1,200.00</td></tr>
-        <tr><td>Connelly Angela, Tacoma</td><td>$1,200.00</td></tr>
-        <tr><td>Conrads Randal, Kent</td><td>$1,200.00</td></tr>
-        <tr><td>Conrads Sharon, Kent</td><td>$1,200.00</td></tr>
-        <tr><td>DAVITA, Federal Way</td><td>$1,200.00</td></tr>
-        <tr><td>DELTA DENTAL, SEATTLE</td><td>$1,200.00</td></tr>
-        <tr><td>DELTA DENTAL, SEATTLE</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">ALTRIA CLIENT SERVICES, RICHMOND</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">ALTRIA CLIENT SERVICES, RICHMOND</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">CONNELLY JOHN, Tacoma</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">CONNELLY JOHN, Tacoma</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Connelly Angela, Tacoma</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Conrads Randal, Kent</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Conrads Sharon, Kent</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">DAVITA, Federal Way</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">DELTA DENTAL, SEATTLE</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">DELTA DENTAL, SEATTLE</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>PHILIP D FORTUNATO SURPLUS ACCOUNT</td><td>Transfer to surplus funds account</td><td>$17,000.00</td></tr>
-        <tr><td>WASHINGTON STATE REPUBLICAN PARTY</td><td>USPS (Washington, DC): Mailer postage (23,591 ct)</td><td>$4,945.11</td></tr>
-        <tr><td>WASHINGTON STATE REPUBLICAN PARTY</td><td>Print NW (Lakewood, WA): Mailer printing (23,591 ct)</td><td>$4,583.76</td></tr>
-        <tr><td>PRINT NW</td><td>Mailer (5,524 ct)</td><td>$3,786.38</td></tr>
-        <tr><td>PRINT NW</td><td>Mailer Print &amp; Prep (3,835 ct)</td><td>$3,342.20</td></tr>
-        <tr><td>PRINT NW</td><td>Postage costs for mailer (5,524 ct)</td><td>$2,020.90</td></tr>
-        <tr><td>PRINT NW</td><td>Postage costs for mailer (3,835 ct)</td><td>$1,533.54</td></tr>
-        <tr><td>ELECT NORTHWEST</td><td>Treasury Services</td><td>$1,275.00</td></tr>
-        <tr><td>Cascade Public Relations</td><td>Consulting Services</td><td>$1,000.00</td></tr>
-        <tr><td>Pinnacle Printing &amp; Business Solutions</td><td>4&#x27;x8&#x27; Campaign Signs (10 ct)</td><td>$890.00</td></tr>
+        <tr><th scope="row">PHILIP D FORTUNATO SURPLUS ACCOUNT</th><td>Transfer to surplus funds account</td><td>$17,000.00</td></tr>
+        <tr><th scope="row">WASHINGTON STATE REPUBLICAN PARTY</th><td>USPS (Washington, DC): Mailer postage (23,591 ct)</td><td>$4,945.11</td></tr>
+        <tr><th scope="row">WASHINGTON STATE REPUBLICAN PARTY</th><td>Print NW (Lakewood, WA): Mailer printing (23,591 ct)</td><td>$4,583.76</td></tr>
+        <tr><th scope="row">PRINT NW</th><td>Mailer (5,524 ct)</td><td>$3,786.38</td></tr>
+        <tr><th scope="row">PRINT NW</th><td>Mailer Print &amp; Prep (3,835 ct)</td><td>$3,342.20</td></tr>
+        <tr><th scope="row">PRINT NW</th><td>Postage costs for mailer (5,524 ct)</td><td>$2,020.90</td></tr>
+        <tr><th scope="row">PRINT NW</th><td>Postage costs for mailer (3,835 ct)</td><td>$1,533.54</td></tr>
+        <tr><th scope="row">ELECT NORTHWEST</th><td>Treasury Services</td><td>$1,275.00</td></tr>
+        <tr><th scope="row">Cascade Public Relations</th><td>Consulting Services</td><td>$1,000.00</td></tr>
+        <tr><th scope="row">Pinnacle Printing &amp; Business Solutions</th><td>4&#x27;x8&#x27; Campaign Signs (10 ct)</td><td>$890.00</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -153,16 +156,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Julie Wise</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -46,14 +49,14 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Julie A. Wise</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>King County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan office. The King County Director of Elections is elected on a nonpartisan basis and no party preference is listed on the PDC candidate registration.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>Holds state and national certifications in election administration, per her official King County biography.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>King County Director of Elections since 2015. Began at King County Elections in 2000 answering voter questions in the phone bank and advanced through the agency, serving as Deputy Director before her election as Director.; Runs elections for King County, the largest county in Washington, with roughly 1.4 million registered voters.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Julie A. Wise</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>King County, Washington</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan office. The King County Director of Elections is elected on a nonpartisan basis and no party preference is listed on the PDC candidate registration.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>Holds state and national certifications in election administration, per her official King County biography.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>King County Director of Elections since 2015. Began at King County Elections in 2000 answering voter questions in the phone bank and advanced through the agency, serving as Deputy Director before her election as Director.; Runs elections for King County, the largest county in Washington, with roughly 1.4 million registered voters.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -78,61 +81,61 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>King County Director of Elections (nonpartisan)</td><td>Sole filed candidate, running unopposed for reelection.</td><td>Research</td></tr>
-        <tr><td>2023</td><td>King County Director of Elections (nonpartisan)</td><td>Won with roughly 84 percent, defeating Douglas Michael Basler in the November 7, 2023 general election.</td><td>Research</td></tr>
-        <tr><td>2019</td><td>King County Director of Elections (nonpartisan)</td><td>Won. Reelected to a second full term.</td><td>Research</td></tr>
-        <tr><td>2015</td><td>King County Director of Elections (nonpartisan)</td><td>Won. Elected Director with roughly 72 percent of the vote, defeating Doug Basler. Was Deputy Director at the time.</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>King County Director of Elections (nonpartisan)</td><td>Sole filed candidate, running unopposed for reelection.</td><td>Research</td></tr>
+        <tr><th scope="row">2023</th><td>King County Director of Elections (nonpartisan)</td><td>Won with roughly 84 percent, defeating Douglas Michael Basler in the November 7, 2023 general election.</td><td>Research</td></tr>
+        <tr><th scope="row">2019</th><td>King County Director of Elections (nonpartisan)</td><td>Won. Reelected to a second full term.</td><td>Research</td></tr>
+        <tr><th scope="row">2015</th><td>King County Director of Elections (nonpartisan)</td><td>Won. Elected Director with roughly 72 percent of the vote, defeating Doug Basler. Was Deputy Director at the time.</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Voter access</td><td>Has expanded ballot access as Director, increasing King County ballot drop boxes from 10 to more than 80 and advocating for prepaid postage on Washington ballots, adopted statewide in 2018.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Language access</td><td>Expanded King County Elections full-service languages from three to seven, adding four non-English languages for ballots, materials, and customer service.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Election worker safety and funding</td><td>Advocates for protections for election workers and for reliable federal funding for election infrastructure, citing threats faced by administrators.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Voter access</th><td>Has expanded ballot access as Director, increasing King County ballot drop boxes from 10 to more than 80 and advocating for prepaid postage on Washington ballots, adopted statewide in 2018.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Language access</th><td>Expanded King County Elections full-service languages from three to seven, adding four non-English languages for ballots, materials, and customer service.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Election worker safety and funding</th><td>Advocates for protections for election workers and for reliable federal funding for election infrastructure, citing threats faced by administrators.</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$1,375.00 (5 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$3,286.11 (5 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$1,375.00 (5 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$3,286.11 (5 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>FAIRVOTE WASHINGTON PAC, SEATTLE</td><td>$500.00</td></tr>
-        <tr><td>WISE LINDA, FEDERAL WAY</td><td>$500.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$250.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$100.00</td></tr>
-        <tr><td>SMALL CONTRIBUTIONS</td><td>$25.00</td></tr>
+        <tr><th scope="row">FAIRVOTE WASHINGTON PAC, SEATTLE</th><td>$500.00</td></tr>
+        <tr><th scope="row">WISE LINDA, FEDERAL WAY</th><td>$500.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$250.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$100.00</td></tr>
+        <tr><th scope="row">SMALL CONTRIBUTIONS</th><td>$25.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Julie Wise</td><td>KING COUNTY ELECTIONS (RENTON) - FILING FEE</td><td>$2,410.96</td></tr>
-        <tr><td>ABBOT TAYLOR</td><td>TREASURY SERVICES</td><td>$600.00</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$200.00</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$73.85</td></tr>
-        <tr><td>EXPENSES OF $200.00 OR LESS</td><td></td><td>$1.30</td></tr>
+        <tr><th scope="row">Julie Wise</th><td>KING COUNTY ELECTIONS (RENTON) - FILING FEE</td><td>$2,410.96</td></tr>
+        <tr><th scope="row">ABBOT TAYLOR</th><td>TREASURY SERVICES</td><td>$600.00</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$200.00</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$73.85</td></tr>
+        <tr><th scope="row">EXPENSES OF $200.00 OR LESS</th><td></td><td>$1.30</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -155,7 +158,7 @@
     <p style="margin-bottom:16px; font-style:italic; color:var(--gray-dark);">1 sourced findings. All sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model. No T4 claims included.</p>
 
     <div class="finding low">
-      <h4>Finding 6.1: State Republican Party lawsuit over OmniBallot ballot curing <span class="impact-badge impact-low">LOW</span></h4>
+      <h3>Finding 6.1: State Republican Party lawsuit over OmniBallot ballot curing <span class="impact-badge impact-low">LOW</span></h3>
       <dl>
         <dt>What happened</dt>
         <dd>In 2024 the Washington State Republican Party sued King County Elections, led by Director Julie Wise, over its use of DemocracyLive&#x27;s OmniBallot online tool to help voters resolve signature challenges on their ballots. The suit alleged that roughly 2,100 primary ballots were improperly cured, that the method violated state law, and that it affected the Commissioner of Public Lands primary, in which Dave Upthegrove advanced to the general election by about 49 votes over Sue Kuehl Pederson. Coverage cited Secretary of State Jim Walsh. The disposition of the litigation is not established in the reviewed sources.</dd>
@@ -186,16 +189,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

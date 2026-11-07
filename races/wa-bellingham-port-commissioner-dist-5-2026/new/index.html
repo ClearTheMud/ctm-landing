@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Spenser R. New</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,35 +60,35 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Spenser R. New</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Deming, Whatcom County, Washington (East County)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan office; no party preference listed on the ballot (Port Commissioner races in Washington are nonpartisan)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>Mt. Baker High School; Bellingham Technical College</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Business owner and operator, Baker Built LLC (construction contractor). Describes himself as a certified welder/fabricator and master builder. Washington L&amp;I lists a Baker Built LLC construction contractor license associated with Spenser Ray New.; States he has led projects across the country for municipal and PUD (public utility district) retrofits.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Spenser R. New</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Deming, Whatcom County, Washington (East County)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan office; no party preference listed on the ballot (Port Commissioner races in Washington are nonpartisan)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>Mt. Baker High School; Bellingham Technical College</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Business owner and operator, Baker Built LLC (construction contractor). Describes himself as a certified welder/fabricator and master builder. Washington L&amp;I lists a Baker Built LLC construction contractor license associated with Spenser Ray New.; States he has led projects across the country for municipal and PUD (public utility district) retrofits.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">1</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Port of Bellingham Commissioner District 5 (Primary, new expansion seat)</td><td>Filed and appears on the August 4, 2026 top-two primary ballot. Six-candidate field for the new District 5 seat (New, Todd Lagestee, Randall Wood, Jerry Burns, Shawn Ensley, Chris Elder). New and Randall Wood did not respond to Cascadia Daily News interview requests.</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>Port of Bellingham Commissioner District 5 (Primary, new expansion seat)</td><td>Filed and appears on the August 4, 2026 top-two primary ballot. Six-candidate field for the new District 5 seat (New, Todd Lagestee, Randall Wood, Jerry Burns, Shawn Ensley, Chris Elder). New and Randall Wood did not respond to Cascadia Daily News interview requests.</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">2</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Jobs and Economic Development</td><td>Wants to support family-wage jobs, economic opportunity, agriculture, and responsible industrial growth throughout East County and Whatcom County. Frames his construction-trades background as relevant to responsible budgeting, infrastructure investment, and workforce development.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Infrastructure and Budgeting</td><td>Emphasizes hands-on experience and accountability in infrastructure investment and practical decision-making at the Port.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Jobs and Economic Development</th><td>Wants to support family-wage jobs, economic opportunity, agriculture, and responsible industrial growth throughout East County and Whatcom County. Frames his construction-trades background as relevant to responsible budgeting, infrastructure investment, and workforce development.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Infrastructure and Budgeting</th><td>Emphasizes hands-on experience and accountability in infrastructure investment and practical decision-making at the Port.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -120,16 +123,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

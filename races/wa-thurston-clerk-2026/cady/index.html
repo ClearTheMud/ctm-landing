@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Garrett Cady</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -57,14 +60,14 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Garrett Cady</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Yelm, Thurston County, Washington</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Party</td><td>Independent (Nonpartisan)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>Graduate of Yelm High School; Attended Washington State University</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Employment</td><td>Deputy Clerk, Thurston County Clerk&#x27;s Office (current); Served in multiple roles within the Clerk&#x27;s Office including front counter public assistance and Court Clerk; Assists in training new employees on opening new cases and court procedures</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Garrett Cady</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Yelm, Thurston County, Washington</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Party</th><td>Independent (Nonpartisan)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>Graduate of Yelm High School; Attended Washington State University</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Deputy Clerk, Thurston County Clerk&#x27;s Office (current); Served in multiple roles within the Clerk&#x27;s Office including front counter public assistance and Court Clerk; Assists in training new employees on opening new cases and court procedures</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -79,69 +82,69 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Thurston County Clerk</td><td>Pending</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>Thurston County Clerk</td><td>Pending</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Nonpartisan Clerk&#x27;s Office</td><td>The Clerk must be politically neutral; there is no place for politics in the Clerk&#x27;s Office. The office must serve all litigants and legal practitioners equally, free of any political biases that would harm the impartial administration of justice.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Restoring In-Person Services</td><td>Supports fully restoring in-person front counter support at the Clerk&#x27;s Office, which was closed January 20, 2026 due to budget cuts</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
-        <tr><td>Domestic Violence Liaison Program</td><td>Supports restoring the Domestic Violence Liaison Program, which assisted victims in navigating the court system and filing protection orders</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Clerk&#x27;s Office Budget and Staffing</td><td>Plans to implement innovative and creative administrative solutions to restore services despite budget constraints</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Nonpartisan Clerk&#x27;s Office</th><td>The Clerk must be politically neutral; there is no place for politics in the Clerk&#x27;s Office. The office must serve all litigants and legal practitioners equally, free of any political biases that would harm the impartial administration of justice.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Restoring In-Person Services</th><td>Supports fully restoring in-person front counter support at the Clerk&#x27;s Office, which was closed January 20, 2026 due to budget cuts</td><td><span class="tier-badge tier-t2">T2</span></td></tr>
+        <tr><th scope="row">Domestic Violence Liaison Program</th><td>Supports restoring the Domestic Violence Liaison Program, which assisted victims in navigating the court system and filing protection orders</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Clerk&#x27;s Office Budget and Staffing</th><td>Plans to implement innovative and creative administrative solutions to restore services despite budget constraints</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
     <h2><span class="section-num">4</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$23,776.74 (132 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$12,447.14 (66 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$23,776.74 (132 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$12,447.14 (66 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Washington REALTORS® PAC, Olympia</td><td>$1,200.00</td></tr>
-        <tr><td>Garrett Cady, Yelm</td><td>$1,000.00</td></tr>
-        <tr><td>Garrett Cady, Yelm</td><td>$1,000.00</td></tr>
-        <tr><td>Pilon Eric, Lacey</td><td>$1,000.00</td></tr>
-        <tr><td>Schoenbachler Greg, Olympia</td><td>$1,000.00</td></tr>
-        <tr><td>Schoenbachler Greg, Olympia</td><td>$1,000.00</td></tr>
-        <tr><td>Williams Joseph, Yelm</td><td>$1,000.00</td></tr>
-        <tr><td>Gosney Kimberly, Yelm</td><td>$507.50</td></tr>
-        <tr><td>Boone Michele, Olympia</td><td>$500.00</td></tr>
-        <tr><td>Boone Stephen, Olympia</td><td>$500.00</td></tr>
+        <tr><th scope="row">Washington REALTORS® PAC, Olympia</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Garrett Cady, Yelm</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Garrett Cady, Yelm</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Pilon Eric, Lacey</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Schoenbachler Greg, Olympia</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Schoenbachler Greg, Olympia</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Williams Joseph, Yelm</th><td>$1,000.00</td></tr>
+        <tr><th scope="row">Gosney Kimberly, Yelm</th><td>$507.50</td></tr>
+        <tr><th scope="row">Boone Michele, Olympia</th><td>$500.00</td></tr>
+        <tr><th scope="row">Boone Stephen, Olympia</th><td>$500.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Capitol City Press Inc</td><td>Yard Signs</td><td>$1,535.80</td></tr>
-        <tr><td>Thurston County Auditor</td><td>Filing fees</td><td>$1,479.36</td></tr>
-        <tr><td>Gamer Graph-X Sports</td><td>Shirts</td><td>$977.84</td></tr>
-        <tr><td>Senior News</td><td>Newspaper advertisement -  Senior News</td><td>$773.00</td></tr>
-        <tr><td>Senior News</td><td>News Paper Ad - Senior News Paper</td><td>$773.00</td></tr>
-        <tr><td>Strophy Foundation</td><td>Strophy Foundation Golf Tournament Hole Sponsorship</td><td>$518.13</td></tr>
-        <tr><td>Gosney Kimberly</td><td>Food, decorations, and event supplies</td><td>$507.50</td></tr>
-        <tr><td>DeHan Danielle</td><td>Decorations - Balloon Arch</td><td>$425.00</td></tr>
-        <tr><td>Capitol City Press Inc</td><td>Donation Envelopes</td><td>$407.44</td></tr>
-        <tr><td>Thurston County Fairgrounds</td><td>Thurston County Fair Booth</td><td>$406.33</td></tr>
+        <tr><th scope="row">Capitol City Press Inc</th><td>Yard Signs</td><td>$1,535.80</td></tr>
+        <tr><th scope="row">Thurston County Auditor</th><td>Filing fees</td><td>$1,479.36</td></tr>
+        <tr><th scope="row">Gamer Graph-X Sports</th><td>Shirts</td><td>$977.84</td></tr>
+        <tr><th scope="row">Senior News</th><td>Newspaper advertisement -  Senior News</td><td>$773.00</td></tr>
+        <tr><th scope="row">Senior News</th><td>News Paper Ad - Senior News Paper</td><td>$773.00</td></tr>
+        <tr><th scope="row">Strophy Foundation</th><td>Strophy Foundation Golf Tournament Hole Sponsorship</td><td>$518.13</td></tr>
+        <tr><th scope="row">Gosney Kimberly</th><td>Food, decorations, and event supplies</td><td>$507.50</td></tr>
+        <tr><th scope="row">DeHan Danielle</th><td>Decorations - Balloon Arch</td><td>$425.00</td></tr>
+        <tr><th scope="row">Capitol City Press Inc</th><td>Donation Envelopes</td><td>$407.44</td></tr>
+        <tr><th scope="row">Thurston County Fairgrounds</th><td>Thurston County Fair Booth</td><td>$406.33</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
@@ -188,16 +191,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

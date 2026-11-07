@@ -14,10 +14,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -26,6 +27,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">San Juan County</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -46,25 +49,27 @@
   <div class="section">
     <h2><span class="section-num">1</span> County Offices</h2>
     <div class="finding">
-      <table>
-        <thead><tr><th>Office</th><th>#</th><th>Candidates</th><th>Status</th></tr></thead>
+      <div class="table-scroll" role="region" aria-label="County Offices, scrollable table" tabindex="0"><table><caption class="sr-only">County Offices</caption>
+        <thead><tr><th scope="col">Office</th><th scope="col">#</th><th scope="col">Candidates</th><th scope="col">Status</th></tr></thead>
         <tbody>
-        <tr><td><a href="/races/wa-san-juan-assessor-2026/">Assessor</a></td><td>1</td><td>John Kulseth (NP)</td><td>Advanced to General</td></tr>        <tr><td><a href="/races/wa-san-juan-auditor-2026/">Auditor</a></td><td>2</td><td>Heather Lee (NP), Natasha K Warmenhoven (NP)</td><td>Advanced to General</td></tr>        <tr><td><a href="/races/wa-san-juan-clerk-2026/">Clerk</a></td><td>1</td><td>Lisa Henderson (NP)</td><td>Advanced to General</td></tr>        <tr><td><a href="/races/wa-san-juan-council-residency-district-3-2026/">Council Residency District 3</a></td><td>3</td><td>Renee J Koplan (NP), Jennifer Swanson (NP), Katherine Bryant Ingman (NP)</td><td>In Primary</td></tr>        <tr><td><a href="/races/wa-san-juan-district-court-judge-2026/">District Court Judge</a></td><td>1</td><td>Carolyn Jewett-Platts (NP)</td><td>Advanced to General</td></tr>        <tr><td><a href="/races/wa-san-juan-prosecuting-attorney-2026/">Prosecuting Attorney</a></td><td>1</td><td>Amy S. Vira (D)</td><td>In Primary</td></tr>        <tr><td><a href="/races/wa-san-juan-sheriff-2026/">Sheriff</a></td><td>1</td><td>Ronald J. Krebs (NP)</td><td>Advanced to General</td></tr>        <tr><td><a href="/races/wa-san-juan-treasurer-2026/">Treasurer</a></td><td>1</td><td>Rhonda Pederson (NP)</td><td>Advanced to General</td></tr>
+        <tr><th scope="row"><a href="/races/wa-san-juan-assessor-2026/">Assessor</a></th><td>1</td><td>John Kulseth (NP)</td><td>Advanced to General</td></tr>        <tr><th scope="row"><a href="/races/wa-san-juan-auditor-2026/">Auditor</a></th><td>2</td><td>Heather Lee (NP), Natasha K Warmenhoven (NP)</td><td>Advanced to General</td></tr>        <tr><th scope="row"><a href="/races/wa-san-juan-clerk-2026/">Clerk</a></th><td>1</td><td>Lisa Henderson (NP)</td><td>Advanced to General</td></tr>        <tr><th scope="row"><a href="/races/wa-san-juan-council-residency-district-3-2026/">Council Residency District 3</a></th><td>3</td><td>Renee J Koplan (NP), Jennifer Swanson (NP), Katherine Bryant Ingman (NP)</td><td>In Primary</td></tr>        <tr><th scope="row"><a href="/races/wa-san-juan-district-court-judge-2026/">District Court Judge</a></th><td>1</td><td>Carolyn Jewett-Platts (NP)</td><td>Advanced to General</td></tr>        <tr><th scope="row"><a href="/races/wa-san-juan-prosecuting-attorney-2026/">Prosecuting Attorney</a></th><td>1</td><td>Amy S. Vira (D)</td><td>In Primary</td></tr>        <tr><th scope="row"><a href="/races/wa-san-juan-sheriff-2026/">Sheriff</a></th><td>1</td><td>Ronald J. Krebs (NP)</td><td>Advanced to General</td></tr>        <tr><th scope="row"><a href="/races/wa-san-juan-treasurer-2026/">Treasurer</a></th><td>1</td><td>Rhonda Pederson (NP)</td><td>Advanced to General</td></tr>
         </tbody>
-      </table>
+      </table></div>
     </div>
   </div>
 
+</div>
+</main>
 
-
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

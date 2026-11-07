@@ -14,10 +14,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -26,6 +27,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Wahkiakum County</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -47,7 +50,7 @@
       <svg xmlns="http://www.w3.org/2000/svg"
      viewBox="15.0 37.7 770.0 524.6"
      aria-label="Wahkiakum County Places Map"
-     role="img">
+     role="group">
     <path class="county-boundary" d="M20.2,209.4L20.9,194.2L22.1,44.3L124.2,45.2L270.7,46.0L322.7,46.3L341.2,46.7L370.1,47.0L565.6,46.1L620.6,46.3L625.7,46.7L681.5,46.9L688.2,46.1L712.1,47.3L719.6,46.7L734.2,44.8L741.2,44.4L772.8,42.7L772.2,76.6L772.5,90.9L774.1,106.2L773.4,136.8L775.4,169.6L775.5,174.0L776.9,260.7L775.4,290.2L774.6,372.0L775.8,410.5L778.9,410.4L778.5,425.7L778.6,441.2L779.8,496.8L766.2,508.1L753.8,515.3L737.2,522.4L723.6,532.1L680.9,556.9L650.1,557.3L647.8,557.1L603.9,554.1L591.7,554.0L583.4,556.4L562.3,553.7L557.6,553.7L546.2,553.6L534.3,543.7L518.2,536.4L470.6,490.3L458.3,478.4L462.7,389.3L463.3,376.4L450.5,357.5L433.8,332.7L408.8,307.5L402.6,301.3L393.6,294.2L386.5,291.4L354.6,287.4L332.6,297.8L317.5,303.7L300.2,309.6L286.1,312.8L286.1,299.0L279.3,299.4L274.4,299.7L272.1,299.8L268.0,300.1L263.5,302.9L261.4,308.1L254.4,307.4L243.5,306.4L236.0,309.9L225.0,309.7L204.1,307.4L188.9,311.0L172.1,307.7L156.3,299.8L133.0,299.4L106.3,296.4L95.7,287.3L92.1,284.2L90.7,272.6L92.6,260.8L93.6,254.4L92.6,245.3L89.9,234.0L79.3,227.2L60.2,215.7L38.5,220.3L25.4,223.0L25.7,234.8L20.1,247.6L20.2,209.4Z" />
   <g id="places">
     <path class="place" id="WA-069-cathlamet" data-name="Cathlamet" data-slug="cathlamet" data-type="city" d="M513.0,392.6L514.1,390.7L515.4,394.2L515.9,396.6L518.1,396.7L522.6,396.8L521.1,400.0L519.8,403.3L521.7,403.8L521.5,407.0L520.2,408.5L519.5,410.4L519.4,412.9L519.9,415.0L522.7,415.5L524.3,417.0L524.3,420.0L525.7,421.3L525.8,423.6L528.3,425.8L530.8,425.9L534.7,425.5L533.4,426.6L531.6,427.1L530.6,429.1L530.1,432.7L534.3,432.9L538.3,435.1L546.0,439.5L546.1,442.7L546.0,446.1L546.0,449.8L544.0,450.2L541.8,449.0L540.4,448.3L538.7,447.6L536.8,446.8L535.1,446.2L533.5,445.3L532.0,444.8L530.1,444.0L528.6,442.7L527.1,440.7L526.0,439.4L525.1,437.5L523.8,435.9L523.0,433.9L521.8,432.6L521.2,430.6L521.0,428.4L520.7,425.5L520.6,422.9L521.2,425.7L522.8,427.0L524.5,426.8L523.8,424.1L522.4,422.3L520.7,419.9L519.5,417.9L517.3,415.7L515.7,413.9L514.9,411.7L514.5,409.3L513.8,406.1L513.9,403.7L513.5,401.3L513.7,399.0L513.5,396.6L513.5,394.5L513.0,392.6Z"><title>Cathlamet</title></path>
@@ -71,12 +74,12 @@
   <div class="section">
     <h2><span class="section-num">1</span> County Offices</h2>
     <div class="finding">
-      <table>
-        <thead><tr><th>Office</th><th>#</th><th>Candidates</th><th>Status</th></tr></thead>
+      <div class="table-scroll" role="region" aria-label="County Offices, scrollable table" tabindex="0"><table><caption class="sr-only">County Offices</caption>
+        <thead><tr><th scope="col">Office</th><th scope="col">#</th><th scope="col">Candidates</th><th scope="col">Status</th></tr></thead>
         <tbody>
-        <tr><td><a href="/races/wa-wahkiakum-commissioner-district-3-2026/">Commissioner District 3</a></td><td>1</td><td>Mark D. Letham (NP)</td><td>In Primary</td></tr>        <tr><td><a href="/races/wa-wahkiakum-county-assessor-2026/">County Assessor</a></td><td>2</td><td>Drew Jenkins (NP), Justin Moriarty (I)</td><td>In Primary</td></tr>        <tr><td><a href="/races/wa-wahkiakum-county-auditor-2026/">County Auditor</a></td><td>1</td><td>Nicci Bergseng (I)</td><td>In Primary</td></tr>        <tr><td><a href="/races/wa-wahkiakum-county-clerk-2026/">County Clerk</a></td><td>1</td><td>Jess Reddon (I)</td><td>In Primary</td></tr>        <tr><td><a href="/races/wa-wahkiakum-county-sheriff-2026/">County Sheriff</a></td><td>1</td><td>John Mason (NP)</td><td>In Primary</td></tr>        <tr><td><a href="/races/wa-wahkiakum-county-treasurer-2026/">County Treasurer</a></td><td>1</td><td>Marissa Longtain (I)</td><td>In Primary</td></tr>        <tr><td><a href="/races/wa-wahkiakum-district-court-judge-2026/">District Court Judge</a></td><td>1</td><td>Heidi Heywood (NP)</td><td>Advanced to General</td></tr>        <tr><td><a href="/races/wa-wahkiakum-prosecuting-attorney-2026/">Prosecuting Attorney</a></td><td>1</td><td>Dan Bigelow (D)</td><td>In Primary</td></tr>
+        <tr><th scope="row"><a href="/races/wa-wahkiakum-commissioner-district-3-2026/">Commissioner District 3</a></th><td>1</td><td>Mark D. Letham (NP)</td><td>In Primary</td></tr>        <tr><th scope="row"><a href="/races/wa-wahkiakum-county-assessor-2026/">County Assessor</a></th><td>2</td><td>Drew Jenkins (NP), Justin Moriarty (I)</td><td>In Primary</td></tr>        <tr><th scope="row"><a href="/races/wa-wahkiakum-county-auditor-2026/">County Auditor</a></th><td>1</td><td>Nicci Bergseng (I)</td><td>In Primary</td></tr>        <tr><th scope="row"><a href="/races/wa-wahkiakum-county-clerk-2026/">County Clerk</a></th><td>1</td><td>Jess Reddon (I)</td><td>In Primary</td></tr>        <tr><th scope="row"><a href="/races/wa-wahkiakum-county-sheriff-2026/">County Sheriff</a></th><td>1</td><td>John Mason (NP)</td><td>In Primary</td></tr>        <tr><th scope="row"><a href="/races/wa-wahkiakum-county-treasurer-2026/">County Treasurer</a></th><td>1</td><td>Marissa Longtain (I)</td><td>In Primary</td></tr>        <tr><th scope="row"><a href="/races/wa-wahkiakum-district-court-judge-2026/">District Court Judge</a></th><td>1</td><td>Heidi Heywood (NP)</td><td>Advanced to General</td></tr>        <tr><th scope="row"><a href="/races/wa-wahkiakum-prosecuting-attorney-2026/">Prosecuting Attorney</a></th><td>1</td><td>Dan Bigelow (D)</td><td>In Primary</td></tr>
         </tbody>
-      </table>
+      </table></div>
     </div>
   </div>
 
@@ -87,14 +90,18 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 <script>window.CTM_PLACE_DATA = {};</script>
 <script src="/js/place-map.js"></script>

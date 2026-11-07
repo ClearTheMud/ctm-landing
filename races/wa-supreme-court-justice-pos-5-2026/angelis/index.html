@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -27,6 +28,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Theodore John Angelis</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-neutral">
   <div class="page">
@@ -55,14 +58,14 @@
 <div class="page">
 
   <div class="profile-table">
-    <table>
-      <thead><tr><th>Field</th><th>Detail</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Candidate profile</caption>
+      <thead><tr><th scope="col">Field</th><th scope="col">Detail</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Full Name</td><td>Theodore John Angelis (Theo Angelis)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Residence</td><td>Divides his time between Olympia and Seattle, where he lives with his wife and two children</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Party</td><td>Nonpartisan (Washington judicial offices are elected on a nonpartisan basis; no party appears on the ballot)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Education</td><td>Bachelor&#x27;s degree, Claremont McKenna College, graduated summa cum laude (student body president; British Marshall Scholarship winner); Master&#x27;s degrees from Oxford University and the London School of Economics; Juris Doctor, Yale Law School (Articles Editor of the Yale Law Journal; Managing Editor of the Yale Law and Policy Review)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
-        <tr><td>Employment</td><td>Law clerk to the Honorable Stephen F. Williams, U.S. Court of Appeals for the D.C. Circuit; Partner at K&amp;L Gates LLP for 26 years, where he led the firm&#x27;s Appellate practice and served as global leader of its Intellectual Property practice, representing major Washington companies; Editor of the Washington Lawyers Practice Manual for over a decade</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Full Name</th><td>Theodore John Angelis (Theo Angelis)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Residence</th><td>Divides his time between Olympia and Seattle, where he lives with his wife and two children</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Party</th><td>Nonpartisan (Washington judicial offices are elected on a nonpartisan basis; no party appears on the ballot)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Education</th><td>Bachelor&#x27;s degree, Claremont McKenna College, graduated summa cum laude (student body president; British Marshall Scholarship winner); Master&#x27;s degrees from Oxford University and the London School of Economics; Juris Doctor, Yale Law School (Articles Editor of the Yale Law Journal; Managing Editor of the Yale Law and Policy Review)</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Employment</th><td>Law clerk to the Honorable Stephen F. Williams, U.S. Court of Appeals for the D.C. Circuit; Partner at K&amp;L Gates LLP for 26 years, where he led the firm&#x27;s Appellate practice and served as global leader of its Intellectual Property practice, representing major Washington companies; Editor of the Washington Lawyers Practice Manual for over a decade</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -81,21 +84,21 @@
 
   <div class="section">
     <h2><span class="section-num">2</span> Election History</h2>
-    <table>
-      <thead><tr><th>Year</th><th>Race</th><th>Result</th><th>Source</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Election History, scrollable table" tabindex="0"><table><caption class="sr-only">Election History</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Race</th><th scope="col">Result</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>2026</td><td>Washington State Supreme Court, Justice Position 5</td><td>Running to retain the seat as the appointed incumbent. Appointed by Governor Bob Ferguson effective April 4, 2026 to succeed retiring Justice Barbara Madsen, and sworn in May 2026. This is a special election to complete the unexpired term. Filed 5/4/2026. Primary August 4, 2026; general November 3, 2026. Reported field also includes Dave Larson (retired Federal Way Municipal Court judge), Sharonda Amamilo (Thurston County Superior Court judge), and Greg Miller (appellate attorney). The top two primary finishers advance to November.</td><td>Research</td></tr>
+        <tr><th scope="row">2026</th><td>Washington State Supreme Court, Justice Position 5</td><td>Running to retain the seat as the appointed incumbent. Appointed by Governor Bob Ferguson effective April 4, 2026 to succeed retiring Justice Barbara Madsen, and sworn in May 2026. This is a special election to complete the unexpired term. Filed 5/4/2026. Primary August 4, 2026; general November 3, 2026. Reported field also includes Dave Larson (retired Federal Way Municipal Court judge), Sharonda Amamilo (Thurston County Superior Court judge), and Greg Miller (appellate attorney). The top two primary finishers advance to November.</td><td>Research</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="section">
     <h2><span class="section-num">3</span> Political Positions</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Position</th><th>Source</th></tr></thead>
+    <table><caption class="sr-only">Political Positions</caption>
+      <thead><tr><th scope="col">Topic</th><th scope="col">Position</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Rule of Law and Judicial Independence</td><td>Campaign identifies standing up for the rule of law and keeping courts fair, independent, and accessible as core priorities.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
-        <tr><td>Access to Justice</td><td>States that throughout his career he has worked to promote access to the courts and a genuine commitment to the rule of law.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
+        <tr><th scope="row">Rule of Law and Judicial Independence</th><td>Campaign identifies standing up for the rule of law and keeping courts fair, independent, and accessible as core priorities.</td><td><span class="tier-badge tier-t3">T3</span></td></tr>
+        <tr><th scope="row">Access to Justice</th><td>States that throughout his career he has worked to promote access to the courts and a genuine commitment to the rule of law.</td><td><span class="tier-badge tier-t1">T1</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -134,16 +137,20 @@
     </div>
   </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <em>Sourced at T0 (Primary Legal), T1 (Official Record), T2 (Multi-Source Media) or T3 (Candidate Direct) per clearthemud provenance model.<br>
     Single-source and unverified material is withheld from publication. No editorial conclusions, readers assess implications independently.</em><br><br>
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>

@@ -13,10 +13,11 @@
 <link rel="stylesheet" href="/css/dossier.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
 
-<nav class="dossier-nav">
+<nav class="dossier-nav" aria-label="Breadcrumb">
   <a href="/">clearthemud.org</a>
   <span class="nav-sep">/</span>
   <a href="/states/">States</a>
@@ -29,6 +30,8 @@
   <span class="nav-sep">/</span>
   <span class="nav-current">Christopher (Chris) Lee</span>
 </nav>
+</header>
+<main id="main">
 
 <div class="header party-rep">
   <div class="page">
@@ -64,46 +67,46 @@
     </div>
   <div class="section">
     <h2><span class="section-num">2</span> Campaign Finance</h2>
-    <table>
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <table><caption class="sr-only">Campaign Finance</caption>
+      <thead><tr><th scope="col">Metric</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>Total Raised</td><td>$38,670.03 (112 contributions)</td></tr>
-        <tr><td>Total Spent</td><td>$29,418.81 (67 expenditures)</td></tr>
+        <tr><th scope="row">Total Raised</th><td>$38,670.03 (112 contributions)</td></tr>
+        <tr><th scope="row">Total Spent</th><td>$29,418.81 (67 expenditures)</td></tr>
       </tbody>
     </table>
     <p class="finance-provenance">As of 2026-10-10, source: Washington Public Disclosure Commission (SODA API, data.wa.gov), tier T1.</p>
     <h3>Top Donors</h3>
-    <table>
-      <thead><tr><th>Donor</th><th>Amount</th></tr></thead>
+    <table><caption class="sr-only">Top Donors</caption>
+      <thead><tr><th scope="col">Donor</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Chris Lee</td><td>$1,750.00</td></tr>
-        <tr><td>Christopher Lee (Chris Lee), Pasco</td><td>$1,697.94</td></tr>
-        <tr><td>Connors Michael, Warden</td><td>$1,200.00</td></tr>
-        <tr><td>Currie Carol, Richland</td><td>$1,200.00</td></tr>
-        <tr><td>Currie Carol, Richland</td><td>$1,200.00</td></tr>
-        <tr><td>Currie Don, Richland</td><td>$1,200.00</td></tr>
-        <tr><td>Currie Don, Richland</td><td>$1,200.00</td></tr>
-        <tr><td>Dover Mary, Richland</td><td>$1,200.00</td></tr>
-        <tr><td>Dover Mary, Richland</td><td>$1,200.00</td></tr>
-        <tr><td>Dow Charles, Kennewick</td><td>$1,200.00</td></tr>
+        <tr><th scope="row">Chris Lee</th><td>$1,750.00</td></tr>
+        <tr><th scope="row">Christopher Lee (Chris Lee), Pasco</th><td>$1,697.94</td></tr>
+        <tr><th scope="row">Connors Michael, Warden</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Currie Carol, Richland</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Currie Carol, Richland</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Currie Don, Richland</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Currie Don, Richland</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Dover Mary, Richland</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Dover Mary, Richland</th><td>$1,200.00</td></tr>
+        <tr><th scope="row">Dow Charles, Kennewick</th><td>$1,200.00</td></tr>
       </tbody>
     </table>
     <h3>Largest Reported Expenditures</h3>
-    <table>
-      <thead><tr><th>Recipient</th><th>Purpose</th><th>Amount</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Largest Reported Expenditures, scrollable table" tabindex="0"><table><caption class="sr-only">Largest Reported Expenditures</caption>
+      <thead><tr><th scope="col">Recipient</th><th scope="col">Purpose</th><th scope="col">Amount</th></tr></thead>
       <tbody>
-        <tr><td>Loni&#x27;s Sign Svce</td><td>First Half of Cost of Campaign Signs--50 4x8, 500 18x24 &amp; 500 Stakes</td><td>$4,385.00</td></tr>
-        <tr><td>Loni&#x27;s Sign Svce</td><td>2nd Half of Cost of Signs Purchased in Feb</td><td>$4,381.45</td></tr>
-        <tr><td>Majority Strategies LLC</td><td>5K Palm Cards</td><td>$2,350.00</td></tr>
-        <tr><td>Loni&#x27;s Sign Svce</td><td>20 4x4 Campaign Signs</td><td>$2,069.10</td></tr>
-        <tr><td>Chris Lee</td><td>Acct&#x27;ng, Fililng &amp; Closing--May thru Nov--v:  C Benjamin, Primary &amp; General.</td><td>$1,750.00</td></tr>
-        <tr><td>Franklin County Elections Office</td><td>Campaign Filing Fee</td><td>$1,495.25</td></tr>
-        <tr><td>Source One News</td><td>16 Ads Used Any Time On or Before Aug 4</td><td>$1,219.68</td></tr>
-        <tr><td>Loni&#x27;s Sign Svce</td><td>Sponsor ID Stickers to Place on Signs</td><td>$1,116.23</td></tr>
-        <tr><td>Loni&#x27;s Sign Svce</td><td>4 Sign Banners</td><td>$849.42</td></tr>
-        <tr><td>Ideally Riddled</td><td>105 Campaign T-Shirts W/Logos</td><td>$681.99</td></tr>
+        <tr><th scope="row">Loni&#x27;s Sign Svce</th><td>First Half of Cost of Campaign Signs--50 4x8, 500 18x24 &amp; 500 Stakes</td><td>$4,385.00</td></tr>
+        <tr><th scope="row">Loni&#x27;s Sign Svce</th><td>2nd Half of Cost of Signs Purchased in Feb</td><td>$4,381.45</td></tr>
+        <tr><th scope="row">Majority Strategies LLC</th><td>5K Palm Cards</td><td>$2,350.00</td></tr>
+        <tr><th scope="row">Loni&#x27;s Sign Svce</th><td>20 4x4 Campaign Signs</td><td>$2,069.10</td></tr>
+        <tr><th scope="row">Chris Lee</th><td>Acct&#x27;ng, Fililng &amp; Closing--May thru Nov--v:  C Benjamin, Primary &amp; General.</td><td>$1,750.00</td></tr>
+        <tr><th scope="row">Franklin County Elections Office</th><td>Campaign Filing Fee</td><td>$1,495.25</td></tr>
+        <tr><th scope="row">Source One News</th><td>16 Ads Used Any Time On or Before Aug 4</td><td>$1,219.68</td></tr>
+        <tr><th scope="row">Loni&#x27;s Sign Svce</th><td>Sponsor ID Stickers to Place on Signs</td><td>$1,116.23</td></tr>
+        <tr><th scope="row">Loni&#x27;s Sign Svce</th><td>4 Sign Banners</td><td>$849.42</td></tr>
+        <tr><th scope="row">Ideally Riddled</th><td>105 Campaign T-Shirts W/Logos</td><td>$681.99</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
     <div class="section">
@@ -117,14 +120,18 @@
       </div>
     </div>
 
+</div>
+</main>
+
+<footer>
+<div class="page">
   <div class="footer">
     <strong>clearthemud.org</strong>, Verified public-record candidate intelligence<br>
     <a href="mailto:contact@clearthemud.org">contact@clearthemud.org</a>
   </div>
-
 </div>
-
 <div class="classification-bar">TLP:GREEN, Approved for public sharing</div>
+</footer>
 
 </body>
 </html>
