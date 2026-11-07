@@ -630,3 +630,177 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
   .county-map-container [class*="--"]:focus-visible, .place-map-container [class*="--"]:focus-visible,
   .legislative-map-container [class*="--"]:focus-visible { outline: 3px solid Highlight; outline-offset: 3px; stroke: Highlight; stroke-width: 3; }
 }
+
+/* general-results:start */
+/* General-election results block (race hubs) and panel (candidate pages).
+   ADO #2996 wave 2. Source of truth: clearthemud site_tools/general_results.css,
+   synced into this file by site_tools/inject_general_results.py.
+   Uses the site's --results-* tokens only; no colours of its own. Status is
+   always words; bars are decorative (aria-hidden). */
+
+.gr-sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+/* ---- hub card ---- */
+.general-results { background: var(--results-panel); color: var(--results-ink); border: 1px solid color-mix(in srgb, var(--amber-results) 45%, var(--results-line)); border-left: 4px solid var(--amber-results); border-radius: 10px; padding: 20px; margin: 32px 0 0; }
+.general-results.gr--final { border-color: color-mix(in srgb, var(--green) 45%, var(--results-line)); border-left-color: var(--green-badge-results); }
+.general-results.gr--unofficial-win { border-color: color-mix(in srgb, var(--green) 45%, var(--results-line)); border-left-color: var(--amber-results); }
+.general-results a { color: var(--results-ink); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.general-results h3 { font-size: 20px; margin: 0 0 4px; color: var(--results-ink); }
+.general-results .gr-sub { color: var(--results-muted); font-size: 12.5px; margin: 0 0 14px; font-variant-numeric: tabular-nums; }
+
+/* Banner anatomy matches .primary-results .banner (4px rule, flex, glyph + bold lead). */
+.gr-banner { display: flex; gap: 10px; align-items: flex-start; padding: 11px 14px; border-radius: 4px; font-size: 13px; margin: 0 0 14px; border-left: 4px solid; color: var(--results-ink); }
+.gr-banner b { color: var(--results-ink); }
+.gr-banner p { margin: 4px 0 0; }
+.gr-banner .ico { font-weight: 800; }
+.gr-banner--prov { background: var(--amber-soft-results); border-color: var(--amber-results); }
+.gr-banner--prov .ico { color: var(--amber-results-text); }
+.gr-banner--final { background: color-mix(in srgb, var(--green) 12%, var(--results-panel)); border-color: var(--green); }
+.gr-banner--final .ico { color: var(--green-badge-results); }
+@media (prefers-color-scheme: dark) { .gr-banner--final .ico { color: var(--green-results-text); } }
+
+/* Scroll region around the table: own background so nothing ever paints on the bare
+   page, focusable (it can scroll), with a visible focus ring drawn inside it. */
+.gr-scroll { overflow-x: auto; background: var(--results-panel); color: var(--results-ink); }
+.gr-scroll:focus-visible { outline: 3px solid var(--results-ink); outline-offset: -3px; }
+
+/* Table: semantic, drawn as row cards like .primary-results .row. */
+.gr-table { width: 100%; border-collapse: separate; border-spacing: 0 10px; font-variant-numeric: tabular-nums; color: var(--results-ink); }
+.gr-table caption { text-align: left; font-size: 12.5px; color: var(--results-muted); background: var(--results-panel); padding-bottom: 4px; caption-side: top; }
+.gr-table th, .gr-table td { background: var(--results-panel); color: var(--results-ink); padding: 12px 10px; border-top: 1px solid var(--results-line); border-bottom: 1px solid var(--results-line); vertical-align: top; text-align: left; }
+.gr-table tbody > tr > :first-child, .gr-table tfoot > tr > :first-child { border-left: 1px solid var(--results-line); border-radius: 8px 0 0 8px; }
+.gr-table tbody > tr > :last-child, .gr-table tfoot > tr > :last-child { border-right: 1px solid var(--results-line); border-radius: 0 8px 8px 0; }
+.gr-table thead th { background: transparent; border: 0; padding: 0 10px 0; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--results-muted); font-weight: 700; }
+.gr-table .gr-num { text-align: right; white-space: nowrap; }
+.gr-table tbody th { font-weight: 700; font-size: 15px; }
+.gr-table tbody tr.gr-lead > * { border-color: color-mix(in srgb, var(--amber-results) 50%, var(--results-line)); }
+.gr-table tbody tr.gr-win > * { border-color: color-mix(in srgb, var(--green) 55%, var(--results-line)); }
+.gr-table tfoot th, .gr-table tfoot td { font-size: 12.5px; color: var(--results-muted); font-weight: 600; }
+.gr-table .gr-votes { font-weight: 800; font-size: 16px; }
+.gr-table td.gr-party-cell { font-size: 12.5px; font-weight: 700; }
+.gr-table .gr-state { display: block; }
+.gr-table .gr-detail { display: block; font-weight: 400; font-size: 12.5px; color: var(--results-muted); margin-top: 4px; }
+.gr-table a { text-decoration: underline; }
+.gr-table a:hover { text-decoration-thickness: 2px; }
+.gr-party--dem { color: var(--dem-blue-results); }
+.gr-party--rep { color: var(--rep-red-results); }
+.gr-party--ind { color: var(--ind-purple-results); }
+.gr-party--none { color: var(--results-muted); }
+
+/* Bars: width attributes on SVG rects, never inline style. */
+.gr-bar { display: block; width: 100%; min-width: 64px; height: 6px; margin-top: 6px; overflow: visible; }
+.gr-bar-track { fill: var(--results-track); stroke: var(--results-track-edge); stroke-width: 2; shape-rendering: crispEdges; } /* ADO #3013 F12: 3:1 edge, track alone was 1.07:1 */
+.gr-bar-fill--dem { fill: var(--dem-blue-results); }
+.gr-bar-fill--rep { fill: var(--rep-red-results); }
+.gr-bar-fill--ind { fill: var(--ind-purple-results); }
+.gr-bar-fill--none { fill: var(--results-muted); }
+/* Provisional hatch: 45 degree stripes, solid and 75% (same as .bar.prov). 60% left the light stripe at 2.72:1 to 2.85:1 against the track (ADO #3013 F13); 75% clears 3:1. */
+.gr-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+.gr-hatch-base--dem { fill: color-mix(in srgb, var(--dem-blue-results) 75%, transparent); }
+.gr-hatch-stripe--dem { fill: var(--dem-blue-results); }
+.gr-hatch-base--rep { fill: color-mix(in srgb, var(--rep-red-results) 75%, transparent); }
+.gr-hatch-stripe--rep { fill: var(--rep-red-results); }
+.gr-hatch-base--ind { fill: color-mix(in srgb, var(--ind-purple-results) 75%, transparent); }
+.gr-hatch-stripe--ind { fill: var(--ind-purple-results); }
+.gr-hatch-base--none { fill: color-mix(in srgb, var(--results-muted) 75%, transparent); }
+.gr-hatch-stripe--none { fill: var(--results-muted); }
+.gr-bar-fill--prov-dem { fill: url(#gr-hatch-dem); }
+.gr-bar-fill--prov-rep { fill: url(#gr-hatch-rep); }
+.gr-bar-fill--prov-ind { fill: url(#gr-hatch-ind); }
+.gr-bar-fill--prov-none { fill: url(#gr-hatch-none); }
+
+/* Badges: site scale (10.5px). Leading and official Winner are solid, as on the
+   primary block. Trailing and Did not win are outlined. Winner, unofficial is
+   dashed with a green tint, so it cannot be mistaken for the solid official one. */
+.gr-badge { display: inline-block; font-size: 10.5px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; padding: 2px 8px; border-radius: 3px; color: #fff; border: 1px solid transparent; }
+.gr-badge--leading { background: var(--amber-badge-results); }
+.gr-badge--winner { background: var(--green-badge-results); }
+.gr-badge--trailing, .gr-badge--other, .gr-badge--withdrew { background: transparent; color: var(--results-ink); border-color: var(--results-muted); }
+.gr-badge--winner-unofficial { background: color-mix(in srgb, var(--green-badge-results) 16%, var(--results-panel)); color: var(--results-ink); border: 2px dashed var(--green-badge-results); }
+
+.gr-legend { display: flex; flex-wrap: wrap; gap: 16px; margin: 4px 0 0; font-size: 12.5px; color: var(--results-muted); }
+.gr-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.gr-sw { width: 14px; height: 14px; border-radius: 3px; display: inline-block; border: 1px solid var(--results-muted); }
+.gr-sw.hatch { background: repeating-linear-gradient(45deg, var(--results-muted), var(--results-muted) 3px, transparent 3px, transparent 6px); }
+.gr-sw.solid { background: var(--results-muted); }
+
+.gr-notes { font-size: 12.5px; color: var(--results-muted); margin: 12px 0 0; }
+.gr-notes p { margin: 0 0 8px; }
+.gr-notes a { color: var(--results-ink); }
+.gr-sources { margin: 8px 0 0 18px; font-size: 12.5px; color: var(--results-muted); }
+.gr-sources li { margin-bottom: 4px; overflow-wrap: anywhere; }
+
+
+.gr-ptitle--plain { display: block; }
+
+/* Primary block directly after the general block reads as history, not as the lead. */
+.general-results + .primary-results { margin-top: 40px; padding-top: 32px; border-top: 2px solid var(--gray-mid); }
+
+/* ---- candidate panel: same family as .result-panel ---- */
+.gr-panel { background: var(--results-panel); color: var(--results-ink); border: 1px solid color-mix(in srgb, var(--amber-results) 45%, var(--results-line)); border-radius: 10px; overflow: hidden; margin: 16px 0; }
+.gr-panel--final { border-color: color-mix(in srgb, var(--green) 45%, var(--results-line)); }
+.gr-panel .gr-phead { margin: 0; opacity: 1; padding: 10px 16px; font-size: 13px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; border-bottom: 1px solid var(--results-line); display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; background: var(--amber-soft-results); color: var(--results-ink); }
+.gr-panel--final .gr-phead { background: color-mix(in srgb, var(--green) 14%, var(--results-panel)); }
+.gr-panel .gr-ptitle { font-size: inherit; font-weight: inherit; letter-spacing: inherit; text-transform: inherit; margin: 0; color: inherit; }
+.gr-panel .gr-ptag { font-weight: 600; }
+.gr-panel .gr-stats { display: grid; grid-template-columns: repeat(3, 1fr); margin: 0; }
+.gr-panel .gr-stat { padding: 16px; text-align: center; border-right: 1px solid var(--results-line); display: flex; flex-direction: column; }
+.gr-panel .gr-stat:last-child { border-right: 0; }
+.gr-panel dt { font-size: 11.5px; color: var(--results-muted); text-transform: uppercase; letter-spacing: .06em; order: 2; margin-top: 2px; }
+.gr-panel dd { font-size: 28px; font-weight: 800; font-variant-numeric: tabular-nums; margin: 0; letter-spacing: -0.01em; color: var(--results-ink); }
+.gr-panel .gr-stat--word dd { font-size: 19px; line-height: 1.3; }
+.gr-panel .gr-stat--word dd small { display: block; font-size: 12.5px; font-weight: 600; color: var(--results-muted); letter-spacing: 0; margin-top: 4px; }
+.gr-panel .gr-pfoot { padding: 11px 16px; font-size: 12px; color: var(--results-muted); border-top: 1px solid var(--results-line); margin: 0; font-variant-numeric: tabular-nums; }
+.gr-panel .gr-pfoot a { color: var(--results-ink); }
+.gr-panel .gr-pfoot + .gr-pfoot { border-top: 0; padding-top: 0; }
+
+.gr-table tbody tr, .gr-table tbody tr:hover, .gr-table tbody tr:nth-child(even), .gr-table tfoot tr { background: transparent; }
+.general-results a:focus-visible, .gr-panel a:focus-visible { outline: 3px solid var(--results-ink); outline-offset: 2px; }
+
+@media (max-width: 600px) {
+  .general-results { padding: 14px; }
+  .gr-panel .gr-stats { grid-template-columns: 1fr; }
+  .gr-panel .gr-stat { border-right: 0; border-bottom: 1px solid var(--results-line); }
+  .gr-panel .gr-stat:last-child { border-bottom: 0; }
+
+  /* Stacked rows at narrow widths (1.4.10 Reflow): each candidate becomes a card and
+     every cell carries its column name from data-label. The header row is hidden
+     visually only, so assistive technology still gets the column headers. */
+  .gr-table, .gr-table tbody, .gr-table tfoot, .gr-table tr, .gr-table th, .gr-table td, .gr-table caption { display: block; }
+  .gr-table thead { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .gr-table { border-spacing: 0; }
+  .gr-table tbody tr, .gr-table tfoot tr { border: 1px solid var(--results-line); border-radius: 8px; margin: 0 0 10px; overflow: hidden; background: var(--results-panel); }
+  .gr-table tbody tr.gr-lead { border-color: color-mix(in srgb, var(--amber-results) 50%, var(--results-line)); }
+  .gr-table tbody tr.gr-win { border-color: color-mix(in srgb, var(--green) 55%, var(--results-line)); }
+  .gr-table th, .gr-table td { border: 0 !important; border-radius: 0 !important; padding: 6px 12px; text-align: left; }
+  .gr-table tbody th { padding-top: 12px; }
+  .gr-table td:empty { display: none; }
+  .gr-table td[data-label]::before, .gr-table tfoot th::after { content: none; }
+  .gr-table td[data-label]::before { content: attr(data-label) ": "; display: inline; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--results-muted); }
+  .gr-table .gr-num { text-align: left; white-space: normal; }
+  .gr-table .gr-bar { max-width: 100%; }
+  .gr-table .gr-party-cell { font-size: 12.5px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .general-results *, .gr-panel * { animation: none !important; transition: none !important; }
+}
+
+@media (forced-colors: active) {
+  .gr-bar-track { fill: Canvas; stroke: CanvasText; stroke-width: .5; }
+  .gr-bar-fill--dem, .gr-bar-fill--rep, .gr-bar-fill--ind, .gr-bar-fill--none,
+  .gr-bar-fill--prov-dem, .gr-bar-fill--prov-rep, .gr-bar-fill--prov-ind, .gr-bar-fill--prov-none { fill: Highlight; }
+  .gr-badge { border-color: CanvasText; forced-color-adjust: auto; }
+  /* ADO #3013 F11: swatch backgrounds are dropped in forced colours; draw them with system colours. */
+  .gr-sw { forced-color-adjust: none; border-color: CanvasText; }
+  .gr-sw.solid { background: Highlight; }
+  .gr-sw.hatch { background: repeating-linear-gradient(45deg, Highlight, Highlight 3px, Canvas 3px, Canvas 6px); }
+  .general-results, .gr-panel, .gr-banner { border-color: CanvasText; }
+}
+
+
+
+/* WCAG 2.5.8: a candidate link in a row header is a standalone target, not a link inside a sentence,
+   so it needs a 24px box of its own. */
+.gr-table tbody th a { display: inline-block; min-width: 24px; min-height: 24px; line-height: 24px; }
+/* general-results:end */

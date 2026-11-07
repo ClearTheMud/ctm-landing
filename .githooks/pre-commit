@@ -82,6 +82,21 @@ if allowlist:
         if not publishable(f):
             problems.append((f, "not on the publish allowlist"))
 
+# 3. Mock or design-review pages must never reach the live site (ADO #2996,
+#    APPSEC-2026-008). The general-results mockups carry a made-up concession
+#    about real, named candidates. Their markers are checked in the STAGED
+#    content of every races/ page, not the working tree, so an unstaged scrub
+#    cannot hide a staged leak.
+import subprocess
+MOCK_TOKENS = ("example.invalid", "MOCKUP", "gr-mockup", "noindex")
+for f in staged:
+    if f.startswith("races/") and f.endswith(".html"):
+        blob = subprocess.run(["git", "-C", repo, "show", ":" + f],
+                              capture_output=True).stdout.decode("utf-8", "replace")
+        hit = [t for t in MOCK_TOKENS if t in blob]
+        if hit:
+            problems.append((f, "contains mockup marker(s): " + ", ".join(hit)))
+
 seen = set()
 for path, why in problems:
     if (path, why) in seen:
