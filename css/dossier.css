@@ -803,4 +803,59 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 /* WCAG 2.5.8: a candidate link in a row header is a standalone target, not a link inside a sentence,
    so it needs a 24px box of its own. */
 .gr-table tbody th a { display: inline-block; min-width: 24px; min-height: 24px; line-height: 24px; }
+
+/* ---- district results map (ADO #3020) ----
+   Fills use the party tokens above. The text chip on every district (number and party
+   letter) and the table and legend wording carry the meaning, so colour is never the
+   only signal. Chips have their own panel background, so their text is ink on panel in
+   both themes whatever fill is under them. */
+:root { --gr-map-none: #dce1e6; --gr-map-ctx: #f4f6f8; }
+@media (prefers-color-scheme: dark) { :root { --gr-map-none: #38434f; --gr-map-ctx: #232d3a; } }
+
+.gr-mapbox { background: var(--results-panel); color: var(--results-ink); border: 1px solid var(--results-line); border-radius: 10px; padding: 20px; margin: 32px 0 0; }
+.gr-mapbox h2 { font-size: 22px; font-weight: 700; margin: 0 0 14px; color: var(--results-ink); }
+.gr-mapbox h3 { font-size: 20px; margin: 0 0 8px; color: var(--results-ink); }
+.gr-mapbox a { color: var(--results-ink); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.gr-mapbox a:focus-visible { outline: 3px solid var(--results-ink); outline-offset: 2px; }
+.gr-mapbox .gr-notes { margin-top: 12px; }
+.gr-map-sentence { margin: 0 0 8px; font-size: 15px; }
+.gr-map { margin: 12px 0 0; }
+.gr-map figcaption { font-size: 12.5px; color: var(--results-muted); margin-top: 8px; }
+.gr-map-svg { display: block; width: 100%; height: auto; max-height: 560px; margin: 0 auto; }
+.gr-map--hub .gr-map-svg { max-height: 340px; }
+
+.gr-cd { stroke: var(--results-ink); stroke-width: 1; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.gr-cd--dem { fill: var(--dem-blue-results); }
+.gr-cd--rep { fill: var(--rep-red-results); }
+.gr-cd--other, .gr-cd--none { fill: var(--gr-map-none); }
+.gr-cd--ctx { fill: var(--gr-map-ctx); stroke: var(--results-muted); }
+.gr-cd--hi { stroke-width: 3; }
+.gr-cd-chip { fill: var(--results-panel); stroke: var(--results-ink); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.gr-cd-label { font: 700 26px/1 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: var(--results-ink); }
+.gr-cd-leader { stroke: var(--results-ink); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+.gr-cd-dot { fill: var(--results-ink); }
+
+.gr-map-legend { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; }
+.gr-map-legend li { margin: 0; display: inline-flex; align-items: center; gap: 8px; }
+.gr-map-sw { width: 16px; height: 16px; border-radius: 3px; border: 1.5px solid var(--results-ink); display: inline-block; flex: none; }
+.gr-map-sw--dem { background: var(--dem-blue-results); }
+.gr-map-sw--rep { background: var(--rep-red-results); }
+.gr-map-sw--other, .gr-map-sw--none { background: var(--gr-map-none); }
+.gr-map-table { margin-top: 16px; }
+
+/* A map box directly before the primary block reads like the general block does. */
+.gr-mapbox + .primary-results { margin-top: 40px; padding-top: 32px; border-top: 2px solid var(--gray-mid); }
+
+@media (max-width: 600px) { .gr-mapbox { padding: 14px; } }
+
+@media (forced-colors: active) {
+  .gr-cd, .gr-cd--dem, .gr-cd--rep, .gr-cd--other, .gr-cd--none, .gr-cd--ctx { fill: Canvas; stroke: CanvasText; }
+  .gr-cd--hi { stroke-width: 4; }
+  .gr-cd-chip { fill: Canvas; stroke: CanvasText; }
+  .gr-cd-label { fill: CanvasText; }
+  .gr-cd-leader { stroke: CanvasText; }
+  .gr-cd-dot { fill: CanvasText; }
+  .gr-map-sw { forced-color-adjust: none; background: Canvas; border-color: CanvasText; }
+  .gr-mapbox { border-color: CanvasText; }
+}
 /* general-results:end */
