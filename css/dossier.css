@@ -835,6 +835,15 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .gr-cd-leader { stroke: var(--results-ink); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
 .gr-cd-dot { fill: var(--results-ink); }
 
+/* The state map's shapes are links (js/state-map.js adds role, tabindex, tooltip). The chips
+   sit on top for reading, so they must not swallow the click. Hover and focus change the
+   outline weight, never only the colour. */
+.gr-cd-chips { pointer-events: none; }
+.gr-mapbox .district { cursor: pointer; }
+.gr-mapbox .district:hover { stroke-width: 3.5; }
+.gr-mapbox .district:focus { outline: none; }
+.gr-mapbox .district:focus-visible { stroke-width: 5; outline: 3px solid var(--results-ink); outline-offset: 2px; }
+
 .gr-map-legend { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; }
 .gr-map-legend li { margin: 0; display: inline-flex; align-items: center; gap: 8px; }
 .gr-map-sw { width: 16px; height: 16px; border-radius: 3px; border: 1.5px solid var(--results-ink); display: inline-block; flex: none; }
@@ -855,6 +864,8 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
   .gr-cd-label { fill: CanvasText; }
   .gr-cd-leader { stroke: CanvasText; }
   .gr-cd-dot { fill: CanvasText; }
+  .gr-mapbox .district:hover, .gr-mapbox .district:focus-visible { stroke: Highlight; }
+  .gr-mapbox .district:focus-visible { outline-color: CanvasText; }
   .gr-map-sw { forced-color-adjust: none; background: Canvas; border-color: CanvasText; }
   .gr-mapbox { border-color: CanvasText; }
 }

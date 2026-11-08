@@ -253,8 +253,10 @@ class TestStatePageCountyMap:
     def test_references_county_map_js(self, wa_page):
         assert "county-map.js" in wa_page
 
-    def test_still_has_district_map(self, wa_page):
-        assert "district-map-container" in wa_page
+    def test_has_the_colored_district_map_and_not_the_gold_one(self, wa_page):
+        # The leading-party map replaced the gold "Active research" map (ADO #3020).
+        assert 'class="district gr-cd' in wa_page
+        assert "district-map-container" not in wa_page
 
 
 # ---------------------------------------------------------------------------

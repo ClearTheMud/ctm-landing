@@ -73,7 +73,9 @@
     help.className = 'sr-only';
     help.textContent = 'Use the arrow keys to move between areas on this map, and Enter to open one.';
     svg.parentNode.insertBefore(help, svg);
-    svg.setAttribute('aria-describedby', helpId);
+    // Keep a description the page already gave the map; add the key help after it.
+    var existing = svg.getAttribute('aria-describedby');
+    svg.setAttribute('aria-describedby', existing ? existing + ' ' + helpId : helpId);
   }
 
   function createTooltip() {
@@ -101,14 +103,16 @@
   function setupDistrict(el) {
     var slug = el.getAttribute('data-slug');
     var name = el.getAttribute('data-name') || el.id;
-    var isActive = slug in districtData;
+    // The colored results map (ADO #3020) carries its own wording in data-tip and
+    // marks its shapes data-clickable, so it needs nothing from CTM_DISTRICT_DATA.
+    var isActive = slug in districtData || el.getAttribute('data-clickable') === 'true';
+    var customTip = el.getAttribute('data-tip');
 
     el.classList.add(isActive ? 'district--active' : 'district--inactive');
-    el.setAttribute('aria-label', getTooltipText(name, slug, isActive));
+    var tipText = customTip || getTooltipText(name, slug, isActive);
+    el.setAttribute('aria-label', tipText);
     el.setAttribute('tabindex', isActive ? '0' : '-1');
     el.setAttribute('role', el.getAttribute('tabindex') === '0' ? 'link' : 'img');
-
-    var tipText = getTooltipText(name, slug, isActive);
 
     el.addEventListener('mouseenter', function (e) {
       isTouchDevice = false;
