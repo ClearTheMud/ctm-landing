@@ -128,7 +128,11 @@ class TestLegislativeMapCSS:
 
 
 class TestStatePageLegislativeMap:
-    """Validate the WA state page includes the legislative district map."""
+    """Validate the WA state page carries the colored legislative district map (ADO #3024).
+
+    The colored map replaces the gold "Active races" map. The page keeps the inline
+    SVG, the script and a table with one row per district for the map to point at.
+    """
 
     @pytest.fixture
     def wa_page(self):
@@ -137,21 +141,22 @@ class TestStatePageLegislativeMap:
             pytest.skip("WA state page not generated")
         return path.read_text()
 
-    def test_has_legislative_map_container(self, wa_page):
-        assert "legislative-map-container" in wa_page
+    def test_has_the_colored_legislative_map_and_not_the_gold_one(self, wa_page):
+        assert "gr-mapbox--leg" in wa_page
+        assert "legislative-map-container" not in wa_page
 
     def test_has_legislative_map_js(self, wa_page):
         assert "legislative-map.js" in wa_page
 
-    def test_has_ctm_leg_data(self, wa_page):
-        assert "CTM_LEG_DATA" in wa_page
+    def test_no_longer_needs_the_inline_data_script(self, wa_page):
+        assert "CTM_LEG_DATA" not in wa_page
 
     def test_has_map_legend(self, wa_page):
-        leg_idx = wa_page.index("legislative-map-container")
-        end_idx = wa_page.index("</div>", wa_page.index("map-legend", leg_idx)) + 10 \
-            if "map-legend" in wa_page[leg_idx:] else leg_idx + 500000
-        section = wa_page[leg_idx:end_idx]
-        assert "map-legend" in section
+        assert "gr-map-legend" in wa_page
 
     def test_inline_svg_present(self, wa_page):
         assert "leg-districts" in wa_page, "SVG group id should be in page"
+
+    def test_every_district_has_a_table_row_to_scroll_to(self, wa_page):
+        for n in range(1, 50):
+            assert f'id="ld-{n}"' in wa_page

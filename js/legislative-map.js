@@ -73,7 +73,8 @@
     help.className = 'sr-only';
     help.textContent = 'Use the arrow keys to move between areas on this map, and Enter to open one.';
     svg.parentNode.insertBefore(help, svg);
-    svg.setAttribute('aria-describedby', helpId);
+    var existing = svg.getAttribute('aria-describedby');
+    svg.setAttribute('aria-describedby', existing ? existing + ' ' + helpId : helpId);
   }
 
   function createTooltip() {
@@ -83,12 +84,16 @@
     el.style.cssText =
       'position:fixed;padding:6px 12px;background:#1a2332;color:#fff;border-radius:4px;' +
       'font-size:14px;pointer-events:none;opacity:0;transition:opacity .15s;z-index:1000;' +
-      'white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.3);';
+      'white-space:normal;max-width:min(26rem,calc(100vw - 16px));line-height:1.35;box-shadow:0 2px 8px rgba(0,0,0,.3);';
     document.body.appendChild(el);
     return el;
   }
 
-  function getTooltipText(num, isActive) {
+  // data-tip, when the page supplies it, is the full sentence in words: district,
+  // delegation, and each seat's leader and party preference.
+  function getTooltipText(num, isActive, el) {
+    var tip = el && el.getAttribute('data-tip');
+    if (tip) return tip;
     if (!isActive) return 'LD-' + num + ' — No races tracked';
     var info = legData[num];
     var races = info ? info.races : 0;
@@ -99,14 +104,16 @@
 
   function setupDistrict(el) {
     var num = el.getAttribute('data-district');
-    var isActive = num in legData;
+    // data-clickable marks a shape that goes to a row in the page's own table (the
+    // colored results map), so it needs no CTM_LEG_DATA entry.
+    var isActive = num in legData || el.getAttribute('data-clickable') === 'true';
 
     el.classList.add(isActive ? 'leg-district--active' : 'leg-district--inactive');
-    el.setAttribute('aria-label', getTooltipText(num, isActive));
+    el.setAttribute('aria-label', getTooltipText(num, isActive, el));
     el.setAttribute('tabindex', isActive ? '0' : '-1');
     el.setAttribute('role', el.getAttribute('tabindex') === '0' ? 'link' : 'img');
 
-    var tipText = getTooltipText(num, isActive);
+    var tipText = getTooltipText(num, isActive, el);
 
     el.addEventListener('mouseenter', function (e) {
       isTouchDevice = false;
@@ -153,13 +160,18 @@
     }, { passive: false });
   }
 
+  // Scroll to the district's row in the table and move focus there, so a keyboard or
+  // screen reader user lands on the row the map pointed at. Smooth scrolling is skipped
+  // for people who ask for reduced motion.
   function scrollToDistrict(num) {
     var row = document.getElementById('ld-' + num);
-    if (row) {
-      row.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      row.style.background = '#2a4a6a';
-      setTimeout(function () { row.style.background = ''; }, 2000);
-    }
+    if (!row) return;
+    var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    row.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'center' });
+    if (!row.hasAttribute('tabindex')) row.setAttribute('tabindex', '-1');
+    row.focus({ preventScroll: true });
+    row.classList.add('gr-ld-row--hit');
+    setTimeout(function () { row.classList.remove('gr-ld-row--hit'); }, 2000);
   }
 
   function showTooltip(text, x, y) {

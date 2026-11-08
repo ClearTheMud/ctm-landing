@@ -869,4 +869,73 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
   .gr-map-sw { forced-color-adjust: none; background: Canvas; border-color: CanvasText; }
   .gr-mapbox { border-color: CanvasText; }
 }
+
+/* ---- legislative district results map (ADO #3024) ----
+   49 districts coloured by the party preference of the candidates leading their races.
+   Blue is every leader preferring the Democratic Party, red the Republican Party, stripes
+   both parties, grey anything else. The chip (number and letter D, R, S or O) on the larger
+   districts, the accessible name and tooltip on every shape, and the table below say the
+   same in words, so colour is never the only signal. */
+.gr-mapbox--leg { margin: 12px 0 24px; }
+.gr-mapbox h4 { font-size: 18px; font-weight: 700; margin: 0 0 12px; color: var(--results-ink); }
+.gr-map-svg--leg { max-height: 640px; }
+:root { --gr-ld-edge: #000000; }
+@media (prefers-color-scheme: dark) { :root { --gr-ld-edge: #ffffff; } }
+/* The district edge is black (white in dark mode): 3.1:1 or better against the blue, the red, the grey and
+   the panel, so a boundary between two districts of the same colour is still a 3:1 line (1.4.11). */
+.gr-ld { stroke: var(--gr-ld-edge); stroke-width: .9; stroke-linejoin: round; vector-effect: non-scaling-stroke; cursor: pointer; }
+.gr-ld--dem { fill: var(--dem-blue-results); }
+.gr-ld--rep { fill: var(--rep-red-results); }
+.gr-ld--split { fill: url(#grl-split); }
+.gr-ld--other, .gr-ld--none { fill: var(--gr-map-none); }
+.gr-ld-stripe--dem { fill: var(--dem-blue-results); }
+.gr-ld-stripe--rep { fill: var(--rep-red-results); }
+.gr-ld-dotbg { fill: Canvas; }
+.gr-ld-dot { fill: CanvasText; }
+.gr-ld-chip { stroke-width: 1; }
+.gr-ld-label { font: 700 11px/1 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+.gr-mapbox .leg-district:hover { stroke-width: 2.5; }
+.gr-mapbox .leg-district:focus { outline: none; }
+.gr-mapbox .leg-district:focus-visible { stroke-width: 4; outline: 3px solid var(--results-ink); outline-offset: 2px; }
+
+.gr-map-sw--split { background: repeating-linear-gradient(45deg, var(--dem-blue-results) 0 4px, var(--rep-red-results) 4px 8px); }
+
+.gr-leg-table .gr-seats { list-style: none; margin: 0; padding: 0; }
+.gr-leg-table .gr-seats li { margin: 0 0 6px; font-size: 13.5px; line-height: 1.4; }
+.gr-leg-table .gr-seats li:last-child { margin-bottom: 0; }
+.gr-leg-table .gr-seats a { display: inline-block; min-height: 24px; line-height: 24px; font-weight: 700; }
+.gr-party-inline { font-weight: 700; }
+.gr-cover { font-weight: 400; color: var(--results-muted); display: block; font-size: 12.5px; }
+.gr-leg-table tbody th { white-space: nowrap; }
+.gr-ld-row:focus { outline: 3px solid var(--results-ink); outline-offset: -3px; }
+.gr-ld-row.gr-ld-row--hit > * { border-color: var(--results-ink); }
+
+/* Below this width the map is drawn under ~0.9 of its size and a chip's 11 unit text would be under 10px,
+   which cannot be read or measured for contrast. The chips go, and the legend, tooltip, accessible
+   names and table carry the meaning. */
+@media (max-width: 860px) { .gr-mapbox--leg .gr-cd-chips { display: none; } }
+
+@media (max-width: 600px) {
+  .gr-leg-table .gr-seats li { font-size: 14px; }
+  .gr-ld-row:focus { outline-offset: 2px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gr-ld, .gr-mapbox .leg-district { transition: none !important; animation: none !important; }
+}
+
+@media (forced-colors: active) {
+  .gr-ld, .gr-ld--other, .gr-ld--none { fill: Canvas; stroke: CanvasText; }
+  .gr-ld--dem { fill: Highlight; }
+  .gr-ld--rep { fill: url(#grl-rep); }
+  .gr-ld--split { fill: url(#grl-split); }
+  .gr-ld-stripe--dem { fill: Highlight; }
+  .gr-ld-stripe--rep { fill: Canvas; }
+  .gr-mapbox .leg-district:hover, .gr-mapbox .leg-district:focus-visible { stroke: Highlight; }
+  .gr-mapbox .leg-district:focus-visible { outline-color: CanvasText; }
+  .gr-mapbox--leg .gr-map-sw--dem { background: Highlight; }
+  .gr-mapbox--leg .gr-map-sw--rep { background: repeating-linear-gradient(90deg, CanvasText 0 2px, Canvas 2px 5px); }
+  .gr-mapbox--leg .gr-map-sw--split { background: repeating-linear-gradient(45deg, Highlight 0 4px, Canvas 4px 8px); }
+  .gr-ld-row:focus { outline-color: CanvasText; }
+}
 /* general-results:end */
