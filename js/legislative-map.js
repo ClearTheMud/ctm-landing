@@ -13,14 +13,36 @@
     for (var i = 0; i < districts.length; i++) {
       setupDistrict(districts[i]);
     }
-    setupRoving(districts);
-    setupMapGroup(districts);
+    // Each SVG is its own widget with its own single tab stop: the main map and the Puget Sound
+    // inset do not share a roving group, so Tab visits the map, then the inset, then the table.
+    var groups = groupBySvg(districts);
+    for (var g = 0; g < groups.length; g++) {
+      var group = groups[g];
+      setupRoving(group);
+      setupMapGroup(group, g);
+    }
 
     document.addEventListener('click', function (e) {
       if (!e.target.closest('.leg-district') && !e.target.closest('#leg-tooltip')) {
         hideTooltip();
       }
     });
+  }
+
+  function groupBySvg(shapes) {
+    var svgs = [];
+    var groups = [];
+    for (var i = 0; i < shapes.length; i++) {
+      var svg = shapes[i].ownerSVGElement;
+      var at = svgs.indexOf(svg);
+      if (at < 0) {
+        svgs.push(svg);
+        groups.push([]);
+        at = svgs.length - 1;
+      }
+      groups[at].push(shapes[i]);
+    }
+    return groups;
   }
 
   // One tab stop per map (WCAG 2.4.3, 2.4.1): the shapes are a single widget.
@@ -62,11 +84,11 @@
 
   // role="img" makes its descendants presentational, which breaks the
   // focusable shapes inside it. A group keeps the name and the children.
-  function setupMapGroup(shapes) {
+  function setupMapGroup(shapes, index) {
     var svg = shapes.length ? shapes[0].ownerSVGElement : null;
     if (!svg) return;
     if (svg.getAttribute('role') === 'img') svg.setAttribute('role', 'group');
-    var helpId = tooltip.id + '-keys';
+    var helpId = tooltip.id + '-keys' + (index ? '-' + index : '');
     if (document.getElementById(helpId)) return;
     var help = document.createElement('p');
     help.id = helpId;
@@ -144,6 +166,8 @@
       });
     }
 
+    bindCallouts(el, num, tipText, isActive);
+
     el.addEventListener('touchstart', function (e) {
       isTouchDevice = true;
       var rect = el.getBoundingClientRect();
@@ -158,6 +182,40 @@
         tooltip._currentDistrict = num;
       }
     }, { passive: false });
+  }
+
+  // The Puget Sound inset joins each tiny district to a numbered chip by a line. The chip is a larger
+  // pointer target for the same district: hover shows the same tooltip, a click goes to the same row.
+  // Keyboard users use the district shape itself (the chips are hidden from assistive technology),
+  // and focusing or hovering a shape marks its chip so the connection is visible.
+  function bindCallouts(el, num, tipText, isActive) {
+    var svg = el.ownerSVGElement;
+    if (!svg) return;
+    var callouts = svg.querySelectorAll('.gr-in-callout[data-district="' + num + '"]');
+    function mark(on) {
+      for (var i = 0; i < callouts.length; i++) callouts[i].classList.toggle('gr-in-callout--on', on);
+    }
+    el.addEventListener('focus', function () { mark(true); });
+    el.addEventListener('blur', function () { mark(false); });
+    el.addEventListener('mouseenter', function () { mark(true); });
+    el.addEventListener('mouseleave', function () { mark(false); });
+    for (var i = 0; i < callouts.length; i++) {
+      (function (callout) {
+        callout.addEventListener('mouseenter', function (e) {
+          isTouchDevice = false;
+          mark(true);
+          showTooltip(tipText, e.clientX, e.clientY);
+        });
+        callout.addEventListener('mousemove', function (e) {
+          if (!isTouchDevice) positionTooltipAtCursor(e.clientX, e.clientY);
+        });
+        callout.addEventListener('mouseleave', function () {
+          mark(false);
+          if (!isTouchDevice) hideTooltip();
+        });
+        if (isActive) callout.addEventListener('click', function () { scrollToDistrict(num); });
+      })(callouts[i]);
+    }
   }
 
   // Scroll to the district's row in the table and move focus there, so a keyboard or

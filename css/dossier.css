@@ -883,7 +883,7 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 @media (prefers-color-scheme: dark) { :root { --gr-ld-edge: #ffffff; } }
 /* The district edge is black (white in dark mode): 3.1:1 or better against the blue, the red, the grey and
    the panel, so a boundary between two districts of the same colour is still a 3:1 line (1.4.11). */
-.gr-ld { stroke: var(--gr-ld-edge); stroke-width: .9; stroke-linejoin: round; vector-effect: non-scaling-stroke; cursor: pointer; }
+.gr-ld { stroke: var(--gr-ld-edge); stroke-width: 1.25; stroke-linejoin: round; vector-effect: non-scaling-stroke; cursor: pointer; }
 .gr-ld--dem { fill: var(--dem-blue-results); }
 .gr-ld--rep { fill: var(--rep-red-results); }
 .gr-ld--split { fill: url(#grl-split); }
@@ -894,7 +894,7 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 .gr-ld-dot { fill: CanvasText; }
 .gr-ld-chip { stroke-width: 1; }
 .gr-ld-label { font: 700 11px/1 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
-.gr-mapbox .leg-district:hover { stroke-width: 2.5; }
+.gr-mapbox .leg-district:hover { stroke-width: 2.75; }
 .gr-mapbox .leg-district:focus { outline: none; }
 .gr-mapbox .leg-district:focus-visible { stroke-width: 4; outline: 3px solid var(--results-ink); outline-offset: 2px; }
 
@@ -913,7 +913,7 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
 /* Below this width the map is drawn under ~0.9 of its size and a chip's 11 unit text would be under 10px,
    which cannot be read or measured for contrast. The chips go, and the legend, tooltip, accessible
    names and table carry the meaning. */
-@media (max-width: 860px) { .gr-mapbox--leg .gr-cd-chips { display: none; } }
+@media (max-width: 860px) { .gr-mapbox--leg .gr-cd-chips, .gr-mapbox--leg .gr-inset-tagbox { display: none; } }
 
 @media (max-width: 600px) {
   .gr-leg-table .gr-seats li { font-size: 14px; }
@@ -938,4 +938,48 @@ h3 { font-size: 17px; font-weight: 700; color: var(--blue); margin: 20px 0 12px;
   .gr-mapbox--leg .gr-map-sw--split { background: repeating-linear-gradient(45deg, Highlight 0 4px, Canvas 4px 8px); }
   .gr-ld-row:focus { outline-color: CanvasText; }
 }
+
+/* ---- Seattle area inset (ADO #3025) ----
+   An enlarged second map of the densest districts (Seattle, King County and the neighbours squeezed against
+   them), drawn at about 4.4 px per map unit at 320 px wide. It reuses the main map's classes (gr-ld--dem and the
+   rest), so one colour rule paints both. Every district in it has a numbered chip, inside the district where it
+   fits and joined by a short line where it does not, and the letter on the chip (D, R, S, O) carries the party,
+   so a reader who cannot tell blue from red still can. The district shape is the click target. The dashed
+   outline on the main map marks the same box. The inset sits below the main map at every width: side by side
+   the main map would be about 500 px wide and its chip text under 8 px, too small to read or measure. */
+.gr-maps { margin: 12px 0 0; }
+.gr-maps > .gr-map { margin: 0; }
+.gr-maps > .gr-map--inset { max-width: 420px; margin: 24px auto 0; }
+.gr-inset-title { font-size: 16px; font-weight: 700; margin: 0 0 8px; color: var(--results-ink); }
+.gr-map-svg--inset { max-height: none; }
+.gr-map-svg--inset .gr-ld { stroke-width: 1.5; }
+.gr-map-svg--inset .gr-ld--split { fill: url(#grl-in-split); }
+.gr-ld--ctx { fill: var(--gr-map-ctx); stroke: var(--results-muted); stroke-width: 1; cursor: default; }
+.gr-in-frame { fill: none; stroke: var(--results-muted); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.gr-inset-frame { fill: none; stroke: var(--results-ink); stroke-width: 2.5; stroke-dasharray: 7 4; vector-effect: non-scaling-stroke; pointer-events: none; }
+.gr-inset-tagbg { fill: var(--results-panel); stroke: var(--results-ink); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.gr-inset-tag { font: 700 15px/1 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: var(--results-ink); }
+.gr-inset-pointer { pointer-events: none; }
+.gr-in-leader { stroke: var(--results-ink); stroke-width: 1; vector-effect: non-scaling-stroke; pointer-events: none; }
+.gr-in-dot { fill: var(--results-ink); stroke: var(--results-panel); stroke-width: .6; vector-effect: non-scaling-stroke; pointer-events: none; }
+.gr-in-chip { fill: var(--results-panel); stroke: var(--results-ink); stroke-width: 1; vector-effect: non-scaling-stroke; cursor: pointer; }
+.gr-in-label { font: 700 13px/1 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: var(--results-ink); pointer-events: none; }
+.gr-in-callout--here, .gr-in-callout--here .gr-in-chip { pointer-events: none; cursor: default; }
+.gr-in-callout { cursor: pointer; }
+.gr-in-callout--on .gr-in-chip { stroke-width: 3.5; }
+.gr-in-callout--on .gr-in-leader { stroke-width: 2.5; }
+/* An outline on an SVG path is the box around the whole shape, which in a zoomed inset is a large rectangle. The
+   focus mark is a heavy edge on the shape itself plus the heavy outline on its chip (gr-in-callout--on). */
+.gr-mapbox--leg .gr-map-svg--inset .leg-district:focus-visible { stroke-width: 5; outline: none; }
+@media (forced-colors: active) {
+  .gr-map-svg--inset .gr-ld--rep { fill: url(#grl-in-rep); }
+  .gr-map-svg--inset .gr-ld--split { fill: url(#grl-in-split); }
+  .gr-ld--ctx { fill: Canvas; stroke: GrayText; }
+  .gr-in-frame { stroke: GrayText; }
+  .gr-inset-frame, .gr-inset-tagbg, .gr-in-chip, .gr-in-leader { stroke: CanvasText; }
+  .gr-inset-tagbg, .gr-in-chip { fill: Canvas; }
+  .gr-inset-tag, .gr-in-label, .gr-in-dot { fill: CanvasText; }
+  .gr-in-dot { stroke: Canvas; }
+}
+@media (prefers-reduced-motion: reduce) { .gr-in-chip, .gr-in-leader { transition: none !important; } }
 /* general-results:end */
